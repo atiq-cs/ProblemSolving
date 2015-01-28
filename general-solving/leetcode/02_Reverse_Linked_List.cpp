@@ -1,15 +1,14 @@
 /*******************************************************
 *		Problem Name:			Reverse a Linked Recursively
-*		Problem URL:			leetcode
-*		Occassion:				Christmas Day
-*		Date:					December 25, 2014
-*		Template revision:		002, OOP
+*		Problem URL:			http://leetcode.com/2010/04/reversing-linked-list-iteratively-and.html
+*		Occassion:				Snow day in StonyBrook second day of class cancelled for inclement weather
+*		Date:					January 27, 2015
 *
 *		Algorithm:
 *		Special Case:
 *		Judge Status:
-*		Author:					Saint Atique
-*		Notes:					Naive Solution
+*		Author:					Atiqur Rahman
+*		Notes:					
 *
 *******************************************************/
 

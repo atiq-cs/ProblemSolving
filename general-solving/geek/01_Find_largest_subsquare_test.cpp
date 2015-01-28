@@ -1,3 +1,4 @@
+// Probably acquired from internet: probably from geeksforgeeks.org
 // A C++ program to find  the largest subsquare
 // surrounded by 'X' in a given matrix of 'O' and 'X'
 #include<iostream>

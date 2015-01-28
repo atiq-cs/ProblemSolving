@@ -2,13 +2,11 @@
 *		Problem Name:			Find largest subsquare
 *		Problem URL:			http://www.geeksforgeeks.org/given-matrix-o-x-find-largest-subsquare-surrounded-x/
 *		Occassion:				Christmas Day
-*		Date:					December 25, 2014
-*		Template revision:		002, OOP
-*
+*		Date:					December 25, 2014*
 *		Algorithm:				
 *		Special Case:
 *		Judge Status:			
-*		Author:					Saint Atique
+*		Author:					Atiqur Rahman
 *		Notes:					Naive Solution
 *
 *******************************************************/
@@ -214,12 +212,3 @@ int __disable_main() {
 
 	return 0;
 }
-
-/*
-Test of another commit
-
-memset(arrayName, 255, )
-cout.setf (ios::fixed, ios::floatfield);
-cout.setf(ios::showpoint);
-cout<<setprecision(2)<<sum_c + eps<<endl;
-*/
