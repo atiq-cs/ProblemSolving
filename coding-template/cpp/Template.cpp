@@ -1,31 +1,45 @@
 /*
- *	Problem Title:	Problem Title
-*	Problem URL:	Problem Link
- *	Problem Type:
- *	Alogirthm	:
- *	Coder		:	Atiqur Rahman
- *	Desc		:	template
- *
- *
- *
- *
- *
- *	Status		:	..
- */
+*	Problem Title:	Problem Title
+*	Problem Link:	https://www.hackerrank.com/challenges/problem-title
+*	Problem Type:	Data Type Handling
+*	Alogirthm	:
+*	Author		:	Atiqur Rahman
+*	Email		:	
+*	Date		:	, 2015
+*	Desc		:
+*
+* Judge Notes
+*	uva-judge	:	Judge is C++11 4.8.2 - GNU C++ Compiler with options: -lm -lcrypt -O2 -std=c++11 -pipe -DONLINE_JUDGE
+*					main function should return 0, requires inclusion of cstring for memset
+* 	tju-judge	:	Judge is gcc 4.5.2, old, does not support C++11 all features
+*	Status		:	On progress
+*/
 
-#include <iostream>
+
 #include <string>
 #include <sstream>
 #include <cmath>
-//#define FILE_IO	TRUE
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+// Comment before submission to judge
+#define FILE_IO	TRUE
 
 #ifdef FILE_IO
 #include <fstream>
 #endif
 using namespace std;
 
-class ClassName;
 void handleIO();
+
+class ClassName {
+private:
+	string str;
+	int num;
+public:
+	void initClass();
+};
 
 int mainT() {
 	handleIO();
@@ -34,10 +48,14 @@ int mainT() {
 
 void handleIO() {
 #ifdef FILE_IO
-	ofstream outFile("ProblemNo_out.txt");
-	streambuf *psbuf = outFile.rdbuf(), *backup;
-	backup = cout.rdbuf();     // back up cout's streambuf
-	cout.rdbuf(psbuf);
+	std::string problem = "Problem Number";
+	std::ifstream inFile(problem + "_in.txt");
+	std::streambuf *cinbuf = std::cin.rdbuf(); //save old buf
+	std::cin.rdbuf(inFile.rdbuf()); //redirect std::cin to inFile!
+
+	std::ofstream outFile(problem + "_out.txt");
+	std::streambuf *coutbuf = std::cout.rdbuf();
+	std::cout.rdbuf(outFile.rdbuf());
 #endif
 
 	ClassName classObj;
@@ -46,8 +64,11 @@ void handleIO() {
 	while (cin >> varName) {
 		classObj.initClass();
 	}
+
 #ifdef FILE_IO
-	cout.rdbuf(backup);
+	std::cin.rdbuf(cinbuf);
+	inFile.close();
+	std::cout.rdbuf(coutbuf);
 	outFile.close();
 #endif
 }
@@ -64,9 +85,7 @@ void ClassName::initClass() {
 	num = 0;
 }
 
-/* example: how to set fixed pionts
-memset(arrayName, 255, )
-cout.setf (ios::fixed, ios::floatfield);
-cout.setf(ios::showpoint);
-cout<<setprecision(2)<<sum_c + eps<<endl;
+/*
+Set fixed point example
+std::cout << "Fixed point number: " << std::fixed << std::setprecision(1) << num << std::endl;
 */
