@@ -1,8 +1,7 @@
 /*
-*	Problem Title:	 Swap demonstration
-*	Problem Link:	http://uva.onlinejudge.org/external/3/318.html
+*	Problem Title:	 Swap demonstration (Data structure and int limit tests)
 *	Author		:	Atiqur Rahman
-*	Email		:	mdarahman@cs.stonybrook.edu
+*	Email		:	mdarahman 'at' cs dot stonybrook dot edu
 *	Date		:	May 21, 2015
 *	Desc		:	All things swap (testing overflow with approaches)
 *					Approach 1: using temporary variable
@@ -10,23 +9,32 @@
 *					Approach 3: using Subtraction and addition
 *					Approach 4: using multiplication and division
 *
-*					our test environment: Visual Studio 2013
+*					Test environment: Visual Studio 2013
 */
 
 #include <iostream>
 
-/* using temporary variable */
+/* using temporary variable,
+	the simple and best method
+	better depend on compiler for optimization on this
+	*/
 void swap_method1(int &x, int &y) {
 	int tmp = x;
 	x = y;
 	y = tmp;
 }
 
-/* using X-OR */
+/* Swap implementation using X-OR
+	Problem: if called with same variable as both parameters first X-OR result becomes zero
+	Detail explanation here:
+http://stackoverflow.com/questions/30419394/why-does-this-swap-using-simple-addition-and-subtraction-wont-overflow/
+*/
 void swap_method2(int &x, int &y) {
-	x ^= y;
-	y ^= x;
-	x ^= y;
+	if (x != y) {
+		x ^= y;
+		y ^= x;
+		x ^= y;
+	}
 }
 
 /* using using Subtraction and addition
@@ -42,14 +50,15 @@ void swap_method3(int &x, int &y) {
 	be aware that multiplication result might be 0
 */
 void swap_method4(int &x, int &y) {
-	int t = y;
-	x *= y;
-	if (y == 0)
-		return;
-	y = x / y;
-	if (y == 0)
-		return;
-	x /= y;
+	if (x != y) {
+		x *= y;
+		if (y == 0)
+			return;
+		y = x / y;
+		if (y == 0)
+			return;
+		x /= y;
+	}
 }
 
 /* We demonstrate the functions we wrote above for swap */
