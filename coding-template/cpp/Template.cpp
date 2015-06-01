@@ -1,7 +1,7 @@
 /*
 *	Problem Title:	Problem Title
 *	Problem Link:	https://www.hackerrank.com/challenges/problem-title
-*	Problem Type:	Data Type Handling
+*	Problem Type:	from Data Structure, Algorithm etc..
 *	Alogirthm	:
 *	Author		:	Atiqur Rahman
 *	Email		:	
@@ -9,10 +9,12 @@
 *	Desc		:
 *
 * Judge Notes
-*	uva-judge	:	Judge is C++11 4.8.2 - GNU C++ Compiler with options: -lm -lcrypt -O2 -std=c++11 -pipe -DONLINE_JUDGE
-*					main function should return 0, requires inclusion of cstring for memset
-* 	tju-judge	:	Judge is gcc 4.5.2, old, does not support C++11 all features
-*	Status		:	On progress
+* Judge Notes
+*	uva-judge	:	g++ 4.8.2, C++11 - GNU C++ Compiler with options: -lm -lcrypt -O2 -std=c++11 -pipe -DONLINE_JUDGE
+*					main function should return 0, include cstring for memset
+* 	tju-judge	:	gcc 4.5.2, old, does not support C++11 all features
+*	spoj		:	g++ 4.9.2, C++ 14
+*	Status		:	Accepted / On progress / Wrong Answer
 */
 
 

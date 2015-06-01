@@ -1,19 +1,19 @@
-/*******************************************************
-*		Problem Name:			Reverse a Linked Recursively
-*		Problem URL:			http://leetcode.com/2010/04/reversing-linked-list-iteratively-and.html
-*		Occassion:				Snow day in StonyBrook second day of class cancelled for inclement weather
-*		Date:					January 27, 2015
+/***************************************************************************
+*	Problem Name:	Reverse a Linked Lists Recursively, Prints 
+*	Problem URL:	http://leetcode.com/2010/04/reversing-linked-list-iteratively-and.html
+*	Occassion:		Snow day in StonyBrook second day of class cancelled for inclement weather
+*	Date:			January 27, 2015
 *
-*		Algorithm:
-*		Special Case:
-*		Judge Status:
-*		Author:					Atiqur Rahman
-*		Notes:					
+*	Data Structure:	Recursion, Linked Lists
+*	Desc:			Implements following,
+*						Prints a linked ilst in reverse order (using recursion)
+*						Reverses a linked ilst (using recursion)
+*	Author:			Atiqur Rahman
+*	Notes:					
 *
-*******************************************************/
+***************************************************************************/
 
 #include <iostream>
-using namespace std;
 
 class LL {
 public:
@@ -30,6 +30,7 @@ public:
 	~myLinkedList();
 	void Create();
 	void Reverse();
+	void PrintList();
 	void PrintReverse();
 
 protected:
@@ -55,7 +56,7 @@ myLinkedList::~myLinkedList() {
 		i = current->itemValue;
 		current = current->itemNext;
 		delete temp;
-		cout << "deleted element " << i << endl;
+		std::cout << "deleted element " << i << std::endl;
 	}
 }
 
@@ -92,13 +93,29 @@ void myLinkedList::Reverse() {
 	gHead = NULL;
 }
 
+/*
+	Displays the linked list in its order
+*/
+void myLinkedList::PrintList() {
+	LL* current = head;
+	std::cout << "Linked list: ";
+	while (current) {
+		std::cout << " " << current->itemValue;
+		current = current->itemNext;
+	}
+	std::cout << std::endl;
+}
+
+/*
+	Displays the linked list in reverse order
+*/
 void myLinkedList::PrintReverse() {
 	void RecPrintReverse(LL* head);
 	LL* fastPointer = head;
 	LL* slowPointer = head;
 
 	if (head == NULL) {
-		cout << "Linked list is empty. Please add items." << endl;
+		std::cout << "Linked list is empty. Please add items." << std::endl;
 		return;
 	}
 	RecPrintReverse(head);
@@ -107,8 +124,14 @@ void myLinkedList::PrintReverse() {
 int main() {
 	myLinkedList demoLL;
 	demoLL.Create();
-	demoLL.PrintReverse();
+	std::cout << "Before performing recursive reverse we get," << std::endl;
+	demoLL.PrintList();
+
 	demoLL.Reverse();
+	std::cout << std::endl << "After performing recursive reverse we get," << std::endl;
+	demoLL.PrintList();
+
+	std::cout << std::endl << "Recursive reverse print gives," << std::endl;
 	demoLL.PrintReverse();
 	return 0;
 }
@@ -117,7 +140,7 @@ void RecPrintReverse(LL* head) {
 	if (head == NULL)
 		return;
 	RecPrintReverse(head->itemNext);
-	cout << "item " << head->itemValue << endl;
+	std::cout << "item " << head->itemValue << std::endl;
 }
 
 
@@ -127,7 +150,7 @@ void RecReverse(LL* head) {
 	if (head->itemNext == NULL) {
 		if (gHead == NULL) {
 			gHead = head;
-			// cout << "head set to " << head->itemValue << endl;
+			// std::cout << "head set to " << head->itemValue << std::endl;
 		}
 		return;
 	}

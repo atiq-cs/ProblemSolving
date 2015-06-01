@@ -16,6 +16,7 @@
 * 	tju-judge	:	Judge is gcc 4.5.2, old, does not support C++11 all features
 *	Status		:	Accepted
 *	Acknowledgement	:	Thanks for direction on a special case, Yonghui Wu (http://www.cs.fudan.edu.cn/en/?page_id=2269)
+*	Related Problem:	online-problem-solving\spoj\SPOJ_TRVCOST.cpp
 */
 
 #include <cstring>	// for memset
@@ -268,7 +269,8 @@ DominoEffectsResult Graph::get_de_result() {
 		   2. if cost via u is equal to max's distance then it's not min
 		   */
 		for (auto u: adj_list[max_index_first])
-			if (vertex[u].distance + edge_cost[u][max_index_first] >= vertex[max_index_second].distance + edge_cost[max_index_second][max_index_first] && u != max_index_first && u != \
+			if (vertex[u].distance + edge_cost[u][max_index_first] >= vertex[max_index_second].distance + \
+				edge_cost[max_index_second][max_index_first] && u != max_index_first && u != \
 				vertex[max_index_first].predecessor && vertex[max_index_first].distance != vertex[u].distance + \
 				edge_cost[u][max_index_first] && vertex[u].distance != INT_INF) {
 				max_index_second = u;
@@ -291,7 +293,8 @@ DominoEffectsResult Graph::get_de_result() {
 	/* if we are here, there is min
 		if min's distance can be equal to max's distance; however that  is handled by the equation
 	*/
-	deResult.cost = ((double) vertex[max_index_first].distance + vertex[max_index_second].distance + edge_cost[max_index_first][max_index_second]) / 2.0;
+	deResult.cost = ((double) vertex[max_index_first].distance + vertex[max_index_second].distance + \
+		edge_cost[max_index_first][max_index_second]) / 2.0;
 	if (max_index_second > max_index_first) {
 		deResult.dominoes.push_back(max_index_first);
 		deResult.dominoes.push_back(max_index_second);

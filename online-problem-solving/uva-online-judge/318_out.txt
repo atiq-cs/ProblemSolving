@@ -1,0 +1,156 @@
+System #1
+The last domino falls after 45.0 seconds, at key domino 5.
+
+System #2
+The last domino falls after 10.0 seconds, at key domino 3.
+
+System #3
+The last domino falls after 72.5 seconds, between key dominoes 2 and 4.
+
+System #4
+The last domino falls after 65.0 seconds, at key domino 2.
+
+System #5
+The last domino falls after 10.0 seconds, at key domino 2.
+
+System #6
+The last domino falls after 10.0 seconds, at key domino 3.
+
+System #7
+The last domino falls after 15.0 seconds, at key domino 4.
+
+System #8
+The last domino falls after 27.0 seconds, at key domino 2.
+
+System #9
+The last domino falls after 7.5 seconds, between key dominoes 2 and 3.
+
+System #10
+The last domino falls after 0.0 seconds, at key domino 1.
+
+System #11
+The last domino falls after 7.5 seconds, between key dominoes 2 and 3.
+
+System #12
+The last domino falls after 27.0 seconds, at key domino 2.
+
+System #13
+The last domino falls after 7.5 seconds, between key dominoes 2 and 3.
+
+System #14
+The last domino falls after 0.0 seconds, at key domino 1.
+
+System #15
+The last domino falls after 10.0 seconds, at key domino 3.
+
+System #16
+The last domino falls after 78.0 seconds, at key domino 2.
+
+System #17
+The last domino falls after 10.0 seconds, at key domino 3.
+
+System #18
+The last domino falls after 67.0 seconds, between key dominoes 7 and 8.
+
+System #19
+The last domino falls after 10.0 seconds, at key domino 3.
+
+System #20
+The last domino falls after 27.0 seconds, at key domino 2.
+
+System #21
+The last domino falls after 7.5 seconds, between key dominoes 2 and 3.
+
+System #22
+The last domino falls after 0.0 seconds, at key domino 1.
+
+System #23
+The last domino falls after 10.0 seconds, at key domino 3.
+
+System #24
+The last domino falls after 27.0 seconds, at key domino 2.
+
+System #25
+The last domino falls after 7.5 seconds, between key dominoes 2 and 3.
+
+System #26
+The last domino falls after 0.0 seconds, at key domino 1.
+
+System #27
+The last domino falls after 10.0 seconds, at key domino 3.
+
+System #28
+The last domino falls after 27.0 seconds, at key domino 2.
+
+System #29
+The last domino falls after 7.5 seconds, between key dominoes 2 and 3.
+
+System #30
+The last domino falls after 0.0 seconds, at key domino 1.
+
+System #31
+The last domino falls after 10.0 seconds, at key domino 3.
+
+System #32
+The last domino falls after 27.0 seconds, at key domino 2.
+
+System #33
+The last domino falls after 7.5 seconds, between key dominoes 2 and 3.
+
+System #34
+The last domino falls after 0.0 seconds, at key domino 1.
+
+System #35
+The last domino falls after 10.0 seconds, at key domino 3.
+
+System #36
+The last domino falls after 27.0 seconds, at key domino 2.
+
+System #37
+The last domino falls after 7.5 seconds, between key dominoes 2 and 3.
+
+System #38
+The last domino falls after 0.0 seconds, at key domino 1.
+
+System #39
+The last domino falls after 10.0 seconds, at key domino 3.
+
+System #40
+The last domino falls after 27.0 seconds, at key domino 2.
+
+System #41
+The last domino falls after 7.5 seconds, between key dominoes 2 and 3.
+
+System #42
+The last domino falls after 27.0 seconds, at key domino 2.
+
+System #43
+The last domino falls after 7.5 seconds, between key dominoes 2 and 3.
+
+System #44
+The last domino falls after 27.0 seconds, at key domino 2.
+
+System #45
+The last domino falls after 0.0 seconds, at key domino 1.
+
+System #46
+The last domino falls after 12.0 seconds, at key domino 4.
+
+System #47
+The last domino falls after 9.0 seconds, at key domino 4.
+
+System #48
+The last domino falls after 9.5 seconds, between key dominoes 3 and 4.
+
+System #49
+The last domino falls after 4.0 seconds, at key domino 5.
+
+System #50
+The last domino falls after 4.5 seconds, between key dominoes 1 and 5.
+
+System #51
+The last domino falls after 1499999.5 seconds, between key dominoes 2 and 3.
+
+System #52
+The last domino falls after 200.5 seconds, between key dominoes 32 and 86.
+
