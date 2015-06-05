@@ -1,7 +1,8 @@
 ﻿/*
 *	Problem Title:	Removing single child nodes from Binary search tree
 *	Problem source:	Max2 Interview question 1, also known as removing half nodes from geeksforgeek
-*                       can be related with this: http://www.geeksforgeeks.org/given-a-binary-tree-how-do-you-remove-all-the-half-nodes/
+*                       can be related with this:
+    http://www.geeksforgeeks.org/given-a-binary-tree-how-do-you-remove-all-the-half-nodes/
 *	Problem Type:	Tree, Data Structure
 *	Alogirthm	:
 *	Author		:	Atiqur Rahman
@@ -206,7 +207,8 @@ int maxHeight(Node *p) {
 }
 
 // Print the arm branches (eg, /    \ ) on a line
-void printBranches(int branchLen, int nodeSpaceLen, int startLen, int nodesInThisLevel, const std::deque<Node*>& nodesQueue, std::ostream& out) {
+void printBranches(int branchLen, int nodeSpaceLen, int startLen, int nodesInThisLevel, const std::deque<Node*>& nodesQueue, \
+    std::ostream& out) {
     std::deque<Node*>::const_iterator iter = nodesQueue.begin();
     for (int i = 0; i < nodesInThisLevel / 2; i++) {
         out << ((i == 0) ? std::setw(startLen - 1) : std::setw(nodeSpaceLen - 2)) << "" << ((*iter++) ? "/" : " ");
@@ -216,12 +218,15 @@ void printBranches(int branchLen, int nodeSpaceLen, int startLen, int nodesInThi
 }
 
 // Print the branches and node (eg, ___10___ )
-void printNodes(int branchLen, int nodeSpaceLen, int startLen, int nodesInThisLevel, const std::deque<Node*>& nodesQueue, std::ostream& out) {
+void printNodes(int branchLen, int nodeSpaceLen, int startLen, int nodesInThisLevel, const std::deque<Node*>& nodesQueue, \
+    std::ostream& out) {
     std::deque<Node*>::const_iterator iter = nodesQueue.begin();
     for (int i = 0; i < nodesInThisLevel; i++, iter++) {
-        out << ((i == 0) ? std::setw(startLen) : std::setw(nodeSpaceLen)) << "" << ((*iter && (*iter)->left) ? std::setfill('_') : std::setfill(' '));
+        out << ((i == 0) ? std::setw(startLen) : std::setw(nodeSpaceLen)) << "" << ((*iter && (*iter)->left) ? std::setfill('_') \
+            : std::setfill(' '));
         out << std::setw(branchLen + 2) << ((*iter) ? std::to_string((*iter)->data) : "");
-        out << ((*iter && (*iter)->right) ? std::setfill('_') : std::setfill(' ')) << std::setw(branchLen) << "" << std::setfill(' ');
+        out << ((*iter && (*iter)->right) ? std::setfill('_') : std::setfill(' ')) << std::setw(branchLen) << "" << \
+            std::setfill(' ');
     }
     out << std::endl;
 }
@@ -230,22 +235,28 @@ void printNodes(int branchLen, int nodeSpaceLen, int startLen, int nodesInThisLe
 void printLeaves(int indentSpace, int level, int nodesInThisLevel, const std::deque<Node*>& nodesQueue, std::ostream& out) {
     std::deque<Node*>::const_iterator iter = nodesQueue.begin();
     for (int i = 0; i < nodesInThisLevel; i++, iter++) {
-        out << ((i == 0) ? std::setw(indentSpace + 2) : std::setw(2 * level + 2)) << ((*iter) ? std::to_string((*iter)->data) : "");
+        out << ((i == 0) ? std::setw(indentSpace + 2) : std::setw(2 * level + 2)) << ((*iter) ? std::to_string((*iter)->data) : \
+            "");
     }
     out << std::endl;
 }
 
 // Pretty formatting of a binary tree to the output stream
 // @ param
-// level  Control how wide you want the tree to sparse (eg, level 1 has the minimum space between nodes, while level 2 has a larger space between nodes)
-// indentSpace  Change this to add some indent space to the left (eg, indentSpace of 0 means the lowest level of the left node will stick to the left margin)
+// level  Control how wide you want the tree to sparse (eg, level 1 has the minimum space between nodes, while level 2 has a \
+larger space between nodes)
+// indentSpace  Change this to add some indent space to the left (eg, indentSpace of 0 means the lowest level of the left node \
+will stick to the left margin)
 void printPretty(Node *root, int level, int indentSpace, std::ostream& out) {
     int h = maxHeight(root);
     int nodesInThisLevel = 1;
 
-    int branchLen = 2 * ((int)pow(2.0, h) - 1) - (3 - level)*(int)pow(2.0, h - 1);  // eq of the length of branch for each node of each level
-    int nodeSpaceLen = 2 + (level + 1)*(int)pow(2.0, h);  // distance between left neighbor node's right arm and right neighbor node's left arm
-    int startLen = branchLen + (3 - level) + indentSpace;  // starting space to the first node to print of each level (for the left most node of each level only)
+    int branchLen = 2 * ((int)pow(2.0, h) - 1) - (3 - level)*(int)pow(2.0, h - 1);  // eq of the length of branch for each node \
+    of each level
+    int nodeSpaceLen = 2 + (level + 1)*(int)pow(2.0, h);  // distance between left neighbor node's right arm and right neighbor \
+    node's left arm
+    int startLen = branchLen + (3 - level) + indentSpace;  // starting space to the first node to print of each level (for the\
+     left most node of each level only)
 
     std::deque<Node*> nodesQueue;
     nodesQueue.push_back(root);

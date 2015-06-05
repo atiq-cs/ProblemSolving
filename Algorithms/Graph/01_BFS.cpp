@@ -1,6 +1,6 @@
 ﻿/*
 *	Problem Title:	Breadth First Search
-*	Problem Link:	http://www.spoj.com/problems/TRVCOST/
+*	Problem Link:	No problem solved using this algo yet
 *	Problem Type:	Graph Thoery
 *	Alogirthm	:
 *	Author		:	Atiqur Rahman
@@ -11,7 +11,8 @@
                      by Thomas H. Cormen and Charles E. Leiserson and Ronald L. Rivest and Clifford Stein
                      Simple dijkstra problem, hoping no special case
 
-*	Status		:	Need to be tested well, will be in release condition after solving several problems of online judges
+*	Status		:	Need to be tested well, will be in release condition after solving several problems of online
+                        judges
 */
 
 #include <cstring>	// for memset
@@ -77,7 +78,7 @@ int main() {
 
 void handleIO() {
 #ifdef FILE_IO
-    std::string problem = "trvcost";
+    std::string problem = "bfs";
     std::ifstream inFile(problem + "_in.txt");
     std::streambuf *cinbuf = std::cin.rdbuf(); //save old buf
     std::cin.rdbuf(inFile.rdbuf()); //redirect std::cin to inFile!
