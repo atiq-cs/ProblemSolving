@@ -1,13 +1,29 @@
 ﻿/*
 *	Problem Title:	Removing single child nodes from Binary search tree
-*	Problem source:	Interview question 1, also known as removing half nodes from geeksforgeek
-*                       can be related with this:
-    http://www.geeksforgeeks.org/given-a-binary-tree-how-do-you-remove-all-the-half-nodes/
+*	Problem source:	Second level interview question 1
+                Question: Find the Vertical sum in a given Binary tree, i.e. sum of nodes in the same vertical
+
+                1
+                / \
+                2   3
+                / \ / \
+                4  5 6  7
+
+                First line: 4 = 4
+                Second line: 2 = 2
+                Third Line: 1,5,6 = 12
+                Fourth Line: 3 = 3
+                Fifth Line: 7 = 7
+
+                output: 4,2,12,3,7
+                related in geeksforgeek:
+                http://www.geeksforgeeks.org/vertical-sum-in-a-given-binary-tree/
+
 *	Problem Type:	Tree, Data Structure
 *	Alogirthm	:
 *	Author		:	Atiqur Rahman
 *	Email		:	mdarahman@cs.stonybrook.edu
-*	Date		:	June 01, 2015
+*	Date		:	June 05, 2015
 *	Desc		:
 *					
 *	Status		:	Tested against several testcases
@@ -19,7 +35,7 @@
 #include <iomanip>      // setw
 #include <deque>        // dequeue
 #include <string>       // to_string
-
+#include <map>
 // Comment before submission to judge
 // #define FILE_IO	TRUE
 // we do not need FILE IO right now, may be add later
@@ -59,9 +75,8 @@ void handleIO() {
 #endif
 
     Node* create_binary_tree_from_data(void);
-    Node* remove_single_child_nodes(Node* node);
+    std::vector<int> find_vertical_sum(Node* node);
     void printPretty(Node *root, int level, int indentSpace, std::ostream& out);
-    void binary_tree_postorder(Node* p, int indent = 0);
 
     // Create a Binary Tree Manually
     Node* bt_root = create_binary_tree_from_data();
@@ -69,12 +84,14 @@ void handleIO() {
     std::cout << "Binary tree created," << std::endl;
     printPretty(bt_root, 1, 2, std::cout);
 
-    // Remove nodes that have single child
-    remove_single_child_nodes(bt_root);
-
     // Print the Binary Tree
-    std::cout << std::endl << "After removing single child nodes binary tree looks like," << std::endl;
-    printPretty(bt_root, 1, 2, std::cout);
+    std::cout << std::endl << "Computed vertical sums are," << std::endl;
+    // Remove nodes that have single child
+    for (auto sum : find_vertical_sum(bt_root))
+        std::cout << " " << sum;
+    std::cout << std::endl;
+        
+
 
 #ifdef FILE_IO
     std::cin.rdbuf(cinbuf);
@@ -89,109 +106,121 @@ void handleIO() {
 //                                          Method: Binary Tree Creation
 //===============================================================================================================//
 Node* create_binary_tree_from_data(void) {
-    /* Test case 1*/
+    /* Test case 1
+         1
+        / \
+       2   3
+      / \  /\
+     4  5 6  7
+    
     // Create root node and assign 1
-    Node* cur = new Node(2);
+    Node* cur = new Node(1);
     // save the root
     Node* root = cur;
 
     // Create root node and assign 1
-    cur->left = new Node(7);
-    cur = cur->left;
-
-
-    // navigate to left
-    cur->right = new Node(6);
-    cur = cur->right;
-
-    /*  4
-    / \
-    5   6   */
-    cur->left = new Node(1);
+    cur->left = new Node(2);
     cur->right = new Node(3);
 
-    // insert 3 as right subtree
-    cur = root;
-
+    // navigate to left, 2
+    cur = cur->left;
+    // add 4,5 as children
+    cur->left = new Node(4);
     cur->right = new Node(5);
-    cur = cur->right;
 
-    cur->right = new Node(6);
-    cur = cur->right;
-
-    cur->right = new Node(9);
-    cur = cur->right;
-
-    cur->right = new Node(4);
-    cur = cur->right;
-
-    cur->left = new Node(10);
-    cur->right = new Node(11);
-
+    // navigate to root's right child, 3
+    cur = root->right;
+    cur->left = new Node(6);
+    cur->right = new Node(7); */
 
     /* Test case 2
-    // Create root node and assign 1
-    Node* root = new Node(1);
-    Node* cur = root;
+             1
+           /   \
+          2     3
+         / \    / \
+        4   5   6  7
+       / \ / \ / \  /\
+      8  910 1112 131415
+    */
 
     // Create root node and assign 1
-    Node* temp = new Node(2);
-    cur->left = temp;
+    Node* cur = new Node(1);
+    // save the root
+    Node* root = cur;
 
-    // navigate to left
+    // Create root node and assign 1
+    cur->left = new Node(2);
+    cur->right = new Node(3);
+
+    // navigate to left, 2
     cur = cur->left;
-    temp = new Node(3);
-    cur->left = temp;
+    // add 4,5 as children
+    cur->left = new Node(4);
+    // add 8 and 9 as children
+    cur->left->left = new Node(8);
+    cur->left->right = new Node(9);
 
-    // navigate to left again
-    cur = cur->left;
-    temp = new Node(4);
-    cur->left = temp;
+    cur->right = new Node(5);
+    // add 10 and 11 as children
+    cur->right->left = new Node(10);
+    cur->right->right = new Node(11);
 
-    /*  4
-       / \
-      5   6   
-    cur = cur->left;
-    cur->left = new Node(5);
-    cur->right = new Node(6);
-
-    // insert 3 as right subtree
-    cur = root;
-    temp = new Node(7);
-    cur->right = temp; */
-
+    // navigate to root's right child, 3
+    cur = root->right;
+    cur->left = new Node(6);
+    // add 12 and 13 as children of 6
+    cur->left->left = new Node(12);
+    cur->left->right = new Node(13);
+    cur->right = new Node(7);
+    // add 14 and 15 as children of 7
+    cur->right->left = new Node(14);
+    cur->right->right = new Node(15);
     return root;
 }
 
 //===============================================================================================================//
-//                                          Method Single Child Node Removal from Binary Tree
+//                                          Method Find vertical sum, second one is the solution
 //===============================================================================================================//
-// this is what I was asked to do
-Node* remove_single_child_nodes(Node* node) {
-    // leaf node
-    if (node->left == NULL && node->right == NULL)
-        return node;
-    
-    // has both children
-    if (node->left && node->right) {
-        node->left = remove_single_child_nodes(node->left);
-        node->right = remove_single_child_nodes(node->right);
-        return node;
+// global definitions for easy access to result
+// basic target is to solve the vertical sum problem using recursion, not making the map access faster
+// an unordered map will perform better when depth of the tree is more
+// http://stackoverflow.com/questions/5908581/is-hash-map-part-of-the-stl
+// http://stackoverflow.com/questions/2189189/map-vs-hash-map-in-c
+// 
+std::map<int, int> vert_sum;
+std::vector<int> find_vertical_sum(Node* node) {
+    void vertical_sum_rec(Node* node, int index);
+
+    vertical_sum_rec(node, 0);
+
+    std::vector<int> result;
+    // this is still not supported
+    //for (auto it:vert_sum) {
+    for (auto it = vert_sum.cbegin(); it != vert_sum.cend(); ++it)
+        result.push_back(it->second);
+
+    return result;
+}
+
+// the recursive function that solves the problem
+void vertical_sum_rec(Node* node, int index) {
+    if (node == NULL)
+        return;
+
+    try {
+        vert_sum[index] += node->data;
+    }
+    catch (std::out_of_range e) {
+        vert_sum[index] = node->data;
     }
 
-    // has only left child
-    // could write if (node->right) but it's better to specificly check for NULL instead of non-zero value
-    if (node->right == NULL) {
-        Node* temp = node->left;
-        delete node;
-        return remove_single_child_nodes(temp);
+    if (node->left != NULL) {
+        vertical_sum_rec(node->left, index - 1);
     }
 
-    // has only right child, if control comes here that means it
-    // if (node->right)
-    Node* temp = node->right;
-    delete node;
-    return remove_single_child_nodes(temp);
+    if (node->right != NULL) {
+        vertical_sum_rec(node->right, index + 1);
+    }
 }
 
 //===============================================================================================================//

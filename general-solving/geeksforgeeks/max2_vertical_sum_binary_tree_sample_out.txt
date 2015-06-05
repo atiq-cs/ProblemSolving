@@ -1,0 +1,24 @@
+Binary tree created,
+
+      ___1__
+     /      \
+    _2      _3
+   /  \    /  \
+   4   5   6   7
+
+Computed vertical sums are,
+ 4 2 12 3 7
+
+ 
+Binary tree created,
+
+          _______1______
+         /              \
+      ___2__          ___3__
+     /      \        /      \
+    _4      _5      _6      _7
+   /  \    /  \    /  \    /  \
+   8   9  10  11  12  13  14  15
+
+Computed vertical sums are,
+ 8 4 33 12 41 7 15
