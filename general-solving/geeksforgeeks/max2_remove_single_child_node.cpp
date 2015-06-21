@@ -222,8 +222,8 @@ void printNodes(int branchLen, int nodeSpaceLen, int startLen, int nodesInThisLe
     std::ostream& out) {
     std::deque<Node*>::const_iterator iter = nodesQueue.begin();
     for (int i = 0; i < nodesInThisLevel; i++, iter++) {
-        out << ((i == 0) ? std::setw(startLen) : std::setw(nodeSpaceLen)) << "" << ((*iter && (*iter)->left) ? std::setfill('_') \
-            : std::setfill(' '));
+        out << ((i == 0) ? std::setw(startLen) : std::setw(nodeSpaceLen)) << "" << ((*iter && (*iter)->left) ? \
+            std::setfill('_') : std::setfill(' '));
         out << std::setw(branchLen + 2) << ((*iter) ? std::to_string((*iter)->data) : "");
         out << ((*iter && (*iter)->right) ? std::setfill('_') : std::setfill(' ')) << std::setw(branchLen) << "" << \
             std::setfill(' ');
