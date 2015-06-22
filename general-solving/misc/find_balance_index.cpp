@@ -1,5 +1,5 @@
 /*
-*	Problem Title:	Removing single child nodes from Binary search tree
+*	Problem Title:	Find balance index of an array
 *	Problem source:	Interview question 2
 *                       can be related with this:http://www.glassdoor.com/Interview/Find-the-balance-point-in-an-a
     rray-The-index-where-the-sum-of-the-elements-to-the-left-it-is-the-same-as-the-sum-of-the-e-QTN_245781.htm
