@@ -8,6 +8,8 @@
 *                    For reference please have a look at online-problem-solving/uva-online-judge/146_ID_Codes.cpp
 *                    If you are looking for C implementation look here:
 *                           online-problem-solving/uva-online-judge/146_ID_Codes_nasty_C.cpp
+
+*   Complexity  :   n log (n), (because of sorting used in line 41)
 */
 
 #include <iostream>

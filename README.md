@@ -21,8 +21,8 @@ leet-code, www.geeksforgeeks.org etc
 uva online judge, acm tju, topcoder etc
 
 ##### Note
-Please do not abuse the code in online-judge
-Code is provided in this repository only for education purpose and sharing of ideas that will help to improve our skills and algorithm knowledge
+Please do not abuse the code in online-judge.
+Code is provided in this repository only for education purpose and sharing of ideas that will help to improve our skills and algorithm knowledge.
 
 #### Instructions for committers/contributors
 Please do git pull before you commit. Thanks. :)
