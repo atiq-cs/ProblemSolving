@@ -1,15 +1,12 @@
 /*
-*	Problem Title:  Implementing next_permutation
+*	Problem     :   Demonstrating use of initializer list in C++ 11
 *	Author		:	Atiqur Rahman
 *	Email		:	mdarahman@cs.stonybrook.edu
-*	Date		:	June 23, 2015
+*	Date		:	June 28, 2015
 *	Desc		:
-*					This algorithm is tested by solving https://uva.onlinejudge.org/external/1/146.html
-*                    For reference please have a look at online-problem-solving/uva-online-judge/146_ID_Codes.cpp
-*                    If you are looking for C implementation look here:
-*                           online-problem-solving/uva-online-judge/146_ID_Codes_nasty_C.cpp
-
-*   Complexity  :   n log (n), (because of sorting used in line 41)
+*					Using initializer list with primitive types
+*                    use with string, vector, maps
+*                     and class members
 */
 
 #include <iostream>
@@ -33,7 +30,6 @@ public:
     }
 };
 
-/* We demonstrate the Permutation we implemented above */
 int main() {
     // use of auto variable
     auto x = 10;
