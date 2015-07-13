@@ -1,0 +1,51 @@
+2
+HelloWorld.c
+                            int Main()                  {
+                            
+                            
+                            
+                            
+printf("Hello %d\n",i);
+}
+***END***
+Add.c
+int Main() {
+for (int i=0; i<10; i++)
+sum += i;
+
+
+
+printf("SUM %d", sum);
+}
+***END***
+int Main() {
+printf("Hello %d\n",i);
+
+
+printf("THE END\n");
+}
+***END***
+2
+HelloWorld1.bas
+10 PRINT "*******************"
+20 PRINT "*******************"
+                30           PRINT "---                             HELLO WORLD ---"
+                                       
+40 PRINT "*******************"
+
+
+50 PRINT "*******************"
+***END***
+HelloWorld2.bas
+10 PRINT "-------------------"
+20 PRINT "*******************"
+30 PRINT "--- HELLO WORLD ---"
+40 PRINT "*******************"
+50 PRINT "-------------------"
+***END***
+10 REM Hello ver 1.0 (c) Acme 2008
+20 PRINT "*******************"
+30 PRINT "--- HELLO WORLD ---"
+40 PRINT "*******************"
+50 END
+***END***
