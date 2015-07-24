@@ -79,7 +79,7 @@ int main() {
 	std::cout << "After applying our  swap method 4 " << "a = " << a << ", b=" << b << std::endl;
 
 	/*Testing with maximum limit, adding a small number with it that will only use the sign bit when added*/
-	a = 0x7FFFFFFF;		// a is 2^32-1
+	a = 0x7FFFFFFF;		// a is 2^31-1
 	b = 15;
 	std::cout << std::endl << "Testing integer overflow:" << std::endl;
 	std::cout << "Before swap " << "a = " << a << ", b=" << b << std::endl;
@@ -103,8 +103,8 @@ int main() {
 
 		To show the number properly we just need to cast it into )unsigned int)
 	*/
-	a = 0x7FFFFFFF; //b = 0x80000000;
-	b = a+1;
+	a = 0x7FFFFFFF; //b = 0x80000000; // a is 2^31-1
+	b = a+1;        // b is 2^31
 	std::cout << std::endl << "Testing integer overflow with sign bit:" << std::endl;
 	// std::cout << "Before swap " << "a = " << a << ", b=-" << get_twos_complement(b) << std::endl;
 	std::cout << "Before swap " << "a = " << a << ", b=" << (unsigned int) b << std::endl;
@@ -120,10 +120,11 @@ int main() {
 	std::cout << "After applying our  swap method 4 " << "a = " << (unsigned int)a << ", b=" << b << std::endl;
 
 	/* this cannot be handled by 32 bits or 4 bytes if summed together
-		But surprisingly these also works
+        But surprisingly these also works
+        method using multiplication and division fails b becomes 0
 	*/
-	a = 0x7FFFFFFF;		// a is 2^32-1
-	b = 0x80000001;		// b is 2^32+1
+	a = 0x7FFFFFFF;		// a is 2^31-1
+	b = 0x80000001;		// b is 2^31+1
 	std::cout << std::endl << "Testing integer overflow with sign bit:" << std::endl;
 	std::cout << "Before swap " << "a = " << (unsigned int)a << ", b=" << (unsigned int)b << std::endl;
 	std::swap(a, b);

@@ -3,9 +3,9 @@
     Problem Name :  Code Theft
     Algorithm    :  Longest common substring
     Notes        :  DP implementation
-    See demo:
+                    The contending chinese solution is O( n(n+m) )
 
-    Complexity   :  O(n)
+    Complexity   :  O(nm)
     Status       :  Accepted
 */
 
