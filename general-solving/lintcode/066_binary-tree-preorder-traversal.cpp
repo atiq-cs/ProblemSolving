@@ -1,9 +1,12 @@
 /*
     Problem: http://www.lintcode.com/en/problem/minimum-depth-of-binary-tree/
+            also solves https://leetcode.com/problems/binary-tree-preorder-traversal/
+            have a look at leetcode/144_binary-tree-preorder-traversal.cs
+
     Description:
             Recursive solution.
 
-            Complexity: theta(n)
+    Complexity: theta(n)
 
     Status  :   Accepted
 */
