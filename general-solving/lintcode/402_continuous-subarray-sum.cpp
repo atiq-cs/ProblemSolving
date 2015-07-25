@@ -2,12 +2,11 @@
     Problem     : http://www.lintcode.com/en/problem/continuous-subarray-sum/
     Description :
                 Basically Kadane's algorithm: https://en.wikipedia.org/wiki/Maximum_subarray_problem
-                Modified little bit to get min index
+                Modified to get min index
 				For a general demonstration please have a look at
 				  - Algorithms/kadane_demo.cpp
 
     Complexity  : O(n)
-
     Status      :   Accepted
 */
 

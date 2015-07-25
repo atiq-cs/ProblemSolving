@@ -1,6 +1,9 @@
 ### Problem Solving Repo Structure
 #### Basics
-Contains some basic idea
+Contains some basic idea and implementation.
+For example,
+ * swap and overflow limit tests
+ * some algorithms
 
 #### Algorithms
 Related with implementation of algorithms. Primary reference coreman, 3rd edition
@@ -15,14 +18,14 @@ There are comparative large number of binary tree problems and their application
 C++ templates for problem solving online
 
 #### general-solving
-leet-code, www.geeksforgeeks.org etc
+leet-code, hackerrank, www.geeksforgeeks.org, lintcode etc
 
 #### online-problem-solving
-uva online judge, acm tju, topcoder etc
+uva online judge, acm tju, spoj, topcoder etc
 
 ##### Note
-Please do not abuse the code in online-judge.
-Code is provided in this repository only for education purpose and sharing of ideas that will help to improve our skills and algorithm knowledge.
+Please do not abuse the code.
+The Code provided in this repository is only for educational purpose. Sharing of ideas will help us improve our skills and algorithmic knowledge.
 
 #### Instructions for committers/contributors
 Please do git pull before you commit. Thanks. :)
