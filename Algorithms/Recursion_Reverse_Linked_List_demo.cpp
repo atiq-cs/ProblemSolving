@@ -88,8 +88,10 @@ void myLinkedList::Create() {
 void myLinkedList::Reverse() {
 	void RecReverse(LL* head);
 	RecReverse(head);
-	head->itemNext = NULL;
-	head = gHead;
+    if (head) {
+        head->itemNext = NULL;
+        head = gHead;
+    }
 	gHead = NULL;
 }
 
