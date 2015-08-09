@@ -2,6 +2,7 @@
 *	Problem Name:	Invert children of Binary Tree
 *	Problem URL :	https://leetcode.com/problems/invert-binary-tree/
                     http://www.lintcode.com/en/problem/invert-binary-tree/
+                    https://www.hackerrank.com/challenges/swap-nodes-algo
 *	Date        :	July 22, 2015
 *
 *	Algo, DS    :	Binary Tree, Recursion

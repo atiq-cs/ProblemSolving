@@ -2,34 +2,17 @@
 	Problem: http://www.lintcode.com/en/problem/maximum-depth-of-binary-tree/
 	Description:
 			Recursive solution.
-
+            This is no good. For better concise solution look at: 
 			Complexity: theta(n), I have to verify using master theorem cases
 
     Status  :   Accepted
 */
 
-/*
-* Definition of TreeNode:
-* class TreeNode {
-* public:
-*     int val;
-*     TreeNode *left, *right;
-*     TreeNode(int val) {
-*         this->val = val;
-*         this->left = this->right = NULL;
-*     }
-* }
-*/
 #include <algorithm>
 
 class Solution {
 public:
-    /**
-    * @param root: The root of binary tree.
-    * @return: An integer
-    */
     int maxDepth(TreeNode *root) {
-        // write your code here
         // if it is a NULL pointer
         if (root == NULL)
             return 0;
