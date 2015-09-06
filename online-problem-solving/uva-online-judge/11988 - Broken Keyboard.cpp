@@ -1,14 +1,14 @@
 /*
     Problem Link :  https://uva.onlinejudge.org/external/119/p11988.pdf
     Problem Name :  Broken Keyboard (a.k.a. Beiju Text)
-    Algorithm    :  Linked List
+    Algorithm    :  Linked List, List, Dequeue
     Notes        :  I was thinking with C++ IO being slow I won't be able to get this problem accepted
                     In the end, with improved approach had been able to get it accepted
 
                     I thought of implementing own list. Then I changed mind as the list is already implemented
                     in C++ STL
 
-    Complexity   :  O(n)
+    Complexity   :  O(n) (0.343s)
     Status       :  Accepted
 */
 
@@ -82,7 +82,6 @@ std::string translate_string(std::string str) {
     segment = str.substr(previous_found_position + 1, current_found_position - previous_found_position - 1);
     if (previous_button == HOME)
         str_list.push_front(segment);
-
     else
         str_list.push_back(segment);
 

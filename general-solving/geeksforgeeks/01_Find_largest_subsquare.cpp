@@ -7,6 +7,8 @@
 
 *    Author     :   Atiqur Rahman
 *    Notes      :   Naive Solution
+*                   This source includes a cpp template modification example
+*                   To handle IO error for non-existent files
 *******************************************************/
 #include <iostream>
 #include <fstream>
