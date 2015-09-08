@@ -1,6 +1,6 @@
 /***************************************************************************
-*   Problem Name:   Search for a item in a sorted array
-*   Problem URL :   https://www.hackerrank.com/challenges/fibonacci-modified
+*   Problem Name:   Intro to Tutorial Challenges
+*   Problem URL :   https://www.hackerrank.com/challenges/tutorial-intro
 *   Domain      :   algorithms/Sorting
 *                   https://www.hackerrank.com/domains/algorithms/arrays-and-sorting
 *   Desc        :   Binary Search Demo C#
@@ -9,6 +9,7 @@
 *   Complexity  :   O(log n)
 *   Author      :   Atiq Rahman
 *   Status      :   Accepted
+*   Notes       :   Practicing C#
 ***************************************************************************/
 
 using System;

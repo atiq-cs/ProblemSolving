@@ -28,7 +28,6 @@ class Solution {
     }
     static bool isFunny(string str)
     {
-        // get reverse of the string
         char[] first = str.ToCharArray();
         // get reverse of the string
         char[] second = str.ToCharArray(); Array.Reverse(second);

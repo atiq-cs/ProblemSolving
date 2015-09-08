@@ -4,16 +4,14 @@
 *   Date        :   
 *
 *   Domain      :   Upwork coding contest
-*                  
 *   Desc        :   Max threats for n queens problem
 *                   First implementation is DP, however this is not a good DP Problem
 *
 *   Complexity  :   
 *   Author      :   Atiq Rahman
-*   Status      :   Terminated due to timeout (Test case and 3 and 6)
-*   Notes       :   Simple approach
- *                   Gives good solution here..
- ***************************************************************************/
+*   Status      :   Accepted
+*   Notes       :   Simple approach that worked
+****************************************************************************/
 
 int maxThreats(vector<int> a) {
 	int n = a.size();
