@@ -4,6 +4,7 @@ To implement searching based on tags we added meta to each of the source file. D
 Additionally, here are the currently supported tags
  * [Linked List](https://github.com/atiq-cs/Problem-Solving/search?utf8=%E2%9C%93&q=tag-linked-list)
  * [Recursion](https://github.com/atiq-cs/Problem-Solving/search?utf8=%E2%9C%93&q=tag-recursion)
+ * [String](https://github.com/atiq-cs/Problem-Solving/search?utf8=%E2%9C%93&q=tag-string)
 
 ### Problem Solving Repository Structure
 #### Basics
