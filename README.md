@@ -1,11 +1,20 @@
 ### Searching on the Repository
 To implement searching based on tags we added meta to each of the source file. During search have to append `tag-` as prefix of the tag string. For example to search on problems on linked-list: you navigate to [this repo url](https://github.com/atiq-cs/Problem-Solving/) and enter following on search box: `tag-linked-list`
 
-Additionally, here are the currently supported tags
+Additionally, here are the currently supported tags on algo/data structure based domains,
+ * [Binary Search](https://github.com/atiq-cs/Problem-Solving/search?utf8=%E2%9C%93&q=tag-binary-search)
+ * [Dynamic Programming](https://github.com/atiq-cs/Problem-Solving/search?utf8=%E2%9C%93&q=tag-dynamic-programming)
  * [Linked List](https://github.com/atiq-cs/Problem-Solving/search?utf8=%E2%9C%93&q=tag-linked-list)
  * [Recursion](https://github.com/atiq-cs/Problem-Solving/search?utf8=%E2%9C%93&q=tag-recursion)
  * [String](https://github.com/atiq-cs/Problem-Solving/search?utf8=%E2%9C%93&q=tag-string)
 
+Company based domains,
+ * [Google](https://github.com/atiq-cs/Problem-Solving/search?utf8=%E2%9C%93&q=tag-google)
+ 
+Miscellaneous tags
+ * [Interviews, any company](https://github.com/atiq-cs/Problem-Solving/search?utf8=%E2%9C%93&q=tag-interviews)
+ * [Easy problems, can't classify](https://github.com/atiq-cs/Problem-Solving/search?utf8=%E2%9C%93&q=tag-easy)
+ 
 ### Problem Solving Repository Structure
 #### Basics
 Contains some basic idea and implementation.
