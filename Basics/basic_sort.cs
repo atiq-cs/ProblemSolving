@@ -2,12 +2,15 @@
 * Problem Title: Basic Sorting Algorithms
 * Author       : Atiqur Rahman
 * Email        : mdarahman@cs.stonybrook.edu
-* Date         : May 24, 2015
+* Date         : Sept 23, 2015
 * Desc         : Sorting Algorithms covered,
 *                 Selection sort
 *                 Bubble sort
 *                 Insertion sort
 */
+
+using System;
+using System.Collections.Generic;
 
 class SortingAlgorithms
 {
@@ -24,7 +27,9 @@ class SortingAlgorithms
             for (int i = j + 1; i < A.Count; i++)
                 if (A[iMin] > A[i])
                     iMin = i;
-            if (iMin != j) { int temp = A[iMin]; A[iMin] = A[j]; A[j] = temp; } //swap
+            if (iMin != j) { //swap
+                int temp = A[iMin]; A[iMin] = A[j]; A[j] = temp;
+            }
         }
     }
 
@@ -42,11 +47,8 @@ class SortingAlgorithms
         {
             isSwapped = false;
             for (int i = 1; i < n; i++)
-                if (A[i - 1] > A[i])
-                { // swap
-                    int temp = A[i];
-                    A[i] = A[i - 1];
-                    A[i - 1] = temp;
+                if (A[i - 1] > A[i]) {
+                    int temp = A[i]; A[i] = A[i - 1]; A[i - 1] = temp;  // swap
                     isSwapped = true;
                 }
             n--;
@@ -66,7 +68,7 @@ class SortingAlgorithms
     * Complexity        : Worst case and average case - O (n^2)
     *                      Best case Ω(n)
     */
-    void InsertionSort(List<int> A)
+    void InsertionSort_v0(List<int> A)
     {
         for (int i = 1; i < A.Count; i++)
         {
@@ -76,6 +78,22 @@ class SortingAlgorithms
                 int temp = A[j - 1]; A[j - 1] = A[j]; A[j] = temp;
                 j--;
             }
+        }
+    }
+    // slightly improved version: instead of swaps move
+    void InsertionSort(List<int> A)
+    {
+        for (int i = 1; i < A.Count; i++)
+        {
+            // save i-th item because this will be replaced
+            int x = A[i];
+            int j = i;
+            while (j > 0 && A[j - 1] > x)
+            {
+                A[j] = A[j - 1];
+                j--;
+            }
+            A[j] = x;
         }
     }
 }
