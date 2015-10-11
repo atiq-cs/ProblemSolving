@@ -1,4 +1,11 @@
-### Problem Solving Repo Structure
+### Searching on the Repository
+To implement searching based on tags we added meta to each of the source file. During search have to append `tag-` as prefix of the tag string. For example to search on problems on linked-list: you navigate to [this repo url](https://github.com/atiq-cs/Problem-Solving/) and enter following on search box: `tag-linked-list`
+
+Additionally, here are the currently supported tags
+ * [Linked List](https://github.com/atiq-cs/Problem-Solving/search?utf8=%E2%9C%93&q=tag-linked-list)
+ * [Recursion](https://github.com/atiq-cs/Problem-Solving/search?utf8=%E2%9C%93&q=tag-recursion)
+
+### Problem Solving Repository Structure
 #### Basics
 Contains some basic idea and implementation.
 For example,

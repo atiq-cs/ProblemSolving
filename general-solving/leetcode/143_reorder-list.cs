@@ -37,7 +37,7 @@ public class Solution {
 }
 
 /*
-  After line 29, recursive calls return flow:
+  After line 26, recursive calls return flow:
   will return in following order
    nth node
    (n-1)-th node
@@ -85,7 +85,7 @@ public class Solution {
      cur = 1
      1->4->2->3->4...
 
-    ** comment on line 34
+    ** comment on line 31
         How can we know we reached the last node?
         First time we insert the last node in between the first two
         for example, consider input 1->2->3->4
@@ -103,11 +103,11 @@ public class Solution {
            
         We do not need to know whether there are even number of items or odd whether we reached the middle.
         For example this is unnecessary,
-        if (ReorderComplete || currentNode == null)
+         if (ReorderComplete || currentNode == null)
             return ;
-        if (currentNode == head) {
-                ReorderComplete = true;
-                head.next = null;   // important
-                return ;
-        }
+         if (currentNode == head) {
+            ReorderComplete = true;
+            head.next = null;   // important
+            return ;
+         }
 */
