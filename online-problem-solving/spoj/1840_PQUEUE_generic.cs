@@ -6,9 +6,13 @@
 *   Author      :   Atiq Rahman
 *   Status      :   Time Limit Exceeded on spoj
 *   Notes       :   Attempted Generic implementation, works locally, has to test for large inputs
-*   meta        :   tag-priority-queue
-***************************************************************************/
+    Lesson: If we don't set a field/member using set the property does not return the value
+        using get
 
+    ref: PropertyInfo.GetValue https://msdn.microsoft.com/en-us/library/b05d59ty(v=vs.110).aspx
+    PropertyInfo.GetValue https://msdn.microsoft.com/en-us/library/hh194385(v=vs.110).aspx
+* meta        :   tag-priority-queue
+***************************************************************************/
 using System;
 using System.Collections.Generic;
 

@@ -6,6 +6,7 @@ Additionally, here are the currently supported tags on algo/data structure based
  * [Dynamic Programming](https://github.com/atiq-cs/Problem-Solving/search?utf8=%E2%9C%93&q=tag-dynamic-programming)
  * [Linked List](https://github.com/atiq-cs/Problem-Solving/search?utf8=%E2%9C%93&q=tag-linked-list)
  * [Priority Queue](https://github.com/atiq-cs/Problem-Solving/search?utf8=%E2%9C%93&q=tag-priority-queue)
+ * [Sorting](https://github.com/atiq-cs/Problem-Solving/search?utf8=%E2%9C%93&q=tag-sorting)
  * [Recursion](https://github.com/atiq-cs/Problem-Solving/search?utf8=%E2%9C%93&q=tag-recursion)
 
  * [String](https://github.com/atiq-cs/Problem-Solving/search?utf8=%E2%9C%93&q=tag-string)
