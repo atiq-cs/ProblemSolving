@@ -9,12 +9,11 @@
 *   Complexity  :   O(n) where n is the length of the string
 *   Author      :   Atiq Rahman
 *   Status      :   Accepted (Time: 0.452), Memory (9992 KB)
+*   meta        :   tag-sorting
 ***************************************************************************/
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 // access to structure might be faster in variable like access
 // ref, http://stackoverflow.com/questions/7484735/c-struct-vs-class-faster

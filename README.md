@@ -5,7 +5,9 @@ Additionally, here are the currently supported tags on algo/data structure based
  * [Binary Search](https://github.com/atiq-cs/Problem-Solving/search?utf8=%E2%9C%93&q=tag-binary-search)
  * [Dynamic Programming](https://github.com/atiq-cs/Problem-Solving/search?utf8=%E2%9C%93&q=tag-dynamic-programming)
  * [Linked List](https://github.com/atiq-cs/Problem-Solving/search?utf8=%E2%9C%93&q=tag-linked-list)
+ * [Priority Queue](https://github.com/atiq-cs/Problem-Solving/search?utf8=%E2%9C%93&q=tag-priority-queue)
  * [Recursion](https://github.com/atiq-cs/Problem-Solving/search?utf8=%E2%9C%93&q=tag-recursion)
+
  * [String](https://github.com/atiq-cs/Problem-Solving/search?utf8=%E2%9C%93&q=tag-string)
 
 Company based domains,

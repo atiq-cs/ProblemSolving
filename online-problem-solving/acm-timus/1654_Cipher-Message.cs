@@ -9,6 +9,7 @@
 *   Complexity  :   O(n) where n is the length of the string
 *   Author      :   Atiq Rahman
 *   Status      :   Accepted (Time: 0.078), Memory (7692KB)
+*   meta        :   tag-stack
 ***************************************************************************/
 
 using System;
