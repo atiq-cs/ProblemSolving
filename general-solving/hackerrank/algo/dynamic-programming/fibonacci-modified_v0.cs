@@ -12,10 +12,10 @@
 *   Author      :   Atiq Rahman
 *   Status      :   Terminated due to timeout (Test case and 3 and 6)
 *   Notes       :   Same logic gets accepted using Java. However, C# is getting
- *                   Timeout. Judge is most probably using an older implementation of C#
- *                   compiler. No need to waste further time for judge's bad configuration.
- *                   Discussion link: https://www.hackerrank.com/challenges/fibonacci-modified/forum
- *                   Trick to get AC using C#: http://pastebin.com/F1MDkU2J
+*                    Timeout. Judge is most probably using an older implementation of C#
+*                    compiler. No need to waste further time for judge's bad configuration.
+*                    Discussion link: https://www.hackerrank.com/challenges/fibonacci-modified/forum
+*                    Trick to get AC using C#: http://pastebin.com/F1MDkU2J
 ***************************************************************************/
 
 using System;

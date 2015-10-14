@@ -1,34 +1,37 @@
 /*
-*    Ttitle     : Fibonacci Modified
-*    Problem#   : https://www.hackerrank.com/challenges/fibonacci-modified
-*    Domain     :  Algorithms/Dynamic Programming
-*    Type       :    
-*    Alogirthm  : BigInteger, Simple DP
-*    Complexity : O(n)
-*    Author     : Atiqur Rahman
-*    Status     : Accepted
-*                  Testcase 3: 0.75s
-*                  Testcase 6: 0.89s
+* Ttitle     : Fibonacci Modified
+* Problem#   : https://www.hackerrank.com/challenges/fibonacci-modified
+* Domain     : Algorithms/Dynamic Programming
+* Type       :    
+* Alogirthm  : BigInteger, Simple DP
+* Complexity : O(n)
+* Author     : Atiqur Rahman
+* Status     : Accepted
+*               Testcase 3: 0.75s
+*               Testcase 6: 0.89s
 *
-*    Notes      : Because BigInteger to String is too slow got TLE using regular approach
-                    based on the approach here, ref: http://pastebin.com/F1MDkU2J
-                    I created a function to improve the IO overhead situation
-                    Used ArrayList instead of List to improve it further
-                    However, that improved run time only a little
+* Notes      : Because BigInteger to String is too slow got TLE using regular approach
+                based on the approach here, ref: http://pastebin.com/F1MDkU2J
+                I created a function to improve the IO overhead situation
+                Used ArrayList instead of List to improve it further
+                However, that improved run time only a little
 
-                    This is the best I did with C# in hackerrank by setting a split limit to 1024
+                This is the best I did with C# in hackerrank by setting a split limit to 1024
 
-                    Wit a split limit of 1000 using List and StringBuilder the solution has following time,
-                    - Testcase 3: 0.94s
-                    - Testcase 6: 0.75s
+                Wit a split limit of 1000 using List and StringBuilder the solution has following time,
+                - Testcase 3: 0.94s
+                - Testcase 6: 0.75s
 
-                   Same approach with split of 100 gives us
-                    - Testcase 3: 1.1s
-                    - Testcase 6: 1.32s
+                Same approach with split of 100 gives us
+                - Testcase 3: 1.1s
+                - Testcase 6: 1.32s
 
-                   If we use direct code of ref, it gives
-                    - Testcase 3: 1.1s
-                    - Testcase 6: 1.31s
+                If we use direct code of ref, it gives
+                - Testcase 3: 1.1s
+                - Testcase 6: 1.31s
+
+               First solution of this problem: fibonacci-modified_v0.cs [timed out]
+* meta       : tag-big-integer, tag-dynamic-programming   
 */
 
 using System;

@@ -1,15 +1,15 @@
 /***************************************************************************
-*   Problem Name:   Cipher Message
-*   Problem URL :   http://acm.timus.ru/problem.aspx?space=1&num=1654
-*   Date        :   Sept 07, 2015
+* Problem Name:   Cipher Message
+* Problem URL :   http://acm.timus.ru/problem.aspx?space=1&num=1654
+* Date        :   Sept 07, 2015
 *
-*   Algo, DS    :   Stack
-*   Desc        :   Arithmetic
+* Algo, DS    :   Stack
+* Desc        :   Arithmetic
 *
-*   Complexity  :   O(n) where n is the length of the string
-*   Author      :   Atiq Rahman
-*   Status      :   Accepted (Time: 0.078), Memory (7692KB)
-*   meta        :   tag-stack
+* Complexity  :   O(n) where n is the length of the string
+* Author      :   Atiq Rahman
+* Status      :   Accepted (Time: 0.078), Memory (7692KB)
+* meta        :   tag-stack
 ***************************************************************************/
 
 using System;

@@ -1,11 +1,12 @@
 ﻿/***************************************************************************
-*   Problem Name:   Sum
+*   Problem Name:   Reverse Root
 *   Problem URL :   http://acm.timus.ru/problem.aspx?space=1&num=1001
 *   Date        :   Oct 9, 2015
 *
 *   Desc        :   Arithmetic
 *
-*   Complexity  :   O(1)
+*   Complexity  :   for sqrt: 14 ticks for 32 bit; 21 ticks for 64 bit; 24 ticks for 80 bit
+             ref: http://stackoverflow.com/questions/6884359/c-practical-computational-complexity-of-cmath-sqrt
 *   Author      :   Atiq Rahman
 *   Status      :   Accepted (Time: 0.046)
 *   Notes       :   Demonstrates how to read till EOF from input using StreamReader
