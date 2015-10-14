@@ -1,10 +1,11 @@
 /*
-* Ttitle     : Fibonacci Modified
-* Problem#   : https://www.hackerrank.com/challenges/fibonacci-modified
+* Title      : Fibonacci Modified
+* URL        : https://www.hackerrank.com/challenges/fibonacci-modified
 * Domain     : Algorithms/Dynamic Programming
 * Type       :    
 * Alogirthm  : BigInteger, Simple DP
-* Complexity : O(n)
+* Complexity : O(n), for O(logn) look at,
+  http://stackoverflow.com/questions/15093566/is-there-a-better-way-performance-calculate-fibonacci-than-this-one
 * Author     : Atiqur Rahman
 * Status     : Accepted
 *               Testcase 3: 0.75s
@@ -108,27 +109,24 @@ class Solution
      Running time
       - Testcase 3: 3.43s
       - Testcase 6: 2.83s
-
 */
 static void DisplayBigInteger(BigInteger n)
 {
- var ans = new List<BigInteger>();
- var p10 = BigInteger.Pow(10, 100);
+    var ans = new List<BigInteger>();
+    var p10 = BigInteger.Pow(10, 100);
 
- while (n != 0)
- {
-     ans.Add(n % p10);
-     n /= p10;
- }
- Console.Write(ans[ans.Count - 1]);
- var fmt = new string('0', 100);
+    while (n != 0) {
+        ans.Add(n % p10);
+        n /= p10;
+    }
+    Console.Write(ans[ans.Count - 1]);
+    var fmt = new string('0', 100);
 
- for (var i = ans.Count - 2; i >= 0; i--)
- {
-     var str = ans[i].ToString();
-     Console.Write("{0}{1}", fmt.Substring(0, 100 - str.Length), str);
- }
- Console.WriteLine();
+    for (var i = ans.Count - 2; i >= 0; i--) {
+        var str = ans[i].ToString();
+        Console.Write("{0}{1}", fmt.Substring(0, 100 - str.Length), str);
+    }
+    Console.WriteLine();
 }
  /*
      This is the second version of the function where I tried to speed up using primitive type
@@ -157,11 +155,9 @@ static StringBuilder GetBigIntegerString(BigInteger n)
 
         n /= p10;
     }
-
     sb.Append(str);
     for (var i = ans.Count - 2; i >= 0; i--)
-    {
         sb.Append(ans[i]);
-    }
+
     return sb;
 }

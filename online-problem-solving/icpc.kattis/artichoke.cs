@@ -1,0 +1,43 @@
+﻿/***************************************************************************
+*  Problem Name: Amalgamated Artichokes
+*  Problem URL : https://icpc.kattis.com/problems/artichoke
+*  source      : 2015 ACM-ICPC World Finals - Marrakech
+*  Date        : Oct 13, 2015
+*
+*  Complexity  : O(n)
+*  Author      : Atiq Rahman
+*  Status      : Accepted
+*  Notes       : Judge is cool! Didn't require any fixed point formatting
+*  meta        : tag-easy, tag-world-final
+***************************************************************************/
+
+using System;
+
+public class Solution
+{
+    private static void Main()
+    {
+        // Take input: 6 int
+        string[] tokens = Console.ReadLine().Split();
+        double p = double.Parse(tokens[0]);
+        double a = double.Parse(tokens[1]);
+        double b = double.Parse(tokens[2]);
+        double c = double.Parse(tokens[3]);
+        double d = double.Parse(tokens[4]);
+        int n = int.Parse(tokens[5]);
+
+        double previousPrice = p * (Math.Sin(a * 1 + b) + Math.Cos(c * 1 + d) + 2.0);
+        double maxPrice = previousPrice;
+        double maxDiff = 0.0;
+        // get price for each value of k and take maximum diff
+        for (int k = 2; k <= n; k++)
+        {
+            double price = p * (Math.Sin(a * k + b) + Math.Cos(c * k + d) + 2.0);
+            maxPrice = Math.Max(maxPrice, previousPrice);   // max is the max till current item
+            double curDiff = maxPrice - price;              // get diff with max
+            maxDiff = Math.Max(maxDiff, curDiff);
+            previousPrice = price;
+        }
+        Console.WriteLine(maxDiff);
+    }
+}
