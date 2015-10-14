@@ -13,8 +13,8 @@
 *					Using initializer list
 *					Judge is gcc 4.5.2, old, does not support C++11 all features
 *	Status		:	Accepted
+*   meta        :   tag-recursion
 */
-
 
 #include <cstring>
 #include <sstream>

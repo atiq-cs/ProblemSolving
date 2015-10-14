@@ -1,33 +1,31 @@
 /*
-*    Problem Title:    Travelling cost
-*    Problem Link:    http://www.spoj.com/problems/TRVCOST/
-*    Problem Type:    Graph problem, single source shortest path, destination is specified
-*    Alogirthm    :
-*    Author        :    Atiqur Rahman
-*    Email        :    mdarahman@cs.stonybrook.edu
-*    Date        :    May 31, 2015
-*    Desc        :
-*                    Dijkstra ref: Introduction to Algorithms, page 658,
-by Thomas H. Cormen and Charles E. Leiserson and Ronald L. Rivest and Clifford Stein
-Simple dijkstra problem, hoping no special case
-
-*                    Decision: we choose a 2d matrix to maintain cost instead of using a map
-*                        This makes memory requirement of our implementation O(V^2)
-*                        A useful alternative is to use map to store the cost using the edge as key
-*                       However, note that access time of items in a map is log(N)
-*                        ref: http://stackoverflow.com/questions/16068151/c-stl-map-is-access-time-o1
-*                        We would only use map when memory is a serious issue and mapping for non-sequential items
+* Problem   :    Travelling cost
+* URL       :    http://www.spoj.com/problems/TRVCOST/
+* Alogirthm :    Graph problem, single source shortest path, destination is specified
+* Author    :    Atiqur Rahman
+* Email     :    mdarahman@cs.stonybrook.edu
+* Date      :    May 31, 2015
+* Desc      :
+*                Dijkstra ref: Introduction to Algorithms, page 658,
+                  by Thomas H. Cormen and Charles E. Leiserson and Ronald L. Rivest and Clifford Stein
+                  Simple dijkstra problem, hoping no special case
+*                Decision: we choose a 2d matrix to maintain cost instead of using a map
+*                    This makes memory requirement of our implementation O(V^2)
+*                     A useful alternative is to use map to store the cost using the edge as key
+*                    However, note that access time of items in a map is log(N)
+*                     ref: http://stackoverflow.com/questions/16068151/c-stl-map-is-access-time-o1
+*                     We would only use map when memory is a serious issue and mapping for non-sequential items
 * Judge Notes
-*    uva-judge    :    g++ 4.8.2, C++11 - GNU C++ Compiler with options: -lm -lcrypt -O2 -std=c++11 -pipe -DONLINE_JUDGE
-*                    main function should return 0, include cstring for memset
-*     tju-judge    :    gcc 4.5.2, old, does not support C++11 all features
-*    spoj        :    g++ 4.9.2, C++ 14
-*    Status        :    Accepted [memory used: 3.2M, time: 0.0]
+*  uva-judge :    g++ 4.8.2, C++11 - GNU C++ Compiler with options: -lm -lcrypt -O2 -std=c++11 -pipe -DONLINE_JUDGE
+*                 main function should return 0, include cstring for memset
+*  tju-judge :  gcc 4.5.2, old, does not support C++11 all features
+*  spoj      :  g++ 4.9.2, C++ 14
+* Status    :  Accepted [memory used: 3.2M, time: 0.0]
+* meta      :  tag-graph-theory, tag-dijkstra, tag-sssp
 */
 
 #include <cstring>    // for memset
 #include <sstream>
-//#include <cmath>
 #include <vector>
 #include <iostream>
 #include <algorithm>

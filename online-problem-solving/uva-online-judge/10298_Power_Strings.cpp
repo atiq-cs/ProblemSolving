@@ -7,6 +7,7 @@
 
     Complexity   :  O(n)
     Status       :  Accepted
+    meta         :  tag-string-matching, tag-kmp
 */
 
 #include <iostream>

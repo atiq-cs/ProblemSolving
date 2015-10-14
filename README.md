@@ -8,7 +8,6 @@ Additionally, here are the currently supported tags on algo/data structure based
  * [Priority Queue](https://github.com/atiq-cs/Problem-Solving/search?utf8=%E2%9C%93&q=tag-priority-queue)
  * [Sorting](https://github.com/atiq-cs/Problem-Solving/search?utf8=%E2%9C%93&q=tag-sorting)
  * [Recursion](https://github.com/atiq-cs/Problem-Solving/search?utf8=%E2%9C%93&q=tag-recursion)
-
  * [String](https://github.com/atiq-cs/Problem-Solving/search?utf8=%E2%9C%93&q=tag-string)
 
 Company based domains,
@@ -23,7 +22,7 @@ Miscellaneous tags
 Contains some basic idea and implementation.
 For example,
  * swap and overflow limit tests
- * some algorithms
+ * Sorting algorithms
 
 #### Algorithms
 Related with implementation of algorithms. Primary reference coreman, 3rd edition
@@ -41,12 +40,17 @@ C++ templates for problem solving online
 leet-code, hackerrank, www.geeksforgeeks.org, lintcode etc
 
 #### online-problem-solving
-uva online judge, acm tju, spoj, topcoder etc
+Following onlline judges are being covered
+ * [Timus Online Judge](http://acm.timus.ru/problemset.aspx)
+ * [Saratov State University](http://acm.sgu.ru/problemset.php?show_volumes)
+ * [Sphere Online Judge](http://www.spoj.com/problems/)
+ * [UVa Online Judge](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8)
+ * [Tianjin Univ Online Judge System](http://acm.tju.edu.cn/toj/problem.html)
+ * [topcoder] (http://community.topcoder.com/tc?module=ProblemArchive)
 
 ##### Note
 Please do not abuse the code.
-The Code provided in this repository is only for educational purpose. Sharing of ideas will help us improve our skills and algorithmic knowledge.
+The Code provided in this repository is for educational purpose. Sharing of ideas will help improve our skills and algorithmic knowledge.
 
 #### Instructions for committers/contributors
 Please do git pull before you commit. Thanks. :)
-

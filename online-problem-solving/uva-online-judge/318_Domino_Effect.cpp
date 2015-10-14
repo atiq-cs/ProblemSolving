@@ -17,6 +17,7 @@
 *	Status		:	Accepted
 *	Acknowledgement	:	Thanks for direction on a special case, Yonghui Wu (http://www.cs.fudan.edu.cn/en/?page_id=2269)
 *	Related Problem:	online-problem-solving\spoj\SPOJ_TRVCOST.cpp
+*   meta        :   tag-dijkstra, tag-sssp
 */
 
 #include <cstring>	// for memset
