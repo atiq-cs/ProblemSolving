@@ -1,9 +1,9 @@
 /*
  * Title    : Fibonacci Freeze
  * URL      : http://uva.onlinejudge.org/external/5/495.html
- * Author	: Atiqur Rahman
- * Desc		:
- * Status	: Accepted (time 0.029)
+ * Author   : Atiqur Rahman
+ * Desc     :
+ * Status   : Accepted (time 0.029)
  * Acknowl. : Md Abdul Kader(http://dal.cs.utep.edu/members/mkader/) for BigInteger Class
  * meta     : tag-dynamic-programming, tag-big-integer
  */
@@ -72,8 +72,8 @@ public:
         for (i = 0; i<len1 || i<len2 || car; i++) {
 
             data1 = data2 = 0;
-            if (i<len1)	data1 = op1[i] - 48;
-            if (i<len2)	data2 = op2[i] - 48;
+            if (i<len1)    data1 = op1[i] - 48;
+            if (i<len2)    data2 = op2[i] - 48;
 
             sum = data1 + data2 + car;
             res[i] = sum % 10 + 48;
@@ -87,8 +87,8 @@ public:
         for (i = 0; i<len1 || i<len2 || car; i++) {
 
             data1 = data2 = 0;
-            if (i<len1)	data1 = op1[i] - 48;
-            if (i<len2)	data2 = op2[i] - 48;
+            if (i<len1)    data1 = op1[i] - 48;
+            if (i<len2)    data2 = op2[i] - 48;
 
             sum = data1 - data2 - car;
             if (sum<0) {
