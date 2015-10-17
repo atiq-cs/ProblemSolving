@@ -1,12 +1,12 @@
 /*
-*	Title       : Fibonacci Freeze
-*	URL         : http://uva.onlinejudge.org/external/5/495.html
-*	Author		: Atiqur Rahman
-*	Desc		:
-*	Status		: Accepted
-*	Acknowl.    : Md Abdul Kader(http://dal.cs.utep.edu/members/mkader/) for BigInteger Class
-*   meta        : tag-dynamic-programming, tag-big-integer
-*/
+ * Title    : Fibonacci Freeze
+ * URL      : http://uva.onlinejudge.org/external/5/495.html
+ * Author	: Atiqur Rahman
+ * Desc		:
+ * Status	: Accepted (time 0.029)
+ * Acknowl. : Md Abdul Kader(http://dal.cs.utep.edu/members/mkader/) for BigInteger Class
+ * meta     : tag-dynamic-programming, tag-big-integer
+ */
 
 #include <cstdio>
 #include <cstring>
