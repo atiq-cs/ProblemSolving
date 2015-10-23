@@ -107,7 +107,8 @@ int main() {
 
     aaa = 26 * 26 * a + 26 * b + 1 * c  should had been mapped to 26 * 26 * 1 + 26 * 1 + 1 = 703
 
-    aaaa = 26 * 26 * 26 * a + 26 * 26 * b + 26 * c + 1 * d
+    aaaa = 26 * 26 * 26 * a + 26 * 26 * b + 26 * c + 1 * d = 18278
+    18277 = zzz
 
     702 = 26 * 26 * 1 + 26 * 1 +
 
@@ -125,3 +126,68 @@ int main() {
     May be there is a pattern that could be used to solve this as well..
      but that is a to do for later time
 */
+
+/* CS Solution
+
+    52 = ba
+    52/26 = 2, mod = 0, a
+    2/26 = 0, mod = 2, b
+
+    za =
+    // for all others a = 1, b = 2 etc.. only for first char a =0, b= 1
+    this approach is working till we reach 676
+    yz = 675
+
+    676/26 = 27, mod = 0, a
+    26/26 = 1, mod = 0, a problem is when n == 27
+    1, mod = 1, a
+
+    18277
+    18277/26=702, mod=25, z
+    702/26=27, mod = 0,
+
+    failing for 18276, pretty close...
+*/
+
+public class Solution {
+    StringBuilder result;
+    int m;
+    public string ConvertToTitle(int n) {
+        result = new StringBuilder();
+        m = n;
+        int len = getZNum(n);
+        if (len == 0)
+            ConvertRec(n);
+        else
+            for (int i = 0; i<len; i++)
+                result.Append('z');
+        return result.ToString();
+    }
+
+    int getZNum(int n) {
+        int len = 1;
+        int temp = 25;
+        if (temp == n)
+            return 1;
+        int p = 26;
+        while (temp < int.MaxValue && temp>0) {
+            p *= 26;
+            temp += p;
+            len++;
+            if (temp == n)
+                return len;
+        }
+        return 0;
+    }
+
+    void ConvertRec(int n) {
+        if (n == 0)
+            return;
+
+        ConvertRec(n / 26);
+        if (m == n)
+            result.Append((char)(n % 26 + 'a'));
+        else
+            result.Append((char)(n % 26 + 'a' - 1));
+    }
+}

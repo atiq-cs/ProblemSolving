@@ -19,3 +19,20 @@ public class Solution
         return sum;
     }
 }
+
+/*
+    Drafts,
+    We know,
+    Z = 26
+    AA = 1 + 26
+    BA = 1 + 2 * 26
+    CA = 1 + 3 * 26
+    ZA = 1 + 26 * 26
+
+    base is 26
+    first number is 1
+
+    we can generalize that the number is,
+    n = L0 + L1 * 26 + L2 * 26 * 26 + ....
+
+*/

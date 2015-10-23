@@ -48,4 +48,42 @@ public class Solution {
 *  First n%26 - is the last 
 * Line 27 - ensures that if n is multiple of 26 then
 *  Z should be appended
+* 26 - Z
+    27 - AA
+    677 - ZA
+
+    comparing with decimal
+    321
+
+    677
+    adds A
+     next call with n = 26
+      Adds 
+  
+       calls with 1
+        adds A
+    
+    if 1 is given get A
+    n%26+'A'-1
+    if 26
+    (n-1)%26
+    when n = 26 we 
+
+    we can say that the number is,
+    n = L0 + L1 * 26 + L2 * 26 * 26 + ....
+
+    by getting remainder by dividing by 26 we get the last digit,
+    if we get 0 that means Z
+
+    testcase
+    18279
+    475254
+    11535647
+    18250
+    677
+
+    AZ = 52 = 1*26 + 26
+    52 % 26 = 0
+    that means a Z
+    then n = 2
 */

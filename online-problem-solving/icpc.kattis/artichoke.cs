@@ -41,3 +41,29 @@ public class Solution
         Console.WriteLine(maxDiff);
     }
 }
+
+/*
+    Drafts: consider example,
+    3 5 90 4 7
+
+    at 5
+     max = 3, min = 5
+     cur diff = -2, 3-5
+     max diff = -2
+ 
+    at 90
+     max = 5, min = 90
+     cur diff = -85, 5-90
+     max diff = -2
+ 
+    at 4
+     max = 90, min = 4
+     cur diff = 86, 90-4
+     max diff = 86
+ 
+    at 7
+     max = 90, min = 7
+     cur diff = 83, 90-7
+     max diff = 86
+ 
+*/

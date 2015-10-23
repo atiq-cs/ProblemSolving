@@ -108,6 +108,9 @@ public class Demo
     private static void Main()
     {
         Solution sol = new Solution();
+        // int[] nums = { 120, 12, 122, 10, 1, 4321, 432, 43, 99, 9, 998 };
+        // int[] nums = { 1, 2, 4, 8, 16, 32, 64, 128, 256, 512 };
+        // int[] nums = { 120, 12 };
         int[] nums = { 120, 12, 122, 10, 1, 4321, 432, 43, 99, 9, 998 };
         Console.WriteLine(sol.LargestNumber(nums));
     }
