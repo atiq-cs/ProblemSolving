@@ -7,6 +7,7 @@
 
     Complexity   :  O(n)
     Status       :  Accepted
+    meta         :  tag-next-permutation
 */
 
 #include<iostream>

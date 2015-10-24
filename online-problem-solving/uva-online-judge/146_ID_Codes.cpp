@@ -5,9 +5,10 @@
     Notes        :  An implementation of next-permutation
                     See demo: 
 
-    Complexity   :  O(n)
+    Complexity   :  O(n log n)
     Status       :  Accepted
-    tag          :  tag-permutation, tag-next-permutation
+    Desc         :  Complexity is n log n considering a sort used in the procedure
+    tag          :  tag-next-permutation
 */
 
 #include<iostream>

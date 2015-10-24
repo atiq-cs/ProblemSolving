@@ -6,7 +6,7 @@
 * Author      : Atiq Rahman
 * Status      : Accepted (beat 78% Time)
 * Notes       : 
-* meta        : tag-easy
+* meta        : tag-easy, tag-permutation
 ***************************************************************************/
 
 public class Solution

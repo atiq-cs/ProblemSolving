@@ -1,12 +1,12 @@
 /***************************************************************************
-* Problem Name: Permutation Sequence
-* Problem URL : https://leetcode.com/problems/permutation-sequence/submissions/
-* Date        : Sept 27 2015
+* Problem Name: Flatten Binary Tree to Linked List
+* Problem URL : https://leetcode.com/problems/flatten-binary-tree-to-linked-list/
+* Date        : Sept 26 2015
 * Complexity  : 
 * Author      : Atiq Rahman
-* Status      : Accepted (beat 78% Time)
+* Status      : Accepted (beat 98% Time)
 * Notes       : 
-* meta        : tag-easy
+* meta        : tag-binary-tree
 ***************************************************************************/
 public class Solution
 {
@@ -29,10 +29,3 @@ public class Solution
         FlattenRec(temp);
     }
 }
-
-
-/*
-    Idea: Basically pre-order traversal to get the linked list order. A global reference is used to retrieve preivious node whose next (right) pointer will be changed
-    However, while traversing left FlattenRec(root.left); it might change a right value that would 
-    be used by FlattenRec(root.right); this might cause an infinite loop
- */

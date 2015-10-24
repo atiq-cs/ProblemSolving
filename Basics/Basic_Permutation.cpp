@@ -1,12 +1,13 @@
 /*
-*	Problem Title:	 Basic Permutation
-*	Author		:	Atiqur Rahman
-*	Email		:	mdarahman@cs.stonybrook.edu
-*	Date		:	June 20, 2015
-*	Desc		:
-*					Permutation using recursion
-*					The idea has been tested to solve http://www.lintcode.com/en/problem/permutations/
+* Title : Basic Permutation
+* Author: Atiqur Rahman
+* Email : mdarahman@cs.stonybrook.edu
+* Date  : June 20, 2015
+* Desc  :
+*     Permutation using recursion *
+*     The idea has been tested to solve http://www.lintcode.com/en/problem/permutations/
 *                   Have to test it by solving more problems
+* meta  : tag-permutation
 */
 
 #include <iostream>
