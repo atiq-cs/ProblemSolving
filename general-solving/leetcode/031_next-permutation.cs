@@ -4,8 +4,9 @@
 * Date        : Oct 24 2015
 * Complexity  : O(n) Time
 * Author      : Atiq Rahman
-* Status      : Accepted (beat 77%)
+* Status      : Accepted (beat 93%)
 * Notes       : have to test the approach with UVA - 146
+*               Tested with spoj: online-problem-solving/spoj/12150_JNEXT.cs
 * meta        : tag-next-permutation
 ***************************************************************************/
 
@@ -23,9 +24,9 @@ public class Solution {
                 if (nums[i-1]<nums[j] && nums[k]>=nums[j])  //>= so we choose the last one
                     k = j;  // so that after swapping small number comes at the later index
             int temp = nums[k]; nums[k] = nums[i-1]; nums[i-1] = temp;
-        }   // afterwards, when we sort the order is maintained
+        }   // afterwards, when we reverse the string order is maintained
         for (int j=i, k=nums.Length-1; j<k;j++,k--)
-            if (nums[j]>nums[k]) {  // swap
+            /* if (nums[j]>nums[k]) */ {  // swap condition not required
                 int temp = nums[j]; nums[j] = nums[k]; nums[k] = temp;
             }
     }
@@ -33,7 +34,6 @@ public class Solution {
 
 /*  Mental sketch:
     5, 4, 3, 1, 2
-    5, 4, 3, 2, 1
     5 4 3 2 1
     5 4 3 1 2
 
