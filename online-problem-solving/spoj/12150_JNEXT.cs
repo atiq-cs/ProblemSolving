@@ -21,27 +21,25 @@ using System;
 public class Test {
     // Basically the same function from general-solving/leetcode/031_next-permutation.cs
     static int NextPermutation(int[] nums) {
-	    // iterate in reverse, find the index before which item is less
-	    int i;
-	    for (i=nums.Length-1; i>=1; i--)
-	        if (nums[i-1]<nums[i])
-	            break ;
-	    // find the item that is immediately greater than nums[i] and swap
-	    if (i>0) {
-	        int k = i;
-	        for (int j=i+1; j<nums.Length; j++)
-	            if (nums[i-1]<nums[j] && nums[k]>=nums[j])  //>= so we choose the last one
-	                k = j;  // so that after swapping small number comes at the later index
-	        int temp = nums[k]; nums[k] = nums[i-1]; nums[i-1] = temp;
-	    }   // afterwards, when we reverse the string order is maintained
+        // iterate in reverse, find the index before which item is less
+        int i = nums.Length - 1;
+        while (i > 0 && nums[i - 1] >= nums[i])
+            i--;
+        // find the item that is immediately greater than nums[i-1] and swap
+        if (i>0) {
+            int j = nums.Length - 1;
+            while (nums[i - 1] >= nums[j])  //>= so we choose the last one
+                j--;  // so that after swapping small number comes at the later index
+            int temp = nums[j]; nums[j] = nums[i - 1]; nums[i - 1] = temp;
+        }   // afterwards, when we reverse the string order is maintained
         if (i == 0)   // only for this spoj problem
-	    	return -1;
-	    for (int j=i, k=nums.Length-1; j<k;j++,k--)
-	        /* if (nums[j]>nums[k]) */ {  // swap condition not required
-	            int temp = nums[j]; nums[j] = nums[k]; nums[k] = temp;
-	        }
-	    return 0;
-	}
+            return -1;
+        for (int j=i, k=nums.Length-1; j<k;j++,k--)
+            /* if (nums[j]>nums[k]) */ {  // swap condition not required
+                int temp = nums[j]; nums[j] = nums[k]; nums[k] = temp;
+            }
+        return 0;
+    }
 
 	public static void Main() {
 		int T = int.Parse(Console.ReadLine());
