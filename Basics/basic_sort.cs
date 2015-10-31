@@ -20,16 +20,15 @@ class SortingAlgorithms
     * Desc             : Finds the minimum each time and put it on appropriate index swapping only once
     * Complexity        : Worst case, average case and best case - O (n^2)
     */
-    public void SelectionSort(List<int> A)
+    public void SelectionSort(int[] A)
     {
-        for (int j = 0; j < A.Count - 1; j++)
+        for (int j = 0; j < A.Length - 1; j++)
         {
             int iMin = j;
-            for (int i = j + 1; i < A.Count; i++)
+            for (int i = j + 1; i < A.Length; i++)
                 if (A[iMin] > A[i])
                     iMin = i;
-            if (iMin != j)
-            { //swap
+            if (iMin != j) { //swap
                 int temp = A[iMin]; A[iMin] = A[j]; A[j] = temp;
             }
         }
@@ -41,9 +40,9 @@ class SortingAlgorithms
     * Complexity        : Worst case and average case - O (n^2)
     *                      Best case O(n)
     */
-    public void BubbleSort(List<int> A)
+    public void BubbleSort(int[] A)
     {
-        int n = A.Count;
+        int n = A.Length;
         bool isSwapped;
         do
         {
@@ -66,28 +65,15 @@ class SortingAlgorithms
                           For example, consider the array 5, 4, 3, 8, 7, 6
                            in step 1, i=1, it will sort: 4, 5
                            i=2, it will sort, 3, 4, 5
+                          version 2 does not do swap but only moves items 
                            As if items are being inserted in their proper position in the sorted list each time
 
     * Complexity        : Worst case and average case - O (n^2)
-    *                      Best case Î©(n)
+    *                      Best case Ω(n)
     */
-    public void InsertionSort_v0(List<int> A)
+    public void InsertionSort(int[] A) // slightly improved version: swaps eliminated
     {
-        for (int i = 1; i < A.Count; i++)
-        {
-            int j = i;
-            while (j > 0 && A[j - 1] > A[j])
-            {    // swap
-                int temp = A[j - 1]; A[j - 1] = A[j]; A[j] = temp;
-                j--;
-            }
-        }
-    }
-
-    // slightly improved version: instead of swaps move
-    public void InsertionSort(List<int> A)
-    {
-        for (int i = 1; i < A.Count; i++)
+        for (int i = 1; i < A.Length; i++)
         {
             // save i-th item because this will be replaced
             int x = A[i];
@@ -100,18 +86,31 @@ class SortingAlgorithms
             A[j] = x;
         }
     }
+
+    public void InsertionSort_v0(int[] A)
+    {
+        for (int i = 1; i < A.Length; i++)
+        {
+            int j = i;
+            while (j > 0 && A[j - 1] > A[j])
+            {    // swap
+                int temp = A[j - 1]; A[j - 1] = A[j]; A[j] = temp;
+                j--;
+            }
+        }
+    }
 }
 
 class Demo
 {
     static void Main(string[] args)
     {
-        List<int> OriginalArray = new List<int> { 5, 89, 43, 13, 67, 11, 45 };
-        List<int> A;
+        int[] OriginalArray = { 5, 89, 43, 13, 67, 11, 45 };
+        int[] A = new int[OriginalArray.Length];
         SortingAlgorithms sortAlgo = new SortingAlgorithms();
 
         // insertion sort demo
-        A = new List<int>(OriginalArray);
+        Array.Copy(OriginalArray, A, A.Length);
         sortAlgo.InsertionSort(A);
         Console.WriteLine("After insertion sort list contains: ");
         foreach (var item in A)
@@ -119,7 +118,7 @@ class Demo
         Console.WriteLine();
 
         // Selection sort demo
-        A = new List<int>(OriginalArray);
+        Array.Copy(OriginalArray, A, A.Length);
         sortAlgo.SelectionSort(A);
         Console.WriteLine("After Selection sort list contains: ");
         foreach (var item in A)
@@ -127,7 +126,7 @@ class Demo
         Console.WriteLine();
 
         // Bubble sort demo
-        A = new List<int>(OriginalArray);
+        Array.Copy(OriginalArray, A, A.Length);
         sortAlgo.BubbleSort(A);
         Console.WriteLine("After Bubble sort list contains: ");
         foreach (var item in A)

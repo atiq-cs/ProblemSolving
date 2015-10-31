@@ -6,6 +6,7 @@
                 Because I was only checking with root
                 
                 geeksforgeeks idea on method 4 is pretty elegant
+                look at: leetcode/098_validate-binary-search-tree.cs
 
     Complexity  : O(n) 
 
