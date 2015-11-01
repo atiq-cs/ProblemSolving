@@ -11,7 +11,8 @@
 *                Basics/combination_all_possible.cs
 *                Basics/combination_unique_digits.cs
 *               Refs:
-*               Basics/combination_unique_digits.cs
+*               http://stackoverflow.com/questions/12991758/creating-all-possible-k-combinations-of-n-items-in-c
+*               http://stackoverflow.com/questions/127704/algorithm-to-return-all-combinations-of-k-elements-from-n?lq=1
 * meta        : tag-combination, tag-recursion
 ***************************************************************************/
 

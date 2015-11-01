@@ -5,8 +5,7 @@
 * Date      : Nov 01, 2015
 * Desc      : Ensures that number won't contain same digit twice
 *             This is an incremental development based on
-*              http://stackoverflow.com/questions/12991758/creating-all-possible-k-combinations-of-n-items-in-c
-*              http://stackoverflow.com/questions/127704/algorithm-to-return-all-combinations-of-k-elements-from-n?lq=1
+*              Basics/combination_all_possible.cs
 * meta      : tag-combination, tag-recursion
 */
 
