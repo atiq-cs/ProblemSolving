@@ -7,7 +7,7 @@
 * Status      : Accepted
 * Notes       : A clever inorder traversal and updating the previous root each time solves the problem
 *               related: 095_validate-binary-search-tree.cpp
-*               Tested with spoj: online-problem-solving/spoj/12150_JNEXT.cs
+*               
 *               Why the solution is like this?
 *               http://blogs.msdn.com/b/csharpfaq/archive/2004/05/11/why-doesn-t-c-support-static-method-variables.aspx
 * meta        : tag-binary-tree, tag-recursion
