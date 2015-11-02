@@ -28,13 +28,34 @@ public class Solution {
         return result;
     }
     
+    /*
+        k corresponds to index in output array A
+        i corresponds to index in input array inArray
+    */
     public void UniqueComb(int offset, int k) {
         if (k == A.Length)  // we got one of the comb.
             result.Add(new List<int>(A));
         else
-            for (int i = offset; i < N; i++) {
-                A[k] = i+1; // i+1 would be taken from another array if provided
+            for (int i = offset; i < N - A.Length + k + 1; i++) {   // i<N replaced to make it more efficient
+                A[k] = i+1; // i+1 would be taken from another array if provided i.e., inArray[i]
                 UniqueComb(i + 1, k + 1);
             }
+    }
+}
+
+/* A demo for this solution */
+class Demo {
+    static void Main(string[] args) {
+        CombinationSolution comSol = new CombinationSolution();
+        // k = Length of array, A
+        // k must be <= N
+        int N = 7, k = 3;
+        IList<IList<int>> comRes = comSol.Combine(N, k);
+        foreach (var list in comRes)
+        {
+            foreach (var item in list)
+                Console.Write(item);
+            Console.WriteLine();
+        }
     }
 }
