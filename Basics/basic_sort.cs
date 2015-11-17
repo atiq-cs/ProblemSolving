@@ -35,13 +35,29 @@ class SortingAlgorithms
     }
 
     /*
-    * Sorting Algorithm: Bubble sort
-    * Desc             : Finds the maximum each time and put it on appropriate index swapping all of them
-    * Complexity        : Worst case and average case - O (n^2)
-    *                      Best case O(n)
+    * Sorting Algorithm : Bubble sort
+    * Desc      : Finds the maximum each time and put it on appropriate index swapping all of them
+    *                cocktail shaker sort evolves from this
+    * Complexity: Worst case and average case - O (n^2)
+    *              Best case O(n)
+    * Versions  : v2 - addes isSwap
+    *             v3 - updates n based last swapped happened (instead of isSwapped)
     */
-    public void BubbleSort(int[] A)
-    {
+    public void BubbleSort(int[] A) {
+        int n = A.Length;
+        do
+        {
+            newn = 0;
+            for (int i = 1; i < n; i++)
+                if (A[i - 1] > A[i]) {
+                    int temp = A[i]; A[i] = A[i - 1]; A[i - 1] = temp;  // swap
+                    newn = i;
+                }
+            n = newn;
+        } while (n>0);
+    }
+    
+    public void BubbleSort_v2(int[] A) {
         int n = A.Length;
         bool isSwapped;
         do
