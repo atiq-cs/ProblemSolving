@@ -44,8 +44,10 @@ class Solution {
     static void Main(String[] args) {
         int N = int.Parse(Console.ReadLine());
         int[][] matrix = new int[N][];
-        for (int i = 0; i < N; i++)
-            matrix[i] = new int[N];
+        for (int i = 0; i < N; i++) {
+            string[] tokens = Console.ReadLine().Split(' ');
+            matrix[i] = Array.ConvertAll(tokens,Int32.Parse);
+        }
 
         int d_sum1 = 0;
         for (int i = 0; i < N; i++) {

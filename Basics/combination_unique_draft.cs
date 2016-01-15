@@ -6,20 +6,16 @@
 */
 
 using System;
-class CombinationBinary
-{
+
+class CombinationBinary {
     // N = Length of inArray
     int[] inArray = { 1, 2, 3, 4 };
     bool[] isTaken = new bool[4];
-    public void comb(int[] A, int offset, int k)
-    {
+    public void comb(int[] A, int offset, int k) {
         if (k == A.Length)
-        {
             DisplayArray(A);
-        }
         else
-            for (int i = offset; i < inArray.Length; i++)
-            {
+            for (int i = offset; i < inArray.Length; i++) {
                 // find first item not taken
                 // while (i < inArray.Length && isTaken[i]) i++;
                 if (i < inArray.Length)
@@ -32,8 +28,7 @@ class CombinationBinary
             }
     }
 
-    void DisplayArray(int[] A)
-    {
+    void DisplayArray(int[] A) {
         foreach (var item in A)
             Console.Write(item);
         Console.WriteLine();

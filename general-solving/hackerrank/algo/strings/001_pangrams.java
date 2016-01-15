@@ -2,15 +2,12 @@
 *   Problem Name:   A Very Big Sum
 *   Problem URL :   https://www.hackerrank.com/challenges/pangrams
 *   Date        :   Aug 26, 2015
-*
 *   Domain      :   algorithms/strings
-
-*   Desc        :   Panagrams are strings containing every letter of the alphabel
-*
+*   Desc        :   Panagrams are strings containing every letter of the alphabet
 *   Complexity  :   O(n)
 *   Author      :   Atiq Rahman
 *   Status      :   Accepted
-*   Note        :   Shows how solution can be implemented in java for comparison
+*   Note        :   Shows how solution can be implemented in java to compare
 ***************************************************************************/
 
 import java.io.*;
@@ -38,7 +35,6 @@ public class Solution {
     }
 
     public static void main(String[] args) throws Exception {
-        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String line_str = br.readLine();
         

@@ -3,31 +3,26 @@
 *   Problem URL :   https://www.hackerrank.com/challenges/sherlock-and-the-beast
 *   Date        :   Sept 21, 2015
 *   Domain      :   algorithms/implementation
-*                   Implementation 
 *   Desc        :   
 *   Complexity  :   O(n^2)
 *   Author      :   Atiq Rahman
 *   Status      :   Accepted
 *   Notes       :   Required trick to bypass slow IO
 *                    Would have used stringbuilder if this gave TLE
+*   meta        :   tag-IO-trick
 ***************************************************************************/
-
 using System;
 using System.Collections.Generic;
 
-class Solution
-{
-    static void Main(String[] args)
-    {
+class Solution {
+    static void Main(String[] args) {
         int T = int.Parse(Console.ReadLine());
 
-        while (T-- > 0)
-        {
+        while (T-- > 0) {
             int n = int.Parse(Console.ReadLine());
             // nx is number of fives
             int nx = GetMaximizedFive(n);
-            if (nx == -1)
-            {
+            if (nx == -1) {
                 Console.WriteLine(nx);
                 continue;
             }
@@ -44,11 +39,9 @@ class Solution
         
         when x = 0 y is equal to n
     */
-    static int GetMaximizedFive(int n)
-    {
+    static int GetMaximizedFive(int n) {
         int x = 0;
-        for (; n >= 5 * x; x++)
-        {
+        for (; n >= 5 * x; x++) {
             if ((n - 5 * x) % 3 == 0)
                 return x;
         }

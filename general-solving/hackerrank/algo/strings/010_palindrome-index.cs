@@ -1,6 +1,7 @@
 /***************************************************************************
 * Problem Name: Palindrome Index
 * Problem URL : https://www.hackerrank.com/challenges/palindrome-index
+* Domain      : algorithms/Strings
 * Date        : Jan 3 2016
 * Complexity  : O(N)
 * Author      : Atiq Rahman
@@ -11,9 +12,7 @@
 *             -  Check excluding that character whether rest is palindrome
 * meta        : tag-string
 ***************************************************************************/
-
 using System;
-using System.Collections.Generic;
 
 class Solution {
     static void Main(String[] args) {

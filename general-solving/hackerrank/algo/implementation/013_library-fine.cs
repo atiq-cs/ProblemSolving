@@ -4,26 +4,20 @@
 *   Date        :   Sept 8, 2015
 *
 *   Domain      :   algorithms/warmup
-*   Desc        :   Trivial Problem
-*   Complexity  :   
+*   Desc        :   Trivial Problem, trivial cases
 *   Author      :   Atiq Rahman
 *   Status      :   Accepted
 ***************************************************************************/
-
 using System;
-using System.Collections.Generic;
 
-struct LibraryDate
-{
+struct LibraryDate {
     public int day;
     public int month;
     public int year;
 }
 
-class Solution
-{
-    static void Main(String[] args)
-    {
+class Solution {
+    static void Main(String[] args) {
         LibraryDate actual_return_date = new LibraryDate();
         string[] tokens = Console.ReadLine().Split();
         actual_return_date.day = int.Parse(tokens[0]);
@@ -38,8 +32,8 @@ class Solution
 
         Console.WriteLine(GetFineAmount(actual_return_date, expected_return_date));
     }
-    static int GetFineAmount(LibraryDate actual, LibraryDate expected)
-    {
+
+    static int GetFineAmount(LibraryDate actual, LibraryDate expected) {
         if (actual.year > expected.year)
             return 10000;
         // critical case 1

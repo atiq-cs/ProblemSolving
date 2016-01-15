@@ -39,7 +39,7 @@ void handleIO() {
 			myset.erase(number);
 			break;
 		case 3:	// find
-		// without this block I cannot declare the position variable
+		// without this block position variable cannot be declared here
 		{
 			auto position = myset.find(number);
 			if (position != myset.end())

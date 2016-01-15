@@ -13,20 +13,16 @@
 *   Notes       :  This is the last tried version
 *   meta        :  tag-math 
 ***************************************************************************/
-
 using System;
 
-public class Solution
-{
+public class Solution {
     private const double eps = 1E-16;
-    private static void Main()
-    {
+    private static void Main() {
         // get the constant
         // double c = 0.57721566490153286060;
         // double c = 0.57721566490153286060651209008240243104215933593992;
         // Console.WriteLine(c);
-        while (true)
-        {
+        while (true) {
             // take input to num
             double c = 1.5 + 1.0 / 3 - Math.Log(3.0) - 1.0 / 6;
             double n;
@@ -46,8 +42,7 @@ public class Solution
             double result = 0.0;
             double approx_k;
             double diff = eps + 1.0;
-            while (diff > eps)
-            {
+            while (diff > eps) {
                 //approx_k = Math.Floor(Math.Exp(x + 1.0 - c_update));
                 approx_k = Math.Exp(x + 1.0 - c_update);
                 Console.WriteLine(approx_k);

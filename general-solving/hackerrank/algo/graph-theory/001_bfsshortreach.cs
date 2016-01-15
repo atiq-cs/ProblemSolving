@@ -1,48 +1,42 @@
 /***************************************************************************
 *   Problem Name:   Breadth First Search: Shortest Reach
-*   Problem URL :   https://www.hackerrank.com/challenges/cut-the-sticks/
+*   Problem URL :   https://www.hackerrank.com/challenges/bfsshortreach
 *   Date        :   Sept 15, 2015
-*
 *   Domain      :   algorithms/Graph Theory
 *   Desc        :   use BFS to find distance of each node, then multiply by 6; a trivial problem
-*
 *   Complexity  :   O(V+E)
 *   Author      :   Atiq Rahman
 *   Status      :   Accepted
 *   Notes       :   Minimal Graph Representation
 *                   ref: Algorithms/Graph/01_BFS.cpp
+*   meta        :   tag-bfs, tag-graph-theory
 ***************************************************************************/
-
 using System;
 using System.Collections.Generic;
 
 enum Color { White, Gray, Black };
 
 /* if we use struct we cannot modify records in the list as structures are immutable types */
-class Vertex
-{
+class Vertex {
     public int distance;
     // int predecessor; // not necessary for now
     public Color color;
     public Vertex(int d, Color c) { distance = d; color = c; }  // constructor
 }
 
-class Graph
-{
+class Graph {
     int nV;
     int nE;
     List<Vertex> vertex;        // List is not linked list, it is like vector
     List<List<int>> AdjList;
 
     // all initializations here
-    public Graph(int n, int m)
-    {
+    public Graph(int n, int m) {
         nV = n; nE = m;
         vertex = new List<Vertex>(nV);
         AdjList = new List<List<int>>(nV);
 
-        for (int i = 0; i < nV; i++)
-        {
+        for (int i = 0; i < nV; i++) {
             // even though an argument has been passed to constructor with initial size,
             // unlike C++ container List is empty
             vertex.Add(new Vertex(-1, Color.White));
@@ -50,14 +44,12 @@ class Graph
         }
     }
 
-    public void AddEdge(int u, int v)
-    {
+    public void AddEdge(int u, int v) {
         AdjList[u].Add(v);
         AdjList[v].Add(u);
     }
 
-    public int GetDistance(int index)
-    {
+    public int GetDistance(int index) {
         if (vertex[index].distance == -1)
             return vertex[index].distance;
         else /* this is only for this problem */
@@ -70,18 +62,15 @@ class Graph
      *  We can even ignore setting the color to GRAY, it will give us same result
      *  In that case we only need 1 bit store color 
      */
-    public void bfs(int s)
-    {
+    public void bfs(int s) {
         vertex[s].distance = 0;
 
         Queue<int> queue = new Queue<int>();
         queue.Enqueue(s);
 
-        while (queue.Count > 0)
-        {
+        while (queue.Count > 0) {
             int u = queue.Dequeue();
-            foreach (int v in AdjList[u])
-            {
+            foreach (int v in AdjList[u]){
                 if (vertex[v].color == Color.White)
                 {   // never visited before
                     vertex[v].color = Color.Gray;
@@ -94,22 +83,18 @@ class Graph
     }
 }
 
-class Solution
-{
-    static void Main(String[] args)
-    {
+class Solution {
+    static void Main(String[] args) {
         // Let's handle IO
         int T = int.Parse(Console.ReadLine());
 
-        while (T-- > 0)
-        {
+        while (T-- > 0) {
             string[] tokens = Console.ReadLine().Split();
             int nV = int.Parse(tokens[0]);      // number of vertices
             int nE = int.Parse(tokens[1]);      // number of edges
             Graph graph = new Graph(nV, nE);
             // input edges
-            for (int i = 0; i < nE; i++)
-            {
+            for (int i = 0; i < nE; i++) {
                 tokens = Console.ReadLine().Split();
                 int u = int.Parse(tokens[0]);      // number of vertices
                 int v = int.Parse(tokens[1]);      // number of edges
@@ -120,10 +105,8 @@ class Solution
             source--;
             // run bfs
             graph.bfs(source);
-            for (int i = 0; i < nV; i++)
-            {
-                if (i != source)
-                {
+            for (int i = 0; i < nV; i++) {
+                if (i != source) {
                     if (i == nV - 1)
                         Console.WriteLine(graph.GetDistance(i));
                     else
