@@ -10,11 +10,9 @@
 *   Author      :   Atiq Rahman
 *   Status      :   Accepted
 *   Notes       :   Practicing C#
+*   meta        :   tag-easy
 ***************************************************************************/
-
 using System;
-using System.Collections.Generic;
-using System.IO;
 
 class Solution {
     static void Main(string[] args) {

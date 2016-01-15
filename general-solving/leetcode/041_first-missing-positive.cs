@@ -11,10 +11,12 @@
 *   Status      :   Accepted (0.172s)
 *   Note        :   Problem challenge is not satisfied yet, do it in O(1) memory
 *   Tech Note   :   why hashset instead of Dictionary?
+*                   In this problem, just for Demo.
                     A  HashSet<T> is a class designed to give you O(1) lookup for containment (i.e.,
                         does this collection contain a particular object, and tell me the answer fast).
 
                     A List<T> is a class designed to give you a collection with O(1) random access than can grow
+*   meta        : tag-hashtable
 ***************************************************************************/
 
 public class Solution {

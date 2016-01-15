@@ -2,7 +2,6 @@
 *    Ttitle     : The Maximum Subarray
 *    Problem#   : https://www.hackerrank.com/challenges/maxsubarray
 *    Domain     : Algorithms/Dynamic Programming
-*    Type       :    
 *    Alogirthm  : DP, kadane algorithm for maximum sum
 *    Complexity : O(n)
 *    Author     : Atiqur Rahman
@@ -12,17 +11,15 @@
                     However, the problem is simplified that sum needs not be strictly
                     contiguous therefore applying my trivial approach to sum up all positive
                     and ignore if negative parts are there works just fine
+*   meta        : tag-dynamic-programming, tag-kadane
 */
 
 using System;
 
-class Solution
-{
-    static void Main(String[] args)
-    {
+class Solution {
+    static void Main(String[] args) {
         int T = int.Parse(Console.ReadLine());
-        while (T-- > 0)
-        {
+        while (T-- > 0) {
             int N = int.Parse(Console.ReadLine());
             string[] tokens = Console.ReadLine().Split();
             int[] A = new int[N];
@@ -35,8 +32,7 @@ class Solution
             int max_sum = current_sum;
 
             // run simple kadane's algorithm to get max sum
-            for (int i = 1; i < A.Length; i++)
-            {
+            for (int i = 1; i < A.Length; i++) {
                 if (pos_sum < 0 && pos_sum < A[i])
                     pos_sum = A[i];
                 else

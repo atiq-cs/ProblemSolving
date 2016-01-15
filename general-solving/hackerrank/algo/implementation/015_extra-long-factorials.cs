@@ -4,28 +4,22 @@
 *   Date        :   Sept 07, 2015
 *
 *   Domain      :   algorithms/warmup
-*                   https://www.hackerrank.com/domains/algorithms/warmup
-
 *   Desc        :   Use BigInteger to calculate factorial
-*   Complexity  :   O(n)
+*   Complexity  :   can be exponential
 *   Author      :   Atiq Rahman
 *   Status      :   Accepted
+*   meta        :   tag-big-integer
 ***************************************************************************/
-
 using System;
-using System.Collections.Generic;
 using System.Numerics;
 
-class Solution
-{
-    static void Main(String[] args)
-    {
+class Solution {
+    static void Main(String[] args) {
         int N = int.Parse(Console.ReadLine());
         Console.WriteLine(GetFactorial(N));
     }
 
-    static BigInteger GetFactorial(int n)
-    {
+    static BigInteger GetFactorial(int n) {
         BigInteger fact = 1;
         for (int i = 2; i <= n; i++)
             fact *= i;

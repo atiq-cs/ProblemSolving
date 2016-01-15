@@ -10,15 +10,15 @@
 *   Author      :   Atiq Rahman
 *   Status      :   Accepted
 ***************************************************************************/
+using System;
 
 class Solution {
     static void Main(String[] args) {
-        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution */
         string line;
         int nTestCases = Int32.Parse(Console.ReadLine());
         while (nTestCases-- >0) {
             line = Console.ReadLine();
-            if (line != null || line != "") {
+            if (!String.IsNullOrEmpty(line)) {
                 if (isFunny(line))
                     Console.WriteLine("Funny");
                 else
@@ -26,8 +26,8 @@ class Solution {
             }
         }
     }
-    static bool isFunny(string str)
-    {
+
+    static bool isFunny(string str) {
         char[] first = str.ToCharArray();
         // get reverse of the string
         char[] second = str.ToCharArray(); Array.Reverse(second);

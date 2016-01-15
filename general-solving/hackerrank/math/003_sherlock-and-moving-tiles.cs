@@ -15,7 +15,6 @@
 */
 
 using System;
-using System.Collections.Generic;
 
 class Solution {
     static void Main(String[] args) {

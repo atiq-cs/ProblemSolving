@@ -2,12 +2,12 @@
 *	Problem Name:	Find Digits
 *	Problem No	:	https://www.hackerrank.com/challenges/find-digits
 *   Domain      :   Algorithms/Implementation
-*	Problem Type:	
 *	Alogirthm	:   
 *	Author		:	Atiqur Rahman
 *	Status		:	Accepted
 *	Desc		:	Simple approach
-*	Notes		:	This one apparently uses the OOP template
+*	Notes		:	This one apparently uses my old OOP template
+*   meta        :   tag-easy
 */
 
 #include <iostream>
