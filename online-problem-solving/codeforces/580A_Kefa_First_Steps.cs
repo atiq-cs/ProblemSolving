@@ -7,7 +7,7 @@
 *   Author      : Atiq Rahman
 *   Status      : Accepted (77ms)
 *   Notes       : Linear DP, not LIS variation at all
-*   meta        : tag-dp
+*   meta        : tag-dynamic-programming
 ***************************************************************************/
 using System;
 
