@@ -5,7 +5,7 @@
 * Complexity  : O(n^2) Time
 * Author      : Atiq Rahman
 * Status      : Accepted (56ms)
-* Notes       : Largest sum in contiguous subarray
+* Notes       : 
 *               fill in ...
 *               
 * meta        : tag-dynamic-programming
