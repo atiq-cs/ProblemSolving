@@ -1,15 +1,15 @@
-/*
-*	Problem Title:	Problem Title
-*	Problem Link:	https://www.hackerrank.com/challenges/problem-title
-*	Problem Type:	Data Type Handling
-*	Alogirthm	:
-*	Author		:	Atiqur Rahman
-*	Desc		:
-*
-*	Status		:	Submitted
-*/
-
-
+/***************************************************************************
+* Problem Name: Problem Title
+* Problem URL : https://www.hackerrank.com/challenges/problem-title
+* Date        : 2017
+* Complexity  : O() Time
+* Author      : Atiq Rahman
+* Status      :  (ms)
+* Notes       : 
+*               
+*               
+* meta        : tag-algo-name
+***************************************************************************/
 #include <string>
 #include <sstream>
 #include <cmath>
@@ -17,7 +17,7 @@
 #include <vector>
 #include <iostream>
 #include <algorithm>
-//#define FILE_IO	TRUE
+//#define FILE_IO  TRUE
 
 #ifdef FILE_IO
 #include <fstream>
@@ -28,37 +28,37 @@ void handleIO();
 
 class ClassName {
 private:
-	string str;
-	int num;
+  string str;
+  int num;
 public:
-	void initClass();
+  void initClass();
 };
 
 int mainT() {
-	handleIO();
-	return 0;
+  handleIO();
+  return 0;
 }
 
 void handleIO() {
 #ifdef FILE_IO
-	ofstream outFile("ProblemNo_out.txt");
-	streambuf *psbuf = outFile.rdbuf(), *backup;
-	backup = cout.rdbuf();     // back up cout's streambuf
-	cout.rdbuf(psbuf);
+  ofstream outFile("ProblemNo_out.txt");
+  streambuf *psbuf = outFile.rdbuf(), *backup;
+  backup = cout.rdbuf();     // back up cout's streambuf
+  cout.rdbuf(psbuf);
 #endif
 
-	ClassName classObj;
-	string varName;
+  ClassName classObj;
+  string varName;
 
-	while (cin >> varName) {
-		classObj.initClass();
-	}
+  while (cin >> varName) {
+    classObj.initClass();
+  }
 #ifdef FILE_IO
-	cout.rdbuf(backup);
-	outFile.close();
+  cout.rdbuf(backup);
+  outFile.close();
 #endif
 }
 
 void ClassName::initClass() {
-	num = 0;
+  num = 0;
 }
