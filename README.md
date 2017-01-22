@@ -12,6 +12,9 @@ Additionally, here are the currently supported tags on algo/data structure based
 
 Company based domains,
  * [Google](https://github.com/atiq-cs/Problem-Solving/search?utf8=%E2%9C%93&q=tag-google)
+
+Contest based tags,
+ * [ACM ICPC](https://github.com/atiq-cs/Problem-Solving/search?utf8=%E2%9C%93&q=tag-acm-icpc)
  
 Miscellaneous tags
  * [Interviews, any company](https://github.com/atiq-cs/Problem-Solving/search?utf8=%E2%9C%93&q=tag-interviews)
@@ -47,6 +50,9 @@ Following onlline judges are being covered
  * [UVa Online Judge](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8)
  * [Tianjin Univ Online Judge System](http://acm.tju.edu.cn/toj/problem.html)
  * [topcoder] (http://community.topcoder.com/tc?module=ProblemArchive)
+
+#### Problem Solving Templates
+For more info on templates please visit our [template wiki](https://github.com/atiq-cs/Problem-Solving/wiki/Templates) 
 
 ##### Note
 Please do not abuse the code.
