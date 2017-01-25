@@ -4,7 +4,7 @@
 * Author      : Atiq Rahman
 * Status      : Accepted
 * Desc        : 
-* Notes       : All sql solutions from the sub-cateogry slect are here
+* Notes       : All sql solutions from the sub-cateogry select are here
 * meta        : tag-sql
 ***************************************************************************/
 
@@ -86,3 +86,20 @@ Select max(len_City)
 FROM (
     Select LEN(CITY) as len_city
     FROM STATION) as LEN_CITY);
+
+/* Higher Than 75 Marks */
+Select Name
+from Students
+Where Marks > 75
+order by RIGHT(Name,3), id;
+
+/* Employee Names */
+Select name
+from Employee
+order by name;
+
+/* Employee Salaries */
+Select name
+from Employee
+where salary > 2000 AND months < 10
+order by employee_id;
