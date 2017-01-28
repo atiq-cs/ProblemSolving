@@ -32,6 +32,12 @@
 *               Lessons:
 *                sorting coins not necessary
 *                
+*               Refs:
+*               This one uses 2D Array
+*               https://en.wikipedia.org/wiki/Change-making_problem
+*               Similarly,
+*               http://www.algorithmist.com/index.php/Coin_Change
+*                
 * Ack         : Mak               
 * meta        : tag-dynamic-programming
 ***************************************************************************/
