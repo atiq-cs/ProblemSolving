@@ -6,8 +6,9 @@
 * Complexity  : O(logb)
 * Author      : Atiq Rahman
 * Status      : Accepted
-* Notes       : Lemma: A point (a, b) where g = gcd(a, b) is connected to one of the following points: (g, 0), (0, g), (−g, 0), (0, −g).
-*               ref: https://hr-filepicker.s3.amazonaws.com/infinitum-jun14/editorials/2372-possible-path.pdf
+* Notes       : Lemma: A point (a, b) where g = gcd(a, b) is connected to one of
+*               the following points: (g, 0), (0, g), (−g, 0), (0, −g). Ref:
+*               https://hr-filepicker.s3.amazonaws.com/infinitum-jun14/editorials/2372-possible-path.pdf
 * meta        : tag-math
 ***************************************************************************/
 using System;

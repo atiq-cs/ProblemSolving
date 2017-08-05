@@ -9,6 +9,7 @@ Additionally, here are the currently supported tags on algo/data structure based
  * [Sorting](https://github.com/atiq-cs/Problem-Solving/search?utf8=%E2%9C%93&q=tag-sorting)
  * [Recursion](https://github.com/atiq-cs/Problem-Solving/search?utf8=%E2%9C%93&q=tag-recursion)
  * [String](https://github.com/atiq-cs/Problem-Solving/search?utf8=%E2%9C%93&q=tag-string)
+ * [Bit Manipulation](https://github.com/atiq-cs/Problem-Solving/search?utf8=%E2%9C%93&q=tag-bitwise)
 
 Company based domains,
  * [Google](https://github.com/atiq-cs/Problem-Solving/search?utf8=%E2%9C%93&q=tag-google)

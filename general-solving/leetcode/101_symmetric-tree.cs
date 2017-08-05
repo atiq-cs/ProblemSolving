@@ -31,3 +31,30 @@ public class Solution {
 * Now check the properties whether holds similarly for left's left and right's right
 *  also for left's right and right's left
 */
+
+/* First version is presented below */
+public class Solution {
+    public bool IsSymmetric(TreeNode root) {
+        return IsSymmetric_rec(root, root);
+    }
+
+    bool IsSymmetric_rec(TreeNode root_left, TreeNode root_right) {
+        if (root_left == null && root_right == null)
+            return true;
+            
+        if (root_left == null && root_right != null)
+            return false;
+
+        if (root_left != null && root_right == null)
+            return false;
+
+        if (root_left.val != root_right.val)
+            return false;
+
+        if (IsSymmetric_rec(root_left.left, root_right.right) == false)
+            return false;
+        if (IsSymmetric_rec(root_left.right, root_right.left) == false)
+            return false;
+        return true;
+    }
+}

@@ -1,6 +1,6 @@
 /***************************************************************************
 * Problem Name: Lowest Common Ancestor of a Binary Search Tree
-* Problem URL : https://leetcode.com/problems/largest-number/
+* Problem URL : https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/
 * Date        : Aug 2 2015
 * Complexity  : O(n) Time
 * Author      : Atiq Rahman
@@ -9,10 +9,8 @@
 * meta        : tag-lca
 ***************************************************************************/
 
-public class Solution
-{
-    public TreeNode LowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q)
-    {
+public class Solution {
+    public TreeNode LowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
         return LowestCommonAncestor_rec(root, ref p.val, ref q.val);
     }
 
@@ -29,4 +27,16 @@ public class Solution
         if (left_lca != null && right_lca != null) return root;
         return (left_lca != null) ? left_lca : right_lca;
     }
+}
+
+// geeksforgeeks cpp version
+public TreeNode LowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
+    if (root == null || root == p || root ==q)
+        return root;
+
+    TreeNode left_lca = LowestCommonAncestor(root.left, p, q);
+    TreeNode right_lca = LowestCommonAncestor(root.right, p, q);
+
+    // if (left_lca != null && right_lca != null)  return root;
+    return (left_lca == null)? right_lca: (right_lca == null)? left_lca: root;
 }

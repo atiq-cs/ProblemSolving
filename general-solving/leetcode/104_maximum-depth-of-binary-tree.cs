@@ -1,7 +1,8 @@
 /***************************************************************************
 *   Problem Name:   Determines if given string has some properties
 *   Problem URL :   https://leetcode.com/problems/maximum-depth-of-binary-tree/
-                    related: https://www.hackerrank.com/challenges/tree-height-of-a-binary-tree
+*   Related     :   https://www.hackerrank.com/challenges/tree-height-of-a-binary-tree
+*                   http://www.lintcode.com/en/problem/maximum-depth-of-binary-tree/
 *   Domain      :   data-structures/trees
 *   DateTime    :   August 7, 2015
 *   Desc        :   Recursion on Binary Tree
