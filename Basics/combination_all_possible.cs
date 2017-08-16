@@ -1,7 +1,6 @@
 ﻿/*
 * Problem   : Generate All Possible Combinations with k items from N items
-* Author    : Atiqur Rahman
-* Email     : mdarahman@cs.stonybrook.edu
+* Author    : Atiq Rahman
 * Date      : Nov 01, 2015
 * Desc      : includes all repeatations
 *             This is an incremental development

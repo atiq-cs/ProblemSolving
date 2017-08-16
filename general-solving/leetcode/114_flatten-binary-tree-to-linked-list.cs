@@ -4,9 +4,10 @@
 * Date        : Sept 26 2015
 * Complexity  : 
 * Author      : Atiq Rahman
-* Status      : Accepted (beat 98% Time)
-* Notes       : 
-* meta        : tag-binary-tree
+* Status      : Accepted
+* Notes       : Key here is that the flattened tree, each node's right child
+*               points to the next node of a pre-order traversal
+* meta        : tag-binary-tree; tag-recursion
 ***************************************************************************/
 public class Solution
 {

@@ -4,8 +4,9 @@
 *   Date        :   Aug 15, 2015
 *   Complexity  :   O(n)
 *   Author      :   Atiq Rahman
-*   Status      :   Accepted (Runtime beats 88.24% C# submissions)
-*   Notes       :   tag-binary-tree
+*   Status      :   Accepted
+*   Notes       :   
+*   meta        :   tag-binary-tree
 ***************************************************************************/
 
 public class Solution

@@ -59,16 +59,16 @@ int main() {
 
     // take a sample stirng
     std::string str = "aabbcc";
-    // if we want to start permuation froma different index, change the index from 0 to something else
+    // if we want to start permutation froma different index, change the index from 0 to something else
     std::string next_str = next_permutation(str);
     if (next_str.empty())
         std::cout << "There is no next permutation available for " << str << "." << std::endl;
     else
         std::cout<<"Next permutation of " << str << " is " << next_str <<std::endl;
 
-    // take a sample stirng that has no permutaion
+    // take a sample stirng that has no permutation
     str = "cba";
-    // if we want to start permuation froma different index, change the index from 0 to something else
+    // if we want to start permutation from a different index, change the index from 0 to something else
     next_str = next_permutation(str);
     if (next_str.empty())
         std::cout << "There is no next permutation available for " << str << "." << std::endl;
