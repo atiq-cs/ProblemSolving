@@ -13,27 +13,27 @@
                         push the item into the queue
     
                     idea is to use two queues: one is priority queue and one is regular queue
-*   meta        :   tag-priority-queue
+                    note ambiguous grammer used for method params
+                     'PrintItem PrintItem'
+*   Source     https://code.msdn.microsoft.com/Dijkstras-Single-Soruce-69faddb3
+*   meta        :   tag-priority-queue, tag-data-structure
 ***************************************************************************/
 
 using System;
 using System.Collections.Generic;
 
-class PrintItem
-{
+class PrintItem {
     public int Index;
     public int Priority;    // member used to resolve prirority
     public PrintItem(int key, int val) { Index = key; Priority = val; }
 }
 
-class PriorityQueue
-{
+class PriorityQueue {
     private int heapSize;
     List<PrintItem> itemList;
 
     /* Use when necessary
-    public List<PrintItem> GetItemList
-    {
+    public List<PrintItem> GetItemList {
         get
         {
             return itemList;
@@ -41,8 +41,7 @@ class PriorityQueue
     }
 
     // not planning to use this one right now
-    public PriorityQueue(List<PrintItem> nl)
-    {
+    public PriorityQueue(List<PrintItem> nl) {
         heapSize = nl.Count;
         itemList = new List<PrintItem>();
 
@@ -50,28 +49,24 @@ class PriorityQueue
             itemList.Add(nl[i]);
     } */
 
-    public PriorityQueue()
-    {
+    public PriorityQueue() {
         heapSize = 0;
         itemList = new List<PrintItem>();
     }
 
-    public void Enqueue(PrintItem PrintItem)   // requires public
-    {
+    public void Enqueue(PrintItem PrintItem) {  // requires public
         heapSize++;
         itemList.Add(PrintItem);
     }
 
-    void exchange(int i, int j)
-    {
+    void exchange(int i, int j) {
         PrintItem temp = itemList[i];
 
         itemList[i] = itemList[j];
         itemList[j] = temp;
     }
 
-    void heapify(int i)
-    {
+    void heapify(int i) {
         int l = 2 * i + 1;
         int r = 2 * i + 2;
         int largest = -1;
@@ -89,78 +84,61 @@ class PriorityQueue
         }
     }
 
-    // call before extract min
-    public void buildHeap()    // requires public
-    {
+    // called before extracting minimum
+    public void buildHeap() {    // requires public
         for (int i = heapSize / 2; i >= 0; i--)
             heapify(i);
     }
 
-    int heapSearch(PrintItem PrintItem)
-    {
-        for (int i = 0; i < heapSize; i++)
-        {
+    int heapSearch(PrintItem PrintItem) {
+        for (int i = 0; i < heapSize; i++) {
             PrintItem aPrintItem = itemList[i];
-
             if (PrintItem.Index == aPrintItem.Index)
                 return i;
         }
-
         return -1;
     }
 
-    public int Count
-    {
+    public int Count {
         get { return heapSize; }
     }
 
-    public PrintItem elementAt(int i)
-    {
+    public PrintItem elementAt(int i) {
         return itemList[i];
     }
 
-    void heapSort()
-    {
+    void heapSort() {
         int temp = heapSize;
-
         buildHeap();
 
-        for (int i = heapSize - 1; i >= 1; i--)
-        {
+        for (int i = heapSize - 1; i >= 1; i--) {
             exchange(0, i);
             heapSize--;
             heapify(0);
         }
-
         heapSize = temp;
     }
 
-    public PrintItem extractMin()   // requires public
-    {
+    public PrintItem extractMin() {
         if (heapSize < 1)
             return null;
 
         heapSort();
-
         exchange(0, heapSize - 1);
         heapSize--;
         return itemList[heapSize];
     }
 
-    public int find(PrintItem PrintItem)
-    {
+    public int find(PrintItem PrintItem) {
         return heapSearch(PrintItem);
     }
 }
 
 // Test is name of class for SPOJ
-public class Test
-{
-    public static void Main()
-    {
+public class Test {
+    public static void Main() {
         int T = int.Parse(Console.ReadLine());
-        while (T--> 0)
-        {
+        while (T--> 0) {
             string[] tokens = Console.ReadLine().Split();
             int n = int.Parse(tokens[0]);
             int m = int.Parse(tokens[1]);
@@ -168,19 +146,16 @@ public class Test
             Queue<PrintItem> queue = new Queue<PrintItem>();
             PriorityQueue priority_queue = new PriorityQueue();
 
-            for (int i = 0; i < n; i++)
-            {
+            for (int i = 0; i < n; i++) {
                 int pr = int.Parse(tokens[i]);
                 PrintItem item = new PrintItem(i, pr);
                 queue.Enqueue(item);
                 priority_queue.Enqueue(item);
             }
-            priority_queue.buildHeap();
 
             int count = 0;
             PrintItem highPItem = priority_queue.extractMin(); ;
-            while (queue.Count > 0)
-            {
+            while (queue.Count > 0) {
                 PrintItem item = queue.Dequeue();
                 if (item.Priority == highPItem.Priority)
                 { // add its print time
@@ -189,8 +164,7 @@ public class Test
                         break;
                     highPItem = priority_queue.extractMin();
                 }
-                else // we did not get high priority item push into queue
-                {
+                else { // we did not get high priority item push into queue
                     queue.Enqueue(item);
                 }
             }
