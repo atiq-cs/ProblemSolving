@@ -3,11 +3,17 @@
 * Problem URL : http://codeforces.com/problemset/problem/580/C
 * Occasion    : Codeforces Round #321 (Div. 2)
 * Date        : Aug 18 2017
-* Complexity  : O(n) to traverse th tree
+* Complexity  : O(nlogn)
 * Author      : Atiq Rahman
 * Status      : Accepted
 * Desc        :  
-* Notes       : Easy implementation Problem
+* Notes       : The graph is a tree. Assumption that this graph would work for
+*               unidirection (edge addition: adding v to u's adj list when
+*               u < v) mapping is wrong. So we add u to v's adj list and v
+*               to u's adj list. We maintain a visited list to avoild looping
+*               or duplicate visits to same nodes. This idea works because we
+*               have a fixed root node: vertex 1.
+*               
 * meta        : tag-tree, tag-graph
 ***************************************************************************/
 using System;
@@ -26,7 +32,7 @@ public class GraphDemo {
   bool[] hasCat;
   bool[] visited;
   uint nV;
-  uint m; // m for Cat
+  uint m; // m for number of consecutive cats allowed
 
   public void TakeInput() {
     string[] tokens = Console.ReadLine().Split();

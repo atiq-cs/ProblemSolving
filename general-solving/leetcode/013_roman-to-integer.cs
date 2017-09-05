@@ -6,7 +6,9 @@
 * Author      : Atiq Rahman
 * Status      : Accepted
 * Desc        :  
-* Notes       : Easy implementation problem
+* Notes       : Easy implementation problem, ref:
+*               http://www.rapidtables.com/convert/number/
+*               how-number-to-roman-numerals.htm
 * meta        : tag-easy, tag-implementation
 ***************************************************************************/
 using System;

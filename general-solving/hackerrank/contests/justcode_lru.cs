@@ -28,7 +28,7 @@
 *               in the last line of 'ExtractMin' implementation
 *               
 *               
-* meta        : tag-data-structure; tag-implementation
+* meta        : tag-data-structure, tag-implementation, tag-priority-queue
 ***************************************************************************/
 using System;
 using System.Collections.Generic;
@@ -165,7 +165,7 @@ class PriorityQueue {
         LRUItem item = new LRUItem(val, pr--);
         int pos = priority_queue.find(item);
         if (pos == -1) {
-          while (priority_queue.Count >= S)
+          if (priority_queue.Count == S)
             priority_queue.extractMin();
           priority_queue.Enqueue(item);
           countPF++;
@@ -182,6 +182,7 @@ class PriorityQueue {
     Console.WriteLine(countPF);
     for (int i=0; priority_queue.Count > 0; i++)
       res[i] = priority_queue.extractMin().Value;
-    Array.Reverse(res);  Console.WriteLine(string.Join(" ", res));
+    Array.Reverse(res);
+    Console.WriteLine(string.Join(" ", res));
   }
 }

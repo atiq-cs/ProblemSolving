@@ -1,6 +1,6 @@
 ﻿/***************************************************************************
-* Problem Name: The Coin Change Problem
-* Problem URL : https://www.hackerrank.com/challenges/coin-change
+* Title       : The Coin Change Problem
+* URL         : https://www.hackerrank.com/challenges/coin-change
 * Date        : Jan 26, 2016
 * Complexity  : O(nm) Time
 * Author      : Atiq Rahman
@@ -66,6 +66,8 @@ class CoinChange {
   long CountWays() {
     long[] w = new long[n+1];
     w[0] = 1;
+    // set 0 from index 1 to n+1
+    // https://msdn.microsoft.com/en-us/library/system.array.clear.aspx
     Array.Clear(w, 1, n);
 
     for (int i = 0; i < m; i++)
