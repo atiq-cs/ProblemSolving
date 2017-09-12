@@ -1,5 +1,5 @@
 ﻿/***************************************************************************
-* Problem Name: Stacks: Balanced Brackets
+* Title       : Stacks: Balanced Brackets
 * Problem URL : https://www.hackerrank.com/challenges/ctci-balanced-brackets
 * Date        : Jan 28, 2016
 * Complexity  : O(n log n) Time

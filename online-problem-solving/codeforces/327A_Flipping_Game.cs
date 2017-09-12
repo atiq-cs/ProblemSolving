@@ -58,7 +58,7 @@ public class BinaryBlock {
    * DP Solution:
    *  Incrementally calculate based on preivously mentioned solutions
    */
-  public  int GetMaxNumOnes() {
+  public int GetMaxNumOnes() {
     int max = 0;
     for (int i = 0; i < block_list.Count; i++) {
       if (i>1 && block_list[i-2] == false && block_list[i-1] == true && block_list[i] == false)
@@ -82,16 +82,16 @@ class CF_Solution {
 }
 
 /* Alternative costly thoughts:
-We are losing solutions. A previous sum could accumulate and give us better
-result..
+We are losing solutions when using wrong conditions. We could accumulate from
+previous sum and could go toward betterresult..
 
+Let's think simple DP,
 Say, s[i] contains the max that can be done by flipping 
 
 s[1][1] = bit[0]
 s[1][2] = s[1][1] + s[2][2]
 s[1][i] = s[1][i] + s[i][]
 s[1][n] = ?
-
 
 0 0 0
 

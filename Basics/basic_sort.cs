@@ -42,8 +42,7 @@ class SortingAlgorithms
   */
   public void BubbleSort_v1(int[] A) {
     int n = A.Length;
-    do
-    {
+    do {
       int newn = 0;
       for (int i = 1; i < n; i++)
         if (A[i - 1] > A[i]) {
@@ -61,7 +60,8 @@ class SortingAlgorithms
       isSwapped = false;
       for (int i = 1; i < n; i++)
         if (A[i - 1] > A[i]) {
-          Swap<int>(ref A[i - 1], ref A[i]); isSwapped = true;
+          Swap<int>(ref A[i - 1], ref A[i]);
+          isSwapped = true;
         }
       n--;
     } while (isSwapped);
@@ -81,15 +81,12 @@ class SortingAlgorithms
   * Complexity: Worst case and average case - O (n^2)
   *             Best case Ω(n)
   */
-  public void InsertionSort_v1(int[] A) // slightly improved version: swaps eliminated
-  {
-    for (int i = 1; i < A.Length; i++)
-    {
+  public void InsertionSort_v1(int[] A) { // slightly improved version: swaps eliminated
+    for (int i = 1; i < A.Length; i++) {
       // save i-th item because this will be replaced
       int x = A[i];
       int j = i;
-      while (j > 0 && A[j - 1] > x)
-      {
+      while (j > 0 && A[j - 1] > x) {
         A[j] = A[j - 1];
         j--;
       }

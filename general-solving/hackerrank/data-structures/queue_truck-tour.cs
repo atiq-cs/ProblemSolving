@@ -19,6 +19,11 @@
 *               fail.
 *               Therefore, if a sum is negative at some stage none of the
 *               previous petrol pumps cannot be starting index.
+*               
+*               This problem can be stated as,
+*               Find a rotation of a circular array such that all prefix sums
+*               for that rotation are non-negative? (Given that sum of all its
+*               elements is non negative).
 *
 * Ref         : https://www.hackerrank.com/challenges/truck-tour/forum/comments
 *               /199713
