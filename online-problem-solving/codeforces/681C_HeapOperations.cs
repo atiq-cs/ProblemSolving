@@ -14,7 +14,7 @@
 *               in the record, and the heap is non-empty when getMin ad
 *                removeMin are applied
 *
-*              HeapMin implementation is based on,
+*              MinHeap implementation is based on,
 *               hackerrank\CCI\DataStructure\008_find-the-running-median.cs
 *              For exceptions look at,
 *               https://docs.microsoft.com/en-us/dotnet/csharp/
@@ -75,7 +75,7 @@ class MinHeap {
 
   public int ExtractMin() {
     if (Size == 0)
-      throw new InvalidOperationException("MinHeap is empty!");
+      throw new InvalidOperationException("MinHeap underflow!");
     int max = Arr[0];
     Arr[0] = Arr[--Size];
     Heapify(0);

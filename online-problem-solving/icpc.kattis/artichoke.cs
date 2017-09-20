@@ -8,15 +8,12 @@
 *  Author      : Atiq Rahman
 *  Status      : Accepted
 *  Notes       : Judge is cool! Didn't require any fixed point formatting
-*  meta        : tag-easy, tag-world-final
+*  meta        : tag-dynamic-programming, tag-easy, tag-world-final
 ***************************************************************************/
-
 using System;
 
-public class Solution
-{
-    private static void Main()
-    {
+public class Solution {
+    private static void Main() {
         // Take input: 6 int
         string[] tokens = Console.ReadLine().Split();
         double p = double.Parse(tokens[0]);
@@ -30,8 +27,7 @@ public class Solution
         double maxPrice = previousPrice;
         double maxDiff = 0.0;
         // get price for each value of k and take maximum diff
-        for (int k = 2; k <= n; k++)
-        {
+        for (int k = 2; k <= n; k++) {
             double price = p * (Math.Sin(a * k + b) + Math.Cos(c * k + d) + 2.0);
             maxPrice = Math.Max(maxPrice, previousPrice);   // max is the max till current item
             double curDiff = maxPrice - price;              // get diff with max

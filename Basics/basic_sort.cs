@@ -1,19 +1,18 @@
 ﻿/*
-* Problem   : Basic Algos
-* Author    : Atiq Rahman
-* Date      : Sept 23, 2015
-* Desc      : Algos covered,
-*              Selection sort
-*              Bubble sort
-*              Insertion sort
-* meta      : tag-sorting 
-*/
+ * Problem   : Basic Algorithms (mostly sorting)
+ * Author    : Atiq Rahman
+ * Date      : Sept 23, 2015
+ * Desc      : Algos covered,
+ *              Selection sort
+ *              Bubble sort
+ *              Insertion sort
+ * meta      : tag-sorting 
+ */
 
 using System;
 using System.Collections.Generic;
 
-class SortingAlgorithms
-{
+class SortingAlgorithms {
   /*
   * Algo      : Selection sort
   * Desc      : Finds the smallest number each time and put it in front of
@@ -103,6 +102,34 @@ class SortingAlgorithms
     }
   }
 
+  /*
+   * Related: https://www.hackerrank.com/challenges/quicksort1
+   */
+  public void QuickSort(int[] A, int p, int r) {
+    if (p<r) {
+      int q = Partition(A, p, r);
+      QuickSort(A, p, q - 1);
+      QuickSort(A, q+1, r);
+    }
+  }
+
+  private int Partition(int[] A, int p, int r) {
+    int i = -1;
+    int x = A[r];
+    for (int j=0; j<r; j++) {
+      /*
+       * maintains invariant that all items are less than pivot are in the
+       * block of i (or smaller elements till where i ends)
+       */
+      if (A[j] <= x) {
+        i++;
+        Swap(ref A[i], ref A[j]);
+      }
+    }
+    Swap(ref A[i + 1], ref A[r]);
+    return i + 1;
+  }
+
   // Utility Functions
   static void Swap<T>(ref T lhs, ref T rhs) {
     if (lhs.Equals(rhs))
@@ -124,24 +151,18 @@ class Demo {
     Array.Copy(OriginalArray, A, A.Length);
     sortAlgo.InsertionSort_v1(A);
     Console.WriteLine("After insertion sort v1 list contains: ");
-    foreach (var item in A)
-      Console.Write(" {0}", item);
-    Console.WriteLine();
+    Console.WriteLine(string.Join(" ", A));
 
     Array.Copy(OriginalArray, A, A.Length);
     sortAlgo.InsertionSort_v2(A);
     Console.WriteLine("After insertion sort v2 list contains: ");
-    foreach (var item in A)
-      Console.Write(" {0}", item);
-    Console.WriteLine();
+    Console.WriteLine(string.Join(" ", A));
 
     // Selection sort demo
     Array.Copy(OriginalArray, A, A.Length);
     sortAlgo.SelectionSort(A);
     Console.WriteLine("After Selection sort list contains: ");
-    foreach (var item in A)
-      Console.Write(" {0}", item);
-    Console.WriteLine();
+    Console.WriteLine(string.Join(" ", A));
 
     // Bubble sort demo
     Array.Copy(OriginalArray, A, A.Length);
@@ -153,8 +174,12 @@ class Demo {
     Array.Copy(OriginalArray, A, A.Length);
     sortAlgo.BubbleSort_v2(A);
     Console.WriteLine("After Bubble sort v2 list contains: ");
-    foreach (var item in A)
-      Console.Write(" {0}", item);
-    Console.WriteLine();
+    Console.WriteLine(string.Join(" ", A));
+
+    // Quick sort demo
+    Array.Copy(OriginalArray, A, A.Length);
+    sortAlgo.QuickSort(A, 0, A.Length-1);
+    Console.WriteLine("After Quick sort list contains: ");
+    Console.WriteLine(string.Join(" ", A));
   }
 }

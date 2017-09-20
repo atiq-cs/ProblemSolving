@@ -10,7 +10,7 @@
 * Notes       : Count number of ways stick can be cut
 *                consider dividing the problem into half see examples below
 *
-* meta        : tag-math, tag-combinatories
+* meta        : tag-combinatorics, tag-math
 ***************************************************************************/
 
 using System;
