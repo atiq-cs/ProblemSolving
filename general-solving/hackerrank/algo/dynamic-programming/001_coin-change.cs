@@ -32,6 +32,15 @@
 *               Lessons:
 *                sorting coins not necessary
 *                
+*               Initialization:
+*                How many ways can we make 0?
+*                1 (known and does not require further calculation)
+*                How many ways can we make others?
+*                Initialize with 0 and dynamically keep adding to find final value.
+*               Therefore, initialization goes as follows,
+*                Set count for making 0 to 1
+*                And, all others to 0.
+*                
 *               Refs:
 *               This one uses 2D Array
 *               https://en.wikipedia.org/wiki/Change-making_problem

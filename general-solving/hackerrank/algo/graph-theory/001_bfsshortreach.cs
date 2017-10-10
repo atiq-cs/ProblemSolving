@@ -60,7 +60,7 @@ class Graph {
      *  We can remove the color by checking if distance of just 
      *  discoved node is INF,
      *  We can even ignore setting the color to GRAY, it will give us same result
-     *  In that case we only need 1 bit store color 
+     *  In that case we only need 1 bit to store color 
      */
     public void bfs(int s) {
         vertex[s].distance = 0;

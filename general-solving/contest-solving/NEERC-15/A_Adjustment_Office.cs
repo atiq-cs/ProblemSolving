@@ -10,6 +10,8 @@
 * Notes       : 
 *               fill in ...
 *               
+*               Demonstrates use of StreamWriter for IO
+*               
 * meta        : tag-acm-icpc
 ***************************************************************************/
 
