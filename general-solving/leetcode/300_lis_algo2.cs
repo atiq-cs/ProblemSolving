@@ -8,10 +8,10 @@
 * Notes       : For this problem result subsequence is in increasing order.
 *   Equal numbers are not considered part of the subsequence.
 *   
-*   When sorting order of numbers in subsequence is difference in two places
-*   we need to update comparison operator
-*    line 50 (compare lis[j] with current item from Array A)
-*    line 85 (Binary Search compares with item on index mid)
+*   When sorting order of numbers in subsequence is different, in two places
+*   we need to update comparison operator:
+*   - line 50 (compare lis[j] with current item from Array A)
+*   - line 83 (Binary Search compares with item on index mid)
 *    
 * Ref         : 1. CLR p397: Ex-15.4-6
 *   Maintain candidate subsequence by linking them through the input sequence
@@ -73,8 +73,6 @@ public class Solution {
   /*
    * Modified Binary Search to return immediate smaller one if item looked up is
    * not found.
-   *
-   * DP array (solution subsequence) is in decreasing order (for this problem)
    */
   private int BSearch(int item, int start, int end) {
     int mid = (start + end) / 2;

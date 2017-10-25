@@ -5,8 +5,16 @@
 * Date        : Sept 29 2017
 * Author      : Atiq Rahman
 * Status      : Accepted
-* Notes       : This example is for showing FILE IO using StreamReader and StreamWriter
+* Notes       :
+*   This example is for showing FILE IO using StreamReader and StreamWriter
 *   For original solution please look at 'icpc.kattis/tourguide.cs'
+*
+* Ref         :
+*   msdn - StreamWriter Class
+*   https://msdn.microsoft.com/en-us/library/system.io.streamwriter.aspx
+*   msdn - StreamReader Class
+*   https://msdn.microsoft.com/en-us/library/system.io.streamreader.aspx
+*
 * meta        : tag-csharp, tag-FILE-Input-Output
 ***************************************************************************/
 using System;

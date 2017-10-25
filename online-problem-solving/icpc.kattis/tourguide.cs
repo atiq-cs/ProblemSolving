@@ -3,11 +3,11 @@
 * URL         : https://open.kattis.com/problems/tourguide
 * Occasion    : Nordic Collegiate Programming Contest 2006
 * Date        : Oct 6 2017
-* Complexity  : 
+* Complexity  : O(n! * n) - generating permutations O(n!)
+*               - O(n) for each permutation
 * Author      : Atiq Rahman
 * Status      : Accepted
-* Notes       : Coin Change with e-coin Translation
-* Ref         : A relaxed version of Traveling Salesman Problem
+* Notes       : A relaxed version of Traveling Salesman Problem
 *               Due to small number of input it is possible to generate
 *               permutations and try all the orders to find minimum travelling time
 *               

@@ -5,11 +5,14 @@
 * Complexity  : O(n) Time, O(n) space
 * Author      : Atiq Rahman
 * Status      : Accepted
-* Notes       : Consider that the solution that includes first item cannot
-*               contain the last item
-*               And, the solution that includes last item cannot include first
-*               one
-*               Take care of collision between first and last index
+* Notes       : Same to previous problem with a new arranement as stated,
+*   "all houses at this place are arranged in a circle"
+*   
+*   Due to this arrangement,
+*   The solution that includes first house cannot contain the last house.
+*   Similarly, the solution that includes last house cannot include first
+*   house. Taking care of collision between first and last one solves the
+*   problem.
 * meta        : tag-dynamic-programming
 ***************************************************************************/
 

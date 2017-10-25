@@ -40,3 +40,29 @@ public class CF_Solution {
     return min.ToString() + " " + max.ToString();
   }
 }
+
+/*
+ Considering example, 6 3
+ First impression,
+  max,
+   6 people into 1 team,
+   5 + 4 + 3 + 2 + 1
+   = 15
+ However, this is wrong, there should be at least 1 person in each team. Hence,
+ max 4 people can go into 1 team,
+  max (corrected),
+   4 people into 1 team,
+   3 + 2 + 1 = 6
+ I developed the formula observing example test cases. Then, I proof checked
+ whether the invariant holds for general case.
+
+Checked for,
+  8/3
+  5/3
+  3/2
+
+1 remaining group
+
+m * x * (x-1) / 2
+3 * 2 * 1 / 2 = 3
+*/

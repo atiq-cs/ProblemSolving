@@ -7,9 +7,11 @@
 * Author      : Atiq Rahman
 * Status      : Accepted
 * Notes       : 
-*               comb is based on 'Basics/combination_binary.cs'
-*               https://msdn.microsoft.com/en-us/library/system.globalization.cultureinfo.currentculture.aspx
-*               https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-numeric-format-strings
+*   comb is based on 'Basics/combination_binary.cs'
+*   https://msdn.microsoft.com/en-us/library/system.globalization.cultureinfo.
+*   currentculture.aspx
+*   https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-
+*   numeric-format-strings
 * meta        : tag-combinatorics, tag-math, tag-easy
 ***************************************************************************/
 using System;
@@ -81,6 +83,42 @@ public class CF_Solution {
 }
 
 /*
+
+No '?'
+count p0n
+where p is number of '+' and n is number of '-'
+
+single '?' sign?
+Substitute with + and = and count.,
+say, d = p - n
+d' = p' - n'
+if |d-d'| > q (number of .. '?')
+then 0
+otherwise count,
+1 gives,
+ d'-1
+ d'+1
+
+2 gives,
+ d'-1-1
+ d'-1+1
+ d'+1-1
+ d'+1+1
+
+3 gives,
+ d'-1-1-1
+ d'-1-1+1
+ d'-1+1-1
+ d'-1+1+1
+ d'+1-1-1
+ d'+1-1+1
+ d'+1+1-1
+ d'+1+1+1
+ 
+A beautiful recursion for combination, can be based on my previous 'comb' code.
+
+Developing Solution
+--------------------
 Sample inputs,
 ++++
 +??+

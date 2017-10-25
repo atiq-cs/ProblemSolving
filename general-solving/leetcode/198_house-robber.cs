@@ -5,7 +5,11 @@
 * Complexity  : O(n) Time, O(n) space
 * Author      : Atiq Rahman
 * Status      : Accepted (beat 23%)
-* Notes       : Take care of the adjacent houses, that's it
+* Notes       : As it is stated
+*   "it will automatically contact the police if two adjacent houses were
+*   broken into on the same night."
+*
+* Take care of this adjacent cases and that makes the solution
 * meta        : tag-dynamic-programming, tag-easy
 ***************************************************************************/
 
