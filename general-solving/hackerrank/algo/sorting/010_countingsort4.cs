@@ -15,6 +15,7 @@ using System;
 /*
  * all public to save space and faster/simpler representation
  * not considering a requirement for encapsulation here
+ * avoid this representation for next problem
  */
 public struct Item {
   public int num;
@@ -47,7 +48,7 @@ class HK_Solution {
     for (int i=n-1; i>=0; i--) {
       // The array C keeps continuous accumulation of the frequencies for each
       // element
-      // Fpr example, for the largest element in A[i], C[A[i]] will point to
+      // For example, for the largest element in A[i], C[A[i]] will point to
       // the last index inside array B
       // if that largest element has multiple copies due to decrement of
       // C[A[i]] the index reduces by 1 to point to previous to last one

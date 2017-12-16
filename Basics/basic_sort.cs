@@ -1,5 +1,5 @@
 ﻿/*
- * Problem   : Basic Algorithms (mostly sorting)
+ * Problem   : Sorting Algorithms
  * Author    : Atiq Rahman
  * Date      : Sept 23, 2015
  * Desc      : Algos covered,
@@ -10,11 +10,10 @@
  */
 
 using System;
-using System.Collections.Generic;
 
 class SortingAlgorithms {
   /*
-  * Algo      : Selection sort
+  * Algo      : Selection sort (Select Minimum)
   * Desc      : Finds the smallest number each time and put it in front of
   *             unsorted window. It's as if the selected window is reduced by
   *             one each time starting with length n
@@ -31,7 +30,7 @@ class SortingAlgorithms {
   }
 
   /*
-  * Algo      : Bubble sort
+  * Algo      : Bubble sort (Select Maximum with Continuous Swapping if we call it bubbling)
   * Desc      : Finds the maximum each time and put it on appropriate index swapping all of them
   *             cocktail shaker sort evolves from this
   * Complexity: Worst case and average case - O (n^2)
@@ -67,7 +66,7 @@ class SortingAlgorithms {
   }
 
   /*
-  * Algo      : Insertion sort
+  * Algo      : Insertion sort (Reverse Bubble)
   * Desc      : Takes an index (i) from beginning to end
                 Start swapping from i to beginning of the array as long as swap is possible in reverse
                 direction. As a result, after each iteration items of the array upto i is sorted
@@ -100,34 +99,6 @@ class SortingAlgorithms {
         Swap<int>(ref A[j - 1], ref A[j]); j--;
       }
     }
-  }
-
-  /*
-   * Related: https://www.hackerrank.com/challenges/quicksort1
-   */
-  public void QuickSort(int[] A, int p, int r) {
-    if (p<r) {
-      int q = Partition(A, p, r);
-      QuickSort(A, p, q - 1);
-      QuickSort(A, q+1, r);
-    }
-  }
-
-  private int Partition(int[] A, int p, int r) {
-    int i = -1;
-    int x = A[r];
-    for (int j=0; j<r; j++) {
-      /*
-       * maintains invariant that all items are less than pivot are in the
-       * block of i (or smaller elements till where i ends)
-       */
-      if (A[j] <= x) {
-        i++;
-        Swap(ref A[i], ref A[j]);
-      }
-    }
-    Swap(ref A[i + 1], ref A[r]);
-    return i + 1;
   }
 
   // Utility Functions
@@ -174,12 +145,6 @@ class Demo {
     Array.Copy(OriginalArray, A, A.Length);
     sortAlgo.BubbleSort_v2(A);
     Console.WriteLine("After Bubble sort v2 list contains: ");
-    Console.WriteLine(string.Join(" ", A));
-
-    // Quick sort demo
-    Array.Copy(OriginalArray, A, A.Length);
-    sortAlgo.QuickSort(A, 0, A.Length-1);
-    Console.WriteLine("After Quick sort list contains: ");
     Console.WriteLine(string.Join(" ", A));
   }
 }

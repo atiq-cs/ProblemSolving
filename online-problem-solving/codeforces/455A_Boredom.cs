@@ -138,6 +138,60 @@ find total damange done by each number x,
 s[x-1] + s[x+1]
 
 score(x) = f[x] * x
-damange(x) = s[x-1] + s[x+1]
+damage(x) = s[x-1] + s[x+1]
+
+old draft
+-------------
+1 2 1 3 2 2 2 2 3
+
+* greedy appraoch like taking the highest score yielding item each time might not work
+but considering the max of 
+
+Can there be like chain reaction?
+like we have to go through all of them to find max score?
+
+keep a previous max and accrue upon that..
+
+say we got all of them s where s stands for score for each number,
+
+considering all of these are consecutive,
+
+s[i] = max(s[i-2], s[i-2]) + s[i]
+
+result max(s[n-1], s[n-2])
+
+now let's consider they are not consecutive,
+
+1 2 3 5 6
+
+max_score gets a reset whenever an interval is discovered
+
+why are we getting 16?
+
+9
+1 2 1 3 2 2 2 2 3
+
+1 1 2 2 2 2 2 3 3
+
+
+10
+10 5 8 9 5 6 8 7 2 8
+
+2 5 5 6 7 8 8 8 9 10
+2 10 6 7 24 9 10
+
+s[2] = 8
+s[3] = 17
+s[4] = 34
+s[5] = 26
+s[6] = 34+10 = 44
+
+2 5 5 6 7 8 8 8 9 10
+3*8 = 24
+5*2 = 10
+10
+total = 44
+
+wrong answer 1st lines differ - expected: '265416274', found: '265415918'
 
 */

@@ -84,6 +84,7 @@ abstract class Heap {
     Arr = new List<int>();
     Size = 0;
   }
+
   protected int GetParent(int i) { return (i - 1) / 2; }
   protected int GetLeftChild(int i) { return 2 * i + 1; }
   protected int GetRightChild(int i) { return 2 * i + 2; }
@@ -92,6 +93,7 @@ abstract class Heap {
   public int Peek() { return Size > 0 ? Arr[0] : 0; }
   abstract public void Insert(int item);
   abstract protected void Heapify(int i);
+
   protected void Swap(int i, int j) {
     int tmp = Arr[i];
     Arr[i] = Arr[j];

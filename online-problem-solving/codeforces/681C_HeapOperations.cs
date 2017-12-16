@@ -27,20 +27,24 @@ using System.Collections.Generic;
 class MinHeap {
   protected List<int> Arr;
   protected int Size;
+
   public MinHeap() {
     Arr = new List<int>();
     Size = 0;
   }
+
   protected int GetParent(int i) { return (i - 1) / 2; }
   protected int GetLeftChild(int i) { return 2 * i + 1; }
   protected int GetRightChild(int i) { return 2 * i + 2; }
 
   public int HeapSize() { return Size; }
+
   public int Peek() {
     if (Size == 0)
       throw new InvalidOperationException("MinHeap is empty!");
     return Arr[0];
   }
+
   protected void Swap(int i, int j) {
     int tmp = Arr[i];
     Arr[i] = Arr[j];
@@ -52,13 +56,14 @@ class MinHeap {
       Arr[Size] = item;
     else
       Arr.Add(item);
-    int  i = Size++;
+    int i = Size++;
     // Similar to Decrease Key
     while (i > 0 && Arr[GetParent(i)] > Arr[i]) {
       Swap(i, GetParent(i));
       i = GetParent(i);
     }
   }
+
   protected void Heapify(int i) {
     int l = GetLeftChild(i);
     int r = GetRightChild(i);

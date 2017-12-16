@@ -3,16 +3,16 @@ To implement searching based on tags we added meta to each of the source file. D
 
 Additionally, here are the currently supported tags on algo/data structure based domains,
  * [Binary Search](https://github.com/atiq-cs/Problem-Solving/search?q=tag-binary-search)
- * [Dynamic Programming](https://github.com/atiq-cs/Problem-Solving/search?utf8=%E2%9C%93&q=tag-dynamic-programming)
- * [Linked List](https://github.com/atiq-cs/Problem-Solving/search?utf8=%E2%9C%93&q=tag-linked-list)
- * [Heap](https://github.com/atiq-cs/Problem-Solving/search?q=tag-heap)
- * [Priority Queue](https://github.com/atiq-cs/Problem-Solving/search?utf8=%E2%9C%93&q=tag-priority-queue)
- * [Sorting](https://github.com/atiq-cs/Problem-Solving/search?utf8=%E2%9C%93&q=tag-sorting)
- * [Recursion](https://github.com/atiq-cs/Problem-Solving/search?utf8=%E2%9C%93&q=tag-recursion)
- * [String](https://github.com/atiq-cs/Problem-Solving/search?utf8=%E2%9C%93&q=tag-string)
  * [Bit Manipulation](https://github.com/atiq-cs/Problem-Solving/search?utf8=%E2%9C%93&q=tag-bitwise)
- * [Tree](https://github.com/atiq-cs/Problem-Solving/search?q=tag-tree)
+ * [Dynamic Programming](https://github.com/atiq-cs/Problem-Solving/search?utf8=%E2%9C%93&q=tag-dynamic-programming)
  * [Graph](https://github.com/atiq-cs/Problem-Solving/search?q=tag-graph)
+ * [Heap](https://github.com/atiq-cs/Problem-Solving/search?q=tag-heap)
+ * [Linked List](https://github.com/atiq-cs/Problem-Solving/search?utf8=%E2%9C%93&q=tag-linked-list)
+ * [Priority Queue](https://github.com/atiq-cs/Problem-Solving/search?utf8=%E2%9C%93&q=tag-priority-queue)
+ * [Recursion](https://github.com/atiq-cs/Problem-Solving/search?utf8=%E2%9C%93&q=tag-recursion)
+ * [Sorting](https://github.com/atiq-cs/Problem-Solving/search?utf8=%E2%9C%93&q=tag-sorting)
+ * [String](https://github.com/atiq-cs/Problem-Solving/search?utf8=%E2%9C%93&q=tag-string)
+ * [Tree](https://github.com/atiq-cs/Problem-Solving/search?q=tag-tree)
 
 Company based domains,
  * [Google](https://github.com/atiq-cs/Problem-Solving/search?utf8=%E2%9C%93&q=tag-google)
@@ -24,6 +24,7 @@ Miscellaneous tags
  * [Interviews, any company](https://github.com/atiq-cs/Problem-Solving/search?utf8=%E2%9C%93&q=tag-interviews)
  * [Easy problems, can't classify](https://github.com/atiq-cs/Problem-Solving/search?utf8=%E2%9C%93&q=tag-easy)
  * [MinHeap](https://github.com/atiq-cs/Problem-Solving/search?q=tag-minheap)
+ * [Data Structure](https://github.com/atiq-cs/Problem-Solving/search?utf8=%E2%9C%93&q=tag-data-structure)
  
 ### Problem Solving Repository Structure
 #### Basics

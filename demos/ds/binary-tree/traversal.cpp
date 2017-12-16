@@ -10,11 +10,10 @@
     Complexity  : O(n)
 
     Status      :   Accepted
-*/
-
-/*
+    Notes       :
     Pre-order traversal of Binary Tree
     Solves https://www.hackerrank.com/challenges/tree-preorder-traversal
+
 */
 
 void Preorder(node *root) {

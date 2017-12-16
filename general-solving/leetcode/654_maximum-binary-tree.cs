@@ -4,7 +4,8 @@
 * Date  : 2017-10-24
 * Author: Atiq Rahman
 * Comp  : O(n^2), n for traversing the tree and n for finding max for visit of
-*   each node. O(lg n) space complexity for recursion stack
+*   each node. O(n) for storing the sorted list and O(lg n) space complexity
+*   for recursion stack
 *
 * Status: Accepted
 * Notes : Similar to building binary tree from sorted array or converting

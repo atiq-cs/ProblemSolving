@@ -12,7 +12,6 @@
 * Ref   : general-solving/misc/find_balance_index.cpp
 * meta  : tag-easy, tag-prefix-sum
 ***************************************************************************/
-
 using System;
 using System.Linq;
 

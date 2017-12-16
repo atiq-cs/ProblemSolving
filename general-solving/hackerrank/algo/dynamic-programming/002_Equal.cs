@@ -38,13 +38,16 @@ using System;
 using System.Linq;
 
 class HK_Solution {
+  // DP if we call choosing min among 3 is called DP
   static int GetMinMovesDP(int[] a) {
-    int min = a.Min();    // avoid 'Linq' if TLE
-    return Math.Min(Math.Min(GetMinMovesDP(a, min), GetMinMovesDP(a, min-1)),
-      GetMinMovesDP(a, min-2));
+    // avoid 'Linq' if slow for online judge
+    int min = a.Min();
+    // get the min# moves among making target as min, min-1, min-2
+    return Math.Min(Math.Min(GetMoveCount(a, min), GetMoveCount(a, min-1)),
+      GetMoveCount(a, min-2));
   }
 
-  static int GetMinMovesDP(int[] a, int target) {
+  static int GetMoveCount(int[] a, int target) {
     int move_count = 0;
     for (int i = 0; i < a.Length; i++)
       move_count += GetMoveCount(a[i], target);
@@ -53,8 +56,11 @@ class HK_Solution {
 
   static int GetMoveCount(int n, int t) {
     n -= t;
+    // number of changes with 5
     int count = n / 5; n %= 5;
+    // number of changes with 2
     count += n / 2;
+    // add number of changes with 1
     return count + n % 2;
   }
 

@@ -60,7 +60,8 @@ namespace Solution {
       s[0][LOW] = s[0][HIGH] = 0;
       for (int i = 1; i < N; i++) {
         s[i][LOW] = s[i - 1][HIGH] + b[i-1] - 1;
-        s[i][HIGH] = Math.Max(s[i - 1][HIGH]+ Math.Abs(b[i]-b[i-1]), s[i - 1][LOW] + b[i] - 1);
+        s[i][HIGH] = Math.Max(s[i - 1][HIGH]+ Math.Abs(b[i]-b[i-1]), s[i - 1]
+          [LOW] + b[i] - 1);
       }
       return Math.Max(s[N - 1][LOW], s[N-1][HIGH]);
     }
