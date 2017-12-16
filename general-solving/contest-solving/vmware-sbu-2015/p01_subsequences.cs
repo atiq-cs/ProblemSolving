@@ -1,5 +1,5 @@
 /***************************************************************************
-*   Problem Name:   First problem of the challenge
+*   Problem Name:   First problem of this vmware challenge
 *   Problem Link :  https://www.hackerrank.com/tests/*
 *   Date        :   Sept 19, 2015
 *
@@ -11,28 +11,24 @@
 *   Status      :   Testcases passed
 ***************************************************************************/
 
-static string[] buildSubsets(string s)
-{
-    string set = s;
-    List<string> subsets = new List<string>();
+static string[] buildSubsets(string s) {
+  string set = s;
+  List<string> subsets = new List<string>();
 
-    for (int i = 1; i < set.Length; i++)
-    {
-        subsets.Add(set[i - 1].ToString());
+  for (int i = 1; i < set.Length; i++) {
+    subsets.Add(set[i - 1].ToString());
+    List<string> newSubsets = new List<string>();
 
-        List<string> newSubsets = new List<string>();
-
-        for (int j = 0; j < subsets.Count; j++)
-        {
-            string newSubset = subsets[j] + set[i];
-            newSubsets.Add(newSubset);
-        }
-
-        subsets.AddRange(newSubsets);
+    for (int j = 0; j < subsets.Count; j++) {
+      string newSubset = subsets[j] + set[i];
+      newSubsets.Add(newSubset);
     }
+    subsets.AddRange(newSubsets);
+  }
 
-    subsets.Add(set[set.Length - 1].ToString());
-    subsets.Sort();
-
-    return subsets.ToArray();
+  subsets.Add(set[set.Length - 1].ToString());
+  subsets.Sort();
+  // example debug print of the result subset
+  // Console.WriteLine(string.Join(Environment.NewLine, subsets));
+  return subsets.ToArray();
 }
