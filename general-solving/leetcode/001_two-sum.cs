@@ -5,9 +5,11 @@
 * Complexity  : O(N) Time and Space
 * Author      : Atiq Rahman
 * Status      : Accepted
-* Notes       : hashset is a better data structure for set operations
-*               As we don't require set operations we use dictionary
-*               beats 44.74%
+* Notes       : hashset is a better data structure for set operations as we
+*   don't require set operations we use dictionary
+*   ref: https://leetcode.com/articles/two-sum/ (last one same as mine)
+*   Probably input number are distinct in that case we can use a hashMap
+*   instead of Dictionary
 * meta        : tag-hashtable
 ***************************************************************************/
 
