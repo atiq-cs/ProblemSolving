@@ -36,7 +36,7 @@ Where CountryCode='JPN';
 Select max(Population)-min(Population)
 From City;
 
-/* The Blunder
+/* The Blunder - 7th Problem in Aggregation
 
 Notes:
   In step 1, we perform a simple query
@@ -149,3 +149,61 @@ CONVERT(DECIMAL(10, 4), (
  (SELECT MIN(LAT_N) FROM
    (SELECT TOP 50 PERCENT LAT_N FROM STATION ORDER BY LAT_N DESC) AS TopHalf)
 ) / 2) AS Median;
+
+
+/* sql/aggregation
+   The Blunder - 7th Problem in Aggregation
+
+Draft computation texts,
+2340 
+1198 
+9009 
+2341 
+9990 
+8011 
+2341 
+2342 
+2343 
+2344 
+2345 
+2346 
+2347 
+2348 
+2349 
+9087 
+7777 
+5500 
+2570 
+2007 
+
+2340+1198+9009+2341+9990+8011+2341+2342+2343+2344+2345+2346+2347+2348+2349+9087
++7777+5500+2570+2007=80935
+
+76888.25
+
+234 
+1198 
+99 
+2341 
+999 
+811 
+2341 
+2342 
+2343 
+2344 
+2345 
+2346 
+2347 
+2348 
+2349 
+987 
+7777 
+55 
+257 
+27 
+
+234 +1198 +99 +2341 +999 +811 +2341 +2342 +2343 +2344 +2345 +2346 +2347 +2348
++2349 +987 +7777 +55 +257 +27 = 35890
+
+1794.5
+ */
