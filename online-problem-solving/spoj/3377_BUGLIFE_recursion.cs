@@ -13,6 +13,9 @@
 *   same gender. If an interaction is found between X and Z then we it's
 *   suspicious.
 *   
+*   Problem is mapped with bi-coloring. If bi-coloring is not possible then we
+*   conclude as suspicious. Otherwise, not.
+*   
 *   Use two colors to paint the vertices.
 *   Colors have following meaning
 *   White - Unexplored vertices
@@ -101,3 +104,82 @@ public class SPOJSOlution {
     }
   }
 }
+
+/*
+ * mapp
+ * 
+Draft
+bicoloring not possible: suspicious
+1
+3 3
+1 2
+2 3
+1 3
+
+bicoloring possible: not suspicious
+1
+4 2
+1 2
+3 4
+
+possible
+1
+7 5
+1 2
+2 3
+4 5
+5 6
+6 7
+
+possible (group 1: 1,2,3 group 2: 4,5,6,7)
+last edge connects the two groups
+1
+7 6
+1 2
+2 3
+4 5
+5 6
+6 7
+7 1
+
+possible
+1
+7 6
+1 2
+2 3
+4 5
+5 6
+6 7
+7 4
+
+not possible: suspicious
+1
+3 3
+1 2
+2 3
+3 1
+
+possible
+1 2
+2 3
+3 4
+4 1
+
+however, following is not possible: suspicious
+1
+4 4
+1 2
+2 3
+3 4
+4 2
+
+possible
+1
+7 6
+1 2
+2 3
+4 5
+5 6
+6 7
+7 4   
+*/
