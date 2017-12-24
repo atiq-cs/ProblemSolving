@@ -36,8 +36,6 @@ public class DFSDemo {
   // Array of List
   List<int>[] AdjList;
   int nV;
-  int[] p;
-  bool HasCycle = false;
 
   public void TakeInput() {
     string[] tokens = Console.ReadLine().Split();
@@ -45,11 +43,9 @@ public class DFSDemo {
     int nE = int.Parse(tokens[1]);
     AdjList = new List<int>[nV];
     color = new COLOR[nV];
-    p = new int[nV];
 
     for (int i = 0; i < nV; i++) {
       AdjList[i] = new List<int>();
-      p[i] = -1;
     }
 
     // Build adjacency list
@@ -64,32 +60,32 @@ public class DFSDemo {
     }
   }
 
-  private void DFS() {
+  private bool DFS() {
     for (int v = 0; v < nV; v++)
       if (color[v] == COLOR.WHITE) {
-        DFSVisit(v, COLOR.GRAY);
+        if (!DFSVisit(v, COLOR.GRAY))
+          return false;
       }
+    return true;
   }
 
-  private void DFSVisit(int u, COLOR sex) {
-    if (HasCycle)
-      return;
+  /* returns true if bi-coloring possible */
+  private bool DFSVisit(int u, COLOR sex) {
     color[u] = sex;
     foreach (int v in AdjList[u])
       if (color[v] == COLOR.WHITE) {
-        DFSVisit(v, sex == COLOR.GRAY? COLOR.BLACK : COLOR.GRAY);
+        if (!DFSVisit(v, sex == COLOR.GRAY ? COLOR.BLACK : COLOR.GRAY))
+          return false;
       }
-      // non-parent back edge
-      else if (color[u] == color[v]) {
-        HasCycle = true;
-        return;
-      }
+      // colors matches - coloring not possible
+      else if (color[u] == color[v])
+        return false;
+    return true;
   }
 
   public void ShowResult(int t) {
-    DFS();
-    Console.WriteLine("Scenario #{0}:\r\n{1}", t, HasCycle?
-      "Suspicious bugs found!" : "No suspicious bugs found!");
+    Console.WriteLine("Scenario #{0}:\r\n{1}", t, DFS()?
+      "No suspicious bugs found!" : "Suspicious bugs found!");
   }
 }
 
