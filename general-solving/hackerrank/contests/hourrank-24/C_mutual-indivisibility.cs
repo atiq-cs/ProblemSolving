@@ -1,5 +1,5 @@
 ﻿/***************************************************************************
-* Title : Quick Sort
+* Title : Mutual Indivisibility
 * URL   : hackerrank.com/contests/hourrank-24/challenges/mutual-indivisibility/
 * Cont  : hourrank-24
 * Date  : Nov 2, 2017
