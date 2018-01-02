@@ -2,7 +2,7 @@
 * Title : Find the Median
 * URL   : https://www.hackerrank.com/challenges/find-the-median
 * Contst: Codeforces Alpha Round #20 
-* Date  : 2017-01-01
+* Date  : 2018-01-01
 * Author: Atiq Rahman
 * Comp  : O(n)
 * Status: Accepted
