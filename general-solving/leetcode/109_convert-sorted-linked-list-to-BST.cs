@@ -8,7 +8,7 @@
 * Notes : Similar to mentioned related problem. However,
 *   Setting the value of root which is retrived by accessing A[mid] is replaced
 *   by a seek in the linked list
-* Rel   :
+* Relat :
 *   https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree
 * meta  : tag-easy, tag-binary-tree, tag-recursion
 ***************************************************************************/
@@ -38,6 +38,7 @@ public class Solution {
   }
   
   // head = original head + start
+  // this head is in parameter to improve seek time
   private TreeNode SortedListToBSTRec(ListNode head, int start, int end) {
     if (start > end)
       return null;
