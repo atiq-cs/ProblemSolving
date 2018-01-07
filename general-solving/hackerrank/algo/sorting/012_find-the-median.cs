@@ -16,7 +16,6 @@
 * meta  : tag-median, tag-order-stats
 ***************************************************************************/
 using System;
-using System.Collections.Generic;
 
 class MedianSolution {  // Reverse segment Solution Class
   private int n;
