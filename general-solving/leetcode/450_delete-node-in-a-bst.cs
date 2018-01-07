@@ -41,7 +41,7 @@
 *   the small input were useful. Large one is added for reference only.
 * Ref   : C.L.R p 298
 * Relat : http://lintcode.com/en/problem/insert-node-in-a-binary-search-tree/
-* meta  : tag-binary-tree, tag-bst
+* meta  : tag-binary-tree, tag-bst, tag-bsearch
 ***************************************************************************/
 public class Solution {
   public TreeNode DeleteNode(TreeNode root, int key) {

@@ -12,7 +12,7 @@
 *                      Changing variables to unint also makes the solution acceptable for large numbers
 *                   2. I never knew binary search could return the first item found among many items with same values
 *                      This I have learnt from https://leetcode.com/discuss/62255/o-lgn-simple-java-solution
-*   meta        :  tag-binary-search, tag-recursion
+*   meta        :  tag-bsearch, tag-recursion
 ***************************************************************************/
 
 /* The isBadVersion API is defined in the parent class VersionControl.
