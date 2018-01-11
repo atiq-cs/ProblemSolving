@@ -46,7 +46,6 @@
 *   
 *   second iteration,
 *    0 1 1 1
-* Ref   : C.L.R p 298
 * Relat : https://www.hackerrank.com/challenges/coin-change
 * meta  : tag-coin-change, tag-dynamic-programming
 ***************************************************************************/
