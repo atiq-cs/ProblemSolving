@@ -91,6 +91,7 @@ public class Solution {
         y = y.left; 
       }
 
+      // changed source code flow following C.L.R.S
       // y is not child of z, y's right node should replace y
       if (py != null) {
         // TRANSPLANT(T, y, y.right)  C.L.R p298
@@ -98,7 +99,7 @@ public class Solution {
           py.left = y.right;
         else
           py.right = y.right;
-        // ** y's right should be assigned to z's right
+        // ** y's right should be assigned to z's right coz y is replacing z
         // Example
         // [5,3,7,2,4,6,8]
         //  5
