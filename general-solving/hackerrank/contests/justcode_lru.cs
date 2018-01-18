@@ -7,28 +7,32 @@
 * Complexity  : O(n log n)
 * Author      : Atiq Rahman
 * Status      : Accepted
-* Notes       : Lower number has higher priority so we start with int max value
-*               and then reduce over time. Changing the conditional operator
-*               for comparing priority in the implementation of Priority Queue
-*               will also work.
+* Notes       : Solved using 'Priority Queue' Data Structure. Lower number has
+*   higher priority. We start assigning priority starting from int max value
+*   while reading inputs and inserting them into the queue.
+*   An item that appeared later has therefore higher priority as we decrease
+*   priority value every time we insert an item.
+*   In the contrary, we can start with min value and increment priority over
+*   time. In that case, changing the conditional operator for comparing
+*   priority will help.
 * 
-* Priority Queue
-*             : This version supercesdes previous implementation of Priority
-*               Queue in '1840_PQUEUE.cs' to solve SPOJ problem
-*               * Following bug has been found on the Priority Queue,
-*                Right after extract min the result come wrong if Enqueue is
-*                done or better way to say it is that some operations would
-*                give inconsistent result if they are performed right after
-*                'ExtractMin' Operation of the Priority Queue
+* Priority Queue Implementation for this problem:
+*   This version supercesdes previous implementation of Priority Queue in
+*   '1840_PQUEUE.cs' to solve SPOJ problem
+*   That version has following bug,
+*   Right after extract min the result come wrong if Enqueue is done or better
+*   way to say it is that some operations would give inconsistent result if
+*   they are performed right after 'ExtractMin' Operation of the Priority Queue
 *                
-*        Spec : Based on binary heap, we use C# List as the dynamic array
-*      Source : https://code.msdn.microsoft.com/Dijkstras-Single-Soruce-69faddb3
+*   Based on binary heap, we use C# List as the dynamic array
+*   Previous Implementation Ref
+*     https://code.msdn.microsoft.com/Dijkstras-Single-Soruce-69faddb3
 
 * Modification: Due to the issue mentioned above I remove the last element
-*               in the last line of 'ExtractMin' implementation
+*               in the last line of 'ExtractMin' implementation          
 *               
-*               
-* meta        : tag-data-structure, tag-implementation, tag-priority-queue
+* meta        : tag-data-structure, tag-implementation, tag-priority-queue,
+*   tag-heap
 ***************************************************************************/
 using System;
 using System.Collections.Generic;
@@ -175,8 +179,9 @@ class PriorityQueue {
       }
     }
 
-    while (priority_queue.Count > S)
-      priority_queue.extractMin();
+    // Not required
+    // while (priority_queue.Count > S)
+      // priority_queue.extractMin();
 
     int[] res = new int[priority_queue.Count];
     Console.WriteLine(countPF);
