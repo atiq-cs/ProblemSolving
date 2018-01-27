@@ -4,7 +4,7 @@
 * Date  : 2017-12-30
 * Author: Atiq Rahman
 * Comp  : O(V + E lg V) verify
-* Status: Runtime Error
+* Status: Runtime Error (Wrong Answer)
 * Notes : Sophisticated Priority Queue, Fast IO
 *   got past TLE now
 * Rel   : http://spoj.com/problems/TRVCOST/
