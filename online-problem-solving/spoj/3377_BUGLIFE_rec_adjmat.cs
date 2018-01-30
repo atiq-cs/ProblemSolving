@@ -11,7 +11,7 @@
 *   Homosexuality is the bug. Two bugs of opposite gender can mingle. However,
 *   Two bugs of same gender cannot mingle! Input data does not specify the
 *   gender of a bug. If X and Y mingle, Y and Z mingle then if X and Z are of
-*   same gender. If an interaction is found between X and Z then we it's
+*   same gender. If an interaction is found between X and Z then we say it's
 *   suspicious.
 *   
 *   Problem is mapped with bi-coloring. If bi-coloring is not possible then we
@@ -25,7 +25,7 @@
 *   
 *   While doing DFS traversal during checking adjacent vertices check if the
 *   vertex has same color with parent.
-* meta  : tag-easy, tag-dfs, tag-recursion
+* meta  : tag-easy, tag-dfs, tag-bfs, tag-recursion
 ***************************************************************************/
 using System;
 using System.Collections.Generic;
