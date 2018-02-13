@@ -16,6 +16,7 @@ class Solution {
 public:
   /*
   * @param nums: an array of integers
+  * EPI's algo
   */
   void partitionArray(vector<int> &nums) {
     for (int i = 0, j = nums.size() - 1; i<j; i++) {
