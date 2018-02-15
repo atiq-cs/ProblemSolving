@@ -24,6 +24,7 @@ A struct is a value type. When a struct is created, the variable to which the st
 struct's actual data. When the struct is assigned to a new variable, it is copied. The new variable and the
 original variable therefore contain two separate copies of the same data. Changes made to one copy do not
 affect the other copy.
+draft at bottom
 ref: https://msdn.microsoft.com/en-us/library/vstudio/ms173109(v=vs.140).aspx
 ***************************************************************************/
 public class Solution
@@ -49,3 +50,27 @@ public class Solution
         return previousNode;
     }
 }
+
+/* say I have 3 -> 4 -> 5
+
+Node previous = null;
+
+first iteration
+head = 3
+ current = 3
+ head = 4 (next of 3)
+ 3 's next set to null
+ previous = 3
+
+second iteration
+ current = 4
+ head = 5
+ 4's next set to 3
+ previous = 4
+ 
+3rd iteration
+ current = 5
+ head = null
+ current's next set to 4
+ previous = 5
+*/
