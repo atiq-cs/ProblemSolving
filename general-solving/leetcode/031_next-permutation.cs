@@ -65,11 +65,34 @@ public class Solution {
     [3,4,3,4,3,1]
     [3,4,3,3,1,4]
 
- * Special Inputs:
- * [3,4,1,4,3,3]
- * [5, 4, 3, 2, 1]
- * [5, 4, 3, 1, 2]
- * [4, 3, 5, 2, 1]
- * [2,3,1,3,3]
- * [2,1,2,2,2,2,2,1]
+ Special Inputs:
+  [3,4,1,4,3,3]
+  [5, 4, 3, 2, 1]
+  [5, 4, 3, 1, 2]
+  [4, 3, 5, 2, 1]
+  [2,3,1,3,3]
+  [2,1,2,2,2,2,2,1]
+  
+ More draft from previous note,
+ 5431876
+
+5436871
+5436178
+
+54312
+54321
+54231
+54132
+54231
+54213
+54312
+54213
+54321
+
+corner case:
+ if we reached index 0 then we don't find next bigger, we don't swap with next bigger
+reverse
+
+1234567899
+7654321
 */
