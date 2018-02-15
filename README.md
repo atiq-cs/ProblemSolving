@@ -12,7 +12,6 @@ https://github.com/atiq-cs/Problem-Solving/search?q=tag-bitwise)
  * [Dynamic Programming](
 https://github.com/atiq-cs/Problem-Solving/search?q=tag-dynamic-programming)
  * [Graph](https://github.com/atiq-cs/Problem-Solving/search?q=tag-graph)
- * [Heap](https://github.com/atiq-cs/Problem-Solving/search?q=tag-heap)
  * [Linked List](
 https://github.com/atiq-cs/Problem-Solving/search?q=tag-linked-list)
  * [Priority Queue](
@@ -30,7 +29,7 @@ https://github.com/atiq-cs/Problem-Solving/search?q=tag-binary-search)
 https://github.com/atiq-cs/Problem-Solving/search?q=tag-binary-tree)
  * [Binary Search Tree](
 https://github.com/atiq-cs/Problem-Solving/search?q=tag-bst)
- * [MinHeap](https://github.com/atiq-cs/Problem-Solving/search?q=tag-minheap) 
+ * [Heap](https://github.com/atiq-cs/Problem-Solving/search?q=tag-heap)
 
 Graph algorithm tags,
  * [Breadth First Search](

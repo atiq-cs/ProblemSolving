@@ -16,9 +16,14 @@
 *               additional data structure
 *               2. Too easy test cases; don't depend on it
 *               
+*               'hackerrank/CCI/DataStructure/008_find-the-running-median.cs'
+*               implements an abstract class to derive min and max heap
+*               
+*               Finally, 'codeforces/681C_HeapOperations.cs' is probably an
+*               updated version for Heap implementation.
 * Ref         : https://courses.csail.mit.edu/6.006/fall10/handouts/
 *               recitation10-8.pdf (max heap though)
-* meta        : tag-heap, tag-easy, tag-minheap
+* meta        : tag-heap, tag-easy
 ***************************************************************************/
 using System;
 using System.Collections.Generic;

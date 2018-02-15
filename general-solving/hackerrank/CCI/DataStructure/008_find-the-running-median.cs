@@ -11,7 +11,7 @@
 *               duplicate numbers in input set
 *               
 * Related     : Based on hackerrank\data-structures\heap_01_qheap.cs
-* meta        : tag-heap, tag-easy, tag-minheap
+* meta        : tag-heap, tag-easy
 ***************************************************************************/
 using System;
 using System.Collections.Generic;
