@@ -8,6 +8,7 @@
 *  Author      : Atiq Rahman
 *  Status      : Accepted
 *  Notes       : It didn't require any fixed point formatting
+*                 Similar to leetcode's 'best-time-to-buy-and-sell-stock'
 *  meta        : tag-dynamic-programming, tag-easy, tag-world-final
 ***************************************************************************/
 using System;
