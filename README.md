@@ -37,6 +37,10 @@ https://github.com/atiq-cs/Problem-Solving/search?q=tag-bfs)
  * [Depth First Search](
 https://github.com/atiq-cs/Problem-Solving/search?q=tag-dfs)
 
+Permutation, combination related problems,
+ * [Next Permutation](
+https://github.com/atiq-cs/Problem-Solving/search?q=tag-next-permutation)
+
 Company based domains,
  * [Google](https://github.com/atiq-cs/Problem-Solving/search?q=tag-google)
  * [Microsoft](
