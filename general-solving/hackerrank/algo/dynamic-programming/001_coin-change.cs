@@ -41,6 +41,8 @@
 *                Set count for making 0 to 1
 *                And, all others to 0.
 *                
+*               some old draft text at bottom
+*                
 *               Refs:
 *               This one uses 2D Array
 *               https://en.wikipedia.org/wiki/Change-making_problem
@@ -94,3 +96,76 @@ class HK_Solution {
     Demo.Run();
   }
 }
+
+/* Draft - 2016-12-21
+1, 2, 3
+
+cw[1] = 1
+cw[2] = 1
+cw[3] = 1
+
+how many ways can we make 0?
+1
+
+how many ways can we make 1?
+cw[1] + 1 coin = 1
+
+
+how many ways can we make 2?
+for each coin c_i
+ cw[2] += c_i
+
+how many ways can we make n?
+for each coin c_i
+ cw[n] += cw[n-c_i]
+
+consider example,
+{1, 2, 3} 
+cw[0] = 1
+cw[1] += cw[0] = 1
+cw[2] += cw[1] = 1
+cw[2] += cw[0] = 2
+cw[3] += cw[2] = 2
+cw[3] += cw[1] = 3
+cw[3] += cw[0] = 4
+
+{1, 1, 1}
+{1, 2}
+{3}
+
+add 1
+{1, 1}
+{2}
+add 2
+{1}
+
+3 3
+1 2 3
+
+tries the first coin,
+1
+3-1=2
+cw[3] += cw[2]
+
+first we try to make 1
+cw[1] = 1
+
+we try to make 2
+cw[2] +=  cw[2-1] = cw[1] = 1
+cw[2] +=  cw[2-2] = cw[0] = 2
+
+we try to make 3
+cw[3] +=  cw[3-1] = cw[2] = 2
+cw[3] +=  cw[3-2] = cw[1] = 3
+
+some how use
+
+we wanna allow use of the same coin but not 
+we wanna allow {1, 2} but not {2, 1}
+
+or 1, 1, 2 but not 1, 2, 1
+can use hashset for each number, complexity of comparison 
+
+this set operations getting complex hashset won't work cuz we might have
+duplicate values
+*/
