@@ -1,0 +1,76 @@
+9
+abc
+ladefbgtcj
+1
+abcdef
+aghijklmcdefb
+2
+abcdef
+abcdklmnoegfi
+3
+abcdef
+abcklmnopdf
+-1
+1
+abc
+aaaaaaaaaaaaaabbbbbbbbbbbbbccccccccccccccccc
+-1
+    167
+    axyq
+    eprxibexxyf
+    171
+    nho
+    tonpyzwotkg
+    -1
+1
+aaa
+bcdbcdbcdbcdefghja
+-1
+1
+a
+bbbbbbbbbbbbbbbbb
+2
+abcdef
+tasbvcwdoepqf
+3
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaab
+yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyabbbbbbbbbbbbbbbbbbbbbbbbbb
+2
+z
+abcdef
+    1
+    cheese
+    chese
+    2
+    cheese
+    abcdefg
+    3
+    cheese
+    abcdefgij
+    4
+    t
+    r
+    1
+    aaa
+    bcdbcdbcdbcdefghja
+    7
+    aaa
+    bcdbcdbcdbcdefdta
+    2
+    aaa
+    bcdbcdbcdbcdegt
+    -1
+
+4
+atiq
+abcabcabcatiqqqqqq
+1
+cheese
+chese
+2
+cheese
+abcdefg
+3
+cheese
+abcdefgij
+-1
