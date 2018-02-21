@@ -2,16 +2,15 @@
 	Problem Name:	3n+1 problem
 	Judge Status:	Accepted
 	Solution:		Very simple, brute force
+  Date: 2006-05-29
 */
 
 #include<stdio.h>
 
-int main()
-{
+int main() {
 	int i,j,l,l1,l2,k,m,n,r;
 
-	while((scanf("%d %d",&i,&j))!=EOF)
-	{
+	while((scanf("%d %d",&i,&j))!=EOF) {
 		l1=i;
 		l2=j;
 		if(i>j)

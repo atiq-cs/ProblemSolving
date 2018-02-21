@@ -1,14 +1,14 @@
 /*
 	Problem Name: Ugly Numbers
 	Solution: DP
-	Description: By precalculating only the final 1500th ugly number has to be printed
+	Description: Print final 1500th ugly number
   Update: this has moved to
     "online-problem-solving/uva-online-judge/136_UglyNumbers.cpp"
+  Date: 2006-06-24
 */
 #include <stdio.h>
 
-int main()
-{
+int main() {
 	int i, j;
 	int ugly[1500];
 	ugly[0] = 1;

@@ -1,3 +1,6 @@
+/*
+ * Date: 2006-05-29
+ */
 #include<stdio.h>
 
 int main()

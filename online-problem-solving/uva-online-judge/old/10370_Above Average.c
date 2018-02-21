@@ -1,17 +1,19 @@
+/*
+ * Date: 2006-05-29
+ * meta: tag-easy, tag-math
+ */
 #include<stdio.h>
-main()
-{
+
+main() {
 	int a,i,j,s,C,N,g[2000];
 	float k;
 
 	scanf("%d",&C);
-	for(i=1;i<=C;i++)
-	{
+	for(i=1;i<=C;i++) {
 		scanf("%d",&N);
 		s=0;
 
-		for(j=1;j<=N;j++)
-		{
+		for(j=1;j<=N;j++) {
 			scanf("%d",&g[j]);
 			s=s+g[j];
 		}

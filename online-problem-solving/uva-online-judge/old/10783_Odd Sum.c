@@ -1,11 +1,14 @@
+/*
+* Date: 2006-05-29
+* meta: tag-easy, tag-math
+*/
 #include<stdio.h>
 
-void main()
-{
+void main() {
 	int a,b,i,t;
 	scanf("%d",&t);
-	for(i=1;i<=t;i++)
-	{
+
+	for(i=1;i<=t;i++) {
 		scanf("%d %d",&a,&b);
 		if (!(a%2)) a++;
 		if (!(b%2)) b--;
