@@ -1,0 +1,4 @@
+0 base 2 = 0 base 2
+A base 16 = A base 16
+A is an illegal base 10 number
+A base 16 = 10 base 10
