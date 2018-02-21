@@ -4,7 +4,7 @@
 */
 #include<stdio.h>
 
-void main() {
+int main() {
 	long long a,b,c;
 	int i,N;
 
@@ -18,4 +18,5 @@ void main() {
 		}
 		printf("%lld %lld\n",a,b);
 	}
+  return 0;
 }
