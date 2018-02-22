@@ -2,12 +2,26 @@
 // Lambda expressions ref: https://msdn.microsoft.com/en-us/library/dd293608.aspx
 // even_lambda.cpp
 // compile with: cl /EHsc /nologo /W4 /MTd
+// uses initializer list
 // meta: tag-bloomberg
 
 #include <algorithm>
 #include <iostream>
 #include <vector>
+#include <sstream>
+#include <iterator>
+#include <string>
+
 using namespace std;
+
+std::string listToString(std::vector<int> vec) {
+  std::ostringstream oss;
+  /* this would also work 
+    for (auto& item : vec)
+      oss << item << " ";*/
+  std::copy(vec.begin(), vec.end(), std::ostream_iterator<int>(oss, ", "));
+  return oss.str();
+}
 
 int main() {
   // Create a vector object that contains 10 elements.
