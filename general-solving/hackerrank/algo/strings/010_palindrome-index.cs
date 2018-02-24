@@ -8,8 +8,9 @@
 * Status      : Accepted
 * Desc        :  
 * Notes       : A simple palindrome problem
-*             - Find the index where a char does not match on the other side
-*             -  Check excluding that character whether rest is palindrome
+*   palindrome (reads same from forward or backword)
+*   Find the index where a char does not match on the other side
+*   Check excluding that character whether rest is palindrome
 * meta        : tag-string
 ***************************************************************************/
 using System;
@@ -47,11 +48,53 @@ class Solution {
         This function tests if sub-string of the string is palindrome
          starting from index i to index j
     */
-    static bool isPalindrome(string str, int i, int j)
-    {
+    static bool isPalindrome(string str, int i, int j) {
         for (; i < j; i++, j--)
             if (str[i] != str[j])
                 return false;
         return true;
     }
 }
+/*
+abcdcba
+abccba
+
+let's say we have an extra char in the beginning,
+pabcdcba
+
+so we say first char does not match with last char
+one of the two must be removed
+say indices are i and j
+
+check 
+s[i] == s[j]
+
+not matching so check
+s[i+1] == s[j]
+
+bool foundMistmatch = false;
+
+for (int i=0, j=length-1; )
+if (s[i] != s[j]) {
+    if (foundMistmatch) 
+    if (s[i+1] == s[j]) {
+        // answer is i if palindrome check is successful
+        // otherwise -1
+    }
+    if (s[i+1] == s[j]) {
+        // answer is i if palindrome check is successful
+        // otherwise -1
+    }
+    foundMistmatch = true;
+}
+
+consider ab works
+consider baa
+
+5
+baa
+ada
+aaab
+baa
+aaa
+ */
