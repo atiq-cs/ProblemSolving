@@ -15,6 +15,8 @@
 *   the left side if item on the left is larger is intuitive. Similarly if the
 *   item on the right side is larger then it takes the search direction towards
 *   the right side.
+*   Detailed explanation: https://stackoverflow.com/q/12238241
+*   https://www.geeksforgeeks.org/find-local-minima-array/
 * meta  : tag-binary-search
 ***************************************************************************/
 class Solution {
