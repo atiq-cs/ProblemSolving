@@ -8,14 +8,12 @@
 * Notes       : Based on '094_Binary-tree-inorder-traversal_using-stack.cs'
 * meta        : tag-binary-tree
 ***************************************************************************/
-
 public class Solution {
   List<int> NodeList;
 
-  private void PreorderTraversalUsingStack(TreeNode root) {
+  private void PreorderTraversalUsingStackv1(TreeNode root) {
     if (root == null)
       return ;
-
     Stack<TreeNode> stack = new Stack<TreeNode>();
 
     do { // cur stands for current node - a temporary node to point to each
@@ -32,6 +30,23 @@ public class Solution {
       } while (cur.right == null && stack.Count > 0);
       root = cur.right;
     } while (root != null);
+  }
+
+  // Acknowledgement: Huy Zing
+  private void PreorderTraversalUsingStack(TreeNode root) {
+    Stack<TreeNode> stack = new Stack<TreeNode>();
+    TreeNode current = root;
+
+    while (current != null || stack.Count > 0) {
+      if (current.right != null)
+        stack.Push(current.right);
+      nodeList.Add(current.val);
+      if (current.left == null && stack.Count > 0)
+        current = stack.Pop();
+      else
+        current = current.left;
+    }
+    return nodeList;
   }
 
   public IList<int> PreorderTraversal(TreeNode root) {
