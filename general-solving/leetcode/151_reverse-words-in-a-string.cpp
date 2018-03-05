@@ -35,7 +35,6 @@ public:
   void reverseWords(string &str) {
     std::istringstream ss(str);
     std::string token, rev;
-    std::vector<std::string> tokens;
     char sep = ' ';
     while (std::getline(ss, token, sep))
       if (token.empty() == false && token != " ")
