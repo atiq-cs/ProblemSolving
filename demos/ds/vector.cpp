@@ -9,6 +9,7 @@
 *   push_back is simple supporting growing
 *   insert method inserts in provided 0 based index position instead of using 
 *   an iterator
+*   note how delete operator is called for the array
 *   does not implement handful of methods that STL vector supports
 * meta: tag-cpp, tag-bloomberg
 */
@@ -62,7 +63,7 @@ public:
     T* new_items = new T[capacity];
     for (size_t i=0; i<capacity/2; i++)
     new_items[i] = items[i];
-    delete items;
+    delete[] items;
     items = new_items;
   }
 
@@ -91,11 +92,11 @@ public:
 
   size_t size() const { return isize; }
 
-  void clear() { isize = 0; delete items; items = NULL; }
+  void clear() { isize = 0; delete[] items; items = NULL; }
 
   ~vector() {
     if (items)
-      delete items;
+      delete[] items;
   }
 };
 
