@@ -53,17 +53,23 @@ public:
   }
   
   void grow() {
-    // handle memory exceptions
-    if (items == NULL) {
-      capacity = 8;
-      items = new T[capacity];
+    // handle memory allocation exceptions
+    if (items == NULL)
+      capacity = 4;
+    capacity <<= 1;
+    T* new_items = NULL;
+    try {
+      new_items = new T[capacity];
+    }
+    catch (std::bad_alloc& ba) {
+      std::cerr << "Not enough memory available!" << ba.what() << std::endl;
+      capacity = items?capacity>>1:0;
       return;
     }
-    capacity <<= 1;
-    T* new_items = new T[capacity];
-    for (size_t i=0; i<capacity/2; i++)
-    new_items[i] = items[i];
-    delete[] items;
+    for (size_t i=0; i<isize; i++)
+      new_items[i] = items[i];
+    if (items)
+      delete[] items;
     items = new_items;
   }
 
@@ -92,7 +98,7 @@ public:
 
   size_t size() const { return isize; }
 
-  void clear() { isize = 0; delete[] items; items = NULL; }
+  void clear() { isize = 0; if (items) delete[] items; items = NULL; }
 
   ~vector() {
     if (items)
@@ -117,6 +123,7 @@ int main() {
   vector<int> nums3;
   nums3.push_back(5);
   nums3 = nums;
+  nums3.push_back(6);
   for (size_t i = 0; i<nums3.size(); i++)
     std::cout << "num " << (i + 1) << " = " << nums3[i] << std::endl;
 
