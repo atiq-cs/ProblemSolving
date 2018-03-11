@@ -4,7 +4,7 @@
 * Date  : 2018-03
 * Author: Atiq Rahman
 * Comp  : O(N^2), space constant considering we are allowed to modify original
-*   array
+*   array for one time sorting
 * Status: Accepted
 * Notes : Given data is unsorted.
 *   If we develop an algorithm that has a run-time complexity of O(N^2) or
