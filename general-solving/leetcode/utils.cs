@@ -7,9 +7,10 @@
 ***************************************************************************/
 public class LeetcodeUtils {
   private int[][] ConvertMultiDimensionalToJagged(int[,] md) {
-    n = md.GetLength(0);
-    m = md.GetLength(1);
-    int[][] jaggedArray = new int[md.GetLength(0)][];
+    n = md.GetLength(0);  // class member
+    m = md.GetLength(1);  // class member
+
+    int[][] jaggedArray = new int[n][];
     for (int i=0; i<n; i++) {
       jaggedArray[i] = new int[m];
       for (int j=0; j<m; j++)
