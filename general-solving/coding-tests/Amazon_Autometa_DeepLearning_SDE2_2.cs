@@ -18,14 +18,16 @@ using System;
 using System.Collections.Generic;
 
 class LogLine {
-  public string id;
-  public string words;
+  public string id { get; set; }
+  public string words { get; set; }
+  // constructor
   public LogLine(string id, string words) {
     this.id = id;
     this.words = words;
   }
 }
 
+// Override comparer for sorting
 class LineComparer : IComparer<LogLine> {
   public int Compare(LogLine x, LogLine y) {
     string id1 = x.id;
@@ -34,18 +36,21 @@ class LineComparer : IComparer<LogLine> {
     string val1 = x.words.ToLower();
     string val2 = y.words.ToLower();
     
+    // handle tie
     if (val1 == val2)
       return id1.CompareTo(id2);
+    // not equal
+    // one of them are digits, first one digit
     else if (char.IsDigit(val1[0]) && char.IsLetter(val2[0]))
       return 1;
     // if second one is digit
     // then if first one is digit then order
     else if (char.IsLetter(val1[0]) && char.IsDigit(val2[0]))
       return -1;
-    // then if first one is digit then stable sort
+    // then if both of them are digits then stable sort
     else if (char.IsDigit(val1[0]) && char.IsDigit(val2[0]))
       return 0;
-
+    // otherwise lexicographically sort
     return val1.CompareTo(val2);
   }
 }
@@ -65,7 +70,7 @@ public class Solution {
   }
   
   private LogLine ParseLine(string str) {
-    string[] tokens = str.Split(new char[] { ' ' }, 2);
+    string[] tokens = str.Split(new char[] {' '}, 2);
     return new LogLine(tokens[0], tokens[1]);
   }
   
@@ -76,7 +81,6 @@ public class Solution {
     return result;
   }
 }
-
 /*
 Example Input,
 aq2 ady meny si
