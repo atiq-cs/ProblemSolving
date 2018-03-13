@@ -3,8 +3,9 @@
 * URL   :
 * Date  : 2018-03-10
 * Author: Atiq Rahman
-* Comp  : O(n lg n)
-* Status: Accepted
+* Comp  : O(n lg n + n*m) where n*m is for n number of comparisons among
+*   strings; m being the max length of string
+* Status: Tests passing: First version and second versions both passing 14/24
 * Notes : This problem asks to sort strings (lines) provided a set of
 *   preferences,
 *    compare the value (words) in a case insensitive way
@@ -17,6 +18,7 @@
 using System;
 using System.Collections.Generic;
 
+// first version till line 86
 class LogLine {
   public string id { get; set; }
   public string words { get; set; }
@@ -55,7 +57,7 @@ class LineComparer : IComparer<LogLine> {
   }
 }
 
-public class Solution {
+public class SolutionV1 {
   public List<string> reorderLines(int logFileSize, string[] logfile) {
     LogLine[] lines = ParseData(logfile);
     Array.Sort(lines, new LineComparer());
@@ -98,3 +100,62 @@ aq2 ady meny si
 fg5 4 7 9 2
 c6 1 55 7 3
 */
+// second version
+using System.Text;    // CleanDelimBetweenWords uses StringBuilder
+
+// Property originalWords is added
+class LogLine {
+  public string id { get; set; }
+  public string words { get; set; }
+  public string originalWords { get; set; }
+  // constructor
+  public LogLine(string id, string words, string orig) {
+    this.id = id;
+    this.words = words;
+    this.originalWords = orig;
+  }
+}
+
+public class SolutionV2 {
+  /// <summary>
+  /// method ParseLine handles additional spaces in the beginning and in the
+  /// end of the string
+  /// </summary>
+  /// <param name="str">
+  /// a line in the log file
+  /// </param>
+  /// <returns>
+  /// returns a LogLine object created from the provided string
+  /// </returns>
+  private LogLine ParseLine(string str) {
+    str = str.TrimStart(' ').TrimEnd(' ');
+    string[] tokens = str.Split(new char[] { ' ' }, 2);
+    string cleanWords = CleanDelimBetweenWords(tokens[1]);
+    return new LogLine(tokens[0], cleanWords, tokens[1]);
+  }
+
+  /// <summary>
+  /// Second version implements CleanDelimBetweenWords which is called in ParseLine 
+  /// Removes additional space delimeters inside words
+  /// </summary>
+  /// <param name="words">
+  /// input line as string
+  /// </param>
+  /// <returns>
+  /// returns trimmed version of the string
+  /// </returns>
+  private string CleanDelimBetweenWords(string words) {
+    char pre_ch = ' ';
+    StringBuilder sb = new StringBuilder();
+    for (int i = 0; i < words.Length; i++) {
+      char ch = words[i];
+      if (pre_ch == ' ' && ch == pre_ch)
+        continue;
+      sb.Append(ch);
+      pre_ch = ch;
+    }
+    if (pre_ch == ' ')
+      sb.Length--;
+    return sb.ToString();
+  }
+}
