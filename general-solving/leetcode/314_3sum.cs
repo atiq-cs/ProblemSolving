@@ -58,7 +58,20 @@ public class Solution {
     return result;
   }
 }
-/*
+/* Draft
+if I had two numbers and I had to find pairs which sum to 0..
+Later consider there are duplicates.
+
+Can we use 2sum to solve 3-sum?
+two sum can tell how many ways we can make 0-A[i]
+
+How to solve two sum when there are duplicates?
+keeping a hashset does not give me unique solution any more..
+
+Naive O(n^2); iterate over indices
+HashSet of HashSet; output values order 
+solved later using two pointers approach following a leetcode solution idea
+ 
 Some cases considered to handle while developing the solution,
 [-2,0,1,1,2]
 [0,0,0]
