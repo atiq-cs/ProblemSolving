@@ -117,9 +117,8 @@ int main() {
 
   std::thread producer_thread(&Producer::run, &p);
   std::thread consumer_thread(&Consumer::run, &c);
-
   producer_thread.join();
   consumer_thread.join();
-  getchar();
+
   return 0;
 }
