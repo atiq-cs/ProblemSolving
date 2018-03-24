@@ -68,6 +68,13 @@ two sum can tell how many ways we can make 0-A[i]
 How to solve two sum when there are duplicates?
 keeping a hashset does not give me unique solution any more..
 
+Sort first
+for every number in the list do,
+sum = 0 - num;
+then,
+ low = i +1; high = n-1;
+
+
 Naive O(n^2); iterate over indices
 HashSet of HashSet; output values order 
 solved later using two pointers approach following a leetcode solution idea
