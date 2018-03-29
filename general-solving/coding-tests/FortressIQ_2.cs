@@ -5,19 +5,21 @@
 * Author: Atiq Rahman
 * Comp  : O(n * m), space O(n * m)
 * Status: Accepted
-* Notes : Dynamic Programming Logic:
+* Notes : Dynamic Programming Logic,
 *  A cell can be reached from two non-empty adjacents cells from UP or from
-*    LEFT
+*   LEFT
 *  Base Case: first column and first row cells can only have single path
 *   from source if there are no obstacles
+*   
+*  Memory Optimzation: Possible to do in O(N) instead of O(N^2) if we only save
+*   last row
 *
 *  Handle following,
 *  Dynamic Programming - paths contain obstacles
 *  Integer arithmetic - modulus
 * meta  : tag-dp, tag-FortressIQ, tag-coding-test
 ***************************************************************************/
-public class FortressIQ_Solution
-{
+public class FortressIQ_Solution {
   static int numberOfPaths(int[][] grid) {    
     // Declare and Initialize Variables.
     // Simplified Input: all arrays in the jagged array have same size for this
