@@ -4,35 +4,47 @@
 * Date        : Oct 7 2015
 * Complexity  : O(n) Time and constant space
 * Author      : Atiq Rahman
-* Status      : Accepted (beats 98%)
-* Notes       : 
-* meta        : tag-binary-tree, tag-easy
+* Status      : Accepted
+* Notes       : The problem kinda maps to base 26 conversion problem.
+*   Comparing with base 10, this looks like,
+*   9 -> 26
+*   10 -> 27
+*   100 -> 26 ^ 2 + 1
+*   1000 -> 26 ^ 3 + 1
+*   Where for base on the right side numbers are 0 to 9
+*   for this one it's from 1 to 26 instead of 0 to 25.
+* meta        : tag-leetcode-easy, tag-math
 ***************************************************************************/
 
-public class Solution
-{
-    public int TitleToNumber(string s)
-    {
-        int sum = 0;
-        foreach (char ch in s)
-            sum = sum * 26 + (int)(ch - 'A' + 1);
-        return sum;
-    }
+public class Solution {
+  public int TitleToNumber(string s) {
+    int sum = 0;
+    foreach (char ch in s)
+      sum = sum * 26 + (int)(ch - 'A' + 1);
+    return sum;
+  }
 }
 
 /*
-    Drafts,
-    We know,
-    Z = 26
-    AA = 1 + 26
-    BA = 1 + 2 * 26
-    CA = 1 + 3 * 26
-    ZA = 1 + 26 * 26
+Drafts,
+We know,
+Z = 26
+AA = 1 + 26
+AB = 27
+AC = 28
+...
+...
+AZ = 52
+BA = 2 * 26 + 1 = 53
+...
+...
+BZ = 2 * 26 + 26 = 78
+CA = 3 * 26 + 1
+ZA = 26 * 26 + 1
 
-    base is 26
-    first number is 1
+base is 26
+first number is 1
 
-    we can generalize that the number is,
-    n = L0 + L1 * 26 + L2 * 26 * 26 + ....
-
+we can generalize that the number is,
+n = L0 + L1 * 26 + L2 * 26 * 26 + ....
 */
