@@ -4,7 +4,7 @@
 * Contst: 2017 ICPC World Final
 * Date  : 2018-04-17
 * Author: Atiq Rahman
-* Comp  : O(lg n)
+* Comp  : O(n lg n)
 * Status: Accepted
 * Notes : Application of binary search to find fraction constant value
 *   To find fractional solution it is important to include all values starting
@@ -62,7 +62,7 @@ public class BinarySearchUtil {
   JourneySegment[] Segments;
   private double EPS = 1e-9;
 
-  // learnt from mistake, following Derek Kisman
+  // O(lg N)
   public double FindSpeedoMeterError(double low, double high)
   {
     if (high - low < EPS)
@@ -75,6 +75,7 @@ public class BinarySearchUtil {
     return FindSpeedoMeterError(mid, high);
   }
 
+  // O(N)
   private double GetTotalJourneyTime(double c) {
     double sum = 0.0;
     foreach (JourneySegment segment in Segments)

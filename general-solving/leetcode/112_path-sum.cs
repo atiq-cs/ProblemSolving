@@ -12,20 +12,15 @@
 *
 * meta        : tag-binary-tree; tag-recursion; tag-easy
 ***************************************************************************/
-
 public class Solution {
-    public bool HasPathSum(TreeNode root, int sum) {
-        return HasPathSumRec(root, 0, sum);
+  public bool HasPathSum(TreeNode root, int sum, int curSum = 0) {
+    if (root != null) {
+      curSum += root.val;
+      if (root.left == null && root.right == null && curSum == sum)
+        return true;
+      if (HasPathSum(root.left, sum, curSum) || HasPathSum(root.right, sum, curSum))
+        return true;
     }
-    
-    bool HasPathSumRec(TreeNode root, int curSum, int sum) {
-        if (root != null) {
-            curSum += root.val;
-            if (root.left == null && root.right == null && curSum == sum)
-                return true;
-            if (HasPathSumRec(root.left, curSum, sum) || HasPathSumRec(root.right, curSum, sum))
-                return true;
-        }
-        return false;
-    }
+    return false;   
+  }
 }
