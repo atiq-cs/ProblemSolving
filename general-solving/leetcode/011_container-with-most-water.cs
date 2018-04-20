@@ -2,7 +2,7 @@
 * Title : Container With Most Water
 * URL   : https://leetcode.com/problems/container-with-most-water
 * Occas : JS Meetup Arrays and Strings 2014-08-18
-* Date  : 201-04-18
+* Date  : 2018-04-18
 * Author: Atiq Rahman
 * Comp  : O(N), Space Constant Time O(1)
 * Status: Accepted
