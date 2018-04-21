@@ -26,7 +26,14 @@
 *   Ref: msdn - Data Structures & Algorithms complexity
 *   https://code.msdn.microsoft.com/windowsapps/Data-Structures-Algorithms-d68f1418
 *   
-* meta  : tag-easy, tag-data-structure, tag-stack
+*   If we are allowed to modify original string we can keep removing valid
+*   sequences. In the end, if string is empty then it's valid. Here's an
+*   example, (()). First we removed (), the string becomes (). We remove that
+*   and we end up with empty string.
+*   ref: https://leetcode.com/problems/valid-parentheses/discuss/9528/
+*   Short-Easy-to-Follow-8ms-Java-Solution
+*
+* meta  : tag-easy, tag-data-structure, tag-stack, tag-parentheses
 ***************************************************************************/
 public class Solution {
   public bool IsValid(string s) {
