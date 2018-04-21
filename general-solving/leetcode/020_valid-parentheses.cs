@@ -33,6 +33,9 @@
 *   ref: https://leetcode.com/problems/valid-parentheses/discuss/9528/
 *   Short-Easy-to-Follow-8ms-Java-Solution
 *
+*   Additionally, there might be other ways to solve it using O(1) space.
+*   However, most people solved it using stack which requires O(N) space.
+* 
 * meta  : tag-easy, tag-data-structure, tag-stack, tag-parentheses
 ***************************************************************************/
 public class Solution {
