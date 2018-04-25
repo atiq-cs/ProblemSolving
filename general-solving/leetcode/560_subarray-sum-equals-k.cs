@@ -7,6 +7,7 @@
 * Status: Accepted
 * Notes : O(N^2) solution added, O(N) solution yet to add
 *   may be check discuss
+*   related: https://leetcode.com/problems/subarray-product-less-than-k
 * meta  : tag-hash-table, tag-leetcode-medium
 ***************************************************************************/
 public class Solution {
@@ -32,3 +33,20 @@ public class Solution {
     return prefixSum;
   }
 }
+
+/*
+Draft,
+[3,16,4,7], 12
+
+a subArray represented by 0,1 containins {3}
+0,4 contains all of em
+
+simplest one would be
+
+for (j=0; j<n; j++)
+  for (i=0; i<=j; i++) {
+    SubArray(i,j)
+  }
+
+GetSubArraySum(i,j) = PrefixSum[j] - PrefixSum[i]
+*/
