@@ -5,23 +5,24 @@
 * Author: Atiq Rahman
 * Comp  : O(N*M)
 * Status: Accepted
-* Notes : Based on Vasili's version which essentially boils down to,
-*   if element on starting index is less than item on middle index then left
-*   (w.r.t middle element) side is sorted
-*   Otherwise, right side is sorted
-*   
-*   Because one of the two sides must be sorted in a rotated sorted array
-*   
-*   This is more comprehensive than what I was developing initially,
-*   My first idea was to consider all cases where the rotation index can be (
-*   starting from 1 to N-1). This means rotation point can be in between
-*   first and middle or middle and last
-* meta  : tag-binary-search, tag-recursion
+* Notes : Determine the perimeter of the island.
+*   To calculate the perimeter we can sum up the sides of the island. To get
+*   that sum we have to multiply total number of cells with 4. While doing that
+*   we have included the sides that are in between two cells twice. Therefore,
+*   we need to subtract that. Here's an example,
+*    __
+*   |  |
+*    --
+*   |  |
+*    --
+*    
+*   Perimeter here is = 2 * 4 - 1 * 2 = 6
+* meta  : tag-easy
 ***************************************************************************/
 public class Solution {
   int n, m;
-  public int IslandPerimeter(int[,] jgrid) {
-    int[][] grid = ConvertMultiDimensionalToJagged(jgrid);
+  public int IslandPerimeter(int[,] mdGrid) {
+    int[][] grid = ConvertMultiDimensionalToJagged(mdGrid);
     int cellCount = 0, excludeCellCount = 0;
 
     for (int i=0; i<n; i++)
