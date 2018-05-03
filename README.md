@@ -6,14 +6,13 @@ url](https://github.com/atiq-cs/Problem-Solving/) and enter following in the
 search box: `tag-linked-list`
 
 Additionally, here are currently supported tags/classifications based on
-algorightm and data structure,
+algorithm and data structure,
  * [Bit Manipulation](
 https://github.com/atiq-cs/Problem-Solving/search?q=tag-bitwise)
  * [Dynamic Programming](
 https://github.com/atiq-cs/Problem-Solving/search?q=tag-dynamic-programming)
  * [Graph](https://github.com/atiq-cs/Problem-Solving/search?q=tag-graph)
- * [Linked List](
-https://github.com/atiq-cs/Problem-Solving/search?q=tag-linked-list)
+ * [Linked List](https://github.com/atiq-cs/Problem-Solving/search?q=tag-linked-list)
  * [Priority Queue](
  https://github.com/atiq-cs/Problem-Solving/search?q=tag-priority-queue)
  * [Recursion](
@@ -45,6 +44,8 @@ Company based domains,
  * [Google](https://github.com/atiq-cs/Problem-Solving/search?q=tag-google)
  * [Microsoft](
 https://github.com/atiq-cs/Problem-Solving/search?q=tag-microsoft)
+* [Bloomberg](
+https://github.com/atiq-cs/Problem-Solving/search?q=tag-bloomberg)
 
 Contest based tags,
  * [ACM ICPC](https://github.com/atiq-cs/Problem-Solving/search?q=tag-acm-icpc)
@@ -52,7 +53,11 @@ Contest based tags,
 Miscellaneous tags
  * [Interviews, any company](
 https://github.com/atiq-cs/Problem-Solving/search?q=tag-interviews)
- * [Easy problems, can't classify](
+ * [Easy LeetCode Problems](
+https://github.com/atiq-cs/Problem-Solving/search?q=tag-leetcode-easy)
+ * [Medium LeetCode Problems](
+https://github.com/atiq-cs/Problem-Solving/search?q=tag-leetcode-medium)
+  * [Easy problems, can't classify](
 https://github.com/atiq-cs/Problem-Solving/search?q=tag-easy)
 
 #### Tag related tips and tricks,
@@ -90,7 +95,7 @@ Following onlline judges are being covered,
  * [Timus Online Judge](http://acm.timus.ru/problemset.aspx)
  * [Saratov State University](http://acm.sgu.ru/problemset.php?show_volumes)
  * [Sphere Online Judge](http://www.spoj.com/problems/)
- * [UVa Online Judge](https://uva.onlinejudge.org/)
+ * [UVA Online Judge](https://uva.onlinejudge.org/)
  * [Tianjin Univ Online Judge System](http://acm.tju.edu.cn/toj/problem.html)
  * [topcoder](http://community.topcoder.com/tc?module=ProblemArchive)
 
