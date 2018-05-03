@@ -20,6 +20,9 @@
 *    [10, 50], [51, 60]
 *    [40, 50]
 *   But it is not a counter case. It still works.
+*   
+*   Ref: https://www.topcoder.com/community/data-science/data-science-tutorials
+*    /line-sweep-algorithms/ (as Per Sreezin)
 * meta  : tag-pramp, tag-easy
 ***************************************************************************/
 using System;
@@ -40,7 +43,7 @@ class Solution {
 
       if (endTime - startTime >= dur)
         return new int[] {startTime, startTime + dur};
-      if (slotsA[iA][0] > slotsB[iB][0])
+      if (slotsA[iA][1] > slotsB[iB][1])
         iB++;
       else
         iA++;
