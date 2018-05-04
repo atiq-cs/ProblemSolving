@@ -7,14 +7,15 @@
 * Author      : Atiq Rahman
 * Status      : Accepted
 * Notes       : Based on codechef/CRZ04_CLOCK.cs
-*               Cases:
-*               1. hour hand moves every 30 degree
-*               2. minute hand moves every 30 degree
-*               So I performed floor to get expected angle after dividing by 30
+*   Cases:
+*   1. hour hand moves every 30 degree
+*   2. minute hand moves every 30 degree
+*   So I performed floor to get expected angle after dividing by 30
 *               
-*               Probably result does not appear in floating point representation
-*               However, I did not have to change to int because of that
-*               
+*   Probably result does not appear in floating point representation
+*   However, I did not have to change to int because of that
+*   a variation of 'online-problem-solving/codechef/CRZ04_CLOCK.cs'
+*   rel: http://codeforces.com/problemset/problem/80/B
 * meta        : tag-geometry, tag-math
 ***************************************************************************/
 using System;
@@ -38,7 +39,6 @@ public class Demo {
   }
 
   public static void Main() {
-    // feel free to modify
     int T = int.Parse(Console.ReadLine());
     while (T-- > 0) {
       string[] tokens = Console.ReadLine().Split();

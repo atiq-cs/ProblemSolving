@@ -7,10 +7,12 @@
 * Author      : Atiq Rahman
 * Status      : Accepted
 * Notes       : A simple geometry/math problem
-*               Cases:
-*               1. Angle between hands can be more than 180
-*               2. Difference can come as negative
-*               3. "CultureInfo.CreateSpecificCulture" not required for codechef
+*   Cases:
+*   1. Angle between hands can be more than 180
+*   2. Difference can come as negative
+*   3. "CultureInfo.CreateSpecificCulture" not required for codechef
+*   codeforces problem is simpler (doesn't even ask for difference)
+*   rel: http://codeforces.com/problemset/problem/80/B
 * meta        : tag-geometry, tag-math
 ***************************************************************************/
 using System;
