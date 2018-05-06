@@ -14,6 +14,11 @@
 *    https://atiqcs.wordpress.com/2018/05/01/manachers-algo/
 *    https://www.hackerrank.com/topics/manachers-algorithm
 *    https://en.wikipedia.org/wiki/Longest_palindromic_substring
+*    Java impl
+*    https://algs4.cs.princeton.edu/53substring/Manacher.java.html
+*
+*    adding chars, combining as string
+*    https://stackoverflow.com/q/1324009/
 * meta  : tag-dp, tag-leetcode-medium
 ***************************************************************************/
 public class Solution {
