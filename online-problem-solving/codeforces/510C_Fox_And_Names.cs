@@ -18,6 +18,8 @@
 *   - if both strings are equal (length as well) then it's impossible
 *   - if first string is longer than second one but contains same length of
 *   prefix then it is impossible as well.
+*   
+*   Have a look at the draft for initial examples worked out.
 *
 *   Early termination on cycle detection (interpreted as error)
 * meta  : tag-string, tag-easy
@@ -151,4 +153,99 @@ private void DFSVisit(int u) {
   time++;
   vertices[u].FinishTime = time;
 }
+*/
+
+
+/* Draft of calculations below,
+3
+rivest
+shamir
+adleman
+
+Need enforce following order,
+r < s < a
+Output becomes,
+bcdefghijklmnopqrsatuvwxyz
+
+10
+tourist
+petr
+wjmzbmr
+yeputons
+vepifanov
+scottwu
+oooooooooooooooo
+subscriber
+rowdark
+tankengineer
+
+t < p
+y < v
+v < s
+s < o
+o < s
+cycle so,
+output: impossible
+
+
+10
+petr
+egor
+endagorion
+feferivan
+ilovetanyaromanova
+kostka
+dmitriyh
+maratsnowbear
+bredorjaguarturnik
+cgyforever
+
+p < e
+g < n
+f < i
+i < k
+k < d
+d < m
+m < b
+b < c
+
+g < n &
+p < e < f < i < k < d < m < b < c
+
+apefikdmbcghjnoqrstuvwxyz
+
+
+if two strings are equal or first one's length greater than the second one
+then, it's impossible.
+
+abc
+abcd
+
+3
+abc
+bcd
+cde
+
+a -> b
+b -> c
+
+3
+bbc
+acd
+cde
+
+3
+bac
+abd
+cde
+
+4
+bac
+abd
+bde
+cde
+
+2
+abc
+abc
 */
