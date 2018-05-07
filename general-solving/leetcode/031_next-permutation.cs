@@ -5,10 +5,12 @@
 * Complexity  : O(n) Time
 * Author      : Atiq Rahman
 * Status      : Accepted (beat 93%)
-* Notes       : have to test the approach with UVA - 146
-*               Tested with spoj: online-problem-solving/spoj/12150_JNEXT.cs
-*               Credits: https://github.com/animeshh
- *              Further improvement: http://codeforces.com/blog/entry/3980
+* Notes       : have to test the approach with 
+*   Tested with spoj: online-problem-solving/spoj/12150_JNEXT.cs
+*   Credits: https://github.com/animeshh
+*   Further improvement: http://codeforces.com/blog/entry/3980
+*   rel: UVA - 146
+*   ref: http://blog.csdn.net/m6830098/article/details/17291259
 * meta        : tag-next-permutation
 ***************************************************************************/
 
@@ -32,38 +34,39 @@ public class Solution {
     }
 }
 
-/*  Mental sketch:
-    5, 4, 3, 1, 2
-    5 4 3 2 1
-    5 4 3 1 2
+/*
+Mental sketch:
+  5, 4, 3, 1, 2
+  5 4 3 2 1
+  5 4 3 1 2
 
-    [5, 4, 1, 3, 2]
-    [5, 4, 2, 3, 1]
-    [5, 4, 2, 1, 3]
+  [5, 4, 1, 3, 2]
+  [5, 4, 2, 3, 1]
+  [5, 4, 2, 1, 3]
 
 
-    [2,3,1,3,3]
-    [2,3,3,1,3]
+  [2,3,1,3,3]
+  [2,3,3,1,3]
 
-    [2,1,2,2,2,2,2,1]
-    [2,2,2,2,2,2,1,1]
+  [2,1,2,2,2,2,2,1]
+  [2,2,2,2,2,2,1,1]
 
-    [2,1,3,2,2,2,2,1]
-    [2,3,1,2,2,2,2,1]
+  [2,1,3,2,2,2,2,1]
+  [2,3,1,2,2,2,2,1]
 
-    [2,2,3,2,2,2,2,1]
+  [2,2,3,2,2,2,2,1]
 
-    [2,2,3,3,3,3,3,2]
-    [2,3,2,3,3,3,3,2]
+  [2,2,3,3,3,3,3,2]
+  [2,3,2,3,3,3,3,2]
 
-    [2,2,1,1,2,2,2,2]
+  [2,2,1,1,2,2,2,2]
 
-    [5, 4, 2, 3, 1, 0]
-    [5, 4, 3, 2, 1, 0]
+  [5, 4, 2, 3, 1, 0]
+  [5, 4, 3, 2, 1, 0]
 
-    [3,4,1,4,3,3]
-    [3,4,3,4,3,1]
-    [3,4,3,3,1,4]
+  [3,4,1,4,3,3]
+  [3,4,3,4,3,1]
+  [3,4,3,3,1,4]
 
  Special Inputs:
   [3,4,1,4,3,3]
@@ -95,4 +98,48 @@ reverse
 
 1234567899
 7654321
+
+Found draft in a cpp solution
+-----------------------------
+abcdefgh
+
+I try to find starting from last index from where it is not sorted in descending order
+we reach to h
+since there is nothing after h, we do the post swap operation
+and then we swap h with g
+result is abcdefhg
+
+abcdefhg
+we reach to f after which things are not sorted in descending order
+swap g with h and then g with f
+
+abcdegfh
+
+reach to h
+result is 
+abcdeghf
+
+now reach to g
+abc
+acb
+bac
+
+
+
+Analyzing the permutation problem
+1, 2, 3 [swap index 1 with 1]
+1, 3, 2 [swap index 2 with 3]
+2, 1, 3 [swap index 1 with 2]
+2, 3, 1
+3, 1, 2
+3, 2, 1
+
+// analyzing next permutation
+1, 2, 3, 4
+
+// iterate from reverse direction and find the first one that is smaller than next one
+consider example, 4 3 2 1
+// if length becomes 0, reverse the string
+// example results
+1, 2, 3, 4
 */
