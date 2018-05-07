@@ -42,7 +42,11 @@
 *   Acknowledgement: Derek Kisman (referred C# version included below)
 *   Derek Kisman's C solution ref,
 *  github.com/SnapDragon64/ACMFinalsSolutions/blob/master/finals2017/speedDK.cc
-*   
+*  
+*   It should be noted that kattis online judge proves to be good so far. MLE
+*   or TLE I was getting was real. It was not due to use of a specific
+*   programming language.
+*
 *   related: https://icpcarchive.ecs.baylor.edu/external/22/2294.pdf
 * meta  : tag-binary-search, tag-icpc
 ***************************************************************************/
