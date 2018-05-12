@@ -78,12 +78,12 @@ public class CF_Solution {
     // Default Culture is set to Russian in Codeforces I guess
     // Therefore, format specifier 'F12' produces ',' instead of '.'
     // Setting cutlure to "en-US" enables us to achieve expected behavior
-    Console.WriteLine(PC.GetProbability().ToString("F12", CultureInfo.CreateSpecificCulture("en-US")));
+    Console.WriteLine(PC.GetProbability().ToString("F12", CultureInfo.
+      CreateSpecificCulture("en-US")));
   }
 }
 
 /*
-
 No '?'
 count p0n
 where p is number of '+' and n is number of '-'
