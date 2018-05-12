@@ -9,9 +9,10 @@
 *   I have adapted the equation from,
 *    https://en.wikipedia.org/wiki/Tur%C3%A1n_graph
 *
-*   First version is at, https://github.com/atiq-cs/Problem-Solving/blob/
-*     7317f697a7dab43627c49ad27fe614660e77bdfb/general-solving/hackerrank/
-*     algo/graph-theory/015_clique.cpp
+*   First version is at,
+*   https://github.com/atiq-cs/Problem-Solving/blob/7317f697a7/general-solving/
+*    hackerrank/algo/graph-theory/015_clique.cpp
+*   (correct address by removing CRLF and additional chars)
 *
 * github solutions refs
 * https://github.com/haotian-wu/Hackerrank_solutions/blob/master/
@@ -20,7 +21,7 @@
 *  Clique/main.cpp
 * Dicussion has some good hints,
 *   https://www.hackerrank.com/challenges/clique/forum
-* meta  : tag-graph-theory, tag-clique, tag-cruise-automation, tag-coding-test
+* meta  : tag-graph-theory, tag-clique, tag-company-cruise-automation, tag-coding-test
 ***************************************************************************/
 #include <cmath>
 #include <vector>
