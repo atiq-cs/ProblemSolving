@@ -1,7 +1,7 @@
 /***************************************************************************
 * Problem Name: Add Two Numbers
 * Problem URL : https://leetcode.com/problems/add-two-numbers
-* Date        : Jan 11 2015
+* Date        : 2015-01-11
 * Complexity  : O(n+m) Time and Space; constant space if we are provided with
 *   n+m space for result
 * Author      : Atiq Rahman
