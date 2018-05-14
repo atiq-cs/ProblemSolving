@@ -49,4 +49,44 @@ Example,
 [1]
 [1,2,3]
 [1,2,3,4,5,6]
+
+Initial thoughts - TLE,
+level 2
+no right child
+ return 2
+
+level 3
+
+check left height
+check right height
+equal? return result
+
+not equal
+check 
+
+do dfs
+whenever in a node it is encountered that it has left but no right stop
+
+dfs(v) {
+  if (last_left_leaf_discovered)
+    return ;
+  if (v == null)
+    return;
+  if (v.left == null && v.right == null) {
+    // this is the node
+    leaf_count ++;
+  }
+  dfs(v.left);
+  dfs(v.right);
+}
+
+
+input example,
+[1]
+[1,2]
+[1,2,3]
+[1,2,3,4]
+[1,2,3,4,5]
+[1,2,3,4,5,6]
+[1,2,3,4,5,6,7]
 */
