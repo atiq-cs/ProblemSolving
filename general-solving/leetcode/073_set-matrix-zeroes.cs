@@ -38,6 +38,30 @@ public class Solution {
       }
     ConvertJaggedToMultiDimensional(matrix, mdMat);
   }
+
+  // first version, a better solution if input was only 1 and 0 in matrix
+  // however, unfortunately, input example, [[0,1,2,0],[3,4,5,2],[1,3,1,5]]
+  public void SetZeroes(int[,] mdMat) {
+    bool[][] matrix = ConvertMultiDimensionalToJagged(mdMat);
+    int col = n, row = m;
+    bool[] rows = new bool[row];  // indicates marked rows for being zeroed out
+    bool[] cols = new bool[col];  // marked columns for being zeroed out    
+    
+    for (int i=0; i<col; i++)
+      for (int j=0; j<row; j++) {
+        if (cols[i] || rows[j])
+          matrix[i][j] = false;
+        else if (matrix[i][j] == false) {
+          cols[i] = true;
+          rows[j] = true;
+          for (int k=0; k<i;k++)  // reset column
+            matrix[k][j] = false;
+          for (int k=0; k<j;k++)  // reset row
+            matrix[i][k] = false;
+        }
+      }
+    ConvertJaggedToMultiDimensional(matrix, mdMat);
+  }
 }
 /*
 Some inputs,
