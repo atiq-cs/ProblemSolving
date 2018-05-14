@@ -5,7 +5,9 @@
 * Author: Atiq Rahman
 * Comp  : O(.)
 * Status: Accepted
-* Notes : C# version based on the second version
+* Notes : Find what is the minimum size of the largest clique in any graph with
+*   N nodes and M edges.
+*   C# version based on the second version
 *   I have adapted the equation from,
 *    https://en.wikipedia.org/wiki/Tur%C3%A1n_graph
 *
