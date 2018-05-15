@@ -6,14 +6,14 @@
 * Complexity  : 
 * Author      : Atiq Rahman
 * Status      : Accepted
-* Notes       : 
+* Notes       : Check note if we have draft, compare with other solutins if run
+*   time can be improved or optimizations can be made
 * meta        : tag-combinatorics, tag-dynamic-programming
 ***************************************************************************/
 using System;
 
-public class Demo {
+public class CF_Solution {
   public static void Main() {
-    // feel free to modify
     string[] tokens = Console.ReadLine().Split();
     int n = int.Parse(tokens[0]);
     int h = int.Parse(tokens[1]);
@@ -43,11 +43,8 @@ public class Demo {
     for (int h = 1; h <= minHN; h++) {
       numWays[h][0] = 1;
       for (int target = 1; target <= n; target++)
-      {
         for (int i = 1; i <= target; i++)
           numWays[h][target] += numWays[h - 1][i - 1] * numWays[h - 1][target - i];
-      }
-
     }
     return numWays[minHN][n];
   }
