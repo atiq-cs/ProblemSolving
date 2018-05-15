@@ -37,12 +37,21 @@ public class Solution {
     // left side is sorted if the first element is less or equal to the middle
     // element
     if (A[start] <= A[mid]) {
+      // For regular binary search when A[mid] > item item is definitely on
+      // left side.
+      // However, in this problem, due to rotation, it is possible that even
+      // though mid item is bigger than item, the item we are looking for
+      // actually on right side Example, 1 2 3 4 rotated as, 2 3 4 1
+      // Suppose, start = 2, mid = 3 and item =1
+      // mid > item. Yet item is not on left side
       if (A[mid] > item && A[start] <= item)
         return BSearch(item, start, mid-1);
       return BSearch(item, mid+1, end);
     }
     // otherwise, right side is sorted
     else {
+      // Similarly, checking item <= A[end] if rotation has moved the item to
+      // left side
       if (A[mid] < item && item <= A[end])
         return BSearch(item, mid+1, end);
       return BSearch(item, start, mid-1);
