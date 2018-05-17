@@ -7,6 +7,13 @@
 *   parameters. A few overrides added
 ***************************************************************************/
 public class LeetcodeUtils {
+  void Swap<T>(ref T lhs, ref T rhs)
+  {
+    T temp = lhs;
+    lhs = rhs;
+    rhs = temp;
+  }
+
   private int[][] ConvertMultiDimensionalToJagged(int[,] md)
   {
     numRows = md.GetLength(0);  // renamed from n
