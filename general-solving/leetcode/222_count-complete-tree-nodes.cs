@@ -3,7 +3,11 @@
 * URL   : https://leetcode.com/problems/count-complete-tree-nodes
 * Date  : 2018-05-10
 * Author: Atiq Rahman
-* Comp  : O(lg n)
+* Comp  : O((lg n) ^ 2) Time, O(lg n) Space comp of GetHeight
+*   Worst case will be: lg N + lg (N/2) + lg (N/4) + .... + 1
+*   if h = lg N this becomes, T = h + (h-1) + (h-2) + (h-3) + .... + 1
+*   => T = h * (h+1) / 2
+*   Therefore, T = O((lg N)^2)
 * Status: Accepted
 * Notes : Count number of nodes in complete binary tree. Do better than O(N)
 *   From C.L.R.S (possibly),
@@ -30,7 +34,7 @@ public class Solution {
       return (int) Math.Pow(2, lh+1)-1;
     return CountNodes(root.left) + CountNodes(root.right) + 1;
   }
-  
+  // O(lg n) Time/Space
   private int GetHeight(TreeNode root, bool isLeft=true) {
     if (root == null)
       return 0;
