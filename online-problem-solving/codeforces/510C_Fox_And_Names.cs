@@ -22,7 +22,7 @@
 *   Have a look at the draft for initial examples worked out.
 *
 *   Early termination on cycle detection (interpreted as error)
-* meta  : tag-string, tag-easy
+* meta  : tag-graph, tag-topological-sort, tag-dfs
 ***************************************************************************/
 using System;
 using System.Collections.Generic;
@@ -108,6 +108,10 @@ public class TopoSort {
     return sb.ToString();
   }
 
+  /*
+   * GRAY color is necessary to detect cycle
+   * It cannot be replaced with simple boolean visited array that I usually use
+   */
   private void DFSVisit(int u) {
     if (HasCycle)
       return;
@@ -136,7 +140,7 @@ public class CF_Solution {
 
 /*
 First version of Topological sort I implemented following visit function uses
-a globar time variable and we sort the vertices later in decreasing order of
+a global time variable and we sort the vertices later in decreasing order of
 finishing itme.
 
 private void DFSVisit(int u) {
