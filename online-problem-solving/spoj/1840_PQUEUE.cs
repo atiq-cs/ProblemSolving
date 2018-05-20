@@ -6,15 +6,17 @@
 * Author      : Atiq Rahman
 * Status      : Accepted
 * Notes       : pop item from queue
-*               if it is the highest priority item then count++
-*               if it was my print item print count
-*               else goto line 3
-*               else
-*                push the item into the queue
+*  if it is the highest priority item then count++
+*  if it was my print item print count
+*  else goto line 3
+*  else
+*   push the item into the queue
+*  A better implementation of Priority Queue at,
+*   'hackerrank/contests/justcode_lru.cs'
 *
-*               idea is to use two queues: one is priority queue and one is regular queue
-*               note ambiguous grammer used for method params
-*              'PrintItem PrintItem'
+*  idea is to use two queues: one is priority queue and one is regular queue
+*  note ambiguous grammer used for method params
+*  'PrintItem PrintItem'
 * Ref         : https://goo.gl/GwuzVi (msdn sample: single source dijkstra)
 * meta        : tag-priority-queue, tag-data-structure
 ***************************************************************************/
