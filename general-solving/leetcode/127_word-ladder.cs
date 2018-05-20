@@ -8,7 +8,7 @@
 * Notes : BFS solves this problem. We use null as end of level indicator, I took
 *   this hint from https://leetcode.com/problems/word-ladder/discuss/40717/
 *   Another-accepted-Java-solution-(BFS)
-* meta  : tag-bfs, tag-leetcode-medium, tag-graph, tag-company-IMO
+* meta  : tag-bfs, tag-leetcode-medium, tag-graph, tag-company-imo-im
 ***************************************************************************/
 public class Solution {
   public int LadderLength(string beginWord, string endWord, IList<string> wordList) {
@@ -17,9 +17,6 @@ public class Solution {
     queue.Enqueue(null);
     HashSet<string> VisitedSet = new HashSet<string>();
     int level = 1;
-    // More tests fail/ it takes more time if this HashSet is not used. This
-    // indicates that original collection (represented by IList) is not a Set
-    // or an efficient data structure
     HashSet<string> wordSet = new HashSet<string>();
     foreach (string word in wordList)
       wordSet.Add(word);
