@@ -46,10 +46,10 @@
 *   
 *   second iteration,
 *    0 1 1 1
-* Relat : https://www.hackerrank.com/challenges/coin-change
+* Rel   : https://www.hackerrank.com/challenges/coin-change
+*         https://leetcode.com/problems/coin-change-2
 * meta  : tag-coin-change, tag-dynamic-programming
 ***************************************************************************/
-
 public class Solution {
   static int INF = int.MaxValue;
   // make amount n using m coins
