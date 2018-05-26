@@ -86,6 +86,9 @@ public class LeetcodeSolutionV2 {
 
 /*
 inputs to consider,
+abcabcbb
+abc
+
 ""
 "c"
 "dvdf"
