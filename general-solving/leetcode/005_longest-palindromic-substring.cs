@@ -6,6 +6,7 @@
 * Comp  : O(N), O(N)
 * Status: Accepted
 * Notes : Tests my first implementation of Manacher’s Algorithm
+*   Add the note for index computation
 *
 *   rel: https://leetcode.com/problems/palindromic-substrings
 *    https://leetcode.com/problems/shortest-palindrome
@@ -19,7 +20,7 @@
 *
 *    adding chars, combining as string
 *    https://stackoverflow.com/q/1324009/
-* meta  : tag-dp, tag-leetcode-medium
+* meta  : tag-dp, tag-leetcode-medium, tag-palindrome, tag-two-pointers
 ***************************************************************************/
 public class Solution {
   public string LongestPalindrome(string s) {
