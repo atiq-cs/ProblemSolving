@@ -1,23 +1,20 @@
 ﻿/***************************************************************************
 * Problem Name: Roman to Integer
 * Problem URL : https://leetcode.com/problems/roman-to-integer/
-* Date        : Aug 23 2017
-* Complexity  : O(n) to iterate the chars of the string
+* Date        : 2017-08-23
+* Complexity  : O(n), O(1)
 * Author      : Atiq Rahman
 * Status      : Accepted
-* Desc        :  
 * Notes       : Easy implementation problem, ref:
-*               http://www.rapidtables.com/convert/number/
-*               how-number-to-roman-numerals.htm
-* meta        : tag-easy, tag-implementation
+*   http://www.rapidtables.com/convert/number/how-number-to-roman-numerals.htm
+* meta        : tag-leetcode-easy, tag-implementation
 ***************************************************************************/
 using System;
 using System.Collections.Generic;
 
 public class Solution {
-  Dictionary<string, int> roman_digits;
   public int RomanToInt(string s) {
-    roman_digits = new Dictionary<string, int>() {
+    Dictionary<string, int> roman_digits = new Dictionary<string, int>() {
       { "I", 1 },
       { "IV", 4 },
       { "V", 5 },
@@ -60,6 +57,7 @@ public class Solution {
     return rValue;
   }
 }
+
 /*
  Custom test-cases
   "MCMXCVI"
@@ -68,4 +66,4 @@ public class Solution {
   "M"
   "I"
   ""
-   */
+*/
