@@ -11,9 +11,9 @@
 *   Author      :   Atiq Rahman
 *   Status      :   Accepted (0.172s)
 *   Notes       :   Technical - Understanding of reference assignment, ref: 
-*   http://stackoverflow.com/questions/1219664/c-sharp-reference-type-assignment-vs-value-type-assignment
-*                   this is however not possible for strings:
-*                   http://stackoverflow.com/questions/9792776/c-sharp-assign-by-reference
+*      http://stackoverflow.com/q/1219664
+*     This, however, is not possible for strings(immutable)
+*      http://stackoverflow.com/q/9792776
 *   
 A class is a reference type. When an object of the class is created, the variable to which the object is assigned
 holds only a reference to that memory. When the object reference is assigned to a new variable, the new variable
@@ -25,33 +25,30 @@ struct's actual data. When the struct is assigned to a new variable, it is copie
 original variable therefore contain two separate copies of the same data. Changes made to one copy do not
 affect the other copy.
 draft at bottom
-ref: https://msdn.microsoft.com/en-us/library/vstudio/ms173109(v=vs.140).aspx
+ref: https://msdn.microsoft.com/en-us/library/vstudio/ms173109.aspx
 ***************************************************************************/
-public class Solution
-{
-    // iterative solution
-    public ListNode ReverseList(ListNode head)
-    {
-        ListNode currentNode = head;
-        ListNode previousNode = null;
+public class Solution {
+  // iterative solution
+  ListNode ReverseList(ListNode head) {
+    ListNode current = head;
+    ListNode prev = null;
 
-        while (currentNode != null)
-        {
-            // save current's next because we are updating this
-            ListNode tempNode = currentNode.next;
-            // reverse current's next pointer
-            currentNode.next = previousNode;
-            // move forward previous
-            previousNode = currentNode;
-            // move forward current
-            currentNode = tempNode;
-        }
-        // previousNode becomes the head at the end of the loop, all the time
-        return previousNode;
+    while (current != null) {
+      // save current's next because we are gonna move this pointer/refreence forward
+      ListNode temp = current.next;
+      // reverse current's next pointer
+      current.next = prev;
+      // move forward previous pointer
+      prev = current;
+      // move forward current's next pointer
+      current.next = prev;  
     }
+	  return prev;
+  }
 }
 
-/* say I have 3 -> 4 -> 5
+/* Consider following example,
+ 3 -> 4 -> 5
 
 Node previous = null;
 
