@@ -45,3 +45,53 @@ public class Solution {
     return true;
   }
 }
+/*
+abcdadcba
+no delete required
+
+abcdadcbaf
+delete right
+
+fabcdadcba
+delete left
+
+abcdadcbaa
+delete right
+
+valid palindrome code
+
+for (int i=0, j=n-1; i<j; i++, j--)
+  if (a[i] != a[j])
+    return false;
+    
+simplest solution would to count frequency on both side and count and find out
+if deletion of more than one char is required.
+
+public bool ValidPalindrome(string s) {
+  int n = s.Length;
+  int[] c = new int[26];
+  for (int i=0, j=n-1; i<j; i++, j--) {
+    c[s[i]-'a']++;
+    c[s[j]-'a']--;
+  }
+  bool firstDiffFound = false;
+  for (int i=0; i<26; i++)
+    if (Math.Abs(c[i]) > 1)
+      return false;
+    else if (Math.Abs(c[i]) == 1) {
+      if (firstDiffFound)
+        return false;
+      else
+        firstDiffFound = true;
+    }
+  return true;
+}
+
+abbca
+
+middle pionter is messed up because of 1 additional char
+
+if at a point it does not match,
+  we try deleting that char from left or right..
+Based on this idea solution above is developed
+*/
