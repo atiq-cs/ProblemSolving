@@ -5,19 +5,19 @@
 * Complexity  : O(n) Time, O(1) space
 * Author      : Atiq Rahman
 * Status      : Accepted (beat 85%)
-* Notes       : Will modify solution to use O(n) space when there will be large number of queries
+* Notes       : Will modify solution to use O(n) space when there will be
+*   large number of queries
+* Rel         : https://www.hackerrank.com/challenges/ctci-fibonacci-numbers
 * meta        : tag-dynamic-programming, tag-easy
 ***************************************************************************/
-
 public class Solution {
-    public int ClimbStairs(int n) {
-        int fibA = 0;
-        int fibB = 1;
-        for (int i=0; i<n; i++) {
-            int temp = fibB; fibB += fibA; fibA = temp;
-        }
-        return n<1?fibA:fibB;
+  public int ClimbStairs(int n) {
+    int fibA = 0, fibB = 1;
+    for (int i=0; i<n; i++) {
+        int temp = fibB; fibB += fibA; fibA = temp;
     }
+    return n<1?fibA:fibB;
+  }
 }
 
 /*  Mental sketch:
