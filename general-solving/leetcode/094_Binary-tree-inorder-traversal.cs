@@ -3,14 +3,60 @@
 * URL   : https://leetcode.com/problems/binary-tree-inorder-traversal/
 * Date  : 2017-10-30 (update)
 * Author: Atiq Rahman
-* Comp  : O(n)
+* Comp  : O(n), Space comp varies
 * Status: Accepted
 * Notes : Using Stack CLR p289, Ex-12.1-3
 *   Easy one (using stack)
+* ref   : Tushar Roy - Morris Inorder Tree Traversal
+*   https://www.youtube.com/watch?v=wGXB9OWhPTg
+*   https://www.geeksforgeeks.org/inorder-tree-traversal-without-recursion-and-
+*    without-stack/
+*   
 * meta  : tag-binary-tree, tag-leetcode-easy, tag-recursion, tag-stack
 ***************************************************************************/
 public class Solution {
-  // using stack for storing left node
+  // Implements Morris Traversal for Inorder, O(1) space
+  public IList<int> InorderTraversal(TreeNode root) {
+    var nodeList = new List<int>();
+    TreeNode current = root;
+    while (current != null) {
+      if (current.left == null) {
+        // Visit current node
+        nodeList.Add(current.val);
+        current = current.right;
+      }
+      else {
+        TreeNode pred = FindInOrderPredecessor(current);
+        // create predecessor to current link
+        if (pred.right == null) {
+          pred.right = current;
+          current = current.left;
+        }
+        // Undo link and Visit
+        // why does this work?
+        // Because, a predecessor does not have a right node,
+        // this one has because we created it and its right node is current as
+        // we linked
+        else {
+          pred.right = null;
+          // Visit current node
+          nodeList.Add(current.val);
+          current = current.right;
+        }
+      }
+    }
+    return nodeList;
+  }
+
+  // Iterative implementation of inorder predecessor find, O(h)
+  private TreeNode FindInOrderPredecessor(TreeNode root) {
+    TreeNode current = root.left;
+    while (current.right != null && current.right != root)
+      current = current.right;
+    return current;
+  }
+
+  // Using stack for storing left node, O(h) space
   public IList<int> InorderTraversal(TreeNode root) {
     var nodeList = new List<int>();
     if (root == null) return nodeList;
@@ -32,7 +78,8 @@ public class Solution {
     return nodeList;
   }
 
-  // recursive InorderTraversal: drops returned object from function calls inside
+  // Recursive Inorder Traversal: drops returned object from function calls
+  // inside, O(h) stack space
   IList<int> nodeList = new List<int>();
   public IList<int> InorderTraversal(TreeNode root) {
     if (root == null)
