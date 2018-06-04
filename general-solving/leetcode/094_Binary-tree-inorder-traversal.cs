@@ -15,45 +15,10 @@
 * meta  : tag-binary-tree, tag-leetcode-easy, tag-recursion, tag-stack
 ***************************************************************************/
 public class Solution {
-  // Implements Morris Traversal for Inorder, O(1) space
+  // Uses Morris Traversal for Inorder, O(1) space
+  //  'general-solving/leetcode/binary-tree-util.cs'
   public IList<int> InorderTraversal(TreeNode root) {
-    var nodeList = new List<int>();
-    TreeNode current = root;
-    while (current != null) {
-      if (current.left == null) {
-        // Visit current node
-        nodeList.Add(current.val);
-        current = current.right;
-      }
-      else {
-        TreeNode pred = FindInOrderPredecessor(current);
-        // create predecessor to current link
-        if (pred.right == null) {
-          pred.right = current;
-          current = current.left;
-        }
-        // Undo link and Visit
-        // why does this work?
-        // Because, a predecessor does not have a right node,
-        // this one has because we created it and its right node is current as
-        // we linked
-        else {
-          pred.right = null;
-          // Visit current node
-          nodeList.Add(current.val);
-          current = current.right;
-        }
-      }
-    }
-    return nodeList;
-  }
-
-  // Iterative implementation of inorder predecessor find, O(h)
-  private TreeNode FindInOrderPredecessor(TreeNode root) {
-    TreeNode current = root.left;
-    while (current.right != null && current.right != root)
-      current = current.right;
-    return current;
+    return Traversal(root, true);
   }
 
   // Using stack for storing left node, O(h) space
