@@ -11,7 +11,7 @@
 *    programming-classics-the-longest-common-subsequence
 *    
 *    Input is two integer subsequences
-* meta  : tag-lcs, tag-dp
+* meta  : tag-lcs, tag-dp, tag-company-expedia, tag-coding-test
 ***************************************************************************/
 using System;
 
@@ -30,4 +30,25 @@ Considered input,
 5 6
 1 2 3 4 1
 3 4 1 2 1 3
+*/
+
+/*
+Q2: Expedia: Missing Words
+I am using HackerRank to improve programming
+am HackerRank to improve
+
+missing words:
+I
+am
+using
+
+string to num dict
+num to string dict
+
+assign each string a number
+
+0 1 2 3 4 5 6 7
+1 2 3 4
+
+after finding lcs mark off the lcs words with an index value -1
 */
