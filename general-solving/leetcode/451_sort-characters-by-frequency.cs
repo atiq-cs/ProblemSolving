@@ -35,6 +35,13 @@ public class Solution {
     char[] chars = s.ToArray();
     foreach ( char ch in chars)
       freq[ch-' ']++;
+    /* return freq[b-' '] - freq[a-' '];
+
+     if we don't handle cases where frequencies are equal,
+     for input, "loveleetcode"
+     output becomes "eeeelolovtcd" where expected answer is "eeeeoollvtdc"
+
+     Therefore, when frequencies are equal we wanna print them together. */
     Array.Sort(chars, (a, b) => {
       if (freq[a-' '] == freq[b-' '])
         return a-b;
