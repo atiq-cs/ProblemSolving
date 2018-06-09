@@ -1,9 +1,9 @@
 ﻿/***************************************************************************
 * Title : Merge Two Sorted Lists
 * URL   : https://leetcode.com/problems/merge-two-sorted-lists
-* Date  : 2017-12
+* Date  : 2018-06-09 (update)
 * Author: Atiq Rahman
-* Comp  : O(n) n = number of digits
+* Comp  : O(N+M), O(1)
 * Status: Accepted
 * Notes : Doesn't use additional space; modifies original linked list
 *   Carefully consider cases where a pointer to one of the lists might become
@@ -17,9 +17,29 @@
 *   
 *   if (l2 == null)
 *     head = l1;
-* meta  : tag-linked-list, tag-data-structure
+*   
+*   method#2: create new List copying values from source Lists. Space
+*   complexity would increase to O(N+M)
+* meta  : tag-linked-list, tag-data-structure, tag-two-pointers
 ***************************************************************************/
 public class Solution {
+  // Occasion: meetup at DEN 2018-06-09
+  // Simplified my code
+  public ListNode MergeTwoLists(ListNode l1, ListNode l2) {
+    ListNode head = new ListNode(0), newHead = head;
+    while (l1 != null && l2 != null) {
+      head.next = l1.val < l2.val ? l1 : l2;
+      if (head.next == l1)
+        l1 = l1.next;
+      else
+        l2 = l2.next;
+      head = head.next;
+    }
+    head.next = l1 == null? l2 : l1;
+    return newHead.next;
+  }
+
+  // first version
   public ListNode MergeTwoLists(ListNode l1, ListNode l2) {
     ListNode head = null;
     // if linked list 1's head is null or value greater than second one's
