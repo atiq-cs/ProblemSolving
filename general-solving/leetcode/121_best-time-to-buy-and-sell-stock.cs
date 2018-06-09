@@ -1,16 +1,27 @@
 /***************************************************************************
 * Problem Name: Best Time to Buy and Sell Stock
 * Problem URL : https://leetcode.com/problems/best-time-to-buy-and-sell-stock
-* Date        : Dec 2015
-* Complexity  : O(n) Time beats 76%
+* Date        : 2018-06-09 (update)
+* Complexity  : O(n)
 * Author      : Atiq Rahman
-* Status      : Accepted (160ms)
+* Status      : Accepted
 * Notes       : find max diff
-*               desc draft at bottom
+*   desc draft at bottom
 * Ref         : 'online-problem-solving/icpc.kattis/artichoke.cs'               
 * meta        : tag-dynamic-programming
 ***************************************************************************/
 public class Solution {
+  // version after meetup at DEN
+  public int MaxProfit(int[] prices) {
+    int min = prices.Length == 0? 0 : prices[0], maxProfit = 0;    
+    for (int i=1; i<prices.Length; i++) {
+      maxProfit = Math.Max(maxProfit, prices[i] - min);
+      min = Math.Min(prices[i], min);
+    }
+    return maxProfit;
+  }
+
+  // first version
   public int MaxProfit(int[] prices) {
     int previousPrice = prices.Length>0?prices[0]:0;
     int minPrice = previousPrice;
