@@ -15,14 +15,19 @@
 *   Judge has large inputs as per challenge author: anveshi,
 *   Constraints on a_i's were increased from 10^5 to 2 * 10^5 to kill the
 *   solution having complexity O(n * log^2 n * log a) where a is the answer.
-*
+*   last submission ref: https://www.hackerrank.com/contests/hourrank-24/
+*    challenges/kth-minimum/submissions/code/1308095340
+*    (tried a simplified version of input)
+*   
+*   Things to change for 'demos/algo/OrderStat.cs'
+*     type int to type long
+*     int[] to List<long>
 * meta        : tag-median, tag-order-stats
 ***************************************************************************/
 using System;
 using System.Collections.Generic;
-using System.IO;  // for OpenStandardInput; increasing input buffer limit
 
-class JenListMinSolution {  // Reverse segment Solution Class
+class JenListMinSolution {
   private int n, m;
   private int[] ia, ib;
   private int x, k;
@@ -51,55 +56,9 @@ class JenListMinSolution {  // Reverse segment Solution Class
     jenList = new List<long>();
   }
 
-  private long RandomizedSelet(int p, int r, int i) {
-    if (p == r)
-      return jenList[p];
-    int q = RandomizedPartition(p, r);
-    int k_i = q - p + 1;
-    if (i == k_i)
-      return jenList[q];
-    else if (i < k_i)
-      return RandomizedSelet(p, q-1, i);
-    else
-      return RandomizedSelet(q + 1, r, i - k_i);
-  }
-
   public long GetkthMinFromJenList() {
     GetMultList();
     return RandomizedSelet(0, jenList.Count-1, k);
-  }
-
-  private int RandomizedPartition(int p, int r) {
-    Random rnd = new Random();
-    int i = rnd.Next(p, r+1);
-    Swap(i, r);
-    return Partition(p, r);
-  }
-
-  // simple quick sort partition - C.L.R page 171
-  private int Partition(int p, int r) {
-    int i = p-1;
-    long x = jenList[r];
-    for (int j=p; j<r; j++) {
-      /*
-       * maintains invariant that all items are less than pivot are in the
-       * block of i (or smaller elements till where i ends)
-       */
-      if (jenList[j] <= x) {
-        i++;
-        Swap(i, j);
-      }
-    }
-    Swap(i+1, r);
-    return i + 1;
-  }
-
-  private void Swap(int i, int j) {
-    if (i != j) {
-      long temp = jenList[i];
-      jenList[i] = jenList[j];
-      jenList[j] = temp;
-    }
   }
 }
 
