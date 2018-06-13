@@ -32,7 +32,7 @@
 *               in the last line of 'ExtractMin' implementation          
 *               
 * meta        : tag-data-structure, tag-implementation, tag-priority-queue,
-*   tag-heap
+*   tag-heap, tag-LRU
 ***************************************************************************/
 using System;
 using System.Collections.Generic;
