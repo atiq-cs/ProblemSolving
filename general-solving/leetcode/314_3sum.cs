@@ -22,7 +22,7 @@
 *   ref: https://leetcode.com/problems/3sum/discuss/7380/Concise-O(N2)-Java-
 *     solution (an easy to understand solution kinda similar thinking as mine
 *     for this problem)
-* meta  : tag-dfs, tag-graph
+* meta  : tag-line-sweep, tag-leetcode-medium
 ***************************************************************************/
 public class Solution {
   public IList<IList<int>> ThreeSum(int[] nums) {
