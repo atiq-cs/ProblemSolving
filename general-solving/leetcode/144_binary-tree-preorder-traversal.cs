@@ -5,10 +5,10 @@
 * Author: Atiq Rahman
 * Comp  : O(n)
 * Status: Accepted
-* Notes : easy actually
+* Notes : similar to Inorder morris traversal
+*   Ref: https://www.geeksforgeeks.org/morris-traversal-for-preorder/
 * meta  : tag-stack, tag-leetcode-medium, tag-binary-tree, tag-recursion
 ***************************************************************************/
-
 public class Solution {
   // Uses Morris Traversal for Preorder, O(1) space
   //  'general-solving/leetcode/binary-tree-util.cs'
