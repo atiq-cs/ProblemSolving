@@ -31,7 +31,7 @@
 *   space while advancing those pointers
 *   
 *   Therefore, we go with approach#2 which is pretty straight-forward.
-* meta: tag-linked-list, tag-leetcody-medium
+* meta: tag-linked-list, tag-leetcode-medium
 ***************************************************************************/
 public class Solution {
   private int GetLength(ListNode head) {
@@ -47,9 +47,12 @@ public class Solution {
     if (k == 0 || head == null)
       return head;
 
+    // Advance current to head + k - 1
     ListNode current = head;
     for (int i=1; i<n-k && current.next != null; i++)
       current = current.next;
+    // save new head and set next of current to null, this current is tail of
+    // result linked list
     ListNode newHead = current.next;
     current.next = null;
     current = newHead;
