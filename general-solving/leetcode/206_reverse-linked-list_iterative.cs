@@ -15,15 +15,17 @@
 *     This, however, is not possible for strings(immutable)
 *      http://stackoverflow.com/q/9792776
 *   
-A class is a reference type. When an object of the class is created, the variable to which the object is assigned
-holds only a reference to that memory. When the object reference is assigned to a new variable, the new variable
-refers to the original object. Changes made through one variable are reflected in the other variable because they
-both refer to the same data.
+A class is a reference type. When an object of the class is created, the
+variable to which the object is assigned holds only a reference to that memory.
+When the object reference is assigned to a new variable, the new variable
+refers to the original object. Changes made through one variable are reflected
+in the other variable because they both refer to the same data.
 
-A struct is a value type. When a struct is created, the variable to which the struct is assigned holds the
-struct's actual data. When the struct is assigned to a new variable, it is copied. The new variable and the
-original variable therefore contain two separate copies of the same data. Changes made to one copy do not
-affect the other copy.
+A struct is a value type. When a struct is created, the variable to which the
+struct is assigned holds the struct's actual data. When the struct is assigned
+to a new variable, it is copied. The new variable and the original variable
+therefore contain two separate copies of the same data. Changes made to one
+copy do not affect the other copy.
 draft at bottom
 ref: https://msdn.microsoft.com/en-us/library/vstudio/ms173109.aspx
 ***************************************************************************/

@@ -2,8 +2,7 @@
 * Problem Name: Reverse Linked List (recursive solution)
 * Problem URL : https://leetcode.com/problems/reverse-linked-list/
 * Derived from: Algorithms/Recursion_Reverse_Linked_List_demo.cpp
- 
-* Date        : July 29, 2015
+* Date        : 2015-07-29
 * Desc        : uses the idea that all the nodes of the linked list are pushed into heap during recursive
 *   calls. So when we are return from those calls use the store nodes to change the link each time
 *   - This however, does changes head's next
@@ -11,13 +10,13 @@
 *   - we need to take care of the case when head.next is null in the recursive function
 *   - if head is null RecReverse function does nothing so we don't set its next to null as we do
 *     in regular cases
-*
+*    
+*   Code updated on occassion Den meetup 2018-04-21
 * Complexity  : O(n)
 * Author      : Atiq Rahman
 * Status      : Accepted (0.160s)
-* Note        : All classes are assigned and passed to functions by reference whereas structures
-*   copies the object
-*   For more tech notes look at: 206_reverse-linked-list_recursive.cs
+* Note        : All classes are assigned and passed to functions by reference
+*   whereas structures instantiate a new object and copies the content
 ***************************************************************************/
 public class Solution {
   ListNode gHead=null; 		// global head, class member
