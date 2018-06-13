@@ -19,9 +19,9 @@ public class Solution {
   private int maxForestSize;
   private bool[][] visited;
 
-  public int MaxAreaOfIsland(int[,] j_grid) {
+  public int MaxAreaOfIsland(int[,] md_grid) {
     // ref: 'utils.cs'
-    grid = ConvertMultiDimensionalToJagged(j_grid);
+    grid = ConvertMultiDimensionalToJagged(md_grid);
     visited = new bool[n][];
     for (int i=0; i<n; i++)
       visited[i] = new bool[m];
