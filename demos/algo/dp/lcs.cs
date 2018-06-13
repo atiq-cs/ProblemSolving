@@ -5,7 +5,9 @@
 * Author: Atiq Rahman
 * Comp  : O(m*n), O(m*n)
 * Notes : tested with a few hackerrank problems
-*   space complexity can be reduced further
+*   ToDo: space complexity can be reduced further, optimize further
+*   2d array for directions can be eliminated. Also m*n states might not be
+*   required. To compute only length we don't need that much space (array c).
 * meta  : tag-lcs, tag-dp
 ***************************************************************************/
 using System.Collections.Generic;
