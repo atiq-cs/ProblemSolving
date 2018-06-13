@@ -19,7 +19,8 @@ public class Solution {
     GetLargestValuesLevelWise(root, 0);
     return largestValueInRows;
   }
-  
+
+  // These two methods can be combined
   private void GetLargestValuesLevelWise(TreeNode root, int depth) {
     if (root == null)
       return ;
