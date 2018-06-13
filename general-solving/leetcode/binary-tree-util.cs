@@ -1,5 +1,5 @@
 ﻿/***************************************************************************
-* Title : Utilities for leetcode
+* Title : Utility for Binary Tree
 * URL   : 
 * Date  : 2018-06-04
 * Author: Atiq Rahman
