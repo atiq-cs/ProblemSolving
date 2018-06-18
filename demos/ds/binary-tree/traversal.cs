@@ -1,11 +1,11 @@
 ﻿/***************************************************************************
-* Title : Utility for Binary Tree
+* Title : Binary Tree Traversals
 * URL   : 
 * Date  : 2018-06-04
 * Author: Atiq Rahman
-* Notes : 
+* Notes : Implements Morris Traversals and TreeMinimum
 ***************************************************************************/
-public class BinaryTreeUtil {
+public class TraversalUtil {
   // Implements Morris Traversal for Inorder/Preorder, O(1) space
   public IList<int> Traversal(TreeNode current, bool isInOrder) {
     var nodeList = new List<int>();
@@ -47,6 +47,17 @@ public class BinaryTreeUtil {
     TreeNode current = root.left;
     while (current.right != null && current.right != root)
       current = current.right;
+    return current;
+  }
+  
+  // Only first time, root can be null for TreeMinimum call which is taken care
+  // of in HasNext
+  private TreeNode TreeMinimum(TreeNode root) {
+    TreeNode current = root;
+    while (current.left != null) {
+      stack.Push(current);
+      current = current.left;
+    }
     return current;
   }
 }
