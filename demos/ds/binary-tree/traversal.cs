@@ -3,7 +3,7 @@
 * URL   : 
 * Date  : 2018-06-04
 * Author: Atiq Rahman
-* Notes : Implements Morris Traversals and TreeMinimum
+* Notes : Implements Morris Traversals for Binary Trees
 ***************************************************************************/
 public class TraversalUtil {
   // Implements Morris Traversal for Inorder/Preorder, O(1) space
@@ -47,17 +47,6 @@ public class TraversalUtil {
     TreeNode current = root.left;
     while (current.right != null && current.right != root)
       current = current.right;
-    return current;
-  }
-  
-  // Only first time, root can be null for TreeMinimum call which is taken care
-  // of in HasNext
-  private TreeNode TreeMinimum(TreeNode root) {
-    TreeNode current = root;
-    while (current.left != null) {
-      stack.Push(current);
-      current = current.left;
-    }
     return current;
   }
 }
