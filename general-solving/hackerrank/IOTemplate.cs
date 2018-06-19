@@ -8,10 +8,24 @@
 *   I did not change/simplify this IO handling, just kept it the way hackerrank
 *   provided it.
 ***************************************************************************/
+// These two suffice
 using System.IO;
 using System;
+/* Usually have more
+using System.CodeDom.Compiler;
+using System.Collections.Generic;
+using System.Collections;
+using System.ComponentModel;
+using System.Diagnostics.CodeAnalysis;
+using System.Globalization;
+using System.Linq;
+using System.Reflection;
+using System.Runtime.Serialization;
+using System.Text.RegularExpressions;
+using System.Text;
+*/
 
-class HK_Solution {
+class HackerrankSolution {
   static void Main(string[] args) {
     TextWriter textWriter = new StreamWriter(@System.Environment.
       GetEnvironmentVariable("OUTPUT_PATH"), true);
