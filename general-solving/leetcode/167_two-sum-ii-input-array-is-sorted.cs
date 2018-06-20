@@ -7,6 +7,7 @@
 * Status: Accepted
 * Notes : 
 * Rel   : https://leetcode.com/problems/two-sum (not sorted)
+*   https://leetcode.com/problems/two-sum-iv-input-is-a-bst
 * meta  : tag-leetcode-easy, tag-two-pointers
 ***************************************************************************/
 public class Solution {

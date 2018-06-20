@@ -1,7 +1,7 @@
 ﻿/***************************************************************************
 * Title       : Sorting: Bubble Sort
 * URL         : https://www.hackerrank.com/challenges/ctci-bubble-sort
-* Date        : Sep 7 2017
+* Date        : 2017-09-07
 * Complexity  : O(n^2)
 * Author      : Atiq Rahman
 * Status      : Accepted

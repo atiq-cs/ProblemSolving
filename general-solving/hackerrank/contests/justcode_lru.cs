@@ -151,7 +151,7 @@ class PriorityQueue {
   }
 }
 
-  class Solution {
+class Solution {
   static void Main(String[] args) {
     string[] tokens = Console.ReadLine().Split();
     int N = int.Parse(tokens[0]);

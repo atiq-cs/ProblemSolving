@@ -23,12 +23,12 @@
 *   https://leetcode.com/problems/delete-node-in-a-bst/discuss/93296 to verify
 *   time constraint.
 *   
-*  TREE-SUCCESSOR (C.L.R p292):
+*  TREE-SUCCESSOR (C.L.R.S p292):
 *   Simple version of TREE-SUCCESSOR(x); x.right is not NIL is demonstrated
 *   below. Due to the simplified application TREE-SUCCESSOR could not be fully
 *   tested with this leetcode problem.
 *   
-*   Transplant(T, u, v) [C.L.R p296] is not implemented as a function due to
+*   Transplant(T, u, v) [C.L.R.S p296] is not implemented as a function due to
 *   requirement of passing of additional parameters. For an independent
 *   function it might require following parameters,
 *   - parent of z
