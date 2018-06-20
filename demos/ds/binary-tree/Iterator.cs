@@ -5,15 +5,20 @@
 * Author: Atiq Rahman
 * Comp  : O(lg N) worst case time, amortized O(1), space complexity similar
 * Ref   : 'leetcode/173_binary-search-tree-iterator.cs'
-* Notes : tag-binary-tree, tag-successor, tag-predecessor
+* Notes : Generic implementation to handle both successors and predecessors
+*   wanna simplify?
+*   Just drop shouldFindPredecessor and pertinent conditionals
+* meta  : tag-binary-tree, tag-successor, tag-predecessor
 ***************************************************************************/
 public class BSTIterator {
   TreeNode currentNode;
   Stack<TreeNode> stack;
-  
-  public BSTIterator(TreeNode root) {
+  bool shouldFindPredecessor;
+
+  public BSTIterator(TreeNode root, bool shouldFindPredecessor = false) {
     currentNode = root;
     stack = null;
+    this.shouldFindPredecessor = shouldFindPredecessor;
   }
 
   public bool HasNext() {
@@ -34,11 +39,11 @@ public class BSTIterator {
   
   private TreeNode FindSuccessor() {
     TreeNode x = currentNode;
-    if (x.right != null)
-      return TreeMinimum(x.right);
+    if ((shouldFindPredecessor ? x.left : x.right) != null)
+      return TreeMinimum(shouldFindPredecessor ? x.left : x.right);
     if (stack.Count == 0) { return null; }
     TreeNode y = stack.Pop();
-    while (y.right == x && stack.Count > 0) {
+    while ((shouldFindPredecessor?y.left:y.right) == x && stack.Count > 0) {
       x = y;
       y = stack.Pop();      
     }
@@ -48,7 +53,8 @@ public class BSTIterator {
   // Only first time, root can be null for TreeMinimum call which is taken care
   // of, in HasNext
   private TreeNode TreeMinimum(TreeNode current) {
-    for (;  current.left != null; current = current.left)
+    for (; (shouldFindPredecessor?current.right:current.left) != null; current
+      = (shouldFindPredecessor ? current.right:current.left))
       stack.Push(current);
     return current;
   }
