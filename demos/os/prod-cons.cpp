@@ -9,7 +9,7 @@
 *   C++ 11, uses references instead of pointers, uses c++ mutex, locks and
 *   lambda syntax
 *   ref: https://codereview.stackexchange.com/q/84109
-* meta  : tag-operating-system, tag-multi-threading
+* meta  : tag-multi-threading, tag-system-mutex
 ***************************************************************************/
 #include <iostream>
 #include <thread>
