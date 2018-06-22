@@ -7,7 +7,8 @@
 * Complexity  : O(n log n)
 * Author      : Atiq Rahman
 * Status      : Accepted
-* Notes       : Solved using 'Priority Queue' Data Structure. Lower number has
+* Notes       : Solved using 'Priority Queue' Data Structure.
+*   Initial concept: Max Priority Queue: Lower number has
 *   higher priority. We start assigning priority starting from int max value
 *   while reading inputs and inserting them into the queue.
 *   An item that appeared later has therefore higher priority as we decrease
@@ -16,7 +17,7 @@
 *   time. In that case, changing the conditional operator for comparing
 *   priority will help.
 * 
-* Priority Queue Implementation for this problem:
+*   Priority Queue Implementation for this problem:
 *   This version supercesdes previous implementation of Priority Queue in
 *   '1840_PQUEUE.cs' to solve SPOJ problem
 *   That version has following bug,
@@ -27,12 +28,26 @@
 *   Based on binary heap, we use C# List as the dynamic array
 *   Previous Implementation Ref
 *     https://code.msdn.microsoft.com/Dijkstras-Single-Soruce-69faddb3
-
+*     
+*   Previously solved using Max Heap and priority Value starting from INF and
+*   decrementing every time we insert a new item.
+*   
+*   For MinHeap start with 0 and increment priority value every time for new
+*   items.
+*
 * Modification: Due to the issue mentioned above I remove the last element
 *               in the last line of 'ExtractMin' implementation          
-*               
-* meta        : tag-data-structure, tag-implementation, tag-priority-queue,
-*   tag-heap, tag-LRU
+*   
+*   Concept: [update 2018-06] min Heap based Priority Queue
+*   Improved Insert time complexity to O(1)
+*   Decrease Key is O(lg N)
+*   
+*   Like graph problems we don't have a preliminary list of vertices or LRU
+*   items. We might be able to store all of them in an array but would that be
+*   space efficient solution for this type of problems. Therefore, went with
+*   storing LRUItem in Queue instead.
+*   
+* meta        : tag-data-structure, tag-priority-queue, tag-heap, tag-LRU
 ***************************************************************************/
 using System;
 using System.Collections.Generic;
@@ -40,125 +55,46 @@ using System.Collections.Generic;
 class LRUItem {
   public int Value;
   public int Priority;    // member used to resolve prirority
-  public LRUItem(int key, int pr_val) { Value = key; Priority = pr_val; }
+  public LRUItem(int key, int pr) { Value = key; Priority = pr; }
 }
 
-class PriorityQueue {
-  private int heapSize;
-  List<LRUItem> itemList;
+delegate bool CmpDelegate(LRUItem a, LRUItem b);
 
-  /* Use when necessary
-  public List<LRUItem> GetItemList {
-    get {
-      return itemList;
-    }
+class Heap {
+  /* Usually Bubble Up
+   * However, in this solution, priority coming up later are always greater.
+   * Therefore, Bubble-Up is not required, making insert constant time.
+   */
+  protected void Insert(LRUItem item) {
+    // BubbleUp(heapSize++);
   }
+}
 
-  // not planning to use this one right now
-  public PriorityQueue(List<LRUItem> nl) {
-    heapSize = nl.Count;
-    itemList = new List<LRUItem>();
-
-    for (int i = 0; i < nl.Count; i++)
-        itemList.Add(nl[i]);
-  } */
-
-  public PriorityQueue() {
-    heapSize = 0;
-    itemList = new List<LRUItem>();
-  }
-
-  public void Enqueue(LRUItem item) {  // requires public
-    heapSize++;
-    itemList.Add(item);
-  }
-
-  void exchange(int i, int j) {
-    LRUItem temp = itemList[i];
-    itemList[i] = itemList[j];
-    itemList[j] = temp;
-  }
-
-  void heapify(int i) {
-    int l = 2 * i + 1;
-    int r = 2 * i + 2;
-    int largest = -1;
-    // '>' implies larger number will have higher priority
-    if (l < heapSize && (itemList[l].Priority < itemList[i].Priority))
-      largest = l;
-    else
-        largest = i;
-    if (r < heapSize && (itemList[r].Priority < itemList[largest].Priority))
-      largest = r;
-    if (largest != i) {
-      exchange(i, largest);
-      heapify(largest);
-    }
-  }
-
-  // called before extracting minimum
-  public void buildHeap() {    // requires public
-    for (int i = heapSize / 2; i >= 0; i--)
-      heapify(i);
-  }
-
-  int heapSearch(LRUItem item) {
-    for (int i = 0; i < heapSize; i++) {
-        LRUItem aItem = itemList[i];
-        if (item.Value == aItem.Value)
-            return i;
-    }
-    return -1;
-  }
-
-  public int Count {
-    get { return heapSize; }
-  }
-
-  public LRUItem elementAt(int i) {
-    return itemList[i];
-  }
-
-  void heapSort() {
-    int temp = heapSize;
-    buildHeap();
-
-    for (int i = heapSize - 1; i >= 1; i--) {
-        exchange(0, i);
-        heapSize--;
-        heapify(0);
-    }
-    heapSize = temp;
-  }
-
-  public LRUItem extractMin() {
-    if (heapSize < 1)
-      return null;
-    heapSort();
-    exchange(0, heapSize - 1);
-    heapSize--;
-    LRUItem temp = itemList[heapSize];
-    itemList.RemoveAt(heapSize);
-    return temp;
+class PriorityQueue : Heap {
+  public PriorityQueue() : base((LRUItem a, LRUItem b) => {
+      return a.Priority < b.Priority;
+    }) {
   }
 
   public int find(LRUItem item) {
     return heapSearch(item);
   }
-  public void updateKey(int index, LRUItem item) {
-    if (itemList[index].Value == item.Value)
-      itemList[index].Priority = item.Priority;
-  }
+  /* For rest of the methods int type changed to LRUItem since we are not going
+   * with the Generics any more; we are using lambda delegates wto figure out
+   * whether it's Min Heap or Max Heap */
 }
 
+/* Items with greater priority number stay, items with smaller priority gets
+ * kicked out. That is what expected from an ExtractMin of a Priority Queue
+ * based on Min Heap */
 class Solution {
   static void Main(String[] args) {
     string[] tokens = Console.ReadLine().Split();
     int N = int.Parse(tokens[0]);
     int S = int.Parse(tokens[1]);
 
-    PriorityQueue priority_queue = new PriorityQueue();
-    int pr = int.MaxValue;
+    PriorityQueue pQueue = new PriorityQueue();
+    int pr = 0;
     int countPF = 0;
 
     for (int T=N; T > 0;) {
@@ -166,27 +102,24 @@ class Solution {
       T -= tokens.Length;
       for (int i=0; i<tokens.Length; i++) {
         int val = int.Parse(tokens[i]);
-        LRUItem item = new LRUItem(val, pr--);
-        int pos = priority_queue.find(item);
+        LRUItem item = new LRUItem(val, pr++);
+        // With hash-table this can be O(1)
+        int pos = pQueue.find(item);
         if (pos == -1) {
-          if (priority_queue.Count == S)
-            priority_queue.extractMin();
-          priority_queue.Enqueue(item);
+          if (pQueue.Count == S)
+            pQueue.Dequeue();
+          pQueue.Enqueue(item);
           countPF++;
         }
         else
-          priority_queue.updateKey(pos, item);
+          pQueue.IncreaseKey(pos, item);
       }
     }
 
-    // Not required
-    // while (priority_queue.Count > S)
-      // priority_queue.extractMin();
-
-    int[] res = new int[priority_queue.Count];
+    int[] res = new int[pQueue.Count];
     Console.WriteLine(countPF);
-    for (int i=0; priority_queue.Count > 0; i++)
-      res[i] = priority_queue.extractMin().Value;
+    for (int i=0; pQueue.Count > 0; i++)
+      res[i] = pQueue.Dequeue().Value;
     Array.Reverse(res);
     Console.WriteLine(string.Join(" ", res));
   }
