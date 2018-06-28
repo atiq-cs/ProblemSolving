@@ -67,25 +67,6 @@ public class GraphDemo {
       throw new ArgumentException();
   }
 
-  private void RunBFS() {
-    Queue<int> queue = new Queue<int>();
-    queue.Enqueue(Source);
-    int[] d = new int[nV];
-    d[0] = 0;
-    for (int i = 1; i < nV; i++)
-      d[i] = INF;
-
-    while (queue.Count > 0) {
-      int u = queue.Dequeue();
-      foreach (int v in AdjList[u])
-        if (d[v] > d[u] + 1) {
-          pre[v] = u;
-          d[v] = d[u] + 1;
-          queue.Enqueue(v);
-        }
-      }
-  }
-
   private void PrintPath() {
     PrintPathRec(Destination);
     if (Path.Count == 0)
@@ -110,7 +91,7 @@ public class GraphDemo {
   }
 
   public void ShowResult() {
-    RunBFS();
+    BFS();
     PrintPath();
   }
 }
