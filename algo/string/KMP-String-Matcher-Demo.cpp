@@ -1,46 +1,36 @@
-/*
-*	Problem: String Matching Algorithm - Knuth�Morris�Pratt algorithm
-*	Author : Atiq Rahman
-*	Date   : 2015-07-10
-* Comp   : O (m+n)
-*	Notes  : Build Prefix Table
-*   each index of the prefix table keeps tracks of the previous index where it matches
-*   Match String
-*
-*   KMP on youtube: https://www.youtube.com/watch?v=5i7oKodCRJo
-*     http://a2oj.com/Category.jsp?ID=29
-*
-*   Ref  :   Introduction to Algorithms, C.L.R.S Chapter 32, p1005
-*   Rel  :   https://www.hackerrank.com/challenges/string-similarity
-*/
-
+﻿/***************************************************************************
+* Title : String Matching - Knuth–Morris–Pratt algorithm
+* URL   :
+* Date  : 2015-07-10
+* Author: Atiq Rahman
+* Comp  : O(m+n)
+* Notes : Driver program for KMP
+* meta  : tag-string, tag-kmp
+***************************************************************************/
 #include <iostream>
 #include <algorithm>
 #include <string>
 #include <vector>
 // #include <array>   // same to 2d array memory allocation does not support a variable size
 
-/* matches P against itself and computes prefix
-pf is the pi to implement prefix function
-*/
+// matches P against itself and computes prefix table pf (π)
 std::vector<int> compute_prefix_function(std::string p) {
   std::vector<int> pf(p.length(), -1);
 
   int k = -1;
-  for (int q = 1; q < p.length(); q++) {
-    while (k>-1 && p[k + 1] != p[q])
-      k = pf[q];
+  for (int i = 1; i < p.length(); i++) {
+    while (k>-1 && p[k + 1] != p[i])
+      k = pf[i];
 
-    if (p[k + 1] == p[q])
+    if (p[k + 1] == p[i])
       k++;
-    pf[q] = k;
+
+    pf[i] = k;
   }
   return pf;
 }
 
-/*
-Match part
-*/
+// Matching function based on prefix table
 void kmp_matcher(std::string p, std::string t) {
   std::vector<int> pf = compute_prefix_function(p);
   int m = p.length();
@@ -50,15 +40,14 @@ void kmp_matcher(std::string p, std::string t) {
       q = pf[q];
     if (p[q + 1] == t[i])
       q++;
-    if (q == m - 1)
-    {
-      std::cout << "Pattern found with shfit " << (i + 1 - m) << std::endl;
+    if (q == m - 1) {
+      std::cout << "Pattern found with shfit " << (i-q) << std::endl;
       q = pf[q];
     }
   }
 }
 
-/* KMP Demo */
+// KMP Demo
 int main() {
   // takes a sample stirng and pattern
   // std::string p = "ababaa"; 
@@ -70,7 +59,6 @@ int main() {
   //std::string t = "dabc";
 
   kmp_matcher(p, t);
-
   // std::cout << "Length of is: " << longest_common_substr(s, t) << "." << std::endl;
 
   return 0;
