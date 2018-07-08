@@ -14,22 +14,21 @@ public class LeetcodeUtils {
     rhs = temp;
   }
 
-  private int[][] ConvertMultiDimensionalToJagged(int[,] md)
+  private T[][] ConvertMultiDimensionalToJagged<T>(T[,] md)
   {
     numRows = md.GetLength(0);  // renamed from n
     numCols = md.GetLength(1);  // renamed from m
 
-    int[][] jaggedArray = new int[numRows][];
-    for (int i = 0; i < numRows; i++)
-    {
-      jaggedArray[i] = new int[numCols];
+    T[][] jaggedArray = new T[numRows][];
+    for (int i = 0; i < numRows; i++) {
+      jaggedArray[i] = new T[numCols];
       for (int j = 0; j < numCols; j++)
-        jaggedArray[i][j] = md[i,j];
+        jaggedArray[i][j] = md[i, j];
     }
     return jaggedArray;
   }
 
-  private int[,] ConvertJaggedToMultiDimensional(int[][] jaggedArray)
+  private T[,] ConvertJaggedToMultiDimensional<T>(T[][] jaggedArray)
   {
     numRows = jaggedArray.Length;  // class member
     if (numRows == 0)
@@ -38,33 +37,17 @@ public class LeetcodeUtils {
     if (numCols == 0)
       throw new ArgumentException();
 
-    int[,] md = new int[numRows,numCols];
+    T[,] md = new T[numRows,numCols];
     for (int i = 0; i < numRows; i++)
       for (int j = 0; j < numCols; j++)
         md[i, j] = jaggedArray[i][j];
     return md;
   }
 
-  // equivalent to previous ConvertJaggedToMultiDimensional
-  // provide override when original function does not provide way to return
-  // result array
-  void ConvertJaggedToMultiDimensional(int[][] jaggedArray, int[,] md)
-  {
-    numRows = jaggedArray.Length;  // class member
-    if (numRows == 0)
-      throw new ArgumentException();
-    numCols = jaggedArray[0].Length;  // class member
-    if (numCols == 0)
-      throw new ArgumentException();
-
-    for (int i = 0; i < numRows; i++)
-      for (int j = 0; j < numCols; j++)
-        md[i, j] = jaggedArray[i][j];
-  }
-
-
   // Provide boolean overrides to optimize space
-  private bool[][] ConvertMultiDimensionalToJagged(int[,] md)
+  // Checking type parameter of a generic method in C# ref:
+  //  https://stackoverflow.com/q/2004508
+  private bool[][] ConvertMultiDimensionalToJagged<T>(T[,] md)
   {
     numRows = md.GetLength(0);  // class member
     numCols = md.GetLength(1);  // class member
@@ -73,9 +56,26 @@ public class LeetcodeUtils {
     for (int i=0; i< numRows; i++) {
       jaggedArray[i] = new bool[numCols];
       for (int j=0; j<numCols; j++)
-        jaggedArray[i][j] = md[i,j] == 0? false : true;
+        jaggedArray[i][j] = md[i,j] == (typeof(T) == typeof(char)?'0':0)? false : true;
     }
     return jaggedArray;
+  }
+
+  // equivalent to previous ConvertJaggedToMultiDimensional
+  // provide override when original function does not provide way to return
+  // result array, modify the provided array instead
+  void ConvertJaggedToMultiDimensional<T>(T[][] jaggedArray, T[,] md)
+  {
+    numRows = jaggedArray.Length;  // class member
+    if (numRows == 0)
+      throw new ArgumentException();
+    numCols = jaggedArray[0].Length;  // class member
+    if (numCols == 0)
+      throw new ArgumentException();
+
+    for (int i = 0; i < numRows; i++)
+      for (int j = 0; j < numCols; j++)
+        md[i, j] = jaggedArray[i][j];
   }
 
   void ConvertJaggedToMultiDimensional(bool[][] jaggedArray, int[,] md) {

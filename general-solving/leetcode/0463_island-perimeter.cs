@@ -22,7 +22,7 @@
 public class Solution {
   int n, m;
   public int IslandPerimeter(int[,] mdGrid) {
-    int[][] grid = ConvertMultiDimensionalToJagged(mdGrid);
+    int[][] grid = ConvertMultiDimensionalToJagged<int>(mdGrid);
     int cellCount = 0, excludeCellCount = 0;
 
     for (int i=0; i<n; i++)

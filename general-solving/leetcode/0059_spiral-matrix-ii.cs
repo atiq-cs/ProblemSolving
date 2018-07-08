@@ -53,7 +53,7 @@ public class Solution {
       jaggedArray[i] = new int[n];
     // Solution driver
     GenerateMatrixHelper(0);
-    return ConvertJaggedToMultiDimensional(jaggedArray);  // leetcode/utils.cs
+    return ConvertJaggedToMultiDimensional<int>(jaggedArray);  // ref 'utils.cs'
   }
   
   // Recursive implementation, uses jaggedArray class member as input-output

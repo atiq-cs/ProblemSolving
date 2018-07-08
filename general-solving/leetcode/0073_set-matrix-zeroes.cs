@@ -15,7 +15,7 @@ public class Solution {
   private int numCols;
   
   public void SetZeroes(int[,] mdMat) {
-    int[][] matrix = ConvertMultiDimensionalToJagged(mdMat);
+    int[][] matrix = ConvertMultiDimensionalToJagged<int>(mdMat);
     bool[] rows = new bool[numRows];  // indicates marked rows for being zeroed out
     bool[] cols = new bool[numCols];  // marked columns for being zeroed out    
     
@@ -36,7 +36,7 @@ public class Solution {
         else if (cols[j] || rows[i])
           matrix[i][j] = 0;
       }
-    ConvertJaggedToMultiDimensional(matrix, mdMat);
+    ConvertJaggedToMultiDimensional<int>(matrix, mdMat);
   }
 
   // first version, a better solution if input was only 1 and 0 in matrix

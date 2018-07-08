@@ -30,8 +30,8 @@ using System;
 class Solution {
   public static int[] MeetingPlanner(int[,] slotsMdA, int[,] slotsMdB, int dur) {
     // n and m are declared inside Convert Method
-    int[][] slotsA = ConvertMultiDimensionalToJagged(slotsMdA);
-    int[][] slotsB = ConvertMultiDimensionalToJagged(slotsMdB);
+    int[][] slotsA = ConvertMultiDimensionalToJagged<int>(slotsMdA);
+    int[][] slotsB = ConvertMultiDimensionalToJagged<int>(slotsMdB);
     
     // iA left pointer is for A
     int iA = 0;

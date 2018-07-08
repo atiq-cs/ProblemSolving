@@ -13,21 +13,21 @@
 ***************************************************************************/
 public class Solution {
   private int[][] grid;
-  private int n;
-  private int m;
+  private int numRows;
+  private int numCols;
   private int forestSize;
   private int maxForestSize;
   private bool[][] visited;
 
-  public int MaxAreaOfIsland(int[,] md_grid) {
+  public int MaxAreaOfIsland(int[,] mdGrid) {
     // ref: 'utils.cs'
-    grid = ConvertMultiDimensionalToJagged(md_grid);
-    visited = new bool[n][];
-    for (int i=0; i<n; i++)
-      visited[i] = new bool[m];
+    grid = ConvertMultiDimensionalToJagged<int>(mdGrid);
+    visited = new bool[numRows][];
+    for (int i=0; i<numRows; i++)
+      visited[i] = new bool[numCols];
     maxForestSize = 0;
-    for (int i=0; i<n; i++)
-      for (int j=0; j<m; j++) {
+    for (int i=0; i<numRows; i++)
+      for (int j=0; j<numCols; j++) {
         forestSize = 0;
         DFS(i, j);
         if (maxForestSize < forestSize)
@@ -37,7 +37,7 @@ public class Solution {
   }
   
   private void DFS(int r, int c) {
-    if (r < 0 || c<0 || r>=n || c>=m || visited[r][c] || grid[r][c] == 0)
+    if (r < 0 || c<0 || r>=numRows || c>=numCols || visited[r][c] || grid[r][c] == 0)
       return ;
     visited[r][c] = true;
     forestSize++;
