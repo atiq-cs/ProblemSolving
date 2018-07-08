@@ -31,16 +31,16 @@ public class LeetcodeUtils {
 
   private int[,] ConvertJaggedToMultiDimensional(int[][] jaggedArray)
   {
-    n = jaggedArray.Length;  // class member
-    if (n == 0)
+    numRows = jaggedArray.Length;  // class member
+    if (numRows == 0)
       throw new ArgumentException();
-    m = jaggedArray[0].Length;  // class member
-    if (m == 0)
+    numCols = jaggedArray[0].Length;  // class member
+    if (numCols == 0)
       throw new ArgumentException();
 
-    int[,] md = new int[n,m];
-    for (int i = 0; i < n; i++)
-      for (int j = 0; j < m; j++)
+    int[,] md = new int[numRows,numCols];
+    for (int i = 0; i < numRows; i++)
+      for (int j = 0; j < numCols; j++)
         md[i, j] = jaggedArray[i][j];
     return md;
   }
@@ -89,5 +89,18 @@ public class LeetcodeUtils {
     for (int i = 0; i < numRows; i++)
       for (int j = 0; j < numCols; j++)
         md[i, j] = jaggedArray[i][j]? 1: 0;
+  }
+
+  private bool[][] ConvertMultiDimensionalToJagged(char[,] md) {
+    numRows = md.GetLength(0);  // class member
+    numCols = md.GetLength(1);  // class member
+
+    bool[][] jaggedArray = new bool[numRows][];
+    for (int i=0; i< numRows; i++) {
+      jaggedArray[i] = new bool[numCols];
+      for (int j=0; j<numCols; j++)
+        jaggedArray[i][j] = md[i,j] == '0'? false : true;
+    }
+    return jaggedArray;
   }
 }
