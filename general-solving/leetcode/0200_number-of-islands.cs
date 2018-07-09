@@ -1,6 +1,6 @@
 ﻿/***************************************************************************
 * Title : Number of Islands
-* URL   : https://leetcode.com/problems/two-sum-iv-input-is-a-bst
+* URL   : https://leetcode.com/problems/number-of-islands
 * Date  : 2018-07 (Den Meetup)
 * Author: Atiq Rahman
 * Comp  : O(nm), O(1)
@@ -14,7 +14,7 @@ public class Solution {
   private bool[][] grid;
 
   public int NumIslands(char[,] mdGrid) {
-    grid = ConvertMultiDimensionalToJagged<int>(mdGrid);    // ref: 'utils.cs'
+    grid = ConvertMultiDimensionalToJagged(md_grid, '0');    // ref: 'utils.cs'
     int count = 0;
     for (int i=0; i<numRows; i++)
       for (int j=0; j<numCols; j++) {

@@ -5,6 +5,7 @@
 * Author: Atiq Rahman
 * Notes : Utility function for leetcode problems with jagged array in
 *   parameters. A few overrides added
+*   Comparison is such an ass in Generics!!
 ***************************************************************************/
 public class LeetcodeUtils {
   void Swap<T>(ref T lhs, ref T rhs)
@@ -47,7 +48,9 @@ public class LeetcodeUtils {
   // Provide boolean overrides to optimize space
   // Checking type parameter of a generic method in C# ref:
   //  https://stackoverflow.com/q/2004508
-  private bool[][] ConvertMultiDimensionalToJagged<T>(T[,] md)
+  // ref, for IEquatable if required http://blog.andreaskahler.com/2009/04
+  //  /how-to-test-equality-for-objects-of.html
+  private bool[][] ConvertMultiDimensionalToJagged<T>(T[,] md, T zero)
   {
     numRows = md.GetLength(0);  // class member
     numCols = md.GetLength(1);  // class member
@@ -56,7 +59,7 @@ public class LeetcodeUtils {
     for (int i=0; i< numRows; i++) {
       jaggedArray[i] = new bool[numCols];
       for (int j=0; j<numCols; j++)
-        jaggedArray[i][j] = md[i,j] == (typeof(T) == typeof(char)?'0':0)? false : true;
+        jaggedArray[i][j] = md[i, j].Equals(zero) ? false : true;
     }
     return jaggedArray;
   }
@@ -89,18 +92,5 @@ public class LeetcodeUtils {
     for (int i = 0; i < numRows; i++)
       for (int j = 0; j < numCols; j++)
         md[i, j] = jaggedArray[i][j]? 1: 0;
-  }
-
-  private bool[][] ConvertMultiDimensionalToJagged(char[,] md) {
-    numRows = md.GetLength(0);  // class member
-    numCols = md.GetLength(1);  // class member
-
-    bool[][] jaggedArray = new bool[numRows][];
-    for (int i=0; i< numRows; i++) {
-      jaggedArray[i] = new bool[numCols];
-      for (int j=0; j<numCols; j++)
-        jaggedArray[i][j] = md[i,j] == '0'? false : true;
-    }
-    return jaggedArray;
   }
 }
