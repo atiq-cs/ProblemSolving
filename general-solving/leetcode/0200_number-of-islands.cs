@@ -14,7 +14,7 @@ public class Solution {
   private bool[][] grid;
 
   public int NumIslands(char[,] mdGrid) {
-    grid = ConvertMultiDimensionalToJagged(md_grid, '0');    // ref: 'utils.cs'
+    grid = ConvertMultiDimensionalToJagged(mdGrid, '0');    // ref: 'utils.cs'
     int count = 0;
     for (int i=0; i<numRows; i++)
       for (int j=0; j<numCols; j++) {
@@ -37,7 +37,7 @@ public class Solution {
   }
 
   // Previous version that uses O(nm) space
-  public int NumIslands_v0(char[,] md_grid) {
+  public int NumIslands_v0(char[,] mdGrid) {
     grid = ConvertMultiDimensionalToJagged<int>(mdGrid);
     // declare this as class member as well
     visited = new bool[numRows][];
