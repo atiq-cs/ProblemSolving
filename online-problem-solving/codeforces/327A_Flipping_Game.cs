@@ -1,18 +1,23 @@
 ﻿/***************************************************************************
-* Title       : Flipping Game
-* URL         : http://codeforces.com/problemset/problem/327/A
-* Occasion    : Codeforces Round #191 (Div. 2)
-* Date        : Sep 2 2017
-* Complexity  : O(n) 122ms, Space O(n)
-* Author      : Atiq Rahman
-* Status      : Accepted
-* Notes       : Contest Editorial
-*               http://codeforces.com/blog/entry/8274
-*               hints two approaches: O(n^3) and O(n)
-*               I have implemented the second appraoch without knowing
-* meta        : tag-dp
+* Title : Flipping Game
+* URL   : http://codeforces.com/problemset/problem/327/A
+* Occasn: Codeforces Round #191 (Div. 2)
+* Date  : 2017-09-02
+* Author: Atiq Rahman
+* Comp  : O(n) 122ms, Space O(n)
+* Status: Accepted
+* Notes : According problem description, we are allowed to do single move:
+*   choose i and j, in-between these all indices (inclusive) are flipped.
+*   The goal of the game is that after exactly one move to obtain the maximum
+*   number of ones.
+*   
+*   This problem might had also been presented in JS meetup,
+*   Contest Editorial: http://codeforces.com/blog/entry/8274 provides
+*    hints on two approaches: O(n^3) and O(n)
+*   Unbeknownst to me, I have implemented the second appraoch.
+* rel   : https://leetcode.com/problems/insert-interval
+* meta  : tag-dp
 ***************************************************************************/
-
 using System;
 using System.Collections.Generic;
 
@@ -83,7 +88,7 @@ class CF_Solution {
 
 /* Alternative costly thoughts:
 We are losing solutions when using wrong conditions. We could accumulate from
-previous sum and could go toward betterresult..
+previous sum and could go toward better result..
 
 Let's think simple DP,
 Say, s[i] contains the max that can be done by flipping 
