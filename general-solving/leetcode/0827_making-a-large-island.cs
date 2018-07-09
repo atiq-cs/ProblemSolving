@@ -7,6 +7,8 @@
 * Status: Accepted
 * Notes : O(n) worst case space to store size of forests
 *   not really hard once figured out how we can mark using forest number
+*   
+*   TODO: now solve using Union Find and Path compression
 * Rel   : 'leetcode/0695_max-area-of-island.cs'
 * meta  : tag-leetcode-hard, tag-dfs, tag-graph
 ***************************************************************************/
