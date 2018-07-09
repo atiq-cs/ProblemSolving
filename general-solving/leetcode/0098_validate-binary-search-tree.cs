@@ -15,27 +15,19 @@
 * meta        : tag-binary-tree, tag-recursion
 ***************************************************************************/
 public class Solution {
-  // Moving this declaration inside a method is not supported
-  static TreeNode prev;
+  // Moving this as tatic declaration inside a method is not supported.
+  private TreeNode prev = null;
 
-  // This additional method could not gotten rid of since this method is called
-  // multiple times from leetcode online judge. But, prev static property is
-  // initialized single time when the class was instantiated
   public bool IsValidBST(TreeNode root) {
-    prev = null;
-    return IsValidBSTRec(root);
-  }
-
-  public bool IsValidBSTRec(TreeNode root) {
     if (root == null) return true;
-    
-    if (IsValidBSTRec(root.left) == false)
+
+    if (IsValidBST(root.left) == false)
       return false;
     if (prev != null && root.val <= prev.val)
       return false;
-    
+
     prev = root;
-    if (IsValidBSTRec(root.right) == false)
+    if (IsValidBST(root.right) == false)
       return false;
     return true;
   }
