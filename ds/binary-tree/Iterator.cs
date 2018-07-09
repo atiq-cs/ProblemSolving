@@ -6,6 +6,8 @@
 * Comp  : O(lg N) worst case time, amortized O(1), space complexity similar
 * Ref   : 'leetcode/173_binary-search-tree-iterator.cs'
 * Notes : Generic implementation to handle both successors and predecessors
+*   (inorder traversal)
+*   TODO: post-order and pre-order
 *   wanna simplify?
 *   Just drop shouldFindPredecessor and pertinent conditionals
 * meta  : tag-binary-tree, tag-successor, tag-predecessor
