@@ -5,7 +5,7 @@
 * Author: Atiq Rahman
 * Notes : Utility function for leetcode problems with jagged array in
 *   parameters. A few overrides added
-*   Comparison is such an ass in Generics!!
+*   I find Comparison to be complicated in Generics!
 ***************************************************************************/
 public class LeetcodeUtils {
   void Swap<T>(ref T lhs, ref T rhs)
