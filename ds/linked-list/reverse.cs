@@ -1,6 +1,6 @@
 ﻿/***************************************************************************
 * Title : Reverse a Linked List
-* URL   : https://leetcode.com/problems/two-sum-iv-input-is-a-bst
+* Ref   : C.L.R.S ed3, Section 10.2, p236
 * Date  : 2018-06
 * Author: Atiq Rahman
 * Comp  : O(N), O(1)
