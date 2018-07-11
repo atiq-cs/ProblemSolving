@@ -9,6 +9,20 @@
 * meta  : tag-easy
 ***************************************************************************/
 public class Solution {
+  // slightly shorter
+  public int FindMaxConsecutiveOnes(int[] nums) {
+    int max = 0, count = 0;
+    foreach (var num in nums) {
+      if (num == 0) {
+        max = Math.Max(max, count);
+        count = 0;
+      }
+      else
+        count++;
+    }
+    return Math.Max(max, count);
+  }
+  // previous, slightly sloppy version
   public int FindMaxConsecutiveOnes(int[] nums) {
     int max = 0;
     int count = 0;
