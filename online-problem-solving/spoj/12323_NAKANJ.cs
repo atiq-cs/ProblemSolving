@@ -6,7 +6,8 @@
 * Author: Atiq Rahman
 * Comp  : O(V+E)
 * Status: Accepted
-* Notes : BoardLength is used to generalize to support boards of different size
+* Notes : BoardLength is used to generalize and to support boards of different
+*   sizes
 * meta  : tag-graph-theory, tag-bfs, tag-sssp
 ***************************************************************************/
 using System;
