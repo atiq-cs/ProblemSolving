@@ -8,9 +8,9 @@
 *   Notes       :  Use the last chosen ugly numbers, multiply them (with 2,3,5)
 *                  and keep building
 *   Ref         :  http://www.geeksforgeeks.org/ugly-numbers/
+*   Rel         :  'uva-online-judge\136_Ugly_Numbers.cpp'
 *   meta        :  tag-dynamic-programming
 ***************************************************************************/
-
 public class Solution {
     public int NthUglyNumber(int n) {
         int[] ugly_nums = new int[n + 1];
@@ -31,3 +31,22 @@ public class Solution {
     }
     int GetMin(int a, int b, int c) { return Math.Min(Math.Min(a, b), c); }
 }
+/*
+Draft,
+1, 2, 3, 4, 5, 6, 8, 9, 10, 12, 15, ...
+
+2, 3, 4, 5
+next numbr is either 2 * 2, 2 * 3, 
+
+how i pointer works?
+i2 -> 5, i2 points to 5
+i3 -> 3
+i5 -> 3
+
+first number is 2
+all of i2, i3,i5 points to 2
+
+nextNum = Min(i2 * 2, i3 * 3, i5 * 5);
+
+Then compare each of them with nextNum and increase pointer..
+*/
