@@ -19,7 +19,9 @@ using System;
 using System.Collections.Generic;
 
 public class SSSP { // SSSP - Single Source Shortest Path
-  // bfs v1
+  // bfs v1, used in
+  //  spoj/12323_NAKANJ.cs
+  //  world-codesprint-12_red-knights-shortest-path.cs
   private int BFS(int dest) {
     if (source == dest) return 0;
     int level = 1;
