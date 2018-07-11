@@ -7,7 +7,10 @@
 * Author: Atiq Rahman
 * Comp  : O(V+E)
 * Status: Accepted
-* Notes : 
+* Notes : Regarding GetDirection
+*   for validating computation using offsets are okay. However, to generate
+*   adjacency list using offsets (numbers: usual mapping: BoardLength * r + c)
+*   it is not a good idea to use offsets rows andcolumns have to be checked
 * meta  : tag-graph-theory, tag-bfs, tag-sssp
 ***************************************************************************/
 using System;
@@ -57,9 +60,6 @@ public class SSSPUtil {
   }
 
   // v = current vertex, p is parent vertex
-  // for validating computation using offsets are okay. However, to generate
-  // adjacency list using offsets it is not a good idea to use offsets rows and
-  // columns have to be checked
   private string GetDirection(int p, int v) {
     int r = p - v;
     if (r == 2)
