@@ -9,7 +9,9 @@
 * Notes       : Input limit is 1e9
 *               Saving all of those in array is not practical
 *               Shows how to read till End of Line
-*               
+*   bytelandian ref, https://www.quora.com/What-is-the-idea-behind-the-
+*   Bytelandian-gold-coins-question-on-CodeChef
+*   A perfect dynamic programming problem to solve with Memoization
 * meta        : tag-dp, tag-dynamic-programming
 ***************************************************************************/
 using System;
@@ -38,4 +40,32 @@ public class Demo {
 
 /*
  * On Console - Std Input Ctrl + Z is EOF
- */
+
+12
+6 + 4 + 3
+
+6
+3 + 2 + 1
+
+14
+7 + 4 + 3
+
+15
+7 + 5 + 3
+
+16
+8 + 5 + 4
+
+1000 000 000
+
+looks like a good problem to practice memoization
+
+if (n < 12)
+  return n;
+//dp[n] if key n does not exist
+// dp[n] already exists, return result
+// save dp[n] if key n does not exist
+//
+dp[n] = Math.Max(n, dp[n/2] + dp[n/3] + dp[n/4]);
+return dp[n];
+*/
