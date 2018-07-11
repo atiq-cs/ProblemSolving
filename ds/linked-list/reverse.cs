@@ -14,32 +14,6 @@
 * meta  : tag-leetcode-easy, tag-two-pointers, tag-binary-tree, tag-successor,
 *   tag-predecessor
 ***************************************************************************/
-public class Solution {
-  // BST Iterator is at 'demos/ds/binary-tree/Iterator.cs'
-  // this method needs to return node instead of value for this problem
-  public TreeNode Next() {
-    return currentNode;
-  }
-
-  public bool FindTarget(TreeNode root, int k) {
-    BSTIterator nextIterator = new BSTIterator(root),
-      preIterator = new BSTIterator(root, true);
-    
-    for (TreeNode left = nextIterator.HasNext() ? nextIterator.Next() : null,
-      right = preIterator.HasNext()? preIterator.Next() : null; left.val <
-      right.val; ) {
-      int sum = left.val + right.val;
-      if (sum == k)
-        return true;
-      if (sum < k)
-        left = nextIterator.HasNext()? nextIterator.Next() : null;
-      else
-        right = preIterator.HasNext()? preIterator.Next() : null;
-    }
-    return false;
-  }
-}
-
 // recursive
 public class Solution {
   ListNode gHead=null; 		// global head, class member
