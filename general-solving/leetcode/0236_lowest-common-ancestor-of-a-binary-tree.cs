@@ -11,13 +11,12 @@
 ***************************************************************************/
 public class Solution {
   public TreeNode LowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
-    if (root == null || root == p || root ==q)
+    if (root == null || root == p || root == q)
       return root;
 
-    TreeNode left_lca = LowestCommonAncestor(root.left, p, q);
-    TreeNode right_lca = LowestCommonAncestor(root.right, p, q);
-
-    return left_lca == null? right_lca: right_lca == null ? left_lca: root;
+    var leftLCA = LowestCommonAncestor(root.left, p, q);
+    var rightLCA = LowestCommonAncestor(root.right, p, q);
+    return leftLCA == null? rightLCA: rightLCA == null ? leftLCA: root;
     // or we could, return (left_lca != null && right_lca != null) ? root :
     // left_lca == null? right_lca: right_lca;
   }
