@@ -2,25 +2,45 @@
 * Problem Name: Number of 1 Bits
 * Problem URL : https://leetcode.com/problems/number-of-1-bits/
 * Date        : Aug 5 2015
-* Complexity  : O(n) Time (n = number of bits)
+* Complexity  : O(k) Time (k = number of 1 bits)
 * Author      : Atiq Rahman
-* Status      : Accepted (beats 68%)
-* Desc        : Iterate over each bit and perform AND operation with a number
-*               that exactly has that bit set and all other bits set to zero
-* Notes       : 
-* meta        : tag-bitwise, tag-easy
+* Status      : Accepted
+* Notes       : Optimized,
+*   example 0191
+*   10100
+*   10011
+*   after and op,
+*   10000
+*   01111
+*   after and op,
+*   0
+*   and count is 2.
+*   Naive: Iterate over each bit and perform AND operation with a number that
+*   exactly has that bit set and all other bits set to zero
+* meta        : tag-bitwise, tag-leetcode-easy
 ***************************************************************************/
-
 public class Solution {
-    public int HammingWeight(uint n) {
-        uint m = 0x1;
-        int count = 0;
-        
-        for (int i=0; i< 8 * sizeof(uint); i++) {
-            if ((n&m) > 0)
-                count++;
-            m <<= 1;
-        }
-        return count;
+  // Optimized - O(k) - EPI
+  public int HammingWeight(uint n)
+  {
+    int count = 0;
+    while (n != 0) {
+      count++;
+      n = n & (n - 1);
     }
+    return count;
+  }
+
+  // naive - O(N)
+  public int HammingWeight(uint n) {
+    uint m = 0x1;
+    int count = 0;
+    
+    for (int i=0; i< 8 * sizeof(uint); i++) {
+      if ((n&m) > 0)
+        count++;
+      m <<= 1;
+    }
+    return count;
+  }
 }
