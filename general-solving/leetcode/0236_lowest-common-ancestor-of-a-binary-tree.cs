@@ -3,7 +3,7 @@
 * URL   : https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree
 * Date  : 2015-08
 * Author: Atiq Rahman
-* Comp  : 
+* Comp  : O(N), O(1), O(lg N) on Stack
 * Status: Accepted
 * Notes : 
 * Ref   : http://www.geeksforgeeks.org/lowest-common-ancestor-binary-tree-set-1/
