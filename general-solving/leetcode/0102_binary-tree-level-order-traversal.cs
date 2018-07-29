@@ -1,33 +1,46 @@
 /***************************************************************************
 * Problem Name: Binary Tree Level Order Traversal
 * Problem URL : https://leetcode.com/problems/binary-tree-level-order-traversal/
-* Date        : Jan 5 2015
-* Complexity  : O(n) Time
+* Date        : 2015-01-05
+* Complexity  : O(n), O(lg N) Stack
 * Author      : Atiq Rahman
 * Status      : Accepted (405ms)
-* Notes       : consider that nodes of each level stays on specific index on
-*               the vector of vectors
-*               this is the C# version from the cpp solution accepted first
-* meta        : tag-binary-tree
+* Notes       : O(lg N) Stack Space if balanced binary tree
+*   Based on previous cpp solution
+* meta        : tag-binary-tree, tag-bfs
 ***************************************************************************/
-
 public class Solution {
-    IList<IList<int>> Node_list_list;
-    public IList<IList<int>> LevelOrder(TreeNode root) {
-        Node_list_list = new List<IList<int>>();
-        LevelOrderRec(root, 0);
-        return Node_list_list;
+  IList<IList<int>> levelList = new List<IList<int>>();
+
+  // Using recursion/stack
+  public IList<IList<int>> LevelOrder(TreeNode root, int index=0) {
+    if (root == null)
+      return levelList;
+    if (levelList.Count <= index)
+      levelList.Add(new List<int>());
+    levelList[index].Add(root.val);
+    LevelOrder(root.left, index + 1);
+    LevelOrder(root.right, index + 1);
+    return levelList;
+  }
+
+  // Using Queue
+  public IList<IList<int>> LevelOrder(TreeNode root) {
+    var queue = new Queue<TreeNode>( new[] { root, null });
+
+    while (queue.Count > 0) {
+      var node = queue.Dequeue();
+      if (node == null) {
+        if (queue.Count == 0) continue;
+        levelList.Add(new List<int>());
+        queue.Enqueue(null);
+      }
+      else {
+        levelList[levelList.Count-1].Add(node.val);
+        queue.Enqueue(node.left);
+        queue.Enqueue(node.right);
+      }
     }
-    
-    void LevelOrderRec(TreeNode root, int index) {
-        if (root == null)
-            return ;
-        if (Node_list_list.Count <= index) {
-            IList<int> temp = new List<int>();
-            Node_list_list.Add(temp);
-        }
-        Node_list_list[index].Add(root.val);
-        LevelOrderRec(root.left, index + 1);
-        LevelOrderRec(root.right, index + 1);
-    }
+    return levelList;
+  }
 }

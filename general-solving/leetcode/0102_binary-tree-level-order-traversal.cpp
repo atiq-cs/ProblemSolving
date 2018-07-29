@@ -5,10 +5,10 @@
 * Complexity  : O(n) Time
 * Author      : Atiq Rahman
 * Status      : Accepted
-* Notes       : consider that nodes of each level stays on specific index on the vector of vectors
+* Notes       : consider that nodes of each level stays on specific index on
+*   the vector of vectors
 * meta        : tag-binary-tree
 ***************************************************************************/
-
 class Solution {
 private:
     vector<vector<int>> tr_node_list;
