@@ -10,13 +10,15 @@
 *   when an empty or null tree is passed, i.e, []
 *   [1] will work because left, right both pointing at that node and value at
 *   left node won't be less than value at right node.
-* Rel   : 'leetcode/167_two-sum-ii-input-array-is-sorted.cs'
-* meta  : tag-leetcode-easy, tag-two-pointers, tag-binary-tree, tag-successor,
+*   
+*   C.L.R.S ref above explains operations for both singly and doubly list and
+*   introduces sentinels
+* meta  : tag-leetcode-easy, tag-two-pointers, tag-linked-list, tag-successor,
 *   tag-predecessor
 ***************************************************************************/
-// recursive
 public class Solution {
-  ListNode gHead=null; 		// global head, class member
+  // recursive implementation
+  ListNode gHead =null; 		// global head, class member
   public ListNode ReverseList(ListNode head)
   {
     RecReverse(head);
@@ -56,7 +58,7 @@ public class Solution {
   }
 }
 
-/* Consider following example for this recursive solution,
+/* Consider following example for the recursive solution,
  3 -> 4 -> 5
 
 previous node variable = null;
