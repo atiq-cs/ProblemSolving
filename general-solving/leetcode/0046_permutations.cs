@@ -1,16 +1,15 @@
 /***************************************************************************
 * Problem Name: Permutations
 * Problem URL : https://leetcode.com/problems/permutations/
-* Date        : Oct 2015
+* Date        : 2015-10
 * Complexity  : O(n! * n)
 * Author      : Atiq Rahman
-* Status      : Accepted (592ms)
+* Status      : Accepted
 * Notes       : Basic Permutation
 *               using recursion
 *               
-* meta        : tag-recursion
+* meta        : tag-recursion, tag-leetcode-medium
 ***************************************************************************/
-
 public class Solution {
   int[] numsPerm;
   List<IList<int>> permList;
@@ -21,9 +20,9 @@ public class Solution {
     PermuteRec(0);
     return permList;
   }
-  
+
   void PermuteRec(int index) {
-    if (index == numsPerm.Length -1) {
+    if (index == numsPerm.Length-1) {
       permList.Add(new List<int>(numsPerm));
       return ;
     }
