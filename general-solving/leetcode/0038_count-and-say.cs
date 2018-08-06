@@ -1,15 +1,14 @@
 /***************************************************************************
 * Problem Name: Count and Say
 * Problem URL : https://leetcode.com/problems/count-and-say/
-* Date        : Aug 5 2017
+* Date        : 2017-08-05
 * Complexity  : O(n^2)
 * Author      : Atiq Rahman
 * Status      : Accepted
 * Desc        : Easy string operations
 * Notes       : 
-* meta        : tag-string, tag-easy
+* meta        : tag-string, tag-easy, tag-recursion
 ***************************************************************************/
-
 public class Solution {
   public string CountAndSay(int n) {
     if (n<1) // to avoid exception in corner cases
@@ -23,8 +22,8 @@ public class Solution {
   }
 
   public string GetNextCSString(string previous) {
-    char ch = (char)0x7FFF;
-    StringBuilder current = new StringBuilder();
+    char ch = (char)0x7FFF;   // initial value that does not match any char
+    var result = new StringBuilder();
     int count = 0;
 
     for (int i = 0; i < previous.Length; i++) {
@@ -32,17 +31,17 @@ public class Solution {
         count++;
       else {
         if (i > 0) {
-          current.Append((char)('0' + count));
-          current.Append(ch);
+          result.Append((char)('0' + count));
+          result.Append(ch);
         }
         ch = previous[i];
         count = 1;
       }
     }
     if (count > 0) {
-      current.Append((char)('0' + count));
-      current.Append(ch);
+      result.Append((char)('0' + count));
+      result.Append(ch);
     }
-    return current.ToString();
+    return result.ToString();
   }
 }
