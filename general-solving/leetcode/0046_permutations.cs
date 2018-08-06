@@ -1,33 +1,32 @@
 /***************************************************************************
-* Problem Name: Permutations
-* Problem URL : https://leetcode.com/problems/permutations/
-* Date        : 2015-10
-* Complexity  : O(n! * n)
-* Author      : Atiq Rahman
-* Status      : Accepted
-* Notes       : Basic Permutation
-*               using recursion
-*               
-* meta        : tag-recursion, tag-leetcode-medium
+* Title : Permutations
+* URL   : https://leetcode.com/problems/permutations
+* Date  : 2015-10
+* Author: Atiq Rahman
+* Comp  : O(n! * n)
+* Status: Accepted
+* Notes : Basic Permutation, using recursion
+* meta  : tag-leetcode-medium, tag-recursion
 ***************************************************************************/
 public class Solution {
-  int[] numsPerm;
+  int[] numsToPerm;
   List<IList<int>> permList;
-  public IList<IList<int>> Permute(int[] nums) {
-    numsPerm = nums;
-    permList = new List<IList<int>>();
+  int n;
 
-    PermuteRec(0);
+  public IList<IList<int>> Permute(int[] A) {
+    numsToPerm = A; n = numsToPerm.Length;
+    permList = new List<IList<int>>();
+    PermuteRec();
     return permList;
   }
 
-  void PermuteRec(int index) {
-    if (index == numsPerm.Length-1) {
-      permList.Add(new List<int>(numsPerm));
+  void PermuteRec(int index=0) {
+    if (index == n-1) { // == n would also work
+      permList.Add(new List<int>(numsToPerm));
       return ;
     }
     
-    for (int i=index; i<numsPerm.Length; i++) {
+    for (int i=index; i<n; i++) {
       Swap(i, index);
       PermuteRec(index+1);
       Swap(index, i);
@@ -36,8 +35,8 @@ public class Solution {
   
   void Swap(int i, int j) {
     // comparison is costly comparing overall time, so avoid
-    int temp = numsPerm[i];
-    numsPerm[i] = numsPerm[j];
-    numsPerm[j] = temp;
+    int temp = numsToPerm[i];
+    numsToPerm[i] = numsToPerm[j];
+    numsToPerm[j] = temp;
   }
 }
