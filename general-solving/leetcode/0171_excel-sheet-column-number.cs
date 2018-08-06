@@ -15,7 +15,6 @@
 *   for this one it's from 1 to 26 instead of 0 to 25.
 * meta        : tag-leetcode-easy, tag-math
 ***************************************************************************/
-
 public class Solution {
   public int TitleToNumber(string s) {
     int sum = 0;
@@ -26,7 +25,7 @@ public class Solution {
 }
 
 /*
-Drafts,
+Draft,
 We know,
 Z = 26
 AA = 1 + 26
@@ -45,6 +44,6 @@ ZA = 26 * 26 + 1
 base is 26
 first number is 1
 
-we can generalize that the number is,
-n = L0 + L1 * 26 + L2 * 26 * 26 + ....
+A formula can be generalized from above that the number converted from title is
+ n = L_(n-1) * Pow(26, n) + .... + L2 * 26 * 26 + L1 * 26 + L0
 */

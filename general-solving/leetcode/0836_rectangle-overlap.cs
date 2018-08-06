@@ -24,7 +24,7 @@ public class Solution {
       rec2[0]), Math.Max(rec1[1], rec2[1]));
     var intersectTopRight = new System.Drawing.Point(Math.Min(rec1[2],rec2[2]),
       Math.Min(rec1[3], rec2[3]));
-    
+
     if (intersectBottomLeft.X >= intersectTopRight.X)
       return false;
     if (intersectBottomLeft.Y >= intersectTopRight.Y)

@@ -13,4 +13,4 @@
 *   next item by checking whether Stack is Empty or not.
 * meta  : tag-leetcode-medium, tag-binary-tree, tag-successor
 ***************************************************************************/
-// at 'demos/ds/binary-tree/Iterator.cs'
+// at 'ds/binary-tree/Iterator.cs'
