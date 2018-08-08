@@ -52,7 +52,31 @@ public class Solution {
   }
 }
 
-/* Debugging code,
+/* Draft
+nums = [1,2,3]
+{1},
+{2},
+{3}
+
+i=1
+add {1}
+then add 2 will all of them
+{1}
+{1, 2}
+
+i=2
+add {2}
+I have
+{1}
+{2}
+{1, 2}
+I add 3 with all of them
+
+2, 6, 14
+
+if numbers are unique then complexity is 2^n
+
+Debugging code,
 PrintSubsets(subsets);
 
 private void PrintSubsets(List<HashSet<int>> sets) {
