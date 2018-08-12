@@ -3,7 +3,7 @@
 * URL   : https://leetcode.com/problems/subsets
 * Date  : 2018-08-06
 * Author: Atiq Rahman
-* Occasn: InnoWorld 2018-07-22, Charan
+* Occasn: InnoWorld 2018-07-22, Charan, update: Den 2018-09-11
 * Comp  : O(2^n), O(2^n)
 * Status: Accepted
 * Notes : Following are tricky and solved,
@@ -29,13 +29,43 @@
 * meta  : tag-leetcode-medium, tag-hash-table, tag-lambda
 ***************************************************************************/
 public class Solution {
+   // fourth: ack: Adam, use less temporary space by insert list into original
+   // result collection
+  public IList<IList<int>> Subsets(int[] nums) {
+    var subsets = new List<IList<int>>(new List<int>[] { new List<int>() } );
+    foreach( var num in nums) {
+      int len = subsets.Count; for (int i=0; i<len; i++) {
+        subsets.Add(new List<int>(subsets[i]));
+        subsets[subsets.Count-1].Add(num);
+      }
+    }
+    return subsets;
+  }
+
+  // third: uses List, no deep copy
+  public IList<IList<int>> Subsets(int[] nums) {
+    var subsets = new List<IList<int>>(new List<int>[] { new List<int>() } );
+    foreach( var num in nums) {
+      var newSubsets = new List<IList<int>>();
+      subsets.ForEach(s => {
+          newSubsets.Add(new List<int>(s));
+          newSubsets[newSubsets.Count-1].Add(num);
+        });
+    }    
+    return subsets;
+  }
+
+  // second: no hashset, converted the HashSet version to List
+
+  // first version
   public IList<IList<int>> Subsets(int[] nums) {
     var subsets = new List<HashSet<int>>(new HashSet<int>[] { new
       HashSet<int>() } ); // initialize with an empty HashSet
     foreach( var num in nums) {
       var newSubsets = new List<HashSet<int>>(DeepCopy(subsets));
       for (int i=0; i<newSubsets.Count; i++)
-        if (newSubsets[i].Contains(num) == false)
+        // checking uniqueness not required; given inputs are distinct integers
+        // if (newSubsets[i].Contains(num) == false)
           newSubsets[i].Add(num);
       subsets.AddRange(newSubsets);
     }
