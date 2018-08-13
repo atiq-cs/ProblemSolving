@@ -19,6 +19,11 @@
 *   if A[i], B[j] satisfies the property then A[i] is assigned in j-th index.
 *   if it does not we assign A[i] to last index of sorted B (using a reverse
 *   iterator)
+*
+*  What have I learnt from this implementation?
+*   Instead of sorting an array, we can sort its respective indice array
+*   overriding the comparison in such a way so that resulting indices sort will
+*   contain positions of sorted array of original.
 * meta  : tag-leetcode-medium, tag-sorting, tag-greedy, tag-lambda
 ***************************************************************************/
 public class Solution {
@@ -54,7 +59,7 @@ public class Solution {
 
 Debugging code,
 Array.ForEach(preB, x => { Console.Write(" " + x); });
-Console.WriteLine();    
+Console.WriteLine();
 
 And for the else part,
 Console.WriteLine("Assigning " + A[i] + " to index " + idxB[rB]);
