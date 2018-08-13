@@ -6,7 +6,8 @@
 * Occasn: InnoWorld 2018-07-22, Charan, update: Den 2018-09-11
 * Comp  : O(2^n), O(2^n)
 * Status: Accepted
-* Notes : Following are tricky and solved,
+* Notes : Following are tricky and solved (consider handling duplicates is
+*  required),
 * - DeepCopy of List of HashSet
 * - Initializer list for List<HashSet<int>> is HashSet<int>[], goes inside ()
 * - ForEach onliner with lambda syntax
@@ -32,27 +33,27 @@ public class Solution {
    // fourth: ack: Adam, use less temporary space by insert list into original
    // result collection
   public IList<IList<int>> Subsets(int[] nums) {
-    var subsets = new List<IList<int>>(new List<int>[] { new List<int>() } );
+    var subLists = new List<IList<int>>(new List<int>[] { new List<int>() } );
     foreach( var num in nums) {
-      int len = subsets.Count; for (int i=0; i<len; i++) {
-        subsets.Add(new List<int>(subsets[i]));
-        subsets[subsets.Count-1].Add(num);
+      int len = subLists.Count; for (int i=0; i<len; i++) {
+        subLists.Add(new List<int>(subLists[i]));
+        subLists[subLists.Count-1].Add(num);
       }
     }
-    return subsets;
+    return subLists;
   }
 
   // third: uses List, no deep copy
   public IList<IList<int>> Subsets(int[] nums) {
-    var subsets = new List<IList<int>>(new List<int>[] { new List<int>() } );
+    var subLists = new List<IList<int>>(new List<int>[] { new List<int>() } );
     foreach( var num in nums) {
       var newSubsets = new List<IList<int>>();
-      subsets.ForEach(s => {
+      subLists.ForEach(s => {
           newSubsets.Add(new List<int>(s));
           newSubsets[newSubsets.Count-1].Add(num);
         });
     }    
-    return subsets;
+    return subLists;
   }
 
   // second: no hashset, converted the HashSet version to List
