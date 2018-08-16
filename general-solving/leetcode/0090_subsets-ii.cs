@@ -4,12 +4,19 @@
 * Date  : 2018-08-15
 * Author: Atiq Rahman
 * Occasn: InnoWorld old, Charan
-* Comp  : O(2^n)
+* Comp  : O(N * 2^n), O(N * 2^n)
 * Status: Accepted
 * Notes : Adapted from 78 - subsets 
 *   Here we got,
 *    k = ssindex[q]
 *
+*   Space comp: Each combination can hold N items hence complexity i
+*   Time comp: The way I was filling up adding one item to previous subset each
+*   time.. I thought it's O(1) for each of them.. I totally missed that I am
+*   copying entire old subset to new one before adding. That's where O(N) is
+*   cost every time.
+*
+*   ToDo: implement recursive solution
 * Ack   : Md Abdul Kader (Sreezin) for handling dupicates with i==k
 * meta  : tag-leetcode-medium
 ***************************************************************************/
