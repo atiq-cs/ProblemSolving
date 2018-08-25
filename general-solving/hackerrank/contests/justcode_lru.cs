@@ -1,13 +1,156 @@
 ﻿/***************************************************************************
-* Title       : LRU Cache
-* URL         : https://www.hackerrank.com/contests/justcode/challenges/
-*               lru-implementtion
-* Occasion    : contests/justcode
-* Date        : Aug 18, 2017
-* Complexity  : O(n log n)
-* Author      : Atiq Rahman
-* Status      : Accepted
-* Notes       : Solved using 'Priority Queue' Data Structure.
+* Title : LRU Cache
+* URL   : https://hackerrank.com/contests/justcode/challenges/lru-implementtion
+* Occasn: contests/justcode
+* Date  : 2018-08-25
+* Author: Atiq Rahman
+* Comp  : O(n)
+* Status: Accepted
+* Notes : For special cases, check comment in code.
+* Ack   : Daniel Lee at InnoWorld mentioned this to me first.. 2 months back
+* meta  : tag-data-structure, tag-priority-queue, tag-heap, tag-LRU,
+*   tag-linked-list, tag-doubly-linked-list, tag-hash-table
+***************************************************************************/
+using System;
+using System.Collections.Generic;
+
+// represents a node in doubly linked list
+class ListNode {
+  public int val { get; private set; }
+  public ListNode prev { get; set; }
+  public ListNode next { get; set; }
+  public ListNode(int val, ListNode prev, ListNode next)
+  {
+    this.prev = prev;
+    this.next = next;
+    this.val = val;
+  }
+}
+
+class LRU {
+  // probably cannot get memory refs if we use Generic LinkedList class
+  Dictionary<int, ListNode> dict;
+  ListNode head, tail;
+
+  public LRU() {
+    Count = 0;
+    head = tail = null;
+    dict = new Dictionary<int, ListNode>();
+  }
+
+  public int Count { get; private set; }
+
+  public ListNode find(int item) {
+    return dict.ContainsKey(item) == false ? null : dict[item];
+  }
+
+  public void Enqueue(int item) {
+    ListNode newHead = new ListNode(item, null, head == null ? null : head);
+    if (head != null)
+      head.prev = newHead;
+    head = newHead;
+      
+    if (tail == null)
+      tail = newHead;
+    // Add to dictionary
+    dict.Add(item, newHead);
+    Count++;
+  }
+
+  // Remove the least recently used item
+  public void Dequeue() {
+    // Remove it from dictionary
+    dict.Remove(tail.val);
+
+    // drop the node at tail, if it's head it does not have a previous node
+    if (tail.prev != null)
+      tail.prev.next = null;
+    // Update tail
+    tail = tail.prev;
+
+    if (--Count == 0)
+      head = tail = null;
+  }
+
+  // Update as most recently accessed item
+  // references moves in the linked list but is not changed
+  // Hence, dictionary entry is not udpated
+  // Consider, this node can be head, tail or in the middle
+  public void UpdateAsMRU(ListNode node)
+  {
+    if (node == head)
+      return;
+    if (node == tail)
+      tail = tail.prev;
+    // update previous's next, previous's prev is untouched
+    node.prev.next = node.next;
+    // update next's prev, next's next is untouched
+    //  next is null for tail
+    if (node.next != null)
+      node.next.prev = node.prev;
+    // node becomes current head
+    // previous is null, next is previous head
+    node.prev = null;
+    node.next = head;
+    // previous head's previous is this node
+    head.prev = node;
+    // current node becomes head
+    head = node;
+  }
+
+  public string GetAllItems() {
+    // Using array probably for faster IO
+    int[] res = new int[Count];
+    ListNode current = head;
+    int i = 0;
+    while (current != null) { 
+      res[i++] = current.val;
+      current = current.next;
+    }
+    return string.Join(" ", res);
+  }
+}
+
+class Solution {
+  static void Main(String[] args) {
+    string[] tokens = Console.ReadLine().Split();
+    int N = int.Parse(tokens[0]);
+    int S = int.Parse(tokens[1]);
+    int pfCount = 0;    // page fault count
+
+    LRU lruObj = new LRU();
+
+    for (int T=N; T > 0;) {
+      tokens = Console.ReadLine().Split();
+      T -= tokens.Length;
+      for (int i=0; i<tokens.Length; i++) {
+        int item = int.Parse(tokens[i]);
+        ListNode pos = lruObj.find(item);
+        if (pos == null) {
+          if (lruObj.Count == S)
+            lruObj.Dequeue();
+          lruObj.Enqueue(item);
+          pfCount++;
+        }
+        else
+          lruObj.UpdateAsMRU(pos);
+      }
+    }
+    Console.WriteLine(pfCount);
+    Console.WriteLine(lruObj.GetAllItems());
+  }
+}
+
+/*Debug Code:
+Console.WriteLine("Step " + (i+1));
+Console.WriteLine(lruObj.GetAllItems());
+
+return "head: " + head.val + " tail: " + tail.val + "\r\n " + string.Join(" ", res);
+*/
+
+/* Priority Queue based implementation: 2017-08-18
+ * Complexity  : O(n log n)
+ * Notes       : Solved using 'Priority Queue' Data Structure.
 *   Initial concept: Max Priority Queue: Lower number has
 *   higher priority. We start assigning priority starting from int max value
 *   while reading inputs and inserting them into the queue.
@@ -18,7 +161,7 @@
 *   priority will help.
 * 
 *   Priority Queue Implementation for this problem:
-*   This version supercesdes previous implementation of Priority Queue in
+*   This version supercedes previous implementation of Priority Queue in
 *   '1840_PQUEUE.cs' to solve SPOJ problem
 *   That version has following bug,
 *   Right after extract min the result come wrong if Enqueue is done or better
@@ -46,12 +189,7 @@
 *   items. We might be able to store all of them in an array but would that be
 *   space efficient solution for this type of problems. Therefore, went with
 *   storing LRUItem in Queue instead.
-*   
-* meta        : tag-data-structure, tag-priority-queue, tag-heap, tag-LRU
 ***************************************************************************/
-using System;
-using System.Collections.Generic;
-
 class LRUItem {
   public int Value;
   public int Priority;    // member used to resolve prirority
