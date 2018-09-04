@@ -4,7 +4,7 @@
 *  Domain      :  Mathematics/Fundamentals
 *  Problem Type:  Basic Math
 *  Alogirthm   :  math
-*  Author      :  Atiqur Rahman
+*  Author      :  Atiq Rahman
 *  Desc        :  Apply big mod technique
 *  Status      :  Accepted
 *  meta        :  tag-big-mod

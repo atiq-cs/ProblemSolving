@@ -1,8 +1,8 @@
 /***************************************************************************
-* Problem Name: Minimum Draws
-* Problem URL : https://www.hackerrank.com/challenges/minimum-draws
+* Problem Name: Maximum Draws
+* Problem URL : https://www.hackerrank.com/challenges/maximum-draws
 * Domain      : Mathematics/Fundamentals
-* Date        : Sept 14 2015
+* Date        : 2015-09-12
 * Complexity  : O(1)
 * Author      : Atiq Rahman
 * Status      : Accepted
@@ -10,17 +10,16 @@
 *               it is certain that 1 pair will be in the collection
 *               input is given in number of pairs, n
 *               output is n+1
-* meta        : tag-math
+* meta        : tag-math, tag-easy
 ***************************************************************************/
-
 using System;
 
-class Solution {
-    static void Main(String[] args) {
-        int T = int.Parse(Console.ReadLine());
-        while (T-- > 0) {
-            int n = int.Parse(Console.ReadLine());
-            Console.WriteLine(n+1);
-        }
+class HKSolution {
+  static void Main(String[] args) {
+    int T = int.Parse(Console.ReadLine());
+    while (T-- > 0) {
+      int n = int.Parse(Console.ReadLine());
+      Console.WriteLine(n+1);
     }
+  }
 }
