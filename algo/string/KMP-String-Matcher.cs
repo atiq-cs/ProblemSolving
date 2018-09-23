@@ -43,10 +43,11 @@
 *   'KMPStringMatcher' works similarly. However it does not modify prefix
 *   table.
 *
-*   KMP on youtube: https://www.youtube.com/watch?v=5i7oKodCRJo 
-*   Related: http://a2oj.com/Category.jsp?ID=29
-*   ref: Introduction to Algorithms, C.L.R.S Chapter 32, p1005
+* Refs  : KMP on youtube: https://www.youtube.com/watch?v=5i7oKodCRJo 
+*   Introduction to Algorithms, C.L.R.S Chapter 32, p#1005
+*   https://atiqcs.wordpress.com/2018/04/13/kmp-algo/
 * Rel   : https://www.hackerrank.com/challenges/string-similarity
+*   More http://a2oj.com/Category.jsp?ID=29
 * meta  : tag-string, tag-kmp
 ***************************************************************************/
 public class StringMatcherUtil {
@@ -66,16 +67,16 @@ public class StringMatcherUtil {
 
   public List<int> KMPStringMatcher(string haystack, string needle) {
     var matches = new List<int>();
-    if (string.IsNullOrEmpty(needle)) return 0;
+    if (string.IsNullOrEmpty(needle)) return 0; 
     int[] pf = ComputePrefix(needle);
-    for (int i=0, q=-1; i<haystack.Length; i++) {
-      while (q >= 0 && needle[q + 1] != haystack[i])
-        q = pf[q];
-      if (needle[q + 1] == haystack[i])
-        q++;
-      if (q == needle.Length-1) {
-        matches.Add(i-q);
-        q = pf[q];
+    for (int i=0, k=-1; i<haystack.Length; i++) {
+      while (k >= 0 && needle[k + 1] != haystack[i])
+        k = pf[k];
+      if (needle[k + 1] == haystack[i])
+        k++;
+      if (k == needle.Length-1) {   // 1 less since q starts from '-1'
+        matches.Add(i-k);
+        k = pf[k];
       }
     }
     return matches;
