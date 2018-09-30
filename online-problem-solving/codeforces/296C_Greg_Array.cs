@@ -84,9 +84,18 @@ public class FenwickTreeDemo {
   }
 }
 
-class Timus_Solution {
+class CFSolution {
   static void Main(String[] args) {
     FenwickTreeDemo Demo = new FenwickTreeDemo();
     Demo.Run();
   }
 }
+
+/* Input that provided me clue on limits
+Test case# 11
+15968 30103 4266
+...
+
+Test case# 26
+100000 100000 100000
+*/
