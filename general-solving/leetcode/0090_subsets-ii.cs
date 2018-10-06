@@ -16,7 +16,7 @@
 *   copying entire old subset to new one before adding. That's where O(N) is
 *   cost every time.
 *
-*   ToDo: implement recursive solution
+*  ToDo : implement recursive solution
 * Ack   : Md Abdul Kader (Sreezin) for handling dupicates with i==k
 * meta  : tag-leetcode-medium
 ***************************************************************************/
@@ -26,7 +26,8 @@ public class Solution {
     var subLists = new List<IList<int>>(new List<int>[] { new List<int>() } );
     var ssindex = new List<int>( new int[] { 0 });
     for (int i=0; i<nums.Length; i++) {
-      int len = subLists.Count; for (int q=0; q<len; q++)
+      int len = subLists.Count; // coz list (& it's length) will be modified
+      for (int q=0; q<len; q++)
         // first condition takes care of the bound for the second cond.
         if (ssindex[q] == i || nums[i-1] != nums[i]) {
           subLists.Add(new List<int>(subLists[q]));

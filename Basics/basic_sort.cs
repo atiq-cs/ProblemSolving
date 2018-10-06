@@ -75,6 +75,8 @@ class SortingAlgorithms {
                 i=2, it will sort, 3, 4, 5
                 version 2 does not do swap but only moves items 
                 As if items are being inserted in their proper position in the sorted list each time
+                Ref: C.L.R.S p#18 (shows loop invariants and corrections), elaborate runtime analysis:
+                p#26
 
   * Complexity: Worst case and average case - O (n^2)
   *             Best case Ω(n)

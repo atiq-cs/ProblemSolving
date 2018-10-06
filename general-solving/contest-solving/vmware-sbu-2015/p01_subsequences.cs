@@ -1,7 +1,7 @@
 /***************************************************************************
 *   Problem Name:   First problem of this vmware challenge
 *   Problem Link :  https://www.hackerrank.com/tests/*
-*   Date        :   Sept 19, 2015
+*   Date        :   2015-09-19
 *
 *   Algo, DS    :   Subsequence generation
 *   Desc        :   Asked to complete the function
@@ -10,7 +10,6 @@
 *   Author      :   Atiq Rahman
 *   Status      :   Testcases passed
 ***************************************************************************/
-
 static string[] buildSubsets(string s) {
   string set = s;
   List<string> subsets = new List<string>();

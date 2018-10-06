@@ -14,6 +14,8 @@
 *   Example illustrated at the bottom of this source file.
 *   i is end of current Window.
 *   startIndex is start of current Window.
+*   
+*   Follow up: would it work if asked to find this for equal to target sum.
 *
 *   Calling it sliding windows approach; not clear about the pattern 'sweeping'
 *   algorithm (C.L.R.S 3 ed, p1021) follows yet.

@@ -5,7 +5,7 @@
 * Complexity  : O(n)
 * Author      : Atiq Rahman
 * Status      : Accepted
-* Notes       : Naive approach (using additional linked list):
+* Notes       : Naive approach (using additional linked list) would be:
 *               Iterate through each node of original linked list
 *               save the first one of every pair in a temp variable
 *               push the current node into the linked list and the temp one as
@@ -27,7 +27,7 @@
 ***************************************************************************/
 
 public class Solution {
-  public ListNode SwapPairs(ListNode head) {
+  public ListNode SwapPairs(ListNode head) {    // approach 2
     ListNode current = head;
     int nodeCount = 0;
     ListNode node0, node1, node2;

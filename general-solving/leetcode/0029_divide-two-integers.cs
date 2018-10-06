@@ -16,6 +16,10 @@ public class Solution {
    * figured out some worst case examples,
    *  when input n = int.MaxValue
    *  complexity is O(N). Hence, TLE.
+   * ref: Implement division with bit-wise operator
+   *  https://stackoverflow.com/q/5284898
+   *  https://web.stanford.edu/class/ee486/doc/chap5.pdf section 5.1.2
+   *  
    */
   public int Divide(int dividend, int divisor) {
     if (divisor==1 || divisor==-1)

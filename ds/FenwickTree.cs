@@ -6,20 +6,26 @@
 * Author: Atiq Rahman
 * Comp  : O(lg N)
 * Notes : Why Fenwick Tree (BIT)?
-*   Can update and compute prefix sum in lg N time. Uses less memory than RMQ
+*   - Can update and compute prefix sum in lg N time.
+*   - Uses less memory than RMQ
 *   
-*   1 based index, 0 is the root of all nodes, not touched
+*   In this implementation, 1 based index, 0 is the root of all nodes, not
+*   touched
 *   Current implementation uses an array of long to pass tests with large
 *   numbers (https://codeforces.com/contest/296/problem/C)
 *   
 * Ref   : SOFTWARE—PRACTICE AND EXPERIENCE, VOL. 24(3), 327–336 (MARCH 1994)
 *   "A New Data Structure for Cumulative Frequency Tables" by peter m. fenwick
-*   In Paper link above we got a nice figure of a tree.
+*   In Paper link above we got a nice figure of an example BIT.
+*
 *   https://www.topcoder.com/community/data-science/data-science-tutorials/
 *   binary-indexed-trees/ provides an example how a sum is computed for
 *   index = 13, [13] + [12] + [8]. Example, uses two arrays f and c.
 *   Practically we might be able to do only with c. tree[idx] is c[i] in our
 *   implementation.
+*
+*   https://sanugupta.wordpress.com/2014/08/29/binary-indexed-tree-fenwick-tree/
+*   average article on the topic
 * meta  : tag-tree
 ***************************************************************************/
 using System;
@@ -96,3 +102,16 @@ public void PrintArray() {
     Console.Write(" " + Sum(i));
   Console.WriteLine();
 }*/
+
+/*
+Interesting input add 1 to range 4 -> 8
+16 3 3
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16
+1 2 1
+1 3 2
+2 3 4
+4 8
+1 2
+1 3
+2 3
+*/

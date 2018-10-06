@@ -1,29 +1,28 @@
 /***************************************************************************
 * Title       : Longest Increasing Subsequence
 * URL         : https://leetcode.com/problems/longest-increasing-subsequence/
-* Date        : Sept 18, 2017
+* Date        : 2017-09-18
 * Complexity  : O(n^2)
 * Author      : Atiq Rahman
 * Status      : Accepted
 * Notes       : Based on 'uva-online-judge/231_TestingTheCatcher_lis_algo1.cpp'
 * Ref         : https://wcipeg.com/wiki/Longest_increasing_subsequence
-* meta        : tag-lis, tag-dyanmic-programming
+* meta        : tag-lis, tag-dp
 ***************************************************************************/
-
 public class Solution {
   /* n^2 version - simple LIS algo */
   public int LengthOfLIS(int[] A) {
     int n = A.Length;
-    int[] lis = new int[n];   // contains LIS length or count
+    int[] dp = new int[n];   // contains LIS length or count
     for (int i = 0; i<n; i++) // initialize
-      lis[i] = 1;
+      dp[i] = 1;
 
     for (int i = 0; i<n-1; i++)
       for (int j = i + 1; j<n; j++)
         // m[i] < m[j] means an increasing subsequence
-        if ((A[i] < A[j]) && (lis[j]<lis[i] + 1))
-          lis[j] = lis[i] + 1;
-    return n==0?0:lis.Max();
+        if ((A[i] < A[j]) && (dp[j]<dp[i] + 1))
+          dp[j] = dp[i] + 1;
+    return n==0?0:dp.Max();   // linq
   }
 }
 

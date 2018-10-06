@@ -6,7 +6,12 @@
 * Comp  : O(nk), O(k)
 * Status: Accepted
 * Notes : This is unbounded knapsack
-*   Hence, our inner loop starts from 1 to T 
+*   Hence, our inner loop starts from 1 to T
+*   Iterate from 1 to T, this (w) is a sum we can make if we were able to make
+*   (w-value) before. Consider, value is the value of the item we are taking.
+*   if we had a limit on another property such as weight we would need more
+*   space i.e., O(nk)
+* ref   : C.L.R.S 3rd ed. p427
 * meta  : tag-medium, tag-dp, tag-knapsack
 ***************************************************************************/
 using System;

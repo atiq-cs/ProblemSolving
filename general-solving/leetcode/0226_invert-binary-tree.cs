@@ -34,6 +34,7 @@ public class Solution {
     Swap<TreeNode>(ref root.left, ref root.right);
     return root;
   }
+
   // first version
   public TreeNode InvertTree(TreeNode root) {
     if (root == null)

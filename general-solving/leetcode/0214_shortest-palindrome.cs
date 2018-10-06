@@ -64,7 +64,7 @@ aacecaaa
 
 abcd
 
-trying to generate case of where conflict would rise between choice
+trying to generate case where conflict would rise between choice
 ac
 - caac
 - cac

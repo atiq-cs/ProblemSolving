@@ -15,11 +15,11 @@ public class Solution {
     queue.Enqueue(root);
     
     while (queue.Count > 0) {
-      List<TreeNode> levelChildren = new List<TreeNode>();
+      var levelChildren = new List<TreeNode>();
       while (queue.Count != 0)
         levelChildren.Add(queue.Dequeue());
       
-      List<int> levelChildrenVal = new List<int>();
+      var levelChildrenVal = new List<int>();
       foreach(TreeNode node in levelChildren) {
         if (node != null) {
           queue.Enqueue(node.left);

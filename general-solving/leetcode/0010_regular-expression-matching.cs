@@ -49,8 +49,9 @@ public class Solution {
       return dp[p.Length][s.Length];
   }
 }
+
 /*
-when not intialize for * this will fail,
+when result array is not intialized for * this will fail,
 "aa"
 "a*"
 */
