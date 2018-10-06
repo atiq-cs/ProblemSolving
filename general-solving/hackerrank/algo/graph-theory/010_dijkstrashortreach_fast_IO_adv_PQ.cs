@@ -5,7 +5,7 @@
 * Author: Atiq Rahman
 * Comp  : O(V + E lg V) verify
 * Status: Runtime Error (Wrong Answer)
-* Notes : Sophisticated Priority Queue, Fast IO
+* Notes : at 'demos/ds/PriorityQueue.cs', Fast IO
 *   got past TLE now
 * Rel   : http://spoj.com/problems/TRVCOST/
 * meta  : tag-dijkstra, tag-graph-theory
@@ -14,108 +14,6 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using System.IO;
-
-/*
- * Due to generic class implementation of 'PriorityQueue' it cannot access
- * members of the passed type. To reach an agreement with the class what
- * members must exist inside the type use following interface to inherit
- * specify should exist members inside the interface
- */
-interface PriorityQueueElement {
-  // Access to index is not required to the 'PriorityQueue' class
-  int Index { get; }
-  /* 
-   * enables access to distance member to 'PriorityQueue' class so that the
-   * class can do comparison based on distance and keep the heap arranged
-   * accordingly
-   */
-  uint Value { get; set; }
-}
-
-class PriorityQueue <T> where T:PriorityQueueElement {
-  protected List<T> Arr;
-  protected int Size;
-  Dictionary<int, int> map;
-
-  public PriorityQueue() {
-    Arr = new List<T>();
-    Size = 0;
-    map = new Dictionary<int, int>();
-  }
-
-  protected int GetParent(int i) { return (i - 1) / 2; }
-  protected int GetLeftChild(int i) { return 2 * i + 1; }
-  protected int GetRightChild(int i) { return 2 * i + 2; }
-
-  // getter only property
-  public int Count { get { return Size; } }
-
-  public T Peek() {
-    if (Size == 0)
-      throw new InvalidOperationException("MinHeap is empty!");
-    return Arr[0];
-  }
-
-  protected void Swap(int i, int j) {
-    T tmp = Arr[i];
-    Arr[i] = Arr[j];
-    Arr[j] = tmp;
-    // after swap fix indices
-    map[Arr[i].Index] = i;
-    map[Arr[j].Index] = j;
-  }
-
-  public void Enqueue(T item) {
-    if (Size < Arr.Count)
-      Arr[Size] = item;
-    else
-      Arr.Add(item);
-    map.Add(item.Index, Size);
-    BubbleUp(Size);  Size++;
-  }
-
-  protected void BubbleUp(int i) {
-    while (i > 0 && Arr[GetParent(i)].Value > Arr[i].Value) {
-      Swap(i, GetParent(i));
-      i = GetParent(i);
-    }
-  }
-
-  protected void Heapify(int i) {
-    int l = GetLeftChild(i);
-    int r = GetRightChild(i);
-    int smallest = i;
-    if (l < Size && Arr[l].Value < Arr[smallest].Value)
-      smallest = l;
-    if (r< Size && Arr[r].Value < Arr[smallest].Value)
-      smallest = r;
-    if (smallest != i) {
-      Swap(smallest, i);
-      Heapify(smallest);
-    }
-  }
-
-  public T Dequeue() {    // ExtractMin
-    if (Size == 0)
-      throw new InvalidOperationException("MinHeap underflow!");
-    T max = Arr[0];
-    Arr[0] = Arr[--Size];
-    map.Remove(max.Index);
-    map[Arr[0].Index] = 0;
-    Heapify(0);
-    return max;
-  }
-  public void DecreaseKey(T item) {
-    if (!map.ContainsKey(item.Index)) {
-      Enqueue(item);
-      return ;
-    }
-    int i = map[item.Index];
-    if (Arr[i].Value > item.Value)
-      Arr[i].Value = item.Value;
-    BubbleUp(i);
-  }
-}
 
 public class Vertex : PriorityQueueElement {
   public int i;
@@ -232,8 +130,7 @@ public class CF_Solution {
 
     StringBuilder Result = new StringBuilder();
     int T = getNextNumber(tokens);
-    while (T-- > 0)
-    {
+    while (T-- > 0) {
       Dijkstra grahpDemo = new Dijkstra();
       grahpDemo.TakeInput(tokens);
       grahpDemo.Run();
