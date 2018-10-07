@@ -1,4 +1,4 @@
-﻿/***************************************************************************
+/***************************************************************************
 * Title : Find Mode in Binary Search Tree
 * URL   : https://leetcode.com/problems/find-mode-in-binary-search-tree
 * Date  : 2018-05-13

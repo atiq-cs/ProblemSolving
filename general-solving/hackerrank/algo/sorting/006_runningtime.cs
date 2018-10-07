@@ -1,4 +1,4 @@
-﻿/***************************************************************************
+/***************************************************************************
 * Title       : Running Time of Algorithms
 * URL         : https://www.hackerrank.com/challenges/correctness-invariant
 * Date        : Sep 17 2015

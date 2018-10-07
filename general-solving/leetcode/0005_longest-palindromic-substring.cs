@@ -1,4 +1,4 @@
-﻿/***************************************************************************
+/***************************************************************************
 * Title : Longest Palindromic Substring
 * URL   : https://leetcode.com/problems/longest-palindromic-substring
 * Date  : 2018-05-01

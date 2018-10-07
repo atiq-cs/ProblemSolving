@@ -1,7 +1,7 @@
 /*
-	BUET NCPC 2008
-	Judge status:	AC
-	Solved long after the contest time
+  BUET NCPC 2008
+  Judge status:  AC
+  Solved long after the contest time
 */
 
 #include <cstdio>

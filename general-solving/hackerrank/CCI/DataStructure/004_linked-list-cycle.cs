@@ -1,4 +1,4 @@
-﻿/***************************************************************************
+/***************************************************************************
 * Title       : Linked Lists: Detect a Cycle
 * URL         : https://www.hackerrank.com/challenges/ctci-linked-list-cycle
 * Date        : Sep 7 2017

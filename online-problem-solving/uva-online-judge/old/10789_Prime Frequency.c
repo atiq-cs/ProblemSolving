@@ -24,34 +24,34 @@ void main()
                             asc[c]++;
                      }
                 }
-		j=0;
-		for (i=0;i<96;i++)
-		{
-			if (asc[i]>0)
-			{
-				fr[j][1]=asc[i];
-				fr[j++][0]=i+32;
-			}
-		}
+    j=0;
+    for (i=0;i<96;i++)
+    {
+      if (asc[i]>0)
+      {
+        fr[j][1]=asc[i];
+        fr[j++][0]=i+32;
+      }
+    }
 
-	       c=0;
+         c=0;
         for (i=0;i<j;i++)
         {
-		if (fr[i][1]>1)
-		{
-		tmp=sqrt(fr[i][1]);
-		for (x=2;x<=tmp;x++)
-		{
-			if (!(fr[i][1]%x)) break;
-		}
-		if (tmp==x-1)
-		{
-			c=1;
-			printf("%c",fr[i][0]);
-		}
-		}
+    if (fr[i][1]>1)
+    {
+    tmp=sqrt(fr[i][1]);
+    for (x=2;x<=tmp;x++)
+    {
+      if (!(fr[i][1]%x)) break;
+    }
+    if (tmp==x-1)
+    {
+      c=1;
+      printf("%c",fr[i][0]);
+    }
+    }
         }
         if (!c) printf("empty");
-	putchar('\n');
-	}
+  putchar('\n');
+  }
 }

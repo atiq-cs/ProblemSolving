@@ -45,80 +45,80 @@ int nnode=0,cost[40],color[40];
 
 void reset(){
 
-	int i;
-	for(i=0;i<nnode;i++)
-		vec[i].clear();
-	m.clear();
-	nnode=0;
-	
+  int i;
+  for(i=0;i<nnode;i++)
+    vec[i].clear();
+  m.clear();
+  nnode=0;
+  
 
 }
 void bfs(int s){
 
-	queue<int> q;
-	int i,p;
-	cost[s]=0;
-	q.push(s);
-	color[s]=1;
-	while(!q.empty()){
-	
-		p=q.front();
-		q.pop();
+  queue<int> q;
+  int i,p;
+  cost[s]=0;
+  q.push(s);
+  color[s]=1;
+  while(!q.empty()){
+  
+    p=q.front();
+    q.pop();
 
-		for(int i=0;i<vec[p].size();i++)
-			if(color[vec[p][i]]==0)
-			{
-				cost[vec[p][i]]=cost[p]+1;
-				q.push(vec[p][i]);
-				color[vec[p][i]]=1;
-			}
-	}
+    for(int i=0;i<vec[p].size();i++)
+      if(color[vec[p][i]]==0)
+      {
+        cost[vec[p][i]]=cost[p]+1;
+        q.push(vec[p][i]);
+        color[vec[p][i]]=1;
+      }
+  }
 
 
 }
 int unreachable(int len){
 
-	int i,c=0;
-	
-	for(i=0;i<nnode;i++)
-		if(cost[i]>len)
-			c++;
-		return c;
+  int i,c=0;
+  
+  for(i=0;i<nnode;i++)
+    if(cost[i]>len)
+      c++;
+    return c;
 }
 int main()
 {
-	//freopen("in.txt","rt",stdin);
-	int n,a,b,len,cas=0,i;
-	while(scanf("%d",&n)==1&&n){
-	
-		reset();
+  //freopen("in.txt","rt",stdin);
+  int n,a,b,len,cas=0,i;
+  while(scanf("%d",&n)==1&&n){
+  
+    reset();
 
-		for(i=0;i<n;i++){
-			scanf("%d%d",&a,&b);
-		
-			it=m.find(a);
-			if(it==m.end())			
-				m[a]=nnode++;
-			
-			it=m.find(b);
-			if(it==m.end())			
-				m[b]=nnode++;
+    for(i=0;i<n;i++){
+      scanf("%d%d",&a,&b);
+    
+      it=m.find(a);
+      if(it==m.end())      
+        m[a]=nnode++;
+      
+      it=m.find(b);
+      if(it==m.end())      
+        m[b]=nnode++;
 
-			vec[m[a]].push_back(m[b]);
-			vec[m[b]].push_back(m[a]);
-		}
-		while(scanf("%d%d",&n,&len)==2&&( n || len)){
-		
-			SET(cost,0,nnode,INF);
-			
-			CLEAR(color,nnode);
-			bfs(m[n]);
-			printf("Case %d: %d nodes not reachable from node %d with TTL = %d.\n",++cas,unreachable(len),n,len);
-		
-		}
-		
-	
-	
-	}	
+      vec[m[a]].push_back(m[b]);
+      vec[m[b]].push_back(m[a]);
+    }
+    while(scanf("%d%d",&n,&len)==2&&( n || len)){
+    
+      SET(cost,0,nnode,INF);
+      
+      CLEAR(color,nnode);
+      bfs(m[n]);
+      printf("Case %d: %d nodes not reachable from node %d with TTL = %d.\n",++cas,unreachable(len),n,len);
+    
+    }
+    
+  
+  
+  }  
 return 0;
 }

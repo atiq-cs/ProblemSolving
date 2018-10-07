@@ -1,4 +1,4 @@
-﻿/***************************************************************************
+/***************************************************************************
 * Title : Sort Characters By Frequency
 * URL   : https://leetcode.com/problems/sort-characters-by-frequency
 * Date  : 2018-06-07

@@ -1,4 +1,4 @@
-﻿/***************************************************************************
+/***************************************************************************
 * Title : LRU Cache
 * URL   : https://hackerrank.com/contests/justcode/challenges/lru-implementtion
 * Occasn: contests/justcode

@@ -1,12 +1,12 @@
 /*
-*	Problem Name:	STL Lower Bound
-*	Problem No	:	https://www.hackerrank.com/challenges/cpp-lower-bound
+*  Problem Name:  STL Lower Bound
+*  Problem No  :  https://www.hackerrank.com/challenges/cpp-lower-bound
 *   Domain      :   C++/STL
-*	Problem Type:	Use of STL, lower_bound
-*	Alogirthm	:   
-*	Author		:	Atiqur Rahman
-*	Status		:	Accepted
-*	Note		:	ref: http://www.cplusplus.com/reference/algorithm/lower_bound/
+*  Problem Type:  Use of STL, lower_bound
+*  Alogirthm  :   
+*  Author    :  Atiqur Rahman
+*  Status    :  Accepted
+*  Note    :  ref: http://www.cplusplus.com/reference/algorithm/lower_bound/
 */
 
 #include <algorithm>

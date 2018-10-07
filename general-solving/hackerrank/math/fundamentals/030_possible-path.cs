@@ -1,4 +1,4 @@
-﻿/***************************************************************************
+/***************************************************************************
 * Problem Name: Possible Path
 * Problem URL : https://www.hackerrank.com/challenges/possible-path
 * Domain      : Mathematics/Fundamentals

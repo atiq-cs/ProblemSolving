@@ -1,4 +1,4 @@
-﻿/*
+/*
 * Problem   : Generate Binary Numbers using Combination
 * Author    : Atiqur Rahman
 * Email     : mdarahman@cs.stonybrook.edu

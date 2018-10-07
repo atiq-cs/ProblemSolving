@@ -1,10 +1,10 @@
 /*
-*	Problem Title:  Implementing next_permutation
-*	Author		:	Atiqur Rahman
-*	Email		:	mdarahman@cs.stonybrook.edu
-*	Date		:	June 23, 2015
-*	Desc		:
-*					This algorithm is tested by solving https://uva.onlinejudge.org/external/1/146.html
+*  Problem Title:  Implementing next_permutation
+*  Author    :  Atiqur Rahman
+*  Email    :  mdarahman@cs.stonybrook.edu
+*  Date    :  June 23, 2015
+*  Desc    :
+*          This algorithm is tested by solving https://uva.onlinejudge.org/external/1/146.html
 *                    For reference please have a look at online-problem-solving/uva-online-judge/146_ID_Codes.cpp
 *                    If you are looking for C implementation look here:
 *                           online-problem-solving/uva-online-judge/146_ID_Codes_nasty_C.cpp

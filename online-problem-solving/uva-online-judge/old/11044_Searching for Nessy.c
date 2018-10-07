@@ -8,8 +8,8 @@ void main()
 
        for (i=0;i<t;i++)
        {
-	       scanf("%d %d",&a,&b);
-	       c=((int)(a/3))*(int)(b/3);
-	       printf("%ld\n",c);
+         scanf("%d %d",&a,&b);
+         c=((int)(a/3))*(int)(b/3);
+         printf("%ld\n",c);
        }
 }

@@ -1,8 +1,8 @@
 public class Solution {
-	/**
-	 * @param A : An integer array
-	 * @return : An integer 
-	 */
+  /**
+   * @param A : An integer array
+   * @return : An integer 
+   */
     public int singleNumberII(int[] A) {
         // write your code here
         int bits[] = new int[32];

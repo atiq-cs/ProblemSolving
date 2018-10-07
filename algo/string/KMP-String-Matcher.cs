@@ -1,5 +1,5 @@
 /***************************************************************************
-* Title : String Matching Algorithm - Knuth–Morris–Pratt
+* Title : String Matching Algorithm - Knuthï¿½Morrisï¿½Pratt
 * Date  : 2018-06-30 (update)
 * Author: Atiq Rahman
 * Comp  : O(m+n)

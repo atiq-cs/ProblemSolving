@@ -21,7 +21,7 @@
 #include <vector>
 
 // Comment before submission to judge
-#define FILE_IO	TRUE
+#define FILE_IO  TRUE
 
 #ifdef FILE_IO
 #include <fstream>

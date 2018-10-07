@@ -1,4 +1,4 @@
-﻿/***************************************************************************
+/***************************************************************************
 * Problem Name: Restaurant
 * Problem URL : https://www.hackerrank.com/challenges/restaurant
 * Domain      : Mathematics/Fundamentals

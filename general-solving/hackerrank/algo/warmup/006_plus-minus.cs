@@ -8,8 +8,8 @@
 *   Status      :   Accepted
 *   Notes       :   It is a trivial problem but it demonstrates how to format floating numbers in C#
              ref:   Numeric standard format specifier for C#
-	                https://msdn.microsoft.com/en-us/library/dwhawy9k(v=vs.110).aspx
-	                https://msdn.microsoft.com/en-us/library/s8s7t687.aspx
+                  https://msdn.microsoft.com/en-us/library/dwhawy9k(v=vs.110).aspx
+                  https://msdn.microsoft.com/en-us/library/s8s7t687.aspx
 ***************************************************************************/
 using System;
 

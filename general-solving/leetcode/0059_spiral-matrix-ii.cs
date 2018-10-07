@@ -1,4 +1,4 @@
-﻿/***************************************************************************
+/***************************************************************************
 * Title : Spiral Matrix II
 * URL   : https://leetcode.com/problems/spiral-matrix-ii
 * Occas : JS Meetup Arrays and Strings 2014-08-18

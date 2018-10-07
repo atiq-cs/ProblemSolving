@@ -8,7 +8,7 @@ int main()
 
         while(cin>>n)
         {
-	sq=sqrt((double)n);
+  sq=sqrt((double)n);
         for (i=2;i<=sq;i++)
                 if (!(n%i)) break;
         if (i==sq+1)
@@ -20,10 +20,10 @@ int main()
                         a/=10;
                 }
                 if (n!=b) {
-	       sq=sqrt((double)b);
+         sq=sqrt((double)b);
                 for (i=2;i<=sq;i++)
                         if (!(b%i)) break;
-		}
+    }
                 if (i==sq+1 && n!=b)
                         cout<<n<<" is emirp."<<endl;
                 else cout<<n<<" is prime."<<endl;

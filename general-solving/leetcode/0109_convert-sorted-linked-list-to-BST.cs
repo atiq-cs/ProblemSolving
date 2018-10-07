@@ -1,4 +1,4 @@
-﻿/***************************************************************************
+/***************************************************************************
 * Title : Convert Sorted List to Binary Search Tree
 * URL   : https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree
 * Date  : 2018-01-01

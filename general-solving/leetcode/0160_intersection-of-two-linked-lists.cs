@@ -1,4 +1,4 @@
-﻿/***************************************************************************
+/***************************************************************************
 * Title : Intersection of Two Linked Lists
 * URL   : https://leetcode.com/problems/intersection-of-two-linked-lists
 * Author: Atiq Rahman

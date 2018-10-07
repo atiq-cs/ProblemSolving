@@ -1,4 +1,4 @@
-﻿/***************************************************************************
+/***************************************************************************
 * Title : Remove Duplicates from Sorted List
 * URL   : https://leetcode.com/problems/remove-duplicates-from-sorted-list
 * Date  : 2018-01

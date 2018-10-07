@@ -1,4 +1,4 @@
-﻿/***************************************************************************
+/***************************************************************************
 * Title : Binary Search Tree Iterator
 * URL   : https://leetcode.com/problems/binary-search-tree-iterator
 * Occas : InnoWorld Meetup 05-13

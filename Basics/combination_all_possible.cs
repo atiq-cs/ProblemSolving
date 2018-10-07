@@ -1,4 +1,4 @@
-﻿/*
+/*
 * Title   : Generate All Possible Combinations with k items from N items
 * Author  : Atiq Rahman
 * Date    : Nov 01, 2015

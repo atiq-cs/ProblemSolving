@@ -1,6 +1,6 @@
 /*
-	Problem Name :	Matrix Chain Multiplication
-	Algorithm:	Matrix Chain Multiplication
+  Problem Name :  Matrix Chain Multiplication
+  Algorithm:  Matrix Chain Multiplication
 */
 
 #include<stdio.h>

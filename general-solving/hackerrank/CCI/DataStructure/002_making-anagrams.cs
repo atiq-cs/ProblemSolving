@@ -1,4 +1,4 @@
-﻿/***************************************************************************
+/***************************************************************************
 * Problem Name: Strings: Making Anagrams
 * Problem URL : https://www.hackerrank.com/challenges/ctci-making-anagrams
 * Date        : Jan 22, 2017

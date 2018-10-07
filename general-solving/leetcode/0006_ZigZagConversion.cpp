@@ -12,28 +12,28 @@
 
 class Solution {
 public:
-	string convert(string s, int numRows) {
-		vector<string> zigzag(numRows);
-		int k = 0;
-		if (numRows>2)
-			k = numRows + numRows - 2;
-		else
-			k = numRows;
+  string convert(string s, int numRows) {
+    vector<string> zigzag(numRows);
+    int k = 0;
+    if (numRows>2)
+      k = numRows + numRows - 2;
+    else
+      k = numRows;
 
-		for (int i = 0; i<s.length(); i++) {
-			// map the index to output 
-			// we have a diagonal
-			int index = i%k;
-			if (index >= numRows)
-				zigzag[k - index] += s[i];
-			// we don't have a diagonal
-			else
-				zigzag[index] += s[i];
-		}
+    for (int i = 0; i<s.length(); i++) {
+      // map the index to output 
+      // we have a diagonal
+      int index = i%k;
+      if (index >= numRows)
+        zigzag[k - index] += s[i];
+      // we don't have a diagonal
+      else
+        zigzag[index] += s[i];
+    }
 
-		string zigzag_final;
-		for (int i = 0; i<numRows; i++)
-			zigzag_final += zigzag[i];
-		return zigzag_final;
-	}
+    string zigzag_final;
+    for (int i = 0; i<numRows; i++)
+      zigzag_final += zigzag[i];
+    return zigzag_final;
+  }
 };

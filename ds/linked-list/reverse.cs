@@ -1,4 +1,4 @@
-﻿/***************************************************************************
+/***************************************************************************
 * Title : Reverse a Linked List
 * Ref   : C.L.R.S ed3, Section 10.2, p236
 * Date  : 2018-06
@@ -18,7 +18,7 @@
 ***************************************************************************/
 public class Solution {
   // recursive implementation
-  ListNode gHead =null; 		// global head, class member
+  ListNode gHead =null;     // global head, class member
   public ListNode ReverseList(ListNode head)
   {
     RecReverse(head);
@@ -54,7 +54,7 @@ public class Solution {
       // move forward current's next pointer
       current.next = prev;  
     }
-	  return prev;
+    return prev;
   }
 }
 

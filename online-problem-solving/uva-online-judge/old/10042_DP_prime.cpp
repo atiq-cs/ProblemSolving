@@ -1,7 +1,7 @@
 /**********************************************************************************************************
-	Problem Name:	Smith Numbers
-	Judge Status:		Accepted  	(C++  	0.730  	2008-12-25 15:40:53)
-	Description:		Technique: "If we divide a number with all its prime factors upto square root  of that number then if result still greater than one then the result is also a prime number"
+  Problem Name:  Smith Numbers
+  Judge Status:    Accepted    (C++    0.730    2008-12-25 15:40:53)
+  Description:    Technique: "If we divide a number with all its prime factors upto square root  of that number then if result still greater than one then the result is also a prime number"
 **********************************************************************************************************/
 
 #include <cstdio>
@@ -16,7 +16,7 @@ long long prime_array[40000] = {2};
 
 int main() {
 //    freopen("10042_in.txt", "r", stdin);
-	unsigned i, sumf, sumN, t, T, fr, check_prime;
+  unsigned i, sumf, sumN, t, T, fr, check_prime;
     long long en, n;
 
     generate_prime(40000);
@@ -29,7 +29,7 @@ int main() {
                 sumf = 0;
                 en = n;
                 check_prime = 0;
-        		for(i=0;prime_array[i]<=sqrt(n);i++) {
+            for(i=0;prime_array[i]<=sqrt(n);i++) {
                     fr = 0;
                     while (en%prime_array[i] == 0) {
                         fr++;
@@ -40,7 +40,7 @@ int main() {
                         check_prime += fr;
              //           printf("matched %d times for %d sumf %d and en: %d, n %lld\n", fr, prime_array[i], sumf,en, n);
                     }
-        		}
+            }
                 if (en>1) {
                         check_prime++;
                         sumf += sum_digits(en);
@@ -50,9 +50,9 @@ int main() {
                    printf("%lld\n", n);
                    break;
                 }
-        	}
+          }
     }
-	return 0;
+  return 0;
 }
 
 unsigned sum_digits(long long n) {
@@ -68,23 +68,23 @@ unsigned sum_digits(long long n) {
 }
 
 void generate_prime (long long n) {
-	unsigned ind=1,j;
-	long long i;
-	bool pf=0;
-	for (i=3;;i++) {
-		for (j=0;j<ind && prime_array[j] <= sqrt(i);j++) {
-			if (!(i % prime_array[j])) {
-				//if (i==511) cout<<"got: "<<prime_array[j]<<endl;
-				pf =1;
-				break;
-			}
-		}
-		if (!pf) {
-			prime_array [ind++] = i;
-		//	cout<<" "<<prime_array[ind-1];
-		}
-		else pf = 0;
-		if (n  < ind) break;
-	}
+  unsigned ind=1,j;
+  long long i;
+  bool pf=0;
+  for (i=3;;i++) {
+    for (j=0;j<ind && prime_array[j] <= sqrt(i);j++) {
+      if (!(i % prime_array[j])) {
+        //if (i==511) cout<<"got: "<<prime_array[j]<<endl;
+        pf =1;
+        break;
+      }
+    }
+    if (!pf) {
+      prime_array [ind++] = i;
+    //  cout<<" "<<prime_array[ind-1];
+    }
+    else pf = 0;
+    if (n  < ind) break;
+  }
 }
 

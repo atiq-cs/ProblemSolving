@@ -1,4 +1,4 @@
-﻿/*
+/*
 * Problem   : Generate All Possible Combinations with k items from N items but no repeatation of same item
 * Author    : Atiqur Rahman
 * Email     : mdarahman@cs.stonybrook.edu

@@ -1,6 +1,6 @@
 /*
-	Problem Name: Product
-	Algorithm      : Big Integer Multiplication
+  Problem Name: Product
+  Algorithm      : Big Integer Multiplication
 */
 
 #include<stdio.h>
@@ -26,7 +26,7 @@ void main()
          /*Multiplication*/
          for (i=lb-1;i>=0;i--)
          {
-	        carry=0;lt=0;
+          carry=0;lt=0;
              for (j=la-1;j>=0;j--)
              {
                  ml=(b[i]-48)*(a[j]-48)+carry;
@@ -72,8 +72,8 @@ void main()
          lt=0;
          for (i=j-1;i>=0;i--)
          {
-         	if (ra[i]!=0) lt=1;
-         	if (lt) putchar(ra[i]+48);
+           if (ra[i]!=0) lt=1;
+           if (lt) putchar(ra[i]+48);
          }
          if (!lt) putchar('0');
          putchar('\n');

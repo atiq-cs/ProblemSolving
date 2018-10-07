@@ -1,6 +1,6 @@
 /*
-	The Blocks Problem
-	Implementation of linked list could be best solution.
+  The Blocks Problem
+  Implementation of linked list could be best solution.
 */
 
 #include<stdio.h>
@@ -15,11 +15,11 @@ void transfer();
 int main()
 {
     short ta,tb;
-	
-	while(scanf("%hd",&No_Blocks)!=EOF)
+  
+  while(scanf("%hd",&No_Blocks)!=EOF)
        {
-	      for (i=0;i<No_Blocks;i++)
-		  {
+        for (i=0;i<No_Blocks;i++)
+      {
                add[i]=i;
                freq[i]=1;
                for (j=0;j<No_Blocks;j++)
@@ -27,10 +27,10 @@ int main()
                        if (j==0) block[i][j]=i;
                        else block[i][j]=-1;
                }
-		  }
-		  getchar();
-		  while (gets(cmd) && cmd[0]!='q')
-		  {
+      }
+      getchar();
+      while (gets(cmd) && cmd[0]!='q')
+      {
                tmp[0]=cmd[5];
 
                if (cmd[6]!=' ')
@@ -66,13 +66,13 @@ int main()
                        {
                        for (i=0;block[ta][i]>=0;i++)
                                if (a==block[ta][i]) break;
-					   transfer(ta);
+             transfer(ta);
 
                        for (i=0;block[tb][i]>=0;i++)
                                if (b==block[tb][i]) break;
-					   transfer(tb);
+             transfer(tb);
 
-					   block[tb][freq[tb]++]=block[ta][--freq[ta]];
+             block[tb][freq[tb]++]=block[ta][--freq[ta]];
                        add[a]=tb;
                        block[ta][freq[ta]]=-1;
                        }
@@ -82,13 +82,13 @@ int main()
                       ta=add[a];tb=add[b];
                       if (ta!=tb)
                       {
-	                      for (i=0;block[ta][i]>=0;i++)
+                        for (i=0;block[ta][i]>=0;i++)
                                if (a==block[ta][i]) break;
 
-						  transfer(ta);
-			              block[tb][freq[tb]++]=block[ta][--freq[ta]];
-				          add[a]=tb;
-					      block[ta][freq[ta]]=-1;
+              transfer(ta);
+                    block[tb][freq[tb]++]=block[ta][--freq[ta]];
+                  add[a]=tb;
+                block[ta][freq[ta]]=-1;
                       }
                }
                else if (tp=='p' && op=='n')
@@ -96,14 +96,14 @@ int main()
                       ta=add[a];tb=add[b];
                       if (ta!=tb)
                       {
-							for (i=0;block[tb][i]>=0;i++)
+              for (i=0;block[tb][i]>=0;i++)
                                if (b==block[tb][i]) break;
-							transfer(tb);
+              transfer(tb);
 
-							for (i=0;block[ta][i]>=0;i++)
+              for (i=0;block[ta][i]>=0;i++)
                                if (a==block[ta][i]) break;
-							transfer(ta,tb);
-					  }
+              transfer(ta,tb);
+            }
                }
                else if (tp=='p' && op=='v')
                {
@@ -113,7 +113,7 @@ int main()
                        {
                            for (i=0;block[ta][i]>=0;i++)
                                if (a==block[ta][i]) break;
-						   transfer(ta,tb);
+               transfer(ta,tb);
                        }
               }
        }
@@ -134,7 +134,7 @@ void transfer(int ta,int tb)
     {
          block[tb][freq[tb]++]=block[ta][i];
          td=block[ta][i];
-		 add[td]=tb;
+     add[td]=tb;
          block[ta][i]=-1;
          freq[ta]--;
          i++;
@@ -143,8 +143,8 @@ void transfer(int ta,int tb)
 
 void transferx(int x)
 {
-	for (j=i+1;block[x][j]>=0;j++)
-	{
+  for (j=i+1;block[x][j]>=0;j++)
+  {
         tm=block[x][j];
         td=freq[tm]++;
         block[tm][td]=tm;
@@ -152,5 +152,5 @@ void transferx(int x)
 
         block[x][j]=-1;
         freq[x]--;
-	}
+  }
 }

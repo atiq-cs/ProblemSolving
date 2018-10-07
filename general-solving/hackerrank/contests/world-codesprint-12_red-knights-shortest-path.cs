@@ -1,4 +1,4 @@
-﻿/***************************************************************************
+/***************************************************************************
 * Title : Red Knight's Shortest Path
 * URL   : hackerrank.com/contests/world-codesprint-12/challenges/
 *   red-knights-shortest-path

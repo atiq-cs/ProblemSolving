@@ -1,4 +1,4 @@
-﻿/***************************************************************************
+/***************************************************************************
 * Title : Reverse a Linked List (recurse and iteration)
 * URL   : https://leetcode.com/problems/two-sum-iv-input-is-a-bst
 * Date  : 2015-07-29

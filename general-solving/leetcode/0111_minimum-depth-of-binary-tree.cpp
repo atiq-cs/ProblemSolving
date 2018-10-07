@@ -1,15 +1,15 @@
 /***************************************************************************
-*	Problem Name:	Find the minimum depth of a binary tree
-*	Problem URL :	https://leetcode.com/problems/minimum-depth-of-binary-tree/
+*  Problem Name:  Find the minimum depth of a binary tree
+*  Problem URL :  https://leetcode.com/problems/minimum-depth-of-binary-tree/
                     http://www.lintcode.com/en/problem/minimum-depth-of-binary-tree/
-*	Date        :	July 22, 2015
+*  Date        :  July 22, 2015
 *
-*	Algo, DS    :	Binary Tree, Recursion
-*	Desc        :	if we don't consider the
-*					  - case when left or right child is null solution is wrong
+*  Algo, DS    :  Binary Tree, Recursion
+*  Desc        :  if we don't consider the
+*            - case when left or right child is null solution is wrong
 *
-*	Complexity  :   O(n)
-*   Author      :	Atiq Rahman
+*  Complexity  :   O(n)
+*   Author      :  Atiq Rahman
 *   Status      :   Accepted
 ***************************************************************************/
 

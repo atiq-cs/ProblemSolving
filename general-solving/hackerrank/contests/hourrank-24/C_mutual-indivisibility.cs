@@ -1,4 +1,4 @@
-﻿/***************************************************************************
+/***************************************************************************
 * Title : Mutual Indivisibility
 * URL   : hackerrank.com/contests/hourrank-24/challenges/mutual-indivisibility/
 * Cont  : hourrank-24

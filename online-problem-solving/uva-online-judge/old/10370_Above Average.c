@@ -5,25 +5,25 @@
 #include<stdio.h>
 
 main() {
-	int a,i,j,s,C,N,g[2000];
-	float k;
+  int a,i,j,s,C,N,g[2000];
+  float k;
 
-	scanf("%d",&C);
-	for(i=1;i<=C;i++) {
-		scanf("%d",&N);
-		s=0;
+  scanf("%d",&C);
+  for(i=1;i<=C;i++) {
+    scanf("%d",&N);
+    s=0;
 
-		for(j=1;j<=N;j++) {
-			scanf("%d",&g[j]);
-			s=s+g[j];
-		}
+    for(j=1;j<=N;j++) {
+      scanf("%d",&g[j]);
+      s=s+g[j];
+    }
 
-		a=(int)(s/N);k=0;
-		for (j=1;j<=N;j++)
-		if (g[j]>a)
-			k++;
+    a=(int)(s/N);k=0;
+    for (j=1;j<=N;j++)
+    if (g[j]>a)
+      k++;
 
-		printf("%2.3f%\n",(float)((k*100)/N));
-	}
-	return 0;
+    printf("%2.3f%\n",(float)((k*100)/N));
+  }
+  return 0;
 }

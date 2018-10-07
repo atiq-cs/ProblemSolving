@@ -1,4 +1,4 @@
-﻿/***************************************************************************
+/***************************************************************************
 * Title : Regular Expression Matching
 * URL   : https://leetcode.com/problems/regular-expression-matching
 * Date  : 2018-07-10

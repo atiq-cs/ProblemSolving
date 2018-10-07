@@ -1,4 +1,4 @@
-﻿/*
+/*
  * Problem   : Sorting Algorithms
  * Author    : Atiq Rahman
  * Date      : Sept 23, 2015

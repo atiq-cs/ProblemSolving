@@ -1,7 +1,7 @@
 /**********************************************************************************************************
-	Problem Name:	Smith Numbers
-	Judge Status:		Accepted  	(C++  	0.730  	2008-12-25 15:40:53)
-	Description:		Technique: "If we divide a number with all its prime factors upto square root  of that number then if result still greater than one then the result is also a prime number"
+  Problem Name:  Smith Numbers
+  Judge Status:    Accepted    (C++    0.730    2008-12-25 15:40:53)
+  Description:    Technique: "If we divide a number with all its prime factors upto square root  of that number then if result still greater than one then the result is also a prime number"
 **********************************************************************************************************/
 
 #include <cstdio>
@@ -18,7 +18,7 @@ long long prime_array[100000] = {2}, top = 1;
 
 int main() {
 //    freopen("10042_in.txt", "r", stdin);
-	unsigned i, sumf, sumN, t, T, fr, check_prime;
+  unsigned i, sumf, sumN, t, T, fr, check_prime;
     long long en, n;
 
     generate_prime(50000);
@@ -32,7 +32,7 @@ int main() {
                 sumf = 0;
                 en = n;
                 check_prime = 0;
-        		for(i=0;prime_array[i]<=sqrt(n);i++) {
+            for(i=0;prime_array[i]<=sqrt(n);i++) {
                     fr = 0;
                     while (en%prime_array[i] == 0) {
                         fr++;
@@ -43,7 +43,7 @@ int main() {
                         check_prime += fr;
              //           printf("matched %d times for %d sumf %d and en: %d, n %lld\n", fr, prime_array[i], sumf,en, n);
                     }
-        		}
+            }
                 if (en>1) {
                         check_prime++;
                         sumf += sum_digits(en);
@@ -53,9 +53,9 @@ int main() {
                    printf("%lld\n", n);
                    break;
                 }
-        	}
+          }
     }
-	return 0;
+  return 0;
 }
 
 unsigned sum_digits(long long n) {
@@ -71,33 +71,33 @@ unsigned sum_digits(long long n) {
 }
 
 void generate_prime (long long n) {
-	const int MAX_PRIME = 50000; // limit on size of n
+  const int MAX_PRIME = 50000; // limit on size of n
 
-	assert(n > 0 && n <= MAX_PRIME);
+  assert(n > 0 && n <= MAX_PRIME);
 
-	// Construct bitset sieve of size MAX_PRIME + 1 containing all ones.
-	// For convenience, we are not using positions 0 and 1 of sieve so
-	// that bit i represents positive integer i.
+  // Construct bitset sieve of size MAX_PRIME + 1 containing all ones.
+  // For convenience, we are not using positions 0 and 1 of sieve so
+  // that bit i represents positive integer i.
 
-	bitset<MAX_PRIME+1>sieve;
-	sieve.set();
+  bitset<MAX_PRIME+1>sieve;
+  sieve.set();
 
-	// Apply the Sieve Method
-	int prime = 2;										// the next prime in sieve
-	while (prime * prime <= n) {
-		// cross out multiples of prime from sieve
-		for (int mult = 2*prime; mult <= n; mult += prime)
-			sieve.reset(mult);			// cross mult as non-prime
-		// find next uncrossed number in sieve
-		do
-			prime++;
-		while (!sieve.test(prime));
-		prime_array[top++] = prime;
-//		printf("current prime: %d\n", prime);
-	}
-	for (prime++; prime < n; prime++)
-		if (sieve.test(prime)) {
-//			printf("current prime: %d\n", prime);
-			prime_array[top++] = prime;
-		}
+  // Apply the Sieve Method
+  int prime = 2;                    // the next prime in sieve
+  while (prime * prime <= n) {
+    // cross out multiples of prime from sieve
+    for (int mult = 2*prime; mult <= n; mult += prime)
+      sieve.reset(mult);      // cross mult as non-prime
+    // find next uncrossed number in sieve
+    do
+      prime++;
+    while (!sieve.test(prime));
+    prime_array[top++] = prime;
+//    printf("current prime: %d\n", prime);
+  }
+  for (prime++; prime < n; prime++)
+    if (sieve.test(prime)) {
+//      printf("current prime: %d\n", prime);
+      prime_array[top++] = prime;
+    }
 }

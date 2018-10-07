@@ -1,4 +1,4 @@
-﻿/***************************************************************************
+/***************************************************************************
 * Title : Shortest Palindrome
 * URL   : https://leetcode.com/problems/shortest-palindrome
 * Date  : 2018-07-07 (Den Meetup with Charlie)

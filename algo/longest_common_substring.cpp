@@ -1,10 +1,10 @@
 /*
-*	Problem Title:  Longest common substring
-*	Author		:	Atiqur Rahman
-*	Email		:	mdarahman@cs.stonybrook.edu
-*	Date		:	July 2, 2015
-*	Desc		:
-*					Dynamic Programming implementation of LCSubstring
+*  Problem Title:  Longest common substring
+*  Author    :  Atiqur Rahman
+*  Email    :  mdarahman@cs.stonybrook.edu
+*  Date    :  July 2, 2015
+*  Desc    :
+*          Dynamic Programming implementation of LCSubstring
 *                   ref: https://en.wikipedia.org/wiki/Longest_common_substring_problem 
 *
 *                   Other examples: Initializes 2d array/vector with default 0 values

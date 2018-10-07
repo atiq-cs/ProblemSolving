@@ -1,4 +1,4 @@
-﻿/*
+/*
 * This is a draft before solving
 * leetcode/077_combinations.cs
 *  got rid of isTaken and reached the solution

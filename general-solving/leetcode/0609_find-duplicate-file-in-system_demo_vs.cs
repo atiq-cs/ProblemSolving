@@ -1,4 +1,4 @@
-﻿/***************************************************************************
+/***************************************************************************
 * Title : Find Duplicate File in System
 * URL   : https://leetcode.com/problems/find-duplicate-file-in-system
 * Date  : 2017-12-13

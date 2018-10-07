@@ -1,6 +1,6 @@
 /*
-	Problem Name: Integer Inquiry
-	Type: Calculate for the Big Integer Numbers
+  Problem Name: Integer Inquiry
+  Type: Calculate for the Big Integer Numbers
 */
 
 #include<stdio.h>
@@ -17,10 +17,10 @@ void main()
     while(gets(m) && m[0]!='0' || m[1]!='\0')
     {
             lm=strlen(m);carry=0;
-	for (i=0;i<lm;i++)
+  for (i=0;i<lm;i++)
             {
                 p=lm-1-i;
-	       ad=ra[i]+(m[p]-48)+carry;
+         ad=ra[i]+(m[p]-48)+carry;
                 /*printf("lt: %hd ad: %hd ra: %c j: 
 %hd\n",lt,ad,(ra[j]+48),j);*/
                 if (ad>9)
@@ -35,13 +35,13 @@ void main()
                 }
             }
             if (carry)
-	   {
-	   	if (ra[i]==9) ra[i++]=0;
-		ra[i++]+=1;
-	   }
-	   i--;
-	   max=i>max?i:max;
-	   /*printf("max: %hd\n",max);*/
+     {
+       if (ra[i]==9) ra[i++]=0;
+    ra[i++]+=1;
+     }
+     i--;
+     max=i>max?i:max;
+     /*printf("max: %hd\n",max);*/
      }
         for (i=max;i>=0;i--)
                putchar(ra[i]+48);

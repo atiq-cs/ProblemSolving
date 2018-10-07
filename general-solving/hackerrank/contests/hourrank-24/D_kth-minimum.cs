@@ -1,4 +1,4 @@
-﻿/***************************************************************************
+/***************************************************************************
 * Title       : Kth Minimum
 * URL         : https://www.hackerrank.com/contests/hourrank-24/challenges/kth-minimum
 * Occasion    : Codeforces Round #258 (Div. 2)

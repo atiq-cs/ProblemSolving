@@ -1,16 +1,16 @@
-﻿/*
-*	Problem Title:	Removing single child nodes from Binary search tree
-*	Problem source:	Interview question 1, also known as removing half nodes from geeksforgeek
+/*
+*  Problem Title:  Removing single child nodes from Binary search tree
+*  Problem source:  Interview question 1, also known as removing half nodes from geeksforgeek
 *                       can be related with this:
     http://www.geeksforgeeks.org/given-a-binary-tree-how-do-you-remove-all-the-half-nodes/
-*	Problem Type:	Tree, Data Structure
-*	Alogirthm	:
-*	Author		:	Atiqur Rahman
-*	Email		:	mdarahman@cs.stonybrook.edu
-*	Date		:	June 01, 2015
-*	Desc		:
-*					
-*	Status		:	Tested against several testcases
+*  Problem Type:  Tree, Data Structure
+*  Alogirthm  :
+*  Author    :  Atiqur Rahman
+*  Email    :  mdarahman@cs.stonybrook.edu
+*  Date    :  June 01, 2015
+*  Desc    :
+*          
+*  Status    :  Tested against several testcases
 */
 
 #include <vector>
@@ -21,7 +21,7 @@
 #include <string>       // to_string
 
 // Comment before submission to judge
-// #define FILE_IO	TRUE
+// #define FILE_IO  TRUE
 // we do not need FILE IO right now, may be add later
 
 #ifdef FILE_IO

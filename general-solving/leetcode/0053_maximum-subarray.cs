@@ -15,14 +15,14 @@
 public class Solution {
   public int MaxSubArray(int[] A)
   {
-  	// initialize max sum with first element
-  	int current_sum = A[0];
-  	int max_sum = current_sum;
+    // initialize max sum with first element
+    int current_sum = A[0];
+    int max_sum = current_sum;
   
-  	for (int i = 1; i < (int) A.Length; i++) {
-  		current_sum = Math.Max(A[i], current_sum + A[i]);
-  		max_sum = Math.Max(max_sum, current_sum);
-  	}
-  	return max_sum;
+    for (int i = 1; i < (int) A.Length; i++) {
+      current_sum = Math.Max(A[i], current_sum + A[i]);
+      max_sum = Math.Max(max_sum, current_sum);
+    }
+    return max_sum;
   }
 }

@@ -118,7 +118,7 @@ void LinkedListDemo::RecReverse(ListNode* head) {
   }
   RecReverse(head->itemNext);
   head->itemNext->itemNext = head;
-  // head->itemNext = NULL;		// can do this without recursion too
+  // head->itemNext = NULL;    // can do this without recursion too
 }
 
 /*

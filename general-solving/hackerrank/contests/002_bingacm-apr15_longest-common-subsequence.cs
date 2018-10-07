@@ -1,4 +1,4 @@
-﻿/***************************************************************************
+/***************************************************************************
 * Title : Longest Common Subsequence
 * Contst: Binghamton ACM April 2015
 * URL   : https://www.hackerrank.com/contests/bingacm-apr15/challenges

@@ -1,4 +1,4 @@
-﻿/***************************************************************************
+/***************************************************************************
 * Problem Name: Hash Tables: Ransom Note
 * Problem URL : https://www.hackerrank.com/challenges/ctci-ransom-note
 * Date        : Jan 23, 2016

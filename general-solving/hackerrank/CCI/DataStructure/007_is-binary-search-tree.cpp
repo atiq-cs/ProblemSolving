@@ -1,4 +1,4 @@
-﻿/***************************************************************************
+/***************************************************************************
 * Title       : Trees: Is This a Binary Search Tree?
 * URL         : https://www.hackerrank.com/challenges/ctci-is-binary-search-tree
 * Date        : Sep 7 2017

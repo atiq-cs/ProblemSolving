@@ -1,8 +1,8 @@
 /*******************************************************************************************************************
-	Problem Name:	Anagrams
-	Judge Status:	Accepted
-	Solution Des:	found out the next permutation manually and solved.
-			Also it can be done using STL next permutation
+  Problem Name:  Anagrams
+  Judge Status:  Accepted
+  Solution Des:  found out the next permutation manually and solved.
+      Also it can be done using STL next permutation
 *******************************************************************************************************************/
 #include<iostream>
 #include<algorithm>

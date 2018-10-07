@@ -1,4 +1,4 @@
-﻿/***************************************************************************
+/***************************************************************************
 * Title : Lowest Common Ancestor of a Binary Tree
 * URL   : https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree
 * Date  : 2015-08

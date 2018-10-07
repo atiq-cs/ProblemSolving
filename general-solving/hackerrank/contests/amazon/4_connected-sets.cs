@@ -1,4 +1,4 @@
-﻿/***************************************************************************
+/***************************************************************************
 * Title : Connected Sets
 * URL   : https://www.hackerrank.com/contests/amazon/challenges/connected-sets
 * Contst: amazon

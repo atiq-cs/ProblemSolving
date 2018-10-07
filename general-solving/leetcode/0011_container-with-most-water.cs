@@ -1,4 +1,4 @@
-﻿/***************************************************************************
+/***************************************************************************
 * Title : Container With Most Water
 * URL   : https://leetcode.com/problems/container-with-most-water
 * Occas : JS Meetup Arrays and Strings 2014-08-18

@@ -1,9 +1,9 @@
 /*
-	Problem: http://www.lintcode.com/en/problem/maximum-depth-of-binary-tree/
-	Description:
-			Recursive solution.
+  Problem: http://www.lintcode.com/en/problem/maximum-depth-of-binary-tree/
+  Description:
+      Recursive solution.
             This is no good. For better concise solution look at: 
-			Complexity: theta(n), I have to verify using master theorem cases
+      Complexity: theta(n), I have to verify using master theorem cases
 
     Status  :   Accepted
 */

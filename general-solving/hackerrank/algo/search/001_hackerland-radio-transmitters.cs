@@ -1,4 +1,4 @@
-﻿/***************************************************************************
+/***************************************************************************
 * Title : Hackerland Radio Transmitters
 * URL   : https://www.hackerrank.com/challenges/hackerland-radio-transmitters
 * Date  : 2017-10-25

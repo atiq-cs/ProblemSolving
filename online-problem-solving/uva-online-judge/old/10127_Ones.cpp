@@ -1,8 +1,8 @@
 /***********************************************************
-	Author:				  Atiqur Rahman
-	Problem Name:	  Ones
-	Problem ID:			UVA 10127
-	Judge status:	   Accepted
+  Author:          Atiqur Rahman
+  Problem Name:    Ones
+  Problem ID:      UVA 10127
+  Judge status:     Accepted
 
 ***********************************************************/
 
@@ -11,24 +11,24 @@
 using namespace std;
 
 int main () {
-	freopen("10127_in.txt", "r", stdin);
+  freopen("10127_in.txt", "r", stdin);
 
-	int n, nDigits;
-	//long long
-	int num;
+  int n, nDigits;
+  //long long
+  int num;
 
-	while (scanf("%d", &n) != EOF) {
-		num = 0;
-		nDigits = 0;
-		
-		 do {
-			nDigits++;
-			num *= 10;
-			num ++;
-			num = num % n;
-		 } while (num);
-		printf("%d\n", nDigits);
-	}
+  while (scanf("%d", &n) != EOF) {
+    num = 0;
+    nDigits = 0;
+    
+     do {
+      nDigits++;
+      num *= 10;
+      num ++;
+      num = num % n;
+     } while (num);
+    printf("%d\n", nDigits);
+  }
 
-	return 0;
+  return 0;
 }

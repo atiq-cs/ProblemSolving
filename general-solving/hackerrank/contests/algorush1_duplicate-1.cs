@@ -1,4 +1,4 @@
-﻿/***************************************************************************
+/***************************************************************************
 * Title : Find duplicates
 * URL   : hackerrank.com/contests/filter-cse-it/challenges/find-duplicates
 * Contst: filter-cse-it

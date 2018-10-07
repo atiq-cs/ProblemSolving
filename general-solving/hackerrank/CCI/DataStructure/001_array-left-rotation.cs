@@ -1,4 +1,4 @@
-﻿/***************************************************************************
+/***************************************************************************
 *   Problem Name:   Arrays: Left Rotation
 *   Problem URL :   https://www.hackerrank.com/challenges/ctci-array-left-rotation
 *   Date        :   Jan 15, 2016

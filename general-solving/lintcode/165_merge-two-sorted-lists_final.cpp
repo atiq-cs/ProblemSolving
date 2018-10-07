@@ -1,11 +1,11 @@
 /*
-	Problem: http://www.lintcode.com/en/problem/merge-two-sorted-lists/
-	Description:
-			Solution that does not even require creating extra node and its deletion
+  Problem: http://www.lintcode.com/en/problem/merge-two-sorted-lists/
+  Description:
+      Solution that does not even require creating extra node and its deletion
             We iterate through both of the linked list and compare item against items add to merged
                 linked list.
 
-			Complexity: theta(n), where n is sum of size of linked list 1 and size of linked list 2
+      Complexity: theta(n), where n is sum of size of linked list 1 and size of linked list 2
 
             this is the final version of the code
   Related: https://leetcode.com/problems/merge-two-sorted-lists

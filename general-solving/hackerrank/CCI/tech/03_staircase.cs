@@ -1,4 +1,4 @@
-﻿/***************************************************************************
+/***************************************************************************
 * Title : Recursion: Davis' Staircase
 * URL   : https://www.hackerrank.com/challenges/ctci-recursive-staircase
 * Occasn: CTCI

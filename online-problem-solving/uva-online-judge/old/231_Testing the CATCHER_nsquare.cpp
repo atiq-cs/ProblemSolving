@@ -1,6 +1,6 @@
 /*
-	Problem Name: Testing the CATCHER
-	Algorithm      : Longest Decreasing Subsequence
+  Problem Name: Testing the CATCHER
+  Algorithm      : Longest Decreasing Subsequence
 */
 
 #include <iostream>

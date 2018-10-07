@@ -1,34 +1,34 @@
-﻿/*
-*	Problem Title:	Breadth First Search
-*	Problem Link:	No problem solved using this algo yet
-*	Problem Type:	Graph Thoery
-*	Alogirthm	:
-*	Author		:	Atiqur Rahman
-*	Email		:	mdarahman@cs.stonybrook.edu
-*	Date		:	May 31, 2015
-*	Desc		:
-*					BFS ref: Introduction to Algorithms, page 595,
+/*
+*  Problem Title:  Breadth First Search
+*  Problem Link:  No problem solved using this algo yet
+*  Problem Type:  Graph Thoery
+*  Alogirthm  :
+*  Author    :  Atiqur Rahman
+*  Email    :  mdarahman@cs.stonybrook.edu
+*  Date    :  May 31, 2015
+*  Desc    :
+*          BFS ref: Introduction to Algorithms, page 595,
                      by Thomas H. Cormen and Charles E. Leiserson and Ronald L. Rivest and Clifford Stein
                      Simple dijkstra problem, hoping no special case
 
-*	Status		:	Need to be tested well, will be in release condition after solving several problems of online
+*  Status    :  Need to be tested well, will be in release condition after solving several problems of online
                         judges
 */
 
-#include <cstring>	// for memset
+#include <cstring>  // for memset
 #include <sstream>
 //#include <cmath>
 #include <vector>
 #include <iostream>
 #include <algorithm>
 #include <queue>
-#include <iomanip>	// for precision
+#include <iomanip>  // for precision
 
 #define INT_INF    0x7fffffff
 enum COLOR_ENUM {WHITE, GRAY, BLACK};
 #define NIL -1
 // Comment before submission to judge
-#define FILE_IO	TRUE
+#define FILE_IO  TRUE
 
 #ifdef FILE_IO
 #include <fstream>

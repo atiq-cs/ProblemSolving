@@ -1,10 +1,10 @@
 /*
-*	Problem     :   Demonstrating use of initializer list in C++ 11
-*	Author		:	Atiqur Rahman
-*	Email		:	mdarahman@cs.stonybrook.edu
-*	Date		:	June 28, 2015
-*	Desc		:
-*					Using initializer list with primitive types
+*  Problem     :   Demonstrating use of initializer list in C++ 11
+*  Author    :  Atiqur Rahman
+*  Email    :  mdarahman@cs.stonybrook.edu
+*  Date    :  June 28, 2015
+*  Desc    :
+*          Using initializer list with primitive types
 *                    use with string, vector, maps
 *                     and class members
 */

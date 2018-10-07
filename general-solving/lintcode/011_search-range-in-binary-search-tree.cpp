@@ -7,7 +7,7 @@
                 http://www.geeksforgeeks.org/618/
 
                 From wiki,
-				    1. Traverse the left subtree by recursively calling the in-order function.
+            1. Traverse the left subtree by recursively calling the in-order function.
                     2. Display the data part of root element (or current element).
                     3. Traverse the right subtree by recursively calling the in-order function.
 

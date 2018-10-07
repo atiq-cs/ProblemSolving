@@ -1,12 +1,12 @@
 /*******************************************************
-* Problem Name:	LCS
-* Problem ID:				10405
-* Occassion:				Offline Solving
+* Problem Name:  LCS
+* Problem ID:        10405
+* Occassion:        Offline Solving
 *
-* Algorithm:				Only find LCS length
-* Special Case:			If a line is only newline then output zero
+* Algorithm:        Only find LCS length
+* Special Case:      If a line is only newline then output zero
 * Judge Status:
-* Author:						Atiqur Rahman
+* Author:            Atiqur Rahman
 * Note : New reference for this problem's solution is 'demos/algo/dp/lcs.cs'
 *   Do not look at this solution. No gonna upgrade this one.
 *******************************************************/

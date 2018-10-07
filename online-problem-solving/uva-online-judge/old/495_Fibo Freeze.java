@@ -1,32 +1,32 @@
 /*******************************************************
-*		Problem Name:	Fibonacci Freeze
-*		Problem ID:		495
-*		Occassion:		Offline Solves
+*    Problem Name:  Fibonacci Freeze
+*    Problem ID:    495
+*    Occassion:    Offline Solves
 *
-*		Algorithm:			BigInteger class
-*		Special Case:		
-*		Judge Status:		Accpeted
-*		Author:				Atiqur Rahman
+*    Algorithm:      BigInteger class
+*    Special Case:    
+*    Judge Status:    Accpeted
+*    Author:        Atiqur Rahman
 *******************************************************/
 import java.util.Scanner;
 import java.math.BigInteger;
 
 class Main {
-	public static void main (String args[]) {
-		Scanner istream = new Scanner(System.in);
-		BigInteger fibo[] = new BigInteger[5001];
-		fibo[0] = new BigInteger("0");
-		fibo[1] = new BigInteger("1");
-		int i, n;
-		
-		for (i=2; i<5001; i++) {
-			fibo[i] = new BigInteger("0");
-			fibo[i] = fibo[i].add(fibo[i-2]);
-			fibo[i] = fibo[i].add(fibo[i-1]);
-		}
-		while (istream.hasNextInt()) {
-			n = istream.nextInt();
-			System.out.println("The Fibonacci number for "+n+" is "+fibo[n]);
-		}
-	}
+  public static void main (String args[]) {
+    Scanner istream = new Scanner(System.in);
+    BigInteger fibo[] = new BigInteger[5001];
+    fibo[0] = new BigInteger("0");
+    fibo[1] = new BigInteger("1");
+    int i, n;
+    
+    for (i=2; i<5001; i++) {
+      fibo[i] = new BigInteger("0");
+      fibo[i] = fibo[i].add(fibo[i-2]);
+      fibo[i] = fibo[i].add(fibo[i-1]);
+    }
+    while (istream.hasNextInt()) {
+      n = istream.nextInt();
+      System.out.println("The Fibonacci number for "+n+" is "+fibo[n]);
+    }
+  }
 }

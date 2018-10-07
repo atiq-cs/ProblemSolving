@@ -1,4 +1,4 @@
-﻿/***************************************************************************
+/***************************************************************************
 * Title       : Queues: A Tale of Two Stacks
 * URL         : https://www.hackerrank.com/challenges/ctci-queue-using-two-stacks
 * Date        : Sep 7 2017

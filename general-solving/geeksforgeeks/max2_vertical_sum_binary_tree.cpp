@@ -1,6 +1,6 @@
-﻿/*
-*	Problem Title:	Removing single child nodes from Binary search tree
-*	Problem source:	Second level interview question 1
+/*
+*  Problem Title:  Removing single child nodes from Binary search tree
+*  Problem source:  Second level interview question 1
                 Question: Find the Vertical sum in a given Binary tree, i.e. sum of nodes in the same vertical
 
                 1
@@ -19,14 +19,14 @@
                 related in geeksforgeek:
                 http://www.geeksforgeeks.org/vertical-sum-in-a-given-binary-tree/
 
-*	Problem Type:	Tree, Data Structure
-*	Alogirthm	:
-*	Author		:	Atiqur Rahman
-*	Email		:	mdarahman@cs.stonybrook.edu
-*	Date		:	June 05, 2015
-*	Desc		:
-*					
-*	Status		:	Tested against several testcases
+*  Problem Type:  Tree, Data Structure
+*  Alogirthm  :
+*  Author    :  Atiqur Rahman
+*  Email    :  mdarahman@cs.stonybrook.edu
+*  Date    :  June 05, 2015
+*  Desc    :
+*          
+*  Status    :  Tested against several testcases
 */
 
 #include <vector>
@@ -37,7 +37,7 @@
 #include <string>       // to_string
 #include <map>
 // Comment before submission to judge
-// #define FILE_IO	TRUE
+// #define FILE_IO  TRUE
 // we do not need FILE IO right now, may be add later
 
 #ifdef FILE_IO

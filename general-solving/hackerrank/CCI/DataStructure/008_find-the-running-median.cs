@@ -1,4 +1,4 @@
-﻿/***************************************************************************
+/***************************************************************************
 * Title       : Heaps: Find the Running Median
 * URL         : https://www.hackerrank.com/challenges/ctci-find-the-running-median
 * Date        : 2017-09-11

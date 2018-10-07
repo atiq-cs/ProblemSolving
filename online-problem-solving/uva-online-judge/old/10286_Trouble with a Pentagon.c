@@ -1,6 +1,6 @@
 /*
-	Problem Name: Trouble with a Pentagon
-	Algorithm      : Geometry
+  Problem Name: Trouble with a Pentagon
+  Algorithm      : Geometry
 */
 
 #include <math.h>

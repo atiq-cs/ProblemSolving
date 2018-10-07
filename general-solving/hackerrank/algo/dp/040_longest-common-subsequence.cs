@@ -1,4 +1,4 @@
-﻿/***************************************************************************
+/***************************************************************************
 * Title : The Longest Common Subsequence
 * URL   : https://www.hackerrank.com/challenges/dynamic-programming-classics-
 *   the-longest-common-subsequence

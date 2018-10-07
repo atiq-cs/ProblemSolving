@@ -1,10 +1,10 @@
 /*
-	Problem Name: Greedy Gift Givers
-		Desc:
-			Given some people with their amount to distribute among friends evenly after keeping aside some money.
-			We are to determine how much more everyone gives than receives.
-	Algorithm      : Native and string compare
-	
+  Problem Name: Greedy Gift Givers
+    Desc:
+      Given some people with their amount to distribute among friends evenly after keeping aside some money.
+      We are to determine how much more everyone gives than receives.
+  Algorithm      : Native and string compare
+  
 */
 
 #include<stdio.h>
