@@ -5,13 +5,13 @@
 * Author: Atiq Rahman
 * Comp  : O(n)
 * Status: Accepted
-* Notes : similar to Inorder morris traversal
-*   Ref: https://www.geeksforgeeks.org/morris-traversal-for-preorder/
+* Notes : similar to Inorder morris traversal which is at,
+*   'ds/binary-tree/traversal.cs'
 * meta  : tag-stack, tag-leetcode-medium, tag-binary-tree, tag-recursion
 ***************************************************************************/
 public class Solution {
   // Uses Morris Traversal for Preorder, O(1) space
-  //  'general-solving/leetcode/binary-tree-util.cs'
+  //  'ds/binary-tree/traversal.cs'
   public IList<int> PreorderTraversal(TreeNode root) {
     return Traversal(root, false);
   }
@@ -25,12 +25,13 @@ public class Solution {
     return nodeList;
   }
 
-  // v2: Using stack, based on '094_Binary-tree-inorder-traversal.cs'
+  // Iterative Traverse using Stack: Push the left nodes onto the stack
+  //  based on '0094_Binary-tree-inorder-traversal.cs'
   public IList<int> PreorderTraversal(TreeNode root) {
     var nodeList = new List<int>();
     if (root == null)
       return ;
-    Stack<TreeNode> stack = new Stack<TreeNode>();
+    var stack = new Stack<TreeNode>();
 
     do { // cur stands for current node - a temporary node to point to each
       // node while visiting each node of the tree
@@ -49,9 +50,9 @@ public class Solution {
     return nodeList;
   }
 
-  // v1: Push the right nodes onto the stack along the way down while process
-  // the left nodes on the way down, get those nodes back from stack when we
-  // come back; Acknowledgement: Huy Zing
+  // Iterative Traverse using Stack 2: Push the right nodes onto the stack along
+  // the way down while process the left nodes on the way down, get those nodes
+  // back from stack when we come back; Acknowledgement: Huy Zing
   public IList<int> PreorderTraversal(TreeNode current) {
     var nodeList = new List<int>();
     var stack = new Stack<TreeNode>();
@@ -66,8 +67,8 @@ public class Solution {
     return nodeList;
   }
 
-  // v0: recursion
   private List<int> nodeList = new List<int>();
+  // Recursive Traverse
   public IList<int> PreorderTraversal(TreeNode root) {
     if (root == null) return nodeList;
     nodeList.Add(root.val);

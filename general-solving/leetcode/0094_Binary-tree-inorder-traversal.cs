@@ -3,20 +3,15 @@
 * URL   : https://leetcode.com/problems/binary-tree-inorder-traversal/
 * Date  : 2017-10-30 (update)
 * Author: Atiq Rahman
-* Comp  : O(n), Space comp varies
+* Comp  : O(n), O(1) if Morris
 * Status: Accepted
-* Notes : Using Stack CLR p289, Ex-12.1-3
+* Notes : Using Stack CLR p#289, Ex-12.1-3
 *   Easy one (using stack)
-* ref   : Tushar Roy - Morris Inorder Tree Traversal
-*   https://www.youtube.com/watch?v=wGXB9OWhPTg
-*   https://www.geeksforgeeks.org/inorder-tree-traversal-without-recursion-and-
-*    without-stack/
-*   
 * meta  : tag-binary-tree, tag-leetcode-easy, tag-recursion, tag-stack
 ***************************************************************************/
 public class Solution {
   // Uses Morris Traversal for Inorder, O(1) space
-  //  'general-solving/leetcode/binary-tree-util.cs'
+  //  'ds/binary-tree/traversal.cs'
   public IList<int> InorderTraversal(TreeNode root) {
     return Traversal(root, true);
   }
@@ -33,7 +28,7 @@ public class Solution {
         stack.Push(cur);
         cur = cur.left;
       }
-      // At least one node is in the stack
+      // At least stack contains a node
       do {
         cur = stack.Pop();
         nodeList.Add(cur.val);
