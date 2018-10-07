@@ -1,6 +1,5 @@
 /*
-  My queue is correct
-  This problem is accepted by UVA oj
+  My queue implementation seems okay since the solution is accepted by UVA oj
 */
 
 #include <cstdio>

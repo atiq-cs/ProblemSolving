@@ -6,7 +6,7 @@
 *    Algorithm:      Bruite Force
 *    Special Case:    NA
 *    Judge Status:    Accepted by UVA and mooshak
-*    Author:        Atiqur Rahman
+*    Author:        Atiq Rahman
 *******************************************************/
 
 #include <cstdio>

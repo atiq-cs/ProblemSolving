@@ -5,7 +5,7 @@
 *    Data       : Sept 7 2015
 *    Alogirthm  :   
 *    Complexity : O(n)
-*    Author     : Atiqur Rahman
+*    Author     : Atiq Rahman
 *    Status     : Accepted
 *    Notes      : This solution applies if all numbers are given in pairs (or even number of times) except
 *                  the number we want to find

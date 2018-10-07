@@ -5,7 +5,7 @@
 *    Type       :    
 *    Alogirthm  :   
 *    Complexity : O(1)
-*    Author     : Atiqur Rahman
+*    Author     : Atiq Rahman
 *    Status     : Accepted
 *    Notes      : Concise
 */

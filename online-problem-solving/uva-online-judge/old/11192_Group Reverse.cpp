@@ -7,7 +7,7 @@
 *    Special Case:  Nothing
 *    Judge Status:  Accepted
 *    Runtime:    0.004
-*    Author:    Atiqur Rahman
+*    Author:    Atiq Rahman
 *******************************************************/
 #include <cstdio>
 #include <cstring>

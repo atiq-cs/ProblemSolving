@@ -7,7 +7,7 @@
 *    Algorithm:        Union Find
 *    Special Case:      N/A
 *    Judge Status:      Accepted
-*    Author:            Atiqur Rahman
+*    Author:            Atiq Rahman
 *******************************************************/
 //#include <iostream>
 #include <cstdio>

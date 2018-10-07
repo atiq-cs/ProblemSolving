@@ -3,7 +3,7 @@
 *  Problem No  :  https://www.hackerrank.com/challenges/find-digits
 *   Domain      :   Algorithms/Implementation
 *  Alogirthm  :   
-*  Author    :  Atiqur Rahman
+*  Author    :  Atiq Rahman
 *  Status    :  Accepted
 *  Desc    :  Simple approach
 *  Notes    :  This one apparently uses my old OOP template

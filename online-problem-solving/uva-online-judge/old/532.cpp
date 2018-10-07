@@ -4,7 +4,7 @@
 *  Algorithm:      BFS
 *  Special Case:    Learnt one thing: 30 * 30 * 30
 *  Judge Status:    Accepted
-*  Author:      Atiqur Rahman
+*  Author:      Atiq Rahman
 *************************************/
 
 #include<iostream>

@@ -8,7 +8,7 @@
 *                  does not work
 *    Special Case:    The graph migt be disconnected, output should be in alphabetic order
 *    Judge Status:    Accepted
-*    Author:        Atiqur Rahman
+*    Author:        Atiq Rahman
 *******************************************************/
 #include <cstdio>
 #include <cstring>

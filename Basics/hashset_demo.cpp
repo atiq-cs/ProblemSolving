@@ -1,7 +1,7 @@
 /*
 * Problem   : Demonstrating use of C++ 11 unordered_set ( alike java hash set)
-* Author    : Atiqur Rahman
-* Email     : mdarahman@cs.stonybrook.edu
+* Author    : Atiq Rahman
+* Email     : atiqcs 'at' outlook 'dot' com
 * Date      : July 2, 2015
 * Desc      : Use of unordered set
 *              iteration over the et 

@@ -4,7 +4,7 @@
 *   Domain      :    C++/STL
 *  Problem Type:  Use of STL, vector
 *  Alogirthm  :   
-*  Author    :  Atiqur Rahman
+*  Author    :  Atiq Rahman
 *  Status    :  Accepted
 *  Note    :  This is a nice problem to teach vector erase
 */

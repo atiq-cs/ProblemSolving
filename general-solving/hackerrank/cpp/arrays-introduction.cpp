@@ -4,7 +4,7 @@
 *   Domain      :    C++/Introduction/Arrays
 *  Problem Type:  
 *  Alogirthm  :   
-*  Author    :  Atiqur Rahman
+*  Author    :  Atiq Rahman
 *  Status    :  Accepted
 *  Note    :  Restrict from the temptation of using pointer arithmetic
 */

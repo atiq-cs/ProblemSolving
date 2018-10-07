@@ -3,8 +3,8 @@
 *  Problem Link:  http://uva.onlinejudge.org/external/3/318.html
 *  Problem Type:  Graph problem, single source shortest path, destination is not specified
 *  Alogirthm  :
-*  Author    :  Atiqur Rahman
-*  Email    :  mdarahman@cs.stonybrook.edu
+*  Author    :  Atiq Rahman
+*  Email    :  atiqcs 'at' outlook 'dot' com
 *  Date    :  May 20, 2015
 *  Desc    :
 *          Dijkstra ref: Introduction to Algorithms, page 658,

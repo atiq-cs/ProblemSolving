@@ -6,7 +6,7 @@
 *    Algorithm:      
 *    Special Case:    
 *    Judge Status:    
-*    Author:        Atiqur Rahman
+*    Author:        Atiq Rahman
 *******************************************************/
 //#include <iostream>
 #include <cstdio>

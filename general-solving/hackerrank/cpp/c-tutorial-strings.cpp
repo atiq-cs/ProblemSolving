@@ -4,7 +4,7 @@
 *   Domain      :   C++/Strings
 *  Problem Type:  
 *  Alogirthm  :   
-*  Author    :  Atiqur Rahman
+*  Author    :  Atiq Rahman
 *  Status    :  Accepted
 *  Notes    :  Safety check on line 23 is recommended, whether any of the strings in empty
 */

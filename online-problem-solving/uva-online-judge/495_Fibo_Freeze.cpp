@@ -1,7 +1,7 @@
 /*
  * Title    : Fibonacci Freeze
  * URL      : http://uva.onlinejudge.org/external/5/495.html
- * Author   : Atiqur Rahman
+ * Author   : Atiq Rahman
  * Desc     :
  * Status   : Accepted (time 0.029)
  * Acknowl. : Md Abdul Kader(http://dal.cs.utep.edu/members/mkader/) for BigInteger Class

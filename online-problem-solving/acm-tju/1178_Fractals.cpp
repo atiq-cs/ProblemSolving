@@ -2,7 +2,7 @@
 * Title : Fractal
 * URL   : http://acm.tju.edu.cn/toj/showp1178.html
 * Algo  : Divide and conquer
-* Email : mdarahman@cs.stonybrook.edu
+* Email : atiqcs 'at' outlook 'dot' com
 * Date  : March 7, 2015
 * Desc  :
 *

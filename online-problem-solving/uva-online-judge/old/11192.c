@@ -6,7 +6,7 @@
 *    Algorithm:  Simple
 *    Special Case:    
 *    Judge Status:  
-*    Author:    Atiqur Rahman
+*    Author:    Atiq Rahman
 *******************************************************/
 #include <stdio.h>
 #include <string.h>

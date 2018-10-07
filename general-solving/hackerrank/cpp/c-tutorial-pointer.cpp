@@ -4,7 +4,7 @@
 *   Domain      :   C++/Intro
 *  Problem Type:  
 *  Alogirthm  :   
-*  Author    :  Atiqur Rahman
+*  Author    :  Atiq Rahman
 *  Status    :  Accepted
 *  Desc    :  a should contain sum, b contains absolute difference between them
 */

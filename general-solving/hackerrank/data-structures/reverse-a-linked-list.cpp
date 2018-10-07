@@ -5,7 +5,7 @@
 *  Problem Type:  
 *  Alogirthm  :   
 *  Complexity  :  O(n)
-*  Author    :  Atiqur Rahman
+*  Author    :  Atiq Rahman
 *  Status    :  Accepted
 *  Notes    :  
 */

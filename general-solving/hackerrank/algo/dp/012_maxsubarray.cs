@@ -4,7 +4,7 @@
 *    Domain     : Algorithms/Dynamic Programming
 *    Alogirthm  : DP, kadane algorithm for maximum sum
 *    Complexity : O(n)
-*    Author     : Atiqur Rahman
+*    Author     : Atiq Rahman
 *    Status     : Accepted
 *    Notes      : First part is solved by kadane algorithm
                   second part is non-contiguous sum problem

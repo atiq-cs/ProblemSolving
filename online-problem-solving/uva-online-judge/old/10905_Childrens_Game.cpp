@@ -6,7 +6,7 @@
 *    Algorithm:      Sorting the strings
 *    Special Case:    Integers are at most 90 digits... So array size is a matter
 *    Judge Status:    Accepted
-*    Author:        Atiqur Rahman
+*    Author:        Atiq Rahman
 ***********************************************************************/
 //#include <iostream>
 #include <cstdio>

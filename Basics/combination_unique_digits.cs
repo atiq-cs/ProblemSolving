@@ -1,7 +1,7 @@
 /*
 * Problem   : Generate All Possible Combinations with k items from N items but no repeatation of same item
-* Author    : Atiqur Rahman
-* Email     : mdarahman@cs.stonybrook.edu
+* Author    : Atiq Rahman
+* Email     : atiqcs 'at' outlook 'dot' com
 * Date      : Nov 01, 2015
 * Desc      : Ensures that number won't contain same digit twice
 *             This is an incremental development based on

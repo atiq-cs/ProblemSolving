@@ -2,7 +2,7 @@
 * Problem Name:  C Data Type formatting using printf
 * Problem No  :  https://www.hackerrank.com/challenges/c-tutorial-basic-data-types
 * Domain        :   C++/Intro
-* Author    :  Atiqur Rahman
+* Author    :  Atiq Rahman
 * Status    :  Accepted
 * Note        :  This problem became rather challenging when I tried to solve it
 *              using C++, following are notable finding,

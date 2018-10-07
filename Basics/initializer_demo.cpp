@@ -1,7 +1,7 @@
 /*
 *  Problem     :   Demonstrating use of initializer list in C++ 11
-*  Author    :  Atiqur Rahman
-*  Email    :  mdarahman@cs.stonybrook.edu
+*  Author    :  Atiq Rahman
+*  Email    :  atiqcs 'at' outlook 'dot' com
 *  Date    :  June 28, 2015
 *  Desc    :
 *          Using initializer list with primitive types

@@ -1,5 +1,5 @@
 /***********************************************************
-  Author:          Atiqur Rahman
+  Author:          Atiq Rahman
   Problem Name:    Ones
   Problem ID:      UVA 10127
   Judge status:     Accepted

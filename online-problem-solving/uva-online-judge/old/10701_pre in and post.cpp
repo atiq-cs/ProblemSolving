@@ -1,5 +1,5 @@
 /*****************************************************************
-  Author Name    :  Saint Linux,
+  Author Name    :  Atiq Rahman,
   Location    :  University of Dhaka,
   Problem Name  :  Tree Recovery
   Status    :  Accepted

@@ -5,7 +5,7 @@
 *  Problem Type:  
 *  Alogirthm  :   
 *  Complexity  :  O(n)
-*  Author    :  Atiqur Rahman
+*  Author    :  Atiq Rahman
 *  Status    :  Accepted
 *  Notes    :  Logic is to traverse till the tail of linked list
 *          Node pointer should point to the last non-null node

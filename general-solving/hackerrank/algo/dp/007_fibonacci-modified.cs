@@ -6,7 +6,7 @@
 * Alogirthm  : BigInteger, Simple DP
 * Complexity : O(n), for O(logn) look at,
   http://stackoverflow.com/questions/15093566/is-there-a-better-way-performance-calculate-fibonacci-than-this-one
-* Author     : Atiqur Rahman
+* Author     : Atiq Rahman
 * Status     : Accepted
 *               Testcase 3: 0.75s
 *               Testcase 6: 0.89s

@@ -6,7 +6,7 @@
 *    Algorithm:      Prime generation
 *    Special Case:    Easy problem no special case
 *    Judge Status:    Accepted
-*    Author:        Atiqur Rahman
+*    Author:        Atiq Rahman
 *******************************************************/
 #include <math.h>
 #include <string.h>

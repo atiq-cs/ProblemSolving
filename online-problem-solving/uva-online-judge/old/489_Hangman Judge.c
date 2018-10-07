@@ -8,7 +8,7 @@
       guess, instant detection of win or loss in any moments
       http://acm.uva.es/board/viewtopic.php?f=5&t=2377&p=22463&hilit=489&sid=3a5fc4177ea199c599888561a0c31a84#p22463
 *    Judge Status:    Accepted
-*    Author:        Atiqur Rahman
+*    Author:        Atiq Rahman
 *******************************************************/
 
 #include <cstdio>

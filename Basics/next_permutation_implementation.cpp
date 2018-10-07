@@ -1,7 +1,7 @@
 /*
 *  Problem Title:  Implementing next_permutation
-*  Author    :  Atiqur Rahman
-*  Email    :  mdarahman@cs.stonybrook.edu
+*  Author    :  Atiq Rahman
+*  Email    :  atiqcs 'at' outlook 'dot' com
 *  Date    :  June 23, 2015
 *  Desc    :
 *          This algorithm is tested by solving https://uva.onlinejudge.org/external/1/146.html

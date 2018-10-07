@@ -6,7 +6,7 @@
 *    Algorithm:      BigInteger class
 *    Special Case:    
 *    Judge Status:    Accpeted
-*    Author:        Atiqur Rahman
+*    Author:        Atiq Rahman
 *******************************************************/
 import java.util.Scanner;
 import java.math.BigInteger;

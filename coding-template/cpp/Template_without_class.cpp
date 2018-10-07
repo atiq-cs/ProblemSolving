@@ -3,7 +3,7 @@
 *  Problem Link:  https://www.hackerrank.com/challenges/problem-title
 *  Problem Type:  Data Type Handling
 *  Alogirthm  :
-*  Author    :  Atiqur Rahman
+*  Author    :  Atiq Rahman
 *  Desc    :  Generated from this problem https://www.hackerrank.com/challenges/summing-the-n-series
 *
 *  Status    :  Good

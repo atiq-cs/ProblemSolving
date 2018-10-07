@@ -1,7 +1,7 @@
 /*
   Problem ID:  10487
   Judge status:  Accepted
-  Author: Saint Linux
+  Author: Atiq Rahman
   Assumes
   Two numbers are distinct that is they are not equal (Nor)
  */

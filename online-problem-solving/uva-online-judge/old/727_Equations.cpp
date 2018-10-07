@@ -6,7 +6,7 @@
 *    Algorithm:        Infix to Postfix Conversion
 *    Special Case:      
 *    Judge Status:      
-*    Author:          Atiqur Rahman
+*    Author:          Atiq Rahman
 *    Notes:          In this problem the ascending order of precedence
 *                of operators is: (- +), (* /)
 *                - and + have same level of precedence as well as * and / have

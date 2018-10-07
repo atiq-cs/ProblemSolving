@@ -6,7 +6,7 @@
 *    Algorithm:      Intersection
 *    Special Case:    Inside or coincide
 *    Judge Status:    Accepted
-*    Author:        Atiqur Rahman
+*    Author:        Atiq Rahman
 ********************************************************************/
 #include <cstdio>
 #include <cmath>

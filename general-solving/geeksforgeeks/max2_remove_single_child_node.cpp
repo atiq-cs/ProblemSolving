@@ -5,8 +5,8 @@
     http://www.geeksforgeeks.org/given-a-binary-tree-how-do-you-remove-all-the-half-nodes/
 *  Problem Type:  Tree, Data Structure
 *  Alogirthm  :
-*  Author    :  Atiqur Rahman
-*  Email    :  mdarahman@cs.stonybrook.edu
+*  Author    :  Atiq Rahman
+*  Email    :  atiqcs 'at' outlook 'dot' com
 *  Date    :  June 01, 2015
 *  Desc    :
 *          

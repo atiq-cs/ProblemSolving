@@ -2,8 +2,8 @@
 * Problem   :    Travelling cost
 * URL       :    http://www.spoj.com/problems/TRVCOST/
 * Alogirthm :    Graph problem, single source shortest path, destination is specified
-* Author    :    Atiqur Rahman
-* Email     :    mdarahman@cs.stonybrook.edu
+* Author    :    Atiq Rahman
+* Email     :    atiqcs 'at' outlook 'dot' com
 * Date      :    May 31, 2015
 * Desc      :
 *                Dijkstra ref: Introduction to Algorithms, page 658,

@@ -1,7 +1,7 @@
 /*
 * Problem   : Generate Binary Numbers using Combination
-* Author    : Atiqur Rahman
-* Email     : mdarahman@cs.stonybrook.edu
+* Author    : Atiq Rahman
+* Email     : atiqcs 'at' outlook 'dot' com
 * Date      : Nov 01, 2015
 * Desc      : Generate binary numbers using recursive combination
 *             This is the basic of generating combination

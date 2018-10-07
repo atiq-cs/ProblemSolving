@@ -6,7 +6,7 @@
 *    Algorithm:        
 *    Special Case:      
 *    Judge Status:      
-*    Author:          Atiqur Rahman
+*    Author:          Atiq Rahman
 *    Notes:          Simplicity of the solution,
                 easy problem, easy thinking
 *******************************************************/

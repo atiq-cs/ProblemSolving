@@ -1,7 +1,7 @@
 /*
 *  Problem Title:   Basic Sorting Algorithms
-*  Author    :  Atiqur Rahman
-*  Email    :  mdarahman@cs.stonybrook.edu
+*  Author    :  Atiq Rahman
+*  Email    :  atiqcs 'at' outlook 'dot' com
 *  Date    :  May 24, 2015
 *  Desc    :  
 *          Selection sort

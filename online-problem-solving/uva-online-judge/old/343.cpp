@@ -6,7 +6,7 @@
 *    Algorithm:      All possible combinations
 *    Special Case:      Minimum base =2
 *    Judge Status:    Accepted
-*    Author:        Atiqur Rahman
+*    Author:        Atiq Rahman
 *******************************************************/
 #include <cctype>
 #include <cstdio>

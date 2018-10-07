@@ -1,8 +1,8 @@
 /*
 *  Problem Title:   Swap demonstration (Data structure and int limit tests)
-*  Author    :  Atiqur Rahman
-*  Email    :  mdarahman 'at' cs dot stonybrook dot edu
-*  Date    :  May 21, 2015
+*  Author    :  Atiq Rahman
+*  Email    :  atiqcs 'at' outlook 'dot' com
+*  Date    :  2015-05-21
 *  Desc    :  All things swap (testing overflow with approaches)
 *          Approach 1: using temporary variable
 *          Approach 2: using X-OR

@@ -6,7 +6,7 @@
 *    Algorithm:        Prim's MST
 *    Special Case:    No special cases
 *    Judge Status:     Accepted
-*    Author:          Atiqur Rahman
+*    Author:          Atiq Rahman
 *******************************************************/
 //#include <iostream>
 #include <cstdio>

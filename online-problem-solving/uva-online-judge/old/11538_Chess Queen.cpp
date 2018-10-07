@@ -6,7 +6,7 @@
 *    Algorithm:      
 *    Special Case:    Very Mathematical
 *    Judge Status:    Accepted
-*    Author:        Atiqur Rahman
+*    Author:        Atiq Rahman
 *******************************************************/
 //#include <iostream>
 #include <cstdio>

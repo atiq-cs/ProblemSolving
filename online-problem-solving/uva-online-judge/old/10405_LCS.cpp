@@ -6,7 +6,7 @@
 * Algorithm:        Only find LCS length
 * Special Case:      If a line is only newline then output zero
 * Judge Status:
-* Author:            Atiqur Rahman
+* Author:            Atiq Rahman
 * Note : New reference for this problem's solution is 'demos/algo/dp/lcs.cs'
 *   Do not look at this solution. No gonna upgrade this one.
 *******************************************************/

@@ -6,7 +6,7 @@
 *    Algorithm:      Articulation Point
 *    Special Case:    if 10199 solved then this one is most easy..
 *    Judge Status:    Accepted
-*    Author:        Atiqur Rahman
+*    Author:        Atiq Rahman
 *******************************************************/
 #include <cstdio>
 #include <cstring>

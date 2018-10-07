@@ -1,7 +1,7 @@
 /*
 *  Problem Title:  Longest common substring
-*  Author    :  Atiqur Rahman
-*  Email    :  mdarahman@cs.stonybrook.edu
+*  Author    :  Atiq Rahman
+*  Email    :  atiqcs 'at' outlook 'dot' com
 *  Date    :  July 2, 2015
 *  Desc    :
 *          Dynamic Programming implementation of LCSubstring

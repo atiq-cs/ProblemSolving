@@ -1,7 +1,7 @@
 /*
 * Title : Basic Permutation
-* Author: Atiqur Rahman
-* Email : mdarahman@cs.stonybrook.edu
+* Author: Atiq Rahman
+* Email : atiqcs 'at' outlook 'dot' com
 * Date  : June 20, 2015
 * Desc  :
 *     Permutation using recursion *

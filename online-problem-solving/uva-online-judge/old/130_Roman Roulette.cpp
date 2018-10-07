@@ -6,7 +6,7 @@
 *    Algorithm:        Simulation
 *    Special Case:      Panditi (more efficient korte etc gelei vezal)
 *    Judge Status:      Accepted
-*    Author:          Atiqur Rahman
+*    Author:          Atiq Rahman
 *******************************************************/
 #include <cstdio>
 #include <vector>

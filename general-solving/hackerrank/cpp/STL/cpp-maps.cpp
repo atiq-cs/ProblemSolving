@@ -4,7 +4,7 @@
 *   Domain      :    C++/STL
 *  Problem Type:  Use of STL
 *  Alogirthm  :   
-*  Author    :  Atiqur Rahman
+*  Author    :  Atiq Rahman
 *  Status    :  Accepted
 *  Note    :  ref: http://en.cppreference.com/w/cpp/container/map
 *          Block required in case 1 & 3

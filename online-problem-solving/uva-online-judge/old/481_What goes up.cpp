@@ -1,5 +1,5 @@
 /*
-  Author:  Saint Linux
+  Author:  Atiq Rahman
   Algorithm:  LIS (nlogn)
   Reference:  Wikipedia
 

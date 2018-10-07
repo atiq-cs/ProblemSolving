@@ -21,8 +21,8 @@
 
 *  Problem Type:  Tree, Data Structure
 *  Alogirthm  :
-*  Author    :  Atiqur Rahman
-*  Email    :  mdarahman@cs.stonybrook.edu
+*  Author    :  Atiq Rahman
+*  Email    :  atiqcs 'at' outlook 'dot' com
 *  Date    :  June 05, 2015
 *  Desc    :
 *          

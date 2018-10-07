@@ -4,7 +4,7 @@
 *   Domain      :   C++/Strings
 *  Problem Type:  
 *  Alogirthm  :   
-*  Author    :  Atiqur Rahman
+*  Author    :  Atiq Rahman
 *  Status    :  Accepted
 *  Desc    :  This implementation demonstrates how we can use sstream to parse integers which are delimited
 *            by comma or any other symbol

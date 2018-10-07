@@ -4,7 +4,7 @@
 *   Domain      :   C++/STL
 *  Problem Type:  Use of STL, lower_bound
 *  Alogirthm  :   
-*  Author    :  Atiqur Rahman
+*  Author    :  Atiq Rahman
 *  Status    :  Accepted
 *  Note    :  ref: http://www.cplusplus.com/reference/algorithm/lower_bound/
 */

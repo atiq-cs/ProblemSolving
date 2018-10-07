@@ -5,8 +5,8 @@
     rray-The-index-where-the-sum-of-the-elements-to-the-left-it-is-the-same-as-the-sum-of-the-e-QTN_245781.htm
 *  Problem Type:  Tree, Data Structure
 *  Alogirthm  :
-*  Author    :  Atiqur Rahman
-*  Email    :  mdarahman@cs.stonybrook.edu
+*  Author    :  Atiq Rahman
+*  Email    :  atiqcs 'at' outlook 'dot' com
 *  Date    :  June 03, 2015
 *  Desc    :
 *

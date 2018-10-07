@@ -3,8 +3,8 @@
 *  Problem Link:  No problem solved using this algo yet
 *  Problem Type:  Graph Thoery
 *  Alogirthm  :
-*  Author    :  Atiqur Rahman
-*  Email    :  mdarahman@cs.stonybrook.edu
+*  Author    :  Atiq Rahman
+*  Email    :  atiqcs 'at' outlook 'dot' com
 *  Date    :  May 31, 2015
 *  Desc    :
 *          BFS ref: Introduction to Algorithms, page 595,

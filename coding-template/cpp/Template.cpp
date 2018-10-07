@@ -3,7 +3,7 @@
 *  Problem Link:  https://www.hackerrank.com/challenges/problem-title
 *  Problem Type:  from Data Structure, Algorithm etc..
 *  Alogirthm  :
-*  Author    :  Atiqur Rahman
+*  Author    :  Atiq Rahman
 *  Email    :  
 *  Date    :  , 2015
 *  Desc    :

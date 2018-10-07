@@ -5,7 +5,7 @@
 *    Date       :   December 25, 2014*
 *    Algorithm:        
 
-*    Author     :   Atiqur Rahman
+*    Author     :   Atiq Rahman
 *    Notes      :   Naive Solution
 *                   This source includes a cpp template modification example
 *                   To handle IO error for non-existent files

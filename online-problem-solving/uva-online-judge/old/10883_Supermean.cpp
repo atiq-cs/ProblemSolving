@@ -6,7 +6,7 @@
 *    Algorithm:        combinatories, handling big numbers, logarithm etc
 *    Special Case:      A lot of special cases..
 *    Judge Status:      Accepted
-*    Author:          Atiqur Rahman
+*    Author:          Atiq Rahman
 *******************************************************/
 #include <cstdio>
 #include <cmath>
