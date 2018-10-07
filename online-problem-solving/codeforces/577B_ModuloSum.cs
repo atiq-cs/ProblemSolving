@@ -4,7 +4,7 @@
 * Contst: Codeforces Round #290 (Div. 2)
 * Date  : 2018-05-18
 * Author: Atiq Rahman
-* Comp  : O(V+E), where #V = 26
+* Comp  : O(N * 2^n)
 * Status: TLE
 * Notes : Hints here: http://codeforces.com/blog/entry/20226
 * meta  : tag-dp

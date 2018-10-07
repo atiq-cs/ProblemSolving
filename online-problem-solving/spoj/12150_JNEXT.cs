@@ -1,7 +1,7 @@
 /***************************************************************************
 * Title : Just Next !!!
 * URL   : http://www.spoj.com/problems/JNEXT
-* Date  : Oct 25, 2015
+* Date  : 2015-10-25
 *
 * Author: Atiq Rahman
 * Status: Accepted

@@ -15,6 +15,9 @@
 *   Contest Editorial: http://codeforces.com/blog/entry/8274 provides
 *    hints on two approaches: O(n^3) and O(n)
 *   Unbeknownst to me, I have implemented the second appraoch.
+*   
+*   Also appeared in JS meetup in 2018, Q1
+*    https://www.careercup.com/question?id=6262507668766720
 * rel   : https://leetcode.com/problems/insert-interval
 * meta  : tag-dp
 ***************************************************************************/
