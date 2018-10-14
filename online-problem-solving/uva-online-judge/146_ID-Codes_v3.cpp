@@ -6,11 +6,11 @@
 * Author: Atiq Rahman
 * Comp  :  O(n)
 * Status: Accepted
-* Notes : C++ version of general-solving/leetcode/031_next-permutation.cs
+* Notes : C++ version of 'general-solving/leetcode/0031_next-permutation.cs'
 *          considering following cases
 *          - inputs are chars instead of integer
 *          - otherwise problem is similar to spoj problem
-* meta  : tag-next-permutation
+* meta  : tag-next-permutation, tag-permutation, tag-UVA-Judge
 ***************************************************************************/
 
 #include<iostream>

@@ -2,12 +2,12 @@
     Problem Link :  https://uva.onlinejudge.org/external/1/146.html
     Problem Name :  ID Codes
     Algorithm    :  Next permutation
-    Notes        :  This is the nasty C implementation by me, preserved for historical significance,
-                    might be useful if you are looking for efficient C implementation
+    Notes        :  *** This is the nasty C implementation! Avoid this one!
+        Preserved for historical significance, might be useful if you are looking for efficient C implementation
 
     Complexity   :  O(n)
     Status       :  Accepted
-    meta         :  tag-next-permutation
+    meta         :  tag-next-permutation, tag-permutation, tag-UVA-Judge
 */
 
 #include<iostream>

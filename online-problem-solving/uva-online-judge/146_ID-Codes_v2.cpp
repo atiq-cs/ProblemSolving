@@ -8,7 +8,7 @@
     Complexity   :  O(n log n)
     Status       :  Accepted
     Desc         :  Complexity is n log n considering a sort used in the procedure
-    tag          :  tag-next-permutation
+    tag          :  tag-next-permutation, tag-permutation, tag-UVA-Judge
 */
 
 #include<iostream>
