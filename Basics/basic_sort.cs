@@ -1,7 +1,7 @@
 /*
  * Problem   : Sorting Algorithms
  * Author    : Atiq Rahman
- * Date      : Sept 23, 2015
+ * Date      : Sep 23, 2015
  * Desc      : Algos covered,
  *              Selection sort
  *              Bubble sort

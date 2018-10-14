@@ -76,8 +76,8 @@ Mental sketch:
   [2,3,1,3,3]
   [2,1,2,2,2,2,2,1]
   
- More draft from previous note,
- 5431876
+More draft from previous note,
+5431876
 
 5436871
 5436178
@@ -134,12 +134,12 @@ Analyzing the permutation problem
 3, 1, 2
 3, 2, 1
 
-// analyzing next permutation
+analyzing next permutation,
 1, 2, 3, 4
 
-// iterate from reverse direction and find the first one that is smaller than next one
+iterate from reverse direction and find the first one that is smaller than next one
 consider example, 4 3 2 1
-// if length becomes 0, reverse the string
-// example results
-1, 2, 3, 4
+ if length becomes 0, reverse the string
+ example results
+ 1, 2, 3, 4
 */

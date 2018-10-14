@@ -2,11 +2,10 @@
 * Title : Just Next !!!
 * URL   : http://www.spoj.com/problems/JNEXT
 * Date  : 2015-10-25
-*
 * Author: Atiq Rahman
 * Status: Accepted
-* Notes : same as general-solving/leetcode/031_next-permutation.cs
-*         Was getting time limit exceeded
+* Notes : Same as 'general-solving/leetcode/0031_next-permutation.cs'
+*         Was getting time limit exceeded. Improving IO this got Accepted.
 *         Replacing the foreach Console.Write of each num with
 *         Console.WriteLine(string.Join("", nums)); reduced runtime and got accepted
 *         Bad gmcs of spoj I guess
@@ -14,12 +13,11 @@
 *         - if there is no next permutation return -1
 *         - no need to cycle back to starting perm i.e., 54321 to 12345
 *         - inputs are probably simple
-* meta  : tag-next-permutation
+* meta  : tag-next-permutation, tag-judge-SPOJ
 ***************************************************************************/
 using System;
 
-public class Test {
-  // Basically the same function from general-solving/leetcode/031_next-permutation.cs
+public class SPOJSolution {
   static int NextPermutation(int[] nums) {
     // iterate in reverse, find the index before which item is less
     int i = nums.Length - 1;

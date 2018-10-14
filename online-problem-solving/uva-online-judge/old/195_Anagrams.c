@@ -1,9 +1,14 @@
-/*******************************************************************************************************************
-  Problem Name:  Anagrams
-  Judge Status:  Accepted
-  Solution Des:  found out the next permutation manually and solved.
-      Also it can be done using STL next permutation
-*******************************************************************************************************************/
+/***************************************************************************
+* Title : Anagrams
+* URL   : https://uva.onlinejudge.org/external/1/195.pdf
+* Date  :
+* Author: Atiq Rahman
+* Comp  :  O()
+* Status: Accepted
+* Notes : found out the next permutation manually and solved.
+*     Also it can be done using STL next permutation
+* meta  : tag-next-permutation, tag-permutation, tag-UVA-Judge
+***************************************************************************/
 #include<iostream>
 #include<algorithm>
 using namespace std;

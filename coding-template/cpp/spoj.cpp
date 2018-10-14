@@ -8,12 +8,11 @@
 * Notes : This version used to try http://www.spoj.com/PUJ2013/problems/NEXT/
 *   However, judge seems to have issues for problems in that section
 *   Throws an error when I submit.
-* meta  : tag-xxx
+* meta  : tag-xxx, tag-judge-SPOJ
 ***************************************************************************/
-
 #include <iostream>
 
-class Permutation {
+class Solution {
 public:
   void Run () {
     int T;
@@ -24,7 +23,7 @@ public:
       std::string str;
       std::cin >> seq >> str;
 
-      if (NextPermutation(str))
+      if (doSomething(str))
         std::cout << seq << " " << str << std::endl;
       else
         std::cout << seq << " BIGGEST" << std::endl;
@@ -32,13 +31,13 @@ public:
   }
   
 private:
-  bool NextPermutation(std::string& nums) {
-    // func from 'uva-online-judge/146_ID_Codes_v03.cpp'
+  bool doSomething(std::string& nums) {
+    // code..
   }
 };
 
 int main() {
-  Permutation demo;
+  Solution demo;
   demo.Run();
   return 0;
 }

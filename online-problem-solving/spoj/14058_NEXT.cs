@@ -2,19 +2,18 @@
 * Title : NEXT - The Next Permutation
 * URL   : http://www.spoj.com/PUJ2013/problems/NEXT/
 * Date  : 02-15-2018
-*
 * Author: Atiq Rahman
 * Status: C# not supported
 * Notes : version tried with judge 'coding-template/cpp/spoj.cpp'
 *   slightly efficient version working with string/chars
 *   replaced Swap with an utility function
 *   pretty much same to 'uva-online-judge/146_ID_Codes_v03.cpp'
-* meta  : tag-next-permutation
+* meta  : tag-next-permutation, tag-judge-SPOJ
 ***************************************************************************/
 using System;
 
-public class Test {
-  // Basically the same function from general-solving/leetcode/031_next-permutation.cs
+public class SPOJSolution {
+  // Basically the same function from general-solving/leetcode/0031_next-permutation.cs
   private static bool NextPermutation(char[] nums) {
     // iterate in reverse, find the index before which item is less
     int i = nums.Length - 1;
@@ -35,6 +34,7 @@ public class Test {
     return true;
   }
 
+  // Util swap instead..
   private static void Swap(char[] nums, int i, int j) {
     char temp = nums[i];
     nums[i] = nums[j];

@@ -8,7 +8,7 @@
 
                 C++ next permutation solution appended at the end of this file as well
 * Status      : Accepted
-* meta        : tag-permutation
+* meta        : tag-permutation, tag-lintcode-medium
 ***************************************************************************/
 
 class Solution {
@@ -16,13 +16,13 @@ private:
     vector<vector<int>> perm_array;
 
     void permute(vector<int> &nums, int index) {
+        // handle wrong index
+        if (index >= nums.size())
+            return;
         if (index == nums.size() - 1) {
             perm_array.push_back(nums);
             return;
         }
-        // handle wrong index
-        if (index >= nums.size())
-            return;
 
         permute(nums, index + 1);
         for (int i = index + 1; i < nums.size(); i++) {
@@ -45,10 +45,7 @@ public:
     }
 };
 
-/*
-* This problem can be solved
-* using C++ next_permutation as well
-*/
+// Can be solved using C++ next_permutation as well
 class Solution {
 public:
     vector<vector<int> > permute(vector<int> nums) {

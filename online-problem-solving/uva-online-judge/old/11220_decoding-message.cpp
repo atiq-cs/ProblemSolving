@@ -1,10 +1,18 @@
-// Ac
+/***************************************************************************
+* Title : Decoding The message
+* URL   : https://uva.onlinejudge.org/external/112/11220.pdf
+* Date  :
+* Author: Atiq Rahman
+* Comp  : O()
+* Status: Accepted
+* Notes : Uses strtok and basic string operations in C
+* meta  : tag-string, tag-UVA-Judge
+***************************************************************************/
 
 #include<stdio.h> 
 #include<string.h> 
 
-int main(void) 
-{ 
+int main()  { 
    char string[3000]; 
    char string1[110][50]; 
    char *p; 
@@ -47,8 +55,7 @@ int main(void)
       if(c) printf("\n"); c=1;
     printf("Case #%d:\n",res++); 
       for(l=0;l<j;l++)  printf("%s\n",string1[l]); 
-      //printf("\n"); 
    } 
-//fclose(stdin);
+  //fclose(stdin);
    return 0; 
 } 
