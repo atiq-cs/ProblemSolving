@@ -10,7 +10,7 @@
 * Notes : 'DP[i] = true' means that we could form the string using provided
 *   word list till index i.
 *   Hence, DP[0] is naturally true.
-*   TODO: TRIE solution
+*   TODO, TRIE solution
 * meta  : tag-leetcode-medium, tag-dp, tag-company-facebook
 ***************************************************************************/
 public class Solution {

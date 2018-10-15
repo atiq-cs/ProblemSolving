@@ -1,4 +1,4 @@
-/***************************************************************************
+/***************************************************************************************************
 * Title : 3Sum
 * URL   : https://leetcode.com/problems/3sum
 * Date  : 2018-03
@@ -19,12 +19,12 @@
 *   takes around O(N * N * lg N) using hash table on the unsorted data.
 *   However, this sliding window approach for this problem is better than that.
 *
-*   ref: https://leetcode.com/problems/3sum/discuss/7380/Concise-O(N2)-Java-
-*     solution (an easy to understand solution kinda similar thinking as mine
-*     for this problem)
-* meta  : tag-line-sweep, tag-leetcode-medium
-***************************************************************************/
-public class Solution {
+* ref   : https://leetcode.com/problems/3sum/discuss/7380/Concise-O(N2)-Java-solution (an easy to
+*  understand solution kinda similar thinking as mine for this problem)
+* meta  : tag-line-sweep, tag-two-pointers, tag-leetcode-medium
+***************************************************************************************************/
+public class Solution
+{
   public IList<IList<int>> ThreeSum(int[] nums) {
     IList<IList<int>> result = new List<IList<int>>();
     Array.Sort(nums);

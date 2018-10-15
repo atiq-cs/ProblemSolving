@@ -12,11 +12,11 @@ public class Solution {
   public string LongestCommonPrefix(string[] strs) {
     if (strs.Length == 0)
       return "";
-    int j=0;
-    for (; j<strs[0].Length; j++) {
+    int j = 0;
+    for (; j < strs[0].Length; j++) {
       char ch = strs[0][j];
-      int i=1;
-      for (; i<strs.Length; i++) {
+      int i = 1;
+      for (; i < strs.Length; i++) {
         if (j >= strs[i].Length || strs[i][j] != ch)
           break;
       }

@@ -6,19 +6,19 @@
 * Comp  : O(N), O(1)
 * Status: Accepted
 * Notes :
-* Rel   : 'leetcode/0098_validate-binary-search-tree.cs'
+* rel   : 'leetcode/0098_validate-binary-search-tree.cs'
 * meta  : tag-leetcode-easy, tag-binary-tree, tag-recursion, tag-inorder
 ***************************************************************************/
 public class Solution {
   private int minDiff = int.MaxValue;
   TreeNode prev = null;
-  
+
   public int MinDiffInBST(TreeNode root) {
     if (root == null) return minDiff;
     MinDiffInBST(root.left);
 
     if (prev != null)
-      minDiff = Math.Min(minDiff, root.val-prev.val);
+      minDiff = Math.Min(minDiff, root.val - prev.val);
 
     prev = root;
     MinDiffInBST(root.right);

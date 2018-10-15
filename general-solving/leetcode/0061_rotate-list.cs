@@ -19,7 +19,7 @@
 *   when k>=n
 *   i becomes i + (k%n) 
 *   
-*   2 pointers: 1 pointer to the destination and 1 to source
+*   2 pointers, 1 pointer to the destination and 1 to source
 
 *   source starts from head
 *   destination starts from head + k%n

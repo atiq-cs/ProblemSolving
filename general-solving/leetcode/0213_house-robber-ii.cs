@@ -1,11 +1,11 @@
-/***************************************************************************
-* Problem Name: House Robber II
-* Problem URL : https://leetcode.com/problems/house-robber-ii
-* Date        : Sept 18 2017
-* Complexity  : O(n) Time, O(n) space
-* Author      : Atiq Rahman
-* Status      : Accepted
-* Notes       : Same to previous problem with a new arranement as stated,
+/***************************************************************************************************
+* Title : House Robber II
+* URL   : https://leetcode.com/problems/house-robber-ii
+* Date  : 2017-09-18
+* Comp  : O(n) Time, O(n) space
+* Author: Atiq Rahman
+* Status: Accepted
+* Notes : Same to previous problem with a new arranement as stated,
 *   "all houses at this place are arranged in a circle"
 *   
 *   Due to this arrangement,
@@ -13,9 +13,8 @@
 *   Similarly, the solution that includes last house cannot include first
 *   house. Taking care of collision between first and last one solves the
 *   problem.
-* meta        : tag-dynamic-programming
-***************************************************************************/
-
+* meta  : tag-dp, tag-leetcode-medium
+***************************************************************************************************/
 public class Solution {
   public int Rob(int[] nums) {
     if (nums.Length == 0)

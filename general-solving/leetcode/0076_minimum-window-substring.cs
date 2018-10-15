@@ -10,7 +10,7 @@
 *   All chars here does not mean the set but all count should be present
 *   
 *   Problem is assuming that we cover all chars from given pattern/needle
-*   string: consider a frequency dictionary than char set
+*   string- consider a frequency dictionary than char set
 *   
 * ref   : HashSet ctor ref: https://docs.microsoft.com/en-US/dotnet/api/
 *   system.collections.generic.hashset-1.-ctor (not used in final solution

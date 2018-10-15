@@ -1,17 +1,15 @@
-/***************************************************************************
-* Problem Name: Add Two Numbers
-* Problem URL : https://leetcode.com/problems/add-two-numbers
-* Date        : 2015-01-11
-* Complexity  : O(n+m) Time and Space; constant space if we are provided with
-*   n+m space for result
-* Author      : Atiq Rahman
-* Status      : Accepted
-* Notes       : A mistake was not to add following line
-*                 r = r.next;
-*               Inspirted by leetcode forum discussion
-*               beats 67.88%
-* meta        : tag-linked-list
-***************************************************************************/
+/***************************************************************************************************
+* Title : Add Two Numbers
+* URL   : https://leetcode.com/problems/add-two-numbers
+* Date  : 2015-01-11
+* Comp  : O(n+m) Time and Space; constant space if we are provided with n+m space for result
+* Author: Atiq Rahman
+* Status: Accepted
+* Notes : A mistake was not to add following line,
+*   r = r.next;
+*   Inspirted by leetcode forum discussion
+* meta  : tag-linked-list
+***************************************************************************************************/
 public class Solution {
   public ListNode AddTwoNumbers(ListNode l1, ListNode l2) {
     ListNode rHead=null, r=null;

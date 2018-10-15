@@ -1,26 +1,22 @@
-/***************************************************************************
+/***************************************************************************************************
 * Title : Divide Two Integers
 * URL   : https://leetcode.com/problems/divide-two-integers
-* Date  : 2018-08 (update)
+* Date  : 2018-08-01 (update)
 * Author: Atiq Rahman
 * Comp  : O(n)
 * Status: TLE
-* Notes :
-*  ToDo: an optimized implementation
+* Notes : 
+*   Second version: turns out to be complicated as well reinvented the first verion's algo actually
+*   it's basically Grade School Division for Binary Numbers figured out some worst case examples,
+*  when input n = int.MaxValue, complexity is O(N). Hence, TLE.
+* ToDo- an optimized implementation
+* ref   : Implement division with bit-wise operator
+*  https://stackoverflow.com/q/5284898
+*  https://web.stanford.edu/class/ee486/doc/chap5.pdf section 5.1.2
 * meta  : tag-leetcode-medium, tag-math, tag-binary-search
-***************************************************************************/
+***************************************************************************************************/
 public class Solution {
-  /* Second version: turns out to be complicated as well
-   * reinvented the first verion's algo actually
-   * it's basically Grade School Division for Binary Numbers
-   * figured out some worst case examples,
-   *  when input n = int.MaxValue
-   *  complexity is O(N). Hence, TLE.
-   * ref: Implement division with bit-wise operator
-   *  https://stackoverflow.com/q/5284898
-   *  https://web.stanford.edu/class/ee486/doc/chap5.pdf section 5.1.2
-   *  
-   */
+  // Second version
   public int Divide(int dividend, int divisor) {
     if (divisor==1 || divisor==-1)
       return divisor==1?dividend : dividend==int.MinValue?int.MaxValue:-dividend;

@@ -1,14 +1,14 @@
-/***************************************************************************
-* Problem Name: Roman to Integer
-* Problem URL : https://leetcode.com/problems/roman-to-integer/
-* Date        : 2017-08-23
-* Complexity  : O(n), O(1)
-* Author      : Atiq Rahman
-* Status      : Accepted
-* Notes       : Easy implementation problem, ref:
-*   http://www.rapidtables.com/convert/number/how-number-to-roman-numerals.htm
-* meta        : tag-leetcode-easy, tag-implementation
-***************************************************************************/
+/***************************************************************************************************
+* Title : Roman to Integer
+* URL   : https://leetcode.com/problems/roman-to-integer/
+* Date  : 2017-08-23
+* Comp  : O(n), O(1)
+* Author: Atiq Rahman
+* Status: Accepted
+* Notes : Easy implementation problem
+* ref   : http://www.rapidtables.com/convert/number/how-number-to-roman-numerals.htm
+* meta  : tag-leetcode-easy, tag-implementation
+***************************************************************************************************/
 using System;
 using System.Collections.Generic;
 

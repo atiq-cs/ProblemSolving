@@ -1,7 +1,7 @@
 /***************************************************************************
 * Title : Binary Search Tree Iterator
 * URL   : https://leetcode.com/problems/binary-search-tree-iterator
-* Occas : InnoWorld Meetup 05-13
+* Occasn: InnoWorld Meetup 05-13
 * Date  : 2018-05-15
 * Author: Atiq Rahman
 * Comp  : O(lg N) worst case time complexity, amortized time complexity should

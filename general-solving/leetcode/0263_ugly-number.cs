@@ -1,14 +1,15 @@
-/***************************************************************************
-*   Problem Name:  Ugly Number
-*   Problem URL :  https://leetcode.com/problems/ugly-number/
-*   Date        :  Aug 20, 2015
-*   Complexity  :  O(n)
-*   Author      :  Atiq Rahman
-*   Status      :  Accepted
-*   Notes       :  Check if given number is ugly number
-*   meta        :  tag-easy
-***************************************************************************/
-public class Solution {
+/***************************************************************************************************
+* Title : Ugly Number
+* URL   : https://leetcode.com/problems/ugly-number/
+* Date  : 2015-08-20
+* Comp  : O(n)
+* Author: Atiq Rahman
+* Status: Accepted
+* Notes : Check if given number is ugly number
+* meta  : tag-math, tag-dp, tag-leetcode-easy
+***************************************************************************************************/
+public class Solution
+{
   public bool IsUgly(int num) {
     if (num == 0)
       return false;

@@ -1,11 +1,11 @@
-/***************************************************************************
-* Problem Name: Excel Sheet Column Number
-* Problem URL : https://leetcode.com/problems/excel-sheet-column-number/
-* Date        : Oct 7 2015
-* Complexity  : O(n) Time and constant space
-* Author      : Atiq Rahman
-* Status      : Accepted
-* Notes       : The problem kinda maps to base 26 conversion problem.
+/***************************************************************************************************
+* Title : Excel Sheet Column Number
+* URL   : https://leetcode.com/problems/excel-sheet-column-number/
+* Date  : 2015-10-07
+* Comp  : O(n), O(1)
+* Author: Atiq Rahman
+* Status: Accepted
+* Notes : The problem kinda maps to base 26 conversion problem.
 *   Comparing with base 10, this looks like,
 *   9 -> 26
 *   10 -> 27
@@ -13,9 +13,10 @@
 *   1000 -> 26 ^ 3 + 1
 *   Where for base on the right side numbers are 0 to 9
 *   for this one it's from 1 to 26 instead of 0 to 25.
-* meta        : tag-leetcode-easy, tag-math
-***************************************************************************/
-public class Solution {
+* meta  : tag-math, tag-leetcode-easy
+***************************************************************************************************/
+public class Solution
+{
   public int TitleToNumber(string s) {
     int sum = 0;
     foreach (char ch in s)

@@ -6,7 +6,7 @@
 * Comp  : O(N); O(1), O(N) in stack
 * Status: Accepted
 * Notes : We discuss here both of recursive and iterative solutions
-*   Concept: Recursive
+*   Recursive Concept,
 *   uses the idea that all the nodes of the linked list are pushed into heap
 *   during recursive calls. So when we are return from those calls we utilize
 *   store nodes to change the link each time. This changes linked list's head's
@@ -22,7 +22,7 @@
 *   Code updated on occassion Den meetup 2018-04-21
 *   Based on 'ds/linked-list/reverse-linked-list-demo.cpp'
 *   
-*   Concept: iterative
+*   Iterative Concept,
 *   Iteratively traverse the linked list and keeps reversing the next pointers
 *   consider when changing the next pointer the next chain is lost, so use a
 *   temporary variable to keep previous node before losing chain.

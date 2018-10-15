@@ -15,10 +15,10 @@
 *   i is end of current Window.
 *   startIndex is start of current Window.
 *   
-*   Follow up: would it work if asked to find this for equal to target sum.
+*   Follow up, would it work if asked to find this for equal to target sum?
 *
 *   Calling it sliding windows approach; not clear about the pattern 'sweeping'
-*   algorithm (C.L.R.S 3 ed, p1021) follows yet.
+*   algorithm (C.L.R.S 3rd ed, p#1021) follows yet.
 * rel   : geeksforgeeks.org/minimum-length-subarray-sum-greater-given-value
 * ref   : http://www.geeksforgeeks.org/find-subarray-with-given-sum
 * meta  : tag-sliding-window, tag-leetcode-medium

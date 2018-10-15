@@ -1,18 +1,20 @@
-/***************************************************************************
-* Problem Name: Flatten Nested List Iterator
-* Problem URL : https://leetcode.com/problems/flatten-nested-list-iterator
-* Date        : Feb 4 2017
-* Complexity  : O(n) Time
-* Author      : Atiq Rahman
-* Status      : Accepted
-* Notes       : All we have to do is properly use the interface provided
+/***************************************************************************************************
+* Title : Flatten Nested List Iterator
+* URL   : https://leetcode.com/problems/flatten-nested-list-iterator
+* Date  : 2017-02-04
+* Comp  : O(n) Time
+* Author: Atiq Rahman
+* Status: Accepted
+* Notes : All we have to do is properly use the interface provided
 *   Not a binary tree related problem at all;
 *    for example, "Flatten Binary Tree to Linked List"
-* meta        : tag-easy, tag-data-structure
-***************************************************************************/
-public class NestedIterator {
+* meta  : tag-stack, tag-data-structure, tag-leetcode-medium
+***************************************************************************************************/
+public class NestedIterator
+{
   List<int> fNumList;
   int index = 0;
+
   public NestedIterator(IList<NestedInteger> nestedList) {
     fNumList = new List<int>();
     FlattenRec(nestedList);

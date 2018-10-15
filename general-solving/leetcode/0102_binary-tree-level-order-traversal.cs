@@ -1,15 +1,15 @@
-/***************************************************************************
-* Problem Name: Binary Tree Level Order Traversal
-* Problem URL : https://leetcode.com/problems/binary-tree-level-order-traversal/
-* Date        : 2015-01-05
-* Complexity  : O(n), O(lg N) Stack
-* Author      : Atiq Rahman
-* Status      : Accepted (405ms)
-* Notes       : O(lg N) Stack Space if balanced binary tree
+/***************************************************************************************************
+* Title : Binary Tree Level Order Traversal
+* URL   : https://leetcode.com/problems/binary-tree-level-order-traversal/
+* Date  : 2015-01-05
+* Comp  : O(n), O(lg N) Stack
+* Author: Atiq Rahman
+* Status: Accepted (405ms)
+* Notes : O(lg N) Stack Space if balanced binary tree
 *   Based on previous cpp solution
-* Rel         : 'leetcode 107 Binary Tree Level Order Traversal II'
-* meta        : tag-binary-tree, tag-bfs
-***************************************************************************/
+* rel   : 'leetcode 107 Binary Tree Level Order Traversal II'
+* meta  : tag-binary-tree, tag-bfs
+***************************************************************************************************/
 public class Solution {
   IList<IList<int>> levelList = new List<IList<int>>();
 

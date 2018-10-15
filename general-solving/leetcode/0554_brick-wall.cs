@@ -11,9 +11,9 @@
 public class Solution {
   public int LeastBricks(IList<IList<int>> wall) {
     Dictionary<int, int> brickDict = new Dictionary<int, int>();
-    foreach(IList<int> Bricks in wall) {
+    foreach (IList<int> Bricks in wall) {
       int sum = 0;
-      for(int i=0; i<Bricks.Count-1; i++) {
+      for (int i = 0; i < Bricks.Count - 1; i++) {
         sum += Bricks[i];
         if (brickDict.ContainsKey(sum))
           brickDict[sum]++;

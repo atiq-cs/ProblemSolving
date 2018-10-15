@@ -9,8 +9,8 @@
 *   We cannot take 0 as minimum height for those left/right sides, to ignore
 *   those we use Math.Max
 *
-* Rel   : http://www.lintcode.com/en/problem/minimum-depth-of-binary-tree/
-* meta  : tag-binary-tree, tag-recursion
+* rel   : http://www.lintcode.com/en/problem/minimum-depth-of-binary-tree/
+* meta  : tag-binary-tree, tag-recursion, tag-dfs, tag-bfs, tag-leetcode-easy
 ***************************************************************************/
 public class Solution {
   public int MinDepth(TreeNode root)

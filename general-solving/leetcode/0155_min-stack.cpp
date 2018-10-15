@@ -1,14 +1,14 @@
-/***************************************************************************
-* Problem Name: Min Stack
-* Problem URL : https://leetcode.com/problems/min-stack/
-* Date        : Jan 5 2015
-* Complexity  : 
-* Author      : Atiq Rahman
-* Status      : Accepted
-* Notes       : Design a stack that supports push, pop, top, and retrieving
-*                the minimum element in constant time.
-* meta        : tag-data-structure, tag-stack
-***************************************************************************/
+/***************************************************************************************************
+* Title : Min Stack
+* URL   : https://leetcode.com/problems/min-stack/
+* Date  : 2015-01-05
+* Comp  : 
+* Author: Atiq Rahman
+* Status: Accepted
+* Notes : Design a stack that supports push, pop, top, and retrieving
+*   the minimum element in constant time.
+* meta  : tag-data-structure, tag-stack, tag-leetcode-easy
+***************************************************************************************************/
 #include <stack>
 
 class MinStack {

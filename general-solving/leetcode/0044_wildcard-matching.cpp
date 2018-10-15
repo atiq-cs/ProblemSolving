@@ -1,7 +1,7 @@
-/***************************************************************************
+/***************************************************************************************************
 * Title : Wildcard Matching
 * URL   : https://leetcode.com/problems/wildcard-matching
-* Date  : 2018-01
+* Date  : 2018-01-01
 * Author: Atiq Rahman
 * Comp  : O(..) [ToDo]
 * Status: Partially Solved
@@ -10,7 +10,7 @@
 *   to understand, self-explanatory code.
 *
 * meta  : tag-string, tag-regex, tag-cruise-automation, tag-interview
-***************************************************************************/
+***************************************************************************************************/
 class Solution {
 public:
   /* TODO: when fails to match have to try other aspects by which it can match
@@ -53,31 +53,30 @@ public:
 };
 
 /*
-  // part of original solution
+// part of original solution
 
-  bool match(std::string str, std::string wild);
+bool match(std::string str, std::string wild);
 
-  int main() {
-    bool ret;
-    // "dab" "d*a*b"
-    ret = match("", "d*a"); // true
-    printf("empty string match with d*a is %d\n", (int)ret);
-    ret = match("daaba", "d*a*b"); // true
-    printf("daba match with d*a*b is %d\n", (int)ret);
-    ret = match("data", "d*a*b*c*ecf"); // true
-    printf("data match with d*a*b*c*ecf is %d\n", (int)ret);
-    ret = match("daabbcceecf", "d*a*b*c*ecf"); // true
-    printf("daabbcceecf match with d*a*b*c*ecf is %d\n", (int)ret);
-    ret = match("daabbcceecff", "d*a*b*c*ecf"); // true
-    printf("daabbcceecf match with d*a*b*c*ecf is %d\n", (int)ret);
-    ret = match("data", "d*a"); // true
-    printf("data match with d*a is %d\n", (int)ret);
-    ret = match("date", "d*a"); // false
-    printf("date match with d*a is %d\n", (int)ret);
-    ret = match("da",   "d*a"); // true
-    printf("da   match with d*a is %d\n", (int)ret);
+int main() {
+  bool ret;
+  // "dab" "d*a*b"
+  ret = match("", "d*a"); // true
+  printf("empty string match with d*a is %d\n", (int)ret);
+  ret = match("daaba", "d*a*b"); // true
+  printf("daba match with d*a*b is %d\n", (int)ret);
+  ret = match("data", "d*a*b*c*ecf"); // true
+  printf("data match with d*a*b*c*ecf is %d\n", (int)ret);
+  ret = match("daabbcceecf", "d*a*b*c*ecf"); // true
+  printf("daabbcceecf match with d*a*b*c*ecf is %d\n", (int)ret);
+  ret = match("daabbcceecff", "d*a*b*c*ecf"); // true
+  printf("daabbcceecf match with d*a*b*c*ecf is %d\n", (int)ret);
+  ret = match("data", "d*a"); // true
+  printf("data match with d*a is %d\n", (int)ret);
+  ret = match("date", "d*a"); // false
+  printf("date match with d*a is %d\n", (int)ret);
+  ret = match("da",   "d*a"); // true
+  printf("da   match with d*a is %d\n", (int)ret);
 
-    return 0;
-  }
-
+  return 0;
+}
 */

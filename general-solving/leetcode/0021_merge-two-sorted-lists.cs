@@ -1,27 +1,27 @@
-/***************************************************************************
+/***************************************************************************************************
 * Title : Merge Two Sorted Lists
 * URL   : https://leetcode.com/problems/merge-two-sorted-lists
-* Date  : 2018-06-09 (update)
+* Date  : 2018-06-09 update)
 * Author: Atiq Rahman
 * Comp  : O(N+M), O(1)
 * Status: Accepted
 * Notes : Doesn't use additional space; modifies original linked list
-*   Carefully consider cases where a pointer to one of the lists might become
-*   null. First one breaks down to,
+*   Carefully consider cases where a pointer to one of the lists might become null. First one
+*   breaks down to,
 *   
 *   handling null cases
 *   if l1 or l2 null then,
 *   
 *   if (l1 == null)
-*     head = l2;
+*   head = l2;
 *   
 *   if (l2 == null)
-*     head = l1;
+*   head = l1;
 *   
-*   method#2: create new List copying values from source Lists. Space
-*   complexity would increase to O(N+M)
-* meta  : tag-linked-list, tag-data-structure, tag-two-pointers
-***************************************************************************/
+*   method#2- create new List copying values from source Lists. Space complexity would increase to
+*   O(N+M)
+* meta  : tag-linked-list, tag-two-pointers, tag-leetcode-easy
+***************************************************************************************************/
 public class Solution {
   // Occasion: meetup at DEN 2018-06-09
   // Simplified my code

@@ -1,29 +1,29 @@
-/***************************************************************************
-* Title       : Longest Increasing Subsequence
-* URL         : https://leetcode.com/problems/longest-increasing-subsequence/
-* Date        : Oct 9, 2017
-* Complexity  : O(n lg n)
-* Author      : Atiq Rahman
-* Status      : Accepted
-* Notes       : For this problem result subsequence is in increasing order.
+/***************************************************************************************************
+* Title : Longest Increasing Subsequence
+* URL   : https://leetcode.com/problems/longest-increasing-subsequence/
+* Date  : 2017-10-09
+* Comp  : O(n lg n)
+* Author: Atiq Rahman
+* Status: Accepted
+* Notes : For this problem result subsequence is in increasing order.
 *   Equal numbers are not considered part of the subsequence.
 *   
 *   When sorting order of numbers in subsequence is different, in two places
 *   we need to update comparison operator:
 *   - line 50 (compare lis[j] with current item from Array A)
 *   - line 83 (Binary Search compares with item on index mid)
-*    
-* Ref         : 1. CLR p397: Ex-15.4-6
+*   
+* ref   : 1. C.L.R.S 3rd ed p#397: Ex-15.4-6
 *   Maintain candidate subsequence by linking them through the input sequence
 *   2. https://wcipeg.com/wiki/Longest_increasing_subsequence
 *   3. https://gist.github.com/atiq-cs/4b7910712c87e51dc2357f3450ab037d
 *
-* Related     : uva / 231_TestingTheCatcher_lis_algo2_v*
-* Credits     : Jane Alam Jan, MAK
-* meta        : tag-lis, tag-dyanmic-programming
-***************************************************************************/
-
-public class Solution {
+* rel   : uva / 231_TestingTheCatcher_lis_algo2_v*
+* Ack   : Jane Alam Jan, MAK
+* meta  : tag-lis, tag-dp, 
+***************************************************************************************************/
+public class Solution
+{
   List<int> lis;
   int n;
 
@@ -86,7 +86,6 @@ public class Solution {
       return BSearch(item, start, mid - 1);
   }
 }
-
 
 /*
 Good Input,

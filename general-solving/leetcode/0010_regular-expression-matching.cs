@@ -10,15 +10,15 @@
 *   Index mapping: dp[1][1] maps to index of str at 0 and index of pattern at 0
 *   youtube video adds X in the beginning of string and pattern which is not
 *   required if initialization is done properly for *
-*   ref video: https://www.youtube.com/watch?v=l3hda49XcDE
-*   Example in the video: a*b.c and aabyc
+* ref video: https://www.youtube.com/watch?v=l3hda49XcDE
+*  Example in the video: a*b.c and aabyc
 *   
-*   ref for initialization part: https://leetcode.com/problems/regular-
+*  ref for initialization part: https://leetcode.com/problems/regular-
 *    expression-matching/discuss/5651/Easy-DP-Java-Solution-with-detailed-
 *    Explanation
 *    
 *   https://leetcode.com/articles/regular-expression-matching/
-* Rel   : https://leetcode.com/problems/wildcard-matching
+* rel   : https://leetcode.com/problems/wildcard-matching
 * meta  : tag-leetcode-hard, tag-string, tag-dp, tag-backtracking, tag-microsoft
 ***************************************************************************/
 public class Solution {

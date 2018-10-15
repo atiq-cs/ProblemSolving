@@ -20,19 +20,19 @@ public class Solution {
     return permList;
   }
 
-  void PermuteRec(int index=0) {
-    if (index == n-1) { // == n would also work
+  void PermuteRec(int index = 0) {
+    if (index == n - 1) { // == n would also work
       permList.Add(new List<int>(numsToPerm));
-      return ;
+      return;
     }
-    
-    for (int i=index; i<n; i++) {
+
+    for (int i = index; i < n; i++) {
       Swap(i, index);
-      PermuteRec(index+1);
+      PermuteRec(index + 1);
       Swap(index, i);
     }
   }
-  
+
   void Swap(int i, int j) {
     // comparison is costly comparing overall time, so avoid
     int temp = numsToPerm[i];

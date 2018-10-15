@@ -39,11 +39,12 @@
 *   
 *   There are a few inputs in the input text file added as well. Variations of
 *   the small input were useful. Large one is added for reference only.
-* Ref   : C.L.R p 298
-* Relat : http://lintcode.com/en/problem/insert-node-in-a-binary-search-tree/
-* meta  : tag-binary-tree, tag-bst, tag-bsearch
+* ref   : C.L.R.S 3rd ed, p#298
+* rel : http://lintcode.com/en/problem/insert-node-in-a-binary-search-tree/
+* meta  : tag-binary-tree, tag-bst, tag-binary-search
 ***************************************************************************/
-public class Solution {
+public class Solution
+{
   public TreeNode DeleteNode(TreeNode root, int key) {
     // find node z which should be deleted
     TreeNode pz = null; // parent of z

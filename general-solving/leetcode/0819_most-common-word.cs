@@ -8,7 +8,8 @@
 * Notes : Solution simulated as it looked like
 * meta  : tag-leetcode-easy, tag-hashtable
 ***************************************************************************/
-public class Solution {
+public class Solution
+{
   public string MostCommonWord(string paragraph, string[] banned) {
     string[] words = paragraph.Split(new char[] {' ', '!', '?', '\'', ',', ';', '.'});
     var bannedSet = new HashSet<string>();

@@ -16,7 +16,7 @@ public class Solution {
 
     var leftLCA = LowestCommonAncestor(root.left, p, q);
     var rightLCA = LowestCommonAncestor(root.right, p, q);
-    return leftLCA == null? rightLCA: rightLCA == null ? leftLCA: root;
+    return leftLCA == null ? rightLCA : rightLCA == null ? leftLCA : root;
     // or we could, return (left_lca != null && right_lca != null) ? root :
     // left_lca == null? right_lca: right_lca;
   }

@@ -7,7 +7,7 @@
 * Status: Accepted
 * Notes : O(N^2) solution added, O(N) solution yet to add
 *   may be check discuss
-*   related: https://leetcode.com/problems/climbing-stairs
+* rel   : https://leetcode.com/problems/climbing-stairs
 * meta  : tag-dp, tag-leetcode-easy
 ***************************************************************************/
 public class Solution {

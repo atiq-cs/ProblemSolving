@@ -10,14 +10,14 @@
 *   Here we got,
 *    k = ssindex[q]
 *
-*   Space comp: Each combination can hold N items hence complexity i
-*   Time comp: The way I was filling up adding one item to previous subset each
+*   Space comp analysis, Each combination can hold N items hence complexity i
+*   Time comp, the way I was filling up adding one item to previous subset each
 *   time.. I thought it's O(1) for each of them.. I totally missed that I am
 *   copying entire old subset to new one before adding. That's where O(N) is
 *   cost every time.
 *
-*  ToDo : implement recursive solution
-* Ack   : Md Abdul Kader (Sreezin) for handling dupicates with i==k
+*   ToDo, implement recursive solution
+* Ack   : Md Abdul Kader (Sreezin) for handling duplicates with i==k
 * meta  : tag-leetcode-medium
 ***************************************************************************/
 public class Solution {

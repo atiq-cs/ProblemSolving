@@ -1,19 +1,19 @@
-/***************************************************************************
-* Problem Name: House Robber
-* Problem URL : https://leetcode.com/problems/house-robber/
-* Date        : Oct 23 2015
-* Complexity  : O(n) Time, O(n) space
-* Author      : Atiq Rahman
-* Status      : Accepted (beat 23%)
-* Notes       : As it is stated
-*   "it will automatically contact the police if two adjacent houses were
-*   broken into on the same night."
+/***************************************************************************************************
+* Title : House Robber
+* URL   : https://leetcode.com/problems/house-robber/
+* Date  : 2015-10-23
+* Comp  : O(n), O(n)
+* Author: Atiq Rahman
+* Status: Accepted
+* Notes : As it is stated
+*   "it will automatically contact the police if two adjacent houses were broken into on the same
+*   night."
 *
-* Take care of this adjacent cases and that makes the solution
-* meta        : tag-dynamic-programming, tag-easy
-***************************************************************************/
-
-public class Solution {
+*   Take care of this adjacent cases and that makes the solution
+* meta  : tag-dp, tag-leetcode-easy
+***************************************************************************************************/
+public class Solution
+{
   public int Rob(int[] nums) {
     int[] maxP = new int[nums.Length];
     if (nums.Length > 0)

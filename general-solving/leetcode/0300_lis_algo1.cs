@@ -1,15 +1,16 @@
-/***************************************************************************
-* Title       : Longest Increasing Subsequence
-* URL         : https://leetcode.com/problems/longest-increasing-subsequence/
-* Date        : 2017-09-18
-* Complexity  : O(n^2)
-* Author      : Atiq Rahman
-* Status      : Accepted
-* Notes       : Based on 'uva-online-judge/231_TestingTheCatcher_lis_algo1.cpp'
-* Ref         : https://wcipeg.com/wiki/Longest_increasing_subsequence
-* meta        : tag-lis, tag-dp
-***************************************************************************/
-public class Solution {
+/***************************************************************************************************
+* Title : Longest Increasing Subsequence
+* URL   : https://leetcode.com/problems/longest-increasing-subsequence/
+* Date  : 2017-09-18
+* Comp  : O(n^2)
+* Author: Atiq Rahman
+* Status: Accepted
+* Notes : Based on 'uva-online-judge/231_TestingTheCatcher_lis_algo1.cpp'
+* ref   : https://wcipeg.com/wiki/Longest_increasing_subsequence
+* meta  : tag-lis, tag-dp
+***************************************************************************************************/
+public class Solution
+{
   /* n^2 version - simple LIS algo */
   public int LengthOfLIS(int[] A) {
     int n = A.Length;

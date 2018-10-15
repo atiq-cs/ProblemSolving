@@ -1,10 +1,10 @@
 /***************************************************************************
 * Title : Container With Most Water
 * URL   : https://leetcode.com/problems/container-with-most-water
-* Occas : JS Meetup Arrays and Strings 2014-08-18
+* Occasn: JS Meetup Arrays and Strings 2014-08-18
 * Date  : 2018-04-18
 * Author: Atiq Rahman
-* Comp  : O(N), Space Constant Time O(1)
+* Comp  : O(N), O(1)
 * Status: Accepted
 * Notes : Sliding window approach (unsorted input data)
 *   Why does it work? Why would not we miss a solution especially when input
@@ -21,12 +21,11 @@
 *   ref: https://leetcode.com/problems/container-with-most-water/discuss/6099/
 *   Yet-another-way-to-see-what-happens-in-the-O(n)-algorithm
 *   
-*   Probably related: 
-*   https://articles.leetcode.com/searching-2d-sorted-matrix-part-ii/
-*
+*   ref: https://articles.leetcode.com/searching-2d-sorted-matrix-part-ii/
 * meta  : tag-sliding-window, tag-leetcode-medium
 ***************************************************************************/
-public class Solution {
+public class Solution
+{
   public int MaxArea(int[] height) {
     int low = 0;
     int high = height.Length -1;

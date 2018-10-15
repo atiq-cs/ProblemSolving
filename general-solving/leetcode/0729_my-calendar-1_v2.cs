@@ -1,10 +1,10 @@
-/***************************************************************************
+/***************************************************************************************************
 * Title : My Calendar I
 * URL   : https://leetcode.com/problems/my-calendar-i
 * Date  : 2018-01
 * Author: Atiq Rahman
 * Comp  : O(n^2) where number of queries approximately equals to number of
-*         bookings = n
+*   bookings = n
 * Status: Accepted
 * Notes : Briefly the problem statement looks like,
 *   MyCalendar.book(10, 20); // returns true
@@ -15,23 +15,24 @@
 *   half interval [start, end). It starts from 'start' and ends before 'end'. A
 *   new booking's interval cannot intersect with the entries in the calendar.
 *   
-*   Consider 5 overlapping cases for two bookings [s1, e1) and [s2, e2) 
-*    left overlap    s1   e2
-*    full overlap   s1/s2 e1/e2
-*    right overlap   s2   e1
-*    both overlap (outside)  s1  e1
-*    both overlap (inside)   s2  e2
+*   Consider 5 overlapping cases for two bookings [s1, e1) and [s2, e2)
+*   left overlap    s1   e2
+*   full overlap   s1/s2 e1/e2
+*   right overlap   s2   e1
+*   both overlap (outside)  s1  e1
+*   both overlap (inside)   s2  e2
 *   
 *   Consider no overlapping 2 cases,
-*    no overlap (left)   s1  e2
-*    no overlap (right)  s2  e1
-*    
+*   no overlap (left)   s1  e2
+*   no overlap (right)  s2  e1
+*   
 *   If we say, max = Max (s1, s2) and min = Min (e1, e2) then,
-*     there is no overlap when max >= min
-*     
-* meta  : tag-easy, tag-math
-***************************************************************************/
-public class MyCalendar {
+*   there is no overlap when max >= min
+*   
+* meta  : tag-math, tag-leetcode-easy
+***************************************************************************************************/
+public class MyCalendar
+{
   private List<Booking> bookings;
 
   public class Booking {

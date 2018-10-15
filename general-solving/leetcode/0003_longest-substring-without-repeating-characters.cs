@@ -1,7 +1,6 @@
-/***************************************************************************
+/***************************************************************************************************
 * Title : Longest Substring Without Repeating Characters
-* URL   : 
-*  https://leetcode.com/problems/longest-substring-without-repeating-characters
+* URL   : https://leetcode.com/problems/longest-substring-without-repeating-characters
 * Date  : 2018-03-18
 * Author: Atiq Rahman
 * Comp  : see below for each version
@@ -30,7 +29,7 @@
 *   Instead we keep track of the last index where a repeatation was found.
 *   We find the length subtracting last index from current index.
 * meta  : tag-hash-table, tag-dynamic-programming, tag-easy
-***************************************************************************/
+***************************************************************************************************/
 // Version 1: Time O(n*n); Constant Space exactly 128 extra space though
 public class LeetcodeSolutionV1 {
   public int LengthOfLongestSubstring(string s) {

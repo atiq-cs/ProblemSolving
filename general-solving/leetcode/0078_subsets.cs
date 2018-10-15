@@ -24,7 +24,7 @@
 *
 *   Complexity: output list grows double in each iteration. Therefore,
 *   complexity is exponential to 2.
-*   ToDo: check npp draft if found
+*   ToDo, check npp draft if found
 *   This also can be implemented recursively
 *   Shallow Copy ref: https://stackoverflow.com/q/9648327
 * meta  : tag-leetcode-medium, tag-hash-table, tag-lambda

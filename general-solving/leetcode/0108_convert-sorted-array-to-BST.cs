@@ -10,9 +10,8 @@
 *   can be tracked doing an inorder traversal. Inorder works because it visits
 *   the left node before other nodes.
 *
-* Same  : 'lintcode/177_convert-sorted-array-to-binary-search-tree-with-minimal-
-*         height.cpp'
-* meta  : tag-easy, tag-binary-tree, tag-recursion
+*   Same, 'lintcode/177_convert-sorted-array-to-binary-search-tree-with-minimal-height.cpp'
+* meta  : tag-binary-tree, tag-recursion, tag-leetcode-easy
 ***************************************************************************/
 public class Solution {
   int[] A;

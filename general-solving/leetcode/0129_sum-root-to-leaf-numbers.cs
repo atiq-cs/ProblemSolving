@@ -12,12 +12,12 @@ public class Solution {
   public int SumNumbers(TreeNode root, int num = 0) {
     if (root == null)
       return 0;
-    num = num*10+root.val;
+    num = num * 10 + root.val;
     // leaf node, to avoid duplication for double null
     if (root.left == null && root.right == null)
       return num;
     return SumNumbers(root.left, num) + SumNumbers(root.right, num);
-  }  
+  }
 }
 
 // Previous version: using class Member and less functional
@@ -27,17 +27,17 @@ public class Solution {
     SumNumbersRec(root, 0);
     return Sum;
   }
-  
+
   private void SumNumbersRec(TreeNode root, int sum) {
     if (root == null)
-      return ;
-    int val = sum*10+root.val;
+      return;
+    int val = sum * 10 + root.val;
     // leat node
     if (root.left == null && root.right == null) {
       Sum += val;
-      return ;
+      return;
     }
     SumNumbersRec(root.left, val);
     SumNumbersRec(root.right, val);
-  }  
+  }
 }

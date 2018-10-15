@@ -1,15 +1,15 @@
-/***************************************************************************
-* Title       : Counting Bits
-* URL         : https://leetcode.com/problems/counting-bits/
-* Date        : Sept 18, 2017
-* Complexity  : O(n)
-* Author      : Atiq Rahman
-* Status      : Accepted
-* Notes       : DP implementation by observation
-* meta        : tag-lis, tag-dyanmic-programming
-***************************************************************************/
-
-public class Solution {
+/***************************************************************************************************
+* Title : Counting Bits
+* URL   : https://leetcode.com/problems/counting-bits/
+* Date  : 2017-09-18
+* Comp  : O(n)
+* Author: Atiq Rahman
+* Status: Accepted
+* Notes : DP implementation by observation
+* meta  : tag-lis, tag-bit-manipulation, tag-dp, tag-leetcode-medium
+***************************************************************************************************/
+public class Solution
+{
   public int[] CountBits(int num) {
     int[] bit_count = new int[num+1];
     bit_count[0] = 0;
@@ -22,7 +22,7 @@ public class Solution {
     }
     return bit_count;
   }
-  // O(1) power of 2 check
+  // check if number is power of 2 in O(1)
   private bool IsPowerOfTwo(int n) {
     if (n != 0 && ((n-1)&n)==0)
       return true;

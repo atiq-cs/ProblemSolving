@@ -1,14 +1,14 @@
-/***************************************************************************
-* Problem Name: ZigZag Conversion
-* Problem URL : https://leetcode.com/problems/zigzag-conversion/
-* Date        : May 29 2015
-* Complexity  : O(n)
-* Author      : Atiq Rahman
-* Status      : Accepted (beat 99.49%)
-* Notes       : Proble description is terrible. Look here for clarification,
-                https://leetcode.com/discuss/35640/please-help-understand-question-description-about-pattern
-* meta        : tag-string
-***************************************************************************/
+/***************************************************************************************************
+* Title : ZigZag Conversion
+* URL   : https://leetcode.com/problems/zigzag-conversion/
+* Date  : 2015-05-29
+* Comp  : O(n)
+* Author: Atiq Rahman
+* Status: Accepted (beat 99.49%)
+* Notes : Proble description is terrible. Look here for clarification,
+*   https://leetcode.com/discuss/35640/please-help-understand-question-description-about-pattern
+* meta  : tag-string, tag-leetcode-medium
+***************************************************************************************************/
 
 class Solution {
 public:

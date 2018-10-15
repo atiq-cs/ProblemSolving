@@ -15,7 +15,7 @@
 *   A classic BFS problem. This way of generating adjacent word list is working
 *   because length of input string is less for testcases of this problem.
 *   Hence, this approach works better than generating adjacency using word list
-* Ref   : https://leetcode.com/problems/word-ladder/discuss/40717/
+* ref   : https://leetcode.com/problems/word-ladder/discuss/40717/
 *   Another-accepted-Java-solution-(BFS)
 * meta  : tag-bfs, tag-leetcode-medium, tag-graph, tag-company-imo-im
 ***************************************************************************/

@@ -10,7 +10,7 @@
 ***************************************************************************/
 public class Solution {
   public bool IsPalindrome(string s) {
-    for (int i=0, j=s.Length-1; i<j; ) {
+    for (int i = 0, j = s.Length - 1; i < j;) {
       //ignore garbage chars from left side
       if (char.IsLetterOrDigit(s[i]) == false) { i++; continue; }
       //ignore garbage chars from right side
@@ -24,12 +24,12 @@ public class Solution {
   }
 
   public bool IsPalindrome_v1(string s) {
-    for (int i=0, j=s.Length-1; i<j; i++, j--) {
+    for (int i = 0, j = s.Length - 1; i < j; i++, j--) {
       //ignore garbage chars from left side
-      for (; i<j && !char.IsLetterOrDigit(s[i]); i++);
+      for (; i < j && !char.IsLetterOrDigit(s[i]); i++) ;
       //ignore garbage chars from right side
-      for (; i<j && !char.IsLetterOrDigit(s[j]); j--);
-      if (i>=j)
+      for (; i < j && !char.IsLetterOrDigit(s[j]); j--) ;
+      if (i >= j)
         break;
       // ignore cases
       if (char.ToUpper(s[i]) != char.ToUpper(s[j]))

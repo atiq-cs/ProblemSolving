@@ -6,7 +6,7 @@
 * Comp  : might be related to binomial expression
 * Status: Accepted
 * Notes : Braces/parenthesis are interchangeable terms here. I have used the
-* chars ( and { equivalently in examples in this one as well.
+*   chars ( and { equivalently in examples in this one as well.
 *   Because I consider the position of closing brace to the first opening brace
 *   in reverse order result is produced in reverse order.
 *   
@@ -16,10 +16,10 @@
 *     
 *   Draft texts of developing the solution is at the bottom of the source file.
 *
-* Rel   : https://leetcode.com/problems/valid-parentheses
-*         https://leetcode.com/problems/valid-parenthesis-string
-*         https://leetcode.com/problems/remove-invalid-parentheses
-*         https://leetcode.com/problems/longest-valid-parentheses
+* rel   : https://leetcode.com/problems/valid-parentheses
+*   https://leetcode.com/problems/valid-parenthesis-string
+*   https://leetcode.com/problems/remove-invalid-parentheses
+*   https://leetcode.com/problems/longest-valid-parentheses
 * meta  : tag-stack, tag-balance-expression
 ***************************************************************************/
 public class Solution {

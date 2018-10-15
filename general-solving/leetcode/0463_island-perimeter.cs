@@ -25,15 +25,15 @@ public class Solution {
     int[][] grid = ConvertMultiDimensionalToJagged<int>(mdGrid);
     int cellCount = 0, excludeCellCount = 0;
 
-    for (int i=0; i<n; i++)
-      for (int j=0; j<m; j++)
+    for (int i = 0; i < n; i++)
+      for (int j = 0; j < m; j++)
         if (grid[i][j] == 1) {
           cellCount++;
-          if (i != 0 && (grid[i-1][j] == 1))
+          if (i != 0 && (grid[i - 1][j] == 1))
             excludeCellCount++;
-          if (j != 0 && (grid[i][j-1] == 1))
+          if (j != 0 && (grid[i][j - 1] == 1))
             excludeCellCount++;
         }
-    return (cellCount<<2) - (excludeCellCount<<1);
+    return (cellCount << 2) - (excludeCellCount << 1);
   }
 }

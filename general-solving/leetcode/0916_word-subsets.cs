@@ -5,12 +5,13 @@
 * Author: Atiq Rahman
 * Comp  : O(nA+mB)
 * Status: Accepted
-* Notes : Build
+* Notes : Build, yet to add..
 *   may be check discuss
-*   related: https://leetcode.com/problems/subarray-product-less-than-k
+* rel   : https://leetcode.com/problems/subarray-product-less-than-k
 * meta  : tag-hash-table, tag-leetcode-medium, tag-string
 ***************************************************************************/
-public class Solution {
+public class Solution
+{
   int[] charSet = new int[26];
   
   void BuildCharSet(string[] B) {

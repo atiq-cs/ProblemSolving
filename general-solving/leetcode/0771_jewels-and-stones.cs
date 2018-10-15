@@ -13,10 +13,10 @@ public class Solution {
     // [int][char] 'z'-[char]'A' = 57, starting with index 0 ('A') we need 58
     bool[] isJewel = new bool[58];
     int count = 0;
-    foreach(char ch in J)
-      isJewel[ch-'A'] = true;
-    foreach(char ch in S)
-      if (isJewel[ch-'A'])
+    foreach (char ch in J)
+      isJewel[ch - 'A'] = true;
+    foreach (char ch in S)
+      if (isJewel[ch - 'A'])
         count++;
     return count;
   }

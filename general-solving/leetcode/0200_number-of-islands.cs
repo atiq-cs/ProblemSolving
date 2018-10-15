@@ -1,14 +1,14 @@
-/***************************************************************************
+/***************************************************************************************************
 * Title : Number of Islands
 * URL   : https://leetcode.com/problems/number-of-islands
 * Date  : 2018-07 (Den Meetup)
 * Author: Atiq Rahman
 * Comp  : O(nm), O(1)
 * Status: Accepted
-* Notes :
-* Rel   : 'leetcode/0695_max-area-of-island.cs'
-* meta  : tag-leetcode-medium, tag-dfs, tag-graph
-***************************************************************************/
+* Notes : 
+* rel   : 'leetcode/0695_max-area-of-island.cs'
+* meta  : tag-dfs, tag-graph, tag-leetcode-medium
+***************************************************************************************************/
 public class Solution {
   private int numRows, numCols;
   private bool[][] grid;

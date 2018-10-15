@@ -1,13 +1,13 @@
-/***************************************************************************
-* Problem Name: Permutation Sequence
-* Problem URL : https://leetcode.com/problems/permutation-sequence
-* Date        : Oct 6 2015
-* Complexity  : 
-* Author      : Atiq Rahman
-* Status      : Accepted
-* Notes       : Given n generate all possible permutations
-* meta        : tag-leetcode-easy, tag-permutation
-***************************************************************************/
+/***************************************************************************************************
+* Title : Permutation Sequence
+* URL   : https://leetcode.com/problems/permutation-sequence
+* Date  : 2015-10-06
+* Comp  : 
+* Author: Atiq Rahman
+* Status: Accepted
+* Notes : Given n generate all possible permutations
+* meta  : tag-leetcode-easy, tag-permutation
+***************************************************************************************************/
 public class Solution {
   StringBuilder sb = new StringBuilder();
   List<int> digitList;

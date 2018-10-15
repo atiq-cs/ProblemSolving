@@ -10,12 +10,12 @@
 *   ToDo: Iterative version
 * meta  : tag-binary-tree, tag-recursion, tag-leetcode-medium
 ***************************************************************************/
-public class Solution {
+public class Solution
+{
   TreeNode previousNode = null;
-  public void Flatten(TreeNode root)
-  {
+  public void Flatten(TreeNode root) {
     if (root == null)
-      return ;
+      return;
     if (previousNode != null) {
       previousNode.right = root;
       previousNode.left = null;

@@ -7,9 +7,8 @@
 * Comp  : O(V+E) includes reverse in every 2 levels, Space O(V) worst case
 * Status: Accepted
 * Notes : Solved using BFS at DEN meetup added
-*   TODO: solve using recursion
-* meta  : tag-leetcode-medium, tag-bfs, tag-graph, tag-binary-tree,
-*   tag-recursion
+*   TODO, solve using recursion
+* meta  : tag-bfs, tag-graph, tag-binary-tree, tag-recursion, tag-leetcode-medium
 ***************************************************************************/
 public class Solution {
   public IList<IList<int>> ZigzagLevelOrder(TreeNode root) {

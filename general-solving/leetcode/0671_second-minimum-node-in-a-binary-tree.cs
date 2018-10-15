@@ -1,18 +1,17 @@
-/***************************************************************************
-* Title       : Second Minimum Node In a Binary Tree
-* URL         : https://leetcode.com/problems/second-minimum-node-in-a-binary-
-*               tree
-* Date        : 2017-09-07
-* Complexity  : O(n), Space O(n)
-* Author      : Atiq Rahman
-* Status      : Accepted
-* Notes       : For understanding 2 things to consider,
-*               1. first min value is already on *root* node
-*               2. left node necessarily does not have a smaller value than
-*               right node
+/***************************************************************************************************
+* Title : Second Minimum Node In a Binary Tree
+* URL   : https://leetcode.com/problems/second-minimum-node-in-a-binary-tree
+* Date  : 2017-09-07
+* Comp  : O(n), O(n)
+* Author: Atiq Rahman
+* Status: Accepted
+* Notes : For understanding 2 things to consider,
+*   1. first min value is already on *root* node
+*   2. left node necessarily does not have a smaller value than
+*   right node
 *
-* meta        : tag-recursion, tag-binary-tree
-***************************************************************************/
+* meta  : tag-binary-tree, tag-recursion, tag-leetcode-easy
+***************************************************************************************************/
 public class Solution {
   private int second;
   private int first;

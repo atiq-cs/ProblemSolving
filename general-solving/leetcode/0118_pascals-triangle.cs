@@ -12,16 +12,16 @@
 public class Solution {
   int GetCellValue(int n, int r) {
     int result = 1;
-    for (int i=r, j=1; i<n; i++,j++)
+    for (int i = r, j = 1; i < n; i++, j++)
       result = (result * i) / j;
     return result;
   }
-  
+
   public IList<IList<int>> Generate(int numRows) {
     IList<IList<int>> result = new List<IList<int>>();
     for (int row = 1; row <= numRows; row++) {
       IList<int> rowResult = new List<int>();
-      for (int column=1; column<=row; column++)
+      for (int column = 1; column <= row; column++)
         rowResult.Add(GetCellValue(row, column));
       result.Add(rowResult);
     }

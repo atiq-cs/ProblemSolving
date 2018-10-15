@@ -1,17 +1,16 @@
-/***************************************************************************
-* Problem Name: Two Sum
-* Problem URL : https://leetcode.com/problems/two-sum/
-* Date        : Jan 11 2015
-* Complexity  : O(N) Time and Space
-* Author      : Atiq Rahman
-* Status      : Accepted
-* Notes       : hashset is a better data structure for set operations as we
-*   don't require set operations we use dictionary
-*   ref: https://leetcode.com/articles/two-sum/
-*   Probably input number are distinct in that case we can use a hashMap
-*   instead of Dictionary
-* meta        : tag-hashtable
-***************************************************************************/
+/***************************************************************************************************
+* Title : Two Sum
+* URL   : https://leetcode.com/problems/two-sum/
+* Date  : 2015-01-11
+* Comp  : O(N) Time and Space
+* Author: Atiq Rahman
+* Status: Accepted
+* Notes : hashset is a better data structure for set operations as we don't require set operations
+*   we use dictionary
+*  Probably input numbers are distinct. In that case, we can use a hashMap instead of Dictionary
+* ref   : https://leetcode.com/articles/two-sum/
+* meta  : tag-hashtable, tag-leetcode-easy
+***************************************************************************************************/
 public class Solution {
   // second version after Microsoft Interview 2018-05-21, similar to last one
   // in above article; utilizes single loop

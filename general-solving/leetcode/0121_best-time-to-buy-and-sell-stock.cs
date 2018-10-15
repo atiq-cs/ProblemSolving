@@ -1,16 +1,17 @@
-/***************************************************************************
-* Problem Name: Best Time to Buy and Sell Stock
-* Problem URL : https://leetcode.com/problems/best-time-to-buy-and-sell-stock
-* Date        : 2018-06-09 (update)
-* Complexity  : O(n)
-* Author      : Atiq Rahman
-* Status      : Accepted
-* Notes       : find max diff
-*   desc draft at bottom
-* Ref         : 'online-problem-solving/icpc.kattis/artichoke.cs'               
-* meta        : tag-dynamic-programming
-***************************************************************************/
-public class Solution {
+/***************************************************************************************************
+* Title : Best Time to Buy and Sell Stock
+* URL   : https://leetcode.com/problems/best-time-to-buy-and-sell-stock
+* Date  : 2018-06-09
+* Comp  : O(n)
+* Author: Atiq Rahman
+* Status: Accepted
+* Notes : find max diff
+*   draft at bottom
+* ref   : 'online-problem-solving/icpc.kattis/artichoke.cs'
+* meta  : tag-dp, tag-leetcode-easy
+***************************************************************************************************/
+class Solution
+{
   // version after meetup at DEN
   public int MaxProfit(int[] prices) {
     int min = prices.Length == 0? 0 : prices[0], maxProfit = 0;    

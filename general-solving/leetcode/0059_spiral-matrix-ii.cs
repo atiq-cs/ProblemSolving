@@ -1,7 +1,7 @@
 /***************************************************************************
 * Title : Spiral Matrix II
 * URL   : https://leetcode.com/problems/spiral-matrix-ii
-* Occas : JS Meetup Arrays and Strings 2014-08-18
+* Occasn: JS Meetup Arrays and Strings 2014-08-18
 * Date  : 2018-04-19
 * Author: Atiq Rahman
 * Comp  : O(N^2)

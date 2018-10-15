@@ -1,16 +1,17 @@
-/***************************************************************************
-* Problem Name: Lowest Common Ancestor of a Binary Search Tree
-* Problem URL : .com/problems/lowest-common-ancestor-of-a-binary-search-tree
-* Date        : 2015-08-02
-* Complexity  : O(n) Time
-* Author      : Atiq Rahman
-* Status      : Accepted (20ms time improvement when reference is used)
-* Notes       : This is the first version developed. This problem specifies BST
+/***************************************************************************************************
+* Title : Lowest Common Ancestor of a Binary Search Tree
+* URL   : leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree
+* Date  : 2015-08-02
+* Comp  : O(n) Time
+* Author: Atiq Rahman
+* Status: Accepted (20ms time improvement when reference is used)
+* Notes : This is the first version developed. This problem specifies BST
 *   as input. However, it does not matter for our solution.
 *   Second version: 'leetcode/0236_lowest-common-ancestor-of-a-binary-tree.cs'
-* meta        : tag-lca, tag-binary-tree, tag-bst
-***************************************************************************/
-public class Solution {
+* meta  : tag-lca, tag-binary-tree, tag-bst, tag-leetcode-easy
+***************************************************************************************************/
+public class Solution
+{
   public TreeNode LowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
     return LowestCommonAncestor_rec(root, ref p.val, ref q.val);
   }

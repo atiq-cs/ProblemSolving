@@ -1,14 +1,14 @@
-/***************************************************************************
-* Problem Name: Count and Say
-* Problem URL : https://leetcode.com/problems/count-and-say/
-* Date        : 2017-08-05
-* Complexity  : O(n^2)
-* Author      : Atiq Rahman
-* Status      : Accepted
-* Desc        : Easy string operations
-* Notes       : 
-* meta        : tag-string, tag-easy, tag-recursion
-***************************************************************************/
+/***************************************************************************************************
+* Title : Count and Say
+* URL   : https://leetcode.com/problems/count-and-say/
+* Date  : 2017-08-05
+* Comp  : O(n^2)
+* Author: Atiq Rahman
+* Status: Accepted
+* Notes : Easy string operations
+* Notes : 
+* meta  : tag-string, tag-leetode-easy, tag-recursion
+***************************************************************************************************/
 public class Solution {
   public string CountAndSay(int n) {
     if (n<1) // to avoid exception in corner cases

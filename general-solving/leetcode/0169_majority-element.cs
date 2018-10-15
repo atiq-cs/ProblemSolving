@@ -1,19 +1,12 @@
-/***************************************************************************
-* Problem Name: Majority Element
-* Problem URL : https://leetcode.com/problems/majority-element/
-* Date        : Oct 17, 2015
-* Complexity  : O(n) Time, Constant space
-* Author      : Atiq Rahman
-* Status      : Accepted (Runtime beats 97% C# submissions)
-* Notes       : Detail Notes on the algorithm below
-* meta        : tag-majority-element, tag-easy
-***************************************************************************/
-
-/*
+/***************************************************************************************************
+* Title : Majority Element
+* URL   : https://leetcode.com/problems/majority-element/
+* Date  : 2015-10-17
+* Comp  : O(n) Time, Constant space
+* Author: Atiq Rahman
+* Status: Accepted
+* Notes : Detail Notes on the algorithm:
 * Moore's voting algorithm
-* ref: http://www.cs.utexas.edu/~moore/best-ideas/mjrty/
-*      https://en.wikipedia.org/wiki/Boyer%E2%80%93Moore_majority_vote_algorithm
-*
 * This is an algorithm with O(n) time and contant space complexity
 * To find a majority element provided that it exists it needs one pass
 * However, if not provided then the algorithm can figure it out in another pass
@@ -40,27 +33,26 @@
 * First pass gives us 1, but 1 is not majority element, there is not one in this example
 * The solution is to count number of occurrences of majority element in another pass and verify
 * that it occurs at least (n+1)/2 (consider number of items can be odd) times then it is majority element
-*/
-
+* ref: http://www.cs.utexas.edu/~moore/best-ideas/mjrty/
+*  https://en.wikipedia.org/wiki/Boyer%E2%80%93Moore_majority_vote_algorithm
+* meta  : tag-bit-manipulation, tag-divide-conquer, tag-leetcode-easy
+***************************************************************************************************/
 public class Solution
 {
-    public int MajorityElement(int[] nums)
-    {
-        int count = 0, majorityElement = -1;
+  public int MajorityElement(int[] nums) {
+    int count = 0, majorityElement = -1;
 
-        foreach (int item in nums)
-        {
-            if (count == 0)
-            {
-                majorityElement = item;
-                count = 1;
-            }
-            else if (item == majorityElement)
-                count++;
-            else
-                count--;
-        }
-        // as majority element always exists for this leetcode problem only we don't need second pass
-        return majorityElement;
+    foreach (int item in nums) {
+      if (count == 0) {
+        majorityElement = item;
+        count = 1;
+      }
+      else if (item == majorityElement)
+        count++;
+      else
+        count--;
     }
+    // as majority element always exists for this leetcode problem only we don't need second pass
+    return majorityElement;
+  }
 }

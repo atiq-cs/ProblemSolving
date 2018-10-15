@@ -1,7 +1,7 @@
 /***************************************************************************
 * Title : Set Matrix Zeroes
 * URL   : https://leetcode.com/problems/set-matrix-zeroes
-* Occas : Meetup at DEN, remote
+* Occasn: Meetup at DEN, remote
 * Date  : 2018-05-12
 * Author: Atiq Rahman
 * Comp  : O(n*m), O(n+m)

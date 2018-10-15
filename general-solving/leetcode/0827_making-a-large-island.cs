@@ -1,4 +1,4 @@
-/***************************************************************************
+/***************************************************************************************************
 * Title : Making A Large Island
 * URL   : https://leetcode.com/problems/making-a-large-island
 * Date  : 2018-07-08 (InnoWorld)
@@ -8,10 +8,10 @@
 * Notes : O(n) worst case space to store size of forests
 *   not really hard once figured out how we can mark using forest number
 *   
-*   TODO: now solve using Union Find and Path compression
-* Rel   : 'leetcode/0695_max-area-of-island.cs'
+*   TODO, now solve using Union Find and Path compression
+* rel   : 'leetcode/0695_max-area-of-island.cs'
 * meta  : tag-leetcode-hard, tag-dfs, tag-graph
-***************************************************************************/
+***************************************************************************************************/
 public class Solution {
   private int numRows, numCols;
   private int[][] grid;

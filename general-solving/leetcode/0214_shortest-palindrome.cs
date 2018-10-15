@@ -1,4 +1,4 @@
-/***************************************************************************
+/***************************************************************************************************
 * Title : Shortest Palindrome
 * URL   : https://leetcode.com/problems/shortest-palindrome
 * Date  : 2018-07-07 (Den Meetup with Charlie)
@@ -21,12 +21,12 @@
 *   
 *   Initial draft while discussing with Charlie added below.
 *   
-*   TODO: solve this problem using Manacher's Algorithm
-* Ref   : https://github.com/awangdev/LintCode/blob/master/Java
-*   /Shortest%20Palindrome.java
-* meta  : tag-leetcode-hard, tag-string, tag-kmp
-***************************************************************************/
-public class Solution {
+*   TODO. solve this problem using Manacher's Algorithm
+* ref   : https://github.com/awangdev/LintCode/blob/master/Java/Shortest%20Palindrome.java
+* meta  : tag-string, tag-kmp, tag-leetcode-hard
+***************************************************************************************************/
+public class Solution
+{
   public string ShortestPalindrome(string str) {
     char[] result = str.ToArray(); Array.Reverse(result);
     // result.Reverse(); does not work

@@ -7,15 +7,15 @@
 * Comp  : O(N), O(N) needs review
 * Status: Accepted
 * Notes : 
-*   TODO: using stack
+*   TODO, using stack
 *   This might replace a few for loops
 *    https://msdn.microsoft.com/en-us/library/48z14dbs.aspx
 *   Checkout this solution later
-*   ref: https://leetcode.com/problems/decode-string/discuss/140904/
-*   c++-recursion-with-memorization
+*   ref: https://leetcode.com/problems/decode-string/discuss/140904/c++-recursion-with-memorization
 * meta  : tag-leetcode-medium, tag-parsing
 ***************************************************************************/
-public class Solution {
+public class Solution
+{
   public string DecodeString(string s) {
     return DecodeString(s.ToCharArray(), 0, s.Length);
   }

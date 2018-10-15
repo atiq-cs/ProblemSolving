@@ -1,13 +1,13 @@
-/***************************************************************************
-* Problem Name: Palindromic Substrings
-* Problem URL : https://leetcode.com/problems/palindromic-substrings/
-* Date        : Oct 17 2017
-* Complexity  : O(n^3) Time, O(n) space
-* Author      : Atiq Rahman
-* Status      : Accepted
-* Notes       : Track palandrome for each index
-* meta        : tag-dynamic-programming, tag-easy
-***************************************************************************/
+/***************************************************************************************************
+* Title : Palindromic Substrings
+* URL   : https://leetcode.com/problems/palindromic-substrings/
+* Date  : 2017-10-17
+* Comp  : O(n^3) Time, O(n) space
+* Author: Atiq Rahman
+* Status: Accepted
+* Notes : Track palandrome for each index
+* meta  : tag-dp, tag-string, tag-leetcode-easy
+***************************************************************************************************/
 public class Solution {
   public int CountSubstrings(string s) {
     int[] pLen = new int[s.Length];
