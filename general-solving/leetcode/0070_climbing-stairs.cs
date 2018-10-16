@@ -8,7 +8,7 @@
 * Notes : Will modify solution to use O(n) space when there will be
 *   large number of queries
 * rel   : https://www.hackerrank.com/challenges/ctci-fibonacci-numbers
-* meta  : tag-dp, tag-leetcode-easy
+* meta  : tag-algo-dp, tag-leetcode-easy
 ***************************************************************************************************/
 public class Solution {
   public int ClimbStairs(int n) {

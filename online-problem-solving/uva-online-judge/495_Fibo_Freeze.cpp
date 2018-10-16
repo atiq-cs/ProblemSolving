@@ -4,8 +4,9 @@
  * Author   : Atiq Rahman
  * Desc     :
  * Status   : Accepted (time 0.029)
- * Acknowl. : Md Abdul Kader(http://dal.cs.utep.edu/members/mkader/) for BigInteger Class
- * meta     : tag-dynamic-programming, tag-big-integer
+ * Notes:
+ * Ack: Md Abdul Kader(http://dal.cs.utep.edu/members/mkader/) for BigInteger Class
+ * meta     : tag-algo-dp, tag-big-integer
  */
 
 #include <cstdio>

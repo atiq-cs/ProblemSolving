@@ -13,7 +13,7 @@
 *   Similarly, the solution that includes last house cannot include first
 *   house. Taking care of collision between first and last one solves the
 *   problem.
-* meta  : tag-dp, tag-leetcode-medium
+* meta  : tag-algo-dp, tag-leetcode-medium
 ***************************************************************************************************/
 public class Solution {
   public int Rob(int[] nums) {

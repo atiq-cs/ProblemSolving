@@ -6,7 +6,7 @@
 * Author: Atiq Rahman
 * Status: Accepted
 * Notes : Track palandrome for each index
-* meta  : tag-dp, tag-string, tag-leetcode-easy
+* meta  : tag-algo-dp, tag-string, tag-leetcode-easy
 ***************************************************************************************************/
 public class Solution {
   public int CountSubstrings(string s) {

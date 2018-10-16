@@ -1,4 +1,4 @@
-﻿/***************************************************************************
+/***************************************************************************
 * Title : Hexadecimal's theorem
 * URL   : http://codeforces.com/problemset/problem/199/A
 * Contst: Codeforces Round #125 (Div. 2)
@@ -9,7 +9,7 @@
 * Notes : f4 = f3 + f2, to give 3 numbers we write in following way,
 *   f4 = f3 + f1 + f0
 *   test-case for 0 and 1 figured out after getting wrong answer.
-* meta  : tag-fibonacci, tag-dp, tag-easy
+* meta  : tag-fibonacci, tag-algo-dp, tag-easy
 ***************************************************************************/
 using System;
 

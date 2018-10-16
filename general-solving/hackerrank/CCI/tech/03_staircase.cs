@@ -9,7 +9,7 @@
 * Notes : In today's meetup at DEN
 *   How many ways - means DP
 * Rel   : https://leetcode.com/problems/climbing-stairs
-* meta  : tag-dp, tag-recursion
+* meta  : tag-algo-dp, tag-recursion
 ***************************************************************************/
 using System;
 

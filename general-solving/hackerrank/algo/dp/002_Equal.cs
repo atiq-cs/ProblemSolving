@@ -32,7 +32,7 @@
 * Ref         : https://www.hackerrank.com/challenges/equal/forum
 *               (baran_jana's comment approx 1 year ago)
 *                
-* meta        : tag-dynamic-programming
+* meta        : tag-algo-dp
 ***************************************************************************/
 using System;
 using System.Linq;

@@ -1,7 +1,7 @@
-﻿/***************************************************************************
+/***************************************************************************
 * Title       : e-Coins
 * URL         : https://open.kattis.com/problems/ecoins
-* Date        : Sept 30 2017
+* Date        : Sep 30 2017
 * Complexity  : O(S*S*m)
 * Author      : Atiq Rahman
 * Status      : Accepted
@@ -11,7 +11,7 @@
 *               tutorials/dynamic-programming-from-novice-to-advanced/
 *               http://swapcoder.blogspot.com/2013/05/blog-post.html
 *               states the same things as I did
-* meta        : tag-kattis, tag-dp, tag-dynamic-programming
+* meta        : tag-judge-kattis, tag-algo-dp
 ***************************************************************************/
 #include<cstdio>
 

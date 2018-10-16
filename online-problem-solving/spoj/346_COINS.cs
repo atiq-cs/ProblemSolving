@@ -1,4 +1,4 @@
-﻿/***************************************************************************
+/***************************************************************************
 * Title       : COINS - Bytelandian gold coins
 * URL         : http://www.spoj.com/problems/COINS/
 * Occasion    : tutorial
@@ -12,12 +12,13 @@
 *   bytelandian ref, https://www.quora.com/What-is-the-idea-behind-the-
 *   Bytelandian-gold-coins-question-on-CodeChef
 *   A perfect dynamic programming problem to solve with Memoization
-* meta        : tag-dp, tag-dynamic-programming
+* meta        : tag-algo-dp, tag-recursion, tag-memoization
 ***************************************************************************/
 using System;
 using System.Collections.Generic;
 
-public class Demo {
+public class SPOJSolution
+{
   static Dictionary<ulong, ulong> coin_dict;
   // Use recursion with Memoization
   static ulong GetMaxCoins(ulong n) {
@@ -39,7 +40,7 @@ public class Demo {
 }
 
 /*
- * On Console - Std Input Ctrl + Z is EOF
+* On Console - Std Input Ctrl + Z is EOF
 
 12
 6 + 4 + 3
@@ -62,10 +63,10 @@ looks like a good problem to practice memoization
 
 if (n < 12)
   return n;
-//dp[n] if key n does not exist
-// dp[n] already exists, return result
-// save dp[n] if key n does not exist
-//
+ dp[n] if key n does not exist
+ dp[n] already exists, return result
+  save dp[n] if key n does not exist
+
 dp[n] = Math.Max(n, dp[n/2] + dp[n/3] + dp[n/4]);
 return dp[n];
 */

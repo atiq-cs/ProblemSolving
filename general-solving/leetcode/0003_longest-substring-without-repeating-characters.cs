@@ -28,7 +28,7 @@
 *   We don't need to unset all indices every time we hit a repeatation.
 *   Instead we keep track of the last index where a repeatation was found.
 *   We find the length subtracting last index from current index.
-* meta  : tag-hash-table, tag-dynamic-programming, tag-easy
+* meta  : tag-hash-table, tag-algo-dp, tag-leetcode-easy
 ***************************************************************************************************/
 // Version 1: Time O(n*n); Constant Space exactly 128 extra space though
 public class LeetcodeSolutionV1 {

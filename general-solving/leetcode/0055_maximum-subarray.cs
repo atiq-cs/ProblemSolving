@@ -11,7 +11,7 @@
 *   Algo, DS-   Maximum_subarray_problem
 *   related problem below also requires index
 * rel   : http://www.lintcode.com/en/problem/continuous-subarray-sum/
-* meta  : tag-dynamic-programming, tag-kadane
+* meta  : tag-algo-dp, tag-kadane
 ***************************************************************************************************/
 public class Solution
 {

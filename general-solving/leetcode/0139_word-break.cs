@@ -11,7 +11,7 @@
 *   word list till index i.
 *   Hence, DP[0] is naturally true.
 *   TODO, TRIE solution
-* meta  : tag-leetcode-medium, tag-dp, tag-company-facebook
+* meta  : tag-leetcode-medium, tag-algo-dp, tag-company-facebook
 ***************************************************************************/
 public class Solution {
   public bool WordBreak(string s, IList<string> wordDict) {

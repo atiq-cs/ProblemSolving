@@ -1,4 +1,4 @@
-﻿/***************************************************************************
+/***************************************************************************
 * Title       : BerSU Ball
 * URL         : http://codeforces.com/problemset/problem/489/B
 * Occasion    : Codeforces Round #277.5 (Div. 2)
@@ -31,11 +31,12 @@
 *               sorting ensures maintaining the invariant matches are done in
 *               order. If a boy has only one match. His match won't be matched
 *               with somebody else.
-* meta        : tag-dynamic-programming, tag-sorting, tag-dp
+* meta        : tag-algo-dp, tag-sorting
 ***************************************************************************/
 using System;
 
-public class Demo {
+public class CFSolution 
+{
   public static void Main() {
     int  n = int.Parse(Console.ReadLine());   // discard n
     // dancing skill boys

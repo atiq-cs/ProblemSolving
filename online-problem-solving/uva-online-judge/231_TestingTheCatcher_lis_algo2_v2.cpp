@@ -6,9 +6,9 @@
 * Author      : Atiq Rahman
 * Status      : Accepted
 * Notes       : Based on '231_TestingTheCatcher_lis_algo2_v1'
-* Related     : leetcode/300_lis_algo2.cs *
-* Ref           https://ideone.com/IWlJlm
-* meta        : tag-math, tag-dp, tag-lis
+* rel     : leetcode/0300_lis_algo2.cs *
+* ref           https://ideone.com/IWlJlm
+* meta        : tag-math, tag-algo-dp, tag-lis
 ***************************************************************************/
 #include <iostream>
 #include <vector>

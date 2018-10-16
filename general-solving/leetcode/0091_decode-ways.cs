@@ -6,7 +6,7 @@
 * Author: Atiq Rahman
 * Status: Accepted
 * Notes : similar to Climbing Stairs except the tricky cases we have to consider
-* meta  : tag-dp, tag-string, tag-leetcode-medium
+* meta  : tag-algo-dp, tag-string, tag-leetcode-medium
 ***************************************************************************************************/
 public class Solution
 {

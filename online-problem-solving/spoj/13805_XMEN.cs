@@ -1,4 +1,4 @@
-﻿/***************************************************************************
+/***************************************************************************
 * Title       : X-MEN
 * URL         : http://www.spoj.com/problems/XMEN/
 * Occasion    : CodeCraft 13 -> classical
@@ -7,7 +7,7 @@
 * Author      : Atiq Rahman
 * Status      : Accepted
 * Notes       : 
-* meta        : tag-dp, tag-dynamic-programming, tag-lis, tag-lcs
+* meta        : tag-algo-dp, tag-lis, tag-lcs
 ***************************************************************************/
 using System;
 using System.Collections.Generic;
@@ -58,10 +58,8 @@ public class LISDemo {
     }
   }
 
-  /*
-   * Modified Binary Search to return immediate smaller one if item looked up is
-   * not found.
-   */
+
+   // Modified Binary Search to return immediate smaller one if looked up item is not found.
   private int BSearch(int item, int start, int end) {
     int mid = (start + end) / 2;
     // lower_bound: return lower index
@@ -74,7 +72,6 @@ public class LISDemo {
       return BSearch(item, start, mid - 1);
   }
 }
-
 
 public class Demo {
   public static void Main() {

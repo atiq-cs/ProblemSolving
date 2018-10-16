@@ -1,4 +1,4 @@
-﻿/***************************************************************************
+/***************************************************************************
 * Title       : Easy Longest Increasing Subsequence
 * URL         : http://www.spoj.com/problems/ELIS/
 * Occasion    : tutorial
@@ -7,7 +7,7 @@
 * Author      : Atiq Rahman
 * Status      : Accepted
 * Notes       : tutorial input set should be trivial
-* meta        : tag-dp, tag-dynamic-programming, tag-lis
+* meta        : tag-algo-dp, tag-lis
 ***************************************************************************/
 using System;
 using System.Collections.Generic;
@@ -62,7 +62,6 @@ public class LISDemo {
       return BSearch(item, start, mid - 1);
   }
 }
-
 
 public class Demo {
   public static void Main() {

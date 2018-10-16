@@ -10,7 +10,7 @@
 *   night."
 *
 *   Take care of this adjacent cases and that makes the solution
-* meta  : tag-dp, tag-leetcode-easy
+* meta  : tag-algo-dp, tag-leetcode-easy
 ***************************************************************************************************/
 public class Solution
 {

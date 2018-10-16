@@ -8,7 +8,7 @@
 * Notes : find max diff
 *   draft at bottom
 * ref   : 'online-problem-solving/icpc.kattis/artichoke.cs'
-* meta  : tag-dp, tag-leetcode-easy
+* meta  : tag-algo-dp, tag-leetcode-easy
 ***************************************************************************************************/
 class Solution
 {

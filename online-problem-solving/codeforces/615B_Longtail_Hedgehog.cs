@@ -29,7 +29,7 @@
 *     
 *     This problem can also be solved using DFS.
 *   Ack         :  Mak Kader
-*   meta        :  tag-dynamic-programming, tag-dfs
+*   meta        :  tag-algo-dp, tag-dfs
 ***************************************************************************/
 using System;
 using System.Collections.Generic;

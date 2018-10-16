@@ -1,4 +1,4 @@
-﻿/***************************************************************************
+/***************************************************************************
 * Title : Flipping Game
 * URL   : http://codeforces.com/problemset/problem/327/A
 * Occasn: Codeforces Round #191 (Div. 2)
@@ -19,7 +19,7 @@
 *   Also appeared in JS meetup in 2018, Q1
 *    https://www.careercup.com/question?id=6262507668766720
 * rel   : https://leetcode.com/problems/insert-interval
-* meta  : tag-dp
+* meta  : tag-algo-dp
 ***************************************************************************/
 using System;
 using System.Collections.Generic;

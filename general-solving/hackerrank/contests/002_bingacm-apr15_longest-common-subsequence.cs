@@ -9,7 +9,7 @@
 * Notes : method call arguments are in reverse order
 *
 *    Input is two strings
-* meta  : tag-lcs, tag-dp
+* meta  : tag-dp-lcs, tag-algo-dp
 ***************************************************************************/
 using System;
 

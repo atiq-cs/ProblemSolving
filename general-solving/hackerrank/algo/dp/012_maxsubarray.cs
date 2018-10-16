@@ -11,7 +11,7 @@
                     However, the problem is simplified that sum needs not be strictly
                     contiguous therefore applying my trivial approach to sum up all positive
                     and ignore if negative parts are there works just fine
-*   meta        : tag-dynamic-programming, tag-kadane
+*   meta        : tag-algo-dp, tag-kadane
 */
 
 using System;

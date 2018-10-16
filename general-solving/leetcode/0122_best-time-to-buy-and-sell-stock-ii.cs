@@ -12,7 +12,7 @@
 *   solution.
 *   
 *   Thanks Md Abdul Kader (Sreezin) for his opinion on the analysis on this part.
-* meta  : tag-dp, tag-leetcode-easy
+* meta  : tag-algo-dp, tag-leetcode-easy
 ***************************************************************************************************/
 ublic class Solution
 {

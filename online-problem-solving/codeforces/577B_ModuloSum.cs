@@ -1,4 +1,4 @@
-﻿/***************************************************************************
+/***************************************************************************
 * Title : Modulo Sum
 * URL   : http://codeforces.com/problemset/problem/577/B
 * Contst: Codeforces Round #290 (Div. 2)
@@ -7,7 +7,7 @@
 * Comp  : O(N * 2^n)
 * Status: TLE
 * Notes : Hints here: http://codeforces.com/blog/entry/20226
-* meta  : tag-dp
+* meta  : tag-algo-dp
 ***************************************************************************/
 using System;
 using System.Collections.Generic;

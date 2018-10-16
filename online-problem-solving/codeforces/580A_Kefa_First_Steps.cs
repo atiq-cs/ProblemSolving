@@ -1,4 +1,4 @@
-﻿/***************************************************************************
+/***************************************************************************
 *   Problem Name: Kefa and First Steps
 *   Problem URL : http://codeforces.com/problemset/problem/580/A
 *   Date        : Nov 26, 2016
@@ -7,7 +7,7 @@
 *   Author      : Atiq Rahman
 *   Status      : Accepted (77ms)
 *   Notes       : Linear DP, not LIS variation at all
-*   meta        : tag-dynamic-programming
+*   meta        : tag-algo-dp
 ***************************************************************************/
 using System;
 

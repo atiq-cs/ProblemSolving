@@ -20,7 +20,7 @@
 *
 *    adding chars, combining as string
 *    https://stackoverflow.com/q/1324009/
-* meta  : tag-dp, tag-leetcode-medium, tag-palindrome, tag-two-pointers
+* meta  : tag-algo-dp, tag-leetcode-medium, tag-palindrome, tag-two-pointers
 ***************************************************************************/
 public class Solution {
   public string LongestPalindrome(string s) {

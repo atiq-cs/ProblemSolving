@@ -6,7 +6,7 @@
 * Author: Atiq Rahman
 * Status: Accepted
 * Notes : Direct application of Prefix Sum
-* meta  : tag-dp, tag-leetcode-easy
+* meta  : tag-algo-dp, tag-leetcode-easy
 ***************************************************************************************************/
 public class NumArray {
   private int[] prefix_sum = null;

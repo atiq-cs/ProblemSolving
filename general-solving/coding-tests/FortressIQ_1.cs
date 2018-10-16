@@ -10,7 +10,7 @@
 *   Idea is to keep a min variable for previous element and try to maintain a
 *   max variable which contains max difference with current item while doing
 *   iteration through the entire array
-* meta  : tag-dp, tag-FortressIQ, tag-coding-test
+* meta  : tag-algo-dp, tag-company-FortressIQ, tag-coding-test
 ***************************************************************************/
 public class FortressIQ_Solution {
   static int maxDifference(int[] a) {

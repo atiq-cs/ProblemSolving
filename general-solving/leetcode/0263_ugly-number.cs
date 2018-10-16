@@ -6,7 +6,7 @@
 * Author: Atiq Rahman
 * Status: Accepted
 * Notes : Check if given number is ugly number
-* meta  : tag-math, tag-dp, tag-leetcode-easy
+* meta  : tag-math, tag-algo-dp, tag-leetcode-easy
 ***************************************************************************************************/
 public class Solution
 {

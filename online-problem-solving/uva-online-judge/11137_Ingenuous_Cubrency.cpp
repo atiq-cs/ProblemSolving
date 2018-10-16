@@ -6,7 +6,7 @@
 * Comp  : O(N * M)
 * Status: Accepted
 * Notes : Classic coin change DP
-* meta  : tag-coin-change, tag-dynamic-programming
+* meta  : tag-coin-change, tag-algo-dp
 ***************************************************************************/
 #include <iostream>
 #include <vector>

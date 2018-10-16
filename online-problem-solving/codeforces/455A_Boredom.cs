@@ -1,4 +1,4 @@
-﻿/***************************************************************************
+/***************************************************************************
 *   Problem Name: Boredom
 *   Problem URL : http://codeforces.com/problemset/problem/455/A
 *   Date        : Dec 18, 2016
@@ -22,7 +22,7 @@
 *                 
 *     ArrayList vs List<> in C#
 *       http://stackoverflow.com/questions/2309694/arraylist-vs-list-in-c-sharp
-*   meta        : tag-dynamic-programming
+*   meta        : tag-algo-dp
 ***************************************************************************/
 using System;
 using System.Collections.Generic;

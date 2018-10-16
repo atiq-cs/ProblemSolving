@@ -1,4 +1,4 @@
-﻿/***************************************************************************
+/***************************************************************************
 *  Problem Name: Amalgamated Artichokes
 *  Problem URL : https://icpc.kattis.com/problems/artichoke
 *  source      : 2015 ACM-ICPC World Finals - Marrakech
@@ -9,11 +9,12 @@
 *  Status      : Accepted
 *  Notes       : It didn't require any fixed point formatting
 *                 Similar to leetcode's 'best-time-to-buy-and-sell-stock'
-*  meta        : tag-dynamic-programming, tag-easy, tag-world-final
+*  meta        : tag-algo-dp, tag-world-final, tag-easy, tag-judge-kattis
 ***************************************************************************/
 using System;
 
-public class Solution {
+public class Solution
+{
     private static void Main() {
         // Take input: 6 int
         string[] tokens = Console.ReadLine().Split();

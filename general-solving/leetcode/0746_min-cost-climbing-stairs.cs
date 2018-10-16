@@ -8,7 +8,7 @@
 * Notes : O(N^2) solution added, O(N) solution yet to add
 *   may be check discuss
 * rel   : https://leetcode.com/problems/climbing-stairs
-* meta  : tag-dp, tag-leetcode-easy
+* meta  : tag-algo-dp, tag-leetcode-easy
 ***************************************************************************/
 public class Solution {
   public int MinCostClimbingStairs(int[] costs)

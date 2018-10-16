@@ -7,11 +7,10 @@
 * Status      : Accepted (56ms)
 * Notes       : Largest sum in contiguous subarray
 *               fill in ...
-*               
-* meta        : tag-dynamic-programming
+* meta        : tag-algo-dp
 ***************************************************************************/
-
-public class Solution {
+public class Solution
+{
     public int NumTrees(int n) {
         int[] numWays = new int[n+1];
         // initialization; note on 0 nodes: above

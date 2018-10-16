@@ -12,7 +12,7 @@
 *   if we had a limit on another property such as weight we would need more
 *   space i.e., O(nk)
 * ref   : C.L.R.S 3rd ed. p427
-* meta  : tag-medium, tag-dp, tag-knapsack
+* meta  : tag-medium, tag-algo-dp, tag-knapsack
 ***************************************************************************/
 using System;
 

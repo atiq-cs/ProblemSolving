@@ -19,7 +19,7 @@
 *    
 *   https://leetcode.com/articles/regular-expression-matching/
 * rel   : https://leetcode.com/problems/wildcard-matching
-* meta  : tag-leetcode-hard, tag-string, tag-dp, tag-backtracking, tag-microsoft
+* meta  : tag-leetcode-hard, tag-string, tag-algo-dp, tag-backtracking, tag-company-microsoft
 ***************************************************************************/
 public class Solution {
   public bool IsMatch(string s, string p) {

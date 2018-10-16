@@ -38,7 +38,7 @@
 *   This could also be solved using three variable that keep track
 *   of previous 2 values for s[i-1]
 *   The use of array in the solution looks okay for recurrence.
-* meta        : tag-dp
+* meta        : tag-algo-dp
 ***************************************************************************/
 using System;
 

@@ -1,4 +1,4 @@
-﻿/***************************************************************************
+/***************************************************************************
 * Title       : How many trees?
 * URL         : http://codeforces.com/problemset/problem/9/D
 * Occasion    : Codeforces Beta Round #9 (Div. 2 Only)
@@ -8,7 +8,7 @@
 * Status      : Accepted
 * Notes       : Check note if we have draft, compare with other solutins if run
 *   time can be improved or optimizations can be made
-* meta        : tag-combinatorics, tag-dynamic-programming
+* meta        : tag-combinatorics, tag-algo-dp
 ***************************************************************************/
 using System;
 

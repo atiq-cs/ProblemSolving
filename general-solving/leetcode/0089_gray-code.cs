@@ -8,7 +8,7 @@
 * Notes : Solved using both recursion and iterative DP
 *   Runtime improved after using
 *    IList<int> grayList = new int[listSize];
-* meta  : tag-recursion, tag-dp, tag-interviews, tag-company-google
+* meta  : tag-recursion, tag-algo-dp, tag-interviews, tag-company-google
 ***************************************************************************************************/
 
 public class Solution {

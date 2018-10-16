@@ -1,4 +1,4 @@
-﻿/***************************************************************************
+/***************************************************************************
 * Problem Name: Cut Ribbon
 * Problem URL : http://codeforces.com/problemset/problem/189/A
 * Occasion    : Codeforces Round #119 (Div. 2)
@@ -7,7 +7,7 @@
 * Author      : Atiq Rahman
 * Status      : Accepted
 * Notes       : Try simple enough approach for this problem
-* meta        : tag-dp, tag-brute-force
+* meta        : tag-algo-dp, tag-brute-force
 ***************************************************************************/
 
 using System;

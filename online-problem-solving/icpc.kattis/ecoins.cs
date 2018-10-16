@@ -1,9 +1,8 @@
-﻿/***************************************************************************
+/***************************************************************************
 * Title       : e-Coins
 * URL         : https://open.kattis.com/problems/ecoins
-* Occasion    : Swedish Championships 2001
-* 10x recruit test
-* Date        : Sept 30 2017
+* Occasion    : Swedish Championships 2001, 10x recruit test
+* Date        : Sep 30 2017
 * Complexity  : O(S*S*m)
 * Author      : Atiq Rahman
 * Status      : TLE (cpp conversion is accepted)
@@ -35,7 +34,7 @@
 *               tutorials/dynamic-programming-from-novice-to-advanced/
 *               http://swapcoder.blogspot.com/2013/05/blog-post.html
 *               states the same thing as I did
-* meta        : tag-kattis, tag-dp, tag-dynamic-programming
+* meta        : tag-judge-kattis, tag-algo-dp
 ***************************************************************************/
 using System;
 

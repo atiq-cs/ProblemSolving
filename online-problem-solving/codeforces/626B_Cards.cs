@@ -1,4 +1,4 @@
-﻿/***************************************************************************
+/***************************************************************************
 * Title : Cards
 * URL   : https://codeforces.com/problemset/problem/626/B
 * Occasn: 8VC Venture Cup 2016 - Elimination Round
@@ -22,7 +22,7 @@
 *   
 *   Alternative solution is DP, probably O(N^3)
 *   
-* meta  : tag-medium, tag-greedy, tag-dp
+* meta  : tag-medium, tag-algo-greedy, tag-algo-dp
 ***************************************************************************/
 using System;
 using System.Collections.Generic;

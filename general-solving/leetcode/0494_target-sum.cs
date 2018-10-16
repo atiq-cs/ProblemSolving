@@ -9,7 +9,7 @@
 *   C.L.R.S Intro to Cormen - Chapter 35
 *   Yet to understand how this algo works
 *
-* meta  : tag-dp, tag-leetcode-medium
+* meta  : tag-algo-dp, tag-leetcode-medium
 ***************************************************************************/
 // Follows the solution from the board
 public class Solution

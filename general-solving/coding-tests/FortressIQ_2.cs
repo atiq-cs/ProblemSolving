@@ -17,7 +17,7 @@
 *  Handle following,
 *  Dynamic Programming - paths contain obstacles
 *  Integer arithmetic - modulus
-* meta  : tag-dp, tag-FortressIQ, tag-coding-test
+* meta  : tag-algo-dp, tag-company-FortressIQ, tag-coding-test
 ***************************************************************************/
 public class FortressIQ_Solution {
   static int numberOfPaths(int[][] grid) {    

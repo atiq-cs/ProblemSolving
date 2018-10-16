@@ -32,7 +32,7 @@
                 - Testcase 6: 1.31s
 
                First solution of this problem: fibonacci-modified_v0.cs [timed out]
-* meta       : tag-big-integer, tag-dynamic-programming   
+* meta       : tag-big-integer, tag-algo-dp   
 */
 
 using System;

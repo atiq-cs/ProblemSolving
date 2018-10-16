@@ -51,7 +51,7 @@
 *               
 * Rel: https://leetcode.com/problems/coin-change-2               
 * Ack         : Mak               
-* meta        : tag-dynamic-programming
+* meta        : tag-algo-dp
 ***************************************************************************/
 using System;
 

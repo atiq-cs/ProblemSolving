@@ -1,4 +1,4 @@
-﻿/***************************************************************************
+/***************************************************************************
 * Problem Name: K-based Numbers
 * Problem URL : http://acm.timus.ru/problem.aspx?space=1&num=1009
 * Date        : Jan 22 2016
@@ -11,7 +11,7 @@
 *                  f(n) = (K-1) * (f(n-1) + f(n-2))
 *               The relation looks simple but it took some time to find and
 *               verify
-* meta        : tag-dynamic-programming
+* meta        : tag-algo-dp
 ***************************************************************************/
 using System;
 

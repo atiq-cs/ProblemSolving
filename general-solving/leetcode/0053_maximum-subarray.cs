@@ -8,7 +8,7 @@
 * Notes : Largest sum in contiguous subarray; Kadane's Linear Algorithm to find max sum
 *   
 * ref   : https://en.wikipedia.org/wiki/Maximum_subarray_problem#Kadane's_algorithm
-* meta  : tag-dp, tag-kadane
+* meta  : tag-algo-dp, tag-dp-kadane
 ***************************************************************************************************/
 public class Solution
 {

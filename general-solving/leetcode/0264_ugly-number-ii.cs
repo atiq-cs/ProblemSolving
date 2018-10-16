@@ -8,7 +8,7 @@
 * Notes : Use the last chosen ugly numbers, multiply them (with 2,3,5) and keep building up solution
 * ref   : http://www.geeksforgeeks.org/ugly-numbers/
 * rel   : 'uva-online-judge\136_Ugly_Numbers.cpp'
-* meta  : tag-math, tag-dp, tag-leetcode-medium
+* meta  : tag-math, tag-algo-dp, tag-leetcode-medium
 ***************************************************************************************************/
 public class Solution
 {

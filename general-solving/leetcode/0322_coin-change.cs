@@ -47,7 +47,7 @@
 *    0 1 1 1
 * rel   : https://www.hackerrank.com/challenges/coin-change
 *   https://leetcode.com/problems/coin-change-2
-* meta  : tag-coin-change, tag-dp, tag-leetcode-medium
+* meta  : tag-coin-change, tag-algo-dp, tag-leetcode-medium
 ***************************************************************************************************/
 public class Solution {
   static int INF = int.MaxValue;

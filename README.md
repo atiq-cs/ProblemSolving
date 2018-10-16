@@ -10,7 +10,7 @@ algorithm and data structure,
  * [Bit Manipulation](
 https://github.com/atiq-cs/Problem-Solving/search?q=tag-bitwise)
  * [Dynamic Programming](
-https://github.com/atiq-cs/Problem-Solving/search?q=tag-dynamic-programming)
+https://github.com/atiq-cs/Problem-Solving/search?q=tag-algo-dp)
  * [Graph](https://github.com/atiq-cs/Problem-Solving/search?q=tag-graph)
  * [Linked List](https://github.com/atiq-cs/Problem-Solving/search?q=tag-linked-list)
  * [Priority Queue](

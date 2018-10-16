@@ -10,7 +10,7 @@
 *   and the leetcode prob in reference below (because that was solved before
 *   this)
 * Rel   : https://leetcode.com/problems/coin-change
-* meta  : tag-coin-change, tag-dynamic-programming
+* meta  : tag-coin-change, tag-algo-dp
 ***************************************************************************/
 public class Solution {
   public int Change(int n, int[] coins) {
