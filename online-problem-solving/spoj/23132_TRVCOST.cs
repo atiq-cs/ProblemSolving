@@ -1,4 +1,4 @@
-﻿/***************************************************************************
+/***************************************************************************
 * Title : Travelling cost
 * URL   : http://spoj.com/problems/TRVCOST/
 * Date  : 2017-12-24 (C# Conversion from cpp)
@@ -25,7 +25,7 @@
 *   Want DecreaseKey?
 *   https://stackoverflow.com/questions/17009056
 *   https://courses.csail.mit.edu/6.006/fall10/handouts/recitation10-8.pdf
-* meta  : tag-graph-theory, tag-dijkstra, tag-sssp
+* meta  : tag-graph-dijkstra, tag-sssp
 ***************************************************************************/
 using System;
 using System.Collections.Generic;

@@ -8,7 +8,7 @@
 * Notes : at 'demos/ds/PriorityQueue.cs', Fast IO
 *   got past TLE now
 * Rel   : http://spoj.com/problems/TRVCOST/
-* meta  : tag-dijkstra, tag-graph-theory
+* meta  : tag-graph-dijkstra
 ***************************************************************************/
 using System;
 using System.Collections.Generic;

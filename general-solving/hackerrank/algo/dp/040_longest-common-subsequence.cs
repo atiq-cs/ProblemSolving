@@ -17,7 +17,7 @@ using System;
 
 // class 'SubseqAlgoDemo' is declared and defined in 'demos/algo/dp/lcs.cs'
 
-class HK_Solution {
+class HKSolution {
   // IO method's in 'general-solving/hackerrank/IOTemplate.cs'
   static int[] Run(int[] a, int[] b) {
     var demo = new SubseqAlgoDemo<int>();

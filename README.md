@@ -36,9 +36,11 @@ https://github.com/atiq-cs/Problem-Solving/search?q=tag-bst)
 
 Graph algorithm tags,
  * [Breadth First Search](
-https://github.com/atiq-cs/Problem-Solving/search?q=tag-bfs)
+https://github.com/atiq-cs/Problem-Solving/search?q=tag-graph-bfs)
  * [Depth First Search](
-https://github.com/atiq-cs/Problem-Solving/search?q=tag-dfs)
+https://github.com/atiq-cs/Problem-Solving/search?q=tag-graph-dfs)
+* [Dijkstra Algorithm](
+https://github.com/atiq-cs/Problem-Solving/search?q=tag-graph-dijkstra)
 
 Permutation, combination related problems,
  * [Next Permutation](

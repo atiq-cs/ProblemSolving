@@ -7,7 +7,7 @@
 * Status: TLE on Test Case #7
 * Notes : Sophisticated Priority Queue at 'demos/ds/PriorityQueue.cs'
 * Rel   : http://spoj.com/problems/TRVCOST/
-* meta  : tag-dijkstra, tag-graph-theory
+* meta  : tag-graph-dijkstra
 ***************************************************************************/
 using System;
 using System.Collections.Generic;

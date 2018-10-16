@@ -1,4 +1,4 @@
-﻿/***************************************************************************
+/***************************************************************************
 * Title : Dijkstra?
 * URL   : http://codeforces.com/contest/20/problem/C
 * Contst: Codeforces Alpha Round #20 
@@ -13,7 +13,7 @@
 *   
 *   Tuple and hashtable implementation can take care of mutliple edges between
 *   a pair of vertices
-* meta  : tag-dijkstra, tag-graph-theory
+* meta  : tag-graph-dijkstra
 ***************************************************************************/
 using System;
 using System.Collections.Generic;

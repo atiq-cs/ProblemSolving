@@ -1,4 +1,4 @@
-﻿/***************************************************************************
+/***************************************************************************
 * Title : Dijkstra?
 * URL   : http://codeforces.com/contest/20/problem/C
 * Contst: Codeforces Alpha Round #20 
@@ -15,7 +15,7 @@
 *   This however cannot take cair of mutliple edges between a pair of vertices
 *   and keeps duplicate
 *   This has been improved in '020C_Dijkstra_DecreaseKey_CostTuple.cs'
-* meta  : tag-dijkstra, tag-graph-theory
+* meta  : tag-graph-dijkstra
 ***************************************************************************/
 using System;
 using System.Collections.Generic;

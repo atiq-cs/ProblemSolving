@@ -6,8 +6,7 @@
 * Comp  : O(V+E)
 * Status: Demo
 * Notes : comments inline, input sample at '01_BFS_SP.cs'
-* meta  : tag-graph, tag-dfs, tag-recursion, tag-gatecoin,
-*   tag-interview-coding-test
+* meta  : tag-graph-dfs, tag-recursion, tag-company-gatecoin, tag-coding-test, tag-algo-core
 ***************************************************************************/
 using System;
 using System.Collections.Generic;

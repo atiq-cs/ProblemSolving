@@ -9,7 +9,7 @@
 *   This first version has slightly more code than v2. However, might be easier
 *   to understand, self-explanatory code.
 *
-* meta  : tag-string, tag-regex, tag-cruise-automation, tag-interview
+* meta  : tag-string, tag-regex, tag-company-cruise-automation, tag-interview
 ***************************************************************************************************/
 class Solution {
 public:
@@ -53,7 +53,7 @@ public:
 };
 
 /*
-// part of original solution
+part of original solution, source below,
 
 bool match(std::string str, std::string wild);
 

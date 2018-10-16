@@ -1,4 +1,4 @@
-﻿/***************************************************************************
+/***************************************************************************
 * Title : Minimum Knight moves
 * URL   : https://www.spoj.com/problems/NAKANJ/
 * Occasn: JS meetup 2018-06-25
@@ -8,7 +8,7 @@
 * Status: Accepted
 * Notes : BoardLength is used to generalize and to support boards of different
 *   sizes
-* meta  : tag-graph-theory, tag-bfs, tag-sssp
+* meta  : tag-graph-bfs, tag-sssp
 ***************************************************************************/
 using System;
 using System.Collections.Generic;

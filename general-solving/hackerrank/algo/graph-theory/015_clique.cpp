@@ -21,7 +21,7 @@
 *  Clique/main.cpp
 * Dicussion has some good hints,
 *   https://www.hackerrank.com/challenges/clique/forum
-* meta  : tag-graph-theory, tag-clique, tag-company-cruise-automation, tag-coding-test
+* meta  : tag-graph, tag-clique, tag-company-cruise-automation, tag-coding-test
 ***************************************************************************/
 #include <cmath>
 #include <vector>

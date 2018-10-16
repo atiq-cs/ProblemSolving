@@ -21,7 +21,7 @@
 *  tju-judge :  gcc 4.5.2, old, does not support C++11 all features
 *  spoj      :  g++ 4.9.2, C++ 14
 * Status    :  Accepted [memory used: 3.2M, time: 0.0]
-* meta      :  tag-graph-theory, tag-dijkstra, tag-sssp
+* meta      :  tag-graph-dijkstra, tag-sssp
 */
 
 #include <cstring>    // for memset

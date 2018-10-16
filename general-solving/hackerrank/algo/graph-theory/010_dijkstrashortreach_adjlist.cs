@@ -8,7 +8,7 @@
 * Notes : Uses Adj List
 *   at 'demos/ds/PriorityQueue_v1.cs'
 * Rel   : http://spoj.com/problems/TRVCOST/
-* meta  : tag-dijkstra, tag-graph-theory
+* meta  : tag-graph-dijkstra
 ***************************************************************************/
 using System;
 using System.Collections.Generic;

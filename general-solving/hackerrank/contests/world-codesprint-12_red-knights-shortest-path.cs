@@ -11,7 +11,7 @@
 *   for validating computation using offsets are okay. However, to generate
 *   adjacency list using offsets (numbers: usual mapping: BoardLength * r + c)
 *   it is not a good idea to use offsets rows andcolumns have to be checked
-* meta  : tag-graph-theory, tag-bfs, tag-sssp
+* meta  : tag-graph-bfs, tag-sssp
 ***************************************************************************/
 using System;
 using System.Collections.Generic;

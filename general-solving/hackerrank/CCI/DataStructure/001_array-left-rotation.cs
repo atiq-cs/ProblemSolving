@@ -2,18 +2,18 @@
 *   Problem Name:   Arrays: Left Rotation
 *   Problem URL :   https://www.hackerrank.com/challenges/ctci-array-left-rotation
 *   Date        :   Jan 15, 2016
-*   Domain      :   cracking-the-coding-interview/data-structure
 *   Desc        :   Linear swap
 *   Complexity  :   O(n)
 *   Author      :   Atiq Rahman
 *   Status      :   Accepted
 *   Notes       :   Direct solution based on,
 *                   https://www.hackerrank.com/challenges/circular-array-rotation
+*                   domain, cracking-the-coding-interview/data-structure
 *   meta        :   tag-easy
 ***************************************************************************/
 using System;
 
-class HK_Solution {
+class HKSolution {
   // perform circular rotation
   static void c_rotate(int[] a, int[] b, int n, int k) {
     for (int i = 0; i < n; i++)
