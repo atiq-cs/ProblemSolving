@@ -7,7 +7,7 @@
 * Status      : Accepted
 * Notes       : Bubble sort with tracking of swap operation
 * Same        : Basics/basic_sort.cs
-* meta        : tag-sort, tag-easy
+* meta        : tag-algo-sort, tag-easy
 ***************************************************************************/
 using System;
 

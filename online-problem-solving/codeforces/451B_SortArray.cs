@@ -1,4 +1,4 @@
-﻿/***************************************************************************
+/***************************************************************************
 * Title       : Sort the Array
 * URL         : http://codeforces.com/problemset/problem/451/B
 * Occasion    : Codeforces Round #258 (Div. 2)
@@ -14,7 +14,7 @@
 *   Input: distinct integers, not equal
 *   Judge has some large inputs, good for testing.
 *
-* meta        : tag-sorting, tag-easy
+* meta        : tag-algo-sort, tag-easy
 ***************************************************************************/
 using System;
 

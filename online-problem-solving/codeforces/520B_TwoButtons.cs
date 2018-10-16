@@ -1,4 +1,4 @@
-﻿/***************************************************************************
+/***************************************************************************
 * Title       : Two Buttons
 * URL         : http://codeforces.com/problemset/problem/520/B
 * Occasion    : Codeforces Round #295 (Div. 2)
@@ -27,7 +27,7 @@
 *                4 6
 *                10 1
 *                1 3
-* meta        : tag-greedy, tag-math
+* meta        : tag-algo-greedy, tag-math
 ***************************************************************************/
 using System;
 

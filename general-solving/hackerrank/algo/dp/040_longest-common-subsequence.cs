@@ -11,7 +11,7 @@
 *    programming-classics-the-longest-common-subsequence
 *    
 *    Input is two integer subsequences
-* meta  : tag-lcs, tag-algo-dp, tag-company-expedia, tag-coding-test
+* meta  : tag-dp-lcs, tag-algo-dp, tag-company-expedia, tag-coding-test
 ***************************************************************************/
 using System;
 

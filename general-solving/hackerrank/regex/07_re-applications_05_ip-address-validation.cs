@@ -15,7 +15,7 @@
 *   demonstrates hex number string to int conversion
 *   ref, Int32.TryParse Method (String, NumberStyles, IFormatProvider, Int32)
 *   https://msdn.microsoft.com/en-us/library/zf50za27.aspx
-* meta  : tag-easy, tag-bloomberg, tag-string, tag-tokenize
+* meta  : tag-easy, tag-company-bloomberg, tag-string, tag-tokenize
 ***************************************************************************/
 using System;
 using System.Globalization;   // hex convert

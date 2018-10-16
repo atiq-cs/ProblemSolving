@@ -8,7 +8,7 @@
 * Notes       : Quick Sort partition related
 *               
 * Related     : Basic Sort
-* meta        : tag-sort
+* meta        : tag-algo-sort
 ***************************************************************************/
 using System;
 

@@ -16,7 +16,7 @@
 *               Learnt here how to specify a comparer function
 * Comparer ref: https://msdn.microsoft.com/en-us/library/cxt053xf.aspx
 * Related     : Basic Sort
-* meta        : tag-sort
+* meta        : tag-algo-sort
 ***************************************************************************/
 using System;
 

@@ -1,4 +1,4 @@
-﻿/***************************************************************************
+/***************************************************************************
 * Title : Pancake Sort
 * URL   : https://www.pramp.com/challenge/3QnxW6xoPLTNl5jX5LM1
 * Date  : 2018-04-23
@@ -10,7 +10,7 @@
 * 
 *   Initial version done during interview with Elenor on 23rd (solved on 24th)
 *   after interview with Masum on pramp
-* meta  : tag-sorting, tag-pramp, tag-easy
+* meta  : tag-algo-sort, tag-judge-pramp, tag-easy
 ***************************************************************************/
 using System;
 

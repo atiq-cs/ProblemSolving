@@ -7,7 +7,7 @@
 * Status: Accepted (rewritten 2016-09-25)
 * Algo  : Longest Increasing Subsequence
 * Notes : Slightly modified LIS to work for Longest Decreasing Subsequence
-* meta  : tag-lis, tag-algo-dp
+* meta  : tag-dp-lis, tag-algo-dp
 ***************************************************************************/
 
 #include <iostream>

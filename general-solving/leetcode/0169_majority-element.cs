@@ -35,7 +35,7 @@
 * that it occurs at least (n+1)/2 (consider number of items can be odd) times then it is majority element
 * ref: http://www.cs.utexas.edu/~moore/best-ideas/mjrty/
 *  https://en.wikipedia.org/wiki/Boyer%E2%80%93Moore_majority_vote_algorithm
-* meta  : tag-bit-manipulation, tag-divide-conquer, tag-leetcode-easy
+* meta  : tag-bit-manip, tag-divide-conquer, tag-leetcode-easy
 ***************************************************************************************************/
 public class Solution
 {

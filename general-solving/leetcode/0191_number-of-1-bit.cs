@@ -18,7 +18,7 @@
 *
 *   Naive approach, Iterate over each bit and perform AND operation with a number that exactly has
 *   that bit set and all other bits set to zero
-* meta  : tag-bit-manipulation, tag-leetcode-easy
+* meta  : tag-bit-manip, tag-leetcode-easy
 ***************************************************************************************************/
 public class Solution {
   // Optimized - O(k) - EPI

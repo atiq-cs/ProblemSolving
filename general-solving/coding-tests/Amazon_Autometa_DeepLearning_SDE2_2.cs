@@ -13,7 +13,7 @@
 *    if two values are same then compare identifiers
 *
 *   Compared to C++, there's no clever/oneliner lambda syntax for comparing
-* meta  : tag-hash-table, tag-sorting, tag-amazon
+* meta  : tag-hash-table, tag-algo-sort, tag-company-amazon
 ***************************************************************************/
 using System;
 using System.Collections.Generic;

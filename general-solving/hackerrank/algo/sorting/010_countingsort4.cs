@@ -6,12 +6,13 @@
 * Author      : Atiq Rahman
 * Status      : Accepted
 * Notes       :
-* meta        : tag-sort, tag-counting-sort
+* meta        : tag-algo-sort
 ***************************************************************************/
 using System;
 using System.Text;
 
-class HK_Solution {
+class HK_Solution
+{
   static void Main(String[] args) {
     // take input
     int n = int.Parse(Console.ReadLine());

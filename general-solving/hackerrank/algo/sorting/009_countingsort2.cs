@@ -6,7 +6,7 @@
 * Author      : Atiq Rahman
 * Status      : Accepted
 * Notes       : Counting Sort page 194 CLR
-* meta        : tag-sort, tag-counting-sort
+* meta        : tag-algo-sort
 ***************************************************************************/
 using System;
 

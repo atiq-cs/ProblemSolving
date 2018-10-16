@@ -1,4 +1,4 @@
-﻿/***************************************************************************
+/***************************************************************************
 * Title       : Buggy Sorting
 * URL         : http://codeforces.com/problemset/problem/246/A
 * Occasion    : Codeforces Round #151 (Div. 2)
@@ -7,10 +7,10 @@
 * Author      : Atiq Rahman
 * Status      : Accepted
 * Notes       : Here's Valera's program (consider 1 based index),
-*   loop integer variable i from 1 to n - 1
-*     loop integer variable j from i to n - 1
-*       if (a[j] > a[j] + 1)
-*         Swap a[j] and a[j] + 1
+*   loop integer variable i from 1 to n-1
+*     loop integer variable j from i to n-1
+*       if (a[j] > a[j]+1)
+*         Swap a[j] and a[j]+1
 * 
 *   To note, Valera's second loop is like Selection Sort.
 *   Swap is like Bubble Sort or of the one that of Insertion Sort.
@@ -27,7 +27,7 @@
 *   Why? 
 *   Or if A[i] was used instead of A[j] in the swap that would also work.
 *
-* meta        : tag-sorting, tag-easy
+* meta        : tag-algo-sort, tag-easy
 ***************************************************************************/
 using System;
 

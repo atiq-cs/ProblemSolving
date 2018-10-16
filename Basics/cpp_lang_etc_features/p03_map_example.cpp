@@ -4,7 +4,7 @@
 
     Book map page number: 909
         Map examples
-* meta : tag-bloomberg
+* meta : tag-company-bloomberg
 */
 
 #include <iostream>

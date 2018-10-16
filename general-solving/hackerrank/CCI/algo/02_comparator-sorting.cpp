@@ -7,7 +7,7 @@
 *   https://msdn.microsoft.com/en-us/library/6tf1f0bc.aspx
 * Status: Accepted
 * Notes : Lang C# not available in this problem
-* meta  : tag-sorting, tag-lambda-exp
+* meta  : tag-algo-sort, tag-lambda-exp
 ***************************************************************************/
 struct Player {
   string name;

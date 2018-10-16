@@ -1,13 +1,13 @@
 /***************************************************************************
 * Title       : Turbo Sort
 * URL         : http://www.spoj.com/problems/TSORT/
-* Date        : Sept 18, 2017
+* Date        : Sep 18, 2017
 * Complexity  : O(n) here, n = 10^6
 * Author      : Atiq Rahman
 * Status      : Accepted
 * Notes       : Conclusion: Take care that I/O is fast then it gets easily
 *               accepted
-* meta        : tag-sorting, tag-counting-sort
+* meta        : tag-algo-sort
 ***************************************************************************/
 using System;
 using System.Text;    // for StringBuilder

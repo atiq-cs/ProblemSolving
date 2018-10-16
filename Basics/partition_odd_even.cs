@@ -15,11 +15,12 @@
 *   
 *   Could not find a similar problem on online judges yet
 * Rel   : http://www.crazyforcode.com/rearrange-array-even-numbers-odd-numbers/
-* meta  : tag-sort, tag-microsoft, tag-interviews
+* meta  : tag-algo-sort, tag-company-microsoft, tag-interview
 ***************************************************************************/
 using System;
 
-public class Demo {
+public class Demo
+{
   static void OddEvenSort(int[] A) {
     int j = -2; // odd pointer
     int k = -1; // even pointer

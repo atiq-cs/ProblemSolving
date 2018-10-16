@@ -13,7 +13,7 @@
 *   then bloomberg version asks to print 2 as 2 duplicate numbers found (1 & 2)
 *   For this problem, however, we need to print both of these numbers
 *   1, 2
-* meta  : tag-easy, tag-bloomberg, tag-hash-table
+* meta  : tag-easy, tag-company-bloomberg, tag-hash-table
 ***************************************************************************/
 using System;
 using System.Collections.Generic;

@@ -8,16 +8,20 @@ search box: `tag-linked-list`
 Additionally, here are currently supported tags/classifications based on
 algorithm and data structure,
  * [Bit Manipulation](
-https://github.com/atiq-cs/Problem-Solving/search?q=tag-bitwise)
+https://github.com/atiq-cs/Problem-Solving/search?q=tag-bit-manip)
  * [Dynamic Programming](
 https://github.com/atiq-cs/Problem-Solving/search?q=tag-algo-dp)
  * [Graph](https://github.com/atiq-cs/Problem-Solving/search?q=tag-graph)
+ * [LCS](
+https://github.com/atiq-cs/Problem-Solving/search?q=tag-dp-lcs)
+ * [LIS](
+https://github.com/atiq-cs/Problem-Solving/search?q=tag-dp-lis)
  * [Linked List](https://github.com/atiq-cs/Problem-Solving/search?q=tag-linked-list)
  * [Priority Queue](
  https://github.com/atiq-cs/Problem-Solving/search?q=tag-priority-queue)
  * [Recursion](
 https://github.com/atiq-cs/Problem-Solving/search?q=tag-recursion)
- * [Sorting](https://github.com/atiq-cs/Problem-Solving/search?q=tag-sorting)
+ * [Sorting](https://github.com/atiq-cs/Problem-Solving/search?q=tag-algo-sort)
  * [String](https://github.com/atiq-cs/Problem-Solving/search?q=tag-string)
  * [Tree](https://github.com/atiq-cs/Problem-Solving/search?q=tag-tree)
 
@@ -41,24 +45,28 @@ Permutation, combination related problems,
 https://github.com/atiq-cs/Problem-Solving/search?q=tag-next-permutation)
 
 Company based domains,
- * [Google](https://github.com/atiq-cs/Problem-Solving/search?q=tag-google)
+ * [Google](https://github.com/atiq-cs/Problem-Solving/search?q=tag-company-google)
  * [Microsoft](
-https://github.com/atiq-cs/Problem-Solving/search?q=tag-microsoft)
+https://github.com/atiq-cs/Problem-Solving/search?q=tag-company-microsoft)
 * [Bloomberg](
-https://github.com/atiq-cs/Problem-Solving/search?q=tag-bloomberg)
+https://github.com/atiq-cs/Problem-Solving/search?q=tag-company-bloomberg)
 
 Contest based tags,
  * [ACM ICPC](https://github.com/atiq-cs/Problem-Solving/search?q=tag-acm-icpc)
  
 Miscellaneous tags
  * [Interviews, any company](
-https://github.com/atiq-cs/Problem-Solving/search?q=tag-interviews)
+https://github.com/atiq-cs/Problem-Solving/search?q=tag-interview)
  * [Easy LeetCode Problems](
 https://github.com/atiq-cs/Problem-Solving/search?q=tag-leetcode-easy)
  * [Medium LeetCode Problems](
 https://github.com/atiq-cs/Problem-Solving/search?q=tag-leetcode-medium)
-  * [Easy problems, can't classify](
+  * [Easy non-leetcode problems](
 https://github.com/atiq-cs/Problem-Solving/search?q=tag-easy)
+
+Language Feature based,
+ * [lambda expression](https://github.com/atiq-cs/Problem-Solving/search?q=tag-lambda-exp)
+ * [LINQ](https://github.com/atiq-cs/Problem-Solving/search?q=tag-csharp-linq)
 
 #### Tag related tips and tricks,
 Some notes,
@@ -73,8 +81,7 @@ For example,
  * Sorting algorithms
 
 #### Algorithms
-Related with implementation of algorithms. Primary reference C.L.R.S, 3rd
-edition
+Related with implementation of algorithms. Primary reference C.L.R.S, 3rd edition
 
 #### Data Structure
 Reference: geeksforgeeks, wikipedia etc.

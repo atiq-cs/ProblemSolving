@@ -24,9 +24,10 @@
 *   Instead of sorting an array, we can sort its respective indice array
 *   overriding the comparison in such a way so that resulting indices sort will
 *   contain positions of sorted array of original.
-* meta  : tag-leetcode-medium, tag-sorting, tag-greedy, tag-lambda
+* meta  : tag-leetcode-medium, tag-algo-sort, tag-algo-greedy, tag-lambda-exp
 ***************************************************************************/
-public class Solution {
+public class Solution
+{
   public int[] AdvantageCount(int[] A, int[] B) {
     Array.Sort(A);
     // indices sort for B

@@ -1,9 +1,8 @@
 /*
 *    Title      : Lonely Integer
 *    Problem#   : https://www.hackerrank.com/challenges/lonely-integer
-*    Domain     : Algorithms/Bit Manipulation
-*    Data       : Sept 7 2015
-*    Alogirthm  :   
+*    Data       : Sep 7 2015
+*    Algorithm  :   
 *    Complexity : O(n)
 *    Author     : Atiq Rahman
 *    Status     : Accepted
@@ -11,11 +10,12 @@
 *                  the number we want to find
 *                 ref: http://www.geeksforgeeks.org/find-the-element-that-appears-once/
 *                 Indeed a nice trick to find the lonely integer
-*   meta        : tag-bit-manipulation
+*   meta        : tag-bit-manip
 */
 using System;
 
-class Solution {
+class Solution
+{
     static int lonelyinteger(int[] a) {
         int res = a[0];
         for (int i = 1; i<a.Length; i++) {

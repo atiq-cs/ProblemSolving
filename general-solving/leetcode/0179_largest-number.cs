@@ -6,7 +6,7 @@
 * Author: Atiq Rahman
 * Status: Accepted (Runtime beats 88% C# submissions)
 * Notes : This approach is revised for cleaner code, still corner cases might exist
-* meta  : tag-sorting, tag-leetcode-medium
+* meta  : tag-algo-sort, tag-leetcode-medium
 ***************************************************************************************************/
 
 /*

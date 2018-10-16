@@ -8,7 +8,7 @@
 * Notes       : Based on '231_TestingTheCatcher_lis_algo2_v1'
 * rel     : leetcode/0300_lis_algo2.cs *
 * ref           https://ideone.com/IWlJlm
-* meta        : tag-math, tag-algo-dp, tag-lis
+* meta        : tag-math, tag-algo-dp, tag-dp-lis
 ***************************************************************************/
 #include <iostream>
 #include <vector>

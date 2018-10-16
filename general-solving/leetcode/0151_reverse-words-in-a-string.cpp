@@ -11,7 +11,7 @@
 *   As we are allowed to modify passed string we can reverse the whole string
 *   in one iteration. In another iteration, we can reverse the words inside it
 *   got get the expected result
-* meta  : tag-string, tag-bloomberg
+* meta  : tag-string, tag-company-bloomberg
 ***************************************************************************/
 #include <sstream>
 #include <string>

@@ -10,7 +10,7 @@
 *   on.. till n/2. From n/2 start checking divisility with numbers added so far
 *   in the list.
 *
-* meta  : tag-divisibility, tag-number-theory, tag-greedy
+* meta  : tag-divisibility, tag-number-theory, tag-algo-greedy
 ***************************************************************************/
 using System;
 using System.Collections.Generic;

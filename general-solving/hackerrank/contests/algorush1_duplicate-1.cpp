@@ -10,7 +10,7 @@
 *   For example, if we have
 *   1 4 5 1 2 7 9 2 3
 *   then bloomberg version asks to print 2 as 2 duplicate numbers found (1 & 2)
-* meta  : tag-easy, tag-bloomberg, tag-hash-table, tag-interviews
+* meta  : tag-easy, tag-company-bloomberg, tag-hash-table, tag-interview
 ***************************************************************************/
 #include <iostream>
 #include <vector>

@@ -31,7 +31,7 @@
 *               sorting ensures maintaining the invariant matches are done in
 *               order. If a boy has only one match. His match won't be matched
 *               with somebody else.
-* meta        : tag-algo-dp, tag-sorting
+* meta        : tag-algo-dp, tag-algo-sort
 ***************************************************************************/
 using System;
 

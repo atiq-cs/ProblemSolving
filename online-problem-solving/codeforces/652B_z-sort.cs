@@ -1,4 +1,4 @@
-﻿/******************************************************************************
+/******************************************************************************
 * Title       : z-sort
 * URL         : http://codeforces.com/problemset/problem/652/B
 *   http://www.lintcode.com/en/problem/wiggle-sort/
@@ -15,7 +15,7 @@
 *   Initial implementation is based on ref:
 *   https://www.quora.com/What-is-an-efficient-method-to-wiggle-sort-an-array
 *
-* meta        : tag-sorting, tag-easy, tag-wiggle-sort
+* meta        : tag-algo-sort, tag-easy, tag-wiggle-sort
 ******************************************************************************/
 using System;
 

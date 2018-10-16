@@ -8,7 +8,7 @@
 * Notes       : Credits: Jane Alam Jan
 *               Modified a bit to make it more understable
 * Ref           https://ideone.com/IWlJlm
-* meta        : tag-math, tag-algo-dp, tag-lis
+* meta        : tag-math, tag-algo-dp, tag-dp-lis
 ***************************************************************************/
 #include <iostream>
 

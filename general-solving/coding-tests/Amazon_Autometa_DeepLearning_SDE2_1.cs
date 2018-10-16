@@ -13,9 +13,10 @@
 *
 *   Required comparison for sort is case insensitive. It also asks to exclude
 *   words from a given list
-* meta  : tag-hash-table, tag-linq, tag-sorting, tag-amazon
+* meta  : tag-hash-table, tag-charp-linq, tag-algo-sort, tag-company-amazon
 ***************************************************************************/
-public class AmazonSolution {
+public class AmazonSolution
+{
   public IList<string> MostFrequent(string line, string[] excludeWords) {
     // Build a hash set using excluded word list
     // Parse string line.

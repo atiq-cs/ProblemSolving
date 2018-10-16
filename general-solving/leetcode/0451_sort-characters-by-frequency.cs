@@ -17,8 +17,8 @@
 *   
 *   For most optimized solution we would need additional O(N) space to maintain
 *   the mapping
-* meta  : tag-sort, tag-leetcode-easy, tag-lambda-expr, tag-hash-table,
-*   tag-company-amazon, tag-coding-test
+* meta  : tag-algo-sort, tag-leetcode-easy, tag-lambda-exp, tag-hash-table, tag-company-amazon,
+*   tag-coding-test
 ***************************************************************************/
 
 // Borrowed and modified from 'demos/algo/sort/CountingSort.cs'

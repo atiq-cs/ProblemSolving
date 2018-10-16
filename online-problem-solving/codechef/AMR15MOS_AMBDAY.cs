@@ -10,7 +10,7 @@
 * Notes       : What does the problem Ask?
 *               Unsorted cut positions are given, can we find minimum area created by the cuts?
 *
-* meta        : tag-math, tag-sorting
+* meta        : tag-math, tag-algo-sort
 ***************************************************************************/
 
 using System;

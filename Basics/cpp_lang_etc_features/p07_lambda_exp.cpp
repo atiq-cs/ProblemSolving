@@ -3,7 +3,7 @@
 // even_lambda.cpp
 // compile with: cl /EHsc /nologo /W4 /MTd
 // uses initializer list
-// meta: tag-bloomberg
+// meta: tag-company-bloomberg
 
 #include <algorithm>
 #include <iostream>

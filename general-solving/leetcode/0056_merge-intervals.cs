@@ -16,9 +16,10 @@
 *   Cast IList to List ref: https://stackoverflow.com/q/2207341
 *   Demonstrates use of lambda expression with List.Sort
 * rel   : https://leetcode.com/problems/insert-interval
-* meta  : tag-string, tag-kmp, tag-lambda
+* meta  : tag-string, tag-algo-kmp, tag-lambda-exp
 ***************************************************************************/
-public class Solution {
+public class Solution
+{
   public IList<Interval> Merge(IList<Interval> iIntervals) {
     // Cast IList to List. Otherwise, Sort throws an exception.
     List<Interval> intervals = new List<Interval>(iIntervals);

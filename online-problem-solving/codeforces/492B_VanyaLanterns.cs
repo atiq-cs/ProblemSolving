@@ -14,7 +14,7 @@
 *
 *   This problem is simpler than
 *   https://www.hackerrank.com/challenges/hackerland-radio-transmitters
-* meta  : tag-easy, tag-sorting, tag-math
+* meta  : tag-easy, tag-algo-sort, tag-math
 ***************************************************************************/
 using System;
 using System.Globalization;

@@ -7,14 +7,15 @@
 *             Apparently binary numbers can be efficiently generated using
 *              bitwise operations
 *             for bitwise implementation have a look at,
-*              http://www.cs.utexas.edu/users/djimenez/utsa/cs3343/lecture25.html
+*             ref: http://www.cs.utexas.edu/users/djimenez/utsa/cs3343/lecture25.html
 *              
-*              ToDo: complexity analysis
+*              ToDo, complexity analysis
 * meta      : tag-combination, tag-recursion
 */
 using System;
 
-class CombinationBinary {
+class CombinationBinary
+{
   public void comb(int[] A, int k) {
     if (k == A.Length) {
       DisplayArray(A);

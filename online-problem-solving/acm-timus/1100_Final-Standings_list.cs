@@ -9,7 +9,7 @@
 *   Complexity  :   O(n) where n is the length of the string
 *   Author      :   Atiq Rahman
 *   Status      :   Accepted (Time: 0.452), Memory (9992 KB)
-*   meta        :   tag-sorting
+*   meta        :   tag-algo-sort
 ***************************************************************************/
 using System;
 using System.Collections.Generic;

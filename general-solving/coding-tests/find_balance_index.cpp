@@ -11,7 +11,7 @@
 *  Desc    :
 *
 *  Status    :  Yet to be tested against different type of input
-*   meta        :   tag-interviews, tag-prefix-sum
+*   meta        :   tag-interview, tag-prefix-sum
 */
 
 #include <iostream>

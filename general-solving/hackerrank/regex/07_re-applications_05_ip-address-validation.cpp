@@ -14,7 +14,7 @@
 *   Example ref, https://atiqcs.wordpress.com/2018/01/27/cpp-fundamentals/
 *   Example input at the bottom of the source
 *   The interviewer suggested 'cerr' for debugging errors.
-* meta  : tag-easy, tag-bloomberg, tag-string, tag-tokenize
+* meta  : tag-easy, tag-company-bloomberg, tag-string, tag-tokenize
 ***************************************************************************/
 #include <sstream>
 #include <string>

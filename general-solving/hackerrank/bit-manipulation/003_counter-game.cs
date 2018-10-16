@@ -9,7 +9,7 @@
 *   Complexity  :   O(n)
 *   Author      :   Atiq Rahman
 *   Status      :   Accepted
-*   meta        :   tag-bit-manipulation
+*   meta        :   tag-bit-manip
 ***************************************************************************/
 using System;
 

@@ -6,7 +6,7 @@
 * Author: Atiq Rahman
 * Status: Accepted
 * Notes : DP implementation by observation
-* meta  : tag-dp-lis, tag-bit-manipulation, tag-algo-dp, tag-leetcode-medium
+* meta  : tag-dp-lis, tag-bit-manip, tag-algo-dp, tag-leetcode-medium
 ***************************************************************************************************/
 public class Solution
 {

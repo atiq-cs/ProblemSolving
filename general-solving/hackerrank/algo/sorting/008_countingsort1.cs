@@ -6,9 +6,7 @@
 * Author      : Atiq Rahman
 * Status      : Accepted
 * Notes       : Counting Sort page
-*               
-*               Nicety - 'string.Join'
-* meta        : tag-sort, tag-counting-sort
+* meta        : tag-algo-sort
 ***************************************************************************/
 using System;
 

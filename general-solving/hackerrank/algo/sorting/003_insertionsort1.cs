@@ -6,7 +6,7 @@
 * Author      : Atiq Rahman
 * Status      : Accepted
 * Notes       : page 16 CLR
-* meta        : tag-sort, tag-insertion-sort
+* meta        : tag-algo-sort
 ***************************************************************************/
 using System;
 using System.Collections.Generic;

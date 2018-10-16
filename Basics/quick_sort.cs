@@ -12,7 +12,7 @@
 *   Randomized-Partition
 *
 * Related: https://www.hackerrank.com/challenges/quicksort1
-* meta  : tag-sorting
+* meta  : tag-algo-sort
 ***************************************************************************/
 using System;
 
