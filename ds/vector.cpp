@@ -11,7 +11,7 @@
 *   an iterator
 *   note how delete operator is called for the array
 *   does not implement handful of methods that STL vector supports
-* meta: tag-cpp, tag-bloomberg
+* meta: tag-design-generic, tag-company-bloomberg
 */
 #include<iostream>
 
