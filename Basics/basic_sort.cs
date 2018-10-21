@@ -91,6 +91,7 @@ class SortingAlgorithms {
     }
   }
 
+  // easier, readable version
   public void InsertionSort_v2(int[] A) {
     for (int i = 1; i < A.Length; i++) {
       int j = i;
@@ -100,7 +101,7 @@ class SortingAlgorithms {
     }
   }
 
-  // Utility Functions
+  // Utility Functions, may be move to algo-core/utils.cs
   static void Swap<T>(ref T lhs, ref T rhs) {
     if (lhs.Equals(rhs))
       return ;
