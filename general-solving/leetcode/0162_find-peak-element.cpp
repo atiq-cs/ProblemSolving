@@ -5,19 +5,8 @@
 * Author: Atiq Rahman
 * Comp  : Time O(lg n)
 * Status: Accepted
-* Notes : Alternative name "local maxima"
-*   Finding a local minima is rather easy. Why Binary Search?
-*   In worst case, local minima can be located at the end of the array.
-*   It is possible that a search starts from the beginning of the array and the
-*   cost to find that local minima will be O(N).
-* 
-*   Thereofre, a binary search which starts from the middle element and goes to
-*   the left side if item on the left is larger is intuitive. Similarly if the
-*   item on the right side is larger then it takes the search direction towards
-*   the right side.
-*   Detailed explanation: https://stackoverflow.com/q/12238241
-*   https://www.geeksforgeeks.org/find-local-minima-array/
-* meta  : tag-binary-search
+* Notes : moved to '0162_find-peak-element.cs'
+* meta  : tag-binary-search, tag-ds-array, tag-leetcode-medium
 ***************************************************************************/
 class Solution {
 public:
