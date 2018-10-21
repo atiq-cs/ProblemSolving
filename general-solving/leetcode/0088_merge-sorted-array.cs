@@ -7,7 +7,7 @@
 * Status: Accepted
 * Notes : Because nums1 has enough space assign from the end; there is no risk
 *   of over-writing.
-* meta  : tag-binary-tree, tag-leetcode-easy, tag-two-pointer
+* meta  : tag-binary-tree, tag-ds-array, tag-two-pointer, tag-leetcode-easy
 ***************************************************************************/
 public class Solution {
   public void Merge(int[] nums1, int m, int[] nums2, int n) {
