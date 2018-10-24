@@ -1,8 +1,8 @@
-﻿/***************************************************************************
+/***************************************************************************
 * Title       : Depression
 * URL         : http://codeforces.com/problemset/problem/80/B
 * Occasion    : Codeforces Beta Round #69 (Div. 2 Only)
-* Date        : Sept 20 2017
+* Date        : Sep 20 2017
 * Complexity  : O(1) 46ms
 * Author      : Atiq Rahman
 * Status      : Accepted
@@ -15,7 +15,7 @@
 using System;
 using System.Globalization;
 
-public class Demo {
+public class CFSolution {
   static double EPS = 1e-9;
   public static void Main() {
     // feel free to modify

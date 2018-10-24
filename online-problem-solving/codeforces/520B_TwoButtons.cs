@@ -31,7 +31,7 @@
 ***************************************************************************/
 using System;
 
-public class Demo {
+public class CFSolution {
   // n < m
   static int GetCountByMovingDown(int n, int m) {
     int count = 0;

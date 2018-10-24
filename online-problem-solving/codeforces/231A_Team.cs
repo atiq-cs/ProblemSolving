@@ -1,8 +1,8 @@
-﻿/***************************************************************************
+/***************************************************************************
 * Title       : Team
 * URL         : http://codeforces.com/problemset/problem/231/A
 * Occasion    : Codeforces Round #143 (Div. 2)
-* Date        : Sept 28 2017
+* Date        : Sep 28 2017
 * Complexity  : O(n)
 * Author      : Atiq Rahman
 * Status      : Accepted
@@ -11,7 +11,7 @@
 ***************************************************************************/
 using System;
 
-public class Demo {
+public class CFSolution {
   public static void Main() {
     int  n = int.Parse(Console.ReadLine());
     int numProbs = 0;

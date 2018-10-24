@@ -11,7 +11,7 @@
 ***************************************************************************/
 using System;
 
-public class Demo {
+public class CFSolution {
     public static void Main() {
         string[] tokens = Console.ReadLine().Split();
         int n = int.Parse(tokens[0]);

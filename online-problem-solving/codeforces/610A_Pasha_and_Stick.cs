@@ -15,7 +15,7 @@
 
 using System;
 
-public class Demo {
+public class CFSolution {
     public static void Main() {
         int N = int.Parse(Console.ReadLine());
         Console.WriteLine(GetCountWays(N));

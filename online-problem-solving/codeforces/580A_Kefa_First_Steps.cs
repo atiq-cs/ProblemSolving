@@ -11,7 +11,7 @@
 ***************************************************************************/
 using System;
 
-public class Demo {
+public class CFSolution {
     static uint run_lineardp(uint[] a, uint n) {
         uint cur_seq_len = 1;
         uint max_seq_len = 0;

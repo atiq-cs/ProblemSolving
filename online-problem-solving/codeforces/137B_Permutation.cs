@@ -14,7 +14,7 @@
 ***************************************************************************/
 
 using System;
-public class Demo
+public class CFSolution
 {
     private static void Main()
     {

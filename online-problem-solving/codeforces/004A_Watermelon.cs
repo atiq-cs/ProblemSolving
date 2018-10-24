@@ -11,7 +11,8 @@
 ***************************************************************************/
 
 using System;
-public class Demo {
+public class CFSolution
+{
     private static void Main() {
         int w = int.Parse(Console.ReadLine());
         if (w > 3 && w % 2 == 0)
