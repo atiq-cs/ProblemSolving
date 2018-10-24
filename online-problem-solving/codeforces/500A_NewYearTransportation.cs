@@ -1,14 +1,14 @@
-/***************************************************************************
-* Title       : New Year Transportation
-* URL         : http://codeforces.com/problemset/problem/522/A
-* Occasion    : Good Bye 2014
-* Date        : Sep 12 2017
-* Complexity  : O(n) 46ms, Space O(n)
-* Author      : Atiq Rahman
-* Status      : Accepted
-* Notes       : Do a linear loop and check if destination is reachable
-* meta        : tag-easy, tag-implementation
-***************************************************************************/
+/***************************************************************************************************
+* Title : New Year Transportation
+* URL   : http://codeforces.com/problemset/problem/522/A
+* Occasn: Good Bye 2014
+* Date  : 2017-09-12
+* Comp  : O(n), O(n)
+* Author: Atiq Rahman
+* Status: Accepted
+* Notes : Do a linear loop and check if destination is reachable
+* meta  : tag-graph-dfs, tag-algo-dp, tag-implementation, tag-easy
+***************************************************************************************************/
 using System;
 
 // This could be represented easily with static functions inside Main class

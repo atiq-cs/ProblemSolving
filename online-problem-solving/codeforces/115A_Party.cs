@@ -1,17 +1,17 @@
-﻿/***************************************************************************
-* Problem Name: Party
-* Problem URL : http://codeforces.com/problemset/problem/115/A
-* Occasion    : Codeforces Beta Round #87 (Div. 1 Only)
-* Date        : Aug 12 2017
-* Complexity  : O(n) to traverse nodes
-* Author      : Atiq Rahman
-* Status      : Accepted
-* Desc        :  
-* Notes       : Run time would increase asymptotically if there were cycles or
-*               if it were hard to find the root nodes
-*               Easy tree depth Problem
-* meta        : tag-easy, tag-tree
-***************************************************************************/
+/***************************************************************************************************
+* Title : Party
+* URL   : http://codeforces.com/problemset/problem/115/A
+* Occasn: Codeforces Beta Round #87 (Div. 1 Only)
+* Date  : 2017-08-12
+* Comp  : O(n) to traverse nodes
+* Author: Atiq Rahman
+* Status: Accepted
+* Notes : 
+* Notes : Run time would increase asymptotically if there were cycles or
+*   if it were hard to find the root nodes
+*   Easy tree depth Problem
+* meta  : tag-easy, tag-tree
+***************************************************************************************************/
 using System;
 using System.Collections.Generic;
 

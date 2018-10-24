@@ -1,18 +1,20 @@
-/***************************************************************************
-* Title       : How many trees?
-* URL         : http://codeforces.com/problemset/problem/9/D
-* Occasion    : Codeforces Beta Round #9 (Div. 2 Only)
-* Date        : Jan 12 2016
-* Complexity  : 
-* Author      : Atiq Rahman
-* Status      : Accepted
-* Notes       : Check note if we have draft, compare with other solutins if run
-*   time can be improved or optimizations can be made
-* meta        : tag-combinatorics, tag-algo-dp
-***************************************************************************/
+/***************************************************************************************************
+* Title : How many trees?
+* URL   : http://codeforces.com/problemset/problem/9/D
+* Occasn: Codeforces Beta Round #9 (Div. 2 Only)
+* Date  : 2016-01-12
+* Comp  : probably, N^2 * lg N
+* Author: Atiq Rahman
+* Status: Accepted
+* Notes : Check note if we have draft, compare with other solutions if run
+*   time can be improved or optimized
+*   ToDo, analyze complexity
+* meta  : tag-combinatorics, tag-algo-dp
+***************************************************************************************************/
 using System;
 
-public class CF_Solution {
+public class CFSolution
+{
   public static void Main() {
     string[] tokens = Console.ReadLine().Split();
     int n = int.Parse(tokens[0]);

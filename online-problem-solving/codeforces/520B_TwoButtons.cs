@@ -1,34 +1,34 @@
-/***************************************************************************
-* Title       : Two Buttons
-* URL         : http://codeforces.com/problemset/problem/520/B
-* Occasion    : Codeforces Round #295 (Div. 2)
-* Date        : Oct 9 2017
-* Complexity  : O(lg n)
-* Author      : Atiq Rahman
-* Status      : Accepted (62ms)
-* Notes       :
-*   It looks like a distance problem: comparing distance from numbers and
-*   choosing minimal one should work. It's not a DP problem as per the tags.
-*               
-*              - Simple case: when n >= m
-*                 count = n-m
-*                 
-*              - Other case: n < m
-*               Choosing distance 1:
-*                keep dividing m by 2 and do count++ till n >= m
-*               Choosing distance 2:
-*                keep multiplying n by 2 and do count++ till n >= m
-*               For both of these distances at the end do,
-*                 count += n-m
-*                 
-*               Considered inputs while developing the solution,
-*                7 20
-*                7 21
-*                4 6
-*                10 1
-*                1 3
-* meta        : tag-algo-greedy, tag-math
-***************************************************************************/
+/***************************************************************************************************
+* Title : Two Buttons
+* URL   : http://codeforces.com/problemset/problem/520/B
+* Occasn: Codeforces Round #295 (Div. 2)
+* Date  : 2017-10-09
+* Comp  : O(lg n)
+* Author: Atiq Rahman
+* Status: Accepted (62ms)
+* Notes : 
+*   It looks like a distance problem: comparing distance from numbers and choosing minimal one
+*   should work. It's not a DP problem as per the tags.
+*   
+*   - Simple case, when n >= m
+*   count = n-m
+*   
+*   - Other case, n < m
+*   Choosing distance 1:
+*   keep dividing m by 2 and do count++ till n >= m
+*   Choosing distance 2:
+*   keep multiplying n by 2 and do count++ till n >= m
+*   For both of these distances at the end do,
+*   count += n-m
+*   
+*   Considered inputs while developing the solution,
+*   7 20
+*   7 21
+*   4 6
+*   10 1
+*   1 3
+* meta  : tag-algo-greedy, tag-graph-sssp, tag-graph-dfs tag-math
+***************************************************************************************************/
 using System;
 
 public class CFSolution {

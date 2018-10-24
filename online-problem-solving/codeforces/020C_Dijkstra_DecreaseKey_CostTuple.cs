@@ -35,7 +35,7 @@ interface PriorityQueueElement {
   uint Value { get; set; }
 }
 
-class PriorityQueue <T> where T:PriorityQueueElement {
+class PriorityQueue<T> where T : PriorityQueueElement {
   protected List<T> Arr;
   protected int Size;
   Dictionary<int, int> map;
@@ -74,7 +74,7 @@ class PriorityQueue <T> where T:PriorityQueueElement {
     else
       Arr.Add(item);
     map.Add(item.Index, Size);
-    BubbleUp(Size);  Size++;
+    BubbleUp(Size); Size++;
   }
 
   protected void BubbleUp(int i) {
@@ -90,7 +90,7 @@ class PriorityQueue <T> where T:PriorityQueueElement {
     int smallest = i;
     if (l < Size && Arr[l].Value < Arr[smallest].Value)
       smallest = l;
-    if (r< Size && Arr[r].Value < Arr[smallest].Value)
+    if (r < Size && Arr[r].Value < Arr[smallest].Value)
       smallest = r;
     if (smallest != i) {
       Swap(smallest, i);
@@ -111,7 +111,7 @@ class PriorityQueue <T> where T:PriorityQueueElement {
   public void DecreaseKey(T item) {
     if (!map.ContainsKey(item.Index)) {
       Enqueue(item);
-      return ;
+      return;
     }
     int i = map[item.Index];
     if (Arr[i].Value > item.Value)
@@ -120,7 +120,7 @@ class PriorityQueue <T> where T:PriorityQueueElement {
   }
 }
 
-public class Vertex : PriorityQueueElement {
+public class Vertex:PriorityQueueElement {
   public int i;
   public uint d;
   // public int p; // maintaining a seperate parent array instead
@@ -159,8 +159,8 @@ public class Dijkstra {
 
     for (int i = 0; i < nE; i++) {
       tokens = Console.ReadLine().Split();
-      int u = int.Parse(tokens[0])-1;
-      int v = int.Parse(tokens[1])-1;
+      int u = int.Parse(tokens[0]) - 1;
+      int v = int.Parse(tokens[1]) - 1;
       uint c = uint.Parse(tokens[2]);
       // cost matrix only contains edges from smaller index to larger index
       if (u > v) { int t = u; u = v; v = t; }
@@ -192,14 +192,14 @@ public class Dijkstra {
     PriorityQueue<Vertex> queue = new PriorityQueue<Vertex>();
     // Implementation from C.L.R pushes all vertices into the Queue
     //for (int i = 0; i < nV; i++)
-      //queue.Enqueue(Vertices[i]);    
-    queue.Enqueue(Vertices[Source]);    
+    //queue.Enqueue(Vertices[i]);    
+    queue.Enqueue(Vertices[Source]);
 
     while (queue.Count > 0) {
       Vertex u = queue.Dequeue();
 
       if (u.d != INF) {
-        foreach(int i in AdjList[u.i]) {
+        foreach (int i in AdjList[u.i]) {
           Vertex v = Vertices[i];
           int ui = u.i;
           int vi = v.i;
@@ -224,7 +224,7 @@ public class Dijkstra {
     if (v == -1)
       return;
     PrintPath(parent[v]);
-    ShortestPath.Add(v+1);
+    ShortestPath.Add(v + 1);
   }
 
   public void ShowResult() {

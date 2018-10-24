@@ -1,23 +1,21 @@
-/***************************************************************************
-* Problem Name: Pangram
-* Problem URL : http://codeforces.com/problemset/problem/520/A
-* Occasion    : Codeforces Round #295 (Div. 2)
-* Date        : Dec 31 2015
-* Complexity  : O(n) to read all letters
-* Author      : Atiq Rahman
-* Status      : Accepted
-* Desc        :  
-* Notes       : String is a pangram if all latin letters are present either
-*                as upper case of lower case
-*
-* meta        : tag-anagram
-***************************************************************************/
+/***************************************************************************************************
+* Title : Pangram
+* URL   : http://codeforces.com/problemset/problem/520/A
+* Occasn: Codeforces Round #295 (Div. 2)
+* Date  : 2015-12-31
+* Comp  : O(n)
+* Author: Atiq Rahman
+* Status: Accepted
+* Notes : String is a pangram if all latin letters are present either as upper case of lower case
+*   Linear time required to read all letters
+* meta  : tag-anagram, tag-string
+***************************************************************************************************/
 using System;
 using System.Collections.Generic;
 
-public class Solution {
-  private static void Main()
-  {
+public class Solution
+{
+  private static void Main() {
     int length = int.Parse(Console.ReadLine());
     string line = Console.ReadLine();
     int[] freq = new int[26];

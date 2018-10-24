@@ -1,34 +1,34 @@
-/***************************************************************************
-* Problem Name: Pasha and Stick
-* Problem URL : http://codeforces.com/contest/610/problem/A
-* Occasion    : Codeforces Round #337 (Div. 2
-* Date        : Dec 27 2015
-* Complexity  : O(1)
-* Author      : Atiq Rahman
-* Status      : Accepted
-* Desc        :  
-* Notes       : Count number of ways stick can be cut
-*                consider dividing the problem into half see examples below
+/***************************************************************************************************
+* Title : Pasha and Stick
+* URL   : http://codeforces.com/contest/610/problem/A
+* Occasn: Codeforces Round #337 (Div. 2
+* Date  : 2015-12-27
+* Comp  : O(1)
+* Author: Atiq Rahman
+* Status: Accepted
+* Notes : 
+* Notes : Count number of ways stick can be cut
+*   consider dividing the problem into half see examples below
 *
-* meta        : tag-combinatorics, tag-math
-***************************************************************************/
+* meta  : tag-combinatorics, tag-math
+***************************************************************************************************/
 
 using System;
 
 public class CFSolution {
-    public static void Main() {
-        int N = int.Parse(Console.ReadLine());
-        Console.WriteLine(GetCountWays(N));
-    }
+  public static void Main() {
+    int N = int.Parse(Console.ReadLine());
+    Console.WriteLine(GetCountWays(N));
+  }
 
-    static int GetCountWays(int n) {
-        if (n % 2 != 0)
-            return 0;
-        int m = n / 2;
-        if (m % 2 == 0)
-            return m / 2 - 1;
-        return (m - 1) / 2;
-    }
+  static int GetCountWays(int n) {
+    if (n % 2 != 0)
+      return 0;
+    int m = n / 2;
+    if (m % 2 == 0)
+      return m / 2 - 1;
+    return (m - 1) / 2;
+  }
 }
 
 /* Example, consider 6

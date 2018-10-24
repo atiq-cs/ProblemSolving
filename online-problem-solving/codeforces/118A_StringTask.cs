@@ -1,14 +1,14 @@
-﻿/***************************************************************************
-* Title       : String Task
-* URL         : http://codeforces.com/contest/118/problem/A
-* Occasion    : Codeforces Beta Round #89 (Div. 2)
-* Date        : Sep 10 2017
-* Complexity  : O(n) 124ms, Space O(n)
-* Author      : Atiq Rahman
-* Status      : Accepted
-* Notes       : String manipulation
-* meta        : tag-string, tag-easy, tag-implementation
-***************************************************************************/
+/***************************************************************************************************
+* Title : String Task
+* URL   : http://codeforces.com/contest/118/problem/A
+* Occasn: Codeforces Beta Round #89 (Div. 2)
+* Date  : 2017-09-10
+* Comp  : O(n) 124ms, Space O(n)
+* Author: Atiq Rahman
+* Status: Accepted
+* Notes : String manipulation
+* meta  : tag-string, tag-easy, tag-implementation
+***************************************************************************************************/
 using System;
 using System.Text;
 

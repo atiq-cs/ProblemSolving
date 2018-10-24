@@ -1,14 +1,14 @@
-/***************************************************************************
-* Title       : Random Teams
-* URL         : http://codeforces.com/problemset/problem/478/B
-* Occasion    : Codeforces Round #273 (Div. 2)
-* Date        : Sep 13 2017
-* Complexity  : O(n) 46ms, Space O(n)
-* Author      : Atiq Rahman
-* Status      : Accepted
-* Notes       : input limit 10^9 requires larger data type than int
-* meta        : tag-combinatorics, tag-math, tag-easy
-***************************************************************************/
+/***************************************************************************************************
+* Title : Random Teams
+* URL   : http://codeforces.com/problemset/problem/478/B
+* Occasn: Codeforces Round #273 (Div. 2)
+* Date  : 2017-09-13
+* Comp  : O(n), O(n)
+* Author: Atiq Rahman
+* Status: Accepted
+* Notes : input limit 10^9 requires larger data type than int
+* meta  : tag-combinatorics, tag-math, tag-easy
+***************************************************************************************************/
 using System;
 
 public class CFSolution {

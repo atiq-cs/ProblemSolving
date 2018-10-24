@@ -1,15 +1,15 @@
-/***************************************************************************
-* Problem Name: Next Round
-* Problem URL : http://codeforces.com/problemset/problem/158/A
-* Occasion    : VK Cup 2012 Qualification Round 1
-* Date        : Aug 10 2017
-* Complexity  : O(n) to read items
-* Author      : Atiq Rahman
-* Status      : Accepted
-* Desc        :  
-* Notes       : Easy implementation Problem
-* meta        : tag-easy, tag-implementation
-***************************************************************************/
+/***************************************************************************************************
+* Title : Next Round
+* URL   : http://codeforces.com/problemset/problem/158/A
+* Occasn: VK Cup 2012 Qualification Round 1
+* Date  : 2017-08-10
+* Comp  : O(n) to read items
+* Author: Atiq Rahman
+* Status: Accepted
+* Notes : 
+* Notes : Easy implementation Problem
+* meta  : tag-easy, tag-implementation
+***************************************************************************************************/
 
 using System;
 

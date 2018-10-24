@@ -1,15 +1,16 @@
-/***************************************************************************
-* Title       : Number of Ways
-* URL         : http://codeforces.com/problemset/problem/466/C
-* Occasion    : Good Bye 2014
-* Date        : Sep 12 2017
-* Complexity  : O(n) 46ms, Space O(n)
-* Author      : Atiq Rahman
-* Status      : TLE -> needs performance improvement
-* Notes       : Trying DP and Prefix Sum
-* ref         : http://codeforces.com/blog/entry/13758
-* meta        : tag-tree, tag-easy, tag-judge-ToDo
-***************************************************************************/
+/***************************************************************************************************
+* Title : Number of Ways
+* URL   : http://codeforces.com/problemset/problem/466/C
+* Occasn: Good Bye 2014
+* Date  : 2017-09-12
+* Comp  : O(n) 46ms, Space O(n)
+* Author: Atiq Rahman
+* Status: tag-status-TLE
+* Notes : Trying DP and Prefix Sum
+*   needs performance improvement
+* ref   : http://codeforces.com/blog/entry/13758
+* meta  : tag-tree, tag-binary-search, tag-two-pointers, tag-easy
+***************************************************************************************************/
 using System;
 
 public class LinearSplit {

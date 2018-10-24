@@ -1,36 +1,31 @@
-/***************************************************************************
-*   Problem     :  Longtail Hedgehog
-*   URL         :  http://codeforces.com/contest/615/problem/B
-*   Date        :  Jan 12, 2016
-*
-*   Algo, DS    :  Dynamic Programming
-*   Desc        :  Linear DP with DFS
-*   Complexity  :  O(V+E)
-*   Author      :  Atiq Rahman
-*   Status      :  Accepted
-*   Notes       :  This solution uses a variation of DP; can also be solved
-*   using DFS.
-*     A simple solution such as this one has been possible because
-*     of the relaxation, mentioned in 3rd condition,
-*     "The numbers of points from the beginning of the tail to the end should
-*     strictly increase."
-*     
-*     First time, when we have a look at that condition we might interpret as
-*     number(count) of points from beginning to end. However, that is not the
-*     case. Numbers here means assigned integer to each vertex.
-*     
-*     For example, tail of the mentioned hedgedog in example, is 1, 2 and 5.
-*     
-*     No visit list: there is no cycle, this is tree graph.
-*     
-*     In simple words, the problem boils down to following, find the maximum
-*     number that can be produced by multiplying degree of the vertex in the
-*     graph with max length of shortest path from this vertex to other vertices
-*     
-*     This problem can also be solved using DFS.
-*   Ack         :  Mak Kader
-*   meta        :  tag-algo-dp, tag-dfs
-***************************************************************************/
+/***************************************************************************************************
+* Title : Longtail Hedgehog
+* URL   : http://codeforces.com/contest/615/problem/B
+* Date  : 2016-01-12
+* Notes : Linear DP with DFS
+* Comp  : O(V+E)
+* Author: Atiq Rahman
+* Status: Accepted
+* Notes : This solution uses a variation of DP; can also be solved using DFS.
+*   A simple solution such as this one has been possible because of the relaxation, mentioned in
+*   C.L.R.S 3rd condition,
+*   "The numbers of points from the beginning of the tail to the end should strictly increase."
+*   
+*   First time, when we have a look at that condition we might interpret as number(count) of points
+*   from beginning to end. However, that is not the case. Numbers here means assigned integer to
+*   each vertex.
+*   
+*   For example, tail of the mentioned hedgedog in example, is 1, 2 and 5.
+*   
+*   No visit list: there is no cycle, this is tree graph.
+*   
+*   In simple words, the problem boils down to following, find the maximum number that can be
+*   produced by multiplying degree of the vertex in the graph with max length of shortest path from
+*   this vertex to other vertices.
+*   
+* Ack   : Mak Kader
+* meta  : tag-algo-dp, tag-graph-dfs
+***************************************************************************************************/
 using System;
 using System.Collections.Generic;
 

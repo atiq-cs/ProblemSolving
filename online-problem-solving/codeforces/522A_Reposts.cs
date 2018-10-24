@@ -1,17 +1,17 @@
-/***************************************************************************
-* Title       : Reposts
-* URL         : http://codeforces.com/problemset/problem/522/A
-* Occasion    : VK Cup 2015 - Qualification Round 1
-* Date        : Sep 10 2017
-* Complexity  : O(n) 42ms, Space O(n)
-* Author      : Atiq Rahman
-* Status      : Accepted
-* Notes       : Goal,
-*               Construct the tree
-*               Find max depth
-* Related     : leetcode/104_maximum-depth-of-binary-tree.cs
-* meta        : tag-tree, tag-easy
-***************************************************************************/
+/***************************************************************************************************
+* Title : Reposts
+* URL   : http://codeforces.com/problemset/problem/522/A
+* Occasn: VK Cup 2015 - Qualification Round 1
+* Date  : 2017-09-10
+* Comp  : O(n) 42ms, Space O(n)
+* Author: Atiq Rahman
+* Status: Accepted
+* Notes : Goal,
+*   Construct the tree
+*   Find max depth
+* rel   : 'leetcode/0104_maximum-depth-of-binary-tree.cs'
+* meta  : tag-tree, tag-graph-dfs, tag-algo-dp, tag-easy
+***************************************************************************************************/
 using System;
 using System.Collections.Generic;
 

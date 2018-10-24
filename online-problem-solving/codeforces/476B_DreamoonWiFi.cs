@@ -1,19 +1,19 @@
-/***************************************************************************
-* Title       : Dreamoon and WiFi
-* URL         : http://codeforces.com/problemset/problem/476/B
-* Occasion    : Codeforces Round #272 (Div. 2)
-* Date        : Sep 13 2017
-* Complexity  : O(2^q) 46ms, Space O(n)
-* Author      : Atiq Rahman
-* Status      : Accepted
-* Notes       : 
+/***************************************************************************************************
+* Title : Dreamoon and WiFi
+* URL   : http://codeforces.com/problemset/problem/476/B
+* Occasn: Codeforces Round #272 (Div. 2)
+* Date  : 2017-09-13
+* Comp  : O(2^q) 46ms, Space O(n)
+* Author: Atiq Rahman
+* Status: Accepted
+* Notes : 
 *   comb is based on 'Basics/combination_binary.cs'
 *   https://msdn.microsoft.com/en-us/library/system.globalization.cultureinfo.
 *   currentculture.aspx
 *   https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-
 *   numeric-format-strings
-* meta        : tag-combinatorics, tag-math, tag-easy
-***************************************************************************/
+* meta  : tag-combinatorics, tag-math, tag-bit-manip, tag-probability tag-easy
+***************************************************************************************************/
 using System;
 using System.Globalization;
 

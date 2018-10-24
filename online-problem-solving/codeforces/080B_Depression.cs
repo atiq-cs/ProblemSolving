@@ -1,17 +1,17 @@
-/***************************************************************************
-* Title       : Depression
-* URL         : http://codeforces.com/problemset/problem/80/B
-* Occasion    : Codeforces Beta Round #69 (Div. 2 Only)
-* Date        : Sep 20 2017
-* Complexity  : O(1) 46ms
-* Author      : Atiq Rahman
-* Status      : Accepted
-* Notes       : Simple angle calculation for hour and minute hands
+/***************************************************************************************************
+* Title : Depression
+* URL   : http://codeforces.com/problemset/problem/80/B
+* Occasn: Codeforces Beta Round #69 (Div. 2 Only)
+* Date  : 2017-09-20
+* Comp  : O(1) 46ms
+* Author: Atiq Rahman
+* Status: Accepted
+* Notes : Simple angle calculation for hour and minute hands
 *   This one doesn't ask for difference between angles
 *   hour can be more than 12 (upto 23); this is handled by subtracting 2*pi
-*   rel: 'online-problem-solving/codechef/CRZ04_CLOCK.cs'
-* meta        : tag-geometry, tag-math
-***************************************************************************/
+* rel   : 'online-problem-solving/codechef/CRZ04_CLOCK.cs'
+* meta  : tag-geometry, tag-math
+***************************************************************************************************/
 using System;
 using System.Globalization;
 

@@ -1,27 +1,23 @@
-/***************************************************************************
-* Title       : Divisibility by Eight
-* URL         : http://codeforces.com/problemset/problem/550/C
-* Occasion    : Codeforces Round #306 (Div. 2)
-* Date        : Sep 9 2017
-* Complexity  : O(n^3) 46ms, Space O(n)
-* Author      : Atiq Rahman
-* Status      : Accepted
-* Notes       : Goal
-*               To remove some of the digits (possibly not remove any digit at
-*               all) so that the result contains at least one digit, forms a
-*               non-negative integer, doesn't have leading zeroes and is
-*               divisible by 8. After the removing, it is forbidden to
-*               rearrange the digits.
+/***************************************************************************************************
+* Title : Divisibility by Eight
+* URL   : http://codeforces.com/problemset/problem/550/C
+* Occasn: Codeforces Round #306 (Div. 2)
+* Date  : 2017-09-09
+* Comp  : O(n^3) 46ms, Space O(n)
+* Author: Atiq Rahman
+* Status: Accepted
+* Notes : Goal
+*   To remove some of the digits (possibly not remove any digit at all) so that the result contains
+*   at least one digit, forms a non-negative integer, doesn't have leading zeroes and is divisible
+*   by 8. After the removing, it is forbidden to rearrange the digits.
 *
-*               *Basic Divisibility by Eight*
-*               Number composed of last 3 digits must be divisible by 8
-*               However, there can be numbers which are two digits or single
-*               digit
-*               this also leaves the avenue for little optimization
-*               
-*               n^3 is okay since length of number is maximum 100 digits
-* meta        : tag-math; tag-easy
-***************************************************************************/
+*   *Basic Divisibility by Eight*
+*   Number composed of last 3 digits must be divisible by 8 However, there can be numbers which are
+*   two digits or single digit; this also leaves the avenue for little optimization.
+*   
+*   n^3 is okay since length of number is maximum 100 digits
+* meta  : tag-brute-force, tag-algo-dp, tag-math, tag-easy
+***************************************************************************************************/
 using System;
 
 public class CFSolution {

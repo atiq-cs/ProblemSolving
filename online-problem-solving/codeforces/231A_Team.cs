@@ -1,17 +1,18 @@
-/***************************************************************************
-* Title       : Team
-* URL         : http://codeforces.com/problemset/problem/231/A
-* Occasion    : Codeforces Round #143 (Div. 2)
-* Date        : Sep 28 2017
-* Complexity  : O(n)
-* Author      : Atiq Rahman
-* Status      : Accepted
-* Notes       : a simple problem just for fun
-* meta        : tag-easy
-***************************************************************************/
+/***************************************************************************************************
+* Title : Team
+* URL   : http://codeforces.com/problemset/problem/231/A
+* Occasn: Codeforces Round #143 (Div. 2)
+* Date  : 2017-09-28
+* Comp  : O(n)
+* Author: Atiq Rahman
+* Status: Accepted
+* Notes : a simple problem just for fun, utilized bitwise when I see that's possible
+* meta  : tag-brute-force, tag-algo-greedy, tag-bit-manip, tag-easy
+***************************************************************************************************/
 using System;
 
-public class CFSolution {
+public class CFSolution
+{
   public static void Main() {
     int  n = int.Parse(Console.ReadLine());
     int numProbs = 0;
@@ -27,7 +28,8 @@ public class CFSolution {
 }
 
 /*
- * Or the last line could be written as,
-     if ((numThinksSolvable & 0x2) != 0)
-       numProbs++;
+Or the last line could be written as,
+
+  if ((numThinksSolvable & 0x2) != 0)
+    numProbs++;
 */

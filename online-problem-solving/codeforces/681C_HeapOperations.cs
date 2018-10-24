@@ -1,32 +1,29 @@
-/***************************************************************************
-* Title       : Heap Operations
-* URL         : http://codeforces.com/problemset/problem/681/C
-* Occasion    : Codeforces Round #357 (Div. 2)
-* Date        : Sep 11 2017
-* Complexity  : O(n) 280ms, Space O(n)
-* Author      : Atiq Rahman
-* Status      : Accepted
-* Notes       : Goal of this problem (to note),
-*               1. heap should not be empty during getMin or removeMin
-*               a. getMin or removeMin operations may be incorrect, as the heap
-*                is empty at the moment they are applied.
-*               b. the result of each getMin operation is equal to the result
-*               in the record, and the heap is non-empty when getMin ad
-*                removeMin are applied
+/***************************************************************************************************
+* Title : Heap Operations
+* URL   : http://codeforces.com/problemset/problem/681/C
+* Occasn: Codeforces Round #357 (Div. 2)
+* Date  : 2017-09-11
+* Comp  : O(n) 280ms, O(n)
+* Author: Atiq Rahman
+* Status: Accepted
+* Notes : Goal of this problem (to note),
+*   1. heap should not be empty during getMin or removeMin
+*   a. getMin or removeMin operations may be incorrect, as the heap is empty at the moment they
+*   are applied.
+*   b. the result of each getMin operation is equal to the result in the record, and the heap is
+*   non-empty when getMin and removeMin are applied
+*   
+*   Chunk output is faster, therefore the advantage of maintaining HeapOpList
 *
-*              msdn exceptions ref:
-*               https://docs.microsoft.com/en-us/dotnet/csharp/
-*               programming-guide/exceptions/creating-and-throwing-exceptions
-* meta        : tag-heap, tag-data-structure
-***************************************************************************/
+*   msdn exceptions ref:
+*   https://docs.microsoft.com/en-us/dotnet/csharp/
+*   programming-guide/exceptions/creating-and-throwing-exceptions
+* meta  : tag-ds-heap, tag-algo-greedy, tag-graph-tree
+***************************************************************************************************/
 using System;
 using System.Collections.Generic;
 
-/*
- * Heap is at 'ds/Heap.cs'
- * 
- * Chunk output is faster, therefore the advantage of maintaining HeapOpList
- */
+// Heap is at 'ds/Heap.cs'
 class HeapDemo {
   private List<string> HeapOpList;
   Heap minHp;

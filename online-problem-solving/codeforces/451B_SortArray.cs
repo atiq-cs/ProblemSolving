@@ -1,12 +1,12 @@
-/***************************************************************************
-* Title       : Sort the Array
-* URL         : http://codeforces.com/problemset/problem/451/B
-* Occasion    : Codeforces Round #258 (Div. 2)
-* Date        : Nov 1 2017
-* Complexity  : O(n) 78ms, Space O(n), 11300 KB
-* Author      : Atiq Rahman
-* Status      : Accepted
-* Notes       : Naive: sort the array and find diff sequence to reverse
+/***************************************************************************************************
+* Title : Sort the Array
+* URL   : http://codeforces.com/problemset/problem/451/B
+* Occasn: Codeforces Round #258 (Div. 2)
+* Date  : 2017-11-01
+* Comp  : O(n) 78ms, Space O(n), 11300 KB
+* Author: Atiq Rahman
+* Status: Accepted
+* Notes : Naive: sort the array and find diff sequence to reverse
 *   Approach O(n),
 *   Finding the starting and ending index of the segment that is in reverse
 *   order.
@@ -14,8 +14,8 @@
 *   Input numbers are distinct integers, not equal
 *   Judge has some large inputs, good for testing.
 *
-* meta        : tag-algo-sort, tag-easy
-***************************************************************************/
+* meta  : tag-algo-sort, tag-implementation, tag-easy
+***************************************************************************************************/
 using System;
 
 class RSSolution {  // Reverse segment Solution Class

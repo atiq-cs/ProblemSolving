@@ -1,14 +1,14 @@
-/***************************************************************************
-* Problem Name: Cut Ribbon
-* Problem URL : http://codeforces.com/problemset/problem/189/A
-* Occasion    : Codeforces Round #119 (Div. 2)
-* Date        : Aug 23 2017
-* Complexity  : O(n^2) 46ms
-* Author      : Atiq Rahman
-* Status      : Accepted
-* Notes       : Try simple enough approach for this problem
-* meta        : tag-algo-dp, tag-brute-force
-***************************************************************************/
+/***************************************************************************************************
+* Title : Cut Ribbon
+* URL   : http://codeforces.com/problemset/problem/189/A
+* Occasn: Codeforces Round #119 (Div. 2)
+* Date  : 2017-08-23
+* Comp  : O(n^2) 46ms
+* Author: Atiq Rahman
+* Status: Accepted
+* Notes : Try simple enough approach for this problem
+* meta  : tag-algo-dp, tag-brute-force
+***************************************************************************************************/
 
 using System;
 

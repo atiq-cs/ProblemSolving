@@ -1,16 +1,15 @@
-/***************************************************************************
-* Problem Name: Domino piling
-* Problem URL : http://codeforces.com/problemset/problem/50/A
-* Occasion    : Codeforces Beta Round #47
-* Date        : Aug 20 2017
-* Complexity  : O(1) or time required for multiplication
-* Author      : Atiq Rahman
-* Status      : Accepted
-* Desc        :  
-* Notes       : very easy math
-* meta        : tag-easy, tag-math
-***************************************************************************/
-
+/***************************************************************************************************
+* Title : Domino piling
+* URL   : http://codeforces.com/problemset/problem/50/A
+* Occasn: Codeforces Beta Round #47
+* Date  : 2017-08-20
+* Comp  : O(1)
+* Author: Atiq Rahman
+* Status: Accepted
+* Notes : 
+* Notes : very easy math
+* meta  : tag-easy, tag-math
+***************************************************************************************************/
 using System;
 
 public class CFSolution {

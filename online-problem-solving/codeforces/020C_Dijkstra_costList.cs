@@ -37,7 +37,7 @@ interface PriorityQueueElement {
   uint GetValue();
 }
 
-class PriorityQueue <T> where T:PriorityQueueElement {
+class PriorityQueue<T> where T : PriorityQueueElement {
   protected List<T> Arr;
   protected int Size;
 
@@ -84,7 +84,7 @@ class PriorityQueue <T> where T:PriorityQueueElement {
     int smallest = i;
     if (l < Size && Arr[l].GetValue() < Arr[smallest].GetValue())
       smallest = l;
-    if (r< Size && Arr[r].GetValue() < Arr[smallest].GetValue())
+    if (r < Size && Arr[r].GetValue() < Arr[smallest].GetValue())
       smallest = r;
     if (smallest != i) {
       Swap(smallest, i);
@@ -102,7 +102,7 @@ class PriorityQueue <T> where T:PriorityQueueElement {
   }
 }
 
-public class Vertex : PriorityQueueElement {
+public class Vertex:PriorityQueueElement {
   public int i;
   public uint d;
   // public int p; // parent member is not necessary for dijkstra
@@ -141,8 +141,8 @@ public class Dijkstra {
 
     for (int i = 0; i < nE; i++) {
       tokens = Console.ReadLine().Split();
-      int u = int.Parse(tokens[0])-1;
-      int v = int.Parse(tokens[1])-1;
+      int u = int.Parse(tokens[0]) - 1;
+      int v = int.Parse(tokens[1]) - 1;
       uint c = uint.Parse(tokens[2]);
       //if (AdjMatrix[u][v] == 0 || AdjMatrix[u][v] > c)
       // AdjMatrix[u][v] = AdjMatrix[v][u] = c;
@@ -174,7 +174,7 @@ public class Dijkstra {
       Vertex u = queue.Dequeue();
 
       if (u.d != INF) {
-        foreach(Vertex va in AdjList[u.i]) {
+        foreach (Vertex va in AdjList[u.i]) {
           Vertex v = Vertices[va.i];
           uint w = va.d;
           if (u != v) {
@@ -195,7 +195,7 @@ public class Dijkstra {
     if (v == -1)
       return;
     PrintPath(parent[v]);
-    ShortestPath.Add(v+1);
+    ShortestPath.Add(v + 1);
   }
 
   public void ShowResult() {

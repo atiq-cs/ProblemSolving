@@ -1,22 +1,22 @@
-/******************************************************************************
-* Title       : z-sort
-* URL         : http://codeforces.com/problemset/problem/652/B
+/***************************************************************************************************
+* Title : z-sort
+* URL   : http://codeforces.com/problemset/problem/652/B
 *   http://www.lintcode.com/en/problem/wiggle-sort/
 *   https://leetcode.com/problems/wiggle-sort (locked, so tried lintcode)
-*               
-* Occasion    : Educational Codeforces Round 10
-* Date        : Nov 1 2017
-* Complexity  : O(n) 46ms, Space O(n), 0KB
-* Author      : Atiq Rahman
-* Status      : Accepted (also on lintcode)
-* Notes       : Even though this problem is called 'z-sort' in codeforces it
+*   
+* Occasn: Educational Codeforces Round 10
+* Date  : 2017-11-01
+* Comp  : O(n) 46ms, Space O(n), 0KB
+* Author: Atiq Rahman
+* Status: Accepted (also on lintcode)
+* Notes : Even though this problem is called 'z-sort' in codeforces it
 *   actually known as wiggle sort in other sites i.e., leetcode.
-* 
+*   
 *   Initial implementation is based on ref:
 *   https://www.quora.com/What-is-an-efficient-method-to-wiggle-sort-an-array
 *
-* meta        : tag-algo-sort, tag-easy, tag-wiggle-sort
-******************************************************************************/
+* meta  : tag-algo-sort, tag-wiggle-sort, tag-easy
+***************************************************************************************************/
 using System;
 
 class WiggleSorting {

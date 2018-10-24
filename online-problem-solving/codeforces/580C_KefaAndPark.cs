@@ -1,21 +1,19 @@
-﻿/***************************************************************************
-* Problem Name: Kefa and Park
-* Problem URL : http://codeforces.com/problemset/problem/580/C
-* Occasion    : Codeforces Round #321 (Div. 2)
-* Date        : Aug 18 2017
-* Complexity  : O(nlogn)
-* Author      : Atiq Rahman
-* Status      : Accepted
-* Desc        :  
-* Notes       : The graph is a tree. Assumption that this graph would work for
-*               unidirection (edge addition: adding v to u's adj list when
-*               u < v) mapping is wrong. So we add u to v's adj list and v
-*               to u's adj list. We maintain a visited list to avoild looping
-*               or duplicate visits to same nodes. This idea works because we
-*               have a fixed root node: vertex 1.
-*               
-* meta        : tag-tree, tag-graph
-***************************************************************************/
+/***************************************************************************************************
+* Title : Kefa and Park
+* URL   : http://codeforces.com/problemset/problem/580/C
+* Occasn: Codeforces Round #321 (Div. 2)
+* Date  : 2017-08-18
+* Comp  : O(nlogn)
+* Author: Atiq Rahman
+* Status: Accepted
+* Notes : 
+* Notes : The graph is a tree. Assumption that this graph would work for unidirection (edge
+* addition: adding v to u's adj list when u < v) mapping is wrong. So we add u to v's adj list and
+* v to u's adj list. We maintain a visited list to avoild looping or duplicate visits to same nodes.
+* This idea works because we have a fixed root node: vertex 1.
+*   
+* meta  : tag-tree, tag-graph-dfs
+***************************************************************************************************/
 using System;
 using System.Collections.Generic;
 
