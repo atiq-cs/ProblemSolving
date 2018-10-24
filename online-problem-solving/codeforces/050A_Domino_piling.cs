@@ -1,4 +1,4 @@
-﻿/***************************************************************************
+/***************************************************************************
 * Problem Name: Domino piling
 * Problem URL : http://codeforces.com/problemset/problem/50/A
 * Occasion    : Codeforces Beta Round #47
@@ -13,7 +13,7 @@
 
 using System;
 
-public class CF_Solution {
+public class CFSolution {
   private static void Main() {
     string[] tokens = Console.ReadLine().Split();
     uint M = uint.Parse(tokens[0]);

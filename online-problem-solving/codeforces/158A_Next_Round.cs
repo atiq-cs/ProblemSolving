@@ -1,4 +1,4 @@
-﻿/***************************************************************************
+/***************************************************************************
 * Problem Name: Next Round
 * Problem URL : http://codeforces.com/problemset/problem/158/A
 * Occasion    : VK Cup 2012 Qualification Round 1
@@ -13,7 +13,7 @@
 
 using System;
 
-public class CF_Solution {
+public class CFSolution {
   private static void Main() {
     string[] tokens = Console.ReadLine().Split();
     uint n = uint.Parse(tokens[0]);

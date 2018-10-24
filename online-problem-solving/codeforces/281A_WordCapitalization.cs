@@ -1,4 +1,4 @@
-﻿/***************************************************************************
+/***************************************************************************
 * Title : Word Capitalization
 * URL   : http://codeforces.com/problemset/problem/281/A
 * Contst: Codeforces Round #172 (Div. 2)
@@ -11,7 +11,7 @@
 ***************************************************************************/
 using System;
 
-class CF_Solution {
+class CFSolution {
   private static string Capitalize(string str) {
     if (Char.IsUpper(str[0]))
       return str;

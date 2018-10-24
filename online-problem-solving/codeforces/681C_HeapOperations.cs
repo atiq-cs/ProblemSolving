@@ -1,4 +1,4 @@
-﻿/***************************************************************************
+/***************************************************************************
 * Title       : Heap Operations
 * URL         : http://codeforces.com/problemset/problem/681/C
 * Occasion    : Codeforces Round #357 (Div. 2)
@@ -93,7 +93,7 @@ class HeapDemo {
   } 
 }
 
-public class CF_Solution {
+public class CFSolution {
   private static void Main() {
     HeapDemo demo = new HeapDemo();
     demo.TakeInput();

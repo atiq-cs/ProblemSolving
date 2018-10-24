@@ -19,7 +19,7 @@
 using System;
 using System.Globalization;
 
-public class CF_Solution {
+public class CFSolution {
   private static double GetMinLightRadius(int[] a, int n, int l) {
     // sort, input in not sorted
     Array.Sort(a);

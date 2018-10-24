@@ -1,4 +1,4 @@
-﻿/***************************************************************************
+/***************************************************************************
 * Title       : Divisibility by Eight
 * URL         : http://codeforces.com/problemset/problem/550/C
 * Occasion    : Codeforces Round #306 (Div. 2)
@@ -24,7 +24,7 @@
 ***************************************************************************/
 using System;
 
-public class CF_Solution {
+public class CFSolution {
   private static void Main() {
     string str = Console.ReadLine().Split()[0]; // explicit first index qualification might not  be required
     int res = GetDivisibilityEight(str);

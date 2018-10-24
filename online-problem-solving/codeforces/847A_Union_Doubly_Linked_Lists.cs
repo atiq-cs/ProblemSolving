@@ -1,4 +1,4 @@
-﻿/***************************************************************************
+/***************************************************************************
 * Title : Union of Doubly Linked Lists
 * URL   : http://codeforces.com/problemset/problem/847/A
 * Contst: 2017-2018 ACM-ICPC NEERC, Southern Subregional Contest, qualification
@@ -88,7 +88,7 @@ public class DoublyLLUtil {
   }
 }
 
-public class CF_Solution {
+public class CFSolution {
   public static void Main() {
     DoublyLLUtil doublyLLDemo = new DoublyLLUtil();
     doublyLLDemo.Input();

@@ -1,4 +1,4 @@
-﻿/***************************************************************************
+/***************************************************************************
 * Title       : Dreamoon and WiFi
 * URL         : http://codeforces.com/problemset/problem/476/B
 * Occasion    : Codeforces Round #272 (Div. 2)
@@ -71,7 +71,7 @@ class ProbComb {
   }
 }
 
-public class CF_Solution {
+public class CFSolution {
   public static void Main() {
     ProbComb PC = new ProbComb();
     PC.TakeInput();

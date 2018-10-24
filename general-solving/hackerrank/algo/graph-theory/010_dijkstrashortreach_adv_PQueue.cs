@@ -116,7 +116,7 @@ public class Dijkstra {
   }
 }
 
-class CF_Solution {
+class CFSolution {
   public static void Main() {
     StringBuilder Result = new StringBuilder();
     int T = int.Parse(Console.ReadLine());

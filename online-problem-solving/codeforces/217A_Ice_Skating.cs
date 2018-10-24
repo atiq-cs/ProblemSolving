@@ -1,4 +1,4 @@
-﻿/***************************************************************************
+/***************************************************************************
 * Title : Ice Skating
 * URL   : http://codeforces.com/problemset/problem/217/A
 * Contst: Codeforces Round #134 (Div. 1)
@@ -71,7 +71,7 @@ public class GraphDemo {
   }
 }
 
-public class CF_Solution {
+public class CFSolution {
   private static Point[] TakeInput() {
     int numSnowDrift = int.Parse(Console.ReadLine());
     Point[] snowDrifts = new Point[numSnowDrift];

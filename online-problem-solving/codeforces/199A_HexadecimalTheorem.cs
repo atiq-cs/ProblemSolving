@@ -29,7 +29,7 @@ public class FiboUtil {
   }
 }
 
-public class CF_Solution {
+public class CFSolution {
   public static void Main() {
     FiboUtil demo = new FiboUtil();
     int n = int.Parse(Console.ReadLine());

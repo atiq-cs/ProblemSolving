@@ -1,4 +1,4 @@
-﻿/***************************************************************************
+/***************************************************************************
 * Title       : Reposts
 * URL         : http://codeforces.com/problemset/problem/522/A
 * Occasion    : VK Cup 2015 - Qualification Round 1
@@ -66,7 +66,7 @@ public class UniDTree {
   }
 }
 
-public class CF_Solution {
+public class CFSolution {
   private static void Main() {
     UniDTree udt = new UniDTree();
     udt.TakeInput();

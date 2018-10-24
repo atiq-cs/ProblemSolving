@@ -1,4 +1,4 @@
-﻿/***************************************************************************
+/***************************************************************************
 * Title : Fox And Names
 * URL   : http://codeforces.com/problemset/problem/281/A
 * Contst: Codeforces Round #290 (Div. 2)
@@ -130,7 +130,7 @@ public class TopoSort {
   }
 }
 
-public class CF_Solution {
+public class CFSolution {
   public static void Main() {
     TopoSort demo = new TopoSort();
     demo.TakeInput();

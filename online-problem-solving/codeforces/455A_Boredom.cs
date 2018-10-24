@@ -27,7 +27,7 @@
 using System;
 using System.Collections.Generic;
 
-public class CF_Solution {
+public class CFSolution {
     // get the score for each number and distinct values
     // find score for each item
     // score is s array and values is distinct values

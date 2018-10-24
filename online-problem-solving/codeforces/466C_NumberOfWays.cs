@@ -1,4 +1,4 @@
-﻿/***************************************************************************
+/***************************************************************************
 * Title       : Number of Ways
 * URL         : http://codeforces.com/problemset/problem/466/C
 * Occasion    : Good Bye 2014
@@ -7,7 +7,7 @@
 * Author      : Atiq Rahman
 * Status      : TLE -> needs performance improvement
 * Notes       : Trying DP and Prefix Sum
-*     Here's hint: http://codeforces.com/blog/entry/13758
+* ref         : http://codeforces.com/blog/entry/13758
 * meta        : tag-tree, tag-easy, tag-judge-ToDo
 ***************************************************************************/
 using System;
@@ -51,7 +51,7 @@ public class LinearSplit {
   }
 }
 
-public class CF_Solution {
+public class CFSolution {
   private static void Main() {
     LinearSplit LS = new LinearSplit();
     LS.TakeInput();

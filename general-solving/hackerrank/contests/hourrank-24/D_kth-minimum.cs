@@ -62,7 +62,7 @@ class JenListMinSolution {
   }
 }
 
-public class CF_Solution {
+public class CFSolution {
   private static void Main() {
     JenListMinSolution jenListMinDemo = new JenListMinSolution();
     jenListMinDemo.TakeInput();

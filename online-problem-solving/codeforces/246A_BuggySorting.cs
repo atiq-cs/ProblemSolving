@@ -15,7 +15,7 @@
 *   To note, Valera's second loop is like Selection Sort.
 *   Swap is like Bubble Sort or of the one that of Insertion Sort.
 *   
-*   Flaw:
+*   Flaw,
 *    First number in the array gets only one chance to be compared.
 *    Second number in the array gets two chances.
 *    If the smallest number lies in the last index it does not get enough
@@ -47,7 +47,7 @@ class BuggySorting {
   } 
 }
 
-public class CF_Solution {
+public class CFSolution {
   private static void Main() {
     BuggySorting buggySortingDemo = new BuggySorting();
     buggySortingDemo.TakeInput();

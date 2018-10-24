@@ -1,4 +1,4 @@
-﻿/***************************************************************************
+/***************************************************************************
 * Title       : Random Teams
 * URL         : http://codeforces.com/problemset/problem/478/B
 * Occasion    : Codeforces Round #273 (Div. 2)
@@ -11,7 +11,7 @@
 ***************************************************************************/
 using System;
 
-public class CF_Solution {
+public class CFSolution {
   public static void Main() {
     string[] tokens = Console.ReadLine().Split();
     ulong n = ulong.Parse(tokens[0]);

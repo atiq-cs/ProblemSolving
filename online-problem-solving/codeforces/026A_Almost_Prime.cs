@@ -1,4 +1,4 @@
-﻿/***************************************************************************
+/***************************************************************************
 * Title : Almost Prime
 * URL   : http://codeforces.com/problemset/problem/26/A
 * Contst: Offline
@@ -107,7 +107,7 @@ public class PrimeUtil {
   }
 }
 
-public class CF_Solution {
+public class CFSolution {
   public static void Main() {
     PrimeUtil primeDemo = new PrimeUtil();
     primeDemo.Input();

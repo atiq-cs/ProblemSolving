@@ -2,12 +2,10 @@
 *   Problem     :  Two Substrings
 *   URL         :  http://codeforces.com/problemset/problem/550/A
 *   Date        :  Jan 7, 2016
-*
-*   Algo, DS    :  String
 *   Desc        :  Simple string problem but has to take care of some cases
 *                   where a string should be considered overlapped or not
 *                   Whether both AB, BA exist in those cases
-*   Complexity  :  O(N) proposed, constant time
+*   Complexity  :  O(N) proposed O(1)
 *   Author      :  Atiq Rahman
 *   Status      :  Accepted
 *   Notes       :  Time 62ms, takes 108ms when converted and passed as char array to the function

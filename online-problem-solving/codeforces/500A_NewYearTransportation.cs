@@ -1,4 +1,4 @@
-﻿/***************************************************************************
+/***************************************************************************
 * Title       : New Year Transportation
 * URL         : http://codeforces.com/problemset/problem/522/A
 * Occasion    : Good Bye 2014
@@ -38,7 +38,7 @@ public class LinearIteration {
   }
 }
 
-public class CF_Solution {
+public class CFSolution {
   private static void Main() {
     LinearIteration LG = new LinearIteration();
     LG.TakeInput();

@@ -39,8 +39,8 @@ public class Dijkstra {
   const uint INF = uint.MaxValue;
 
   public void TakeInput(string[] tokens) {
-    nV = CF_Solution.getNextNumber(tokens);
-    nE = CF_Solution.getNextNumber(tokens);
+    nV = CFSolution.getNextNumber(tokens);
+    nE = CFSolution.getNextNumber(tokens);
     Vertices = new Vertex[nV];
     AdjList = new List<int>[nV];
     for (int i = 0; i < nV; i++)
@@ -49,9 +49,9 @@ public class Dijkstra {
     CostMatrix = new Dictionary<Tuple<int, int>, uint>();
 
     for (int i = 0; i < nE; i++) {
-      int u = CF_Solution.getNextNumber(tokens) - 1;
-      int v = CF_Solution.getNextNumber(tokens) - 1;
-      uint c = (uint) CF_Solution.getNextNumber(tokens);
+      int u = CFSolution.getNextNumber(tokens) - 1;
+      int v = CFSolution.getNextNumber(tokens) - 1;
+      uint c = (uint) CFSolution.getNextNumber(tokens);
       // cost matrix only contains edges from smaller index to larger index
       if (u > v) { int t = u; u = v; v = t; }
       // avoid self loops
@@ -67,7 +67,7 @@ public class Dijkstra {
       else
         CostMatrix.Add(key, c);
     }
-    Source = CF_Solution.getNextNumber(tokens) - 1;
+    Source = CFSolution.getNextNumber(tokens) - 1;
   }
 
   public void Run() {
@@ -116,7 +116,7 @@ public class Dijkstra {
   }
 }
 
-public class CF_Solution {
+public class CFSolution {
   public static int tok_index;
   public static int getNextNumber(string[] tokens) {
     while (string.IsNullOrEmpty(tokens[++tok_index]));

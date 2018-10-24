@@ -11,7 +11,7 @@
 *   Finding the starting and ending index of the segment that is in reverse
 *   order.
 *
-*   Input: distinct integers, not equal
+*   Input numbers are distinct integers, not equal
 *   Judge has some large inputs, good for testing.
 *
 * meta        : tag-algo-sort, tag-easy
@@ -73,7 +73,7 @@ class RSSolution {  // Reverse segment Solution Class
   }
 }
 
-public class CF_Solution {
+public class CFSolution {
   private static void Main() {
     RSSolution revSegmentDemo = new RSSolution();
     revSegmentDemo.TakeInput();

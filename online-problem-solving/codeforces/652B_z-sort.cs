@@ -66,7 +66,7 @@ class WiggleSorting {
   }
 }
 
-public class CF_Solution {
+public class CFSolution {
   private static void Main() {
     WiggleSorting sortingDemo = new WiggleSorting();
     sortingDemo.TakeInput();

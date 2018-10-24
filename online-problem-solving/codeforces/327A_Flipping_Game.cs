@@ -81,7 +81,7 @@ public class BinaryBlock {
   }
 }
 
-class CF_Solution {
+class CFSolution {
   static void Main(String[] args) {
     BinaryBlock Demo = new BinaryBlock();
     Demo.TakeInput();

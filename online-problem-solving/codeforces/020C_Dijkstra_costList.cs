@@ -212,7 +212,7 @@ public class Dijkstra {
   }
 }
 
-class CF_Solution {
+class CFSolution {
   public static void Main() {
     Dijkstra grahpDemo = new Dijkstra();
     grahpDemo.TakeInput();

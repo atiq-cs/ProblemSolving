@@ -47,7 +47,7 @@ public class SubsequenceUtil {
   }
 }
 
-public class CF_Solution {
+public class CFSolution {
   public static void Main() {
     SubsequenceUtil demo = new SubsequenceUtil();
     demo.TakeInput();
