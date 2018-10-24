@@ -186,5 +186,27 @@ Finally, figured out that I missed the parentheses around conditional operator s
 Special input,
 [0,0,0,0,0,0,0,0,0,0]
 0 
+Correct output flow (for each value of i),
+sum: 0 cur: 0 result: 1
+sum: 0 cur: 0 result: 3
+sum: 0 cur: 0 result: 6
+sum: 0 cur: 0 result: 10
+sum: 0 cur: 0 result: 15
+sum: 0 cur: 0 result: 21
+sum: 0 cur: 0 result: 28
+sum: 0 cur: 0 result: 36
+sum: 0 cur: 0 result: 45
+sum: 0 cur: 0 result: 55
+
 helped to figure out the mentioned bug above.
+
+more examples,
+[0,0,0,0]
+0
+
+1, 3, 6, 10
+
+[0,0,0]
+0
+1, 3, 6
 */
