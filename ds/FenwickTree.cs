@@ -5,17 +5,18 @@
 * Author: Atiq Rahman
 * Comp  : O(lg N)
 * Notes : Why Fenwick Tree (BIT)?
-*   - Can update and compute prefix sum in lg N time
+*   - Can update and query Range Sum in lg N time
 *   - Uses less memory than RMQ
 *   
-*   In the beginning implementation I did was 1 based index, 0 was the root of all nodes, not
-*   touched. Then, I updated it to be 0 based. See method documentation inline.
+*   In the beginning implementation I did is 1 based index, 0 was the root of all nodes, hence, I
+*   decided not to touch that index. Then, I updated it to utilize index 0 as well. See method
+*   documentation.
 *   
-*   Current implementation uses an array of long to pass tests with large numbers
+*   Can use an array of long to pass tests with large numbers
 *     (https://codeforces.com/contest/296/problem/C)
 *   
-* Ref   : SOFTWARE—PRACTICE AND EXPERIENCE, VOL. 24(3), 327–336 (MARCH 1994)
-*   "A New Data Structure for Cumulative Frequency Tables" by peter m. fenwick
+* ref   : SOFTWARE—PRACTICE AND EXPERIENCE, VOL. 24(3), 327–336 (MARCH 1994)
+*   "A New Data Structure for Cumulative Frequency Tables" by peter m. fenwick (paper link: URL)
 *   In Paper link (p#3) above we got a nice figure of an example BIT.
 *
 *   https://www.topcoder.com/community/data-science/data-science-tutorials/binary-indexed-trees/
