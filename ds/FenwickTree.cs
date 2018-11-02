@@ -69,7 +69,7 @@ public class FenwickTree {
   /// </summary>
   /// <param name="i">Index at which to update the value</param>
   /// <param name="val">New value for specified index</param>
-  public void Update(int i, int val) {  // change to long if required
+  private void Update(int i, int val) {  // change to long if required
     if (i < 0)
       throw new ArgumentException();
     int k = val - nums[i];
@@ -104,7 +104,7 @@ public class FenwickTree {
   /// </remarks>  
   /// </summary>
   /// <param name="i">Index</param>
-  public int Sum(int i) {
+  private int Sum(int i) {
     if (i < 0 || i >= accumNums.Length)
       return 0;
     i++;
