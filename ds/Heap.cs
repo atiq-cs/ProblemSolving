@@ -1,4 +1,4 @@
-﻿/***************************************************************************
+/***************************************************************************
 * Title : Heap Data Structure
 * URL   : http://www.cs.cmu.edu/~jxc/Heaps.pdf
 * Date  : 2017-09
@@ -103,7 +103,7 @@ class Heap {
     A[j] = tmp;
   }
 
-  /* returns index; -1 if not found */
+  // returns index; -1 if not found
   protected int heapSearch(LRUItem item) {
     for (int i = 0; i < heapSize; i++) {
         LRUItem aItem = A[i];
