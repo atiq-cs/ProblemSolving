@@ -1,4 +1,8 @@
-//http://www.lintcode.com/en/problem/majority-number-iii/#
+/***************************************************************************************************
+* URL   : majority-number-iii
+* Author: Tianshu Bao (tianshubao1), commit#47b65e92b
+* Date  : 2015-06-05
+***************************************************************************************************/
 public class Solution {
     /**
      * @param nums: A list of integers
@@ -6,7 +10,6 @@ public class Solution {
      * @return: The majority number
      */
     public int majorityNumber(ArrayList<Integer> nums, int k) {
-        // write your code
         Map<Integer, Integer> map = new HashMap<Integer, Integer>();
         for(int i = 0; i < nums.size(); i++){
             int digit = nums.get(i);

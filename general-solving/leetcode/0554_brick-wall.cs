@@ -1,14 +1,15 @@
-/***************************************************************************
+/***************************************************************************************************
 * Title : Brick Wall
 * URL   : https://leetcode.com/problems/brick-wall
 * Date  : 2018-03
 * Author: Atiq Rahman
 * Comp  : O(N*M)
 * Status: Accepted
-* Notes :
+* Notes : 
 * meta  : tag-hash-table, tag-leetcode-medium
-***************************************************************************/
-public class Solution {
+***************************************************************************************************/
+public class Solution
+{
   public int LeastBricks(IList<IList<int>> wall) {
     Dictionary<int, int> brickDict = new Dictionary<int, int>();
     foreach (IList<int> Bricks in wall) {

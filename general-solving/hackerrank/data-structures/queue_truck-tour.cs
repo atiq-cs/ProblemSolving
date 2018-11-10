@@ -1,38 +1,39 @@
-/***************************************************************************
-* Title       : Truck Tour
-* URL         : https://www.hackerrank.com/challenges/truck-tour
-* Date        : Sep 4 2017
-* Complexity  : O(n), Space O(n)
-* Author      : Atiq Rahman
-* Status      : Accepted
-* Notes       : For understanding 2 things to consider,
-*               1. Calculate the first point from where the truck will be able
-*                to complete the circle
-*               2. An integer which will be the smallest index of the petrol
-*                pump from which we can start the tour.
-*               It is not a Priority Queue problem.
-*               
-*               Input can be easily represeted using result of subtraction of
-*               fuel_amount - distance. We also call it residual fuel amount
-*               It can be proved that a number (residual fuel amount) if
-*               negative earlier all previous hops before this one would also
-*               fail.
-*               Therefore, if a sum is negative at some stage none of the
-*               previous petrol pumps cannot be starting index.
-*               
-*               This problem can be stated as,
-*               Find a rotation of a circular array such that all prefix sums
-*               for that rotation are non-negative? (Given that sum of all its
-*               elements is non negative).
+/***************************************************************************************************
+* Title : Truck Tour
+* URL   : https://www.hackerrank.com/challenges/truck-tour
+* Date  : 2017-09-04
+* Comp  : O(n), O(n)
+* Author: Atiq Rahman
+* Status: Accepted
+* Notes : For understanding 2 things to consider,
+*   1. Calculate the first point from where the truck will be able
+*   to complete the circle
+*   2. An integer which will be the smallest index of the petrol
+*   pump from which we can start the tour.
+*   It is not a Priority Queue problem.
+*   
+*   Input can be easily represeted using result of subtraction of
+*   fuel_amount - distance. We also call it residual fuel amount
+*   It can be proved that a number (residual fuel amount) if
+*   negative earlier all previous hops before this one would also
+*   fail.
+*   Therefore, if a sum is negative at some stage none of the
+*   previous petrol pumps cannot be starting index.
+*   
+*   This problem can be stated as,
+*   Find a rotation of a circular array such that all prefix sums
+*   for that rotation are non-negative? (Given that sum of all its
+*   elements is non negative).
 *
-* Ref         : https://www.hackerrank.com/challenges/truck-tour/forum/comments
-*               /199713
-* meta        : tag-data-structure, tag-queue
-***************************************************************************/
+* ref   : https://www.hackerrank.com/challenges/truck-tour/forum/comments
+*   /199713
+* meta  : tag-ds-queue
+***************************************************************************************************/
 using System;
 using System.Collections.Generic;
 
-public class TruckTour {
+public class TruckTour
+{
   public Queue<int> PPQueue;
   public void TakeInput() {
     PPQueue = new Queue<int>();

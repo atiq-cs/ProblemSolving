@@ -1,6 +1,6 @@
-/***************************************************************************
-* Prob#2: Sorting Log File
-* URL   :
+/***************************************************************************************************
+* Title : Sorting Log File (p#2)
+* URL   : 
 * Date  : 2018-03-10
 * Author: Atiq Rahman
 * Comp  : O(n lg n + n*m) where n*m is for n number of comparisons among
@@ -8,13 +8,13 @@
 * Status: Tests passing: First version and second versions both passing 14/24
 * Notes : This problem asks to sort strings (lines) provided a set of
 *   preferences,
-*    compare the value (words) in a case insensitive way
-*    if there are numbers instead of letters those go later
-*    if two values are same then compare identifiers
+*   compare the value (words) in a case insensitive way
+*   if there are numbers instead of letters those go later
+*   if two values are same then compare identifiers
 *
 *   Compared to C++, there's no clever/oneliner lambda syntax for comparing
 * meta  : tag-hash-table, tag-algo-sort, tag-company-amazon
-***************************************************************************/
+***************************************************************************************************/
 using System;
 using System.Collections.Generic;
 

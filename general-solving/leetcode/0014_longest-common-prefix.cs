@@ -6,9 +6,10 @@
 * Comp  : O(nm)
 * Status: Accepted
 * Notes : brute force compare chars from beginning of each string
-* meta  : tag-string, tag-easy
+* meta  : tag-string, tag-leetcode-easy
 ***************************************************************************/
-public class Solution {
+public class Solution
+{
   public string LongestCommonPrefix(string[] strs) {
     if (strs.Length == 0)
       return "";

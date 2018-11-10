@@ -1,14 +1,12 @@
-/*
-*  Problem Name:  Print the elements of a linked list
-*  Problem No  :  https://www.hackerrank.com/challenges/reverse-a-linked-list
-*   Domain      :   Data Structures/Linked Lists
-*  Problem Type:  
-*  Alogirthm  :   
-*  Complexity  :  O(n)
-*  Author    :  Atiq Rahman
-*  Status    :  Accepted
-*  Notes    :  
-*/
+/***************************************************************************************************
+* Title : Print the elements of a linked list
+* URL   : https://www.hackerrank.com/challenges/reverse-a-linked-list
+* Comp  : O(n)
+* Author: Atiq Rahman
+* Status: Accepted
+* Notes : 
+* meta  : tag-ds-linked-list
+***************************************************************************************************/
 
 void Print(Node *root)
 {

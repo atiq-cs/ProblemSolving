@@ -1,15 +1,13 @@
-/***************************************************************************
-* Title       : Queues: A Tale of Two Stacks
-* URL         : https://www.hackerrank.com/challenges/ctci-queue-using-two-stacks
-* Date        : Sep 7 2017
-* Complexity  : O(n), Space O(1)
-* Author      : Atiq Rahman
-* Status      : Accepted
-* Notes       : Linear checking of cycle on a linked list
-* Same        : hackerrank/data-structures/detect-whether-a-linked-list-
-*               contains-a-cycle.cpp
-* meta        : tag-linked-list, tag-easy
-***************************************************************************/
+/***************************************************************************************************
+* Title : Queues: A Tale of Two Stacks
+* URL   : https://www.hackerrank.com/challenges/ctci-queue-using-two-stacks
+* Date  : 2017-09-07
+* Comp  : O(n), O(1)
+* Author: Atiq Rahman
+* Status: Accepted
+* Notes :
+* meta  : tag-linked-list, tag-easy
+***************************************************************************************************/
 using System;
 using System.Collections.Generic;
 

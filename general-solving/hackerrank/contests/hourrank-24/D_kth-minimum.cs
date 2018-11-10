@@ -1,29 +1,29 @@
-/***************************************************************************
-* Title       : Kth Minimum
-* URL         : https://www.hackerrank.com/contests/hourrank-24/challenges/kth-minimum
-* Occasion    : Codeforces Round #258 (Div. 2)
-* Date        : Nov 1 2017
-* Complexity  : O(n) 78ms, Space O(n), 11300 KB
-* Author      : Atiq Rahman
-* Status      : RunTime Error
-* Notes       : Naive: sort the array and find diff sequence to reverse
+/***************************************************************************************************
+* Title : Kth Minimum
+* URL   : https://www.hackerrank.com/contests/hourrank-24/challenges/kth-minimum
+* Occasn: Codeforces Round #258 (Div. 2)
+* Date  : 2017-11-01
+* Comp  : O(n) 78ms, O(n), 11300 KB
+* Author: Atiq Rahman
+* Status: RunTime Error
+* Notes : Naive: sort the array and find diff sequence to reverse
 *   Approach O(n),
 *   Finding the starting and ending index of the segment that is in reverse
 *   order.
 *
-*   Input: distinct integers, not equal
+*   Input are distinct integers, not equal
 *   Judge has large inputs as per challenge author: anveshi,
 *   Constraints on a_i's were increased from 10^5 to 2 * 10^5 to kill the
 *   solution having complexity O(n * log^2 n * log a) where a is the answer.
-*   last submission ref: https://www.hackerrank.com/contests/hourrank-24/
-*    challenges/kth-minimum/submissions/code/1308095340
-*    (tried a simplified version of input)
+*   last submission ref:
+*  https://www.hackerrank.com/contests/hourrank-24/challenges/kth-minimum/submissions/code/1308095340
+*   (tried a simplified version of input)
 *   
 *   Things to change for 'demos/algo/OrderStat.cs'
-*     type int to type long
-*     int[] to List<long>
-* meta        : tag-median, tag-order-stats
-***************************************************************************/
+*   type int to type long
+*   int[] to List<long>
+* meta  : tag-median, tag-order-stats
+***************************************************************************************************/
 using System;
 using System.Collections.Generic;
 

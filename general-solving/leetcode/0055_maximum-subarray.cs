@@ -2,7 +2,7 @@
 * Title : Maximum Subarray
 * URL   : https://leetcode.com/problems/maximum-subarray/
 * Date  : 2015-07-23
-
+*
 * Notes : Simple implementation
 * Comp  : O(n)
 * Author: Atiq Rahman

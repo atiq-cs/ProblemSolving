@@ -1,14 +1,11 @@
-/*
-*  Problem Name:  Arrays Introduction
-*  Problem No  :  https://www.hackerrank.com/challenges/arrays-introduction
-*   Domain      :    C++/Introduction/Arrays
-*  Problem Type:  
-*  Alogirthm  :   
-*  Author    :  Atiq Rahman
-*  Status    :  Accepted
-*  Note    :  Restrict from the temptation of using pointer arithmetic
-*/
-
+/***************************************************************************************************
+* Title : Arrays Introduction
+* URL   : https://www.hackerrank.com/challenges/arrays-introduction
+* Author: Atiq Rahman
+* Status: Accepted
+* Notes : Restrict from the temptation of using pointer arithmetic
+* meta  : tag-lang-cpp
+***************************************************************************************************/
 #include <iostream>
 #include <string>
 #include <sstream>

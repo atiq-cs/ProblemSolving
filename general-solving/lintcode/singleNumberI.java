@@ -1,3 +1,8 @@
+/***************************************************************************************************
+* URL   : https://www.lintcode.com/problem/single-number
+* Author: Tianshu Bao (tianshubao1)
+* Date  : 2015-06-03
+***************************************************************************************************/
 public class Solution {
   /**
    *@param A : an integer array

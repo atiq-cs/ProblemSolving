@@ -1,21 +1,20 @@
-/***************************************************************************
+/***************************************************************************************************
 * Title : Mutual Indivisibility
 * URL   : hackerrank.com/contests/hourrank-24/challenges/mutual-indivisibility/
-* Cont  : hourrank-24
-* Date  : Nov 2, 2017
-* Auth  : Atiq Rahman
-* Comp  : O(n^2), space O(n)
-* Stat  : Accepted
-* Notes : Start with n and try numbers in reverse direction n, n-1, n-2 and so
-*   on.. till n/2. From n/2 start checking divisility with numbers added so far
-*   in the list.
-*
+* Occasn: hourrank-24
+* Date  : 2017-11-02
+* Author: Atiq Rahman
+* Comp  : O(n^2), O(n)
+* Status: Accepted
+* Notes : Start with n and try numbers in reverse direction n, n-1, n-2 and so on.. till n/2. From
+*   n/2 start checking divisility with numbers added so far in the list.
 * meta  : tag-divisibility, tag-number-theory, tag-algo-greedy
-***************************************************************************/
+***************************************************************************************************/
 using System;
 using System.Collections.Generic;
 
-class Solution {
+class HKSolution
+{
   static bool IsIndivisible(List<int> iList, int n) {
     for (int i=0; i<iList.Count; i++)
       if (iList[i]%n == 0)

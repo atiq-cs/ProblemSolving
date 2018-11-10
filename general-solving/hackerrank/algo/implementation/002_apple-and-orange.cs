@@ -1,17 +1,17 @@
-/***************************************************************************
-* Title       : Apple and Orange
-* URL         : https://www.hackerrank.com/challenges/apple-and-orange
-* Date        : Sept 19, 2017
-* Domain      : algorithms/implementation
-* Complexity  : O(n+m)
-* Author      : Atiq Rahman
-* Status      : Accepted
-* Notes       : Simple problem for implementation
-* meta        : tag-easy, tag-math
-***************************************************************************/
+/***************************************************************************************************
+* Title : Apple and Orange
+* URL   : https://www.hackerrank.com/challenges/apple-and-orange
+* Date  : 2017-09-19
+* Comp  : O(n+m)
+* Author: Atiq Rahman
+* Status: Accepted
+* Notes :
+* meta  : tag-math, tag-implementation, tag-easy
+***************************************************************************************************/
 using System;
 
-class HK_Solution {
+class HKSolution
+{
   static void Main(String[] args) {
     string[] tokens_s = Console.ReadLine().Split(' ');
     int s = Convert.ToInt32(tokens_s[0]);

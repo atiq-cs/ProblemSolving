@@ -1,13 +1,13 @@
-/***************************************************************************
-* Title       : Insertion Sort - Part 1
-* URL         : https://www.hackerrank.com/challenges/insertionsort1
-* Date        : Sep 17 2015
-* Complexity  : O(n^2)
-* Author      : Atiq Rahman
-* Status      : Accepted
-* Notes       : page 16 CLR
-* meta        : tag-algo-sort
-***************************************************************************/
+/***************************************************************************************************
+* Title : Insertion Sort - Part 1
+* URL   : https://www.hackerrank.com/challenges/insertionsort1
+* Date  : 2015-09-17
+* Comp  : O(n^2)
+* Author: Atiq Rahman
+* Status: Accepted
+* Notes : page 16 CLR
+* meta  : tag-algo-sort
+***************************************************************************************************/
 using System;
 using System.Collections.Generic;
 

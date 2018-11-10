@@ -13,7 +13,8 @@
 * ref   : Implement division with bit-wise operator
 *  https://stackoverflow.com/q/5284898
 *  https://web.stanford.edu/class/ee486/doc/chap5.pdf section 5.1.2
-* meta  : tag-leetcode-medium, tag-math, tag-binary-search
+*  https://www.cs.utah.edu/~rajeev/cs3810/slides/3810-08.pdf
+* meta  : tag-math, tag-binary-search, tag-leetcode-medium
 ***************************************************************************************************/
 public class Solution {
   // Second version

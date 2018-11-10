@@ -1,18 +1,18 @@
-/***************************************************************************
-* Title       : Trees: Is This a Binary Search Tree?
-* URL         : https://www.hackerrank.com/challenges/ctci-is-binary-search-tree
-* Date        : Sep 7 2017
-* Complexity  : O(n), Space O(logn)
-* Author      : Atiq Rahman
-* Status      : Accepted
-* Notes       : Inorder traversal
-*               assign values & compare in that order
+/***************************************************************************************************
+* Title : Trees: Is This a Binary Search Tree?
+* URL   : https://www.hackerrank.com/challenges/ctci-is-binary-search-tree
+* Date  : 2017-09-07
+* Comp  : O(n), O(lg n)
+* Author: Atiq Rahman
+* Status: Accepted
+* Notes : Inorder traversal
+*   assign values & compare in that order
 *
-*               Language specicfic direction:
-*                global variable instead of static would also work
-* Same        : general-solving/lintcode/095_validate-binary-search-tree.cpp
-* meta        : tag-binary-tree, tag-easy
-***************************************************************************/
+*   Language specicfic direction,
+*   global variable instead of static would also work
+* rel   : general-solving/lintcode/095_validate-binary-search-tree.cpp
+* meta  : tag-binary-tree, tag-easy
+***************************************************************************************************/
 
 bool checkBST(Node* root) {
   if (root == NULL)

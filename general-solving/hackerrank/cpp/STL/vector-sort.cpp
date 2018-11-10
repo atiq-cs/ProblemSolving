@@ -1,13 +1,11 @@
-/*
-*  Problem Name:  Vector Sort
-*  Problem No  :  https://www.hackerrank.com/challenges/vector-sort
-*   Domain      :    C++/STL
-*  Problem Type:  Use of STL, vector
-*  Alogirthm  :   
-*  Author    :  Atiq Rahman
-*  Status    :  Accepted
-*  Note    :  hackerrank supports auto iteration of vector
-*/
+/***************************************************************************************************
+* Title : Vector Sort
+* URL   : https://www.hackerrank.com/challenges/vector-sort
+* Author: Atiq Rahman
+* Status: Accepted
+* Notes : C++/STL; hackerrank supports auto iteration of vector
+* meta  : tag-lang-cpp
+***************************************************************************************************/
 
 #include <iostream>
 #include <vector>

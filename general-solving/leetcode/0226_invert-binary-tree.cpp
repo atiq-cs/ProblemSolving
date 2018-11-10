@@ -1,7 +1,7 @@
 /***************************************************************************************************
 * Title : Find the minimum depth of a binary tree
 * URL   : https://leetcode.com/problems/minimum-depth-of-binary-tree/
-* Date  : 2015-07-22 upate)
+* Date  : 2015-07-22 (upate)
 * Notes : if we don't consider the
 *   - case when left or right child is null solution is wrong
 *

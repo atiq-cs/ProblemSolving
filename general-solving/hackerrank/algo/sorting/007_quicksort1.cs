@@ -1,18 +1,17 @@
-/***************************************************************************
-* Title       : Quicksort 1 - Partition
-* URL         : https://www.hackerrank.com/challenges/quicksort1
-* Date        : Sep 1 2015
-* Complexity  : Partition O(n)
-* Author      : Atiq Rahman
-* Status      : Accepted
-* Notes       : Quick Sort partition related
-*               
-* Related     : Basic Sort
-* meta        : tag-algo-sort
-***************************************************************************/
+/***************************************************************************************************
+* Title : Quicksort 1 - Partition
+* URL   : https://www.hackerrank.com/challenges/quicksort1
+* Date  : 2015-09-01
+* Comp  : Partition O(n)
+* Author: Atiq Rahman
+* Status: Accepted
+* Notes : Quick Sort partition related, C.L.R.S p#16
+* rel   : Basic Sort
+* meta  : tag-algo-sort
+***************************************************************************************************/
 using System;
 
-class HK_Solution {
+class HKSolution {
   static void partition(int[] ar) {
     // let's use an auxilary list
     int[] xa = new int[ar.Length];
@@ -29,7 +28,6 @@ class HK_Solution {
     Console.WriteLine();
   }
   
-  /* Tail starts here */
   static void Main(String[] args) {
     int _ar_size;
     _ar_size = Convert.ToInt32(Console.ReadLine());

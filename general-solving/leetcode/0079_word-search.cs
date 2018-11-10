@@ -1,7 +1,7 @@
 /***************************************************************************************************
 * Title : Word Search
 * URL   : word-search
-* Date  : 18-10-27
+* Date  : 2018-10-27
 * Author: Atiq Rahman
 * Comp  : O(N*M)
 * Status: Accepted
@@ -32,7 +32,7 @@ public class Solution
     return false;
   }
 
-  // DFS without Visited list
+  // DFS without Visited list: what's this ?
   private bool DFS(int r, int c, int index) {
     if (r < 0 || c < 0 || r >= numRows || c >= numCols || visited[r][c] || board[r][c] !=
         word[index])

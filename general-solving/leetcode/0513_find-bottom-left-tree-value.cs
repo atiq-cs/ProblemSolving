@@ -10,7 +10,7 @@
 *   can be tracked doing an inorder traversal. Inorder works because it visits
 *   the left node before other nodes.
 *
-* meta  : tag-easy, tag-binary-tree
+* meta  : tag-ds-binary-tree, tag-leetcode-easy
 ***************************************************************************/
 public class Solution {
   int maxDepth;

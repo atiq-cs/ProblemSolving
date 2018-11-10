@@ -1,14 +1,14 @@
-/***************************************************************************
+/***************************************************************************************************
 * Title : Subarray Sum Equals K
 * URL   : https://leetcode.com/problems/subarray-sum-equals-k
 * Date  : 2018-04-18
 * Author: Atiq Rahman
 * Comp  : O(N), O(N); O(N^2), O(1)
 * Status: Accepted
-* Notes : O(N) solution is intuitive. 
+* Notes : O(N) solution is intuitive.
 *   Saves all previous sums, hence a new sum-k will conform to exist. Also, use sum-k to compute
 *   total number ways to make sum. By all previous sums, we mean previuos sum not previous sum-k.
-* 
+*   
 *   O(N^2) solution was the first one I did.
 *   Why does O(N^2) Soln has space complexity of O(1). Because, we can replace it with a running sum
 *   and total sum. We get SUM (i, n-1) by subtracting running sum from total sum.
@@ -19,7 +19,7 @@
 *   enough trouble to understand though
 * rel   : https://leetcode.com/problems/subarray-product-less-than-k
 * meta  : tag-hash-table, tag-leetcode-medium
-***************************************************************************/
+***************************************************************************************************/
 public class Solution
 {
   // O(N): readable version

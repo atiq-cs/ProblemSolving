@@ -5,12 +5,11 @@
 * Author: Atiq Rahman
 * Comp  : O(N)
 * Status: Accepted
-* Notes : Problem: rearrange the array in such a way so that
-*   all odd numbers appear first and
-*   even numbers appear later
+* Notes : Rearrange the array in such a way so that all odd numbers appear
+*   first and even numbers appear later
 *
-*   can be related to quick sort's partition and DNF
-* meta  : tag-easy, tag-EPI, tag-partition
+*   can be related to quick sort's partition and DNF sort
+* meta  : tag-EPI, tag-partition, tag-quick-sort
 ***************************************************************************/
 class Solution {
 public:

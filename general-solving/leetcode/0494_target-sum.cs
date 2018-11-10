@@ -1,16 +1,16 @@
-/***************************************************************************
+/***************************************************************************************************
 * Title : Target Sum
 * URL   : https://leetcode.com/problems/target-sum
 * Date  : 2017-12
 * Author: Atiq Rahman
-* Comp  :
+* Comp  : 
 * Status: Accepted
 * Notes : Given data is unsorted.
 *   C.L.R.S Intro to Cormen - Chapter 35
 *   Yet to understand how this algo works
 *
 * meta  : tag-algo-dp, tag-leetcode-medium
-***************************************************************************/
+***************************************************************************************************/
 // Follows the solution from the board
 public class Solution
 {

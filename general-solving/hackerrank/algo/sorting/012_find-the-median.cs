@@ -1,22 +1,23 @@
-/***************************************************************************
+/***************************************************************************************************
 * Title : Find the Median
 * URL   : https://www.hackerrank.com/challenges/find-the-median
 * Date  : 2018-01-01
 * Author: Atiq Rahman
 * Comp  : O(n)
 * Status: Accepted
-* Notes : This is a good problem to test order statistics algorithms. 
+* Notes : This is a good problem to test order statistics algorithms.
 *   My first implementation of Randomized Select has been used with
-*     'hourrank-24/D_kth-minimum.cs'
+*   'hourrank-24/D_kth-minimum.cs'
 *   This is the first problem that gave acceptance with that algorithm
 *   Finds median in N operations. With the 'RandomizedSelet' function that
 *   returns the item instead it requires 2 * N Operations to find the median
 *   when n is an even number.
 * meta  : tag-median, tag-order-stats
-***************************************************************************/
+***************************************************************************************************/
 using System;
 
-class MedianSolution {
+class MedianSolution
+{
   public void TakeInput() {
     int n = int.Parse(Console.ReadLine());
     A = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);

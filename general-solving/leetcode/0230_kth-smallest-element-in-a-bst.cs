@@ -10,11 +10,13 @@
 *   We need to check equality if there are duplicate values kinda similar to
 *   the ref.
 *   Why is it tagged medium?
+*   Easy if you know BSt.
 * rel   : 'general-solving/leetcode/501_find-mode-in-binary-search-tree.cs'
-* meta  : tag-leetcode-medium, tag-binary-search-tree
+* meta  : tag-BST, tag-leetcode-medium
 ***************************************************************************/
 public class Solution {
   private int k, val;
+
   public int KthSmallest(TreeNode root, int k) {
     this.k = k;
     InOrder(root);

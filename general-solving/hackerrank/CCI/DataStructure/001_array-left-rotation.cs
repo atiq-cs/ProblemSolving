@@ -1,16 +1,16 @@
-/***************************************************************************
-*   Problem Name:   Arrays: Left Rotation
-*   Problem URL :   https://www.hackerrank.com/challenges/ctci-array-left-rotation
-*   Date        :   Jan 15, 2016
-*   Desc        :   Linear swap
-*   Complexity  :   O(n)
-*   Author      :   Atiq Rahman
-*   Status      :   Accepted
-*   Notes       :   Direct solution based on,
-*                   https://www.hackerrank.com/challenges/circular-array-rotation
-*                   domain, cracking-the-coding-interview/data-structure
-*   meta        :   tag-easy
-***************************************************************************/
+/***************************************************************************************************
+* Title : Arrays: Left Rotation
+* URL   : https://www.hackerrank.com/challenges/ctci-array-left-rotation
+* Date  : 2016-01-15
+* Notes : Linear swap
+* Comp  : O(n)
+* Author: Atiq Rahman
+* Status: Accepted
+* Notes : Direct solution based on,
+*   https://www.hackerrank.com/challenges/circular-array-rotation
+*   domain, cracking-the-coding-interview/data-structure
+* meta  : tag-easy
+***************************************************************************************************/
 using System;
 
 class HKSolution {

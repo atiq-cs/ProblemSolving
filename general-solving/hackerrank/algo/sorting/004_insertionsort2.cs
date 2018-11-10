@@ -1,16 +1,17 @@
-/***************************************************************************
-* Title       : Insertion Sort - Part 2
-* URL         : https://www.hackerrank.com/challenges/insertionsort2
-* Date        : Sep 17 2017
-* Complexity  : O(n^2)
-* Author      : Atiq Rahman
-* Status      : Accepted
-* Notes       : page 16 CLR
-* meta        : tag-algo-sort
-***************************************************************************/
+/***************************************************************************************************
+* Title : Insertion Sort - Part 2
+* URL   : https://www.hackerrank.com/challenges/insertionsort2
+* Date  : 2017-09-17
+* Comp  : O(n^2)
+* Author: Atiq Rahman
+* Status: Accepted
+* Notes : C.L.R.S p#16
+* meta  : tag-algo-sort
+***************************************************************************************************/
 using System;
 
-class Solution {
+class HKSolution
+{
   static void insertionSort(int[] A) {
     for (int i = 1; i < A.Length; i++) {
       int j = i;

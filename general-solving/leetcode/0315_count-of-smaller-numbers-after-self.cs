@@ -24,11 +24,12 @@
 *   Ideally, duplicate numbers should have same rank or a label in order. However, in this solution,
 *   they don't have same rank -- rank here is the index in sorted order. Depending on stability of
 *   sort, numbers can have out of order ranks i.e., for unstable sort.
-*   It is not proved whether the sort we are doing (specifically on 'idx') stable or not.
+*   It is not proved whether the sort we are doing (specifically on 'idx') stable or not. Finding
+*   first duplicate would be necessary anyway to get count for previous number's rank.
 *   
-* ref   :  C.L.R.S 3rd Ed., Ch 14, Section 14.3 Interval Trees would also work
+* ref   : C.L.R.S 3rd Ed., Ch 14, Section 14.3 Interval Trees would also work
 * rel   : https://leetcode.com/problems/range-sum-query-mutable
-* meta  : tag-BST, tag-fenwick-tree, tag-binary-indexed-tree, tag-leetcode-hard
+* meta  : tag-ds-BST, tag-fenwick-tree, tag-binary-indexed-tree, tag-leetcode-hard
 ***************************************************************************************************/
 public class Solution
 {

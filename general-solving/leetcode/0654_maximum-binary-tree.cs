@@ -12,7 +12,7 @@
 *   sorted array to BST: '108_convert-sorted-array-to-binary-search-tree.cs'
 *   mid calculation/selection part is modified to solve this problem.
 *
-* meta  : tag-easy, tag-binary-tree
+* meta  : tag-ds-binary-tree, tag-leetcode-easy
 ***************************************************************************/
 public class Solution {
   int[] A;

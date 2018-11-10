@@ -1,23 +1,22 @@
 /***************************************************************************
 * Title : Intersection of Two Linked Lists
 * URL   : https://leetcode.com/problems/intersection-of-two-linked-lists
-* Author: Atiq Rahman
-* Comp  : O(n)
+* Date  : 2018-02-19
+* Comp  : O(n), O(1)
 * Status: Accepted
-* meta  : tag-easy, tag-linked-list, tag-hash-table
-***************************************************************************/
-/* 2018-02-19
- * Space O(1)
- * Note: Iterate through each of nodes in both linked lists
+* Notes : Iterate through each of nodes in both linked lists
  *   if one of them becomes null advance the head of the other linked list so
  *   that it reaches the node from where remaning length in the list equal to
  *   length of the list for which iterator has become null.
  *   
  *   When both of them restarts iterating from equal length just check where
  *   they match.
- *   Based on Aaron's idea: 
- */
-public class Solution {
+ 
+ *   Ack: Aaron (JS meetup)
+* meta  : tag-linked-list, tag-hash-table, tag-leetcode-easy
+***************************************************************************/
+public class Solution
+{
   public ListNode GetIntersectionNode(ListNode headA, ListNode headB) {
     ListNode curA = headA;
     ListNode curB = headB;

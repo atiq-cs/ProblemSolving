@@ -1,46 +1,29 @@
-/*
-    Problem: http://www.lintcode.com/en/problem/convert-sorted-array-to-binary-search-tree-with-minimal-height/
-    Description:
-            Recursive solution.
-
-            Complexity: theta(log n), verify
-            Had to look at a reference: http://articles.leetcode.com/2010/11/convert-sorted-array-into-balanced.html
-
-    Remark  :   Some problems are easier to solve following original algorithm structure
-    Status  :   Accepted
-*/
-
-/*
-* Definition of TreeNode:
-* class TreeNode {
-* public:
-*     int val;
-*     TreeNode *left, *right;
-*     TreeNode(int val) {
-*         this->val = val;
-*         this->left = this->right = NULL;
-*     }
-* }
-*/
+/***************************************************************************************************
+* URL   : convert-sorted-array-to-binary-search-tree-with-minimal-height
+* Date  : 2015-06-04
+* Author: Atiq Rahman
+* Status: Accepted
+* Comp  : O(n)
+* Notes : Some problems are easier to solve following original algorithm structure
+*   Comp analysis: theta(log n) or theta(n)?
+*   We have to read at least once each item from the array. Hence, it cannot be less than theta(N)
+* ref   : http://articles.leetcode.com/2010/11/convert-sorted-array-into-balanced.html
+* meta  : tag-ds-BST, tag-recursion
+***************************************************************************************************/
 class Solution {
 public:
-    /**
-    * @param A: A sorted (increasing order) array
-    * @return: A tree node
-    */
-    TreeNode *sortedArrayToBST(vector<int> &A) {
-        // write your code here
-        return sortedArrayToBST_rec(A, 0, A.size() - 1);
-    }
-    TreeNode *sortedArrayToBST_rec(vector<int> &A, int low, int high) {
-        // write your code here
-        if (low>high)
-            return NULL;
+  TreeNode *sortedArrayToBST(vector<int> &A) {
+    return sortedArrayToBST(A, 0, A.size() - 1);
+  }
 
-        int mid = (low + high) / 2;
-        TreeNode* root = new TreeNode(A[mid]);
-        root->left = sortedArrayToBST_rec(A, low, mid - 1);
-        root->right = sortedArrayToBST_rec(A, mid + 1, high);
-        return root;
-    }
+  TreeNode *sortedArrayToBST(vector<int> &A, int low, int high) {
+    if (low>high)
+      return NULL;
+
+    int mid = (low + high) / 2;
+    TreeNode* root = new TreeNode(A[mid]);
+    root->left = sortedArrayToBST(A, low, mid - 1);
+    root->right = sortedArrayToBST(A, mid + 1, high);
+    return root;
+  }
 };

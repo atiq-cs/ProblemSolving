@@ -1,57 +1,57 @@
 /***************************************************************************
-* Title       : The Coin Change Problem
-* URL         : https://www.hackerrank.com/challenges/coin-change
-* Date        : Jan 26, 2016
-* Complexity  : O(nm) Time
-* Author      : Atiq Rahman
-* Status      : Accepted
-* Notes       : 
-*               The goal is to find number of ways coins can sum up to n. 
-*               By trying the regular DP concept, I was able to
-*               write the algo/solution that can compute number of ways
-*               However, because the coin iteration loop was inner
-*               it included solutions where order of coins mattered or
-*               position of the coins mattered. To give an example,
-*               consider 3 coins are given to make sum 4 like following,
-*               
-*               4 3
-*               1 2 3
-*               solutions are considered:
-*                1 1 1 1
-*                1 1 2
-*                1 2 1
-*                2 1 1
-*                1 3
-*                2 2
-*                3 1
-*               which gives us total ways = 7
-*               
-*               To include only the unique solutions all we need to do is put
-*               the coin loop as outer
-*               
-*               Lessons:
-*                sorting coins not necessary
-*                
-*               Initialization:
-*                How many ways can we make 0?
-*                1 (known and does not require further calculation)
-*                How many ways can we make others?
-*                Initialize with 0 and dynamically keep adding to find final value.
-*               Therefore, initialization goes as follows,
-*                Set count for making 0 to 1
-*                And, all others to 0.
-*                
-*               some old draft text at bottom
-*                
-*               Refs:
-*               This one uses 2D Array
-*               https://en.wikipedia.org/wiki/Change-making_problem
-*               Similarly,
-*               http://www.algorithmist.com/index.php/Coin_Change
-*               
-* Rel: https://leetcode.com/problems/coin-change-2               
-* Ack         : Mak               
-* meta        : tag-algo-dp
+* Title : The Coin Change Problem
+* URL   : https://www.hackerrank.com/challenges/coin-change
+* Date  : 2016-01-26
+* Comp  : O(nm) Time
+* Author: Atiq Rahman
+* Status: Accepted
+* Notes : 
+*   The goal is to find number of ways coins can sum up to n.
+*   By trying the regular DP concept, I was able to
+*   write the algo/solution that can compute number of ways
+*   However, because the coin iteration loop was inner
+*   it included solutions where order of coins mattered or
+*   position of the coins mattered. To give an example,
+*   consider 3 coins are given to make sum 4 like following,
+*   
+*   4 3
+*   1 2 3
+*   solutions are considered:
+*   1 1 1 1
+*   1 1 2
+*   1 2 1
+*   2 1 1
+*   1 3
+*   2 2
+*   3 1
+*   which gives us total ways = 7
+*   
+*   To include only the unique solutions all we need to do is put
+*   the coin loop as outer
+*   
+*   Lessons:
+*   sorting coins not necessary
+*   
+*   Initialization:
+*   How many ways can we make 0?
+*   1 (known and does not require further calculation)
+*   How many ways can we make others?
+*   Initialize with 0 and dynamically keep adding to find final value.
+*   Therefore, initialization goes as follows,
+*   Set count for making 0 to 1
+*   And, all others to 0.
+*   
+*   some old draft text at bottom
+*   
+*   Refs:
+*   This one uses 2D Array
+*   https://en.wikipedia.org/wiki/Change-making_problem
+*   Similarly,
+*   http://www.algorithmist.com/index.php/Coin_Change
+*   
+* rel   : https://leetcode.com/problems/coin-change-2
+* Ack   : Mak
+* meta  : tag-algo-dp
 ***************************************************************************/
 using System;
 

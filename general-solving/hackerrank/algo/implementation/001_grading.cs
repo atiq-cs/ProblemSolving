@@ -1,21 +1,21 @@
 /***************************************************************************
-* Title       : Grading Students
-* URL         : https://www.hackerrank.com/challenges/grading
-* Date        : Sept 19, 2017
-* Domain      : algorithms/implementation
-* Complexity  : O(n)
-* Author      : Atiq Rahman
-* Status      : Accepted
-* Notes       : Simple problem for implementation
-*               Found following math functions,
-*               - Math.Ceiling()
-*               - Math.Round()
-*               - Math.Floor()
-* meta        : tag-easy, tag-math
+* Title : Grading Students
+* URL   : https://www.hackerrank.com/challenges/grading
+* Date  : 2017-09-19
+* Comp  : O(n)
+* Author: Atiq Rahman
+* Status: Accepted
+* Notes : Simple problem for implementation
+*   Found following math functions,
+*   - Math.Ceiling()
+*   - Math.Round()
+*   - Math.Floor()
+* meta  : tag-math, tag-implementation, tag-easy
 ***************************************************************************/
 using System;
 
-class HK_Solution {
+class HKSolution
+{
   static int[] solve(int[] grades){
     int[] result = new int[grades.Length];
     for (int i=0; i<grades.Length; i++) {

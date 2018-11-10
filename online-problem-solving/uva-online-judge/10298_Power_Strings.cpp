@@ -6,20 +6,13 @@
 * Comp  : O(n)
 * Status: Accepted
 * Notes : class less template
-*   TODO: simplify logic/code
+*   TODO simplify logic/code
 * meta  : tag-string, tag-string-matching, tag-kmp
 ***************************************************************************/
 #include <iostream>
 #include <algorithm>
 #include <string>
 #include <vector>
-
-// Comment before submission to judge
-#define FILE_IO  TRUE
-
-#ifdef FILE_IO
-#include <fstream>
-#endif
 
 void handleIO();
 
@@ -83,17 +76,6 @@ int main() {
 }
 
 void handleIO() {
-#ifdef FILE_IO
-  std::string problem = "10298";
-  std::ifstream inFile(problem + "_in.txt");
-  std::streambuf *cinbuf = std::cin.rdbuf(); //save old buf
-  std::cin.rdbuf(inFile.rdbuf()); //redirect std::cin to inFile!
-
-  std::ofstream outFile(problem + "_out.txt");
-  std::streambuf *coutbuf = std::cout.rdbuf();
-  std::cout.rdbuf(outFile.rdbuf());
-#endif
-
   std::string line;
 
   while (std::cin >> line && line != ".") {
@@ -112,11 +94,4 @@ void handleIO() {
     }
     std::cout << n << std::endl;
   }
-
-#ifdef FILE_IO
-  std::cin.rdbuf(cinbuf);
-  inFile.close();
-  std::cout.rdbuf(coutbuf);
-  outFile.close();
-#endif
 }

@@ -7,9 +7,9 @@
 * Status: Accepted
 * Notes : Detailed note is at '729_my-calendar-1_v2.cs'
 *   This first version has slightly more code than v2. However, might be easier
-*   to understand, self-explanatory code.
+*   to understand, self-explanatory code. Similar to interval problem.
 *
-* meta  : tag-easy, tag-math
+* meta  : tag-math, tag-leetcode-easy
 ***************************************************************************/
 public class MyCalendar {
   public class Booking {

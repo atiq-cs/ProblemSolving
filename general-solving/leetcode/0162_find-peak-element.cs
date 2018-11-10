@@ -9,7 +9,7 @@
 *   Finding a local minima is rather easy. Why Binary Search?
 *   In worst case, local minima can be located at the end of the array. In such a case, linear
 *   search takes O(N).
-* 
+*   
 *   Therefore, a binary search which starts from the middle element and goes to the left side if
 *   item on the left is larger is intuitive. Similarly if the item on the right side is larger then
 *   it takes the search direction towards the right side.

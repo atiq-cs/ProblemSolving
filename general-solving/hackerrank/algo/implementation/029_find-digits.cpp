@@ -1,15 +1,11 @@
-/*
-*  Problem Name:  Find Digits
-*  Problem No  :  https://www.hackerrank.com/challenges/find-digits
-*   Domain      :   Algorithms/Implementation
-*  Alogirthm  :   
-*  Author    :  Atiq Rahman
-*  Status    :  Accepted
-*  Desc    :  Simple approach
-*  Notes    :  This one apparently uses my old OOP template
-*   meta        :   tag-easy
-*/
-
+/***************************************************************************************************
+* Title : Find Digits
+* URL   : https://www.hackerrank.com/challenges/find-digits
+* Author: Atiq Rahman
+* Status: Accepted
+* Notes : Simple approach, This one apparently uses my old OOP template
+* meta  : tag-implementation, tag-easy
+***************************************************************************************************/
 #include <iostream>
 
 class DivisionCountFinder {

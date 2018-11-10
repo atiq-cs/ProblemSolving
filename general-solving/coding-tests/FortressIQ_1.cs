@@ -1,17 +1,16 @@
-/***************************************************************************
-* Prob#1: Max Difference in an array
-* Occas : FortressIQ Senior C# Developer
+/***************************************************************************************************
+* Title : Max Difference in an array (p#1)
+* Occasn: FortressIQ Senior C# Developer
 * Date  : 2018-03-04
 * Author: Atiq Rahman
 * Comp  : O(N), constant space
 * Status: Accepted
 * Notes : Find the max difference as per specification,
 *   Using Dynamic Programming approach we can solve this in O(N)
-*   Idea is to keep a min variable for previous element and try to maintain a
-*   max variable which contains max difference with current item while doing
-*   iteration through the entire array
+*   Idea is to keep a min variable for previous element and try to maintain a max variable which
+*   contains max difference with current item while doing iteration through the entire array
 * meta  : tag-algo-dp, tag-company-FortressIQ, tag-coding-test
-***************************************************************************/
+***************************************************************************************************/
 public class FortressIQ_Solution {
   static int maxDifference(int[] a) {
     // Initialization of variables

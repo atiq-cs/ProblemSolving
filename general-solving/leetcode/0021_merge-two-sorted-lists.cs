@@ -1,7 +1,7 @@
 /***************************************************************************************************
 * Title : Merge Two Sorted Lists
 * URL   : https://leetcode.com/problems/merge-two-sorted-lists
-* Date  : 2018-06-09 update)
+* Date  : 2018-06-09 (update)
 * Author: Atiq Rahman
 * Comp  : O(N+M), O(1)
 * Status: Accepted

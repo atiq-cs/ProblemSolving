@@ -3,10 +3,9 @@
 * URL   : https://leetcode.com/problems/binary-tree-postorder-traversal/
 * Date  : 2015-09-24
 * Comp  : O(n)
-* Author: Atiq Rahman
 * Status: Accepted
 * Notes : 
-* meta  : tag-easy, tag-binary-tree
+* meta  : tag-binary-tree, tag-leetcode-easy
 ***************************************************************************************************/
 
 public class Solution

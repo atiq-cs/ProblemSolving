@@ -1,18 +1,17 @@
-/***************************************************************************
-* Title       : Birthday Cake Candles
-* URL         : https://www.hackerrank.com/challenges/birthday-cake-candles
-* Occasion    : Codeforces Round #191 (Div. 2)
-* Date        : Aug 24 2017
-* Domain      : algorithms/warmup
-* Complexity  : O(n)
-* Author      : Atiq Rahman
-* Status      : Accepted
-* Notes       : Contest Editorial
-* meta        : tag-easy
-***************************************************************************/
+/***************************************************************************************************
+* Title : Birthday Cake Candles
+* URL   : https://www.hackerrank.com/challenges/birthday-cake-candles
+* Date  : 2017-08-24
+* Comp  : O(n)
+* Author: Atiq Rahman
+* Status: Accepted
+* Notes :
+* meta  : tag-easy
+***************************************************************************************************/
 using System;
 
-class Solution {
+class HKSolution
+{
   static int birthdayCakeCandles(int n, int[] ar) {
     int maxHeight = 0;
     int freq = 0;

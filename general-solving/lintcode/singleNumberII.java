@@ -1,3 +1,8 @@
+/***************************************************************************************************
+* URL   : https://www.jiuzhang.com/solutions/single-number-ii
+* Author: Tianshu Bao (tianshubao1)
+* Date  : 2015-06-03
+***************************************************************************************************/
 public class Solution {
   /**
    * @param A : An integer array

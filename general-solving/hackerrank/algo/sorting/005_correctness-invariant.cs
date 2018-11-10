@@ -1,13 +1,13 @@
-/***************************************************************************
-* Title       : Correctness and the Loop Invariant
-* URL         : https://www.hackerrank.com/challenges/correctness-invariant
-* Date        : Sep 17 2015
-* Complexity  : O(n^2)
-* Author      : Atiq Rahman
-* Status      : Accepted
-* Notes       : page 16 CLR
-* meta        : tag-algo-sort
-***************************************************************************/
+/***************************************************************************************************
+* Title : Correctness and the Loop Invariant
+* URL   : https://www.hackerrank.com/challenges/correctness-invariant
+* Date  : 2015-09-17
+* Comp  : O(n^2)
+* Author: Atiq Rahman
+* Status: Accepted
+* Notes : C.L.R.S p#16
+* meta  : tag-algo-sort
+***************************************************************************************************/
 using System;
 
 class Solution { 

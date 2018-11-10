@@ -17,7 +17,9 @@
 *    --
 *    
 *   Perimeter here is = 2 * 4 - 1 * 2 = 6
-* meta  : tag-easy
+*   
+*   Kinda like dp, linear progression to compute final result.
+* meta  : tag-algo-dp, tag-leetcode-easy
 ***************************************************************************/
 public class Solution {
   int n, m;

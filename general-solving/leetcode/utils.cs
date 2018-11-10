@@ -1,12 +1,12 @@
-/***************************************************************************
+/***************************************************************************************************
 * Title : Utilities for leetcode
-* URL   :
+* URL   : 
 * Date  : 2018-05-13 (updated)
 * Author: Atiq Rahman
 * Notes : Utility function for leetcode problems with jagged array in
 *   parameters. A few overrides added
 *   I find Comparison to be complicated in Generics!
-***************************************************************************/
+***************************************************************************************************/
 public class LeetcodeUtils {
   void Swap<T>(ref T lhs, ref T rhs) {
     T temp = lhs;

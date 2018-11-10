@@ -2,7 +2,7 @@
 * Title : Reverse Integer
 * URL   : https://leetcode.com/problems/reverse-integer/
 * Date  : 2015-10-20
-* Comp  : O(n) Time
+* Comp  : O(n)
 * Author: Atiq Rahman
 * Status: Accepted
 * Notes : Approach using string to reverse
@@ -12,7 +12,7 @@
 *     if (x<0) { isNeg = true; x = -x; }
 *
 *   However, this has a problem only case to handle is to handle max negative number
-* meta  : tag-easy
+* meta  : tag-leetcode-easy
 ***************************************************************************************************/
 
 public class Solution

@@ -1,13 +1,10 @@
-/*
-*  Problem Name:  Functions
-*  Problem No  :  https://www.hackerrank.com/challenges/c-tutorial-functions
-*   Domain      :   C++/Intro
-*  Problem Type:  
-*  Alogirthm  :   
-*  Author    :  Atiq Rahman
-*  Status    :  Accepted
-*/
-
+/***************************************************************************************************
+* Title : Functions
+* URL   : https://www.hackerrank.com/challenges/c-tutorial-functions
+* Author: Atiq Rahman
+* Status: Accepted
+* meta  : tag-lang-cpp
+***************************************************************************************************/
 #include <iostream>
 #include <algorithm>
 

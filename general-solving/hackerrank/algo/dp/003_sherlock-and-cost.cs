@@ -1,11 +1,11 @@
-/***************************************************************************
-* Title       : Sherlock and Cost
-* URL         : https://www.hackerrank.com/challenges/sherlock-and-cost
-* Date        : 2017-09-22
-* Complexity  : O(n)
-* Author      : Atiq Rahman
-* Status      : Accepted
-* Notes       : Traditional Sum = Sum(A[i]) for i=0..N
+/***************************************************************************************************
+* Title : Sherlock and Cost
+* URL   : https://www.hackerrank.com/challenges/sherlock-and-cost
+* Date  : 2017-09-22
+* Comp  : O(n)
+* Author: Atiq Rahman
+* Status: Accepted
+* Notes : Traditional Sum = Sum(A[i]) for i=0..N
 *   To maximize we have to consider two values for each A[i],
 *   1 and B[i]. I consider 1 as the low value and B[i] as the
 *   high value. However, B[i] can be 1 as well.
@@ -14,32 +14,32 @@
 *   with both high and low value (1 and B[i].
 *   
 *   There is no outcome with 1 item. So,
-*    s[0][LOW] and s[0][HIGH] are both 0;
-*    
+*   s[0][LOW] and s[0][HIGH] are both 0;
+*   
 *   Considering current value of A[i] to be low (1): then we have 2
-*   cases:
+*   cases,
 *   1. Previous one: A[i-1] is low. In that case,
-*    s[i][low] = s[i-1][low] + 1 -1 = s[i-1][low]
+*   s[i][low] = s[i-1][low] + 1 -1 = s[i-1][low]
 *   2. Previous one: A[i-1] is high. So,
-*    s[i][low] = s[i-1][high] + b[i-1] -1
+*   s[i][low] = s[i-1][high] + b[i-1] -1
 *
 *   Finally, we take the value that maximizes,
-*    s[i][low] = Max( sum1, sum2 );
-*    
-*    However, there is no gain in choosing s[i-1][low]
-*    We get more when we do, s[i-1][high] + b[i-1] -1
+*   s[i][low] = Max( sum1, sum2 );
+*   
+*   However, there is no gain in choosing s[i-1][low]
+*   We get more when we do, s[i-1][high] + b[i-1] -1
 *   This works given that B[i] >= 0
 *   Therefore, more we can accumulate the more it maximizes the
 *   result.
 *   
 *   it is the sum of A[i-1] to be
-*    s[i][LOW] = s[i - 1][HIGH] + b[i-1] - 1;
-*    
+*   s[i][LOW] = s[i - 1][HIGH] + b[i-1] - 1;
+*   
 *   This could also be solved using three variable that keep track
 *   of previous 2 values for s[i-1]
 *   The use of array in the solution looks okay for recurrence.
-* meta        : tag-algo-dp
-***************************************************************************/
+* meta  : tag-algo-dp
+***************************************************************************************************/
 using System;
 
 class HK_Solution {

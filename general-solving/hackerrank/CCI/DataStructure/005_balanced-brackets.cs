@@ -1,18 +1,19 @@
-/***************************************************************************
-* Title       : Stacks: Balanced Brackets
-* Problem URL : https://www.hackerrank.com/challenges/ctci-balanced-brackets
-* Date        : Jan 28, 2016
-* Complexity  : O(n log n) Time
-* Author      : Atiq Rahman
-* Status      : Accepted
-* Notes       : Time complexity depends on implementation of stack
-*   more desc at 'leetcode/020_valid-parentheses.cs'
-* meta        : tag-easy, tag-data-structure, tag-stack
-***************************************************************************/
+/***************************************************************************************************
+* Title : Stacks: Balanced Brackets
+* URL   : https://www.hackerrank.com/challenges/ctci-balanced-brackets
+* Date  : 2016-01-28
+* Comp  : O(n log n) Time
+* Author: Atiq Rahman
+* Status: Accepted
+* Notes : Time complexity depends on implementation of stack
+*   more desc at 'leetcode/0020_valid-parentheses.cs'
+* meta  : tag-ds-stack, tag-easy
+***************************************************************************************************/
 using System;
 using System.Collections.Generic;
 
-class Solution {
+class HKSolution
+{
   static bool IsLeftBracket(char ch)
   {
     if (ch == '(' || ch == '{' || ch == '[')

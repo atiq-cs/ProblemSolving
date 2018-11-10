@@ -1,6 +1,11 @@
-// Probably acquired from internet: probably from geeksforgeeks.org
-// A C++ program to find  the largest subsquare
-// surrounded by 'X' in a given matrix of 'O' and 'X'
+/***************************************************************************************************
+* Title : Find largest subsquare
+* URL   : 
+* Author: Atiq Rahman
+* Notes : Probably acquired from internet, rom geeksforgeeks.org. A C++ program to find  the largest
+*    subsquare surrounded by 'X' in a given matrix of 'O' and 'X'
+* meta  : tag-coding-practice
+***************************************************************************************************/
 #include<iostream>
 using namespace std;
 

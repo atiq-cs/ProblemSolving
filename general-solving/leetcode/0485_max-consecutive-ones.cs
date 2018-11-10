@@ -6,7 +6,7 @@
 * Comp  : O(1)
 * Status: Accepted
 * Notes : Counting from an array
-* meta  : tag-easy
+* meta  : tag-algo-dp, tag-leetcode-easy
 ***************************************************************************/
 public class Solution {
   // slightly shorter

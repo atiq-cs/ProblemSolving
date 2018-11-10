@@ -11,7 +11,7 @@
 *
 *   terminate early if there's no carry
 *   demonstrates Array.Copy
-* meta  : tag-easy, tag-string
+* meta  : tag-leetcode-easy, tag-string
 ***************************************************************************/
 using System;
 

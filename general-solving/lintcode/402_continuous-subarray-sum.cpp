@@ -1,23 +1,20 @@
-/*
-    Problem     : http://www.lintcode.com/en/problem/continuous-subarray-sum/
-    Description :
-                Basically Kadane's algorithm: https://en.wikipedia.org/wiki/Maximum_subarray_problem
-                Modified to get min index
-        For a general demonstration please have a look at
-          - Algorithms/kadane_demo.cpp
-
-    Complexity  : O(n)
-    Status      :   Accepted
-*/
-
-
+/***************************************************************************************************
+* Title : continuous-subarray-sum
+* Date  : 2015-09-06
+* Author: Atiq Rahman
+* Comp  : O(n)
+* Status: Accepted
+* Notes :
+*   Basically Kadane's algorithm (check ref)
+*   Modified to get min index
+*   For a general demonstration please have a look at
+*   - Algorithms/kadane_demo.cpp
+*
+* ref   : https://en.wikipedia.org/wiki/Maximum_subarray_problem
+* meta  : tag-algo-dp, tag-kadane
+***************************************************************************************************/
 class Solution {
 public:
-  /**
-  * @param A an integer array
-  * @return  A list of integers includes the index of
-  *          the first number and the index of the last number
-  */
   std::vector<int> kadane_with_index(std::vector<int> A) {
     // initialize max variables with first element
     int current_sum = A[0];

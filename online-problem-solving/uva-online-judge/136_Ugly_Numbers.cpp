@@ -12,7 +12,7 @@
 *               max value of int using C++
 *               https://stackoverflow.com/questions/1855459/maximum-value-of-int
 *               compile ref: https://ideone.com/F1qZrr
-* meta        : tag-algo-dp, tag-dp
+* meta        : tag-algo-dp, tag-judge-UVA
 ***************************************************************************/
 #include <iostream>
 #include <limits>

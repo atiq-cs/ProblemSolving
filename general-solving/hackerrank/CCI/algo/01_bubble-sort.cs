@@ -1,17 +1,18 @@
-/***************************************************************************
-* Title       : Sorting: Bubble Sort
-* URL         : https://www.hackerrank.com/challenges/ctci-bubble-sort
-* Date        : 2017-09-07
-* Complexity  : O(n^2)
-* Author      : Atiq Rahman
-* Status      : Accepted
-* Notes       : Bubble sort with tracking of swap operation
-* Same        : Basics/basic_sort.cs
-* meta        : tag-algo-sort, tag-easy
-***************************************************************************/
+/***************************************************************************************************
+* Title : Sorting: Bubble Sort
+* URL   : https://www.hackerrank.com/challenges/ctci-bubble-sort
+* Date  : 2017-09-07
+* Comp  : O(n^2)
+* Author: Atiq Rahman
+* Status: Accepted
+* Notes : Bubble sort with tracking of swap operation
+* rel   : Basics/basic_sort.cs
+* meta  : tag-algo-sort, tag-easy
+***************************************************************************************************/
 using System;
 
-class Solution {
+class HKSolution
+{
   static void Main(String[] args) {
     int n = Convert.ToInt32(Console.ReadLine());
     string[] a_temp = Console.ReadLine().Split(' ');

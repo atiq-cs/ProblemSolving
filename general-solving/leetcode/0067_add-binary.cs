@@ -12,10 +12,11 @@
 *   Method#2,
 *   for this solution check previous wrong answer submissions
 *   reason - inputs are large strings
-* meta  : tag-math; tag-string; tag-easy
+* meta  : tag-math, tag-string, tag-leetcode-easy
 ***************************************************************************************************/
 
-public class Solution {
+public class Solution
+{
   public string AddBinary(string a, string b) {
     int i=a.Length-1;
     int j=b.Length-1;

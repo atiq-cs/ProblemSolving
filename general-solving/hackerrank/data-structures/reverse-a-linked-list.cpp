@@ -1,20 +1,16 @@
-/*
-*  Problem Name:  Solve me second
-*  Problem No  :  https://www.hackerrank.com/challenges/reverse-a-linked-list
-*   Domain      :   Data Structures/Linked Lists
-*  Problem Type:  
-*  Alogirthm  :   
-*  Complexity  :  O(n)
-*  Author    :  Atiq Rahman
-*  Status    :  Accepted
-*  Notes    :  
-*/
+/***************************************************************************************************
+* Title : Solve me second
+* URL   : https://www.hackerrank.com/challenges/reverse-a-linked-list
+* Comp  : O(n)
+* Author: Atiq Rahman
+* Status: Accepted
+* Notes : Points
+*   - Reverse a linked list and return pointer to the head
+    - The input list will have at least one element
+* meta  : tag-ds-linked-list
+***************************************************************************************************/
 
 /*
-  Following to be noted regarding problem desc,
-   - Reverse a linked list and return pointer to the head
-   - The input list will have at least one element
-   - Node is defined as 
       struct Node
       {
        int data;
@@ -24,7 +20,6 @@
 
 Node* Reverse(Node *head)
 {
-  // Complete this method
   // starting from head all the nodes next pointer has to be changed
   if (head == NULL || head->next == NULL)
     return head;

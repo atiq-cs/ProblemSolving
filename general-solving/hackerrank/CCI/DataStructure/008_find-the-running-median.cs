@@ -1,21 +1,18 @@
-/***************************************************************************
-* Title       : Heaps: Find the Running Median
-* URL         : https://www.hackerrank.com/challenges/ctci-find-the-running-median
-* Date        : 2017-09-11
-* Complexity  : Add Item O(log n)
-*               Get-Median O(1)
-* Author      : Atiq Rahman
-* Status      : Accepted
-* Notes       : 
-*               Limitations: the implementation would fail if there are
-*               duplicate numbers in input set
-*               
-*               Consider critical cases when MinHp's count or MaxHp's count are
-*               0.
-*               
-* Rel         : 'hackerrank\data-structures\heap_01_qheap.cs'
-* meta        : tag-heap, tag-easy
-***************************************************************************/
+/***************************************************************************************************
+* Title : Heaps: Find the Running Median
+* URL   : https://www.hackerrank.com/challenges/ctci-find-the-running-median
+* Date  : 2017-09-11
+* Comp  : Add Item O(log n); Get-Median O(1)
+* Author: Atiq Rahman
+* Status: Accepted
+* Notes : 
+*   Limitations: the implementation would fail if there are duplicate numbers in input set
+*   
+*   Consider critical cases when MinHp's count or MaxHp's count are 0.
+
+* rel   : 'hackerrank\data-structures\heap_01_qheap.cs'
+* meta  : tag-ds-heap, tag-easy
+***************************************************************************************************/
 using System;
 using System.Collections.Generic;
 
@@ -102,7 +99,7 @@ class MinHeap and MaxHeap Override,
   3. ExtractMin/Max
 */
 
-class Solution {
+class HKSolution {
   static void Main(String[] args) {
     MedianFinder MF = new MedianFinder();
 

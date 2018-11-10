@@ -1,15 +1,11 @@
-/*
-*  Problem Name:  Summing the N series
-*  Problem No  :  https://www.hackerrank.com/challenges/summing-the-n-series
-*  Domain      :  Mathematics/Fundamentals
-*  Problem Type:  Basic Math
-*  Alogirthm   :  math
-*  Author      :  Atiq Rahman
-*  Desc        :  Apply big mod technique
-*  Status      :  Accepted
-*  meta        :  tag-big-mod
-*/
-
+/***************************************************************************************************
+* Title : Summing the N series
+* URL   : https://www.hackerrank.com/challenges/summing-the-n-series
+* Author: Atiq Rahman
+* Status: Accepted
+* Notes : Apply big mod technique
+* meta  : tag-big-mod, tag-math
+***************************************************************************************************/
 #include <iostream>
 
 int main() {

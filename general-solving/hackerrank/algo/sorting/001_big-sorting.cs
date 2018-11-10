@@ -1,26 +1,27 @@
-/***************************************************************************
-* Title       : Big Sorting
-* URL         : https://www.hackerrank.com/challenges/big-sorting
-* Date        : Sep 16 2017
-* Complexity  : O(n lg n)
-* Author      : Atiq Rahman
-* Status      : Accepted
-* Notes       : BigInteger Solution timed out
-*               I noticed that the default sort: Array.Sort is quick sort
-*               
-*               Probably this problem expects a simple implementation being the
-*               first problem in the list of sorting problems in hackerrank
-*               For simplicity, we use Library's sort: Array.Sort
-*               
-*               Clever use of 'string.Join'
-*               Learnt here how to specify a comparer function
-* Comparer ref: https://msdn.microsoft.com/en-us/library/cxt053xf.aspx
-* Related     : Basic Sort
-* meta        : tag-algo-sort
-***************************************************************************/
+/***************************************************************************************************
+* Title : Big Sorting
+* URL   : https://www.hackerrank.com/challenges/big-sorting
+* Date  : 2017-09-16
+* Comp  : O(n lg n)
+* Author: Atiq Rahman
+* Status: Accepted
+* Notes : BigInteger Solution timed out
+*   I noticed that the default sort: Array.Sort is quick sort
+*   
+*   Probably this problem expects a simple implementation being the
+*   first problem in the list of sorting problems in hackerrank
+*   For simplicity, we use Library's sort: Array.Sort
+*   
+*   Clever use of 'string.Join'
+*   Learnt here how to specify a comparer function
+*   Comparer ref, https://msdn.microsoft.com/en-us/library/cxt053xf.aspx
+* rel   : Basic Sort.cs
+* meta  : tag-algo-sort
+***************************************************************************************************/
 using System;
 
-class HK_Solution {
+class HKSolution
+{
   /* Case here: because there is no leading zero  */
   private static int CompareBigInteger(string x, string y) {
     if (x.Length == y.Length) {

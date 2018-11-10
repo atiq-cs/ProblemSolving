@@ -2,15 +2,14 @@
 * Title : Symmetric Tree
 * URL   : https://leetcode.com/problems/symmetric-tree/
 * Date  : 2015-08-05
-* Comp  : O(n) Time
+* Comp  : O(n)
 * Author: Atiq Rahman
 * Status: Accepted
-* Notes :
-* First version,
-*  If one of them is null and other one not then the tree is not symmetric - line 17-18
-*  if the value at that point does not match then it is not symmetric - line 21-22
-*  Now check the properties whether holds similarly for left's left and right's right
-*  also for left's right and right's left
+* Notes :  First version,
+*   If one of them is null and other one not then the tree is not symmetric - line 17-18
+*   if the value at that point does not match then it is not symmetric - line 21-22
+*   Now check the properties whether holds similarly for left's left and right's right
+*   also for left's right and right's left
 * meta  : tag-binary-tree
 ***************************************************************************************************/
 public class Solution

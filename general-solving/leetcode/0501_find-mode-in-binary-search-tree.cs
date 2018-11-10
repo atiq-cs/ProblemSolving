@@ -3,7 +3,7 @@
 * URL   : https://leetcode.com/problems/find-mode-in-binary-search-tree
 * Date  : 2018-05-13
 * Author: Atiq Rahman
-* Comp  : O(n), O(n) stack space
+* Comp  : O(n), O(n) Stack Space
 * Status: Accepted
 * Notes : Inorder traversal gives us sorter order for a BST. Because the items
 *   are sorted we can check consecutive items for frequency and update max.
@@ -11,10 +11,14 @@
 *   
 *   During inorder traversal we maintain previous node using a class member.
 *   We appropriately handle cases when it is null.
-* meta  : tag-leetcode-easy, tag-binary-search-tree
+*   
+*   ToDo, verify time complexity
+* meta  : tag-BST, tag-leetcode-easy
 ***************************************************************************/
-public class Solution {
+public class Solution
+{
   private List<int> modes;
+
   public int[] FindMode(TreeNode root) {
     modes = new List<int>();
     InOrder(root);

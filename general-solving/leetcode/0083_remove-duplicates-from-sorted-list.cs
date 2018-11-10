@@ -3,10 +3,10 @@
 * URL   : https://leetcode.com/problems/remove-duplicates-from-sorted-list
 * Date  : 2018-01
 * Author: Atiq Rahman
-* Comp  : O(n) n = number of nodes in the list
+* Comp  : O(n) where n = number of nodes in the list
 * Status: Accepted
 * Notes : Maintain a previous till which no duplication happened
-* meta  : tag-easy, tag-linked-list
+* meta  : tag-linked-list, tag-leetcode-easy
 ***************************************************************************/
 public class Solution {
   public ListNode DeleteDuplicates(ListNode head) {

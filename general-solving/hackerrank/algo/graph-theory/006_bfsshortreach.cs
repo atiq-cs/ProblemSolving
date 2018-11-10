@@ -1,16 +1,16 @@
-/***************************************************************************
-*   Problem Name:   Breadth First Search: Shortest Reach
-*   Problem URL :   https://www.hackerrank.com/challenges/bfsshortreach
-*   Date        :   Sept 15, 2015
-*   Domain      :   algorithms/Graph Theory
-*   Desc        :   use BFS to find distance of each node, then multiply by 6; a trivial problem
-*   Complexity  :   O(V+E)
-*   Author      :   Atiq Rahman
-*   Status      :   Accepted
-*   Notes       :   Minimal Graph Representation
-*                   ref: Algorithms/Graph/01_BFS.cpp
-*   meta        :   tag-bfs, tag-graph
-***************************************************************************/
+/***************************************************************************************************
+* Title : Breadth First Search: Shortest Reach
+* URL   : https://www.hackerrank.com/challenges/bfsshortreach
+* Date  : 2015-09-15
+* Notes : use BFS to find distance of each node, then multiply by 6; a trivial problem
+* Comp  : O(V+E)
+* Author: Atiq Rahman
+* Status: Accepted
+* Notes : use BFS to find distance of each node, then multiply by 6; a trivial problem
+*   Minimal Graph Representation
+* ref   : Algorithms/Graph/01_BFS.cpp
+* meta  : tag-graph-bfs
+***************************************************************************************************/
 using System;
 using System.Collections.Generic;
 

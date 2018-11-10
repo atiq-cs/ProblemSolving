@@ -4,6 +4,7 @@
 * Status: Accepted
 * Author: Atiq Rahman
 * Notes : Simplicity is wise here..
+* ref   : https://www.spoj.com/problems/CLSLDR/
 * meta  : tag-implementation
 ***************************************************************************************************/
 #include <cstdio>

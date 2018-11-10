@@ -1,11 +1,8 @@
 /***************************************************************************************************
 * Title : Determines if given string has some properties
 * URL   : https://leetcode.com/problems/maximum-depth-of-binary-tree/
-*   
 * Date  : 2015-08-07
-* Notes :
 * Comp  : O(n) .008s
-* Author: Atiq Rahman
 * rel   : https://www.hackerrank.com/challenges/tree-height-of-a-binary-tree
 * Status: Accepted
 * meta  : tag-binary-tree, tag-recursion, tag-leetcode-easy

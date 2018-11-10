@@ -1,14 +1,12 @@
 /***************************************************************************
-*   Problem Name:   First problem of this vmware challenge
-*   Problem Link :  https://www.hackerrank.com/tests/*
-*   Date        :   2015-09-19
-*
-*   Algo, DS    :   Subsequence generation
-*   Desc        :   Asked to complete the function
-*
-*   Complexity  :   O(n^2)
-*   Author      :   Atiq Rahman
-*   Status      :   Testcases passed
+* Title : First problem of this vmware challenge
+* URL   : https://www.hackerrank.com/tests/*
+* Date  : 2015-09-19
+* Notes : Asked to complete the function
+* Comp  : O(n^2)
+* Author: Atiq Rahman
+* Status: Testcases passed
+* meta  : tag-subsequence, tag-permutation
 ***************************************************************************/
 static string[] buildSubsets(string s) {
   string set = s;
@@ -27,7 +25,8 @@ static string[] buildSubsets(string s) {
 
   subsets.Add(set[set.Length - 1].ToString());
   subsets.Sort();
-  // example debug print of the result subset
-  // Console.WriteLine(string.Join(Environment.NewLine, subsets));
   return subsets.ToArray();
 }
+
+// example debug print of the result subset
+// Console.WriteLine(string.Join(Environment.NewLine, subsets));

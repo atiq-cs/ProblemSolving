@@ -1,21 +1,19 @@
-/***************************************************************************
-*   Problem Name:   Diagonal Difference
-*   Problem URL :   https://www.hackerrank.com/challenges/diagonal-difference
-*   Date        :   Sept 07, 2015
-*   Domain      :   algorithms/warmup
-*                   https://www.hackerrank.com/domains/algorithms/warmup
-*   Desc        :   Find diff between sum of integers on two diagonals
-*   Complexity  :   O(n)
-*   Author      :   Atiq Rahman
-*   Status      :   Accepted
-*   Notes       :   jagged arrays vs multi-dimensional array
-*    ref: https://msdn.microsoft.com/en-us/library/2yd9wwz4.aspx
-*    why, http://stackoverflow.com/questions/12567329/multidimensional-array-vs
-*   meta        : tag-easy
-***************************************************************************/
+/***************************************************************************************************
+* Title : Diagonal Difference
+* URL   : https://www.hackerrank.com/challenges/diagonal-difference
+* Date  : 2015-09-07
+* Notes : Find diff between sum of integers on two diagonals
+* Comp  : O(n)
+* Author: Atiq Rahman
+* Status: Accepted
+* Notes : jagged arrays vs multi-dimensional array
+*   why, http://stackoverflow.com/questions/12567329/multidimensional-array-vs
+* ref   : https://msdn.microsoft.com/en-us/library/2yd9wwz4.aspx
+* meta  : tag-easy
+***************************************************************************************************/
 using System;
 
-class Solution {
+class HKSolution {
   // Only traverse required elements - complexity O(N)
   static void Main(String[] args) {
     int N = int.Parse(Console.ReadLine());

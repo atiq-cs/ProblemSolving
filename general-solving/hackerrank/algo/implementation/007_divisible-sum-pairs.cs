@@ -1,19 +1,19 @@
-/***************************************************************************
-* Title       : Divisible Sum Pairs
-* URL         : https://www.hackerrank.com/challenges/divisible-sum-pairs
-* Date        : Sept 17, 2017
-* Domain      : algorithms/implementation
-* Complexity  : O(n+m)
-* Author      : Atiq Rahman
-* Status      : Accepted
-* Notes       : Be aware that
-*                (A[i] + A[j]) % k and A[i] + A[j] % k are different
-*               expressions
-* meta        : tag-easy, tag-math, tag-combinatorics
-***************************************************************************/
+/***************************************************************************************************
+* Title : Divisible Sum Pairs
+* URL   : https://www.hackerrank.com/challenges/divisible-sum-pairs
+* Date  : 2017-09-17
+* Comp  : O(n+m)
+* Author: Atiq Rahman
+* Status: Accepted
+* Notes : Be aware that
+*   (A[i] + A[j]) % k and A[i] + A[j] % k are different
+*   expressions
+* meta  : tag-easy, tag-math, tag-combinatorics, tag-implementation
+***************************************************************************************************/
 using System;
 
-class HK_Solution {
+class HKSolution
+{
   static int divisibleSumPairs(int n, int k, int[] A) {
     int count = 0;
     for (int i=0; i<n-1; i++)

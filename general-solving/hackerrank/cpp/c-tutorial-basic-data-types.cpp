@@ -1,19 +1,17 @@
-/*
-* Problem Name:  C Data Type formatting using printf
-* Problem No  :  https://www.hackerrank.com/challenges/c-tutorial-basic-data-types
-* Domain        :   C++/Intro
-* Author    :  Atiq Rahman
-* Status    :  Accepted
-* Note        :  This problem became rather challenging when I tried to solve it
-*              using C++, following are notable finding,
-*              Could not make case 1 any shorter than this
-*     ref: http://stackoverflow.com/questions/1207762/what-is-c-printf-f-default-precision
-      http://stackoverflow.com/questions/4264127/correct-format-specifier-for-double-in-printf
-*   meta        :   tag-cpp-precision
-*/
-
+/***************************************************************************************************
+* Title : C Data Type formatting using printf
+* URL   : https://www.hackerrank.com/challenges/c-tutorial-basic-data-types
+* Author: Atiq Rahman
+* Status: Accepted
+* Notes : This problem became rather challenging when I tried to solve it
+*   using C++, following are notable finding,
+*   Could not make case 1 any shorter than this
+* ref   : http://stackoverflow.com/questions/1207762/what-is-c-printf-f-default-precision
+*   http://stackoverflow.com/questions/4264127/correct-format-specifier-for-double-in-printf
+* meta  : tag-cpp-precision, tag-lang-cpp
+***************************************************************************************************/
 #include <iostream>
-#include <iomanip>  
+#include <iomanip>
 
 int main() {
   // Input will consists of an int, long, long long, char, float and double, each separated by a space.

@@ -1,15 +1,12 @@
-/*
-*  Problem Name:  STL Sets
-*  Problem No  :  https://www.hackerrank.com/challenges/cpp-sets
-*   Domain      :    C++/STL
-*  Problem Type:  Use of STL
-*  Alogirthm  :   
-*  Author    :  Atiq Rahman
-*  Status    :  Accepted
-*  Note    :  ref: http://en.cppreference.com/w/cpp/container/set
-*          Block required in case 3
-*/
-
+/***************************************************************************************************
+* Title : STL Sets
+* URL   : https://www.hackerrank.com/challenges/cpp-sets
+* Status: Accepted
+* Notes : Use of STL
+*   Block required in case 3
+* ref   : http://en.cppreference.com/w/cpp/container/set
+* meta  : tag-lang-cpp
+***************************************************************************************************/
 #include <algorithm>
 #include <iostream>
 #include <set>

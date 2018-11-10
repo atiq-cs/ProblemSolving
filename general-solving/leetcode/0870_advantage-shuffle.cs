@@ -23,8 +23,8 @@
 *  What have I learnt from this implementation?
 *   Instead of sorting an array, we can sort its respective indice array
 *   overriding the comparison in such a way so that resulting indices sort will
-*   contain positions of sorted array of original.
-* meta  : tag-leetcode-medium, tag-algo-sort, tag-algo-greedy, tag-lambda-exp
+*   contain positions of original numbers in sorted(as if) array.
+* meta  : tag-algo-sort, tag-algo-greedy, tag-lambda-exp, tag-leetcode-medium
 ***************************************************************************/
 public class Solution
 {

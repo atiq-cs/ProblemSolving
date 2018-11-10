@@ -1,17 +1,14 @@
-/*
-*  Problem Name:  StringStream
-*  Problem No  :  https://www.hackerrank.com/challenges/c-tutorial-stringstream
-*   Domain      :   C++/Strings
-*  Problem Type:  
-*  Alogirthm  :   
-*  Author    :  Atiq Rahman
-*  Status    :  Accepted
-*  Desc    :  This implementation demonstrates how we can use sstream to parse integers which are delimited
-*            by comma or any other symbol
-*  Notes    :  ref, http://stackoverflow.com/questions/1894886/parsing-a-comma-delimited-stdstring
-*          ss.peek is the knowledge I acquired
-*/
-
+/***************************************************************************************************
+* Title : StringStream
+* URL   : https://www.hackerrank.com/challenges/c-tutorial-stringstream
+* Author: Atiq Rahman
+* Status: Accepted
+* Notes : This implementation demonstrates how we can use sstream to parse integers which are
+*  delimited by comma or any other symbol
+*   learnt about ss.peek() here
+* ref   : http://stackoverflow.com/questions/1894886/parsing-a-comma-delimited-stdstring
+* meta  : tag-string, tag-lang-cpp
+***************************************************************************************************/
 #include <sstream>
 #include <vector>
 #include <iostream>

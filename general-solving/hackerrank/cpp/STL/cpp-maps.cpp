@@ -1,16 +1,14 @@
-/*
-*  Problem Name:  STL Map
-*  Problem No  :  https://www.hackerrank.com/challenges/cpp-maps
-*   Domain      :    C++/STL
-*  Problem Type:  Use of STL
-*  Alogirthm  :   
-*  Author    :  Atiq Rahman
-*  Status    :  Accepted
-*  Note    :  ref: http://en.cppreference.com/w/cpp/container/map
-*          Block required in case 1 & 3
-*          Could not make case 1 any shorter than this
-*/
-
+/***************************************************************************************************
+* Title : STL Map
+* URL   : https://www.hackerrank.com/challenges/cpp-maps
+* Author: Atiq Rahman
+* Status: Accepted
+* Notes : Use of STL
+*   Block required in case 1 & 3
+*   Could not make case 1 any shorter than this
+* ref   : http://en.cppreference.com/w/cpp/container/map
+* meta  : tag-string, tag-lang-cpp
+***************************************************************************************************/
 #include <algorithm>
 #include <iostream>
 #include <string>

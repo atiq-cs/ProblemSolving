@@ -1,22 +1,20 @@
-/***************************************************************************
-* Title       : Forming a Magic Square
-* URL         : https://www.hackerrank.com/challenges/magic-square-forming
-* Date        : Sept 17, 2017
-* Domain      : algorithms/implementation
-* Complexity  : O(n^2) or O(9) or O(1)
-* Author      : Atiq Rahman
-* Status      : Accepted
-* Notes       : Find one magic square and derive all others by row-wise,
-*               column-wise swap and by tranpose (see bottom for more info/
-*               draft)
-*               I generated 8 of them
-* Ref         : http://mathforum.org/alejandre/magic.square/adler/
-*               adler.whatsquare.html
-* meta        : tag-easy, tag-math, tag-combinatorics
-***************************************************************************/
+/***************************************************************************************************
+* Title : Forming a Magic Square
+* URL   : https://www.hackerrank.com/challenges/magic-square-forming
+* Date  : 2017-09-17
+* Comp  : O(n^2) or O(9) or O(1)
+* Author: Atiq Rahman
+* Status: Accepted
+* Notes : Find one magic square and derive all others by row-wise,
+*   column-wise swap and by tranpose (see bottom for more info/draft)
+*   I generated 8 of them
+* ref   : http://mathforum.org/alejandre/magic.square/adler/adler.whatsquare.html
+* meta  : tag-math, tag-combinatorics, tag-implementation, tag-easy
+***************************************************************************************************/
 using System;
 
-class HK_Solution {
+class HKSolution
+{
   static int GetSumCost(int[][] A) {
     int[][][] MS = new int[8][][] {
                   new int[3][] { new int[] {4, 9, 2}, new int[] {3, 5, 7}, new int[] {8, 1, 6}},

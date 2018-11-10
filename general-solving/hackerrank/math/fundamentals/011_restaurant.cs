@@ -1,18 +1,16 @@
-/***************************************************************************
-* Problem Name: Restaurant
-* Problem URL : https://www.hackerrank.com/challenges/restaurant
-* Domain      : Mathematics/Fundamentals
-* Date        : Jan 15 2016
-* Complexity  : O(logb)
-* Author      : Atiq Rahman
-* Status      : Accepted
-* Notes       : gcd is the length of largest square possible without leftover
-*               piece
-* meta        : tag-math
-***************************************************************************/
+/***************************************************************************************************
+* Title : Restaurant
+* URL   : https://www.hackerrank.com/challenges/restaurant
+* Date  : 2016-01-15
+* Comp  : O(log n) where n =b
+* Author: Atiq Rahman
+* Status: Accepted
+* Notes : gcd is the length of largest square possible without leftover piece
+* meta  : tag-math
+***************************************************************************************************/
 using System;
 
-class Solution {
+class HKSolution {
   static void Main(String[] args) {
     int T = int.Parse(Console.ReadLine());
     while (T-- > 0) {

@@ -1,20 +1,21 @@
-/***************************************************************************
-* Problem Name: Hash Tables: Ransom Note
-* Problem URL : https://www.hackerrank.com/challenges/ctci-ransom-note
-* Date        : Jan 23, 2016
-* Complexity  : O(n+m) Time
-* Author      : Atiq Rahman
-* Status      : Accepted
-* Notes       : 
-*               The passing of m and n is redundant
-*               We could use Array.Length
-*               
-* meta        : tag-hashtable; tag-data-structure
-***************************************************************************/
+/***************************************************************************************************
+* Title : Hash Tables: Ransom Note
+* URL   : https://www.hackerrank.com/challenges/ctci-ransom-note
+* Date  : 2016-01-23
+* Comp  : O(n+m)
+* Author: Atiq Rahman
+* Status: Accepted
+* Notes : 
+*   The passing of m and n is redundant
+*   We could use Array.Length
+*   
+* meta  : tag-ds-hashtable
+***************************************************************************************************/
 using System;
 using System.Collections.Generic;
 
-class Solution {
+class HKSolution
+{
   static void Main(String[] args) {
     string[] tokens_m = Console.ReadLine().Split(' ');
     int m = Convert.ToInt32(tokens_m[0]);

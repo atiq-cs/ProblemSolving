@@ -1,24 +1,22 @@
-/***************************************************************************
-* Prob#2: Number of paths in a matrix
-* Occas : FortressIQ Senior C# Developer
+/***************************************************************************************************
+* Title : Number of paths in a matrix (p#2)
+* Occasn: FortressIQ Senior C# Developer
 * Date  : 2018-03-05
 * Author: Atiq Rahman
-* Comp  : O(n * m), space O(n * m)
+* Comp  : O(n * m), O(n * m)
 * Status: Accepted
 * Notes : Dynamic Programming Logic,
-*  A cell can be reached from two non-empty adjacents cells from UP or from
-*   LEFT
-*  Base Case: first column and first row cells can only have single path
-*   from source if there are no obstacles
+*   A cell can be reached from two non-empty adjacents cells from UP or from LEFT
+*   Base Case, first column and first row cells can only have single path from source if there are
+*   no obstacles
 *   
-*  Memory Optimzation: Possible to do in O(N) instead of O(N^2) if we only save
-*   last row
+*   Memory Optimzation, Possible to do in O(N) instead of O(N^2) if we only save last row; ToDo
 *
-*  Handle following,
-*  Dynamic Programming - paths contain obstacles
-*  Integer arithmetic - modulus
+*   Handle following,
+*   Dynamic Programming - paths contain obstacles
+*   Integer arithmetic - modulus
 * meta  : tag-algo-dp, tag-company-FortressIQ, tag-coding-test
-***************************************************************************/
+***************************************************************************************************/
 public class FortressIQ_Solution {
   static int numberOfPaths(int[][] grid) {    
     // Declare and Initialize Variables.

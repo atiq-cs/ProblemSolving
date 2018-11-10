@@ -1,17 +1,16 @@
-/***************************************************************************
-* Title : Minimum Height Triangle 
+/***************************************************************************************************
+* Title : Minimum Height Triangle
 * URL   : https://www.hackerrank.com/challenges/lowest-triangle
 * Date  : 2017-12
 * Author: Atiq Rahman
 * Comp  : O(1)
 * Status: Accepted
 * Notes : Area of rectangle
-*   Mathematics/Fundamentals
 * meta  : tag-math, tag-easy
-***************************************************************************/
+***************************************************************************************************/
 using System;
 
-class Solution {
+class HKSolution {
   static int lowestTriangle(int t_base, int area) {
     return (int) Math.Ceiling(2.0 * (double)area / t_base);
   }  

@@ -1,14 +1,11 @@
-/*
-*  Problem Name:  Vector Erase
-*  Problem No  :  https://www.hackerrank.com/challenges/vector-erase
-*   Domain      :    C++/STL
-*  Problem Type:  Use of STL, vector
-*  Alogirthm  :   
-*  Author    :  Atiq Rahman
-*  Status    :  Accepted
-*  Note    :  This is a nice problem to teach vector erase
-*/
-
+/***************************************************************************************************
+* Title : Vector Erase
+* URL   : https://www.hackerrank.com/challenges/vector-erase
+* Author: Atiq Rahman
+* Status: Accepted
+* Notes : C++/STL: This is a nice problem to teach vector erase
+* meta  : tag-lang-cpp
+***************************************************************************************************/
 #include <iostream>
 #include <vector>
 

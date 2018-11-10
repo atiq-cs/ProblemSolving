@@ -1,16 +1,15 @@
 /***************************************************************************
-*   Problem Name:   Find max number of threats
-*   Problem URL :   
-*   Date        :   
+* Title : Find max number of threats
+* URL   : 
+* Comp  : ToDo
+* Author: Atiq Rahman
+* Status: Accepted
+* Notes : Upwork coding contest
+*   Simple approach that worked
+*   Max threats for n queens problem
+*   First implementation is DP, however this is not a good DP Problem
 *
-*   Domain      :   Upwork coding contest
-*   Desc        :   Max threats for n queens problem
-*                   First implementation is DP, however this is not a good DP Problem
-*
-*   Complexity  :   
-*   Author      :   Atiq Rahman
-*   Status      :   Accepted
-*   Notes       :   Simple approach that worked
+* meta  : tag-coding-contest, tag-algo-dp
 ****************************************************************************/
 
 int maxThreats(vector<int> a) {

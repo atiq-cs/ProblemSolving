@@ -1,19 +1,19 @@
-/***************************************************************************
-* Problem Name: Possible Path
-* Problem URL : https://www.hackerrank.com/challenges/possible-path
-* Domain      : Mathematics/Fundamentals
-* Date        : Jan 15 2016
-* Complexity  : O(logb)
-* Author      : Atiq Rahman
-* Status      : Accepted
-* Notes       : Lemma: A point (a, b) where g = gcd(a, b) is connected to one of
-*               the following points: (g, 0), (0, g), (−g, 0), (0, −g). Ref:
-*               https://hr-filepicker.s3.amazonaws.com/infinitum-jun14/editorials/2372-possible-path.pdf
-* meta        : tag-math
-***************************************************************************/
+/***************************************************************************************************
+* Title : Possible Path
+* URL   : https://www.hackerrank.com/challenges/possible-path
+* Date  : 2016-01-15
+* Comp  : O(logb)
+* Author: Atiq Rahman
+* Status: Accepted
+* Notes : Lemma: A point (a, b) where g = gcd(a, b) is connected to one of
+*   the following points: (g, 0), (0, g), (−g, 0), (0, −g). Ref:
+* ref   : https://hr-filepicker.s3.amazonaws.com/infinitum-jun14/editorials/2372-possible-path.pdf
+* meta  : tag-math
+***************************************************************************************************/
 using System;
 
-class Solution {
+class HKSolution
+{
   static void Main(String[] args) {
     int T = int.Parse(Console.ReadLine());
     while (T-- > 0) {

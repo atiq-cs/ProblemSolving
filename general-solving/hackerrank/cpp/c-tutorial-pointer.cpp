@@ -1,14 +1,11 @@
-/*
-*  Problem Name:  Functions
-*  Problem No  :  https://www.hackerrank.com/challenges/c-tutorial-pointer
-*   Domain      :   C++/Intro
-*  Problem Type:  
-*  Alogirthm  :   
-*  Author    :  Atiq Rahman
-*  Status    :  Accepted
-*  Desc    :  a should contain sum, b contains absolute difference between them
-*/
-
+/***************************************************************************************************
+* Title : Functions
+* URL   : https://www.hackerrank.com/challenges/c-tutorial-pointer
+* Author: Atiq Rahman
+* Status: Accepted
+* Notes : a should contain sum, b contains absolute difference between them
+* meta  : tag-lang-cpp
+***************************************************************************************************/
 #include <iostream>
 #include <cstdlib>  // abs
 

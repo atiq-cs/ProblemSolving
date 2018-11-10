@@ -1,14 +1,11 @@
-/*
-*  Problem Name:  Strings
-*  Problem No  :  https://www.hackerrank.com/challenges/c-tutorial-strings
-*   Domain      :   C++/Strings
-*  Problem Type:  
-*  Alogirthm  :   
-*  Author    :  Atiq Rahman
-*  Status    :  Accepted
-*  Notes    :  Safety check on line 23 is recommended, whether any of the strings in empty
-*/
-
+/***************************************************************************************************
+* Title : Strings
+* URL   : https://www.hackerrank.com/challenges/c-tutorial-strings
+* Author: Atiq Rahman
+* Status: Accepted
+* Notes : Safety check on line 23 is recommended, whether any of the strings in empty
+* meta  : tag-string, tag-lang-cpp
+***************************************************************************************************/
 #include <iostream>
 #include <string>
 
