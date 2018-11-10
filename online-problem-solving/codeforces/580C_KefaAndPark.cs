@@ -8,24 +8,18 @@
 * Status: Accepted
 * Notes : 
 * Notes : The graph is a tree. Assumption that this graph would work for unidirection (edge
-* addition: adding v to u's adj list when u < v) mapping is wrong. So we add u to v's adj list and
-* v to u's adj list. We maintain a visited list to avoild looping or duplicate visits to same nodes.
-* This idea works because we have a fixed root node: vertex 1.
+*   addition: adding v to u's adj list when u < v) mapping is wrong. So we add u to v's adj list
+*   and v to u's adj list. We maintain a visited list to avoild looping or duplicate visits to same
+*   nodes.
+*   This idea works because we have a fixed root node: vertex 1.
 *   
-* meta  : tag-tree, tag-graph-dfs
+* meta  : tag-graph-tree, tag-graph-dfs
 ***************************************************************************************************/
 using System;
 using System.Collections.Generic;
 
-public class Solution {
-  private static void Main() {
-    GraphDemo graph_demo = new GraphDemo();
-    graph_demo.TakeInput();
-    Console.WriteLine(graph_demo.GetVisitableNodeCount());
-  }
-}
-
-public class GraphDemo {
+public class GraphDemo
+{
   List<uint>[] AdjList;
   bool[] hasCat;
   bool[] visited;
@@ -55,22 +49,36 @@ public class GraphDemo {
       }
     }
   }
-  public ulong GetVisitableNodeCount() {
-    return GetVisitableNodeCountRec(0, 0);
-  }
-  private ulong GetVisitableNodeCountRec(uint u, uint k) {
+
+  public ulong GetVisitableNodeCount(uint u=0, uint k=0) {
     visited[u] = true;
-    if (hasCat[u]) k++;
-    else k = 0;
-    if (k > m) return 0;
+
+    if (hasCat[u])
+      k++;
+    else
+      k = 0;
+
+    if (k > m)
+      return 0;
+
     ulong sum = 0;
     bool isLeafNode = true;
+
     foreach (uint v in AdjList[u])
       if (visited[v] == false) {
-        if (isLeafNode) isLeafNode = false;
-        sum += GetVisitableNodeCountRec(v, k);
+        if (isLeafNode)
+          isLeafNode = false;
+        sum += GetVisitableNodeCount(v, k);
       }
-    if (isLeafNode) return 1;
-    return sum;
+
+    return isLeafNode? 1:sum;
+  }
+}
+
+public class CFSolution {
+  private static void Main() {
+    GraphDemo demo = new GraphDemo();
+    demo.TakeInput();
+    Console.WriteLine(demo.GetVisitableNodeCount());
   }
 }
