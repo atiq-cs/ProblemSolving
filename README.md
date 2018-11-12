@@ -1,14 +1,12 @@
 ### Searching on the Repository
-To implement searching based on tags we added meta to each of the source file.
-During search have to append `tag-` as prefix of the tag string. For example, to
-search on problems on linked-list: we navigate to [this repo
-url](https://github.com/atiq-cs/Problem-Solving/) and enter following in the
-search box: `tag-linked-list`
+To implement searching based on tags we added meta to each of the source file. During search have to
+append `tag-` as prefix of the tag string. For example, to search on problems on linked-list: we
+navigate to [this repo url](https://github.com/atiq-cs/Problem-Solving/) and enter following in the
+search box: `tag-ds-linked-list`
 
-Additionally, here are currently supported tags/classifications based on
-algorithm and data structure,
- * [Bit Manipulation](
-https://github.com/atiq-cs/Problem-Solving/search?q=tag-bit-manip)
+Additionally, here are currently supported tags/classifications based on algorithm and data
+structure,
+ * [Bit Manipulation](https://github.com/atiq-cs/Problem-Solving/search?q=tag-bit-manip)
  * [Dynamic Programming](
 https://github.com/atiq-cs/Problem-Solving/search?q=tag-algo-dp)
  * [Graph](https://github.com/atiq-cs/Problem-Solving/search?q=tag-graph)
@@ -16,23 +14,23 @@ https://github.com/atiq-cs/Problem-Solving/search?q=tag-algo-dp)
 https://github.com/atiq-cs/Problem-Solving/search?q=tag-dp-lcs)
  * [LIS](
 https://github.com/atiq-cs/Problem-Solving/search?q=tag-dp-lis)
- * [Linked List](https://github.com/atiq-cs/Problem-Solving/search?q=tag-linked-list)
+ * [Linked List](https://github.com/atiq-cs/Problem-Solving/search?q=tag-ds-linked-list)
  * [Priority Queue](
  https://github.com/atiq-cs/Problem-Solving/search?q=tag-priority-queue)
  * [Recursion](
 https://github.com/atiq-cs/Problem-Solving/search?q=tag-recursion)
  * [Sorting](https://github.com/atiq-cs/Problem-Solving/search?q=tag-algo-sort)
  * [String](https://github.com/atiq-cs/Problem-Solving/search?q=tag-string)
- * [Tree](https://github.com/atiq-cs/Problem-Solving/search?q=tag-tree)
+ * [Tree](https://github.com/atiq-cs/Problem-Solving/search?q=tag-graph-tree)
 
 Binary Tree, Heap and related tags are,
  * [Binary Search](
-https://github.com/atiq-cs/Problem-Solving/search?q=tag-binary-search)
+https://github.com/atiq-cs/Problem-Solving/search?q=tag-algo-bsearch)
  * [Binary Tree](
-https://github.com/atiq-cs/Problem-Solving/search?q=tag-binary-tree)
+https://github.com/atiq-cs/Problem-Solving/search?q=tag-ds-binary-tree)
  * [Binary Search Tree](
-https://github.com/atiq-cs/Problem-Solving/search?q=tag-bst)
- * [Heap](https://github.com/atiq-cs/Problem-Solving/search?q=tag-heap)
+https://github.com/atiq-cs/Problem-Solving/search?q=tag-ds-bst)
+ * [Heap](https://github.com/atiq-cs/Problem-Solving/search?q=tag-ds-heap)
 
 Graph algorithm tags,
  * [Breadth First Search](
@@ -70,10 +68,11 @@ Language Feature based,
  * [lambda expression](https://github.com/atiq-cs/Problem-Solving/search?q=tag-lambda-exp)
  * [LINQ](https://github.com/atiq-cs/Problem-Solving/search?q=tag-csharp-linq)
 
-#### Tag related tips and tricks,
+#### Tag Related Tips and Tricks,
 Some notes,
- - Most of the binary tree related problems are under 'recursion' tag even
- though not specified always. Some DP solutions (top-down) are recursive.
+ - binary tree has tag-binary-tree and Binary Search Trees have `tag-ds-BST`
+ - Other tree problem has `tag-graph-tree`
+ - judges don't need te be tagged they are categorized by container directory names
 
 ### Problem Solving Repository Structure
 #### Basics
@@ -83,40 +82,45 @@ For example,
  * Sorting algorithms
 
 #### Algorithms
-Related with implementation of algorithms. Primary reference C.L.R.S, 3rd edition
+Related with implementation of algorithms.
+
+ - Primary reference: [Introduction to Algorithms - C.L.R.S](
+https://mitpress.mit.edu/books/introduction-algorithms-third-edition), 3rd Ed.
+ - Related tag: [algo-core](
+https://github.com/atiq-cs/Problem-Solving/search?q=tag-algo-core)
 
 #### Data Structure
 Reference: geeksforgeeks, wikipedia etc.
+Related tag: [ds-core](
+https://github.com/atiq-cs/Problem-Solving/search?q=tag-ds-core)
 
 ##### Binary Tree
-There are comparative large number of binary tree problems and their
-applications. We gather together all binary tree related problems here.
-
-#### coding-template
-C++ templates for problem solving online
+There are comparative large number of binary tree problems and their applications. We gather
+together all binary tree related problems here.
 
 #### general-solving
 leet-code, hackerrank, www.geeksforgeeks.org, lintcode etc
 
 #### online-problem-solving
-Following onlline judges are being covered,
+Following online judges are being covered,
  * [Codeforces](http://codeforces.com/)
+ * [Sphere Online Judge](http://www.spoj.com/problems/)
  * [Timus Online Judge](http://acm.timus.ru/problemset.aspx)
  * [Saratov State University](http://acm.sgu.ru/problemset.php?show_volumes)
- * [Sphere Online Judge](http://www.spoj.com/problems/)
  * [UVA Online Judge](https://uva.onlinejudge.org/)
- * [Tianjin Univ Online Judge System](http://acm.tju.edu.cn/toj/problem.html)
  * [topcoder](http://community.topcoder.com/tc?module=ProblemArchive)
+ * [Tianjin Univ Online Judge System](http://acm.tju.edu.cn/toj/problem.html)
+ 
+#### coding-template
+Currently, PSTool Powershell script is used to create templates for judges i.e., leetcode,
+codeforces.
 
-#### Problem Solving C++ Templates
-For more info on templates please visit our [template
-wiki](https://github.com/atiq-cs/Problem-Solving/wiki/Templates) 
+##### Problem Solving C++ Templates
+For more info on coding templates please visit our [template wiki](
+https://github.com/atiq-cs/Problem-Solving/wiki/Templates) 
 
 ##### Note
 Please do not abuse code from this repository. The Code provided in this
 repository is for educational purpose. Sharing of ideas will enable hone our
 coding and programing language specific skills and grow our knowledge on
 algorithm related domains.
-
-#### Instructions for committers/contributors
-Please do git pull before you commit. Thanks. :)
