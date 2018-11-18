@@ -1,5 +1,6 @@
 /***************************************************************************************************
 * Title : Smith Numbers
+* URL   : 10042
 * Date  : 2008-12-25
 * Status: Accepted (0.730)
 * Notes : Technique "If we divide a number with all its prime factors upto
@@ -33,6 +34,7 @@ int main() {
   // generate_prime (sieve) is at 'algo/num-theory/prime.cpp'
   generate_prime(50000);
 
+  // second version of this function had:
   // generate_prime (dp) is at 'algo/num-theory/prime.cpp'
   // call with 40000 i.e., generate_prime(40000);
 
@@ -74,7 +76,6 @@ int main() {
 
   return 0;
 }
-
 
 // DP Prime Generation Version
 #include <cstdio>

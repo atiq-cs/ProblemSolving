@@ -3,7 +3,7 @@
 * Date  : 2006-08-27
 * Notes : Could be shorter code if mapping was done with array of chars or using
 *   hash-table to represent the mapping
-* meta  : tag-string, tag-lang-c,t ag-uva-easy
+* meta  : tag-string, tag-lang-c, tag-uva-easy
 ***************************************************************************************************/
 #include<stdio.h>
 #include<ctype.h>

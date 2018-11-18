@@ -1,6 +1,6 @@
 /***************************************************************************************************
 * Title : Intersecting Lines
-* URL   : 374
+* URL   : 378
 * Status: Accepted (0.000s)
 * Notes : line is found checking area for 3 points. If that's a zero then print line
 *   Use tag like this to detect online judge,

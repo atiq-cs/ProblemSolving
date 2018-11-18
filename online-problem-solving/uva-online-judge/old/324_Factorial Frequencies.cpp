@@ -3,7 +3,7 @@
 * URL   : 324
 * Status: Accepted
 * Notes : Easy problem no special case, only challenge is big int
-* meta  : tag-big-integer
+* meta  : tag-big-integer, tag-number-theory
 ***************************************************************************************************/
 #include <math.h>
 #include <string.h>
