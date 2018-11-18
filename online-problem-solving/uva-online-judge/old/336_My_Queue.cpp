@@ -1,16 +1,20 @@
-/*
-  My queue implementation seems okay since the solution is accepted by UVA oj
-*/
-
+/***************************************************************************************************
+* Title :
+* URL   : 336
+* Notes : My queue implementation seems okay since the solution is accepted by UVA OJ
+* meta  : tag-graph-bfs, tag-ds-queue
+***************************************************************************************************/
 #include <cstdio>
 #include <map>
 using namespace std;
+
 struct qtype{
   int value;
   qtype* next;
 };
 
-class lQueue {    //Linux queue
+// Linux queue, calling my friends used to call me linux
+class lQueue {
   // by default elements are private
   qtype *start, *end;
 
@@ -39,7 +43,8 @@ void lQueue::Enqueue(int data) {
     end->next = new qtype;
     end = end->next;
     end->value = data;
-    end->next = NULL;    // This was a severe mistake I forgot to add this line and my program was faulty
+    // To not do this is a critical mistake
+    end->next = NULL;
   }
 }
 
@@ -52,11 +57,9 @@ bool lQueue::isEmpty() {
 
 int lQueue::Dequeue() {
   if (isEmpty()) {
-    //cout<<"Queue is empty! Cannot perform delete."<<endl;
     return -1;
   }
   else {
-  //  cout<<"passed"<<endl;
     int tmp = start->value;
     qtype *fmem = start;
     start = start->next;
@@ -71,10 +74,35 @@ lQueue::~lQueue() {
 
 int Adj[100][100], len[100], VertexNo;
 
-int main () {
-  int BFS_visit(int source, int range);
-//  freopen("336_in.txt", "r", stdin);
 
+int BFS_visit(int source, int range) {
+  int d[50], reachable = 0, u, i, v;
+
+  memset(d, 255, VertexNo * sizeof(int));
+  d[source] = 0;
+
+  lQueue Q;
+  Q.Enqueue(source);
+
+  while (!Q.isEmpty()) {
+    u = Q.Dequeue();
+    if (d[u] <= range) {
+      reachable++;
+      for (i = 0; i < len[u]; i++) {
+        v = Adj[u][i];
+        if (d[v] < 0) {
+          d[v] = d[u] + 1;
+          Q.Enqueue(v);
+        }
+      }
+    }
+    else
+      break;
+  }
+  return reachable;
+}
+
+int main () {
   int u, v, i, uI, vI, TTL, unreachable, NC, sq=1;
   map<int, int> mp;
   map<int, int>::iterator p;
@@ -88,8 +116,6 @@ int main () {
     // Input adjacency lists and build
     for (i=0; i<NC; i++) {
       scanf("%d %d", &u, &v);
-      //debug
-    //  printf("inserting u: %d, v: %d\n", u, v);
 
       if (u == v) {
         p = mp.find(u);
@@ -117,57 +143,12 @@ int main () {
         Adj[uI][len[uI]++] = vI;
       }
     }
-/*
-    // debug map
-    p = mp.begin();
-    while (p != mp.end()) {
-      printf("first: %d, second: %d\n", p->first, p->second);
-      p++;
-    }
-    // Debug print adj list
-    for (int j=0; j<VertexNo; j++) {
-      for (int k = 0; k<len[j]; k++) {
-        printf("  %d", Adj[j][k]);
-      }
-      putchar('\n');
-    }
-*/
-    // Take queries and BFS visit.
+    // take queries and BFS visit.
     while (scanf("%d %d", &v, &TTL) && (v || TTL)) {
       unreachable = VertexNo - BFS_visit(mp[v], TTL);
-      printf("Case %d: %d nodes not reachable from node %d with TTL = %d.\n", sq++, unreachable, v, TTL);
+      printf("Case %d: %d nodes not reachable from node %d with TTL = %d.\n",
+        sq++, unreachable, v, TTL);
     }
   }
   return 0;
-}
-
-int BFS_visit(int source, int range) {
-  int d[50], reachable =0, u, i, v;
-
-  memset(d, 255, VertexNo * sizeof(int));
-/*  for (i=0; i<10; i++)
-    printf("(%d) %d  ", i, d[i]);
-  putchar('\n');*/
-  d[source] = 0;
-
-  lQueue Q;
-  Q.Enqueue(source);
-
-  while (!Q.isEmpty()) {
-    u = Q.Dequeue();
-//    printf("u: %d\n",u);
-    if (d[u] <=range) {
-      reachable++;
-      for (i=0; i<len[u]; i++) {
-        v = Adj[u][i];
-        if (d[v]<0) {
-          d[v] = d[u] + 1;
-          Q.Enqueue(v);
-        }
-      }
-    }
-    else
-      break;
-  }
-  return reachable;
 }

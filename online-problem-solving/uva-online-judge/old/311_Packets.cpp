@@ -1,14 +1,12 @@
-/*******************************************************
-*    Problem Name:  Packets
-*    Problem ID:    D (UVA 311)
-*    Occassion:    Dept Team Contest 8 Oct 2008
-*
-*    Algorithm:      Bruite Force
-*    Special Case:    NA
-*    Judge Status:    Accepted by UVA and mooshak
-*    Author:        Atiq Rahman
-*******************************************************/
-
+/***************************************************************************************************
+* Title : Packets
+* URL   : 311
+* Date  : 2008-10-08
+* Occasn: Dept Team Contest
+* Status: Accepted by UVA and mooshak
+* Notes : Brute-force
+* meta  : 
+***************************************************************************************************/
 #include <cstdio>
 #include <iostream>
 using namespace std;
@@ -17,11 +15,12 @@ int posX, posY;
 bool board[8][8];
 
 bool seekIfPossible(int size, int curPos) {
+  if (curPos == 0)
+    return false;
+
   int i, j, k, l;
   bool f;
 
-  if (curPos == 0)
-    return false;
   for (i=0; i<=6- size; i++) {
     for (j=0; j<=6-size; j++) {
       f = true;
@@ -49,7 +48,7 @@ void pushPacket(int size) {
     }
 }
 
-int main () {
+int main() {
   int i, j, np[8], takenPackets, totalPackets;
   bool zf, possible;
 
@@ -85,5 +84,6 @@ int main () {
     }
     printf("%d\n", takenPackets);
   }
+
   return 0;
 }

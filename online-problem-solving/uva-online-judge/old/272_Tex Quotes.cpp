@@ -1,19 +1,24 @@
+/***************************************************************************************************
+* Title : 
+* URL   : 272
+* Status: Accepted
+* Notes : 
+* meta  : tag-string, tag-lang-c
+***************************************************************************************************/
 #include <iostream>
 using namespace std;
 
-int main () {
+int main() {
   char c;
-  bool f= false;
-  //freopen("272_in.txt","r",stdin);
-  //cout.put('A');
+  bool f = false;
 
-  while ((c=getchar()) != EOF) {
-    if (!f && c=='"') {
+  while ((c = getchar()) != EOF) {
+    if (!f && c == '"') {
       cout.put('`');
       cout.put('`');
       f = true;
     }
-    else if (f && c=='\"') {
+    else if (f && c == '\"') {
       cout.put('\'');
       cout.put('\'');
       f = false;
@@ -21,7 +26,5 @@ int main () {
     else
       cout.put(c);
   }
-  //fclose(stdin);
   return 0;
 }
-

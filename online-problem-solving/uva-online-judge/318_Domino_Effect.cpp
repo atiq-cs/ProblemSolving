@@ -1,28 +1,31 @@
-/*
-*  Problem Title:   Domino Effect
-*  Problem Link:  http://uva.onlinejudge.org/external/3/318.html
-*  Problem Type:  Graph problem, single source shortest path, destination is not specified
-*  Alogirthm  :
-*  Author    :  Atiq Rahman
-*  Email    :  atiqcs 'at' outlook 'dot' com
-*  Date    :  May 20, 2015
-*  Desc    :
-*          Dijkstra ref: Introduction to Algorithms, page 658,
-      by Thomas H. Cormen and Charles E. Leiserson and Ronald L. Rivest and Clifford Stein 
-          Handles all special cases required to solve the domino problem
-* Judge Notes
-*  uva-judge  :  Judge is C++11 4.8.2 - GNU C++ Compiler with options: -lm -lcrypt -O2 -std=c++11 -pipe -DONLINE_JUDGE
-*          main function should return 0, include cstring for memset
-*   tju-judge  :  Judge is gcc 4.5.2, old, does not support C++11 all features
-*  Status    :  Accepted
-*  Acknowledgement  :  Thanks for direction on a special case, Yonghui Wu (http://www.cs.fudan.edu.cn/en/?page_id=2269)
-*  Related Problem:  online-problem-solving\spoj\SPOJ_TRVCOST.cpp
-*   meta        :   tag-dijkstra, tag-sssp
-*/
-
+/***************************************************************************************************
+* Title : Domino Effect
+* URL   : http://uva.onlinejudge.org/external/3/318.html
+* Author: Atiq Rahman
+* Date  : 2015-05-20
+* Status: Accepted
+* Notes : Category: single source shortest path, destination is not specified
+*   Dijkstra ref, Introduction to Algorithms
+*   by Thomas H. Cormen and Charles E. Leiserson and Ronald L. Rivest and Clifford Stein (C.L.R.S)
+*   p#658,
+*   
+*   Handles all special cases required to solve the domino problem
+*   Judge Notes,
+*    uva-judge- Judge is C++11 4.8.2 - GNU C++ Compiler with options: -lm -lcrypt -O2 -std=c++11
+*     -pipe -DONLINE_JUDGE
+*   main function should return 0, include cstring for memset
+*   tju-judge- Judge is gcc 4.5.2, old, does not support C++11 all features
+*
+*   Class graph: undirected
+*   Uses dynamic size of adjacency list
+*   memory is manually allocated and cleaned up like a gentle man
+*
+* Ack   : on a special case, Yonghui Wu (http://www.cs.fudan.edu.cn/en/?page_id=2269)
+* rel   : 'spoj\SPOJ_TRVCOST.cpp'
+* meta  : tag-graph-dijkstra, tag-sssp
+***************************************************************************************************/
 #include <cstring>  // for memset
 #include <sstream>
-//#include <cmath>
 #include <vector>
 #include <iostream>
 #include <algorithm>
@@ -31,20 +34,9 @@
 
 #define INT_INF  0x7fffffff
 #define NIL -1
-// Comment before submission to judge
-#define FILE_IO  TRUE
-
-#ifdef FILE_IO
-#include <fstream>
-#endif
 
 void handleIO();
 
-/* Class graph: undirected
-  Uses dynamic size of adjacency list
-  memory is manually allocated and cleaned up like a gentle man
-
-*/
 typedef struct Graph_Vertex_Type {
   int index;
   int distance;
@@ -79,23 +71,7 @@ public:
   DominoEffectsResult get_de_result();
 };
 
-int main() {
-  handleIO();
-  return 0;
-}
-
 void handleIO() {
-#ifdef FILE_IO
-  std::string problem = "318";
-  std::ifstream inFile(problem + "_in.txt");
-  std::streambuf *cinbuf = std::cin.rdbuf(); //save old buf
-  std::cin.rdbuf(inFile.rdbuf()); //redirect std::cin to inFile!
-
-  std::ofstream outFile(problem + "_out.txt");
-  std::streambuf *coutbuf = std::cout.rdbuf();
-  std::cout.rdbuf(outFile.rdbuf());
-#endif
-
   Graph graph(500);    // 500 is max size as specified by problem description
   int n, m;
   int seq = 1;
@@ -129,13 +105,12 @@ void handleIO() {
     }
     std::cout << std::endl;
   }
+}
 
-#ifdef FILE_IO
-  std::cin.rdbuf(cinbuf);
-  inFile.close();
-  std::cout.rdbuf(coutbuf);
-  outFile.close();
-#endif
+// Entry Point
+int main() {
+  handleIO();
+  return 0;
 }
 
 // Graph class definition begins
@@ -217,7 +192,7 @@ void Graph::ss_dijkstra(int source) {
   }
 }
 
-/* page 648
+/* C.L.R.S p#648
   INITIALIZE-SINGLE-SOURCE
   for each vertex v of G.V
     v.distance = inf

@@ -1,22 +1,24 @@
-/*
-  Author:  Atiq Rahman
-  Algorithm:  LIS (nlogn)
-  Reference:  Wikipedia
-
-  No critical inputs
-*/
+/***************************************************************************************************
+* Title : Points in Figures: Rectangles, Circles, Triangles
+* URL   : 481
+* Comp  : O (n lg n)
+* Notes : no edge test-cases
+* rel   : 231, 497
+* ref   : wikipedia
+* meta  : tag-math, tag-algo-lis, tag-lang-cpp
+***************************************************************************************************/
 #include <vector>
 using namespace std;
 
 int a[1000005];
  
-/* Finds longest strictly increasing subsequence. O(n log k) algorithm. */
-template<typename T> vector<int> find_lis(vector<T> &a)
-{
+// Finds longest strictly increasing subsequence. O(n log k) algorithm.
+template<typename T> vector<int> find_lis(vector<T> &a) {
   vector<int> b, p(a.size());
   int u, v;
  
-  if (a.size() < 1) return b;
+  if (a.size() < 1)
+    return b;
  
   b.push_back(0);
  
@@ -38,25 +40,21 @@ template<typename T> vector<int> find_lis(vector<T> &a)
     }  
   }
  
-  for (u = b.size(), v = b.back(); u--; v = p[v]) b[u] = v;
-  return b;
-}
- 
-/* Example of usage: */
-#include <cstdio>
-int main()
-{
-  unsigned i;
+  for (u = b.size(), v = b.back(); u--; v = p[v])
+    b[u] = v;
 
+  return b;
+} 
+
+#include <cstdio>
+
+int main() {
+  unsigned i;
   int top=0, lisLen;
-  
-  freopen("481_in.txt","r",stdin);
   
   while (scanf("%d",&a[top++]) != EOF);
 
   vector<int> seq(a, a+top);
-
-
   vector<int> lis = find_lis(seq);
  
   lisLen = lis.size();

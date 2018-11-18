@@ -1,30 +1,13 @@
-/*******************************************************
-*    Problem Name:  Chess Queen
-*    Problem ID:    11538
-*    Occassion:    BUET NCPC Contest
-*
-*    Algorithm:      
-*    Special Case:    Very Mathematical
-*    Judge Status:    Accepted
-*    Author:        Atiq Rahman
-*******************************************************/
-//#include <iostream>
+/***************************************************************************************************
+* Title : Chess Queen
+* URL   : 11538
+* Notes : BUET NCPC 2008; solved long after the contest time
+* meta  : tag-math
+***************************************************************************************************/
 #include <cstdio>
-//#include <cmath>
-//#include <cstring>
-//#include <new>
-//#include <vector>
-//#include <queue>
-//#include <map>
-//#include <algorithm>
-//#include <iomanip>//for cout formatting
-//#define  INF 2147483648
-//#define EPS 1e-8
 using namespace std;
 
 int main() {
-  freopen("_in.txt", "r", stdin);
-
   long long M, N, sum, mulF, mulI;
   
   while (scanf("%lld %lld", &M, &N)) {
@@ -47,16 +30,22 @@ int main() {
       }
     }
     printf("%lld", sum);
-  }
-
-  
+  }  
   return 0;
 }
 
-/*
-    memset(arrayName, 255, )  
-    cout.setf (ios::fixed, ios::floatfield);
-    cout.setf(ios::showpoint);
-    cout<<setprecision(2)<<sum_c + eps<<endl;
+// This version is probably not solved one
+int main_v0() {
+  long long res, m, n, tmp;
 
-*/
+  while (scanf("%lld %lld", &m, &n) && (m || n)) {
+    if (m < n) {
+      tmp = m;
+      m = n;
+      n = tmp;
+    }
+    res = 2 * (2 * n * (n * n - 1) / 3 + (m - n - 1) * n * (n - 1)) + m * n * (m + n - 2);
+    printf("%lld\n", res);
+  }
+  return 0;
+}

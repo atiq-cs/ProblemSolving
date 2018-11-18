@@ -1,36 +1,39 @@
-/*
-  Problem Name: Reverse and Add
-  Algorithm      : Native
-*/
+/***************************************************************************************************
+* Title : Reverse and Add
+* meta  : tag-math, tag-lang-cpp, tag-uva-easy
+***************************************************************************************************/
 
 #include<iostream>
 using std::cin;
 using std::cout;
 using std::endl;
 
-main()
-{
-  unsigned p,a,b;
-  short n,np;
-  cin>>n;
+int main() {
+  unsigned p, a, b;
+  short n, np;
+  cin >> n;
 
-  for (short i=0;i<n;i++)
-  {
-    cin>>p;
-    np=0;
-    while(1)
-    {
-      a=p;b=0;
-      while(a)
-      {
-        b=b*10+a%10;
-        a/=10;
+  for (short i = 0; i < n; i++) {
+    cin >> p;
+    np = 0;
+
+    while (1) {
+      a = p;
+      b = 0;
+
+      while (a) {
+        b = b * 10 + a % 10;
+        a /= 10;
       }
-      if (p==b) break;
-      p+=b;
+
+      if (p == b)
+        break;
+      p += b;
       np++;
     }
-    cout<<np<<" "<<b<<endl;
+
+    cout << np << " " << b << endl;
   }
+
   return 0;
 }

@@ -1,18 +1,14 @@
-/*
- * Date: 2006-05-29
- */
+/***************************************************************************************************
+* Date  : 2006-05-29
+* meta  : tag-uva-easy
+***************************************************************************************************/
 #include<stdio.h>
 
-int main()
-{
+int main() {
   long long a,b,c;
-  while((scanf("%lld %lld",&a,&b))!=EOF)
-  {
-    if(a>b) c=a-b;
-    else c=b-a;
 
-    printf("%lld\n",c);
-  }
+  while((scanf("%lld %lld",&a,&b))!=EOF)
+    printf("%lld\n", a > b ? a - b : b - a);
 
   return 0;
 }

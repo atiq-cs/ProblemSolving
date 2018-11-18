@@ -1,37 +1,36 @@
-/***************************************************************************
-* Title       : Testing the CATCHER
-* URL         : https://uva.onlinejudge.org/external/2/231.pdf
-* Date        :
-* Complexity  : O(n lg n)
-* Author      : Atiq Rahman
-* Status      : Accepted
-* Notes       : Credits: Jane Alam Jan
-*               Modified a bit to make it more understable
-* Ref           https://ideone.com/IWlJlm
-* meta        : tag-math, tag-algo-dp, tag-dp-lis
-***************************************************************************/
+/***************************************************************************************************
+* Title : Testing the CATCHER
+* URL   : https://uva.onlinejudge.org/external/2/231.pdf
+* Date  : 
+* Comp  : O(n lg n)
+* Author: Atiq Rahman
+* Status: Accepted
+* Notes : Credits: Jane Alam Jan
+*   Modified a bit to make it more understable
+*   ToDo, move BSearch to algo core as lower_bound(*)
+*
+*   Heart of this Solution is this function that implements lis DP using Binary Search
+*   C.L.R.S p#397: Ex-15.4-6
+*   Maintains candidate subsequence by linking them through the input sequence
+*
+*   Result subsequence is in decreasing order
+*   old c version included at the bottom
+* ref   : https://ideone.com/IWlJlm
+* rel   : 481
+* meta  : tag-math, tag-algo-dp, tag-dp-lis
+***************************************************************************************************/
 #include <iostream>
 
-// int.MaxValue 2^31 - 1
+// int.MaxValue: 2^31 - 1
 #define INF   0x7FFFFFFF
-// int.MinValue -2^31
+// int.MinValue: -2^31
 #define NINF  0x80000000
 #define LIMIT 1000005
 
 int lis[LIMIT];
 int A[LIMIT];
 
-int BSearch(int item, int start, int end);
-int GetLISLength(int n);
 
-/*
- * The heart of this Solution is this function that implements lis DP using
- * Binary Search
- * CLR p397: Ex-15.4-6
- * Maintain candidate subsequence by linking them through the input sequence
- *
- * Result subsequence is in decreasing order
- */
 int GetLISLength(int n) {
   int limit = 0;
   lis[0] = INF;
@@ -47,7 +46,7 @@ int GetLISLength(int n) {
     if (lis[j] < A[i])
       lis[j] = A[i];
     else if (lis[j] == A[i])
-      for (int k = j+1;; k++)
+      for (int k = j+1; ; k++)
         if (lis[j] != lis[k]) {
           lis[k] = A[i];
           if (limit < k)
@@ -105,6 +104,41 @@ int main() {
     else {
       lis[n] = NINF;
       A[n++] = d;
+    }
+  }
+
+  return 0;
+}
+
+
+// c version, variable and method names are slightly different
+// tag-lang-c
+int main_v0() {
+  int sq = 1, d, top;
+  bool prev = true;
+
+  while (true) {
+    scanf("%d", &d);
+    if (prev && (d == -1))
+      break;
+
+    else if (prev) {
+      // beginning of an input set
+      prev = false;
+      top = 0;
+      data[top++] = d;
+    }
+    else if (d == -1) {
+      if (sq > 1)
+        putchar('\n');
+      // end of an input set
+      LIS[top] = -INF;
+      prev = true;
+      printf("Test #%d:\n  maximum possible interceptions: %d\n", sq++, get_length_lis(top));
+    }
+    else {
+      LIS[top] = -INF;
+      data[top++] = d;
     }
   }
 

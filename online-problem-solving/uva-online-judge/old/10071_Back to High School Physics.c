@@ -1,11 +1,16 @@
+/***************************************************************************************************
+* URL   : 10070
+* Status: Accepted
+* Notes : 
+* meta  : tag-math, tag-uva-easy
+***************************************************************************************************/
 #include<stdio.h>
 
-void main()
-{
-  int v,t;
-  while(scanf("%d %d",&v,&t)!=EOF)
-  {
-    t=v*t*2;
-    printf("%d\n",t);
+void main() {
+  int v, t;
+
+  while (scanf("%d %d", &v, &t) != EOF) {
+    t = v * t * 2;
+    printf("%d\n", t);
   }
 }

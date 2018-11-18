@@ -1,33 +1,31 @@
 /***************************************************************************************************
-* Title  : Code Theft
-* URL    : https://uva.onlinejudge.org/external/115/p11557.pdf
-* Algo   : Longest common substring
-* Notes  : DP implementation
+* Title : Code Theft
+* URL   : https://uva.onlinejudge.org/external/115/p11557.pdf
+* Comp  : O(nm)
+* Status: Accepted
+* Notes :
 *   The contending chinese solution is O(n * (n+m)) which contains my initial understanding and
 *   explanation, is at, https://gist.github.com/atiq-cs/5de4752e8997161639c17422e1001a1d
-* Comp   : O(nm)
-* Status : Accepted
+
+*   Returns length of the longest common substring
+*   Based on reference but different in following ways,
+*   - Each line here is a character
+*   - Preprocessed for taking care of empty lines
+*
+*   Demonstrates STL generic collection type def
+* meta  : tag-dp-lcs
 ***************************************************************************************************/
 #include <iostream>
 #include <algorithm>
 #include <string>
 #include <vector>
 
-void handleIO();
-
 typedef std::vector<std::string> code_fragment;
 
-/*
-  Returns length of the longest common substring
-  Derivative:
-    Each line here is a character
-    Preprocessed for taking care of empty lines
-*/
-
-// trim and reduce source: http://stackoverflow.com/questions/1798112/removing-leading-and-trailing-spaces-from-a-string
+// trim and reduce ref,
+// http://stackoverflow.com/questions/1798112/removing-leading-and-trailing-spaces-from-a-string
 std::string trim(const std::string& str,
-  const std::string& whitespace = " ")
-{
+  const std::string& whitespace = " ") {
   const auto strBegin = str.find_first_not_of(whitespace);
   if (strBegin == std::string::npos)
     return ""; // no content
@@ -47,8 +45,8 @@ std::string reduce(const std::string& str,
 
   // replace sub ranges
   auto beginSpace = result.find_first_of(whitespace);
-  while (beginSpace != std::string::npos)
-  {
+
+  while (beginSpace != std::string::npos) {
     const auto endSpace = result.find_first_not_of(whitespace, beginSpace);
     const auto range = endSpace - beginSpace;
 
@@ -61,10 +59,8 @@ std::string reduce(const std::string& str,
   return result;
 }
 
-/*
-  This one is same as Algorithms/longest_common_substring.cpp
-  Except we changed string.length with vector.size method
-*/
+// Same as Algorithms/longest_common_substring.cpp
+// Except we changed string.length with vector.size method
 int longest_common_substr(code_fragment s, code_fragment t) {
   std::vector<std::vector<int>> len(s.size(), std::vector<int>(t.size()));  // default 0 initialization
   int max_len = 0;
@@ -82,11 +78,6 @@ int longest_common_substr(code_fragment s, code_fragment t) {
   return max_len;
 }
 
-int main() {
-  handleIO();
-  return 0;
-}
-
 void handleIO() {
   int n = 0;
 
@@ -99,7 +90,6 @@ void handleIO() {
     for (int i = 0; i < n; i++) {
       // input file name
       std::getline(std::cin, file_names[i]);
-      // std::cout << "got file name " << file_names[i] << std::endl;
 
       // input code fragment
       std::string line;
@@ -139,4 +129,9 @@ void handleIO() {
       std::cout << std::endl;
     }
   }
+}
+
+int main() {
+  handleIO();
+  return 0;
 }

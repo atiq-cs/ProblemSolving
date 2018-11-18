@@ -1,15 +1,15 @@
-/***************************************************************************
-* Title       : Testing the CATCHER
-* URL         : https://uva.onlinejudge.org/external/2/231.pdf
-* Date        :
-* Complexity  : O(n lg n)
-* Author      : Atiq Rahman
-* Status      : Accepted
-* Notes       : Based on '231_TestingTheCatcher_lis_algo2_v1'
-* rel     : leetcode/0300_lis_algo2.cs *
-* ref           https://ideone.com/IWlJlm
-* meta        : tag-math, tag-algo-dp, tag-dp-lis
-***************************************************************************/
+/***************************************************************************************************
+* Title : Testing the CATCHER
+* URL   : https://uva.onlinejudge.org/external/2/231.pdf
+* Date  : 
+* Comp  : O(n lg n)
+* Status: Accepted
+* Notes : Based on '231_TestingTheCatcher_lis_algo2_v1'
+*  ToDo move to algo-core for DP
+* rel   : leetcode/0300_lis_algo2.cs *
+* ref   : https://ideone.com/IWlJlm
+* meta  : tag-math, tag-algo-dp, tag-algo-bsearch, tag-dp-lis
+***************************************************************************************************/
 #include <iostream>
 #include <vector>
 
@@ -28,21 +28,15 @@ int GetLISLength(int n) {
   for (int i = 0; i<n; i++) {
     // get lower bound
     int j = BSearch(A[i], 0, limit) + 1;
+
     if (j == lis.size()) {
       lis.push_back(A[i]);
       limit++;
     }
+
     // update lis if item is greater
     else if (lis[j] < A[i])
       lis[j] = A[i];
-    /* else if (lis[j] == A[i])
-      for (int k = j+1;; k++)
-        if (lis[j] != lis[k]) {
-          lis[k] = A[i];
-          if (limit < k)
-            limit = k;
-          break;
-        }*/
   }
   return limit+1;
 }

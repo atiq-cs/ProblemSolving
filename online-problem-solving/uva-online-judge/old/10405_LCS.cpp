@@ -1,25 +1,49 @@
-/*******************************************************
-* Problem Name:  LCS
-* Problem ID:        10405
-* Occassion:        Offline Solving
-*
-* Algorithm:        Only find LCS length
-* Special Case:      If a line is only newline then output zero
-* Judge Status:
-* Author:            Atiq Rahman
-* Note : New reference for this problem's solution is 'demos/algo/dp/lcs.cs'
+/***************************************************************************************************
+* Title : LCS
+* URL   : 10405
+* Notes : New reference for this problem's solution is 'demos/algo/dp/lcs.cs'
 *   Do not look at this solution. No gonna upgrade this one.
-*******************************************************/
+*   Only find LCS length
+*   Special Case is if a line is only newline then output is zero
+*   ToDo, move algo core for DP
+* meta  : tag-dp-lcs
+***************************************************************************************************/
 #include <cstring>
 #include <cstdio>
 using namespace std;
-int LCS();
+
 
 int c[1005][1005];     // Calculate scoring for common subsequence
 char x[1005], y[1005];
 
-//enum directions{DIAG=1, Up, Left};
-//directions dir[m+1][n+1];      // Keeping the directions
+
+int LCS() {
+  int i, j, m, n;
+  m = strlen(x);
+  n = strlen(y);
+
+  for (i = 0; i < m; i++)
+    c[i][0] = 0;
+
+  for (j = 1; j < n; j++)
+    c[0][j] = 0;
+
+  for (i = 0; i < m; i++)
+    for (j = 0; j < n; j++)
+      if (x[i] == y[j]) {
+        c[i + 1][j + 1] = c[i][j] + 1;
+      }
+      else if (c[i + 1][j] >= c[i][j + 1]) {
+        c[i + 1][j + 1] = c[i + 1][j];
+      }
+      else {
+        c[i + 1][j + 1] = c[i][j + 1];
+      }
+
+
+  return c[m][n];
+}
+
 
 int main() {
   int maxLength;
@@ -29,37 +53,9 @@ int main() {
       maxLength = 0;
     else
       maxLength = LCS();
+
     printf("%d\n", maxLength);
   }
 
   return 0;
-}
-
-int LCS() {
-  int i, j, m, n;
-  m = strlen(x);
-  n = strlen(y);
-  for (i = 0; i<m; i++)
-    c[i][0] = 0;
-
-  for (j = 1; j<n; j++)
-    c[0][j] = 0;
-
-  for (i = 0; i<m; i++)
-    for (j = 0; j<n; j++) {
-      if (x[i] == y[j]) {
-        c[i + 1][j + 1] = c[i][j] + 1;
-        // dir[i+1][j+1] = DIAG;
-      }
-      else if (c[i + 1][j] >= c[i][j + 1]) {
-        c[i + 1][j + 1] = c[i + 1][j];
-        // dir[i+1][j+1] = Up;
-      }
-      else {
-        c[i + 1][j + 1] = c[i][j + 1];
-        // dir[i+1][j+1] = Left;
-      }
-    }
-
-  return c[m][n];
 }

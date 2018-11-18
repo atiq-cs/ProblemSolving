@@ -1,12 +1,19 @@
+/***************************************************************************************************
+* URL   : 10222
+* Status: Accepted
+* Notes : 
+* meta  : tag-string, tag-hash-table, tag-lang-c
+***************************************************************************************************/
 #include<stdio.h>
 #include<ctype.h>
-void main()
-{
+
+void main() {
   char c;
-  while((c=getchar())!=EOF)
-  {
+
+  while ((c = getchar()) != EOF) {
     c=tolower(c);
-    if (c==']') c='p';
+    if (c==']')
+      c='p';
     else if (c=='[') c='o';
     else if (c=='p') c='i';
     else if (c=='o') c='u';
@@ -33,6 +40,7 @@ void main()
     else if (c=='b') c='c';
     else if (c=='v') c='x';
     else if (c=='c') c='z';
+
     putchar(c);
   }
 }

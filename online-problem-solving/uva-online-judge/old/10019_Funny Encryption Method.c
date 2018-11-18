@@ -1,7 +1,7 @@
-/*
-  Problem Name: Funny Encryption Method
-  Algorithm      : Math
-*/
+/***************************************************************************************************
+* Title : Funny Encryption Method
+* meta  : tag-math, tag-uva-easy
+***************************************************************************************************/
 
 #include<stdio.h>
 

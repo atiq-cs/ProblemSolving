@@ -1,19 +1,21 @@
-/*
- * URL : https://uva.onlinejudge.org/external/100/10082.pdf
- * Date: 2006-08-27
- * Note: Could be shorter code if mapping was done with array of chars or using
- *   hash-table to represent the mapping
- *   ANSI C program
- * meta: tag-string
- */
+/***************************************************************************************************
+* URL   : https://uva.onlinejudge.org/external/100/10082.pdf
+* Date  : 2006-08-27
+* Notes : Could be shorter code if mapping was done with array of chars or using
+*   hash-table to represent the mapping
+* meta  : tag-string, tag-lang-c,t ag-uva-easy
+***************************************************************************************************/
 #include<stdio.h>
 #include<ctype.h>
 
 int main() {
   char c;
+
   while ((c = getchar()) != EOF) {
-    if (c == 'W') c = 'Q';
-    else if (isdigit(c) && c != '1' && c != '0') c--;
+    if (c == 'W')
+      c = 'Q';
+    else if (isdigit(c) && c != '1' && c != '0')
+      c--;
     else if (c == '0') c = '9';
     else if (c == '1') c = '`';
     else if (c == '-') c = '0';
@@ -48,7 +50,9 @@ int main() {
     else if (c == '.') c = ',';
     else if (c == '/') c = '.';
     else if (c == '\'') c = ';';
+
     putchar(c);
   }
+
   return 0;
 }

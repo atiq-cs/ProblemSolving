@@ -1,12 +1,16 @@
+/***************************************************************************************************
+* URL   : 10302
+* Notes : 64 bit integer
+* meta  : tag-math, tag-uva-easy
+***************************************************************************************************/
 #include<stdio.h>
 
-void main()
-{
+void main() {
   unsigned long long s;
-  while(scanf("%llu",&s)!=EOF)
-  {
-    s=s*(s+1)/2;
-    s*=s;
-    printf("%llu\n",s);
+
+  while (scanf("%llu", &s) != EOF) {
+    s = s * (s + 1) / 2;
+    s *= s;
+    printf("%llu\n", s);
   }
 }

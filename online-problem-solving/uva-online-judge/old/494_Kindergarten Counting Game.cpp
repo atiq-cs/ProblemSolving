@@ -1,30 +1,33 @@
-/*
-  Problem Name: Kindergarten Counting Game
-  Algorithm      : Native word counting
-*/
+/***************************************************************************************************
+* Title : Kindergarten Counting Game
+* Notes : Word counting
+* meta  : tag-lang-c
+***************************************************************************************************/
 
 #include<stdio.h>
 #include<ctype.h>
 
-main() {
+int main() {
   char c;
-  int l=0,nw=0;
+  int l = 0, nw = 0;
 
-  while ((c=getchar())!=EOF) {
+  while ((c = getchar()) != EOF) {
     if (isalpha(c)) {
       if (!l) {
-        nw++;  
-        l=1;
+        nw++;
+        l = 1;
       }
     }
-    else if (c=='\n') {
-      printf("%d\n",nw);
-      l=0;
+    else if (c == '\n') {
+      printf("%d\n", nw);
+
+      l = 0;
       nw = 0;
     }
     else {
-      l=0;
+      l = 0;
     }
   }
+
   return 0;
 }

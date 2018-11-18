@@ -1,7 +1,12 @@
-//Author  :   MAK
-//Problem no:  
-//Type:
-
+/***************************************************************************************************
+* Title : A Node Too Far
+* Author: Md Abdul Kader (Sreezin)
+* URL   : 336
+* Date  : 2018-11-13
+* Comp  :
+* Status: Accepted
+* Notes : here, for historical reason, unmodified code of MAK
+***************************************************************************************************/
 #include<cstdio>
 #include<cmath>
 #include<cstdlib>

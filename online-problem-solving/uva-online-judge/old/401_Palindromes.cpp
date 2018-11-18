@@ -1,9 +1,9 @@
-/*
- * URL : https://uva.onlinejudge.org/external/4/401.pdf
- * Date: 2007-03-18
- * Note: handle 3 types of strings
- * meta: tag-string, tag-palindrome
- */
+/***************************************************************************************************
+* URL   : https://uva.onlinejudge.org/external/4/401.pdf
+* Date  : 2007-03-18
+* Notes : handle 3 types of strings
+* meta  : tag-string-palindrome
+***************************************************************************************************/
 #include<iostream>
 #include<cstring>
 #include<cstdio>
@@ -32,10 +32,12 @@ int main() {
 
       if ((length - 1)) {
         if (k == 22) {
-          m = 1; break;
+          m = 1;
+          break;
         }
         else if (str[j] != rev[k]) {
-          m = 1; break;
+          m = 1;
+          break;
         }
       }
       else if (k == 22)
@@ -43,13 +45,8 @@ int main() {
     }
 
     cout << str << " -- is ";
-    if (!p) {
-      if (!m) {
-        cout << "a mirrored palindrome." << endl << endl;
-      }
-      else
-        cout << "a regular palindrome." << endl << endl;
-    }
+    if (!p)
+        cout << (m?"a regular palindrome.":"a mirrored palindrome.") << endl << endl;
     else {
       if (!m)
         cout << "a mirrored string." << endl << endl;

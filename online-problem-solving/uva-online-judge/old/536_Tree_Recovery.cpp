@@ -1,14 +1,12 @@
-/*****************************************************************
-* Author  :  Atiq
-* URL     :  https://uva.onlinejudge.org/external/5/p536.pdf
-* Location:  University of Dhaka,
-* Date    :  Probably 2008
-* Problem :  Tree Recovery
-* Algo    :  Recursion
-* Desc    :  Recursively placing root to right gives the output result
-* meta    : tag-binary-tree, tag-preorder, tag-inorder, tag-post-order,
-*   tag-recursion
-*****************************************************************/
+/***************************************************************************************************
+* Title : Tree Recovery
+* URL   : https://uva.onlinejudge.org/external/5/p536.pdf
+* Status: Accepted
+* Comp  : O (V+E)
+* Notes : During CSE DU Undergrad, approx 2008,
+*   Recursively placing root to right gives the output result
+* meta  : tag-binary-tree, tag-preorder, tag-inorder, tag-post-order, tag-recursion
+***************************************************************************************************/
 #include <iostream>
 #include <cstring>
 using namespace std;
@@ -17,11 +15,8 @@ char preord[30], inord[30];
 int root_pos;    // position of root in preorder string
 
 int main () {
-
   void make_post(int start, int end);
   
-  freopen("536.in", "r", stdin);
-
   while ((scanf("%s %s",preord, inord)) == 2) {
     // initialize root position for every input
     root_pos = 0;
@@ -71,6 +66,7 @@ void make_post(int start, int end) {
   // modify right
   make_post(pos, end - 1);
 }
+
 
 // Copy of above code with debug prints
 void make_post_debug(int start, int end) {

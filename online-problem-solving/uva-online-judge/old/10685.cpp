@@ -1,26 +1,16 @@
-/*******************************************************
-*    Problem Name:  Friends
-*    Problem ID:        UVA 10608
-*    Occassion:        Offline Solving
-*    Description:      Have to find out the maximum number of elements
-*    Algorithm:        Union Find
-*    Special Case:      N/A
-*    Judge Status:      Accepted
-*    Author:            Atiq Rahman
-*******************************************************/
-//#include <iostream>
+/***************************************************************************************************
+* Title : Nature
+* URL   : 10685
+* Author: Atiq Rahman
+* Status: Accepted
+* Notes : Have to find out the maximum number of elements
+* rel   : 10608
+* meta  : tag-graph-mst, tag-union-find
+***************************************************************************************************/
 #include <cstdlib>
 #include <cstdio>
-//#include <cmath>
 #include <cstring>
-//#include <new>
-//#include <vector>
-//#include <queue>
 #include <map>
-//#include <algorithm>
-//#include <iomanip>//for cout formatting
-//#define  INF 2147483648
-//#define EPS 1e-8
 using namespace std;
 
 class chain {
@@ -44,20 +34,17 @@ int findMaxNoMembers(int n);
 int sets[31005],no_child[31005], rank[31005];
 
 int main() {
-//  freopen("10685_in.txt", "r", stdin);
   int i, no_groups, n, m, a, b;
   char str[40];
 
   map<chain, int> creature;
   map<chain, int>::iterator p;
-  // Union Find Algorithm Implementation
 
   while (scanf("%d %d", &n, &m) && (m || n)) {
     creature.clear();
     makeSet(n);
     for (i=0; i<n; i++) {
       scanf("%s", str);
-    //  puts(str);
       creature.insert(pair<chain, int>(chain(str), i+1));
     }
     
@@ -70,13 +57,8 @@ int main() {
       p = creature.find(str);
       b = p-> second;
 
-    //  printf("inserting %d %d\n", a, b);
       Union(findSet(a), findSet(b));
     }
-  /*  for (i=1; i<=n; i++) {
-      printf("%d  %d   %d\n", i, sets[i], no_child[i]);
-    }
-    putchar('\n');*/
     no_groups=findMaxNoMembers(n);
     printf("%d\n", no_groups);
   }

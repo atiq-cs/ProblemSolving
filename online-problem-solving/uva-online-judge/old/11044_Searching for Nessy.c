@@ -1,15 +1,19 @@
+/***************************************************************************************************
+* Title : 
+* URL   : 11044
+* Notes : 
+* meta  : tag-math, tag-uva-easy
+***************************************************************************************************/
 #include<stdio.h>
 
-void main()
-{
-       int i,a,b,t;
-       long c;
-       scanf("%d",&t);
+void main() {
+   int i, a, b, t;
+   long c;
+   scanf("%d", &t);
 
-       for (i=0;i<t;i++)
-       {
-         scanf("%d %d",&a,&b);
-         c=((int)(a/3))*(int)(b/3);
-         printf("%ld\n",c);
-       }
+   for (i=0;i<t;i++) {
+     scanf("%d %d", &a, &b);
+     c=((int) (a/3)) * (int) (b/3);
+     printf("%ld\n", c);
+   }
 }

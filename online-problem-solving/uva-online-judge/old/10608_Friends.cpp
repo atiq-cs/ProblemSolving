@@ -1,25 +1,14 @@
-/*******************************************************
-*    Problem Name:  Friends
-*    Problem ID:        UVA 10608
-*    Occassion:        Offline Solving
-*    Description:      Have to find out the maximum number of elements
-*    Algorithm:        Union Find
-*    Special Case:      N/A
-*    Judge Status:      Accepted
-*    Author:            Atiq Rahman
-*******************************************************/
-//#include <iostream>
+/***************************************************************************************************
+* Title : Friends
+* URL   : 10608
+* Author: Atiq Rahman
+* Status: Accepted
+* Notes : Have to find out the maximum number of elements
+* rel   : UVA 10685, 10583
+* meta  : tag-graph-mst, tag-union-find
+***************************************************************************************************/
 #include <cstdio>
-//#include <cmath>
 #include <cstring>
-//#include <new>
-//#include <vector>
-//#include <queue>
-//#include <map>
-//#include <algorithm>
-//#include <iomanip>//for cout formatting
-//#define  INF 2147483648
-//#define EPS 1e-8
 using namespace std;
 
 void makeSet(int n);
@@ -30,10 +19,7 @@ int findMaxNoMembers(int n);
 int sets[31005],no_child[31005], rank[31005];
 
 int main() {
-//  freopen("10608_in.txt", "r", stdin);
   int i, no_groups, t, n, m, a, b;
-
-  // Union Find Algorithm Implementation
   scanf("%d", &t);
   
   while (t--) {
@@ -44,10 +30,6 @@ int main() {
       scanf("%d %d", &a, &b);
       Union(findSet(a), findSet(b));
     }
-/*    for (i=1; i<=n; i++) {
-      printf("%d  %d   %d\n", i, sets[i], no_child[i]);
-    }
-    putchar('\n');*/
     no_groups=findMaxNoMembers(n);
     printf("%d\n", no_groups);
   }
@@ -55,6 +37,7 @@ int main() {
   return 0;
 }
 
+// Union Find Algorithm Implementation
 void makeSet(int n) {
   int i;
   for (i=1; i<=n; i++) {

@@ -1,13 +1,10 @@
-/*******************************************************
-*    Problem Name:  Fibonacci Freeze
-*    Problem ID:    495
-*    Occassion:    Offline Solves
-*
-*    Algorithm:      BigInteger class
-*    Special Case:    
-*    Judge Status:    Accpeted
-*    Author:        Atiq Rahman
-*******************************************************/
+/***************************************************************************************************
+* Title : Fibonacci Freeze
+* URL   : 495
+* Status: Accpeted
+* Author: Atiq Rahman
+* meta: tag-big-integer
+***************************************************************************************************/
 import java.util.Scanner;
 import java.math.BigInteger;
 
