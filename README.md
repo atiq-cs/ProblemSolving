@@ -1,3 +1,25 @@
+### Documentation on Source Files
+Example documentation of top of each source file looks like,
+
+    /***************************************************************************************************
+    * Title : Title or Name of the problem
+    * URL   : Usually a problem number, for UVA it can just be a number
+    * Occasn: Occasion Contest or an event
+    * Date  : Date the problem got accepted by judge
+    * Comp  : Complexity, example, O(n), O(1) first one stands for time complexity and second one
+    *   stands space complexity
+    * Status: Judge status by an online judge system i.e., Accepted, Wrong Answer, PresentationError
+    * Notes : Explanation, algorithm details
+    * ref   : reference books/articles/links
+    * Ack   : one or more persons who are acknowledged
+    * meta  : tags of the problem prefixed with "tag-" i.e., tag-algo-dp, tag-two-pointers
+    ***************************************************************************************************/
+
+_More Info_
+- meta which stands for meta-data, specifies what type of problem is it, categorizes the problem. For
+example, `tag-algo-dp` stands for dynamic programming algorithmic problem. `tag-ds-bst` would mean
+data structure: binary search tree problem.
+
 ### Searching on the Repository
 To implement searching based on tags we added meta to each of the source file. During search have to
 append `tag-` as prefix of the tag string. For example, to search on problems on linked-list: we
