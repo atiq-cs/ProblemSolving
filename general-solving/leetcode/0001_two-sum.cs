@@ -7,13 +7,14 @@
 * Status: Accepted
 * Notes : hashset is a better data structure for set operations as we don't require set operations
 *   we use dictionary
-*  Probably input numbers are distinct. In that case, we can use a hashMap instead of Dictionary
+*  Probably input numbers are distinct. In that case, we can use a HashSet instead of Dictionary
 * ref   : https://leetcode.com/articles/two-sum/
 * meta  : tag-hashtable, tag-leetcode-easy
 ***************************************************************************************************/
 public class Solution {
   // second version after Microsoft Interview 2018-05-21, similar to last one
-  // in above article; utilizes single loop
+  // in above article; does it in single loop
+  // Use TryGetValue to reduce number of lookups
   public int[] TwoSum(int[] nums, int sum)
   {
     var numDict = new Dictionary<int, int>();

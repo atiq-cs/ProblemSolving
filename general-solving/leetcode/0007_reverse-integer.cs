@@ -25,21 +25,26 @@ public class Solution
     {
       isNeg = true;
       if (x == -2147483648)
-      {   // strange x does not match with 0x80000000
+      {   // strange x does not match with 0x80000000, probably needs an unsigned cast
         maxNeg = true;
         x++;
       }
       x = -x;
     }
+
     char[] chArr = x.ToString().ToCharArray();
     Array.Reverse(chArr);
+
     if (IsOverflow(chArr))
       return 0;
+
     string resultString = new string(chArr);
+
     if (isNeg)
     {
       if (maxNeg)
         return (-1 - int.Parse(resultString));
+
       return (0 - int.Parse(resultString));
     }
     return int.Parse(resultString);

@@ -6,13 +6,13 @@
 * Comp  : O(n), n = number of digits
 * Status: Accepted
 * Notes : Get each digit from left and right
-*   This problem asks for min number of coins
 *   
 *   Example, 543
 *   545
-* meta  : tag-number, tag-palindrome, tag-leetcode-easy
+* meta  : tag-string-palindrome, tag-leetcode-easy
 ***************************************************************************/
-public class Solution {
+public class Solution
+{
   public bool IsPalindrome(int x) {
     if (x < 0)
       return false;

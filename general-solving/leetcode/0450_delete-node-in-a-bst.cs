@@ -23,7 +23,7 @@
 *   https://leetcode.com/problems/delete-node-in-a-bst/discuss/93296 to verify
 *   time constraint.
 *   
-*  TREE-SUCCESSOR (C.L.R.S p292):
+*  TREE-SUCCESSOR (C.L.R.S p#292):
 *   Simple version of TREE-SUCCESSOR(x); x.right is not NIL is demonstrated
 *   below. Due to the simplified application TREE-SUCCESSOR could not be fully
 *   tested with this leetcode problem.
@@ -41,7 +41,7 @@
 *   the small input were useful. Large one is added for reference only.
 * ref   : C.L.R.S 3rd ed, p#298
 * rel : http://lintcode.com/en/problem/insert-node-in-a-binary-search-tree/
-* meta  : tag-binary-tree, tag-bst, tag-binary-search
+* meta  : tag-ds-bst, tag-ds-core
 ***************************************************************************/
 public class Solution
 {

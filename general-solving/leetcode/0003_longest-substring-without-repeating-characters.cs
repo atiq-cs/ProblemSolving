@@ -64,7 +64,7 @@ public class LeetcodeSolutionV1 {
 }
 
 // Constant Space
-// O(N) Time
+// O(N) Time DP Solution
 public class LeetcodeSolutionV2 {
   public int LengthOfLongestSubstring(string s) {
     int maxLength = 0;

@@ -3,12 +3,11 @@
 * URL   : https://leetcode.com/problems/add-two-numbers
 * Date  : 2015-01-11
 * Comp  : O(n+m) Time and Space; constant space if we are provided with n+m space for result
-* Author: Atiq Rahman
 * Status: Accepted
 * Notes : A mistake was not to add following line,
 *   r = r.next;
 *   Inspirted by leetcode forum discussion
-* meta  : tag-linked-list
+* meta  : tag-ds-linked-list
 ***************************************************************************************************/
 public class Solution {
   public ListNode AddTwoNumbers(ListNode l1, ListNode l2) {
@@ -16,7 +15,8 @@ public class Solution {
     int c = 0;
     
     while (l1 != null || l2 != null || c==1) {
-      int d = (l1==null?0:l1.val)+(l2==null?0:l2.val) + c;
+      int d = (l1==null? 0 : l1.val) + (l2==null? 0 : l2.val) + c;
+
       if (d>9) {
         c = 1;
         d -= 10;
@@ -27,15 +27,18 @@ public class Solution {
       // first time iteration: r is null as initialized
       // during every other time of iteration r points to the last node of the
       // list
-      if (r == null) {
-        r = new ListNode(d); rHead = r;
-      }
+      if (r == null)
+        rHead = r = new ListNode(d);
       else {
         r.next = new ListNode(d);
         r = r.next;
       }
-      if (l1 != null) l1 = l1.next;
-      if (l2 != null) l2 = l2.next;
+
+      if (l1 != null)
+        l1 = l1.next;
+
+      if (l2 != null)
+        l2 = l2.next;
     }
     return rHead;
   }

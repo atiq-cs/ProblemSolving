@@ -8,7 +8,7 @@
 * Notes : This is the first version developed. This problem specifies BST
 *   as input. However, it does not matter for our solution.
 *   Second version: 'leetcode/0236_lowest-common-ancestor-of-a-binary-tree.cs'
-* meta  : tag-lca, tag-binary-tree, tag-bst, tag-leetcode-easy
+* meta  : tag-lca, tag-ds-binary-tree, tag-ds-bst, tag-recursion, tag-leetcode-easy
 ***************************************************************************************************/
 public class Solution
 {
@@ -28,6 +28,7 @@ public class Solution
     if (left_lca != null && right_lca != null) return root;
     return (left_lca != null) ? left_lca : right_lca;
   }
+
   // second version at '0236_lowest-common-ancestor-of-a-binary-tree.cs' based
   // on geeksforgeeks cpp version
 }

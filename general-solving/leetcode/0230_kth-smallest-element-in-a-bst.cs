@@ -12,7 +12,7 @@
 *   Why is it tagged medium?
 *   Easy if you know BSt.
 * rel   : 'general-solving/leetcode/501_find-mode-in-binary-search-tree.cs'
-* meta  : tag-BST, tag-leetcode-medium
+* meta  : tag-ds-BST, tag-leetcode-medium
 ***************************************************************************/
 public class Solution {
   private int k, val;

@@ -17,7 +17,7 @@
 *   numRemaining = 0
 *   numConditionalChars = 0
 *
-* meta  : tag-string, tag-easy, tag-simulation
+* meta  : tag-string, tag-easy, tag-implementation
 ***************************************************************************/
 using System;
 

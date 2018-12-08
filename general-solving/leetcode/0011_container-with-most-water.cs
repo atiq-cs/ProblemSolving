@@ -32,12 +32,13 @@ public class Solution
     int maxArea = 0;
     
     while (low < high) {
-    int area = (high-low) * Math.Min(height[low], height[high]);
-    maxArea = Math.Max(maxArea, area);
-    if (height[low] < height[high])
-      low++;
-    else
-      high--;
+      int area = (high-low) * Math.Min(height[low], height[high]);
+      maxArea = Math.Max(maxArea, area);
+
+      if (height[low] < height[high])
+        low++;
+      else
+        high--;
     }
     return maxArea;
   }

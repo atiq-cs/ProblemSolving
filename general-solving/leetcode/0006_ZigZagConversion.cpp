@@ -5,7 +5,7 @@
 * Comp  : O(n)
 * Author: Atiq Rahman
 * Status: Accepted (beat 99.49%)
-* Notes : Proble description is terrible. Look here for clarification,
+* Notes : Problem description is terrible. Look here for clarification,
 *   https://leetcode.com/discuss/35640/please-help-understand-question-description-about-pattern
 * meta  : tag-string, tag-leetcode-medium
 ***************************************************************************************************/

@@ -20,7 +20,7 @@
 *
 *    adding chars, combining as string
 *    https://stackoverflow.com/q/1324009/
-* meta  : tag-algo-dp, tag-leetcode-medium, tag-palindrome, tag-two-pointers
+* meta  : tag-algo-dp, tag-leetcode-medium, tag-string-palindrome, tag-two-pointers
 ***************************************************************************/
 public class Solution {
   public string LongestPalindrome(string s) {
@@ -29,6 +29,7 @@ public class Solution {
     int C=0, R=0;
     int[] P= new int[T.Length];
     P[0] = 0;
+
     for(int i=1; i<T.Length-1; i++) {
       int iPrime = C*2-i;   // i′ is mirrored index of i
       // Ensure index is in boundary of previously discovered palindrome

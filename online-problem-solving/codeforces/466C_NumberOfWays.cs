@@ -6,24 +6,25 @@
 * Comp  : O(n) 249ms, O(n) 55400 KB
 * Status: Accepted
 * Notes : First version is at the bottom.
-*   Second version,
+*   Second version utilizes following properties,
 *   - Note that first chunk always starts from index 0
 *   - On the contrary, last chunk always ends with last index
+*   
 *   We make two lists of indices: one for prefix sum matches and other other one for suffix sum
 *   matches.
 *   
-*   When we iterate through each prefix sum match index. Assume the index is i, then, we find the
-*   total count of how many suffix sum matches are available after index i+1. Hence, it gives number
-*   of way split is possible keeping first part ending at index i,
+*   When we iterate through the prefix sum match indices list, assuming iteration index is i, we
+*   find total count of how many suffix sum matches are available after index i+1. Hence, it gives
+*   number of way split is possible keeping first part ending at index i,
 *    [0...i] [i+1...j-1] [j...n-1]
 *    
-*   We ensure that j >= i + 2 so that there always exists a second chunk with size 1 or larger.
+*   We ensure that j >= i + 2 to ensure a second chunk with size 1 or more.
 *    
 *   I easily understood how I can find the indices for prefix sum matches and for suffix sum
-*   matches. However, understanding the part that each time, only first chunk/part would be ending
-*   at i and we would get the sum/total count for the rest for split happening on right side wasn't
-*   very clear to me. And that, we can easily get the total sum for splits from the 3rd chunk after
-*   I was not clear as well. see, ack for this part.
+*   matches. However, how I can get the count for total matches on the right side (suffix) for each
+*   index i, wasn't clear to me. Briefly irst chunk ends at i and we get total count for matches on
+*   right side. We can easily get total count for splits on right side (using suffix matches) for
+*   2nd and 3rd chunk. see, ack for this part.
 *   
 *   In the solution, Target Sum variable is S/3 to which we try to match sum of a chunk. Prefix sum
 *   match indices List contains the indices where prefix sum matches with target sum. Similarly, for
@@ -41,9 +42,10 @@
 *   Hence, decided to use List instead of two boolean arrays for prefix sum and suffix sum.
 *   Instead of using two boolean arrays for indicating prefix sum match and suffix sum match we use
 *   Lists to save space.
-* ref   : http://codeforces.com/blog/entry/13758, submission#45495771
+* ref   : Editorial of the round, http://codeforces.com/blog/entry/13758, submission#45495771
+*         ebanner's blog, https://codeforces.com/blog/entry/48079
 * Ack   : Md Abdul Kader (Sreezin)
-* meta  : tag-binary-search, tag-two-pointers, tag-easy
+* meta  : tag-algo-dp, tag-two-pointers
 ***************************************************************************************************/
 using System;
 using System.Collections.Generic;
@@ -83,8 +85,10 @@ public class LinearSplit {
     // Find prefix sum match indices and suffix sum match indices
     for (int i = 0; i < A.Length; i++) {
       prefixSum += A[i];
+
       if (prefixSum == targetSum)
         prefixSumMatchIndices.Add(i);
+
       if (i < A.Length - 1 && prefixSum == 2 * targetSum)   // else if wont work if both prefix and suffic sum are 0
         suffixSumMatchIndices.Add(i + 1);
     }
