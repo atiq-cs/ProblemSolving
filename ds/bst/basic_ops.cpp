@@ -9,7 +9,7 @@
 ***************************************************************************/
 class Solution {
 public:
-  // insert method
+  // 1. iterative insert method
   TreeNode* insertNode(TreeNode* root, TreeNode* z) {
     TreeNode *y = NULL;
     TreeNode *x = root;
@@ -32,4 +32,32 @@ public:
       y->right = z;
     return root;
   }
+
+  // 2. recursive version: Insertion in a Binary Search Tree
+  // slightly detailed code can be found in previous submission
+  // https://www.hackerrank.com/challenges/binary-search-tree-insertion
+  Node* insert(Node* root, int value) {
+    static Node* pre_root;
+
+    if (root == NULL) {
+      if (pre_root) {
+        if (pre_root->data > value)
+          pre_root->left = new Node({ value });
+        else
+          pre_root->right = new Node({ value });
+      }
+
+      return new Node({ value });
+    }
+
+    pre_root = root;
+
+    if (root->data > value)
+      insert(root->left, value);
+    else
+      insert(root->right, value);
+
+    return root;
+  }
 };
+

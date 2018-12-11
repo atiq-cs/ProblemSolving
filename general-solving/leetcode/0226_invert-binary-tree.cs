@@ -6,7 +6,7 @@
 * Author: Atiq Rahman
 * Status: Accepted
 * Notes : Simple and beatiful recursion
-*   No library Swap function, have put on in utils
+*   No library Swap function in C#, I have put on in utils source file in this dir.
 * rel   : http://www.lintcode.com/en/problem/invert-binary-tree/
 *         https://www.hackerrank.com/challenges/swap-nodes-algo
 * meta  : tag-binary-tree, tag-recursion, tag-company-microsoft, tag-interview-onsite,
@@ -14,7 +14,7 @@
 ***************************************************************************************************/
 public class Solution
 {
-  // last version
+  // second version, swap later, still works
   public TreeNode InvertTree(TreeNode root) {
     if (root == null)
       return null;
@@ -24,7 +24,7 @@ public class Solution
     return root;
   }
 
-  // first version
+  // first version, swap first
   public TreeNode InvertTree(TreeNode root) {
     if (root == null)
       return root;

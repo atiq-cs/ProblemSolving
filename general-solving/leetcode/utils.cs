@@ -9,9 +9,16 @@
 ***************************************************************************************************/
 public class LeetcodeUtils {
   void Swap<T>(ref T lhs, ref T rhs) {
-    T temp = lhs;
+    T tmp = lhs;
     lhs = rhs;
-    rhs = temp;
+    rhs = tmp;
+  }
+
+  // here's a version might seem more readable some times, tied to int type though
+  private void Swap(int[] A, int i, int j) {
+    int tmp = A[i];
+    A[i] = A[j];
+    A[j] = tmp;
   }
 
   private T[][] ConvertMultiDimensionalToJagged<T>(T[,] md) {

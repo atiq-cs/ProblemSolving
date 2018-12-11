@@ -3,11 +3,10 @@
 * URL   : http://codeforces.com/problemset/problem/652/B
 *   http://www.lintcode.com/en/problem/wiggle-sort/
 *   https://leetcode.com/problems/wiggle-sort (locked, so tried lintcode)
-*   
+*
 * Occasn: Educational Codeforces Round 10
 * Date  : 2017-11-01
 * Comp  : O(n) 46ms, Space O(n), 0KB
-* Author: Atiq Rahman
 * Status: Accepted (also on lintcode)
 * Notes : Even though this problem is called 'z-sort' in codeforces it
 *   actually known as wiggle sort in other sites i.e., leetcode.
@@ -44,13 +43,13 @@ class WiggleSorting {
       // if i is even, then we know a[i-2] >= a[i-1]
       if (i % 2 == 0) {
         if (a[i - 1] < a[i])
-          Swap(i-1, i);
+          Swap<int>(ref a[i-1], ref a[i]);
       }
       // a[i-2] <= a[i-1]
       // if a[i-1] < a[i] derives a[i] is the greatest
       else {
         if (a[i - 1] > a[i]) // swap a[i-1], a[i]
-          Swap(i - 1, i);
+          Swap<int>(ref a[i - 1], ref a[i]);
       }
     }
   }
@@ -58,19 +57,13 @@ class WiggleSorting {
   public void ShowOutput() {
     Console.WriteLine(string.Join(" ", a));
   }
-
-  private void Swap(int  i, int j) {
-    int temp = a[i];
-    a[i] = a[j];
-    a[j] = temp;
-  }
 }
 
 public class CFSolution {
   private static void Main() {
-    WiggleSorting sortingDemo = new WiggleSorting();
-    sortingDemo.TakeInput();
-    sortingDemo.Sort();
-    sortingDemo.ShowOutput();
+    WiggleSorting wiggle = new WiggleSorting();
+    wiggle.TakeInput();
+    wiggle.Sort();
+    wiggle.ShowOutput();
   }
 }

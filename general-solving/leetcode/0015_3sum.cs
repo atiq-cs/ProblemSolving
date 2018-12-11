@@ -43,7 +43,7 @@ public class Solution
       int sum = 0 - nums[i];
       while (lo < hi) {
         if (nums[lo] + nums[hi] == sum) {
-          result.Add(new int[] {nums[i], nums[lo++], nums[hi--]});
+          result.Add(new int[] { nums[i], nums[lo++], nums[hi--] });
           while (lo < hi && nums[lo] == nums[lo-1])
             lo++;
           while (lo < hi && nums[hi] == nums[hi+1])
