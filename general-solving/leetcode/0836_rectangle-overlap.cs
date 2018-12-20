@@ -20,10 +20,12 @@
 public class Solution {
   public bool IsRectangleOverlap(int[] rec1, int[] rec2) {
     // Form an intersection rectangle based on provided rectangles
+    // rec: A rectangle is represented as a list [x1, y1, x2, y2]
+    // where (x1, y1) is top left and (x2, y2) is bottom right
     var intersectBottomLeft = new System.Drawing.Point(Math.Max(rec1[0],
-      rec2[0]), Math.Max(rec1[1], rec2[1]));
+      rec2[0]), Math.Max(rec1[1], rec2[1]));  // max(x1, x3), max(y1, y3)
     var intersectTopRight = new System.Drawing.Point(Math.Min(rec1[2],rec2[2]),
-      Math.Min(rec1[3], rec2[3]));
+      Math.Min(rec1[3], rec2[3]));            // max(x2, x4), max(y2, y4)
 
     if (intersectBottomLeft.X >= intersectTopRight.X)
       return false;

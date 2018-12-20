@@ -13,7 +13,7 @@
 *
 *    for matrices like 2x3 matrix, this condition is not correct,
 *      r<=m/2 && c<=n/2
-* meta  : tag-leetcode-medium
+* meta  : tag-implementation, tag-leetcode-medium
 ***************************************************************************/
 public class Solution {
   int[][] matrix;
@@ -23,10 +23,12 @@ public class Solution {
   public IList<int> SpiralOrder(int[,] md) {
     matrix = ConvertMultiDimensionalToJagged<int>(md);
     for (int r=0, c=0; r<=(numRows-1)/2 && c<=(numCols-1)/2; r++, c++)
-      RecSpiral(r,c);
+      RecSpiral(r, c);
     return result;
   }
   
+  // sr: starting row
+  // sc: starting column
   private void RecSpiral(int sr, int sc) {
     // add in left to right order, same row
     for (int c=sc; c<numCols-sc; c++)
