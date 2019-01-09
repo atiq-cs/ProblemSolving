@@ -1,7 +1,7 @@
 /***************************************************************************
 * Title : Implement Queue using LinkedList
 * URL   : https://leetcode.com/problems/implement-queue-using-stacks
-* Date  : 2018--05-25
+* Date  : 2018-05-25
 * Author: Atiq Rahman
 * Comp  : O(1), O(1)
 * Status: Accepted
