@@ -1,6 +1,6 @@
 /***************************************************************************************************
 * Title : Sorting Log File (p#2)
-* URL   : 
+* URL   : Amazon Autometa DeepLearning SDE2 amcat
 * Date  : 2018-03-10
 * Author: Atiq Rahman
 * Comp  : O(n lg n + n*m) where n*m is for n number of comparisons among
@@ -12,7 +12,7 @@
 *   if there are numbers instead of letters those go later
 *   if two values are same then compare identifiers
 *
-*   Compared to C++, there's no clever/oneliner lambda syntax for comparing
+*   Should try the lambda syntax for comparing to replace IComparer
 * meta  : tag-hash-table, tag-algo-sort, tag-company-amazon
 ***************************************************************************************************/
 using System;

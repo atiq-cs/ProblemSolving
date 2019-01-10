@@ -1,9 +1,9 @@
 /***************************************************************************
 * Title : Find Most Frequent Words
-* URL   : 
+* URL   : Amazon Autometa DeepLearning SDE2 amcat
 * Date  : 2018-03-10
 * Author: Atiq Rahman
-* Comp  : O(n lg n), space O(n)
+* Comp  : O(n lg n), O(n)
 * Status: Accepted
 * Notes : Linq query is to do the n lg n sorting
 *   If we solve this without using LINQ one way to do it would be to implement
@@ -13,6 +13,7 @@
 *
 *   Required comparison for sort is case insensitive. It also asks to exclude
 *   words from a given list
+* ref   : 'leetcode/0692_top-k-frequent-words.cs'
 * meta  : tag-hash-table, tag-charp-linq, tag-algo-sort, tag-company-amazon
 ***************************************************************************/
 public class AmazonSolution

@@ -1,11 +1,16 @@
 /***************************************************************************
 * Title : Find optimized flight strategy
-* URL   : 
+* URL   : Amazon Autometa Kindle Author/Editing SDE2 amcat
 * Date  : 2019-01-09
 * Author: Atiq Rahman
 * Comp  : O(m*n)
 * Status: Wrong Answer
-* Notes : Given maximum travel distance and list of forward routes and return
+* Notes : Desc from careercup link,
+*   Given max. travel distance and forward and backward route list, return pair
+*   of ids of forward and backward routes that optimally utilized the max travel
+*   distance.
+*   In my words,
+*   Given maximum travel distance and list of forward routes and return
 *   routes find pairs of routes that optimizes the utilization of provided travel
 *   distance
 *
@@ -13,6 +18,9 @@
 *   
 *   A binary search would be better solution, which would be as costly as
 *    O( m lg n ) + O (m lg m) + O (n lg n)
+*    
+*    
+*
 * meta  : tag-charp-lambda-exp, tag-algo-sort, tag-company-amazon
 ***************************************************************************/
 using System.Collections.Generic;
@@ -42,6 +50,7 @@ class Solution {
       }
 
     }
+    // METHOD SIGNATURE ENDS
 
     // sort in descending order of distance
     filteredResult.Sort((a, b) => {
@@ -56,7 +65,6 @@ class Solution {
         result.Add(new List<int>(new int[] { filteredResult[i][0], filteredResult[i][1] }));
     return result;
   }
-  // METHOD SIGNATURE ENDS
 }
 
 /*
@@ -76,4 +84,13 @@ Input:
 [{1, 6000}, {2, 4000}, {3, 3000}]
 
 Output would be, (1,2), (2,1)
+
+eg: max travel distance is : 11000 
+forward route list : [1,3000],[2,5000],[3,4000],[4,10000] 
+backward route list : [1,2000],[2,3000],[3,4000] 
+
+ref: https://www.careercup.com/question?id=5750442676453376
+Result : [2,3] ...2 is from forward and 3 is from backward.. total distance is 9000... no other
+combination is there which is >9000 and <=11,000.......0(n^2) solution is straight forward,
+thinking that sorting both might help.
 */

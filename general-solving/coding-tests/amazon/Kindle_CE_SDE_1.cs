@@ -1,6 +1,6 @@
 /***************************************************************************
 * Title : Find Closest Points
-* URL   : 
+* URL   : Amazon Autometa Kindle Author/Editing SDE2 amcat
 * Date  : 2019-01-09
 * Author: Atiq Rahman
 * Comp  : O(n lg n), O(X); n = size of input, X = size of output
@@ -25,6 +25,12 @@ public class Solution {
                           int[,] mdAllLocations,
                           int numDeliveries) {
     var allocations = ConvertMultiDimensionalToJagged<int>(mdAllLocations);
+
+    /* Feeling at some point of the coding test,
+     * I am betting that the platform's Array.Sort is flawed. My implementation is correct
+     * should work everywhere. Then, I deleted my debug code and all of a
+     * sudden it started working..
+     */
     Array.Sort(allocations, (a, b) =>
     {
       // handle overflow with larger data type
@@ -58,4 +64,14 @@ Input:
 1
 
 Output: (1,2)
+
+First try of the lamda func for Sort was,
+    const double EPS = 1e-9;
+    Array.Sort(allocations, (a, b) => {
+        double d1 = (a[0] * a[0] + a[1] * a[1]);
+        double d2 = Math.Sqrt(b[0] * b[0] + b[1] * b[1]);
+        if (Math.Abs(d1-d2) < EPS)
+            return 0;
+        return (d1 > d2)? -1: 1;
+    });
 */
