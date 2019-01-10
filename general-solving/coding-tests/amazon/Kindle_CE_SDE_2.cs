@@ -25,12 +25,9 @@
 ***************************************************************************/
 using System.Collections.Generic;
 
-// IMPORT LIBRARY PACKAGES NEEDED BY YOUR PROGRAM
-// SOME CLASSES WITHIN A PACKAGE MAY BE RESTRICTED
-// DEFINE ANY CLASS AND METHOD NEEDED
-// CLASS BEGINS, THIS CLASS IS REQUIRED
+// Amazon's default documentation style, example at 'amcat_demo1.cs'
 class Solution {
-  // METHOD SIGNATURE BEGINS, THIS METHOD IS REQUIRED
+  // Complete this method
   public List<List<int>> optimalUtilization(int maxTravelDist,
                                         List<List<int>> forwardRouteList,
                                         List<List<int>> returnRouteList) {
@@ -48,9 +45,7 @@ class Solution {
             filteredResult.Add(new List<int>(new int[] { forwardRouteList[i][0], returnRouteList[j][0], distance }));
         }
       }
-
     }
-    // METHOD SIGNATURE ENDS
 
     // sort in descending order of distance
     filteredResult.Sort((a, b) => {

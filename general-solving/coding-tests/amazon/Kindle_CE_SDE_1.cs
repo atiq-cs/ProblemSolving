@@ -14,18 +14,13 @@
 using System; // I had to add this line
 using System.Collections.Generic;
 
-// Amazon's crappy default documentation
-// IMPORT LIBRARY PACKAGES NEEDED BY YOUR PROGRAM
-// SOME CLASSES WITHIN A PACKAGE MAY BE RESTRICTED
-// DEFINE ANY CLASS AND METHOD NEEDED
-// CLASS BEGINS, THIS CLASS IS REQUIRED
-public class Solution {
-  // METHOD SIGNATURE BEGINS, THIS METHOD IS REQUIRED
+// Amazon's default documentation style, example at 'amcat_demo1.cs'
+public class Solution
+{ // Complete this method
   public List<List<int>> ClosestXdestinations(int numDestinations,
                           int[,] mdAllLocations,
                           int numDeliveries) {
     var allocations = ConvertMultiDimensionalToJagged<int>(mdAllLocations);
-
     /* Feeling at some point of the coding test,
      * I am betting that the platform's Array.Sort is flawed. My implementation is correct
      * should work everywhere. Then, I deleted my debug code and all of a
@@ -41,7 +36,6 @@ public class Solution {
 
     return ConvertArrayToList(allocations, numDeliveries);
   }
-  // METHOD SIGNATURE ENDS
 
   /// <summary>
   /// Convert to expected list type and limit upto count
