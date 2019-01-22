@@ -20,17 +20,17 @@
 *
 * rel   : uva / 231_TestingTheCatcher_lis_algo2_v*
 * Ack   : Jane Alam Jan, MAK
-* meta  : tag-dp-lis, tag-algo-dp, 
+* meta  : tag-dp-lis, tag-algo-dp, tag-leetcode-medium
 ***************************************************************************************************/
 public class Solution
 {
   List<int> lis;
   int n;
 
-  /*
-   * The heart of this Solution is this function that implements dynamic
-   * programming and uses Binary Search to update candidate sequence
-   */
+  /// <summary>
+  /// The heart of this Solution is this function that implements dynamic programming and uses
+  /// Binary Search to update candidate sequence
+  /// <param name="A">input array</param>
   public int LengthOfLIS(int[] A) {
     // Initialization
     n = A.Length;

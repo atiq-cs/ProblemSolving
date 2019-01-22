@@ -6,8 +6,7 @@
 * Comp  : O(N*M)
 * Status: Accepted
 * Notes : 
-* ref   : 
-* rel   : 
+* rel   : 'algo/Graph/02_DFS_AllPossiblePaths.cs'
 * meta  : tag-graph-dfs, tag-backtracking
 ***************************************************************************************************/
 public class Solution
@@ -27,13 +26,17 @@ public class Solution
 
     for (int i = 0; i < numRows; i++)
       for (int j = 0; j < numCols; j++)
-        if (DFS(i, j, 0))
+        if (DFS(i, j))
           return true;
     return false;
   }
 
-  // DFS without Visited list: what's this ?
-  private bool DFS(int r, int c, int index) {
+  /// <summary>
+  /// DFS without Visited list
+  /// Visited list below is only used to avoid visiting nodes in same path multiple times
+  /// more explanation: algo/Graph/02_DFS_AllPossiblePaths.cs
+  /// </summary>
+  private bool DFS(int r, int c, int index = 0) {
     if (r < 0 || c < 0 || r >= numRows || c >= numCols || visited[r][c] || board[r][c] !=
         word[index])
       return false;

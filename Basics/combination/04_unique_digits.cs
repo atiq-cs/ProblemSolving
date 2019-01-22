@@ -1,8 +1,7 @@
 /*
-* Problem   : Generate All Possible Combinations with k items from N items but no repeatation of same item
-* Author    : Atiq Rahman
-* Email     : atiqcs 'at' outlook 'dot' com
-* Date      : Nov 01, 2015
+* Problem   : Generate All Possible Combinations with k items from N items but no repeatation of
+*   same item
+* Date      : 2015-11-01
 * Desc      : Ensures that number won't contain same digit twice
 *             This is an incremental development based on
 *              Basics/combination_all_possible.cs

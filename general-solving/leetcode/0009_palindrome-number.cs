@@ -23,9 +23,9 @@ public class Solution
     while (n != 0) {
       int m = n % 10;   // modulus
       int r = n / mask;
-      if (m != r) {
+      if (m != r)
         return false;
-      }
+
       n -= r * mask;
       n /= 10;
       mask /= 100;

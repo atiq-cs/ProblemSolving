@@ -12,11 +12,11 @@
 *   - vertical
 *   - diagonally
 *   Similar max area of island
-* meta  : tag-easy, tag-dfs
+* meta  : tag-easy, tag-graph-dfs
 ***************************************************************************/
 using System;
 
-public class GraphDemo {
+public class Graph {
   private bool[][] grid;
   private int n;  // square: n = m
   private int forestSize;
@@ -27,6 +27,7 @@ public class GraphDemo {
     visited = new bool[n][];
     for (int i=0; i<n; i++)
       visited[i] = new bool[m];
+
     int count = 0;
     for (int i=0; i<n; i++)
       for (int j=0; j<n; j++) {
@@ -62,13 +63,13 @@ public class GraphDemo {
   }
 }
 
-public class HK_Solution {
+public class HKSolution {
   public static void Main() {
     int T = int.Parse(Console.ReadLine());
     while (T-- > 0) {
-      GraphDemo graph_demo = new GraphDemo();
-      graph_demo.TakeInput();
-      Console.WriteLine(graph_demo.CountDFSForests());
+      Graph demo = new Graph();
+      demo.TakeInput();
+      Console.WriteLine(demo.CountDFSForests());
     }
   }
 }

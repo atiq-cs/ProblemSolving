@@ -33,7 +33,7 @@ public class FortressIQ_Solution {
     // Our jagged array 'PathCount' is initialized by compiler to contain Zeros
     // We can explicitly initialize the array for readability if required.
 
-    // Each cell in first row with 1 without having obstactle after first cell
+    // Each cell in first row with 1 without having obstacle after first cell
     // has single path to reach it.
     for (int i=0; i<m && grid[0][i]==1; i++)
       PathCount[0][i] = 1;

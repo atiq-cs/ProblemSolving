@@ -2,12 +2,12 @@
 * Title       : Autori
 * URL         : https://open.kattis.com/problems/autori
 * Occasion    : Croatian Open Competition in Informatics 2009/2010, contest #4
-* Date        : Sept 29 2017
+* Date        : 2017-09-27
 * Complexity  : 
 * Author      : Atiq Rahman
 * Status      : Accepted
 * Notes       : easy
-* meta        : tag-kattis, tag-easy, tag-string
+* meta        : tag-oj-kattis, tag-easy, tag-string
 ***************************************************************************/
 using System;
 using System.Text;

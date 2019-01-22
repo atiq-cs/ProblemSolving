@@ -15,7 +15,7 @@
 *   sorting however required comparison is case insensitive. It also asks to
 *   exclude words from a given list.
 *   ref: 'general-solving/coding-tests/Amazon Autometa_DeepLearning_SDE2_1.cs'
-* meta  : tag-hash-table, tag-linq, tag-algo-sort
+* meta  : tag-hash-table, tag-chsarp-linq, tag-algo-sort
 ***************************************************************************/
 public class LeetcodeSolution {
   public IList<string> TopKFrequent(string[] words, int k) {

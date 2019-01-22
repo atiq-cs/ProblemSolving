@@ -1,10 +1,9 @@
 /*
 * Title   : Generate All Possible Combinations with k items from N items
-* Author  : Atiq Rahman
-* Date    : Nov 01, 2015
+* Date    : 2015-11-01
 * Notes   : includes all repeatations
 *           This is an incremental development
-*           started from Basics/combination_binary.cs
+*           started from 'Basics/combination/01_generate_binary_num.cs'
 * meta    : tag-combination, tag-recursion
 */
 using System;
@@ -12,6 +11,7 @@ using System;
 class CombinationBinary {
   // N = Length of inArray
   int[] inArray = { 1, 2, 3, 4 };
+
   public void comb(int[] A, int k) {
     if (k == A.Length)
       DisplayArray(A);
@@ -40,3 +40,40 @@ class Demo {
     com.comb(A, 0);
   }
 }
+
+
+/* Draft 2019-01
+find comb of k items from n
+
+comb (n, k) {
+  comb(n, k-1)
+  
+}
+
+
+000
+001
+010
+011
+100
+101
+110
+111
+
+do that recursively,
+
+00 -> 0
+00 -> 1
+
+GetBinary(0, 0)
+
+GetBinary(int n, int k) {
+  if (k == d) {
+    PrintNumber()
+  }
+  
+  GetBinary(n, k+1)
+  
+}
+ 
+*/

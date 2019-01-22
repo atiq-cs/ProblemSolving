@@ -7,7 +7,7 @@
 * Status: Accepted
 * Notes : if two pointers do not match then try considering removing character
 *   on left side. If that does not give valid pal try right side.
-* meta  : tag-two-pointers, tag-leetcode-medium, tag-palindrome
+* meta  : tag-two-pointers, tag-string-palindrome, tag-leetcode-medium
 ***************************************************************************/
 public class Solution {
   public bool ValidPalindrome(string s) {
@@ -23,7 +23,12 @@ public class Solution {
 
     for (; i<j; i++, j--) {
       if (s[i] != s[j])
-        return firstMismatch? false: IsValidPalindrome(s, i+1, j) ||
+        return firstMismatch? false:
+          // second mismatch found hence,
+          // skip i-th char, now rest should match from both sides
+          IsValidPalindrome(s, i+1, j) ||
+          // that did not match (trying from left did not work), hence, try from
+          // right skip j-th char, now rest should match from both sides
           IsValidPalindrome(s, i, j-1);
     }
     return true;
@@ -38,8 +43,8 @@ public class Solution {
       if (s[i] != s[j]) {
         if (firstMismatch)
           return false;
-        return (i+1<s.Length && IsValidPalindrome(s, i+1, j, true)) || (j>0 &&
-          IsValidPalindrome(s, i, j-1, true));
+        return (i+1<s.Length && IsValidPalindrome_v1(s, i+1, j, true)) || (j>0
+          && IsValidPalindrome_v1(s, i, j-1, true));
       }
     }
     return true;
@@ -58,14 +63,14 @@ delete left
 abcdadcbaa
 delete right
 
-valid palindrome code
+code to validate palindrome (trivial),
 
 for (int i=0, j=n-1; i<j; i++, j--)
   if (a[i] != a[j])
     return false;
     
-simplest solution would to count frequency on both side and count and find out
-if deletion of more than one char is required.
+simplest solution would be to count frequency on both side and count and find
+out if deletion of more than one char is required.
 
 public bool ValidPalindrome(string s) {
   int n = s.Length;

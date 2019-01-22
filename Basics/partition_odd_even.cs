@@ -37,19 +37,26 @@ public class Demo
 
       if (A[i] % 2 == 0 && k + 2 < A.Length) {
         k = k + 2;
-        Swap(A, i, k);
+        Swap<int>(A, i, k);   // utils.cs
       }
       else if (A[i] % 2 == 1 && j + 2 < A.Length) {
         j = j + 2;
-        Swap(A, i, j);
+        Swap<int>(A, i, j);
       }
     }
   }
 
-  static void Swap(int[] A, int i, int j) {
-    int tmp = A[i];
-    A[i] = A[j];
-    A[j] = tmp;
+  /// <summary>
+  /// This is from meetup 2018-02-08 where I wrote this, not tested
+  /// rel: http://collabedit.com/fk87m
+  /// </summary>
+  public void EvenOdd_v2(int[] A) {
+    for (int i = 0, j = A.Length - 1; i < j; i++) {
+      while (A[j] % 2 == 1 && i < j)
+        j--;
+      if (A[i] % 2 == 1)
+        Swap<int>(A, i, j);
+    }
   }
 
   public static void Main() {

@@ -14,9 +14,9 @@ public class LeetcodeUtils {
     rhs = tmp;
   }
 
-  // here's a version might seem more readable some times, tied to int type though
-  private void Swap(int[] A, int i, int j) {
-    int tmp = A[i];
+  // here's a version might seem readable some times
+  private void Swap<T>(T[] A, int i, int j) {
+    T tmp = A[i];
     A[i] = A[j];
     A[j] = tmp;
   }

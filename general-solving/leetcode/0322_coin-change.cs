@@ -8,7 +8,7 @@
 * Notes : My previous solution works to find of number of ways
 *   This problem asks for min number of coins
 *   
-*   To computer number of ways,
+*   To compute number of ways,
 *   we initially set that 0 can be made in 1 ways.
 *
 *   for (int i = 0; i < m; i++)
@@ -51,20 +51,22 @@
 ***************************************************************************************************/
 public class Solution {
   static int INF = int.MaxValue;
+
   // make amount n using m coins
   public int CoinChange(int[] coins, int n) {
     int m = coins.Length;
     int[] nc = new int[n+1];
     nc[0] = 0;
+
     for (int i=1; i<n+1; i++)
       nc[i] = INF;
 
     for (int i = 0; i < m; i++)
       // might be better than starting from 1
-      for (int j = coins[i]; j <= n; j++) {
-      if (j >= coins[i] && nc[j - coins[i]]!=INF && nc[j] > nc[j - coins[i]]+1)
-        nc[j] = nc[j - coins[i]]+1;
-      }
+      for (int j = coins[i]; j <= n; j++)
+        if (j >= coins[i] && nc[j - coins[i]] != INF && nc[j] > nc[j - coins[i]]+1)
+          nc[j] = nc[j - coins[i]]+1;
+
     return nc[n]==INF?-1:nc[n];
   }
 }

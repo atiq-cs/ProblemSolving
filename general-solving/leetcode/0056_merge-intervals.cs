@@ -16,26 +16,31 @@
 *   Cast IList to List ref: https://stackoverflow.com/q/2207341
 *   Demonstrates use of lambda expression with List.Sort
 * rel   : https://leetcode.com/problems/insert-interval
-* meta  : tag-string, tag-algo-kmp, tag-lambda-exp
+* meta  : tag-intervals, tag-algo-kmp, tag-csharp-lambda-exp
 ***************************************************************************/
 public class Solution
 {
+  /// <summary>
+  /// Template method to fill in to complete merge on intervals
+  /// <remarks>
+  /// related ref, Sort vs OrderBy: C# Sort and OrderBy comparison
+  ///  https://stackoverflow.com/q/1832684
+  /// </remarks>
+  /// </summary>
+  /// <param name="iIntervals"> Input intervals list to merge </param>
   public IList<Interval> Merge(IList<Interval> iIntervals) {
-    // Cast IList to List. Otherwise, Sort throws an exception.
+    // Construct a List from IList as IList does not have Sort
     List<Interval> intervals = new List<Interval>(iIntervals);
-    intervals.Sort((Interval a, Interval b) => {
-        if (a.start==b.start)
-          return a.end-b.end;
-        return a.start-b.start;
-      });
-    
+    intervals.Sort((Interval a, Interval b) =>
+        a.start == b.start? a.end - b.end : a.start-b.start);
+
     Interval previous = null;
     var result = new List<Interval>();
     foreach(var current in intervals) {
       if (previous != null) {
         if (previous.end < current.start)
           result.Add(previous);
-        // overlap found, heance, current interval is extending.
+        // overlap found, heance, current interval is extending
         else {
           current.start = Math.Min(previous.start, current.start);
           current.end = Math.Max(previous.end, current.end);
@@ -49,3 +54,11 @@ public class Solution
     return result;
   }
 }
+
+/* The lambda exp can be written as,
+  {
+    if (a.start==b.start)
+      return a.end-b.end;
+    return a.start-b.start;
+  }
+*/

@@ -14,8 +14,15 @@
 *    bac
 *    bca
 *    ...
-*   
+*    
+*    old draft notes,
+*    Generate binary numbers using recursive combination
+*    This is the basic of generating combination
+*    Apparently binary numbers can be efficiently generated using bitwise operations.
+*    
+*    For bitwise implementation have a look at ref.
 *   This is here for example, not exactly combination.
+* ref   : http://www.cs.utexas.edu/users/djimenez/utsa/cs3343/lecture25.html
 * meta  : tag-combination
 ***************************************************************************************************/
 using System;
@@ -42,7 +49,7 @@ public class NumberSystem {
       A[i] = 0;
       GenerateBinary(i + 1);
       A[i] = 1;
-      GenerateBinary(i+1);
+      GenerateBinary(i + 1);
     }
   }
 }
@@ -68,7 +75,7 @@ Output:
 110
 111
 
-2015-11 version passes an Array of spcified of length instead of passing limit,
+2015-11-01 version passes an Array of spcified of length instead of passing limit,
 
   public void comb(int[] A, int k) {
     if (k == A.Length) {

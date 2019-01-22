@@ -7,7 +7,7 @@
 * Status: Accepted
 * Notes : Based on 'uva-online-judge/231_TestingTheCatcher_lis_algo1.cpp'
 * ref   : https://wcipeg.com/wiki/Longest_increasing_subsequence
-* meta  : tag-dp-lis, tag-algo-dp
+* meta  : tag-dp-lis, tag-algo-dp, tag-leetcode-medium
 ***************************************************************************************************/
 public class Solution
 {

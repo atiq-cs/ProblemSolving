@@ -17,7 +17,7 @@
 *   Hence, this approach works better than generating adjacency using word list
 * ref   : https://leetcode.com/problems/word-ladder/discuss/40717/
 *   Another-accepted-Java-solution-(BFS)
-* meta  : tag-bfs, tag-leetcode-medium, tag-graph, tag-company-imo-im
+* meta  : tag-graph-bfs, tag-company-imo-im, tag-leetcode-medium
 ***************************************************************************/
 public class Solution {
   public int LadderLength(string beginWord, string endWord, IList<string> wordList) {
@@ -35,8 +35,11 @@ public class Solution {
           queue.Enqueue(null);
         continue;
       }
+
       // TLE if this is not checked here
-      if (VisitedSet.Contains(u)) continue;
+      if (VisitedSet.Contains(u))
+        continue;
+
       VisitedSet.Add(u);
 
       // slight optimization here, instead of generating everytime, convert
@@ -50,8 +53,10 @@ public class Solution {
           chars[i] = old;
           if (wordSet.Contains(v) == false)
             continue;
+
           if (v == endWord)
             return level + 1;
+
           if (VisitedSet.Contains(v) == false)
             queue.Enqueue(v);
         }

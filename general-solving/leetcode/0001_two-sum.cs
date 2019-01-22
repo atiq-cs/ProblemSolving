@@ -5,23 +5,25 @@
 * Comp  : O(N) Time and Space
 * Author: Atiq Rahman
 * Status: Accepted
-* Notes : hashset is a better data structure for set operations as we don't require set operations
-*   we use dictionary
-*  Probably input numbers are distinct. In that case, we can use a HashSet instead of Dictionary
+* Notes : HashSet is a better data structure for set operations. If we don't require set operations
+*   we use dictionary for mapping.
+*  Probably input numbers are distinct. In that case, we could use a HashSet instead of Dictionary
+*  if it didn't require us to return pair of indices.
 * ref   : https://leetcode.com/articles/two-sum/
-* meta  : tag-hashtable, tag-leetcode-easy
+* meta  : tag-ds-hashtable, tag-company-microsoft, tag-leetcode-easy
 ***************************************************************************************************/
 public class Solution {
-  // second version after Microsoft Interview 2018-05-21, similar to last one
-  // in above article; does it in single loop
-  // Use TryGetValue to reduce number of lookups
+  /// <summary>
+  /// Second version after Microsoft Interview 2018-05-21, similar to last one in above article;
+  /// does it in single loop; we can use TryGetValue to reduce number of lookups
+  /// </summary>
   public int[] TwoSum(int[] nums, int sum)
   {
     var numDict = new Dictionary<int, int>();
     for (int i = 0; i < nums.Length; i++) {
       if (numDict.ContainsKey(sum - nums[i]))
         return new int[] { i, numDict[sum - nums[i]] };
-      // numbers in nums can be duplicate
+      // numbers in input array can be duplicate
       if (numDict.ContainsKey(nums[i]) == false)
         numDict.Add(nums[i], i);
     }

@@ -15,13 +15,24 @@
 public class Solution
 {
   public bool HasPathSum(TreeNode root, int sum, int curSum = 0) {
+    // non-null node
     if (root != null) {
       curSum += root.val;
-      if (root.left == null && root.right == null && curSum == sum)
+      // 1. leaf nodes
+      // 2. is the sum found in left side or right side?
+      if (root.left == null && root.right == null && curSum == sum || HasPathSum(root.left, sum,
+  curSum) || HasPathSum(root.right, sum, curSum))
         return true;
-      if (HasPathSum(root.left, sum, curSum) || HasPathSum(root.right, sum, curSum))
-        return true;
+
     }
     return false;   
   }
 }
+
+/* May be more readable form,
+
+    if (root.left == null && root.right == null && curSum == sum)
+      return true;
+    if (HasPathSum(root.left, sum, curSum) || HasPathSum(root.right, sum, curSum))
+      return true;
+*/

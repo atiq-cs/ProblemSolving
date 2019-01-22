@@ -12,7 +12,7 @@
 *   if we had a limit on another property such as weight we would need more
 *   space i.e., O(nk)
 * ref   : C.L.R.S 3rd ed. p427
-* meta  : tag-medium, tag-algo-dp, tag-knapsack
+* meta  : tag-medium, tag-algo-dp, tag-dp-knapsack
 ***************************************************************************/
 using System;
 
@@ -25,7 +25,10 @@ public class KnapsackUtil {
       for (int w = 1; w <= T; w++)
         if (dp[w] == false && w-value>=0 && dp[w - value]) {
           dp[w] = true;
-          if (w == T) return T;
+
+          if (w == T)
+            return T;
+
           max = Math.Max(max, w);
         }
     return max;

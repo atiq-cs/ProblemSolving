@@ -20,9 +20,16 @@
 *
 *    adding chars, combining as string
 *    https://stackoverflow.com/q/1324009/
-* meta  : tag-algo-dp, tag-leetcode-medium, tag-string-palindrome, tag-two-pointers
+* meta  : tag-algo-dp, tag-string-palindrome, tag-two-pointers, tag-leetcode-medium
 ***************************************************************************/
 public class Solution {
+  /// <summary>
+  /// Compute Array P using Manacher's Algorithm
+  /// <remarks>
+  /// Linear algo.
+  /// </remarks>
+  /// </summary>
+  /// <param name="s">input string in which to find the palindrome</param>
   public string LongestPalindrome(string s) {
     string T = AddPoundsToString(s);
 
@@ -37,6 +44,7 @@ public class Solution {
         // Update P[i] based on previous values
         P[i] = Math.Min(P[iPrime], R-i);
       // Possibly extend current palindrome
+      // check the bound and check equality on both sides
       while (i-(1+P[i])>=0 && i+(1+P[i])<T.Length &&
         T[i+(1+P[i])] == T[i-(1+P[i])])
         P[i]++;
@@ -48,16 +56,17 @@ public class Solution {
       }
     }
     
-    int mIndex = 0;
+    // This would be an one-liner if we use linq? Can linq give us index though?
+    int maxIndex = 0;
     for(int i=1; i<P.Length; i++) {
       Console.WriteLine(P[i]);
-      if (P[i] > P[mIndex])
-        mIndex = i;
+      if (P[i] > P[maxIndex])
+        maxIndex = i;
     }
-    return s.Substring((mIndex-P[mIndex])/2, P[mIndex]);
+    return s.Substring((maxIndex-P[maxIndex])/2, P[maxIndex]);
   }
 
-  // Adds specified symbol to provided to string
+  // Adds specified symbol to provided string
   private string AddPoundsToString(string s) {
     const char intervalSign = '#';
     StringBuilder sb = new StringBuilder(new string(new char[] { intervalSign }));

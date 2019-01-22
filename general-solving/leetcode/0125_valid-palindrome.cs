@@ -6,7 +6,7 @@
 * Comp  : O(n)
 * Status: Accepted
 * Notes : Compare characters from two sides, omits garbage chars, ignores cases
-* meta  : tag-two-pointers, tag-leetcode-medium, tag-palindrome
+* meta  : tag-two-pointers, tag-string-palindrome, tag-leetcode-medium
 ***************************************************************************/
 public class Solution
 {

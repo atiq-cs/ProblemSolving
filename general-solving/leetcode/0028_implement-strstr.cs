@@ -5,8 +5,8 @@
 * Author: Atiq Rahman
 * Comp  : O(n+m)
 * Status: Accepted
-* Notes : 
-* meta  : tag-string, tag-kmp
+* Notes : Also solved in meetup 2018-02-08 (http://collabedit.com/fk87m)
+* meta  : tag-string, tag-kmp, tag-leetcode-easy
 ***************************************************************************/
 public class Solution {
   // KMP is at 'algo/string/KMP-String-Matcher.cs' 

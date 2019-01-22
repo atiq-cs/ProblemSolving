@@ -63,6 +63,14 @@ class SubseqAlgoDemo<T> {
     return lcs.ToArray();
   }
 
+  /// <summary>
+  /// Recursively Generate the LCS from previous computation
+  /// <remarks>
+  /// Stores result in List lcs
+  /// </remarks>
+  /// </summary>
+  /// <param name="i">index in sequence 1</param>
+  /// <param name="j">index in sequence 2</param>
   private void PrintLCS(int i, int j) {
     if (i==0 || j==0)
       return;

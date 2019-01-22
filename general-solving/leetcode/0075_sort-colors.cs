@@ -8,7 +8,7 @@
 * Notes : Example is better than precept!
 *   Input: [2,0,2,1,1,0]
 *   Output: [0,0,1,1,2,2]
-*   
+*
 *   Simplest approach feels like moving the Zeros to the beginning and moving Twos to the end.
 *   However, there are cases such as,
 *   - after finding 0 and swapping it with a 2, now 2 has to be taken care of
@@ -21,6 +21,8 @@
 *   There is a special case when i is at index 'end' which is the index right after which Twos
 *   start. It's weird that nums[end] equals to 2 in some case or in last iteration of i.
 *   ToDo: investiage what's going on..
+*   
+*   Value of iterator i is adjusted to maintain loop invariant
 *
 * meta  : tag-algo-sort, tag-leetcode-medium
 ***************************************************************************************************/

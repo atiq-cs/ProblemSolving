@@ -28,7 +28,7 @@ public class Solution {
     return -1;
   }
 
-  // another version based on above: bound checks noticeable
+  // another version based on first version, bound checks required in this one
   public int PivotIndex(int[] nums) {
     for (int i = 0, left = nums.Length == 0 ? 0 : nums[i], right = nums.Sum();
       i < nums.Length; i++, left += i < nums.Length ? nums[i] : 0)

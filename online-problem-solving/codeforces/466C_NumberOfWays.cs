@@ -19,10 +19,10 @@
 *    [0...i] [i+1...j-1] [j...n-1]
 *    
 *   We ensure that j >= i + 2 to ensure a second chunk with size 1 or more.
-*    
+*
 *   I easily understood how I can find the indices for prefix sum matches and for suffix sum
 *   matches. However, how I can get the count for total matches on the right side (suffix) for each
-*   index i, wasn't clear to me. Briefly irst chunk ends at i and we get total count for matches on
+*   index i, wasn't clear to me. Briefly first chunk ends at i and we get total count for matches on
 *   right side. We can easily get total count for splits on right side (using suffix matches) for
 *   2nd and 3rd chunk. see, ack for this part.
 *   
@@ -42,6 +42,8 @@
 *   Hence, decided to use List instead of two boolean arrays for prefix sum and suffix sum.
 *   Instead of using two boolean arrays for indicating prefix sum match and suffix sum match we use
 *   Lists to save space.
+*   
+*   Warning: too optimized, some part of the code might feel unreadable
 * ref   : Editorial of the round, http://codeforces.com/blog/entry/13758, submission#45495771
 *         ebanner's blog, https://codeforces.com/blog/entry/48079
 * Ack   : Md Abdul Kader (Sreezin)
@@ -63,7 +65,9 @@ public class LinearSplit {
       A[i] = int.Parse(tokens[i]);
   }
 
-  // Get S/3 if possible, mark as not possible otherwise
+  /// <summary>
+  /// return false if it is not possible to do 3 partitions. Calculate targetSum which is S/3.
+  /// </summary>
   bool CanGetSplitSum() {
     long sum = 0;
     foreach (var num in A)
@@ -89,7 +93,8 @@ public class LinearSplit {
       if (prefixSum == targetSum)
         prefixSumMatchIndices.Add(i);
 
-      if (i < A.Length - 1 && prefixSum == 2 * targetSum)   // else if wont work if both prefix and suffic sum are 0
+      // 'else if' won't work here if both prefix and suffic sum are 0
+      if (i < A.Length - 1 && prefixSum == 2 * targetSum)
         suffixSumMatchIndices.Add(i + 1);
     }
 
@@ -101,18 +106,24 @@ public class LinearSplit {
     // use two pointers to find count: number of ways
     foreach (var pi in prefixSumMatchIndices) {  // pi = item in prefix match list
       for (; sii < suffixSumMatchIndices.Count && pi + 1 >= suffixSumMatchIndices[sii]; sii++) ;
+
+      // early termination if there's no more suffix match
       if (sii == suffixSumMatchIndices.Count)
         break;
-      int si = suffixSumMatchIndices[sii];
+      // we ensured si is after pi so that middle block has at least size 1
+      // we had following unused line,
+      //  int si = suffixSumMatchIndices[sii];
       count += suffixSumMatchIndices.Count - sii;
     }
 
     return count;
   }
 
-  // first version (2017-09-12): this brute-force implementation was probably correct however
-  // inefficient does not take advantage of S/3 or the fact that first chunk starts from index 0
-  // and last chunk ends in last index
+  /// <summary>
+  /// first version (2017-09-12): this brute-force implementation was probably correct however
+  /// inefficient does not take advantage of S/3 or the fact that first chunk starts from index 0
+  /// and last chunk ends in last index
+  /// </summary>
   public int GetNumWays_v1() {
     int n = A.Length;
     int count = 0;

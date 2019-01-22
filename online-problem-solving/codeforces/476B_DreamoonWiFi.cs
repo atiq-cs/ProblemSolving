@@ -12,7 +12,7 @@
 *   currentculture.aspx
 *   https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-
 *   numeric-format-strings
-* meta  : tag-combinatorics, tag-math, tag-bit-manip, tag-probability tag-easy
+* meta  : tag-combinatorics, tag-math, tag-bit-manip, tag-probability, tag-easy
 ***************************************************************************************************/
 using System;
 using System.Globalization;
@@ -85,7 +85,7 @@ public class CFSolution {
 
 /*
 No '?'
-count p0n
+count p - n
 where p is number of '+' and n is number of '-'
 
 single '?' sign?
@@ -132,7 +132,7 @@ Sample inputs,
 ++++++++++
 +++??++?++
 
-Combination recursive funciton draft,
+Combination recursive function draft,
 initially I started with,
   void comb_rec(int n, int r)
   it looks like n is not required. only r suffices.

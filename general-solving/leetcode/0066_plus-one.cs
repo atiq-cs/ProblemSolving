@@ -11,7 +11,7 @@
 *
 *   terminate early if there's no carry
 *   demonstrates Array.Copy
-* meta  : tag-leetcode-easy, tag-string
+* meta  : tag-string, tag-leetcode-easy
 ***************************************************************************/
 using System;
 
@@ -51,5 +51,26 @@ public class Solution {
     for (int i=0; i<source.Length; i++)
       digits[i+1] = source[i];
     return digits;
+  }
+
+  /// <summary>
+  /// This is from meetup 2018-02-08 where I wrote this, tested?
+  /// rel: http://collabedit.com/fk87m
+  /// </summary>
+  public List<int> AddOne(List<int> nums) {
+    int c = 1;
+    for (int i = nums.Count - 1; i >= 0 && c > 0; i--) {
+      int r = nums[i] + c;
+      if (r >= 10) {
+        r -= 10;
+        c = 1;
+      }
+      else
+        c = 0;
+      nums[i] = r;
+    }
+    if (c > 0)
+      nums.Insert(0, c);
+    return nums;
   }
 }

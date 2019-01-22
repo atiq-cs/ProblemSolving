@@ -17,25 +17,19 @@
 *   
 *   For most optimized solution we would need additional O(N) space to maintain
 *   the mapping
-* meta  : tag-algo-sort, tag-leetcode-easy, tag-lambda-exp, tag-hash-table, tag-company-amazon,
-*   tag-coding-test
+* meta  : tag-algo-sort, tag-lambda-exp, tag-hash-table, tag-company-amazon,
+*   tag-coding-test, tag-leetcode-easy
 ***************************************************************************/
-
-// Borrowed and modified from 'demos/algo/sort/CountingSort.cs'
-class Item {
-  public int priority { get; set; }   // or can be named 'key'
-  public char ch { get; set; }
-  public Item(int n, char ch) { priority = n; this.ch = ch; }
-}
 
 public class Solution {
   // O(n lg n), O(1) unless sorting function requires something
-  public string FrequencySort(string s) {
+  public string FrequencySort_v2(string s) {
     int[] freq = new int['z'-' '+1];
     char[] chars = s.ToArray();
     foreach ( char ch in chars)
       freq[ch-' ']++;
-    /* return freq[b-' '] - freq[a-' '];
+    /* Inside the lambda function,
+       return freq[b-' '] - freq[a-' '];
 
      if we don't handle cases where frequencies are equal,
      for input, "loveleetcode"
@@ -43,15 +37,20 @@ public class Solution {
 
      Therefore, when frequencies are equal we wanna print them together. */
     Array.Sort(chars, (a, b) => {
-      if (freq[a-' '] == freq[b-' '])
-        return a-b;
-      return freq[b-' '] - freq[a-' '];
+      return freq[a - ' '] == freq[b - ' ']? a - b : freq[b-' '] - freq[a-' '];
     });
     return new String(chars);
   }
 
+  // Borrowed and modified from 'demos/algo/sort/CountingSort.cs'
+  internal class Item {
+    public int priority { get; set; }   // or can be named 'key'
+    public char ch { get; set; }
+    public Item(int n, char ch) { priority = n; this.ch = ch; }
+  }
+
   // O(N), O(N)
-  public string FrequencySort(string s) {
+  public string FrequencySort_v1(string s) {
     int[] freq = new int['z'-' '+1];
     char[] chars = s.ToArray();
     /* maxFreq is required if we do counting sort
