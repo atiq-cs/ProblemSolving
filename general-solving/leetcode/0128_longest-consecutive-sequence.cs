@@ -10,9 +10,11 @@
 ***************************************************************************************************/
 public class Solution {
   /// <summary>
-  /// DP Algorithm to find LCS Length based on the fact that checking only smallest number and
-  /// looking for its consecutive suffices.
-  /// Because we push all numbers into the hashset in the beginning this technique works
+  /// DP Algorithm to find LCS Length: check finding sequence length starting with each smallest
+  /// number in the sequence.
+  /// 
+  /// We push all numbers into the hashset in the beginning; hence, we can ignore the number which
+  /// are not in input set and check if next number does exist as well.
   /// <remarks>
   /// Readability, we could write the inner loop like this,
   ///   int j = num;
@@ -21,7 +23,7 @@ public class Solution {
   /// </remarks>
   /// </summary>
   /// <param name="nums">input array </param>
-  public int LongestConsecutive_v1(int[] nums) {
+  public int LongestConsecutive(int[] nums) {
     var numSet = new HashSet<int>(nums);
     int LCSLength = 0;
 

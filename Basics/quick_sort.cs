@@ -1,10 +1,8 @@
 /***************************************************************************
 * Title : Quick Sort
-* URL   : C.L.R Chapter 7
-* Date  : Nov 1, 2017
-* Author: Atiq Rahman
+* URL   : C.L.R.S Chapter 7
+* Date  : 2017-11-01
 * Comp  : O(n), space O(1)
-*
 * Status: Accepted
 * Notes : Contains,
 *   QuickSort
@@ -25,7 +23,7 @@ class QuickSort {
     }
   }
 
-  // improvement 1 on worst case - Randomized-Partition simplified as per C.L.R
+  // improvement 1 on worst case - Randomized-Partition simplified as per C.L.R.S
   // page 179
   private int RandomizedPartition(int[] A, int p, int r) {
     int i = Random();
@@ -35,7 +33,7 @@ class QuickSort {
 
   // simple quick sort partition - C.L.R page 171
   private int Partition(int[] A, int p, int r) {
-    int i = -1;
+    int i = p-1;
     int x = A[r];
     for (int j=0; j<r; j++) {
       /*
@@ -49,6 +47,18 @@ class QuickSort {
     }
     Swap(ref A[i + 1], ref A[r]);
     return i + 1;
+  }
+
+  // Recently rewritten, durng dropbox prep
+  private int Partition(int[] A, int p, int r) {
+    int x = A[r];    // pivot    
+    int i = p - 1;
+    for (int j = p; j < r; j++)
+      if (A[j] <= x)
+        Swap<int>(A, ++i, j);
+    Swap<int>(A, ++i, r);
+
+    return i;
   }
 
   // Utility Functions

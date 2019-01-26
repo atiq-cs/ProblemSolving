@@ -2,7 +2,7 @@
 * Title : House Robber II
 * URL   : https://leetcode.com/problems/house-robber-ii
 * Date  : 2017-09-18
-* Comp  : O(n) Time, O(n) space
+* Comp  : O(n), O(n)
 * Author: Atiq Rahman
 * Status: Accepted
 * Notes : Same to previous problem with a new arranement as stated,
@@ -17,15 +17,13 @@
 ***************************************************************************************************/
 public class Solution {
   public int Rob(int[] nums) {
-    if (nums.Length == 0)
-      return 0;
-    // if there's single element then include the whole range
-    if (nums.Length == 1)
-      return Rob(nums, 0, nums.Length);
-    return Math.Max(Rob(nums, 1, nums.Length), Rob(nums, 0, nums.Length-1));
+    return Math.Max(Rob(nums, 1, nums.Length), Rob(nums, 0, nums.Length == 1 ?
+      nums.Length : nums.Length - 1));
   }
-  /* won't work if r<p ToDo: add a check */
+
   public int Rob(int[] nums, int p, int r) {
+    if (p >= r)
+      return 0;
     int n = r - p;
     int[] maxP = new int[n];
     if (n > 0)
@@ -35,6 +33,25 @@ public class Solution {
     
     for (int i = 2; i<n; i++)
       maxP[i] = Math.Max(maxP[i-2]+nums[p+i], maxP[i-1]);
-    return n<1?0:maxP[n-1];      
+    return maxP[n-1];
   }
 }
+
+/* Previously written as,
+
+  if (nums.Length == 0)
+    return 0;
+  if there's single element then include the whole range
+  if (nums.Length == 1)
+    return Rob(nums, 0, nums.Length);
+  return Math.Max(Rob(nums, 1, nums.Length), Rob(nums, 0, nums.Length-1));
+
+And this condition in recursive Rob method was excluded,
+
+  if (p >= r)
+    return 0;
+
+After adding that condition, this has been obviated,
+
+  return n<1?0:maxP[n-1];
+*/

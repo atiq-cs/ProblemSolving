@@ -44,6 +44,6 @@ max(5, 1+2) = 5
 max from robbing first houses 4,
 7 + max of first 2
 
-max profit from n
-p[n-1] = max(h[n-1] + p[n-3], p[n-2])
+max profit from house i, can be represented as recurrence location,
+p[i-1] = max(h[i-1] + p[i-3], p[i-2])
 */
