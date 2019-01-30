@@ -1,13 +1,13 @@
 /***************************************************************************************************
 * Title : Number of Islands
 * URL   : https://leetcode.com/problems/number-of-islands
-* Date  : 2018-07 (Den Meetup)
-* Author: Atiq Rahman
+* Date  : 2018-07 (Den Meetup), review 229 Polaris Ave, Mtn View
 * Comp  : O(nm), O(1)
 * Status: Accepted
-* Notes : 
+* Notes : O(1) by modifying original input 2d array
 * rel   : 'leetcode/0695_max-area-of-island.cs'
-* meta  : tag-dfs, tag-graph, tag-leetcode-medium
+*   https://gist.github.com/atiq-cs/1dc6ca38e523656d64e2e7bd2a192195 (229 Polaris Ave)
+* meta  : tag-graph-dfs, tag-leetcode-medium
 ***************************************************************************************************/
 public class Solution {
   private int numRows, numCols;

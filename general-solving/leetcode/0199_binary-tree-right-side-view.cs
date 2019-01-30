@@ -1,14 +1,37 @@
 /***************************************************************************************************
 * Title : Binary Tree Right Side View
 * URL   : https://leetcode.com/problems/binary-tree-right-side-view/
-* Date  : 2015-08-05
-* Comp  : O(n)
-* Author: Atiq Rahman
-* Status: Accepted (Runtime beats 86.54% C# submissions)
-* Notes : 
+* Date  : 2019-01-29
+* Occasn: leetcode meetup 229 Polaris Ave, Mtn View
+* Comp  : O(n), O(lg n)
+* Status: Accepted
+* Notes : Just visiting right nodes won't work since we have to print the right most one from left
+*   nodes when a right subtree does not exist!
 * rel   : http://www.geeksforgeeks.org/print-right-view-binary-tree-2/
-* meta  : tag-binary-tree, tag-recursion, tag-leetcode-medium,
+* meta  : tag-ds-binary-tree, tag-recursion, tag-leetcode-medium
 ***************************************************************************************************/
+public class Solution {
+  IList<int> nodeList = null;
+
+  public IList<int> RightSideView(TreeNode root) {
+    nodeList = new List<int>();
+    FindRight(root);
+    return nodeList;
+  }
+
+  private void FindRight(TreeNode root, int depth = 0) {
+    if (root == null)
+      return;
+
+    if (nodeList.Count == depth)
+      nodeList.Add(root.val);
+
+    FindRight(root.right, depth + 1);
+    FindRight(root.left, depth + 1);
+  }
+}
+
+// v1 2015-08-05
 public class Solution
 {
   List<int> nums;
