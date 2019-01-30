@@ -3,9 +3,9 @@
 * URL   : https://leetcode.com/problems/remove-duplicates-from-sorted-list
 * Date  : 2018-01
 * Author: Atiq Rahman
-* Comp  : O(n) where n = number of nodes in the list
+* Comp  : O(n) where n = number of nodes in the list, O(1)
 * Status: Accepted
-* Notes : Maintain a previous till which no duplication happened
+* Notes : Use a previous pointer to track till which no duplication happened
 * meta  : tag-linked-list, tag-leetcode-easy
 ***************************************************************************/
 public class Solution {
@@ -13,13 +13,13 @@ public class Solution {
     ListNode current = head;
     ListNode previous = null;
 
-    while (current != null) {
+    while (current != null)
       if (previous != null && previous.val == current.val)
         previous.next = current.next;
       else
         previous = current;
       current = current.next;
-    }
+
     return head;
   }
 }

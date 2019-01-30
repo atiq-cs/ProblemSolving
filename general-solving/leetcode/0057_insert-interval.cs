@@ -7,9 +7,9 @@
 * Status: Accepted
 * Notes : Given that input intervals are in sorted order of start time
 *   3 cases to consider,
-*   - current iteration interval ends before new interval
-*   - current iteration interval starts after new interval
-*   - intervals overlap
+*   - no overlap: current iteration interval ends before new interval
+*   - overlap: new interval falls inside inside current interval
+*   - interval overlaps without completely falling in inside
 *   
 *   In 2nd case, we add both intervals
 *   In 3rd we only update the new Interval
@@ -22,17 +22,22 @@
 ***************************************************************************/
 using System.Collections.Generic;
 
-public class Solution {
+public class Solution
+{
   public IList<Interval> Insert(IList<Interval> intervals, Interval newInterval) {
     IList<Interval> result = new List<Interval>();
-    foreach(Interval interval in intervals) {
+
+    foreach(var interval in intervals) {
+      // case 1
       if (newInterval == null || interval.end < newInterval.start)
         result.Add(interval);
+      // new interval is falling inside the current
       else if (interval.start > newInterval.end) {
         result.Add(newInterval);
         result.Add(interval);
         newInterval = null;
       }
+      // not falling inside but overlap
       else {
         newInterval.start = Math.Min(interval.start, newInterval.start);
         newInterval.end = Math.Max(interval.end, newInterval.end);

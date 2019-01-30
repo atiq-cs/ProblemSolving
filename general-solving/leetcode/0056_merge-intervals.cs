@@ -5,9 +5,8 @@
 * Author: Atiq Rahman
 * Comp  : O(n lg n), O(n)
 * Status: Accepted
-* Notes : Similar to insert interval problem. Less conditional logic because
-*   whole thing is in sorted order whereas in the prior problem the new
-*   interval could be any where (before, after, inside/overlapping).
+* Notes : Similar to insert interval problem. In that problem we are given intervals in sorted order
+*   In that problem the new interval could be any where (before, after, inside/overlapping).
 *   Because of the sorting, in this problem all newly appearing intervals are
 *   either overlapping or not.
 *   
