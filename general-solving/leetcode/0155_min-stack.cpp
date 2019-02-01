@@ -2,12 +2,11 @@
 * Title : Min Stack
 * URL   : https://leetcode.com/problems/min-stack/
 * Date  : 2015-01-05
-* Comp  : 
-* Author: Atiq Rahman
+* Comp  : O(1)
 * Status: Accepted
 * Notes : Design a stack that supports push, pop, top, and retrieving
 *   the minimum element in constant time.
-* meta  : tag-data-structure, tag-stack, tag-leetcode-easy
+* meta  : tag-ds-stack, tag-leetcode-easy
 ***************************************************************************************************/
 #include <stack>
 
