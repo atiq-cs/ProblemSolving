@@ -7,7 +7,7 @@
 * Status: Accepted
 * Notes : Modified Kadane algorithm, utilized currentMin to handle product for negative numbers
 * ref   : leetcode.com/problems/maximum-product-subarray/discuss/225026/C%2B%2B-O(n)-time-99.16
-* meta  : tag-algo-dp, tag-leetcode-medium
+* meta  : tag-algo-dp, tag-dp-kadane, tag-leetcode-medium
 ***************************************************************************************************/
 public class Solution
 {
