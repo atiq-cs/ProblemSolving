@@ -33,7 +33,7 @@ public class Solution
       if (numWays.ContainsKey(sum))    
         numWays[sum]++;
       else
-        numWays[sum] = 1;
+        numWays[sum] = 1;   // msdn: set operation creates a new element with the specified key
     }
     return result;
   }
@@ -182,6 +182,8 @@ i=0
 
 Finally, figured out that I missed the parentheses around conditional operator statement
   dict[sum] = dict.ContainsKey(sum)?dict[sum]:0 + 1;
+
+It looks innocent but it makes huge difference
 
 Special input,
 [0,0,0,0,0,0,0,0,0,0]

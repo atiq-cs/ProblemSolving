@@ -2,7 +2,6 @@
 * Title : Algorithm as utility for Longest Common Subsequence Problems
 * URL   : C.L.R.S p394
 * Date  : 2018-06-04
-* Author: Atiq Rahman
 * Comp  : O(m*n), O(m*n)
 * Notes : tested with a few hackerrank problems
 *   ToDo: space complexity can be reduced further, optimize further

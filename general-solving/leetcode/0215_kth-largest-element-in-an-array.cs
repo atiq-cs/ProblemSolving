@@ -13,7 +13,7 @@
 * meta  : tag-order-stats, tag-heap, tag-divide-conquer, tag-company-dremio
 ***************************************************************************/
 public class Solution {
-  // RandomizedSelet is at 'demos/algo/OrderStat.cs'
+  // RandomizedSelet is at 'algo/OrderStat.cs'
   public int FindKthLargest(int[] nums, int k) {
     A = nums;
     shouldGetIndex = false;

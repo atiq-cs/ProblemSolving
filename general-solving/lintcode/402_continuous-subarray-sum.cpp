@@ -43,7 +43,7 @@ public:
         max_index = i;
       }
     }
-    return{ final_min_index, max_index };
+    return { final_min_index, max_index };
   }
 
   vector<int> continuousSubarraySum(vector<int>& A) {

@@ -2,11 +2,16 @@
 * Title : Majority Element
 * URL   : https://leetcode.com/problems/majority-element/
 * Date  : 2015-10-17
-* Comp  : O(n) Time, Constant space
-* Author: Atiq Rahman
+* Comp  : O(n), O(1)
 * Status: Accepted
-* Notes : Detail Notes on the algorithm:
+* Notes : A majority element appears more than floor (n/2) times.
+*   Q: Multiple majority elements?
+*    may be return most frequent one? In case of tie may be return just one of them?
 * Moore's voting algorithm
+* 
+*   Please note that we don't need to maintain correct count since we only need to track the
+*   majority element; not the count.
+* 
 * This is an algorithm with O(n) time and contant space complexity
 * To find a majority element provided that it exists it needs one pass
 * However, if not provided then the algorithm can figure it out in another pass

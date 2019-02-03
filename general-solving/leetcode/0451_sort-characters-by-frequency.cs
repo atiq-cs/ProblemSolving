@@ -3,7 +3,7 @@
 * URL   : https://leetcode.com/problems/sort-characters-by-frequency
 * Date  : 2018-06-07
 * Author: Atiq Rahman
-* Comp  : O(n), O(N)
+* Comp  : O(n), O(n)
 * Status: Accepted
 * Notes : Given data is unsorted.
 *   if input was only chars (lower and upper)
@@ -22,12 +22,25 @@
 ***************************************************************************/
 
 public class Solution {
-  // O(n lg n), O(1) unless sorting function requires something
+  // O(n lg n), O(1) unless sorting function requires something, this is a shorter version
   public string FrequencySort_v2(string s) {
-    int[] freq = new int['z'-' '+1];
+    var chars = s.ToCharArray();
+    var freq = new int['z' - ' ' + 1];
+
+    foreach (var ch in s)
+      freq[ch - ' ']++;
+
+    Array.Sort(chars, (a, b) => freq[a - ' '] == freq[b - ' '] ? a - b : freq[b - ' '] -
+      freq[a - ' ']);
+    return new string(chars);
+  }
+
+  // previous v2
+  public string FrequencySort_v2(string s) {
+    int[] freq = new int['z' - ' ' + 1];
     char[] chars = s.ToArray();
-    foreach ( char ch in chars)
-      freq[ch-' ']++;
+    foreach (char ch in chars)
+      freq[ch - ' ']++;
     /* Inside the lambda function,
        return freq[b-' '] - freq[a-' '];
 
@@ -37,7 +50,7 @@ public class Solution {
 
      Therefore, when frequencies are equal we wanna print them together. */
     Array.Sort(chars, (a, b) => {
-      return freq[a - ' '] == freq[b - ' ']? a - b : freq[b-' '] - freq[a-' '];
+      return freq[a - ' '] == freq[b - ' ']? a - b : freq[b - ' '] - freq[a - ' '];
     });
     return new String(chars);
   }

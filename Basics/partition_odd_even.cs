@@ -21,6 +21,10 @@ using System;
 
 public class Demo
 {
+  /// <summary>
+  /// We should be able to do it in much simpler way like Sort Color leetcode problem
+  /// </summary>
+  /// <param name="A"></param>
   static void OddEvenSort(int[] A) {
     int j = -2; // odd pointer
     int k = -1; // even pointer

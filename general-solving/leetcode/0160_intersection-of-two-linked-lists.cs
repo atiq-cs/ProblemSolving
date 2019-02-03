@@ -2,7 +2,7 @@
 * Title : Intersection of Two Linked Lists
 * URL   : https://leetcode.com/problems/intersection-of-two-linked-lists
 * Date  : 2018-02-19
-* Comp  : O(n), O(1)
+* Comp  : O(n+m), O(1)
 * Status: Accepted
 * Notes : Iterate through each of nodes in both linked lists
  *   if one of them becomes null advance the head of the other linked list so
@@ -11,9 +11,9 @@
  *   
  *   When both of them restarts iterating from equal length just check where
  *   they match.
- 
+ *   more desc, check comment in code block
  *   Ack: Aaron (JS meetup)
-* meta  : tag-linked-list, tag-hash-table, tag-leetcode-easy
+* meta  : tag-ds-linked-list, tag-ds-hash-table, tag-leetcode-easy
 ***************************************************************************/
 public class Solution
 {
@@ -22,7 +22,9 @@ public class Solution
     ListNode curB = headB;
 
     while (curA != curB) {
-      /* one of the iterators null so advance head and restart iterators */
+      // one of the iterators is null at this point, so keep advancing head of the other one till
+      // the iterator becomes null so it offsets the hea properly from the point where both of the
+      // heads are same distance from the intersection or the tail
       if (curA == null) {
         while ( curB != null ) {
           headB = headB.next;

@@ -20,13 +20,29 @@
 *   
 *   There is a special case when i is at index 'end' which is the index right after which Twos
 *   start. It's weird that nums[end] equals to 2 in some case or in last iteration of i.
-*   ToDo: investiage what's going on..
+*   ToDo: investigate what's going on..
 *   
 *   Value of iterator i is adjusted to maintain loop invariant
+*
+*   Final version: this one's rather comprehensive solution. All ideas work great and properly
+*   tuned to maintain loop invariant.
+*   ref: https://leetcode.com/problems/sort-colors/discuss/26500/Four-different-solutions
 *
 * meta  : tag-algo-sort, tag-leetcode-medium
 ***************************************************************************************************/
 public class Solution {
+  // final version
+  public void SortColors(int[] A) {
+    int j = 0, k = A.Length - 1;
+
+    for (int i = 0; i <= k; i++)
+      if (A[i] == 0)
+        Swap<int>(A, i, j++);   // util.cs
+      else if (A[i] == 2)
+        Swap<int>(A, i--, k--);
+  }
+
+  // My initial accepted version
   public void SortColors(int[] nums) {
     for (int start = 0, i = start, end = nums.Length - 1; ; i++) {
       while (start < end && nums[start] == 0)

@@ -1,4 +1,4 @@
-/***************************************************************************
+/***************************************************************************************************
 * Title : Merge Intervals
 * URL   : https://leetcode.com/problems/merge-intervals
 * Date  : 2018-07-01
@@ -7,8 +7,8 @@
 * Status: Accepted
 * Notes : Similar to insert interval problem. In that problem we are given intervals in sorted order
 *   In that problem the new interval could be any where (before, after, inside/overlapping).
-*   Because of the sorting, in this problem all newly appearing intervals are
-*   either overlapping or not.
+*   Because of the sorting, in this problem all newly appearing intervals are either overlapping or
+*   not.
 *   
 *   Similar to line sweep algo.
 * 
@@ -16,7 +16,7 @@
 *   Demonstrates use of lambda expression with List.Sort
 * rel   : https://leetcode.com/problems/insert-interval
 * meta  : tag-intervals, tag-algo-kmp, tag-csharp-lambda-exp
-***************************************************************************/
+***************************************************************************************************/
 public class Solution
 {
   /// <summary>

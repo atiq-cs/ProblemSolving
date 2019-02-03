@@ -30,6 +30,21 @@ public class Solution {
     FindRight(root.left, depth + 1);
   }
 }
+/* Pruning is not as simple as this,
+
+  if (nodeList.Count == depth)
+    FindRight(root.left, depth + 1);
+
+And following idea, did not work as well, iterative seems hard
+
+  while (current != null) {
+    nodeList.Add(current.val);
+    current = current.right ?? current.left ?? prev?.right ?? prev?.left;
+    prev = current;
+  }
+
+*/
+
 
 // v1 2015-08-05
 public class Solution
