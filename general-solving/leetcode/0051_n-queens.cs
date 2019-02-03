@@ -50,12 +50,15 @@ public class Solution {
         board[row][col] = '.';
       }
   }
-
+  
+  // can be improved to 4N by only checking row, col and two diagonals
   private bool validateBoard(int newRow, int newCol) {
     for (int row = 0; row < numRows; row++)
       for (int col = 0; col < numCols; col++)
-        if (board[row][col] == 'Q' && (row == newRow || col == newCol || Math.Abs(row - newRow) == Math.Abs(col - newCol)))
+        if (board[row][col] == 'Q' && (row == newRow || col == newCol || Math.Abs(row - newRow) ==
+          Math.Abs(col - newCol)))
           return false;
+
     return true;
   }
 
