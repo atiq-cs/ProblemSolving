@@ -34,6 +34,7 @@ int main() {
   return 0;
 }
 
+// draft
 // This version is probably not solved one
 int main_v0() {
   long long res, m, n, tmp;
