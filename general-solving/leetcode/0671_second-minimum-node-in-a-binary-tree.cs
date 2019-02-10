@@ -3,14 +3,17 @@
 * URL   : https://leetcode.com/problems/second-minimum-node-in-a-binary-tree
 * Date  : 2017-09-07
 * Comp  : O(n), O(n)
-* Author: Atiq Rahman
 * Status: Accepted
-* Notes : For understanding 2 things to consider,
+* Notes : As the problem desc states,
+*    If the node has two sub-nodes, then this node's value is the smaller value among its two
+*    sub-nodes.
+*
+* Hence, 2 things to consider,
 *   1. first min value is already on *root* node
 *   2. left node necessarily does not have a smaller value than
 *   right node
 *
-* meta  : tag-binary-tree, tag-recursion, tag-leetcode-easy
+* meta  : tag-ds-binary-tree, ds-full-binary-tree, tag-recursion, tag-leetcode-easy
 ***************************************************************************************************/
 public class Solution {
   private int second;
@@ -24,7 +27,9 @@ public class Solution {
   }
 
   private void FindSecondMinimumValueRec(TreeNode root) {
-    if (root == null) return ;
+    if (root == null)
+      return ;
+
     if (first < root.val && second > root.val)
       second = root.val;
 
