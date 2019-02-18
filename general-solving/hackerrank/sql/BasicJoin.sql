@@ -2,10 +2,9 @@
 * Title : Basic Join
 * URL   : hackerrank.com/domains/sql?filters%5Bsubdomains%5D%5B%5D=join
 * Date  : 2017-09
-* Author: Atiq Rahman
 * Status: Accepted
 * Notes : MS SQL, 3 easy solved, 4 medium to go
-* meta  : tag-sql
+* meta  : tag-database-sql
 ***************************************************************************/
 /* 01 asian-population
  * Given the CITY and COUNTRY tables, query the sum of the populations of all

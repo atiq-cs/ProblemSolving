@@ -16,21 +16,18 @@
 *   My first idea was to consider all cases where the rotation index can be (
 *   starting from 1 to N-1). This means rotation point can be in between
 *   first and middle or middle and last
-* meta  : tag-binary-search, tag-recursion
+* meta  : tag-algo-bsearch, tag-recursion
 ***************************************************************************/
 public class Solution {
-  private int[] A;
-
-  public int Search(int[] nums, int item) {
-    A = nums;
-    return BSearch(item, 0, nums.Length-1);
+  public int Search(int[] A, int item) {
+    return BSearch(A, item, 0, A.Length-1);
   }
 
-  private int BSearch(int item, int start, int end) {
+  private int BSearch(int[] A, int item, int start, int end) {
     if (start > end)
       return -1;
 
-    int mid = (start + end) / 2;
+    int mid = start + (end-start) / 2;
     if (A[mid] == item)
       return mid;
 
@@ -43,18 +40,19 @@ public class Solution {
       // though mid item is bigger than item, the item we are looking for
       // actually on right side Example, 1 2 3 4 rotated as, 2 3 4 1
       // Suppose, start = 2, mid = 3 and item =1
-      // mid > item. Yet item is not on left side
+      // will be on left side if target lies between start and mid
       if (A[mid] > item && A[start] <= item)
-        return BSearch(item, start, mid-1);
-      return BSearch(item, mid+1, end);
+        return BSearch(A, item, start, mid-1);
+      // mid > item: yet, item is not in left side because of starting item
+      return BSearch(A, item, mid+1, end);
     }
     // otherwise, right side is sorted
     else {
       // Similarly, checking item <= A[end] if rotation has moved the item to
       // left side
       if (A[mid] < item && item <= A[end])
-        return BSearch(item, mid+1, end);
-      return BSearch(item, start, mid-1);
+        return BSearch(A, item, mid+1, end);
+      return BSearch(A, item, start, mid-1);
     }
   }
 }

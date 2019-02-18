@@ -8,7 +8,6 @@
 *   Q: Multiple majority elements?
 *    may be return most frequent one? In case of tie may be return just one of them?
 * Moore's voting algorithm
-* 
 *   Please note that we don't need to maintain correct count since we only need to track the
 *   majority element; not the count.
 * 
@@ -61,3 +60,22 @@ public class Solution
     return majorityElement;
   }
 }
+
+/*
+[3, 3, 2, 2, 2, 4, 4]
+3, 3, 2, 2, 2, 4, 4, 4, 4
+
+maj = 3
+count = 2
+i =2
+count = 1
+i=3
+ count = 0
+ 
+i=4
+ maj = 2
+ count = 1
+ 
+i = 5 {4}
+ count = 0
+*/

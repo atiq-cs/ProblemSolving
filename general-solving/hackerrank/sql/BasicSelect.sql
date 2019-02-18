@@ -5,7 +5,7 @@
 * Author: Atiq Rahman
 * Status: Accepted
 * Notes : Most of the solutions are done in MS SQL
-* meta  : tag-sql
+* meta  : tag-database-sql
 ***************************************************************************/
 /* 01 Revising the Select Query
  * Query all columns for all American cities in CITY with populations larger

@@ -2,12 +2,11 @@
 * Title       : Easy Longest Increasing Subsequence
 * URL         : http://www.spoj.com/problems/ELIS/
 * Occasion    : tutorial
-* Date        : Oct 11 2017
+* Date        : 2017-10-11
 * Complexity  : O(n lg n)
-* Author      : Atiq Rahman
 * Status      : Accepted
 * Notes       : tutorial input set should be trivial
-* meta        : tag-algo-dp, tag-dp-lis
+* meta        : tag-algo-dp, tag-dp-lis, tag-algo-bsearch
 ***************************************************************************/
 using System;
 using System.Collections.Generic;
@@ -51,7 +50,7 @@ public class LISDemo {
    * not found.
    */
   private int BSearch(int item, int start, int end) {
-    int mid = (start + end) / 2;
+    int mid = start + (end-start) / 2;
     // lower_bound: return lower index
     if (start > end)
       return end;

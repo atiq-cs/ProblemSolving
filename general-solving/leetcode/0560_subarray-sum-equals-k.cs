@@ -6,6 +6,19 @@
 * Comp  : O(N), O(N); O(N^2), O(1)
 * Status: Accepted
 * Notes : O(N) solution is intuitive.
+*  Simple explanation, at each index if we can find how many subarrays end that sum to k. Using that
+*   we can find how many ways we can make up the given sum. If we have frequencies of all prefix sums
+*   then we can then by looking at, all sum-k we can tell how many ways we can make k.
+*   Example,
+*    say we have 1, 2, 2, 1, -1, 1, -1
+*    
+*    Hence, at index 3, 5 and 7 we can make 5.
+*    Say we extend the given example upto some length >= 100, say k = 45 and at 100 our prefix sum
+*    is 50. Then we look, 50-45 and see that there are 3 ways to make it 45 for the current prefix
+*    sum.
+*  
+*  
+*  Explanation by decoding
 *   Saves all previous sums, hence a new sum-k will conform to exist. Also, use sum-k to compute
 *   total number ways to make sum. By all previous sums, we mean previuos sum not previous sum-k.
 *   
@@ -18,6 +31,7 @@
 * ref   : leetcode.com/problems/subarray-sum-equals-k/discuss/102106/Java-Solution-PreSum-+-HashMap
 *   enough trouble to understand though
 * rel   : https://leetcode.com/problems/subarray-product-less-than-k
+* ack   : Sreezin (Mak)
 * meta  : tag-hash-table, tag-leetcode-medium
 ***************************************************************************************************/
 public class Solution

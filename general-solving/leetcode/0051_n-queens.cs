@@ -19,7 +19,8 @@
 *   reference link takes care of diagonal attacks in following way,
 *    r1 + c2 == c1 + r2 || r1 + c1 == r2 + c2
 *
-* ref   : leetcode.com/problems/n-queens/discuss/19805/My-easy-understanding-Java-Solution
+* ref   : https://leetcode.com/problems/n-queens/discuss/19805/My-easy-understanding-Java-Solution/231156
+* Ack   : jasondai1991 for explaining those conditions
 * meta  : tag-recursion, tag-backtracking, tag-leetcode-hard
 ***************************************************************************************************/
 using System;
@@ -55,8 +56,7 @@ public class Solution {
   private bool validateBoard(int newRow, int newCol) {
     for (int row = 0; row < numRows; row++)
       for (int col = 0; col < numCols; col++)
-        if (board[row][col] == 'Q' && (row == newRow || col == newCol || Math.Abs(row - newRow) ==
-          Math.Abs(col - newCol)))
+        if (board[row][col] == 'Q' && (col == newCol || row + newCol == col + newRow || row + col == newRow + newCol))
           return false;
 
     return true;
@@ -91,3 +91,19 @@ class Driver {
     demo.SolveNQueens(4);   // default example in the problem desc
   }
 }
+
+/*
+See ack above, previously I did it this way.
+Turns out row check is not necessary
+
+  private bool validateBoard(int newRow, int newCol) {
+    for (int row = 0; row < numRows; row++)
+      for (int col = 0; col < numCols; col++)
+        if (board[row][col] == 'Q' && (row == newRow || col == newCol || Math.Abs(row - newRow) ==
+          Math.Abs(col - newCol)))
+          return false;
+
+    return true;
+  }
+
+*/

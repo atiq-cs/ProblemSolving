@@ -19,6 +19,7 @@
 *    lg n = height. Hence, prob it is lg n
 * rel   : leetcode premium vertical order traversal
 *  https://leetcode.com/problems/binary-tree-vertical-order-traversal/
+*  https://leetcode.com/articles/vertical-order-traversal-of-a-binary-tree/
 * meta  : tag-graph-binary-tree, tag-csharp-lambda-exp, tag-leetcode-medium
 ***************************************************************************************************/
 public class Solution {

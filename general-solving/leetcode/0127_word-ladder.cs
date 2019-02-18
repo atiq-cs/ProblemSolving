@@ -3,11 +3,10 @@
 * URL   : https://leetcode.com/problems/word-ladder/
 * Date  : 2018-05-17
 * Author: Atiq Rahman
-* Occasn: Den Meetup 2018-07-22 (TLE fixed), a variation probably been in
-*   InnoWorld as well.
+* Occasn: Den Meetup 2018-07-22 (TLE fixed), a variation probably been in InnoWorld as well.
 * Comp  : O(V+E)
 * Status: Accepted
-* Notes : Compexity Analysis
+* Notes : Complexity Analysis
 *   Max |V| is number of words in wordList, however, consider we are generating
 *   all words of 26 letters. Hence, complexity is exponential, 26^n where n is
 *   worst case length of a word
@@ -15,9 +14,11 @@
 *   A classic BFS problem. This way of generating adjacent word list is working
 *   because length of input string is less for testcases of this problem.
 *   Hence, this approach works better than generating adjacency using word list
+*   
+*   Contains Generic Collections (queue) initiazer syntax
 * ref   : https://leetcode.com/problems/word-ladder/discuss/40717/
 *   Another-accepted-Java-solution-(BFS)
-* meta  : tag-graph-bfs, tag-company-imo-im, tag-leetcode-medium
+* meta  : tag-graph-bfs, tag-company-imo-im, tag-csharp-initializer-syntax, tag-leetcode-medium
 ***************************************************************************/
 public class Solution {
   public int LadderLength(string beginWord, string endWord, IList<string> wordList) {
@@ -45,7 +46,8 @@ public class Solution {
       // slight optimization here, instead of generating everytime, convert
       // once and reuse, by restoring the old value back at each index
       char[] chars = u.ToCharArray();
-      for (int i=0; i<u.Length; i++) {
+
+      for (int i=0; i<u.Length; i++)
         for (char ch = 'a'; ch <= 'z'; ch++) {
           char old = chars[i];
           chars[i] = ch;
@@ -60,7 +62,7 @@ public class Solution {
           if (VisitedSet.Contains(v) == false)
             queue.Enqueue(v);
         }
-      }
+
     }
     return 0;
   }

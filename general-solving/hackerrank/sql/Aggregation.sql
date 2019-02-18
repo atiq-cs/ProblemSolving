@@ -5,7 +5,7 @@
 * Author: Atiq Rahman
 * Status: Accepted
 * Notes : MS SQL
-* meta  : tag-sql
+* meta  : tag-database-sql
 ***************************************************************************/
 /* 01 revising-aggregations-the-count-function
  * Query a count of the number of cities in CITY having a Population larger

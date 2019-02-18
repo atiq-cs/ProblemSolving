@@ -1,16 +1,16 @@
-/***************************************************************************
+/***************************************************************************************************
 * Title : LRU Cache
 * URL   : https://hackerrank.com/contests/justcode/challenges/lru-implementtion
 * Occasn: contests/justcode
 * Date  : 2018-08-25
-* Author: Atiq Rahman
 * Comp  : O(n)
 * Status: Accepted
 * Notes : For special cases, check comment in code.
 * Ack   : Daniel Lee at InnoWorld mentioned this to me first.. 2 months back
-* meta  : tag-data-structure, tag-priority-queue, tag-heap, tag-LRU,
-*   tag-linked-list, tag-doubly-linked-list, tag-hash-table
-***************************************************************************/
+* rel   : lt#146, https://leetcode.com/problems/lru-cache
+* meta  : tag-ds-linked-list, tag-ds-doubly-linked-list, tag-ds-hash-table, tag-ds-heap, 
+*   tag-ds-priority-queue, tag-algo-LRU-cache
+***************************************************************************************************/
 using System;
 using System.Collections.Generic;
 
@@ -72,10 +72,13 @@ class LRU {
       head = tail = null;
   }
 
-  // Update as most recently accessed item
-  // references moves in the linked list but is not changed
-  // Hence, dictionary entry is not udpated
-  // Consider, this node can be head, tail or in the middle
+  /// <summary>
+  /// Update as most recently accessed item
+  /// references moves in the linked list but is not changed
+  /// Hence, dictionary entry is not udpated
+  /// Consider, this node can be head, tail or in the middle
+  /// </summary>
+  /// <param name="node"> perform mentioned actions above on current give node </param>
   public void UpdateAsMRU(ListNode node)
   {
     if (node == head)

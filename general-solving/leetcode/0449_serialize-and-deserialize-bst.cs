@@ -7,12 +7,16 @@
 * Notes : First solution using string
 *   It can be further optimized using a Bitconverter technique to mimic memcpy in C++ solution in
 *   ref.
+*   This is possible for preorder traversal. In inorder, it's hard to determine which one is root.
+*   Should also be possible using post-order traversal.
 * ref: idea is from medium.com link at bottom
 *  And, that we can avoid adding representatins for null values using max, min is from this one
 *  https://leetcode.com/problems/serialize-and-deserialize-bst/discuss/93167/Concise-C%2B%2B-19ms-solution-beating-99.4
 *  BitConverter
 *   https://docs.microsoft.com/en-us/dotnet/api/system.bitconverter.toint32
 *  also the link at bottom
+*  Mak's idea is to make it more functional by return size as well instead of declaring a global
+*  pos variable
 * meta  : tag-algo-sort, tag-algo-greedy, tag-ds-queue, tag-leetcode-medium
 ***************************************************************************************************/
 using System;

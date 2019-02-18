@@ -2,10 +2,17 @@
 * Title : Decode Ways
 * URL   : https://leetcode.com/problems/decode-ways/
 * Date  : 2015-10-23
-* Comp  : O(n) Time, O(1)
+* Comp  : O(n), O(1)
 * Author: Atiq Rahman
 * Status: Accepted
 * Notes : similar to Climbing Stairs except the tricky cases we have to consider
+* 
+*   simplified recursion ref,
+*    https://leetcode.com/problems/decode-ways/discuss/233731/my-simple-java-solution
+*   which means DP relation could be simplified, simplify later..
+*   here's DP short,
+*    https://leetcode.com/problems/decode-ways/discuss/232321/Compact-Java-Solution
+*   ToDo: understand/improve
 * meta  : tag-algo-dp, tag-string, tag-leetcode-medium
 ***************************************************************************************************/
 public class Solution
@@ -63,7 +70,7 @@ public class Solution
 
   11 -> 2
   19 -> 2
-  20 -> 1
+  20 -> 1   ; only for 20, there's not 2 0, as there's no representation for 0
   21 -> 2
   ...
   26 -> 2

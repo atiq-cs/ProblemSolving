@@ -5,7 +5,7 @@
 * Author: Atiq Rahman
 * Status: Accepted
 * Notes : MS SQL, 1 solved, 3 more to go
-* meta  : tag-sql
+* meta  : tag-database-sql
 ***************************************************************************/
 /* 01 the-pads
  * first part: an alphabetically ordered list of all names in OCCUPATIONS,
