@@ -26,16 +26,110 @@
 *   complexity is exponential to 2.
 *   ToDo, check npp draft if found
 *   This also can be implemented recursively
+*   
+*   Qiagen wants this to be recursive
 *   Shallow Copy ref: https://stackoverflow.com/q/9648327
-* meta  : tag-leetcode-medium, tag-hash-table, tag-lambda-exp
+* rel   : https://leetcode.com/problems/subsets-ii/
+* meta  : tag-subsets, tag-recursion, tag-csharp-initializer-syntax, tag-company-qiagen,
+*   tag-leetcode-medium
 ***************************************************************************/
 public class Solution {
-   // fourth: ack: Adam, use less temporary space by insert list into original
-   // result collection
+  // top down recursion
+  public class Solution {
+    public IList<IList<int>> Subsets(int[] nums) {
+      return subHelper(nums, nums.Length);
+    }
+
+    public IList<IList<int>> subHelper(int[] nums, int index) {
+      if (index == 0)
+        return new List<IList<int>>(new IList<int>[] { new List<int>() });
+
+      var temp = subHelper(nums, index - 1);
+      int tempLength = temp.Count;
+      for (int i = 0; i < tempLength; i++) {
+        temp.Add(new List<int>(temp[i]));
+        temp[temp.Count - 1].Add(nums[index - 1]);
+      }
+      return temp;
+    }
+  }
+
+  // bottom-up recursion
+  public IList<IList<int>> Subsets(int[] nums) {
+    return subHelper(nums, nums.Length);
+  }
+
+  public IList<IList<int>> subHelper(int[] nums, int index) {
+    if (index == 0)
+      return new List<IList<int>>(new IList<int>[] { new List<int>() });
+
+    var temp = subHelper(nums, index - 1);
+    int tempLength = temp.Count;
+    for (int i = 0; i < tempLength; i++) {
+      temp.Add(new List<int>(temp[i]));
+      temp[temp.Count - 1].Add(nums[index - 1]);
+    }
+    return temp;
+  }
+
+  public IList<IList<int>> subHelper(int[] nums, int index) {
+    if (index == 0)
+      return new List<IList<int>>( new[] { new List<int>() });
+
+    var temp = subHelper(nums, temp, index - 1);
+    int tempLength = temp.Count;
+    for (int i = 0; i < tempLength; i++) {
+      temp.Add(new List<int>(temp[i]));
+      temp[temp.Count - 1].Add(nums[index]);
+    }
+    return subHelper(nums, index + 1);
+  }
+
+
+  // Fifth: recursion ack Cory
+  public IList<IList<int>> Subsets(int[] nums) {
+    return subHelper(nums, new List<IList<int>>(), 0);
+  }
+
+  public IList<IList<int>> subHelper(int[] nums, IList<IList<int>> temp, int index) {
+    if (index == nums.Length)
+      return temp;
+    if (index == 0)
+      temp.Add(new List<int>());
+
+    int tempLength = temp.Count;
+    for (int i = 0; i < tempLength; i++) {
+      temp.Add(new List<int>(temp[i]));
+      temp[temp.Count - 1].Add(nums[index]);
+    }
+    return subHelper(nums, temp, index + 1);
+  }
+
+  // result collection
+  public IList<IList<int>> Subsets(int[] nums) {
+    var subLists = new List<IList<int>>(new List<int>[] { new List<int>() });
+
+    foreach (var num in nums) {
+      int len = subLists.Count;
+
+      for (int i = 0; i < len; i++) {
+        subLists.Add(new List<int>(subLists[i]));
+        subLists[subLists.Count - 1].Add(num);
+      }
+    }
+    return subLists;
+  }
+
+
+  // fourth: ack: Adam, use less temporary space by insert list into original
+  // result collection
   public IList<IList<int>> Subsets(int[] nums) {
     var subLists = new List<IList<int>>(new List<int>[] { new List<int>() } );
+
     foreach( var num in nums) {
-      int len = subLists.Count; for (int i=0; i<len; i++) {
+      int len = subLists.Count;
+
+      for (int i=0; i<len; i++) {
         subLists.Add(new List<int>(subLists[i]));
         subLists[subLists.Count-1].Add(num);
       }

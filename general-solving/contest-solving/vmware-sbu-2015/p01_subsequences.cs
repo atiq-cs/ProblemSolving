@@ -2,11 +2,12 @@
 * Title : First problem of this vmware challenge
 * URL   : https://www.hackerrank.com/tests/*
 * Date  : 2015-09-19
-* Notes : Asked to complete the function
 * Comp  : O(n^2)
-* Author: Atiq Rahman
 * Status: Testcases passed
-* meta  : tag-subsequence, tag-permutation
+* Notes : Is it about the subsequences or subsets? Are we only considering sets?
+*   Coding template asks to complete the function
+* rel   : https://leetcode.com/problems/subsets/
+* meta  : tag-subsequence, tag-subset, tag-permutation, tag-recursion
 ***************************************************************************/
 static string[] buildSubsets(string s) {
   string set = s;

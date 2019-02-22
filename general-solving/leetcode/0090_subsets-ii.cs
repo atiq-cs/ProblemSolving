@@ -18,7 +18,8 @@
 *
 *   ToDo, implement recursive solution
 * Ack   : Md Abdul Kader (Sreezin) for handling duplicates with i==k
-* meta  : tag-leetcode-medium
+* rel   : https://leetcode.com/problems/subsets/
+* meta  : tag-csharp-lang-initializer-syntax, tag-leetcode-medium
 ***************************************************************************/
 public class Solution {
   public IList<IList<int>> SubsetsWithDup(int[] nums) {
