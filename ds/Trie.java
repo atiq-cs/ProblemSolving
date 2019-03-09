@@ -5,6 +5,7 @@
  * Comp  : look up O(L) where l is length of string
  * Notes : get and put are verified by leetcode prob..
  *   ToDo keysWithPrefix
+ *   https://www.topcoder.com/community/competitive-programming/tutorials/using-tries/
  * rel   :  https://leetcode.com/problems/implement-trie-prefix-tree
  * meta  : tag-ds-trie, tag-ds-core
 ***************************************************************************************************/
@@ -17,6 +18,7 @@ public class Trie {
     root = new Node(new HashMap<Character, Node>());
   }
 
+  // inner class declaration equivalent to C# internal class
   class Node {
     boolean isWord;
     HashMap<Character, Node> next;

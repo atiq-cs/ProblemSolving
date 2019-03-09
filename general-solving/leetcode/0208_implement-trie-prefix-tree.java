@@ -6,6 +6,8 @@
 * Status: Accepted
 * Notes : Implementation's in 'ds/Trie.java', other than the core part (related to this prob) is
 *   here
+* ref   : ds/Trie.java
+* rel   : https://leetcode.com/tag/trie/
 * meta  : tag-ds-tree, tag-ds-string, tag-leetcode-medium
 ***************************************************************************************************/
 class Trie {
