@@ -1,7 +1,7 @@
 /***************************************************************************************************
 * Title : Divide Two Integers
 * URL   : https://leetcode.com/problems/divide-two-integers
-* Date  : 2018-08-01 (update)
+* Date  : 2019-02-17 (update)
 * Author: Atiq Rahman
 * Comp  : O(n)
 * Status: TLE
@@ -9,52 +9,50 @@
 *   Second version: turns out to be complicated as well reinvented the first verion's algo actually
 *   it's basically Grade School Division for Binary Numbers figured out some worst case examples,
 *  when input n = int.MaxValue, complexity is O(N). Hence, TLE.
+*  
+*  Once it was TLE, not because of the division algo but because it was running into an infinite
+*  loop as numerator was always same value and denom was always 0.
+*
 * ToDo- an optimized implementation
 * ref   : Implement division with bit-wise operator
 *  https://stackoverflow.com/q/5284898
 *  https://web.stanford.edu/class/ee486/doc/chap5.pdf section 5.1.2
 *  https://www.cs.utah.edu/~rajeev/cs3810/slides/3810-08.pdf
-* meta  : tag-math, tag-binary-search, tag-leetcode-medium
+* meta  : tag-math, tag-algo-bsearch, tag-leetcode-medium
 ***************************************************************************************************/
 public class Solution {
   // Second version
   public int Divide(int dividend, int divisor) {
-    if (divisor==1 || divisor==-1)
-      return divisor==1?dividend : dividend==int.MinValue?int.MaxValue:-dividend;
-    if (dividend==int.MinValue)
-      return int.MaxValue;
-    bool isNegative = false;
-    if (dividend<0 && divisor<0) {
-      dividend *= -1;
-      divisor *= -1;
+    if (divisor == 0) return int.MaxValue; //illegal!
+    if (dividend == int.MinValue && divisor == -1) return int.MaxValue; //overflow!
+    if (dividend == int.MinValue && divisor == int.MinValue) return 1; //equalence!
+    if (dividend != int.MinValue && divisor == int.MinValue) return 0; //obviously!
+    if (dividend == int.MinValue) //attention!
+    {
+      if (divisor > 0)
+        return Divide(int.MinValue + divisor, divisor) - 1;
+      else
+        return Divide(int.MinValue - divisor, divisor) + 1;
     }
-    else if (dividend<0) {
-      dividend *= -1;
-      isNegative = true;
-    }
-    else if (divisor<0) {
-      divisor *= -1;
-      isNegative = true;
-    }
-    
+
     int result = 0;
-    int numerator = dividend;
+    int numerator = Math.Abs(dividend);
     while (numerator > 0) {
       int temp = 1;
       // number that we subtract each time from numerator
-      int newDenom = divisor;
+      int newDenom = Math.Abs(divisor);
 
       while (newDenom <= numerator) {
-        newDenom = newDenom<<1;
-        temp = temp<<1;
+        newDenom = newDenom << 1;
+        temp = temp << 1;
       }
-      newDenom = newDenom>>1;
-      temp = temp>>1;
+      newDenom = newDenom >> 1;
+      temp = temp >> 1;
 
       result += temp;
       numerator -= newDenom;
     }
-    return isNegative? -result: result;
+    return (dividend < 0) ^ (divisor < 0) ? -result : result;
   }
 
 

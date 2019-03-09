@@ -18,7 +18,7 @@
 *   integer limit
 *
 *   Encountered twice: first in JS meetup later at meetup 2018-05-06 (the den)
-* meta  : tag-binary-search, tag-leetcode-easy
+* meta  : tag-algo-bsearch, tag-math, tag-leetcode-easy
 ***************************************************************************/
 public class Solution {
   private int n;

@@ -10,7 +10,7 @@
 *   those we use Math.Max
 *
 * rel   : http://www.lintcode.com/en/problem/minimum-depth-of-binary-tree/
-* meta  : tag-binary-tree, tag-recursion, tag-dfs, tag-bfs, tag-leetcode-easy
+* meta  : tag-ds-binary-tree, tag-recursion, tag-graph-dfs, tag-graph-bfs, tag-leetcode-easy
 ***************************************************************************/
 public class Solution {
   public int MinDepth(TreeNode root)

@@ -7,7 +7,7 @@
 * Status: Accepted
 * Notes : Using Stack CLR p#289, Ex-12.1-3
 *   Easy one (using stack)
-* meta  : tag-binary-tree, tag-leetcode-easy, tag-recursion, tag-stack
+* meta  : tag-ds-binary-tree, tag-recursion, tag-ds-stack, tag-leetcode-easy
 ***************************************************************************/
 public class Solution {
   // Uses Morris Traversal for Inorder, O(1) space

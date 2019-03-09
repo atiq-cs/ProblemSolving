@@ -12,7 +12,7 @@
 *   pump from which we can start the tour.
 *   It is not a Priority Queue problem.
 *   
-*   Input can be easily represeted using result of subtraction of
+*   Input can be easily represented using result of subtraction of
 *   fuel_amount - distance. We also call it residual fuel amount
 *   It can be proved that a number (residual fuel amount) if
 *   negative earlier all previous hops before this one would also
@@ -34,7 +34,8 @@ using System.Collections.Generic;
 
 public class TruckTour
 {
-  public Queue<int> PPQueue;
+  Queue<int> PPQueue;
+
   public void TakeInput() {
     PPQueue = new Queue<int>();
     int n = int.Parse(Console.ReadLine());
@@ -51,25 +52,25 @@ public class TruckTour
     // start index is 0
     // keep popping items
     //  whenever it fails forward it to the next tage..
-    int pass_count = 0;
-    int s_fa = 0;
-    int pp_start_index = 0;
-    while (pass_count < PPQueue.Count) {
-      int r_fa = PPQueue.Dequeue();   // residue of fuel amount
-      s_fa += r_fa;
-      if (s_fa < 0) {
-        s_fa = 0;
-        pp_start_index += pass_count + 1;
-        pass_count = 0;
+    int passCount = 0;
+    int sFA = 0;          // sum fuel amount
+    int ppStartIndex = 0;
+    while (passCount < PPQueue.Count) {
+      int rFA = PPQueue.Dequeue();   // residue of fuel amount
+      sFA += rFA;
+      if (sFA < 0) {
+        sFA = 0;
+        ppStartIndex += passCount + 1;
+        passCount = 0;
       }
-      else pass_count++;
-      PPQueue.Enqueue(r_fa);
+      else passCount++;
+      PPQueue.Enqueue(rFA);
     }
-    return pp_start_index;
+    return ppStartIndex;
   }
 }
 
-class HK_Solution {
+class HKSolution {
   static void Main(String[] args) {
     TruckTour tour = new TruckTour();
     tour.TakeInput();

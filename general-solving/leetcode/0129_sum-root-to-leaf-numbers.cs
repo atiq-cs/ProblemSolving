@@ -6,7 +6,7 @@
 * Comp  : O(N)
 * Status: Accepted
 * Notes : Handle passing the number from leaf node is the essence of it
-* meta  : tag-binary-tree, tag-leetcode-medium
+* meta  : tag-ds-binary-tree, tag-leetcode-medium
 ***************************************************************************/
 public class Solution {
   public int SumNumbers(TreeNode root, int num = 0) {

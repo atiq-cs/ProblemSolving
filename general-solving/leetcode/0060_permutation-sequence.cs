@@ -5,14 +5,17 @@
 * Comp  : 
 * Author: Atiq Rahman
 * Status: Accepted
-* Notes : Given n generate all possible permutations
-* meta  : tag-leetcode-easy, tag-permutation
+* Notes : Given n and k return kth permutation
+* meta  : tag-permutation, tag-leetcode-easy
 ***************************************************************************************************/
 public class Solution {
   StringBuilder sb = new StringBuilder();
   List<int> digitList;
+  Func<int, int> fact = null;
 
   public string GetPermutation(int n, int k) {
+    fact = x => (x == 0) ? 1 : x * fact(x - 1);
+
     digitList = new List<int>(n);
     for (int i = 1; i <= n; i++)
       digitList.Add(i);
@@ -25,7 +28,11 @@ public class Solution {
       return;
     if (k == 0) {
       for (int i = n - 1; i >= 0; i--)
+        // can replace digitList with i+1 ?
+        // nope, digitList array is modified later
         sb.Append(digitList[i]);
+      // or
+      // sb.Append(string.Join("", digitList));
       return;
     }
     // process one digit on left and go for the rest
@@ -37,11 +44,12 @@ public class Solution {
     GetPermutationRec(n - 1, k % p);
   }
 
-  int getfact(int n) {
+  /* replaced with lambda 
+   * int getfact(int n) {
     if (n == 0)
       return 1;
     return n * getfact(n - 1);
-  }
+  } */
 }
 
 /* Problem - Permutation Sequence
@@ -65,6 +73,9 @@ n = 3,
 231
 312
 321
+
+say k = 4,
+ first digitIndex or di = 4 / 6 - 1 = 0
 
 for n = 4,
 1123
@@ -94,6 +105,7 @@ second digit is,
 now n = 2, k = 0
 
 for n=2 and k=2
-first digit is, 2/2
-2/2 = 1
+first digit is coming from, 2/1-1 = 2-1 =1
+index 1 has digit 2
 */
+

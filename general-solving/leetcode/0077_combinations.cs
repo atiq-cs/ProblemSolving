@@ -18,7 +18,7 @@
 *   C.L.R.S defines combinations p#1185
 *   http://stackoverflow.com/questions/12991758/creating-all-possible-k-combinations-of-n-items-in-c
 *   http://stackoverflow.com/questions/127704/algorithm-to-return-all-combinations-of-k-elements-from-n?lq=1
-* meta  : tag-combination, tag-recursion, tag-leetcode-medium
+* meta  : tag-combination, tag-recursion, tag-csharp-lang-initializer-syntax, tag-leetcode-medium
 ***************************************************************************************************/
 public class Solution {
   IList<IList<int>> result;

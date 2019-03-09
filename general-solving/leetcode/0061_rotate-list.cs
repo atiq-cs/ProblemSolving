@@ -31,7 +31,7 @@
 *   space while advancing those pointers
 *   
 *   Therefore, we go with approach#2 which is pretty straight-forward.
-* meta: tag-linked-list, tag-leetcode-medium
+* meta: tag-ds-linked-list, tag-leetcode-medium
 ***************************************************************************/
 public class Solution {
   private int GetLength(ListNode head) {

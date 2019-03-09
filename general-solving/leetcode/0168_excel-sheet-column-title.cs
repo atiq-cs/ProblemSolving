@@ -9,30 +9,29 @@
 *    '0168_excel-sheet-column-title_v02.cpp'
 * meta  : tag-math, tag-leetcode-easy
 ***************************************************************************************************/
+public class Solution
+{
+  StringBuilder result;
 
-public class Solution {
-  public class Solution {
-    StringBuilder result;
-    public string ConvertToTitle(int n)
-    {
-      result = new StringBuilder();
-      ConvertRec(n);
-      return result.ToString();
+  public string ConvertToTitle(int n)
+  {
+    result = new StringBuilder();
+    ConvertRec(n);
+    return result.ToString();
+  }
+
+  void ConvertRec(int n)
+  {
+    if (n == 0)
+      return;
+
+    if (n % 26 == 0) {
+      ConvertRec((n - 26) / 26);
+      result.Append('Z');
     }
-
-    void ConvertRec(int n)
-    {
-      if (n == 0)
-        return;
-
-      if (n % 26 == 0) {
-        ConvertRec((n - 26) / 26);
-        result.Append('Z');
-      }
-      else {
-        ConvertRec(n / 26);
-        result.Append((char)(n % 26 + 'A' - 1));
-      }
+    else {
+      ConvertRec(n / 26);
+      result.Append((char)(n % 26 + 'A' - 1));
     }
   }
 }

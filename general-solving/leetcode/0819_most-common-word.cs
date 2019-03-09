@@ -23,9 +23,12 @@ public class Solution
     foreach(var lWord in words) {
       if (lWord == "")
         continue;
+
       var word = lWord.ToLower();
       if (bannedSet.Contains(word) == false) {
-        if (maxFreqIndex=="") maxFreqIndex = word;
+        if (maxFreqIndex=="")
+          maxFreqIndex = word;
+
         if (freq.ContainsKey(word)) {
           freq[word]++;
           if (freq[word] > freq[maxFreqIndex])

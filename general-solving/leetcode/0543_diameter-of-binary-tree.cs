@@ -8,9 +8,9 @@
 * Notes : Consider 3 options we have in each node
 *   1. Height of the left subtree
 *   2. Height of the right subtree
-*   3. Combined heigh to get the diameter (+2 because current node adds 1 on
+*   3. Combined height to get the diameter (+2 because current node adds 1 on
 *   each side)
-* meta  : tag-binary-tree, tag-recursion, tag-leetcode-easy
+* meta  : tag-ds-binary-tree, tag-recursion, tag-leetcode-easy
 ***************************************************************************/
 public class Solution {
   public int DiameterOfBinaryTree(TreeNode root) {

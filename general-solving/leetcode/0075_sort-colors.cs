@@ -21,7 +21,7 @@
 *   There is a special case when i is at index 'end' which is the index right after which Twos
 *   start. It's weird that nums[end] equals to 2 in some case or in last iteration of i.
 *   ToDo: investigate what's going on..
-*   
+*
 *   Value of iterator i is adjusted to maintain loop invariant
 *
 *   Final version: this one's rather comprehensive solution. All ideas work great and properly

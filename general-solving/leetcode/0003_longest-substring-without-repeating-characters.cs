@@ -49,7 +49,7 @@ public class LeetcodeSolutionV1 {
       }
       else {
         length++;
-        prevOccurrence[ch] = i+1;
+        prevOccurrence[ch] = i+1;   // +1, to use 0 as flag..
       }
     }
     return Math.Max(longestLength, length);
@@ -63,8 +63,7 @@ public class LeetcodeSolutionV1 {
   }
 }
 
-// Constant Space
-// O(N) Time DP Solution
+// O(N), O(1) DP Solution
 public class LeetcodeSolutionV2 {
   public int LengthOfLongestSubstring(string s) {
     int maxLength = 0;

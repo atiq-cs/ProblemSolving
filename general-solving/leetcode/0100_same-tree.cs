@@ -11,7 +11,7 @@
 *   Then, all we need is just to take care of the null cases
 *   Time is O(n) because it's gonna traverse all nodes of the tree
 *   
-* meta  : tag-binary-tree, tag-recursion, tag-leetcode-easy
+* meta  : tag-ds-binary-tree, tag-recursion, tag-leetcode-easy
 ***************************************************************************************************/
 
 public class Solution {

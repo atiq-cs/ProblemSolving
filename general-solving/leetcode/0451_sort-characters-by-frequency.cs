@@ -17,7 +17,7 @@
 *   
 *   For most optimized solution we would need additional O(N) space to maintain
 *   the mapping
-* meta  : tag-algo-sort, tag-lambda-exp, tag-hash-table, tag-company-amazon,
+* meta  : tag-algo-sort, tag-csharp-lambda-exp, tag-ds-hash-table, tag-company-amazon,
 *   tag-coding-test, tag-leetcode-easy
 ***************************************************************************/
 

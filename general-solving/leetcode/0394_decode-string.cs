@@ -12,7 +12,9 @@
 *    https://msdn.microsoft.com/en-us/library/48z14dbs.aspx
 *   Checkout this solution later
 *   ref: https://leetcode.com/problems/decode-string/discuss/140904/c++-recursion-with-memorization
-* meta  : tag-leetcode-medium, tag-parsing
+*   or this
+*   https://leetcode.com/problems/decode-string/discuss/232857/Java-solution-2msbeat-90
+* meta  : tag-parsing, tag-leetcode-medium
 ***************************************************************************/
 public class Solution
 {

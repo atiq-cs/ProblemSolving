@@ -11,7 +11,7 @@
 * Ref   : C.L.R.S Ch 6
 * Notes : Based on the comparer provided in the constructor Heap class can
 *   behave as MinHeap and MaxHeap
-* meta  : tag-heap, tag-data-structure
+* meta  : tag-ds-heap, tag-ds-core
 ***************************************************************************/
 using System;
 using System.Collections.Generic;

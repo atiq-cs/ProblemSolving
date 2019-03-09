@@ -15,7 +15,7 @@
 * ref   : HashSet ctor ref: https://docs.microsoft.com/en-US/dotnet/api/
 *   system.collections.generic.hashset-1.-ctor (not used in final solution
 *   but look at first version)
-* meta  : tag-sliding-window, tag-leetcode-hard, tag-two-pointers
+* meta  : tag-sliding-window, tag-two-pointers, tag-leetcode-hard
 ***************************************************************************/
 public class Solution {
   public string MinWindow(string haystack, string needle) {
@@ -35,7 +35,7 @@ public class Solution {
 
     for (int i=0, start=0; i<haystack.Length; i++) {
       var ch = haystack[i];   // readability
-      // keep adding till current window does not contain all of 'em.. 
+      // keep adding till current window does not contain all of 'em..
       if (needleCharsFreq.ContainsKey(ch)) {
         // add current char
         if (WindowCharsFreq.ContainsKey(ch))

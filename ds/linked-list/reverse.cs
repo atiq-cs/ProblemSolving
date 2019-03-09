@@ -13,8 +13,8 @@
 *   
 *   C.L.R.S ref above explains operations for both singly and doubly list and
 *   introduces sentinels
-* meta  : tag-leetcode-easy, tag-two-pointers, tag-linked-list, tag-successor,
-*   tag-predecessor
+* meta  : tag-two-pointers, tag-ds-linked-list, tag-bst-successor, tag-bst-predecessor,
+*   tag-leetcode-easy
 ***************************************************************************/
 public class Solution {
   // recursive implementation
@@ -27,16 +27,16 @@ public class Solution {
     return gHead;
   }
 
-  public void RecReverse(ListNode head)
+  public void RecReverse(ListNode node)
   {
-    if (head == null) return ;
-    if (head.next == null) { gHead = head; return ; }
-    RecReverse(head.next);
+    if (node == null) return ;
+    if (node.next == null) { gHead = node; return ; }
+    RecReverse(node.next);
     // Reverse link safely. We can perform such change on link here because at
     // this point, all of the nodes till this one is already in stack. We won't
     // lose our previous nodes we change next pointer, we will still retrieve
     // previous nodes when function returns to caller
-    head.next.next = head;
+    node.next.next = node;
   }
 
   // first version: iterative

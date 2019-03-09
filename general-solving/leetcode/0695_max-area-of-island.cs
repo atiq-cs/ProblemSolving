@@ -3,13 +3,13 @@
 * URL   : https://leetcode.com/problems/max-area-of-island
 * Date  : 2018-02
 * Author: Atiq Rahman
-* Comp  : O(n * m), space O(n * m)
+* Comp  : O(n * m), O(n * m)
 * Status: Accepted
 * Notes : The problem maps to finding size of largest DFS forest
 *   this solution does not modify original array
 *   If we are allowed to modify the original array then we don't need to use
 *   additional visit array which requires O(n*m) space
-* meta  : tag-dfs, tag-graph
+* meta  : tag-graph-dfs
 ***************************************************************************/
 public class Solution {
   private int[][] grid;

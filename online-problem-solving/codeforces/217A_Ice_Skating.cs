@@ -22,7 +22,7 @@
 *   A minimal DFS implementation
 *
 *   System.Drawing is allowed in codeforces
-* meta  : tag-easy, tag-dfs
+* meta  : tag-graph-dfs, tag-easy
 ***************************************************************************/
 using System;
 using System.Collections.Generic;

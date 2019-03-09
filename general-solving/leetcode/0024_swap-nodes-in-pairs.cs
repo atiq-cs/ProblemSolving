@@ -3,9 +3,8 @@
 * URL   : https://leetcode.com/problems/swap-nodes-in-pairs
 * Date  : 2017-09-22
 * Comp  : O(n)
-* Author: Atiq Rahman
 * Status: Accepted
-* Notes : Naive approach (using additional linked list) would be:
+* Notes : Naive approach (using additional linked list) would be,
 *   - Iterate through each node of original linked list
 *   - save the first one of every pair in a temp variable
 *   - push the current node into the linked list and the temp one as
@@ -26,7 +25,7 @@
 *
 *   In doing that maintain 3 pointers: node0, node1, node2. next pointer of node1 and node2 are
 *   rewired node0 is the previous node of node1 and node2 where the swap happened.
-* meta  : tag-linked-list, tag-leetcode-medium
+* meta  : tag-ds-linked-list, tag-two-pointers, tag-leetcode-medium
 ***************************************************************************/
 public class Solution
 {
@@ -35,8 +34,8 @@ public class Solution
     int nodeCount = 0;
     ListNode node0, node1, node2;
     node0 = node1 = node2 = null;
-    
-    while (true) {
+
+    do {
       if (nodeCount == 2) {
         if (node0 == null)
           head = node2;
@@ -52,12 +51,37 @@ public class Solution
         node1 = node2;
       }
 
-      if (current == null)
-        break;
       node2 = current;
-      current = current.next;
       nodeCount++;
-    }
+    } while ((current = current?.next) != null || nodeCount == 2);
+
     return head;
   }
 }
+
+/*
+earlier version:
+  while (true) {
+    if (nodeCount == 2) {
+      if (node0 == null)
+        head = node2;
+      else
+        node0.next = node2;
+      node2.next = node1;
+      node1.next = current;
+      nodeCount = 0;
+      node0 = node2;
+    }
+    else {
+      node0 = node1;
+      node1 = node2;
+    }
+
+    if (current == null)
+      break;
+    node2 = current;
+    current = current.next;
+    nodeCount++;
+  }
+
+*/

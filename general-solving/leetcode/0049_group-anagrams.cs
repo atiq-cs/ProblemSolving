@@ -13,7 +13,7 @@ public class Solution {
     var dict = new Dictionary<string, IList<string>>();
 
     foreach (string str in strs) {
-      char[] chars = str.ToArray();
+      char[] chars = str.ToCharArray();
       // can be replaced with linear counting sort
       Array.Sort(chars);
       string key = new string(chars);

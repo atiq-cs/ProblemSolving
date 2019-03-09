@@ -11,14 +11,15 @@
 *   http://blogs.msdn.com/b/csharpfaq/archive/2004/05/11/
 *    why-doesn-t-c-support-static-method-variables.aspx
 * rel   : 'leetcode/0095_validate-binary-search-tree.cpp'
-* meta  : tag-binary-tree, tag-recursion
+* meta  : tag-ds-binary-tree, tag-recursion
 ***************************************************************************************************/
 public class Solution {
   // Moving this as tatic declaration inside a method is not supported.
   private TreeNode prev = null;
 
   public bool IsValidBST(TreeNode root) {
-    if (root == null) return true;
+    if (root == null)
+      return true;
 
     if (IsValidBST(root.left) == false)
       return false;

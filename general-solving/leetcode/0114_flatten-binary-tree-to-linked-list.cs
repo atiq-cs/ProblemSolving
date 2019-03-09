@@ -13,16 +13,19 @@
 public class Solution
 {
   TreeNode previousNode = null;
-  public void Flatten(TreeNode root) {
-    if (root == null)
+
+  public void Flatten(TreeNode node) {
+    if (node == null)
       return;
+
     if (previousNode != null) {
-      previousNode.right = root;
+      previousNode.right = node;
       previousNode.left = null;
     }
-    previousNode = root;
-    TreeNode temp = root.right;
-    Flatten(root.left);
+
+    previousNode = node;
+    TreeNode temp = node.right;
+    Flatten(node.left);
     Flatten(temp);
   }
 }

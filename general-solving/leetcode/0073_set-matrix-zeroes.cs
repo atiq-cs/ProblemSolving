@@ -24,15 +24,16 @@ public class Solution {
         if (matrix[i][j] == 0) {
           if (rows[i] == false) {
             rows[i] = true;
-            for (int k=0; k<j;k++)  // reset row
+            for (int k=0; k<j;k++)  // reset row upto column j
               matrix[i][k] = 0;
           }
           if (cols[j] == false) {
             cols[j] = true;
-            for (int k=0; k<i;k++)  // reset column
+            for (int k=0; k<i;k++)  // reset column upto row i
               matrix[k][j] = 0;
           }
         }
+        // This is required
         else if (cols[j] || rows[i])
           matrix[i][j] = 0;
       }

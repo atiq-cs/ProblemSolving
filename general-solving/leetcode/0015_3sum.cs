@@ -3,8 +3,7 @@
 * URL   : https://leetcode.com/problems/3sum
 * Date  : 2018-03
 * Author: Atiq Rahman
-* Comp  : O(N^2), space constant considering we are allowed to modify original
-*   array for one time sorting
+* Comp  : O(N^2), O(1) modifying/sorting original array though
 * Status: Accepted
 * Notes : Given data is unsorted.
 *   If we develop an algorithm that has a run-time complexity of O(N^2) or
@@ -58,6 +57,7 @@ public class Solution
     return result;
   }
 }
+
 /* Draft
 if I had two numbers and I had to find pairs which sum to 0..
 Later consider there are duplicates.

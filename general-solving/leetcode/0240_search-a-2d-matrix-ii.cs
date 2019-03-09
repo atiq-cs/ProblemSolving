@@ -6,7 +6,7 @@
 * Comp  : O(m+n) for input mxn matrix
 * Author: Atiq Rahman
 * Status: Accepted
-* meta  : tag-divide-conquer, tag-binary-search, tag-leetcode-medium
+* meta  : tag-divide-conquer, tag-algo-bsearch, tag-leetcode-medium
 ***************************************************************************************************/
 public class Solution
 {

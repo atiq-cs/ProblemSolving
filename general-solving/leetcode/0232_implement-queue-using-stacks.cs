@@ -11,7 +11,7 @@
 *   
 *   revised my solution based on idea:
 *   https://leetcode.com/articles/implement-queue-using-stacks/
-* meta  : tag-stack, tag-leetcode-easy, tag-queue
+* meta  : tag-ds-stack, tag-ds-queue, tag-leetcode-easy
 ***************************************************************************/
 public class MyQueue {
   Stack<int> s1 = new Stack<int>();

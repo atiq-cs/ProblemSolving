@@ -7,7 +7,7 @@
 * Status: Accepted
 * Notes : Easy string operations
 * Notes : 
-* meta  : tag-string, tag-leetode-easy, tag-recursion
+* meta  : tag-string, tag-recursion, tag-leetode-easy
 ***************************************************************************************************/
 public class Solution {
   public string CountAndSay(int n) {
@@ -22,7 +22,7 @@ public class Solution {
   }
 
   public string GetNextCSString(string previous) {
-    char ch = (char)0x7FFF;   // initial value that does not match any char
+    char ch = (char) 0x7FFF;   // initial value that does not match any char
     var result = new StringBuilder();
     int count = 0;
 
@@ -38,10 +38,12 @@ public class Solution {
         count = 1;
       }
     }
+
     if (count > 0) {
       result.Append((char)('0' + count));
       result.Append(ch);
     }
+
     return result.ToString();
   }
 }

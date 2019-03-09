@@ -7,7 +7,7 @@
 * Status: Accepted
 * Notes : similar to Inorder morris traversal which is at,
 *   'ds/binary-tree/traversal.cs'
-* meta  : tag-stack, tag-leetcode-medium, tag-binary-tree, tag-recursion
+* meta  : tag-ds-stack, tag-ds-binary-tree, tag-recursion, tag-leetcode-medium
 ***************************************************************************/
 public class Solution {
   // Uses Morris Traversal for Preorder, O(1) space
@@ -18,7 +18,9 @@ public class Solution {
 
   private List<int> nodeList = new List<int>();
   public IList<int> PreorderTraversal(TreeNode root) {
-    if (root == null) return nodeList;
+    if (root == null)
+      return nodeList;
+
     nodeList.Add(root.val);
     PreorderTraversal(root.left);
     PreorderTraversal(root.right);

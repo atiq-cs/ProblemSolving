@@ -18,33 +18,49 @@
 *   new interval
 * 
 *   tagged as hard problem; not really hard problem
-* meta  : tag-leetcode-hard
+* meta  : tag-interval, tag-leetcode-hard
 ***************************************************************************/
 using System.Collections.Generic;
 
 public class Solution
 {
-  public IList<Interval> Insert(IList<Interval> intervals, Interval newInterval) {
+  /// <summary>
+  /// Insert or merge the given interval properly
+  /// </summary>
+  /// <param name="intervals"> Collection of intervals </param>
+  /// <param name="newInt"> The new interval to insert </param>
+  /// <returns></returns>
+  public IList<Interval> Insert(IList<Interval> intervals, Interval newInt) {
     IList<Interval> result = new List<Interval>();
 
-    foreach(var interval in intervals) {
-      // case 1
-      if (newInterval == null || interval.end < newInterval.start)
-        result.Add(interval);
+    foreach(var current in intervals)
+      // case 1, current ends before new starts
+      if (newInt == null || current.end < newInt.start)
+        result.Add(current);
       // new interval is falling inside the current
-      else if (interval.start > newInterval.end) {
-        result.Add(newInterval);
-        result.Add(interval);
-        newInterval = null;
+      // now why would this work?? adding both of 
+      // interval.end >= newInterval.start
+      // prev cond ensures, current ends after new starts
+      // this cond ensures, new ends after current starts
+      // example,    ---------x_______x----------___
+      //  where x represents new's start and end, _ represents where current ended
+      else if (newInt.end < current.start) {
+        result.Add(newInt);
+        result.Add(current);
+        newInt = null;
       }
+      // prev cond ensures, new ends after current starts
+      // prev prev cond ensures, current ends after new starts
       // not falling inside but overlap
+      // example,   -----x------______x
       else {
-        newInterval.start = Math.Min(interval.start, newInterval.start);
-        newInterval.end = Math.Max(interval.end, newInterval.end);
+        newInt.start = Math.Min(current.start, newInt.start);
+        newInt.end = Math.Max(current.end, newInt.end);
       }
-    }
-    if (newInterval != null)
-      result.Add(newInterval);
+
+
+    if (newInt != null)
+      result.Add(newInt);
     return result;
   }
 }

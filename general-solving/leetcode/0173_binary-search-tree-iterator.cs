@@ -3,7 +3,6 @@
 * URL   : https://leetcode.com/problems/binary-search-tree-iterator
 * Occasn: InnoWorld Meetup 05-13
 * Date  : 2018-05-15
-* Author: Atiq Rahman
 * Comp  : O(lg N) worst case time complexity, amortized time complexity should
 *   is O(1), space complexity is similar
 * Status: Accepted

@@ -16,15 +16,12 @@
 *   collection contain a particular object, and tell me the answer fast).
 *
 *   A List<T> is a class designed to give you a collection with O(1) random access than can grow
-* meta  : tag-hashtable, tag-leetcode-hard
+* meta  : tag-ds-hashtable, tag-leetcode-hard
 ***************************************************************************************************/
 public class Solution {
   public int FirstMissingPositive(int[] nums) {
-    HashSet<int> numset = new HashSet<int>();
-    
-    for (int i=0; i<nums.Length; i++)
-      numset.Add(nums[i]);
-      
+    var numset = new HashSet<int>(nums);
+
     for (int i=1; i<=numset.Count+1; i++)
       if (numset.Contains(i) == false)
         return i;
@@ -32,3 +29,13 @@ public class Solution {
     return 1;
   }
 }
+
+/*
+Readability,
+
+  HashSet<int> numset = new HashSet<int>();
+    
+  for (int i=0; i<nums.Length; i++)
+    numset.Add(nums[i]);
+
+*/

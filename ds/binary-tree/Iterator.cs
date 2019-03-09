@@ -26,7 +26,7 @@ public class BSTIterator {
   public bool HasNext() {
     if (stack == null) {
       stack = new Stack<TreeNode>();
-      currentNode = currentNode == null ? null: TreeMinimum(currentNode);
+      currentNode = currentNode == null ? null : TreeMinimum(currentNode);
     }
     else
       currentNode = FindSuccessor();

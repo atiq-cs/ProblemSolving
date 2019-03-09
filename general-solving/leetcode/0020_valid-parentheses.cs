@@ -36,7 +36,7 @@
 *   Additionally, there might be other ways to solve it using O(1) space.
 *   However, most people solved it using stack which requires O(N) space.
 * 
-* meta  : tag-leetcode-easy, tag-ds-stack, tag-parentheses
+* meta  : tag-ds-stack, tag-parentheses, tag-leetcode-easy
 ***************************************************************************/
 public class Solution {
   public bool IsValid(string s) {

@@ -6,7 +6,7 @@
 * Author: Atiq Rahman
 * Status: Accepted
 * Notes : 
-* meta  : tag-binary-tree, tag-recursion, tag-leetcode-easy
+* meta  : tag-ds-binary-tree, tag-recursion, tag-leetcode-easy
 ***************************************************************************************************/
 public class Solution
 {
@@ -15,14 +15,14 @@ public class Solution
       return true;
     if (IsBalanced(root.left) == false || IsBalanced(root.right) == false)
       return false;
-    if (Math.Abs(get_maxdepth(root.left) - get_maxdepth(root.right)) <= 1)
+    if (Math.Abs(getMaxDepth(root.left) - getMaxDepth(root.right)) <= 1)
       return true;
     return false;
   }
 
-  private int get_maxdepth(TreeNode root) {
+  private int getMaxDepth(TreeNode root) {
     if (root == null)
       return 0;
-    return Math.Max(get_maxdepth(root.left), get_maxdepth(root.right)) + 1;
+    return Math.Max(getMaxDepth(root.left), getMaxDepth(root.right)) + 1;
   }
 }

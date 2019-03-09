@@ -9,7 +9,7 @@
 *   https://vikrantravi.wordpress.com/2012/07/24/hashtable-vs-dictionary-vs-hashset-in-c/
 *   Demonstrates use of hashset which has O(1) lookup time
 *   HashSet<T> Class ref: https://msdn.microsoft.com/en-us/library/bb359438.aspx
-* meta  : tag-hashset, tag-leetcode-easy
+* meta  : tag-ds-hashset, tag-ds-binary-tree, tag-leetcode-easy
 ***************************************************************************************************/
 public class Solution
 {

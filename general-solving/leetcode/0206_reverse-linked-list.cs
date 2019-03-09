@@ -51,5 +51,5 @@ copy do not affect the other copy. (similar to C++ classes/structs)
 draft note is at bottom and Code at 'ds/linked-list/reverse.cs'
 ref: https://msdn.microsoft.com/en-us/library/vstudio/ms173109.aspx
 *   Code at 'ds/linked-list/reverse.cs'
-* meta  : tag-linked-list, tag-recursion
+* meta  : tag-ds-linked-list, tag-recursion
 ***************************************************************************/

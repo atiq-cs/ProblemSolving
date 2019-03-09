@@ -20,7 +20,7 @@
 *   from the head of the list and advances one step each time.
 *   
 *   * The stack contains all nodes of the list during the last recursion call.
-* meta  : tag-linked-list, tag-recursion, tag-palindrome, tag-leetcode-easy
+* meta  : tag-ds-linked-list, tag-recursion, tag-string-palindrome, tag-leetcode-easy
 ***************************************************************************************************/
 public class Solution
 {

@@ -36,9 +36,13 @@ public class SSSP { // SSSP - Single Source Shortest Path
       int u = queue.Dequeue();
       if (u == -1) {
         level++;
+        /* previously written as, replaced by technqiue from 'leetcode/0127_word-ladder.cs'
         if (queue.Count == 0)
           break;
-        queue.Enqueue(-1);
+        queue.Enqueue(-1); */
+        if (queue.Count > 0)
+          queue.Enqueue(-1);
+        continue;
       }
       else {
         foreach (int v in GetAdjList(u))

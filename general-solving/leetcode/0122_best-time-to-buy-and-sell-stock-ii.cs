@@ -2,8 +2,7 @@
 * Title : Best Time to Buy and Sell Stock II
 * URL   : https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/
 * Date  : 2015-11-17
-* Comp  : O(n) Time, O(1) space
-* Author: Atiq Rahman
+* Comp  : O(n), O(1)
 * Status: Accepted
 * Notes : Look at example for better understanding how this solution progresses
 *   Sub-problems (intervals) actually depend, after we find first interval
@@ -14,7 +13,7 @@
 *   Thanks Md Abdul Kader (Sreezin) for his opinion on the analysis on this part.
 * meta  : tag-algo-dp, tag-leetcode-easy
 ***************************************************************************************************/
-ublic class Solution
+public class Solution
 {
   public int MaxProfit(int[] prices) {
     int sumProfit = 0;
@@ -31,13 +30,13 @@ ublic class Solution
       else if (prices[i] > maxP)  // update max
         maxP = prices[i];
     }
-    return maxP==0?sumProfit:sumProfit+maxP-minP;
+    return maxP==0? sumProfit : sumProfit+maxP-minP;
   }
 }
 
 /*
 Example scenario 1: 1 4 10 2 1 5
-  
+
   start from first index, update min if next number is less
   if next number is greater update max
 at index = 2:

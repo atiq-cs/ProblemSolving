@@ -20,25 +20,25 @@
 *   https://leetcode.com/problems/valid-parenthesis-string
 *   https://leetcode.com/problems/remove-invalid-parentheses
 *   https://leetcode.com/problems/longest-valid-parentheses
-* meta  : tag-stack, tag-balance-expression
+* meta  : tag-ds-stack, tag-balance-expression, tag-parenthesis
 ***************************************************************************/
 public class Solution {
   public IList<string> GenerateParenthesis(int n) {
     if (n==0)
       return new List<string> { "" };
     
-    IList<string> parenthesesStringList = new List<string>();
+    IList<string> parenthesisStringList = new List<string>();
     for (int i=0; i<n; i++) {
       IList<string> leftParenthesesStringList = GenerateParenthesis(i);
       IList<string> rightParenthesesStringList = GenerateParenthesis(n-i-1);
-      foreach(string leftParenthesesString in leftParenthesesStringList) {
-        foreach(string rightParenthesesString in rightParenthesesStringList) {
-          parenthesesStringList.Add('(' + leftParenthesesString + ')' + 
+
+      foreach(string leftParenthesesString in leftParenthesesStringList)
+        foreach(string rightParenthesesString in rightParenthesesStringList)
+          parenthesisStringList.Add('(' + leftParenthesesString + ')' + 
             rightParenthesesString);
-        }
-      }      
+
     }
-    return parenthesesStringList;
+    return parenthesisStringList;
   }
 }
 

@@ -42,9 +42,11 @@ public class Solution {
         string keyx = s[i].ToString() + s[i + 1].ToString();
         if (roman_digits.ContainsKey(keyx)) {
           rValue += roman_digits[keyx];
-          i += 2; continue;
+          i += 2;
+          continue;
         }
       }
+
       string key = s[i].ToString();
       if (roman_digits.ContainsKey(key)) {
         rValue += roman_digits[key]; i++;

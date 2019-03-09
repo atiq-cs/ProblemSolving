@@ -13,12 +13,16 @@
 public class Solution
 {
   public int[] TwoSum(int[] nums, int target) {
-    for (int left = 0, right = nums.Length - 1, sum; left < right;) {
-      if ((sum = nums[left] + nums[right]) == target)
-        return new int[] { left + 1, right + 1 };
-      if (sum < target) left++;
-      else right--;
+    for (int start = 0, end = nums.Length - 1, sum; start < end;) {
+      if ((sum = nums[start] + nums[end]) == target)
+        return new int[] { start + 1, end + 1 };
+
+      if (sum < target)
+        start++;
+      else
+        end--;
     }
+
     return new int[] { -1, -1 };
   }
 }

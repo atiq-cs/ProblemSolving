@@ -10,10 +10,10 @@
 ******************************************************************************/
 public class Solution {
   public IList<IList<int>> LevelOrderBottom(TreeNode root) {
+    // Reverse would require a trick if not declared
     List<IList<int>> TraversalResult = new List<IList<int>>();;
-    Queue<TreeNode> queue = new Queue<TreeNode>();
-    queue.Enqueue(root);
-    
+    Queue<TreeNode> queue = new Queue<TreeNode>(new[] { root });
+
     while (queue.Count > 0) {
       var levelChildren = new List<TreeNode>();
       while (queue.Count != 0)

@@ -9,7 +9,7 @@
 *   This technique is a dfs technique, uses recursion to implement
 *   depth definition:
 *     https://fftsys.azurewebsites.net/atiq/tech/binary-tree-jargon
-* meta  : tag-binary-tree, tag-dfs, tag-bfs, tag-recursion
+* meta  : tag-ds-binary-tree, tag-graph-dfs, tag-graph-bfs, tag-recursion
 ******************************************************************************/
 public class Solution {
   List<int> largestValueInRows;

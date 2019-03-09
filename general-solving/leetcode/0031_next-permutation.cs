@@ -25,7 +25,7 @@ public class Solution
       int j = nums.Length - 1;
       while (nums[i - 1] >= nums[j])  //>= so we choose the last one
         j--;  // so that after swapping small number comes at the later index
-      int temp = nums[j]; nums[j] = nums[i - 1]; nums[i - 1] = temp;
+      Swap<int>(nums, j, i - 1);
     }   // afterwards, when we reverse the string order is maintained
     for (int j=i, k=nums.Length-1; j<k;j++,k--)
       /* if (nums[j]>nums[k]) */ {  // swap condition not required

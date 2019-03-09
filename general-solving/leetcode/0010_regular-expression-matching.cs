@@ -6,20 +6,20 @@
 * Comp  : O(nm), O(nm)
 * Status: Accepted
 * Notes : Implement regex matching supporting '.' and '*'
-* 
+*
 *   Index mapping: dp[1][1] maps to index of str at 0 and index of pattern at 0
 *   youtube video adds X in the beginning of string and pattern which is not
 *   required if initialization is done properly for *
 * ref video: https://www.youtube.com/watch?v=l3hda49XcDE
 *  Example in the video: a*b.c and aabyc
-*   
+*
 *  ref for initialization part: https://leetcode.com/problems/regular-
 *    expression-matching/discuss/5651/Easy-DP-Java-Solution-with-detailed-
 *    Explanation
 *    
 *   https://leetcode.com/articles/regular-expression-matching/
 * rel   : https://leetcode.com/problems/wildcard-matching
-* meta  : tag-leetcode-hard, tag-string, tag-algo-dp, tag-backtracking, tag-company-microsoft
+* meta  : tag-string, tag-algo-dp, tag-backtracking, tag-company-microsoft, tag-leetcode-hard
 ***************************************************************************/
 public class Solution {
   public bool IsMatch(string s, string p) {
@@ -34,7 +34,7 @@ public class Solution {
     for (int i=1; i<=p.Length; i++)
       if (p[i-1] == '*' && dp[i-2][0])
         dp[i][0] = true;
-    
+
     for (int i=1; i<=p.Length; i++)
       for (int j=1; j<=s.Length; j++) {
         if (p[i-1] == '*') {

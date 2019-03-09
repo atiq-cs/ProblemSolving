@@ -8,7 +8,7 @@
 * Notes : O(lg N) Stack Space if balanced binary tree
 *   Based on previous cpp solution
 * rel   : 'leetcode 107 Binary Tree Level Order Traversal II'
-* meta  : tag-binary-tree, tag-bfs
+* meta  : tag-ds-binary-tree, tag-graph-bfs
 ***************************************************************************************************/
 public class Solution {
   IList<IList<int>> levelList = new List<IList<int>>();
@@ -17,8 +17,10 @@ public class Solution {
   public IList<IList<int>> LevelOrder(TreeNode root, int index=0) {
     if (root == null)
       return levelList;
+
     if (levelList.Count <= index)
       levelList.Add(new List<int>());
+
     levelList[index].Add(root.val);
     LevelOrder(root.left, index + 1);
     LevelOrder(root.right, index + 1);

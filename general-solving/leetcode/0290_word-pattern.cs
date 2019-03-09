@@ -28,15 +28,17 @@
 *   all items are unique in the pattern and string. Everytime new entry is
 *   added O(N) lookup is done for ContainsValue()
 *   
-* meta  : tag-hashtable, tag-leetcode-easy
+* meta  : tag-ds-hashtable, tag-leetcode-easy
 ***************************************************************************/
 public class Solution {
   public bool WordPattern(string pattern, string str) {
-    Dictionary<char, string> charDict = new Dictionary<char, string>();
+    var charDict = new Dictionary<char, string>();
+
     string[] tokens = str.Split();
     if (pattern.Length != tokens.Length)
       return false;
-    for (int i=0; i<tokens.Length; i++) {
+
+    for (int i=0; i<tokens.Length; i++)
       if (charDict.ContainsKey(pattern[i]) == false) {
         if (charDict.ContainsValue(tokens[i]))    // O(N), note above
           return false;
@@ -44,7 +46,7 @@ public class Solution {
       }
       else if (charDict[pattern[i]] != tokens[i])
         return false;
-    }
+
     return true;
   }
 }

@@ -2,13 +2,13 @@
 * Title : Quick Sort
 * URL   : C.L.R.S Chapter 7
 * Date  : 2017-11-01
-* Comp  : O(n), space O(1)
+* Comp  : O(n lg n), O(1)
 * Status: Accepted
 * Notes : Contains,
 *   QuickSort
 *   Partition
 *   Randomized-Partition
-*
+* Expected complexity of Randomized Q-Sort, O(n lg n), C.L.R.S p#181
 * Related: https://www.hackerrank.com/challenges/quicksort1
 * meta  : tag-algo-sort
 ***************************************************************************/
@@ -31,7 +31,7 @@ class QuickSort {
     return Partition(A, p, r);
   }
 
-  // simple quick sort partition - C.L.R page 171
+  // simple quick sort partition - C.L.R.S p#171
   private int Partition(int[] A, int p, int r) {
     int i = p-1;
     int x = A[r];
@@ -49,7 +49,7 @@ class QuickSort {
     return i + 1;
   }
 
-  // Recently rewritten, durng dropbox prep
+  // Recently rewritten, during dropbox prep
   private int Partition(int[] A, int p, int r) {
     int x = A[r];    // pivot    
     int i = p - 1;
