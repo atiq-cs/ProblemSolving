@@ -4,8 +4,8 @@
 * Author: Atiq Rahman
 * Status: Accepted
 * Notes : Have to find out the maximum number of elements
-* rel   : 10608
-* meta  : tag-graph-mst, tag-union-find
+* rel   : 10608, 10583
+* meta  : tag-graph-mst, tag-ds-dsf, tag-algo-union-find, tag-ds-core
 ***************************************************************************************************/
 #include <cstdlib>
 #include <cstdio>
@@ -26,6 +26,7 @@ bool operator<(chain a, chain b) {
   return (strcmp(a.get(), b.get())<0);
 }
 
+// ref at 'ds/dsf.cpp'
 void makeSet(int n);
 int findSet(int i);
 void Union(int x, int y);
@@ -64,45 +65,4 @@ int main() {
   }
   
   return 0;
-}
-
-void makeSet(int n) {
-  int i;
-  for (i=1; i<=n; i++) {
-    sets[i] = i;
-    rank[i] = 0;
-    no_child[i] = 1;
-  }
-}
-
-int findSet(int i) {
-    if (sets[i] == i)
-      return i;
-    else
-      return findSet(sets[i]);
-}
-
-void Union(int x, int y) {
-  if (x != y) {
-  if (rank[x]>rank[y]) {
-    sets[y] = x;
-    no_child[x] += no_child[y];
-  }
-  else {
-    sets[x] = y;
-    no_child[y] += no_child[x];
-    if (rank[x]==rank[y])
-      rank[y]++;
-  }
-  }
-}
-
-int findMaxNoMembers(int n) {
-  int max, i;
-
-  for (max=no_child[1],i=2; i<=n; i++) {
-    if (max < no_child[i])
-      max = no_child[i];
-  }
-  return max;
 }

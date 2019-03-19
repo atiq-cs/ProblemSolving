@@ -5,7 +5,7 @@
 * Notes : Have to find out the maximum number of sets possilbe, solved having little modification to
 *   UVA 10608
 * rel   : UVA#10608
-* meta  : tag-graph-mst, tag-union-find
+* meta  : tag-graph-mst, tag-ds-dsf, tag-algo-union-find, tag-ds-core
 ***************************************************************************************************/
 #include <cstdio>
 #include <cstring>
@@ -14,32 +14,14 @@ using namespace std;
 int sets[50005], rank[50005];
 bool exist[50005];
 
+// Utilizes DSF but excludes "no_child" array
+// findSet and Union are at 'ds/dsf.cpp'
+// modifies makeSet to initialize exist array as well..
 void makeSet(int n) {
   int i;
   for (i=1; i<=n; i++) {
-    sets[i] = i;
-    rank[i] = 0;
+    // ... ..
     exist[i] = true;
-  }
-}
-
-int findSet(int i) {
-    if (sets[i] == i)
-      return i;
-    else
-      return findSet(sets[i]);
-}
-
-void Union(int x, int y) {
-  if (x != y) {
-  if (rank[x]>rank[y]) {
-    sets[y] = x;
-  }
-  else {
-    sets[x] = y;
-    if (rank[x]==rank[y])
-      rank[y]++;
-  }
   }
 }
 
