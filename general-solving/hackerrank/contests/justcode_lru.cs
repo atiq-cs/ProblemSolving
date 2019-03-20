@@ -16,14 +16,15 @@ using System.Collections.Generic;
 
 // represents a node in doubly linked list
 class ListNode {
-  public int val { get; private set; }
+  public int key { get; private set; }
   public ListNode prev { get; set; }
   public ListNode next { get; set; }
-  public ListNode(int val, ListNode prev, ListNode next)
+
+  public ListNode(int kye, ListNode prev, ListNode next)
   {
     this.prev = prev;
     this.next = next;
-    this.val = val;
+    this.key = kye;
   }
 }
 
@@ -44,8 +45,8 @@ class LRU {
     return dict.ContainsKey(item) == false ? null : dict[item];
   }
 
-  public void Enqueue(int item) {
-    ListNode newHead = new ListNode(item, null, head == null ? null : head);
+  public void Enqueue(int key) {
+    ListNode newHead = new ListNode(key, null, head == null ? null : head);
     if (head != null)
       head.prev = newHead;
     head = newHead;
@@ -53,14 +54,14 @@ class LRU {
     if (tail == null)
       tail = newHead;
     // Add to dictionary
-    dict.Add(item, newHead);
+    dict.Add(key, newHead);
     Count++;
   }
 
   // Remove the least recently used item
   public void Dequeue() {
     // Remove it from dictionary
-    dict.Remove(tail.val);
+    dict.Remove(tail.key);
 
     // drop the node at tail, if it's head it does not have a previous node
     if (tail.prev != null)
@@ -74,7 +75,7 @@ class LRU {
 
   /// <summary>
   /// Update as most recently accessed item
-  /// references moves in the linked list but is not changed
+  /// references move in the linked list but is not changed
   /// Hence, dictionary entry is not udpated
   /// Consider, this node can be head, tail or in the middle
   /// </summary>
@@ -107,7 +108,7 @@ class LRU {
     ListNode current = head;
     int i = 0;
     while (current != null) { 
-      res[i++] = current.val;
+      res[i++] = current.key;
       current = current.next;
     }
     return string.Join(" ", res);
@@ -123,12 +124,14 @@ class Solution {
 
     LRU lruObj = new LRU();
 
-    for (int T=N; T > 0;) {
+    for (int T=N; T > 0; ) {
       tokens = Console.ReadLine().Split();
       T -= tokens.Length;
+
       for (int i=0; i<tokens.Length; i++) {
         int item = int.Parse(tokens[i]);
         ListNode pos = lruObj.find(item);
+
         if (pos == null) {
           if (lruObj.Count == S)
             lruObj.Dequeue();
