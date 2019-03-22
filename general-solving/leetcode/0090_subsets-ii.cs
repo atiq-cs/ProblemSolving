@@ -26,6 +26,7 @@ public class Solution {
     Array.Sort(nums);
     var subLists = new List<IList<int>>(new List<int>[] { new List<int>() } );
     var ssindex = new List<int>( new int[] { 0 });
+
     for (int i=0; i<nums.Length; i++) {
       int len = subLists.Count; // coz list (& it's length) will be modified
       for (int q=0; q<len; q++)

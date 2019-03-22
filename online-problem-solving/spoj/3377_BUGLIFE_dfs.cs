@@ -9,7 +9,7 @@
 * Notes : Using stack instead of recursion to implement DFS
 *   Uses Vertex class to store color
 *   More details on '3377_BUGLIFE_recursion.cs'
-* meta  : tag-easy, tag-dfs
+* meta  : tag-graph-dfs, tag-easy
 ***************************************************************************/
 using System;
 using System.Collections.Generic;

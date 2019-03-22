@@ -6,7 +6,7 @@
 * Comp  : O(V+E)
 * Status: Demo
 * Notes : comments inline, input sample at bottom
-* meta  : tag-graph, tag-dfs, tag-recursion, tag-company-gatecoin, tag-coding-test
+* meta  : tag-graph-dfs, tag-recursion, tag-company-gatecoin, tag-coding-test
 ***************************************************************************/
 using System;
 using System.Collections.Generic;

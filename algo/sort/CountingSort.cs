@@ -1,17 +1,24 @@
-/***************************************************************************
+/***************************************************************************************************
 * Title : Counting sort utility
 * URL   : C.L.R.S p194: Counting Sort
 * Date  : 2018-06-07
 * Author: Atiq Rahman
-* Notes : Generic class implementation for class 'Sorting' is avoided for
-*   simplicity
-***************************************************************************/
-/*
- * This was previously implemented using struct which provides pass by value
- * instead of references. msdn ref for this was,
- * https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-
- *  and-structs/using-structs
- */
+* Notes : O(N) additional space is required if we want a stable sort. If we just need the
+*   frequencies
+*   
+*   Problem with this implementation is that this does not look coherent with C.L.R.S pseudo-code
+*   ToDo: rewrite for coherence
+*
+*   https://www.youtube.com/watch?v=OKd534EWcdk mentions approach where they start with starting
+*   indices instead of writing from backward. Their accumulative C array records the starting
+*   indices for each item.
+*   
+*   Generic class implementation for class 'Sorting' is avoided for simplicity
+*  This was previously implemented using struct which provides pass by value
+ *  instead of references. msdn ref for this was,
+ * https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/using-structs
+ * meta: tag-algo-sort, tag-algo-core
+***************************************************************************************************/
 // Consider better encapsulation if required
 class Item {
   public int priority { get; set; }   // or can be named 'key'

@@ -38,11 +38,16 @@ public class Solution {
     for (int i=1; i<=p.Length; i++)
       for (int j=1; j<=s.Length; j++) {
         if (p[i-1] == '*') {
+          // was there match till prev pattern char
           if (i>1 && dp[i-2][j])
             dp[i][j] = dp[i-2][j];
+          // this char matches prev pattern char and that we have a * at current pattern char,
+          // propagate result
           else if (s[j-1] == p[i-2] || p[i-2] == '.')
             dp[i][j] = dp[i][j-1];
         }
+        // for example, a.b, abb
+        // here we have at last index b = b, get result from prev index
         else if (p[i-1] == s[j-1] || p[i-1] == '.')
           dp[i][j] = dp[i-1][j-1];
       }

@@ -68,7 +68,7 @@ public class OrderStat {
   // same thing written slightly differently
   private int Partition(int p, int r) {
     int i = p-1;
-    long x = A[r];
+    int x = A[r];
     for (int j=p; j<r; j++)
       // maintains invariant that all items are less than pivot are in the
       // block of i (or smaller elements till where i ends)

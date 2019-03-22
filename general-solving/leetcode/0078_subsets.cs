@@ -46,6 +46,7 @@ public class Solution {
 
       var temp = subHelper(nums, index - 1);
       int tempLength = temp.Count;
+
       for (int i = 0; i < tempLength; i++) {
         temp.Add(new List<int>(temp[i]));
         temp[temp.Count - 1].Add(nums[index - 1]);

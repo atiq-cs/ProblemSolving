@@ -2,7 +2,7 @@
 * Title : Next Permutation
 * URL   : https://leetcode.com/problems/next-permutation/
 * Date  : 2015-10-24
-* Comp  : O(n) Time
+* Comp  : O(n), O(1) modifying original array
 * Author: Atiq Rahman
 * Status: Accepted (beat 93%)
 * Notes : have to test the approach with
@@ -10,8 +10,10 @@
 *   Credits, https://github.com/animeshh
 *   Further improvement: http://codeforces.com/blog/entry/3980
 * rel   : UVA - 146
-* ref   : http://blog.csdn.net/m6830098/article/details/17291259
-* meta  : tag-next-permutation, tag-permutation
+* ref   : 1. leetcode implements exactly same thing,
+*   https://leetcode.com/problems/next-permutation/solution/
+*   2. http://blog.csdn.net/m6830098/article/details/17291259
+* meta  : tag-next-permutation, tag-permutation, tag-leetcode-medium
 ***************************************************************************************************/
 public class Solution
 {

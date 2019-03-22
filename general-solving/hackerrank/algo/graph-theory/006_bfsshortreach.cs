@@ -8,6 +8,7 @@
 * Status: Accepted
 * Notes : use BFS to find distance of each node, then multiply by 6; a trivial problem
 *   Minimal Graph Representation
+*   Another implementation of C.L.R.S style BFS
 * ref   : Algorithms/Graph/01_BFS.cpp
 * meta  : tag-graph-bfs
 ***************************************************************************************************/

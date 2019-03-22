@@ -20,7 +20,13 @@
 *
 *    adding chars, combining as string
 *    https://stackoverflow.com/q/1324009/
-* meta  : tag-algo-dp, tag-string-palindrome, tag-two-pointers, tag-leetcode-medium
+*    
+*    Comment from https://leetcode.com/problems/longest-palindromic-substring/solution/
+*    "There is even an O(n)O(n) algorithm called Manacher's algorithm, explained here in detail.
+*    However, it is a non-trivial algorithm, and no one expects you to come up with this algorithm
+*    in a 45 minutes coding session. But, please go ahead and understand it, I promise it will be
+*    a lot of fun."
+* meta  : tag-dp-manacher, tag-string-palindrome, tag-two-pointers, tag-leetcode-medium
 ***************************************************************************/
 public class Solution {
   /// <summary>

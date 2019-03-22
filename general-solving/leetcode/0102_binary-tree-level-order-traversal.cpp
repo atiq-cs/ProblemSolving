@@ -6,7 +6,7 @@
 * Author: Atiq Rahman
 * Status: Accepted
 * Notes : consider that nodes of each level stays on specific index on the vector of vectors
-* meta  : tag-binary-tree, tag-recursion, tag-leetcode-medium
+* meta  : tag-ds-binary-tree, tag-graph-bfs, tag-leetcode-medium
 ***************************************************************************************************/
 class Solution {
 private:

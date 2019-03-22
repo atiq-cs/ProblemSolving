@@ -36,7 +36,7 @@ public class Solution {
       return;
     }
     // process one digit on left and go for the rest
-    int p = getfact(n - 1);
+    int p = fact(n - 1);
     int digitIndex = (int) Math.Ceiling(((double) k) / p) - 1;
 
     sb.Append(digitList[digitIndex]);

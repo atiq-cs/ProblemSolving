@@ -29,7 +29,7 @@
 *   
 * ref   : C.L.R.S 3rd Ed., Ch 14, Section 14.3 Interval Trees would also work
 * rel   : https://leetcode.com/problems/range-sum-query-mutable
-* meta  : tag-fenwick-tree, tag-binary-indexed-tree, tag-leetcode-hard
+* meta  : tag-algo-fenwick-tree, tag-ds-binary-indexed-tree, tag-leetcode-hard
 ***************************************************************************************************/
 public class Solution
 {

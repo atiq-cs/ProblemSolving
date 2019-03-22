@@ -36,7 +36,7 @@ public class Solution {
     DFS(r, c+1);
   }
 
-  // Previous version that uses O(nm) space
+  // Previous version that uses O(nm) space and uses an additional visited array
   public int NumIslands_v0(char[,] mdGrid) {
     grid = ConvertMultiDimensionalToJagged<int>(mdGrid);
     // declare this as class member as well

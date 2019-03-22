@@ -2,8 +2,7 @@
 * Title : Two Sum
 * URL   : https://leetcode.com/problems/two-sum/
 * Date  : 2015-01-11
-* Comp  : O(N) Time and Space
-* Author: Atiq Rahman
+* Comp  : O(N), O(N)
 * Status: Accepted
 * Notes : HashSet is a better data structure for set operations. If we don't require set operations
 *   we use dictionary for mapping.

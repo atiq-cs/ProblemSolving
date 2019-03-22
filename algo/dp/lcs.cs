@@ -30,7 +30,7 @@ class SubseqAlgoDemo<T> {
     b = new DIR[m+1][];
     lcs = new List<T>();
 
-    // and initializations
+    // and initializations, for C#, initialization for 2d jagged array c is not necessary
     for (int i=0; i<=m; i++) {
       c[i] = new int[n+1];
       b[i] = new DIR[n+1];

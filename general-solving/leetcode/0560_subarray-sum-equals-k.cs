@@ -28,11 +28,13 @@
 *
 *   https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.dictionary-2.item
 *   if item doesn't exist a set operation creates a new element with the specified key.
+*   
+*   fb version is to return true or false
 * ref   : leetcode.com/problems/subarray-sum-equals-k/discuss/102106/Java-Solution-PreSum-+-HashMap
 *   enough trouble to understand though
 * rel   : https://leetcode.com/problems/subarray-product-less-than-k
 * ack   : Sreezin (Mak)
-* meta  : tag-hash-table, tag-leetcode-medium
+* meta  : tag-hash-table, tag-company-facebook, tag-leetcode-medium
 ***************************************************************************************************/
 public class Solution
 {
@@ -44,7 +46,7 @@ public class Solution
       sum += num;
       if (numWays.ContainsKey(sum - k))
         result += numWays[sum - k];
-      if (numWays.ContainsKey(sum))    
+      if (numWays.ContainsKey(sum))
         numWays[sum]++;
       else
         numWays[sum] = 1;   // msdn: set operation creates a new element with the specified key

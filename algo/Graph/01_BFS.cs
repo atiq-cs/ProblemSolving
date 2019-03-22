@@ -13,7 +13,7 @@
 *   pre is the array used to keep track of ancestors.
 *   source is a class member used by GetPath
 *   
-* meta  : tag-graph, tag-dfs, tag-recursion
+* meta  : tag-graph-dfs, tag-recursion
 ***************************************************************************/
 using System;
 using System.Collections.Generic;

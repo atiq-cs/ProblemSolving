@@ -48,9 +48,15 @@
 *   https://atiqcs.wordpress.com/2018/04/13/kmp-algo/
 * Rel   : https://www.hackerrank.com/challenges/string-similarity
 *   More http://a2oj.com/Category.jsp?ID=29
-* meta  : tag-string, tag-kmp
+* meta  : tag-string-kmp, tag-dp-string, tag-algo-core
 ***************************************************************************/
 public class StringMatcherUtil {
+  /// <summary>
+  /// Two pointers approach where i points to current item index and k points to where previous
+  /// match of this item resides
+  /// </summary>
+  /// <param name="needle"></param>
+  /// <returns></returns>
   private int[] ComputePrefix(string needle) {
     int[] pf = new int[needle.Length];
 
@@ -60,7 +66,7 @@ public class StringMatcherUtil {
         k = pf[k];
       if (needle[k + 1] == needle[i])
         k++;
-      pf[i] = k;
+      pf[i] = k;  // matched to k++ because that's where match happened
     }
     return pf;
   }

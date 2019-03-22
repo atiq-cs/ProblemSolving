@@ -23,7 +23,7 @@
 *   
 *   TODO. solve this problem using Manacher's Algorithm
 * ref   : https://github.com/awangdev/LintCode/blob/master/Java/Shortest%20Palindrome.java
-* meta  : tag-string, tag-kmp, tag-leetcode-hard
+* meta  : tag-string-kmp, tag-dp-string, tag-leetcode-hard
 ***************************************************************************************************/
 public class Solution
 {
@@ -31,35 +31,28 @@ public class Solution
     char[] result = str.ToArray(); Array.Reverse(result);
     // result.Reverse(); does not work
     string revStr = new string(result);
-    int longestPalindromeLength = ComputePrefix(str + "#" + revStr);
+    // Component Prefix Table Computation from KMP is at 'algo/string/KMP-String-Matcher.cs'
+    // returns matching index for last char
+    int longestPalindromeLength = ComputePrefix(str + "#" + revStr)[needle.Length - 1] + 1;
     return revStr.Substring(0, revStr.Length - longestPalindromeLength) + str;
   }
-
-  // Component Prefix Table Computation from KMP
-  private int ComputePrefix(string needle) {
-    int max = 0;
-    int[] pf = new int[needle.Length];
-
-    pf[0] = -1; // first index is initialized
-    for (int i = 1, k=-1; i < needle.Length; i++) {
-      while (k >= 0 && needle[k + 1] != needle[i])
-        k = pf[k];
-      if (needle[k + 1] == needle[i])
-        k++;
-      pf[i] = k;
-      max = Math.Max(max, k);
-    }
-    return pf[needle.Length - 1]+1;
-  }
-
-  /*
-  foreach(var len in pf)
-    Console.Write(" "+len);
-  Console.WriteLine();
-  */
 }
 
 /*
+Eample for KMP variation,
+"abcd"
+
+pound added string, "abcd # dcba"
+
+kmp is run on this.
+Apparently, prefix last index would be where last char 'a' was encountered first.
+
+which is index 0. Hence 1 (0+1) char is removed. Therefore, we append 
+ cba
+(removing char 'd')
+
+---------------------
+Analysis using initial algo
 aacecaaa
 
 abcd

@@ -18,9 +18,9 @@ class DSF {
   int n;
   int[] sets;
   int[] ranks;
-  int[] numChildren;
   // To keep track of total number of sets we have
   public int Count { get; private set; }
+  int[] numChildren;
 
   public DSF(int n) {
     this.n = this.Count = n;

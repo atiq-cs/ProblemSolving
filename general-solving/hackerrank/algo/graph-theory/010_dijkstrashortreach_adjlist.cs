@@ -109,7 +109,7 @@ public class Dijkstra {
   }*/
 }
 
-class HK_Solution {
+class HKSolution {
   public static void Main() {
     int T = int.Parse(Console.ReadLine());
     while (T-- > 0) {

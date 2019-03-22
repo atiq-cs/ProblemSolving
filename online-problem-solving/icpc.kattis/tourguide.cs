@@ -2,10 +2,9 @@
 * Title       : Tour Guide
 * URL         : https://open.kattis.com/problems/tourguide
 * Occasion    : Nordic Collegiate Programming Contest 2006
-* Date        : Oct 6 2017
+* Date        : 2017-10-06
 * Complexity  : O(n! * n) - generating permutations O(n!)
 *               - O(n) for each permutation
-* Author      : Atiq Rahman
 * Status      : Accepted
 * Notes       : A relaxed version of Traveling Salesman Problem
 *               Due to small number of input it is possible to generate
@@ -30,7 +29,7 @@
 *               Problem C of 10xRecruit Coding Challenge- 10xrecruit.kattis.com
 * Same        : http://poj.org/problem?id=3029
 *               http://noj.io/problem/p/1127
-* meta        : tag-kattis, tag-tsp, tag-geometry, tag-math
+* meta        : tag-permutation, tag-oj-kattis, tag-tsp, tag-geometry, tag-math
 ***************************************************************************/
 using System;
 

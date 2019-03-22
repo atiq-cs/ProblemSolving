@@ -5,7 +5,9 @@
 * Author: Atiq Rahman
 * Comp  : O(n lg n), O(n)
 * Status: Accepted
-* Notes : Similar to insert interval problem. In that problem we are given intervals in sorted order
+* Notes : Given a list of intervals merge intervals which are overlapped and return new list
+*
+*   Similar to insert interval problem. In that problem we are given intervals in sorted order
 *   In that problem the new interval could be any where (before, after, inside/overlapping).
 *   Because of the sorting, in this problem all newly appearing intervals are either overlapping or
 *   not.
@@ -15,7 +17,7 @@
 *   Cast IList to List ref: https://stackoverflow.com/q/2207341
 *   Demonstrates use of lambda expression with List.Sort
 * rel   : https://leetcode.com/problems/insert-interval
-* meta  : tag-intervals, tag-algo-kmp, tag-csharp-lambda-exp
+* meta  : tag-intervals, tag-algo-sort, tag-csharp-lambda-exp
 ***************************************************************************************************/
 public class Solution
 {

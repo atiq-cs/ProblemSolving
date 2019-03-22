@@ -6,7 +6,8 @@
 * Comp  : 
 * Status: Accepted
 * Notes : Given data is unsorted.
-*   C.L.R.S Intro to Cormen - Chapter 35
+*   C.L.R.S Intro to Cormen - Ch#35, 35.5, The subset-sum problem, p#1128
+*   Approx-Subset-Sum is at p#1131
 *   Yet to understand how this algo works
 *
 * meta  : tag-algo-dp, tag-leetcode-medium

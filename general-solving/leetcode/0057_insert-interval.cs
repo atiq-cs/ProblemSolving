@@ -2,7 +2,6 @@
 * Title : Insert Interval
 * URL   : https://leetcode.com/problems/insert-interval
 * Date  : 2018-05-10
-* Author: Atiq Rahman
 * Comp  : O(N), O(N)
 * Status: Accepted
 * Notes : Given that input intervals are in sorted order of start time

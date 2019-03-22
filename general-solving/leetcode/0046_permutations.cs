@@ -27,9 +27,9 @@ public class Solution {
     }
 
     for (int i = index; i < n; i++) {
-      Swap(i, index);     // util.cs
+      Swap<int>(A, i, index);     // util.cs
       Permute(index + 1);
-      Swap(index, i);
+      Swap<int>(A, index, i);
     }
   }
 }

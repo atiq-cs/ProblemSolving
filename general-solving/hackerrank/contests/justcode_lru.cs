@@ -20,7 +20,7 @@ class ListNode {
   public ListNode prev { get; set; }
   public ListNode next { get; set; }
 
-  public ListNode(int kye, ListNode prev, ListNode next)
+  public ListNode(int key, ListNode prev, ListNode next)
   {
     this.prev = prev;
     this.next = next;

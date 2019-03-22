@@ -3,12 +3,11 @@
 * URL   : http://spoj.com/problems/BUGLIFE/
 * Contst: 2007 PUJ - Circuito de Maratones ACIS / REDIS
 * Date  : 2017-12-19
-* Author: Atiq Rahman
 * Comp  : O(n)
 * Status: Time Limit Exceeded
 * Notes : This is same as '3377_BUGLIFE_dfs.cs' and,
 *   Stack is replaced with Queue
-* meta  : tag-easy, tag-bfs
+* meta  : tag-graph-bfs, tag-easy
 ***************************************************************************/
 using System;
 using System.Collections.Generic;
@@ -16,6 +15,7 @@ using System.Collections.Generic;
 public class DFSDemo {
   // Probably GRAY for Male and BLACK for Female
   internal enum COLOR { WHITE, GRAY, BLACK };
+
   internal class Vertex {
     public int Index { get; set; }
     public COLOR Color { get; set; }
