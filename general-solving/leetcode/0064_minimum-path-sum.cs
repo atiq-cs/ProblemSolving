@@ -13,7 +13,7 @@
 *   Row and col cannot be negative.
 *   Overflow for addition with Max Int (INF) is taken care of in `Add()`
 *   
-* meta  : tag-leetcode-medium, tag-algo-dp
+* meta  : tag-algo-dp, tag-graph-bfs, tag-leetcode-medium
 ***************************************************************************/
 public class Solution {
   int numRows, numCols;

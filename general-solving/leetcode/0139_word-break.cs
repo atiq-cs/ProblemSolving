@@ -22,13 +22,13 @@
 * meta  : tag-algo-dp, tag-company-facebook, tag-leetcode-medium
 ***************************************************************************/
 public class Solution {
-  public bool WordBreak(string s, IList<string> wordDict) {
+  public bool WordBreak(string s, IList<string> words) {
     bool[] dp = new bool[s.Length];
     dp[0] = true;
 
     for(int i=0; i<s.Length; i++)
       if (dp[i])
-        foreach(string word in wordDict)
+        foreach(string word in words)
           if (i+word.Length <= s.Length && s.Substring(i, word.Length) == word) {
             if (i+word.Length == s.Length)
               return true;

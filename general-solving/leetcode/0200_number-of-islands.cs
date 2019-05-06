@@ -27,7 +27,7 @@ public class Solution {
   }
   
   private void DFS(int r, int c) {
-    if (r < 0 || c<0 || r>=numRows || c>=numCols || grid[r][c] == false)
+    if (r<0 || c<0 || r>=numRows || c>=numCols || grid[r][c] == false)
       return ;
     grid[r][c] = false;
     DFS(r-1, c);

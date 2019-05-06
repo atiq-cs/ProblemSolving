@@ -30,9 +30,11 @@ public class Solution
       Swap<int>(nums, j, i - 1);
     }   // afterwards, when we reverse the string order is maintained
     for (int j=i, k=nums.Length-1; j<k;j++,k--)
-      /* if (nums[j]>nums[k]) */ {  // swap condition not required
+      Swap<int>(nums, j, k);
+      //if (nums[j]>nums[k]) */  // swap condition not required
+      /* {
         int temp = nums[j]; nums[j] = nums[k]; nums[k] = temp;
-      }
+      } */
   }
 }
 

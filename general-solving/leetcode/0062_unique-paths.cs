@@ -24,20 +24,25 @@ public class Solution {
     return prevRow[n - 1];
   }
 
-  // initial easy version, O(mn), O(mn)
+  // initial easy version, good for explaining th prob as well..
+  // O(mn), O(mn)
   public int UniquePaths_v1(int m, int n) {
     // Allocation and initialization
     int[][] pathCount = new int[m][];
     for (int i = 0; i < m; i++) {
       pathCount[i] = new int[n];
+      // first column can be reached in one way
       pathCount[i][0] = 1;
     }
+
+    // first row can be reached in one way: going from left to right
     for (int i = 0; i < n; i++)
       pathCount[0][i] = 1;
 
     // DP
     for (int row = 1; row < m; row++)
       for (int col = 1; col < n; col++)
+        // sum of how many we can go the upper cell and left side cell
         pathCount[row][col] = pathCount[row - 1][col] + pathCount[row][col - 1];
 
     return pathCount[m - 1][n - 1];

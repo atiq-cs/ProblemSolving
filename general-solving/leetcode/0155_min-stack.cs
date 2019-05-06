@@ -9,7 +9,9 @@
 *   constant time. The cpp version '0155_min-stack.cpp' utilizes O(n) space. This one does better
 *   than that, follows an approach from EPI
 *   
-*   With each item on the stack associate a min item. O(1) space considering for N operations it
+*   With each item on the stack associate a min item. O(1) space considering for N operations it.
+*   This problem does not seem to return Min when items are popped. And this problem does not
+*   seem to care about it.
 * ref   : EPI
 * meta  : tag-ds-stack, tag-leetcode-easy
 ***************************************************************************************************/
@@ -23,24 +25,24 @@
  */
 
 public class MinStack {
-  internal class StackItem {
+  internal class Item {
     public int val { get; set; }
     public int min { get; set; }
 
-    public StackItem(int v, int m) {
+    public Item(int v, int m) {
       val = v;
       min = m;
     }
   }
 
-  private Stack<StackItem> stack;
+  private Stack<Item> stack;
 
   public MinStack() {
-    stack = new Stack<StackItem>();
+    stack = new Stack<Item>();
   }
 
   public void Push(int x) {
-    stack.Push(new StackItem(x, (stack.Count > 0 && stack.Peek().min < x) ? stack.Peek().min : x));
+    stack.Push(new Item(x, (stack.Count > 0 && stack.Peek().min < x) ? stack.Peek().min : x));
   }
 
   public void Pop() {

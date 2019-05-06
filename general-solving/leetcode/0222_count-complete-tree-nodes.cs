@@ -2,7 +2,6 @@
 * Title : Count Complete Tree Nodes
 * URL   : https://leetcode.com/problems/count-complete-tree-nodes
 * Date  : 2018-05-10
-* Author: Atiq Rahman
 * Comp  : O((lg n) ^ 2) Time, O(lg n) Space comp of GetHeight
 *   Worst case will be: lg N + lg (N/2) + lg (N/4) + .... + 1
 *   if h = lg N this becomes, T = h + (h-1) + (h-2) + (h-3) + .... + 1
@@ -21,7 +20,7 @@
 *   
 * Ack   : Initial idea, Kevin Huang
 * Ref   : https://atiqcs.wordpress.com/2017/11/21/binary-tree-jargon/
-* meta  : tag-binary-tree, tag-leetcode-medium
+* meta  : tag-ds-binary-tree, tag-leetcode-medium
 ***************************************************************************/
 public class Solution {
   // final version

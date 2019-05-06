@@ -42,6 +42,11 @@ public class BSTSuccessor {
     return currentNode.val;
   }
 
+  /// <summary>
+  /// Returns top level parent for last node, not really correct.., should return null
+  /// this is ToDo
+  /// </summary>
+  /// <returns></returns>
   private TreeNode FindSuccessor() {
     TreeNode current = currentNode;
     if (current.right != null)

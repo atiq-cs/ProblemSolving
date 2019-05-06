@@ -23,10 +23,11 @@
 * meta  : tag-ds-stack, tag-balance-expression, tag-parenthesis
 ***************************************************************************/
 public class Solution {
+  // top down dp
   public IList<string> GenerateParenthesis(int n) {
     if (n==0)
       return new List<string> { "" };
-    
+
     IList<string> parenthesisStringList = new List<string>();
     for (int i=0; i<n; i++) {
       IList<string> leftParenthesesStringList = GenerateParenthesis(i);

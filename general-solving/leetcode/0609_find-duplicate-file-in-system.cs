@@ -8,7 +8,7 @@
 * Notes : Pretty much a hashtable problem. This file contains the leetcode
 *   solution. For the Visual Studio driver program along with a sample large
 *   input please have a look at '609_find-duplicate-file-in-system_demo_vs.cs'
-* meta  : tag-hashtable, tag-data-structure, tag-string
+* meta  : tag-ds-hashtable, tag-string
 ***************************************************************************/
 using System;
 using System.Collections.Generic;

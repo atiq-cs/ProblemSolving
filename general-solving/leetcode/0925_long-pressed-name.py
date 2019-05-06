@@ -24,6 +24,7 @@ class Solution:
           return False
     return i == len(name)-1
 
+
 '''
 Example debug statement,
  print("i {} j {}".format(i, j))
@@ -32,5 +33,40 @@ Useful test-cases,
 "pyplrz"
 "ppyypllr"
 
+from draft,
+"ab"
+"aabb"
+
+Counter(ab)
+
+a -> 1
+b -> 1
+
+Counter(aabb)
+a -> 2
+b -> 2
+
+"aabb"
+"abab"
+
+
+name[i]
+
+------
+test-cases
+"saeed"
+"ssaaedd"
+"alex"
+"aaleex"
+"laiden"
+"laiden"
+
+
+"saeed"
+"ssaaedd"
+"alex"
+"aaleex"
+"laiden"
+"laiden"
 
 '''

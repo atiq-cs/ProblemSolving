@@ -10,7 +10,7 @@
 *
 *   rel: https://leetcode.com/problems/palindromic-substrings
 *    https://leetcode.com/problems/shortest-palindrome
-*   
+*
 *   ref:
 *    https://atiqcs.wordpress.com/2018/05/01/manachers-algo/
 *    https://www.hackerrank.com/topics/manachers-algorithm
@@ -52,7 +52,7 @@ public class Solution {
       // Possibly extend current palindrome
       // check the bound and check equality on both sides
       while (i-(1+P[i])>=0 && i+(1+P[i])<T.Length &&
-        T[i+(1+P[i])] == T[i-(1+P[i])])
+          T[i+(1+P[i])] == T[i-(1+P[i])])
         P[i]++;
 
       // Ensure current index is in boundary of last palindrome discovered

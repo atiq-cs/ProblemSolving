@@ -2,9 +2,8 @@
 * Title       : Unlock Pattern
 * URL         : https://open.kattis.com/problems/unlockpattern
 * Occasion    : The 3rd ProgNova Programming Contest by NYU CS
-* Date        : Oct 15 2017
+* Date        : 2017-10-15
 * Complexity  : O(n), where n is number of pivots in the grid, n = row * column
-* Author      : Atiq Rahman
 * Status      : Accepted
 * Notes       : Traverse each node starting from 2 to 9 and add the distances
 *   with previous node. Properly display the output specifying number of digits
@@ -14,17 +13,17 @@
 *   - Programming language barrier/differences for floating point specification
 *    on output. Pay attention to the number of digits displayed after
 *    the decimal point.
-*
+*   cpp version of interest (tried in beginning, not sure AC) https://ideone.com/WKihuH
 * Ref         : https://prognova17.kattis.com/
-* meta        : tag-easy, tag-math
+* meta        : tag-oj-kattis, tag-math, tag-easy
 ***************************************************************************/
 using System;
 
-public class Coord {
+public class Point {
   public int x;
   public int y;
 
-  public Coord(int r, int c) {
+  public Point(int r, int c) {
     y = r;
     x = c;
   }
@@ -37,14 +36,14 @@ class UnlockPattern {
 
   // our private data members
   int[][] grid;
-  Coord[] cord;
+  Point[] points;
 
   public UnlockPattern() {
     grid = new int[RowLimit][];
     for (int i = 0; i < RowLimit; i++)
       grid[i] = new int[ColumnLimit];
 
-    cord = new Coord[RowLimit * ColumnLimit];
+    points = new Point[RowLimit * ColumnLimit];
   }
 
   // representation should be taken, process input
@@ -55,7 +54,7 @@ class UnlockPattern {
       // j = column iterator
       for (int j = 0; j < ColumnLimit; j++) {
         int num = grid[i][j] = int.Parse(tokens[j]) - 1;
-        cord[num] = new Coord(i, j);
+        points[num] = new Point(i, j);
       }
     }
   }
@@ -66,10 +65,10 @@ class UnlockPattern {
     // second index gets the distance from first one
     // 3rd one gets from 2nd and so on..
     for (int i = 1; i < RowLimit * ColumnLimit; i++) {
-      int x1 = cord[i-1].x;
-      int y1 = cord[i-1].y;
-      int x2 = cord[i].x;
-      int y2 = cord[i].y;
+      int x1 = points[i-1].x;
+      int y1 = points[i-1].y;
+      int x2 = points[i].x;
+      int y2 = points[i].y;
       length += Math.Sqrt((x2-x1) * (x2 - x1) + (y2 - y1) * (y2 - y1));
     }
     return length;

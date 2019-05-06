@@ -13,13 +13,14 @@
 * meta  : tag-ds-binary-tree, tag-recursion, tag-leetcode-easy
 ***************************************************************************/
 public class Solution {
-  public int DiameterOfBinaryTree(TreeNode root) {
-    if (root == null)
+  public int DiameterOfBinaryTree(TreeNode node) {
+    if (node == null)
       return 0;
-    return Math.Max(height(root.left) + height(root.right) + 2, Math.Max(
-      DiameterOfBinaryTree(root.left), DiameterOfBinaryTree(root.right)));
+    return Math.Max(height(node.left) + height(node.right) + 2, Math.Max(
+      DiameterOfBinaryTree(node.left), DiameterOfBinaryTree(node.right)));
   }
 
+  // can be improved much by memoization
   private int height(TreeNode root) {
     if (root == null)
       return -1;

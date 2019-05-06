@@ -28,7 +28,7 @@
 *   below. Due to the simplified application TREE-SUCCESSOR could not be fully
 *   tested with this leetcode problem.
 *   
-*   Transplant(T, u, v) [C.L.R.S p296] is not implemented as a function due to
+*   Transplant(T, u, v) [C.L.R.S p#296] is not implemented as a function due to
 *   requirement of passing of additional parameters. For an independent
 *   function it might require following parameters,
 *   - parent of z
@@ -41,7 +41,7 @@
 *   the small input were useful. Large one is added for reference only.
 * ref   : C.L.R.S 3rd ed, p#298
 * rel : http://lintcode.com/en/problem/insert-node-in-a-binary-search-tree/
-* meta  : tag-ds-bst, tag-ds-core
+* meta  : tag-ds-bst, tag-successor, tag-ds-core
 ***************************************************************************/
 public class Solution
 {
@@ -95,7 +95,7 @@ public class Solution
       // changed source code flow following C.L.R.S
       // y is not child of z, y's right node should replace y
       if (py != null) {
-        // TRANSPLANT(T, y, y.right)  C.L.R p298
+        // TRANSPLANT(T, y, y.right)  C.L.R.S p#298
         if (py.left == y)
           py.left = y.right;
         else

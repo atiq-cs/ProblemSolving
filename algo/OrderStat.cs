@@ -64,18 +64,20 @@ public class OrderStat {
     return Partition(p, r);
   }
 
-  // simple quick sort partition - C.L.R.S, p171, rel: 'Basics/quick_sort.cs'
+  // ToDO: test this new version starting fromp p instead of p-1 and ++i, instead of i++ is working
+  // or not ?
+  // simple quick sort partition - C.L.R.S, p#171, rel: 'Basics/quick_sort.cs'
   // same thing written slightly differently
   private int Partition(int p, int r) {
-    int i = p-1;
+    int i = p;
     int x = A[r];
     for (int j=p; j<r; j++)
       // maintains invariant that all items are less than pivot are in the
       // block of i (or smaller elements till where i ends)
       if (A[j] <= x)
-        Swap(++i, j);
-    Swap(i+1, r);
-    return i + 1;
+        Swap(i++, j);
+    Swap(i, r);
+    return i;
   }
 
   private void Swap(int i, int j) {

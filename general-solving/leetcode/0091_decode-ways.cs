@@ -13,7 +13,12 @@
 *   here's DP short,
 *    https://leetcode.com/problems/decode-ways/discuss/232321/Compact-Java-Solution
 *   ToDo: understand/improve
-* meta  : tag-algo-dp, tag-string, tag-leetcode-medium
+*   must explain thi algo and publish
+*   
+*   todo-blog-publish
+*
+* rel   : ltcode#639
+* meta  : tag-algo-dp, tag-string, tag-fibonacci, tag-leetcode-medium
 ***************************************************************************************************/
 public class Solution
 {

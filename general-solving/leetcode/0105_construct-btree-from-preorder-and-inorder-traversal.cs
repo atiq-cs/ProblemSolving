@@ -2,14 +2,14 @@
 * Title : Construct Binary Tree from Preorder and Inorder Traversal
 * URL   : https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal
 * Date  : 2018-12-09
-* Author: Atiq Rahman
 * Comp  : O(N^2), O(N) if unbalanced; O( N lg N), O(lg N)
 * Status: Accepted
 * Notes : Readable and elaborate solution
 *  Soution 2 is for reference
 * ref   : 
 * Ack   : Mak (for comp analysis)
-* meta  : tag-binary-tree, tag-leetcode-medium
+* rel   : leetcode#106
+* meta  : tag-ds-binary-tree, tag-graph-dfs, tag-leetcode-medium
 ***************************************************************************************************/
 public class Solution {
   int index = 0;

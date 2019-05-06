@@ -1,4 +1,4 @@
-/***************************************************************************
+/***************************************************************************************************
 * Title : Heap Data Structure
 * URL   : http://www.cs.cmu.edu/~jxc/Heaps.pdf
 * Date  : 2017-09
@@ -6,13 +6,20 @@
 * Comp  :
 *   Insert Item O(log n)
 *   Delete Item O(n) + O(log n) = O(n)
-*   Print Minimum O(1)
-*   Extract Min O(log n)O(n), Space O(n)
-* Ref   : C.L.R.S Ch 6
-* Notes : Based on the comparer provided in the constructor Heap class can
+*   FindMin or Print Minimum O(1)
+*   Extract Min O(log n), Space O(n)
+* Notes : Heaps is a partially ordered complete binary tree. It is a balanced binary trees with
+*   priority P(k1), P(k2), ...., P(kn). It is the implementation of the priority queue. It is an
+*   array, visualized as a nearly complete binary tree.
+* 
+* Based on the comparer provided in the constructor Heap class can
 *   behave as MinHeap and MaxHeap
+* Ref   : C.L.R.S Ch#6
+*   https://www.cs.cmu.edu/~ckingsf/bioinfo-lectures/heaps.pdf (note the terms are slightly
+*   different)
+*   https://www.cs.cmu.edu/~ckingsf/bioinfo-lectures/heaps.pdf (some illustrated examples of ops)
 * meta  : tag-ds-heap, tag-ds-core
-***************************************************************************/
+***************************************************************************************************/
 using System;
 using System.Collections.Generic;
 
@@ -31,6 +38,7 @@ class Heap {
     this.cmpDel = del;
   }
 
+  // C.L.R.S p#152
   private int GetParent(int i) { return (i-1) / 2; }
   private int GetLeftChild(int i) { return 2*i + 1; }
   private int GetRightChild(int i) { return 2*i + 2; }
@@ -38,6 +46,10 @@ class Heap {
   // getter only property
   public int Count { get { return heapSize; } }
 
+  /// <summary>
+  /// O(1)
+  /// </summary>
+  /// <returns> Returns min/max based on type of Heap </returns>
   public int Peek() {
     if (heapSize == 0)
       throw new InvalidOperationException("Heap is empty!");
@@ -59,6 +71,10 @@ class Heap {
     }
   }
 
+  /// <summary>
+  /// C.L.R.S p#154
+  /// </summary>
+  /// <param name="i"></param>
   private void Heapify(int i) {
     int l = GetLeftChild(i);
     int r = GetRightChild(i);
@@ -73,6 +89,10 @@ class Heap {
     }
   }
 
+  /// <summary>
+  /// May be a different name for Max Heaps
+  /// </summary>
+  /// <returns></returns>
   public int ExtractMin() {
     if (heapSize == 0)
       throw new InvalidOperationException("Heap underflow!");
@@ -103,7 +123,11 @@ class Heap {
     A[j] = tmp;
   }
 
-  // returns index; -1 if not found
+  /// <summary>
+  /// O(N)
+  /// </summary>
+  /// <param name="item"></param>
+  /// <returns> returns index; -1 if not found </returns>
   protected int heapSearch(LRUItem item) {
     for (int i = 0; i < heapSize; i++) {
         LRUItem aItem = A[i];
@@ -113,6 +137,10 @@ class Heap {
     return -1;
   }
 
+  /// <summary>
+  /// C.L.R.S p#152
+  /// </summary>
+  /// <param name="item"></param>
   private void buildHeap() {
     for (int i = heapSize / 2; i >= 0; i--)
       Heapify(i);

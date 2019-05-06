@@ -2,20 +2,21 @@
 * Title : Climbing Stairs
 * URL   : https://leetcode.com/problems/climbing-stairs/
 * Date  : 2015-10-23
-* Comp  : O(n) Time, O(1) space
-* Author: Atiq Rahman
-* Status: Accepted (beat 85%)
+* Comp  : O(n), O(1)
+* Status: Accepted
 * Notes : Will modify solution to use O(n) space when there will be
 *   large number of queries
 * rel   : https://www.hackerrank.com/challenges/ctci-fibonacci-numbers
-* meta  : tag-algo-dp, tag-leetcode-easy
+* meta  : tag-algo-dp, tag-num-theory-fibonacci, tag-leetcode-easy
 ***************************************************************************************************/
 public class Solution {
   public int ClimbStairs(int n) {
     int fibA = 0, fibB = 1;
+
     for (int i=0; i<n; i++) {
         int temp = fibB; fibB += fibA; fibA = temp;
     }
+
     return n<1?fibA:fibB;
   }
 }

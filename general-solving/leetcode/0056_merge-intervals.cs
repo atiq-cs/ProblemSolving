@@ -13,7 +13,7 @@
 *   not.
 *   
 *   Similar to line sweep algo.
-* 
+*
 *   Cast IList to List ref: https://stackoverflow.com/q/2207341
 *   Demonstrates use of lambda expression with List.Sort
 * rel   : https://leetcode.com/problems/insert-interval
@@ -41,7 +41,7 @@ public class Solution
       if (previous != null) {
         if (previous.end < current.start)
           result.Add(previous);
-        // overlap found, heance, current interval is extending
+        // overlap found, hence, current interval is extending
         else {
           current.start = Math.Min(previous.start, current.start);
           current.end = Math.Max(previous.end, current.end);

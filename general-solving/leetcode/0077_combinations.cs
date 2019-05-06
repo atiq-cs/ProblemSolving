@@ -104,6 +104,9 @@ public class Solution {
 }
 
 /*
+with little changes my prev comb code adapts to the solution of the leetcode problem,
+Specifically suiting this leetcode combination problem
+
 Draft for previously arrived solution,
 got rid of isTaken and reached the solution
 

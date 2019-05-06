@@ -34,4 +34,29 @@ class Solution {
 
     return root;
   }
+
+  public TreeNode InorderSuccessor(TreeNode root, TreeNode p) {
+    if (root == null || p == null)
+      return null;
+
+    if (p.right != null)
+      return TreeMinimum(p.right);
+
+  }
+
+
+  /// <summary>
+  /// If null return so
+  /// Otherwise keep going down left wise..
+  /// </summary>
+  /// <param name="current"> node of subtree for which to find the min </param>
+  /// <returns></returns>
+  private TreeNode TreeMinimum(TreeNode current) {
+    if (current == null) return null;
+
+    for (; current.left != null; current = current.left) ;
+
+    return current;
+  }
+
 }
