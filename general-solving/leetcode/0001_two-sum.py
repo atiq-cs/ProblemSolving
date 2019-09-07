@@ -4,8 +4,7 @@
 * Date  : 2019-08
 * Comp  : O(N), O(N)
 * Status: Accepted
-* Notes :
-* ref   : https://leetcode.com/articles/two-sum/
+* Notes : ref, https://docs.python.org/3/tutorial/datastructures.html
 * rel   : 0001_two-sum.cs
 * meta  : tag-ds-hashtable, tag-company-microsoft, tag-leetcode-easy
 *************************************************************************************************'''
