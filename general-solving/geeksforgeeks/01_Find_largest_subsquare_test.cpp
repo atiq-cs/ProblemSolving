@@ -4,7 +4,7 @@
 * Author: Atiq Rahman
 * Notes : Probably acquired from internet, rom geeksforgeeks.org. A C++ program to find  the largest
 *    subsquare surrounded by 'X' in a given matrix of 'O' and 'X'
-* meta  : tag-geeksforgeeks
+* meta  : tag-coding-practice, tag-geeksforgeeks
 ***************************************************************************************************/
 #include<iostream>
 using namespace std;
