@@ -9,7 +9,7 @@
 *   2. Perform inorder traversal on the built tree
 *   
 *   Input is ensured to be of a perfect binary tree
-* meta  : tag-easy, tag-binary-tree
+* meta  : tag-interview, tag-binary-tree, tag-company-uber
 ***************************************************************************/
 using System;
 

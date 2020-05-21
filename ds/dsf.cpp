@@ -1,7 +1,7 @@
 ﻿/***************************************************************************************************
 * Title : Disjoint Set Forests
 * URL   : check ref
-* Date  : 2017 some time prob
+* Date  : 2017-05 (approx)
 * Author: Atiq Rahman
 * Comp  : O(m α n)
 * Notes : Disjoint Set Forests

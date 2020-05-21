@@ -60,6 +60,7 @@ class DSF {
         if (ranks[x] == ranks[y])
           ranks[y]++;
       }
+
       Count--;
     }
   }
