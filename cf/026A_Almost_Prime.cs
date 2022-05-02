@@ -4,10 +4,14 @@
 * Contst: Offline
 * Date  : 2018-04-27
 * Author: Atiq Rahman
-* Comp  : Check Prime Generation Methods
+* Comp  :
+*  1. Sieve (05-01)
+*    Bit Complexity: 
+*    Time - O(n log n log log n)
+*    Space- O(n)
+*  2. TODO: Other Prime Generation Methods
 * Status: Accepted
-* Notes : ToDo: analyze complexity of Sieve
-*
+* Notes :
 *   Applications of this problem:
 *   Test Prime Number Generatation algorithm up to a small range (<=3000)
 *   
